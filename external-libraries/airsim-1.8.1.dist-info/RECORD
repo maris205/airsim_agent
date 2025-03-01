@@ -1,0 +1,16 @@
+airsim-1.8.1.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+airsim-1.8.1.dist-info/METADATA,sha256=hCkec77mGrZwYDPq8GPPP6hkzm-29v4aDvIHnCo7mSA,1263
+airsim-1.8.1.dist-info/RECORD,,
+airsim-1.8.1.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airsim-1.8.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+airsim-1.8.1.dist-info/top_level.txt,sha256=Zmz1xkdQ-6hJ6jCG5SHBNAYCPzcX4NhHiDDE_WgUj2c,7
+airsim/__init__.py,sha256=9ksNWTLIaPkvCboLCys0JpPbtjgUiKFwY1eho9IcrwY,92
+airsim/__pycache__/__init__.cpython-310.pyc,,
+airsim/__pycache__/client.cpython-310.pyc,,
+airsim/__pycache__/pfm.cpython-310.pyc,,
+airsim/__pycache__/types.cpython-310.pyc,,
+airsim/__pycache__/utils.cpython-310.pyc,,
+airsim/client.py,sha256=uq1kLE7zab26ZKeU_UpRIV6IoWFEgd79BPqj8fKR1aE,78269
+airsim/pfm.py,sha256=nTIjAdD0ZLstMjeHfU4B35P6T7DElyrwcvdzDqN8XCw,2408
+airsim/types.py,sha256=TuwFGy6-mPUs0he65Ns79Y77di03IVIMgwwBvfbdL7o,19541
+airsim/utils.py,sha256=7pDlkYpPSuf3XMjOTNhv-I_h-aZirFxe0_AT9Lb4BsI,5488
