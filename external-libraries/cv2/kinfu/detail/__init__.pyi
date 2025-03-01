@@ -1,5 +1,0 @@
-# Classes
-class PoseGraph:
-    ...
-
-
