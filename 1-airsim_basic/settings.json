@@ -1,0 +1,21 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings.md",
+  "SettingsVersion": 1.2,
+    "Vehicles": {
+    "UAV1": {
+      "VehicleType": "SimpleFlight",
+      "X": 0, "Y": 0, "Z": 0,
+      "Yaw": 0
+    },
+    "UAV2": {
+      "VehicleType": "SimpleFlight",
+      "X": 2, "Y": 0, "Z": 0,
+      "Yaw": 0
+    },
+    "UAV3": {
+      "VehicleType": "SimpleFlight",
+      "X": 4, "Y": 0, "Z": 0,
+      "Yaw": 0
+     }
+  }
+}
