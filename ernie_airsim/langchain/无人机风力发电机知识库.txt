@@ -1,0 +1,189 @@
+就坐标轴约定而言，我们使用的是世界坐标系NED，也就是"北动地"坐标系，
+，即+X是北，+Y是东，+Z是下。这意味着Z值越高越负，如果原点在地面上，z值是零，地面以上是负的！
+
+但人类操作无人机时，往往习惯以机体坐标系"前右下"发送指令。
+无人机初始位置为[0,0,0]，面向北方，向前/北表示 X 轴正方向。右/东表示 Y 轴正方向。向下/地表示 Z 轴负方向。
+
+需要注意，每次执行移动任务时候，都需要先获得无人机当前位置的世界坐标系[X, Y, Z]为基准，进行位置的操作加减。
+
+因此，人发出的基于"前右下"的指令，需要和世界坐标系的X,Y,Z进行转换。
+具体的转换关系如下：
+
+如向上飞，则是Z轴当前值减去一个正数数值，
+
+而左右方向，和当前无人机朝向有关，
+如无人机朝向北方，向右飞，Y轴增加一个正数数值。向前飞，X轴增加一个正数数值，向右下方移动，则Y轴增加一个正数数值，Z则是轴减去一个正数数值。
+
+如无人机朝向东方，向右飞，X轴减去一个正数数值。向前飞，Y轴增加一个正数数值。
+
+我们的实验只会考虑上述两个朝向，而不考虑更复杂的转换情况。
+
+
+下面是一些典型问题的解答，供参考：
+
+1 起飞
+答案如下：
+当然，以下是起飞无人机的Python代码：
+
+```python
+aw.takeoff()
+```
+
+此代码使用“takeoff()”函数命令无人机起飞。无人机将从当前位置开始升空。
+
+
+2 飞到汽车上方
+答案如下：
+当然，以下是飞到汽车上方的Python代码：
+
+```python
+car_position = aw.get_position("car")
+aw.fly_to([car_position[0], car_position[1], car_position[2]+10])
+```
+
+此代码首先使用“get_position()”函数获取汽车的当前位置，并将其存储在变量“car_position”中。然后，它创建一个新的位置列表，其中包含与汽车相同的X和Y坐标，但Z坐标增加了10个单位。最后，它使用“fly_to()”函数命令无人机飞到这个新位置，即汽车上方10个单位。
+
+3 请起飞吧
+答案如下：
+python_code: 好的，以下是起飞无人机的代码：
+
+```python
+aw.takeoff()
+```
+
+解释：使用`takeoff()`函数起飞无人机。
+
+4 请选风力发电机1,沿X轴与风力发电机保持3米距离飞向风力发电机
+答案如下：
+好的，以下是沿X轴与风力发电机1保持3米距离飞向风力发电机的代码：
+
+```python
+turbine1_position = aw.get_position("turbine1")
+target_position = [turbine1_position[0]+3, turbine1_position[1], turbine1_position[2]]
+aw.fly_to(target_position)
+```
+
+解释：首先使用`get_position()`函数获取风力发电机1的位置，并将其存储在`turbine1_position`变量中。然后创建一个新的列表`target_position`，其中包含风力发电机1的X坐标加上3米、风力发电机1的Y坐标和Z坐标。最后，使用`fly_to()`函数将无人机飞到目标位置。
+
+5 请使用2号风力发电机。沿X轴与风力发电机2保持12米距离飞向涡轮机，并达到50米的高度的位置。
+答案如下：
+非常抱歉，我之前的回答中确实存在误导。由于Z坐标的正方向指向地心，负方向指向天空，所以在设置目标位置的Z坐标时，应该使用负数来表示高度。因此，应该将目标位置的Z坐标设置为-50，以表示无人机要飞到50米的高度。以下是更正后的代码：
+
+```python
+turbine2_position = aw.get_position("turbine2")
+target_position = [turbine2_position[0]+12, turbine2_position[1], -50]
+aw.fly_to(target_position)
+```
+
+再次感谢您的指正。
+
+6 现在让我们开始检查风力发电机的叶片。第一个叶片垂直向上，请飞到当前位置上方 30 米，然后再次向下。
+答案如下：
+好的，以下是飞到当前位置上方30米，然后再次向下的代码：
+
+```python
+current_position = aw.get_drone_position()
+up_position = [current_position[0], current_position[1], current_position[2]-30]
+aw.fly_to(up_position)
+down_position = [current_position[0], current_position[1], current_position[2]]
+aw.fly_to(down_position)
+```
+
+解释：首先使用`get_drone_position()`函数获取无人机的当前位置，并将其存储在`current_position`变量中。然后创建一个新的列表`up_position`，其中包含无人机的当前X和Y坐标，以及Z坐标减去30米（因为向上飞需要减小Z坐标的值）。使用`fly_to()`函数将无人机飞到上方30米的位置。接着，创建一个新的列表`down_position`，其中包含无人机的当前X和Y坐标，以及原始的Z坐标，使用`fly_to()`函数将无人机飞回原始位置。
+
+7 为了检查第二个叶片，我需要你以与水平轴成-30度角的右下方向飞行。您应该在YZ 平面上飞行30 米的距离，然后返回当前位置。
+答案如下：
+
+好的，下面是实现代码：
+
+```python
+import math
+
+# 获取无人机的当前位置
+current_position = aw.get_drone_position()
+
+# 计算无人机沿与水平轴成-30度角的右下方向飞行的目标位置
+# 使用三角函数计算目标位置的Y和Z坐标
+angle = math.radians(-30)  # 将角度转换为弧度
+target_y = current_position[1] + 30 * math.cos(angle)
+target_z = current_position[2] + abs(30 * math.sin(angle))  # 使用绝对值确保加上一个正数
+target_position = [current_position[0], target_y, target_z]
+
+# 沿与水平轴成-30度角的右下方向飞行30米
+aw.fly_to(target_position)
+
+# 返回当前位置
+aw.fly_to(current_position)
+
+```
+
+8  现在我们还需要检查叶片的背面。我需要你重复刚才所做的事情，但到了最后就停下来，无需返回
+答案如下：
+
+好的，下面是实现代码：
+
+```python
+import math
+
+# 获取无人机的当前位置
+current_position = aw.get_drone_position()
+
+# 计算无人机沿与水平轴成-30度角的右下方向飞行的目标位置
+# 使用三角函数计算目标位置的Y和Z坐标
+angle = math.radians(-30)  # 将角度转换为弧度
+target_y = current_position[1] + 30 * math.cos(angle)
+target_z = current_position[2] + abs(30 * math.sin(angle))  # 使用绝对值确保加上一个正数
+target_position = [current_position[0], target_y, target_z]
+
+# 沿与水平轴成-30度角的右下方向飞行30米
+aw.fly_to(target_position)
+
+```
+
+9 现在向前移动，飞到风力发电机后面。在 X 轴上飞行 20 米，再加上几米的间隙，然后将无人机旋转 180 度。您可以使用 set_yaw() 函数来旋转无人机。
+答案如下：
+
+好的，下面是实现代码：
+
+```python
+
+# 获取无人机的当前位置
+current_position = aw.get_drone_position()
+
+# 计算无人机向前移动的目标位置
+target_position = [current_position[0] + 20 + 5, current_position[1], current_position[2]]  # 加上5米的间隙
+
+# 向前移动到风力发电机后面
+aw.fly_to(target_position)
+
+# 旋转180度
+aw.set_yaw(180)
+
+```
+
+10 太好了！现在我要你检查叶片的背面。这意味着你所做的与之前所做的完全相反，也就是说，朝右上角的方向飞行。
+答案如下：
+
+好的，下面是实现代码：
+
+```python
+import math
+
+# 获取无人机的当前位置
+current_position = aw.get_drone_position()
+
+# 计算无人机朝右上角方向飞行的目标位置
+# 使用三角函数计算目标位置的Y和Z坐标
+angle = math.radians(30)  # 将角度转换为弧度
+target_y = current_position[1] - 30 * math.cos(angle)  # Y轴减去一个正数
+target_z = current_position[2] - 30 * math.sin(angle)  # Z轴减去一个正数
+target_position = [current_position[0], target_y, target_z]
+
+# 朝右上角方向飞行30米
+aw.fly_to(target_position)
+
+```
+
+
+
+
