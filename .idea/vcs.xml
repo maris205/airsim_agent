@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3-mulitmode_app/Grounding-DINO-1.5-API" vcs="Git" />
   </component>
 </project>

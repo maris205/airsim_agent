@@ -1,0 +1,1 @@
+AirSimInspection.exe -windowed -ResX=1280 -ResY=720 -ExecCmds="DisableAllScreenMessages"
