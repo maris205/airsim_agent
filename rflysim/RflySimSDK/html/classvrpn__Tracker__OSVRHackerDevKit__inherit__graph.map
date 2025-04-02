@@ -1,0 +1,14 @@
+<map id="vrpn_Tracker_OSVRHackerDevKit" name="vrpn_Tracker_OSVRHackerDevKit">
+<area shape="rect" id="Node000001" title="OSVR Hacker Dev Kit HMD The official name of the Razer/Sensics HMD (until they change it again...." alt="" coords="62,229,286,256"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker.html" title=" " alt="" coords="5,155,103,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,187,154,226,152,231,86,192"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="55,80,173,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,120,66,156,62,153,92,117"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Analog.html" title=" " alt="" coords="127,155,221,181"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="136,117,166,153,162,156,132,120"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="35,5,193,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,48,117,80,111,80,111,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="177,197,177,229,171,229,171,197"/>
+<area shape="rect" id="Node000006" href="$classvrpn__HidInterface.html" title=" " alt="" coords="245,155,370,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="272,191,199,231,196,226,270,187"/>
+</map>

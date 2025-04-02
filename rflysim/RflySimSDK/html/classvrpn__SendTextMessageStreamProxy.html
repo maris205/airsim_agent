@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_SendTextMessageStreamProxy类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn__SendTextMessageStreamProxy-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_SendTextMessageStreamProxy类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a59f32ae12335fd65beff25e7f36b2f78" id="r_a59f32ae12335fd65beff25e7f36b2f78"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a59f32ae12335fd65beff25e7f36b2f78"><td align="right" class="memTemplItemLeft" valign="top"> </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a59f32ae12335fd65beff25e7f36b2f78">vrpn_SendTextMessageStreamProxy</a> (<a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">vrpn_BaseClassUnique::SendTextMessageBoundCall</a> const &amp;call, T const &amp;firstData)</td></tr>
+<tr class="memdesc:a59f32ae12335fd65beff25e7f36b2f78"><td class="mdescLeft"> </td><td class="mdescRight">Templated constructor taking anything streamable.  <br/></td></tr>
+<tr class="separator:a59f32ae12335fd65beff25e7f36b2f78"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abfae83c96408053d8463de07a9b3ec37" id="r_abfae83c96408053d8463de07a9b3ec37"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abfae83c96408053d8463de07a9b3ec37">vrpn_SendTextMessageStreamProxy</a> (<a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">vrpn_BaseClassUnique::SendTextMessageBoundCall</a> const &amp;call, std::string const &amp;firstData)</td></tr>
+<tr class="separator:abfae83c96408053d8463de07a9b3ec37"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae947a992ed76978edceabfdf7481c9d9" id="r_ae947a992ed76978edceabfdf7481c9d9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae947a992ed76978edceabfdf7481c9d9">vrpn_SendTextMessageStreamProxy</a> (<a class="el" href="classvrpn__SendTextMessageStreamProxy.html">vrpn_SendTextMessageStreamProxy</a> const &amp;other)</td></tr>
+<tr class="memdesc:ae947a992ed76978edceabfdf7481c9d9"><td class="mdescLeft"> </td><td class="mdescRight">Copy constructor - required for return by value (?)  <br/></td></tr>
+<tr class="separator:ae947a992ed76978edceabfdf7481c9d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a80aec58855416114c8577d9f68fa0122" id="r_a80aec58855416114c8577d9f68fa0122"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a80aec58855416114c8577d9f68fa0122">~vrpn_SendTextMessageStreamProxy</a> ()</td></tr>
+<tr class="separator:a80aec58855416114c8577d9f68fa0122"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac93588693de90ac15a0f25b28f36480c" id="r_ac93588693de90ac15a0f25b28f36480c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac93588693de90ac15a0f25b28f36480c"><td align="right" class="memTemplItemLeft" valign="top">std::ostream &amp; </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac93588693de90ac15a0f25b28f36480c">operator&lt;&lt;</a> (T const &amp;other)</td></tr>
+<tr class="separator:ac93588693de90ac15a0f25b28f36480c"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a59f32ae12335fd65beff25e7f36b2f78" name="a59f32ae12335fd65beff25e7f36b2f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f32ae12335fd65beff25e7f36b2f78">◆ </a></span>vrpn_SendTextMessageStreamProxy() <span class="overload">[1/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__SendTextMessageStreamProxy.html">vrpn_SendTextMessageStreamProxy</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">vrpn_BaseClassUnique::SendTextMessageBoundCall</a> const &amp;</td> <td class="paramname"><span class="paramname"><em>call</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">T const &amp;</td> <td class="paramname"><span class="paramname"><em>firstData</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Templated constructor taking anything streamable. </p>
+</div>
+</div>
+<a id="abfae83c96408053d8463de07a9b3ec37" name="abfae83c96408053d8463de07a9b3ec37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfae83c96408053d8463de07a9b3ec37">◆ </a></span>vrpn_SendTextMessageStreamProxy() <span class="overload">[2/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__SendTextMessageStreamProxy.html">vrpn_SendTextMessageStreamProxy</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">vrpn_BaseClassUnique::SendTextMessageBoundCall</a> const &amp;</td> <td class="paramname"><span class="paramname"><em>call</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">std::string const &amp;</td> <td class="paramname"><span class="paramname"><em>firstData</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor taking a std::string, since we can use the ostringstream's std::string constructor in this case. </p>
+</div>
+</div>
+<a id="ae947a992ed76978edceabfdf7481c9d9" name="ae947a992ed76978edceabfdf7481c9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae947a992ed76978edceabfdf7481c9d9">◆ </a></span>vrpn_SendTextMessageStreamProxy() <span class="overload">[3/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__SendTextMessageStreamProxy.html">vrpn_SendTextMessageStreamProxy</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__SendTextMessageStreamProxy.html">vrpn_SendTextMessageStreamProxy</a> const &amp;</td> <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Copy constructor - required for return by value (?) </p>
+</div>
+</div>
+<a id="a80aec58855416114c8577d9f68fa0122" name="a80aec58855416114c8577d9f68fa0122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80aec58855416114c8577d9f68fa0122">◆ </a></span>~vrpn_SendTextMessageStreamProxy()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">~<a class="el" href="classvrpn__SendTextMessageStreamProxy.html">vrpn_SendTextMessageStreamProxy</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor performs the send_text_message call with all contents streamed into it. </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac93588693de90ac15a0f25b28f36480c" name="ac93588693de90ac15a0f25b28f36480c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93588693de90ac15a0f25b28f36480c">◆ </a></span>operator&lt;&lt;()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+<td>(</td>
+<td class="paramtype">T const &amp;</td> <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Template operator&lt;&lt;, used for the second item streamed into the results of a BoundCall-returning send_text_message() call. The first one is handled below, and creates this temporary proxy object. Now, we can return a reference to the internal ostream, and we'll still stick around until the end of the statement to make the call once it's all done. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__SendTextMessageStreamProxy_8h_source.html">vrpn_SendTextMessageStreamProxy.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

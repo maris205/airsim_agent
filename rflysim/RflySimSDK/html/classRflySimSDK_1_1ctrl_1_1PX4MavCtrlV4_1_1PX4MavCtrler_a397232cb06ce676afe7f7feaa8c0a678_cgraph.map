@@ -1,0 +1,7 @@
+<map id="setGPSOriLLA" name="setGPSOriLLA">
+<area shape="rect" id="Node000001" title="设置GPS的原点位置，并根据提供的GPS坐标计算位置偏差" alt="" coords="5,5,113,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab1cbcf22653b34755c2a029802f46df7" title="发送数据" alt="" coords="161,5,258,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,16,145,16,145,21,113,21"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="306,5,419,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,16,290,16,290,21,258,21"/>
+</map>

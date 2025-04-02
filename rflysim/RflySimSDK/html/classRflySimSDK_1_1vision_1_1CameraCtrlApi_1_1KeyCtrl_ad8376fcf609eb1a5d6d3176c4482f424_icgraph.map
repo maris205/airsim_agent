@@ -1,0 +1,5 @@
+<map id="getPitch" name="getPitch">
+<area shape="rect" id="Node000001" title="获取相机的当前俯仰角" alt="" coords="110,5,179,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#a585888e6fe54ce7163cdbaa757a37064" title="将相机的滚转角、俯仰角和偏航角设置为当前的滚转角、俯仰角和偏航角" alt="" coords="5,5,62,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,21,62,21,62,16,94,16"/>
+</map>

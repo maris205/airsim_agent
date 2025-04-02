@@ -1,0 +1,19 @@
+<map id="initkey" name="initkey">
+<area shape="rect" id="Node000001" title="初始化键盘快捷键。为每个方向键、Ctrl+方向键和Alt+方向键添加快捷键，并将其绑定到相应的方法上" alt="" coords="5,183,65,209"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#ad05b8d06904b5a962cb4231c5bf2e126" title="控制视场角（FOV）的放大" alt="" coords="113,5,216,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,181,62,116,83,77,111,42,114,39,118,43,115,46,87,80,66,119,43,183"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#a888236f8e6ea5429241e8dfcb3926507" title="控制视场角（FOV）的缩小" alt="" coords="122,56,208,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="42,181,69,139,89,114,111,93,116,89,119,93,114,97,93,118,73,142,46,184"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#ac703326e2e6c88041c5b42b784d5d596" title="控制横滚角（Roll）的向左调整" alt="" coords="117,107,212,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,180,111,143,119,139,122,143,114,148,57,185"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#a5515886c5ab905d7b15877b469d5363a" title="控制横滚角（Roll）的向右调整" alt="" coords="113,157,217,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="65,188,97,181,98,186,66,193"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#a11ebf9f735d1e2ebf6d8218cd6dffcbd" title="控制俯仰角（Pitch）的向下调整" alt="" coords="122,208,208,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="66,199,107,207,106,213,65,204"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#a40642f77e9a686fbca817d2ece700035" title="控制偏航角（Yaw）的向左调整" alt="" coords="128,259,202,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="57,207,114,244,122,249,119,253,111,249,54,212"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#a1d05f29e7c4570cfb737cc73496c3c51" title="控制偏航角（Yaw）的向右调整" alt="" coords="125,309,205,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="46,208,73,250,93,274,114,295,119,299,116,303,111,299,89,278,69,253,42,211"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#aac66fd641e8c656f5a4984ac387b34e9" title="控制俯仰角的增大，根据当前模式（角度或角速度）进行相应的处理" alt="" coords="130,360,200,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="43,209,66,273,87,312,115,346,119,350,115,354,111,350,83,315,62,276,38,211"/>
+</map>

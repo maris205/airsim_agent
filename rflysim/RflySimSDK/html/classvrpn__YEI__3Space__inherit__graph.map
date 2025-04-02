@@ -1,0 +1,23 @@
+<map id="vrpn_YEI_3Space" name="vrpn_YEI_3Space">
+<area shape="rect" id="Node000001" title="Base class with routines for YEI 3Space units." alt="" coords="155,304,281,331"/>
+<area shape="rect" id="Node000009" href="$classvrpn__YEI__3Space__Sensor.html" title="Class to support reading data from a wired YEI 3Space unit." alt="" coords="32,387,206,413"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="192,343,136,389,132,384,189,339"/>
+<area shape="rect" id="Node000010" href="$classvrpn__YEI__3Space__Sensor__Wireless.html" title="Class to support reading data from a wireless YEI 3Space unit." alt="" coords="231,379,405,421"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="247,339,294,376,291,380,244,343"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker__Server.html" title=" " alt="" coords="5,229,148,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,261,194,301,192,306,113,266"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Tracker.html" title=" " alt="" coords="56,155,153,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,197,84,230,79,228,92,195"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="159,80,276,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,118,126,156,123,152,184,113"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="171,229,264,256"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="220,122,220,229,215,229,215,122"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="280,155,372,181"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="251,113,308,152,305,156,248,118"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="139,5,297,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,48,220,80,215,80,215,48"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="220,272,220,304,215,304,215,272"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="289,229,416,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="317,266,243,306,240,301,315,261"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="338,195,350,228,345,230,333,197"/>
+</map>

@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: OwningPtr&lt; T, D &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>vrpn</b></li><li class="navelem"><a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn_1_1OwningPtr-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">OwningPtr&lt; T, D &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p><code>#include &lt;<a class="el" href="vrpn__OwningPtr_8h_source.html">vrpn_OwningPtr.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae37fb942067e67c711beb897e7b7b5de" id="r_ae37fb942067e67c711beb897e7b7b5de"><td align="right" class="memItemLeft" valign="top"><a id="ae37fb942067e67c711beb897e7b7b5de" name="ae37fb942067e67c711beb897e7b7b5de"></a>
+typedef T </td><td class="memItemRight" valign="bottom"><b>element_type</b></td></tr>
+<tr class="separator:ae37fb942067e67c711beb897e7b7b5de"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa1a3855092fc9cf6ee30d939a47922f1" id="r_aa1a3855092fc9cf6ee30d939a47922f1"><td align="right" class="memItemLeft" valign="top"><a id="aa1a3855092fc9cf6ee30d939a47922f1" name="aa1a3855092fc9cf6ee30d939a47922f1"></a>
+typedef T &amp; </td><td class="memItemRight" valign="bottom"><b>reference_type</b></td></tr>
+<tr class="separator:aa1a3855092fc9cf6ee30d939a47922f1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a896fcb36e1a2d1906be154e531d70769" id="r_a896fcb36e1a2d1906be154e531d70769"><td align="right" class="memItemLeft" valign="top"><a id="a896fcb36e1a2d1906be154e531d70769" name="a896fcb36e1a2d1906be154e531d70769"></a>
+typedef D </td><td class="memItemRight" valign="bottom"><b>deleter_type</b></td></tr>
+<tr class="separator:a896fcb36e1a2d1906be154e531d70769"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0fd890b8743a95780809163783f38611" id="r_a0fd890b8743a95780809163783f38611"><td align="right" class="memItemLeft" valign="top"><a id="a0fd890b8743a95780809163783f38611" name="a0fd890b8743a95780809163783f38611"></a>
+typedef <a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">traits::OwningPtrPointerType</a>&lt; T &gt;::type </td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
+<tr class="separator:a0fd890b8743a95780809163783f38611"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1424a38ecde3feb603464a1ec045afc1" id="r_a1424a38ecde3feb603464a1ec045afc1"><td align="right" class="memItemLeft" valign="top"><a id="a1424a38ecde3feb603464a1ec045afc1" name="a1424a38ecde3feb603464a1ec045afc1"></a>
+typedef <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; </td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a1424a38ecde3feb603464a1ec045afc1"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8a0ea1fdc8a20a1aa154dd46e28ca5bb" id="r_a8a0ea1fdc8a20a1aa154dd46e28ca5bb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a0ea1fdc8a20a1aa154dd46e28ca5bb">OwningPtr</a> ()</td></tr>
+<tr class="memdesc:a8a0ea1fdc8a20a1aa154dd46e28ca5bb"><td class="mdescLeft"> </td><td class="mdescRight">Construct empty.  <br/></td></tr>
+<tr class="separator:a8a0ea1fdc8a20a1aa154dd46e28ca5bb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46f7c2a8a4abda6cdf457c27ba1f7ad6" id="r_a46f7c2a8a4abda6cdf457c27ba1f7ad6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a46f7c2a8a4abda6cdf457c27ba1f7ad6">OwningPtr</a> (pointer p)</td></tr>
+<tr class="separator:a46f7c2a8a4abda6cdf457c27ba1f7ad6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a04f450238284e99625030cea8ab32ca4" id="r_a04f450238284e99625030cea8ab32ca4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a04f450238284e99625030cea8ab32ca4">~OwningPtr</a> ()</td></tr>
+<tr class="memdesc:a04f450238284e99625030cea8ab32ca4"><td class="mdescLeft"> </td><td class="mdescRight">Destructor: deletes owned object, if any.  <br/></td></tr>
+<tr class="separator:a04f450238284e99625030cea8ab32ca4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa431df3eb15d1273bba670183647754d" id="r_aa431df3eb15d1273bba670183647754d"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa431df3eb15d1273bba670183647754d">reset</a> (pointer p=pointer())</td></tr>
+<tr class="separator:aa431df3eb15d1273bba670183647754d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a091d6047345ff0bce4545d27b0c8a97e" id="r_a091d6047345ff0bce4545d27b0c8a97e"><td align="right" class="memItemLeft" valign="top">pointer </td><td class="memItemRight" valign="bottom"><a class="el" href="#a091d6047345ff0bce4545d27b0c8a97e">release</a> ()</td></tr>
+<tr class="memdesc:a091d6047345ff0bce4545d27b0c8a97e"><td class="mdescLeft"> </td><td class="mdescRight">Returns the held pointer without performing the delete action.  <br/></td></tr>
+<tr class="separator:a091d6047345ff0bce4545d27b0c8a97e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ade8c51b6d74389b2bfc1509802d59811" id="r_ade8c51b6d74389b2bfc1509802d59811"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8c51b6d74389b2bfc1509802d59811">swap</a> (<a class="el" href="classvrpn_1_1OwningPtr.html">type</a> &amp;other)</td></tr>
+<tr class="memdesc:ade8c51b6d74389b2bfc1509802d59811"><td class="mdescLeft"> </td><td class="mdescRight">Swap pointers with another <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a> of the same type.  <br/></td></tr>
+<tr class="separator:ade8c51b6d74389b2bfc1509802d59811"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae35ff781593cc93da0ce2fb918fff312" id="r_ae35ff781593cc93da0ce2fb918fff312"><td align="right" class="memItemLeft" valign="top">pointer </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae35ff781593cc93da0ce2fb918fff312">get</a> () const</td></tr>
+<tr class="memdesc:ae35ff781593cc93da0ce2fb918fff312"><td class="mdescLeft"> </td><td class="mdescRight">Gets pointer value  <br/></td></tr>
+<tr class="separator:ae35ff781593cc93da0ce2fb918fff312"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aef4e7d4e0fa56e9f7509c555f73d24d2" id="r_aef4e7d4e0fa56e9f7509c555f73d24d2"><td align="right" class="memItemLeft" valign="top">pointer </td><td class="memItemRight" valign="bottom"><a class="el" href="#aef4e7d4e0fa56e9f7509c555f73d24d2">operator-&gt;</a> () const</td></tr>
+<tr class="memdesc:aef4e7d4e0fa56e9f7509c555f73d24d2"><td class="mdescLeft"> </td><td class="mdescRight">Smart pointer operator overload  <br/></td></tr>
+<tr class="separator:aef4e7d4e0fa56e9f7509c555f73d24d2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6ff1c9ec7b3d68698c7ea414e4ed0edf" id="r_a6ff1c9ec7b3d68698c7ea414e4ed0edf"><td align="right" class="memItemLeft" valign="top">reference_type </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ff1c9ec7b3d68698c7ea414e4ed0edf">operator*</a> () const</td></tr>
+<tr class="memdesc:a6ff1c9ec7b3d68698c7ea414e4ed0edf"><td class="mdescLeft"> </td><td class="mdescRight">Smart pointer operator  <br/></td></tr>
+<tr class="separator:a6ff1c9ec7b3d68698c7ea414e4ed0edf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a315419f26d3c59fa143b49b90a019049" id="r_a315419f26d3c59fa143b49b90a019049"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a315419f26d3c59fa143b49b90a019049">valid</a> () const</td></tr>
+<tr class="memdesc:a315419f26d3c59fa143b49b90a019049"><td class="mdescLeft"> </td><td class="mdescRight">Checks pointer validity  <br/></td></tr>
+<tr class="separator:a315419f26d3c59fa143b49b90a019049"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a61efd4196a96540ee018fee8791f3f10" id="r_a61efd4196a96540ee018fee8791f3f10"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a61efd4196a96540ee018fee8791f3f10">operator!</a> () const</td></tr>
+<tr class="memdesc:a61efd4196a96540ee018fee8791f3f10"><td class="mdescLeft"> </td><td class="mdescRight">Redundant way of checking pointer validity  <br/></td></tr>
+<tr class="separator:a61efd4196a96540ee018fee8791f3f10"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Safe bool idiom - in the absence of explicit operator bool()</h2></td></tr>
+<tr class="memitem:aa6774fcea629ae64204af55bd640d933" id="r_aa6774fcea629ae64204af55bd640d933"><td align="right" class="memItemLeft" valign="top"><a id="aa6774fcea629ae64204af55bd640d933" name="aa6774fcea629ae64204af55bd640d933"></a>
+typedef pointer type::* </td><td class="memItemRight" valign="bottom"><b>unspecified_bool_type</b></td></tr>
+<tr class="separator:aa6774fcea629ae64204af55bd640d933"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9e92a0477d69bebbc468adb74f34826b" id="r_a9e92a0477d69bebbc468adb74f34826b"><td align="right" class="memItemLeft" valign="top"><a id="a9e92a0477d69bebbc468adb74f34826b" name="a9e92a0477d69bebbc468adb74f34826b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>operator unspecified_bool_type</b> () const</td></tr>
+<tr class="separator:a9e92a0477d69bebbc468adb74f34826b"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename D = DefaultDeleter&lt;T&gt;&gt;<br/>
+class vrpn::OwningPtr&lt; T, D &gt;</div><p>A unique-ownership smart pointer, with the ability to transfer ownership, but only explicitly (aka, not like auto_ptr did it).</p>
+<p>Essentially, a hybrid of boost::scoped_ptr and std::unique_ptr that doesn't require C++11.</p>
+<p>Limitations relative to unique_ptr: no move semantics (naturally, since no C++11, and have not implemented rvalue-reference-emulation), no stateful deleters, and no casting or conversions. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8a0ea1fdc8a20a1aa154dd46e28ca5bb" name="a8a0ea1fdc8a20a1aa154dd46e28ca5bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0ea1fdc8a20a1aa154dd46e28ca5bb">◆ </a></span>OwningPtr() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Construct empty. </p>
+</div>
+</div>
+<a id="a46f7c2a8a4abda6cdf457c27ba1f7ad6" name="a46f7c2a8a4abda6cdf457c27ba1f7ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f7c2a8a4abda6cdf457c27ba1f7ad6">◆ </a></span>OwningPtr() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a> </td>
+<td>(</td>
+<td class="paramtype">pointer</td> <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Construct with a raw pointer for a new object to take exclusive ownership of. </p>
+</div>
+</div>
+<a id="a04f450238284e99625030cea8ab32ca4" name="a04f450238284e99625030cea8ab32ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f450238284e99625030cea8ab32ca4">◆ </a></span>~OwningPtr()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">~<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor: deletes owned object, if any. </p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1OwningPtr_a04f450238284e99625030cea8ab32ca4_cgraph.svg" width="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae35ff781593cc93da0ce2fb918fff312" name="ae35ff781593cc93da0ce2fb918fff312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35ff781593cc93da0ce2fb918fff312">◆ </a></span>get()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">pointer get </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Gets pointer value </p>
+</div>
+</div>
+<a id="a61efd4196a96540ee018fee8791f3f10" name="a61efd4196a96540ee018fee8791f3f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61efd4196a96540ee018fee8791f3f10">◆ </a></span>operator!()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool operator! </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Redundant way of checking pointer validity </p>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1OwningPtr_a61efd4196a96540ee018fee8791f3f10_cgraph.svg" width="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a6ff1c9ec7b3d68698c7ea414e4ed0edf" name="a6ff1c9ec7b3d68698c7ea414e4ed0edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff1c9ec7b3d68698c7ea414e4ed0edf">◆ </a></span>operator*()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">reference_type operator* </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Smart pointer operator </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1OwningPtr_a6ff1c9ec7b3d68698c7ea414e4ed0edf_cgraph.svg" width="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aef4e7d4e0fa56e9f7509c555f73d24d2" name="aef4e7d4e0fa56e9f7509c555f73d24d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4e7d4e0fa56e9f7509c555f73d24d2">◆ </a></span>operator-&gt;()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">pointer operator-&gt; </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Smart pointer operator overload </p>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1OwningPtr_aef4e7d4e0fa56e9f7509c555f73d24d2_cgraph.svg" width="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a091d6047345ff0bce4545d27b0c8a97e" name="a091d6047345ff0bce4545d27b0c8a97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091d6047345ff0bce4545d27b0c8a97e">◆ </a></span>release()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">pointer release </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the held pointer without performing the delete action. </p>
+</div>
+</div>
+<a id="aa431df3eb15d1273bba670183647754d" name="aa431df3eb15d1273bba670183647754d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa431df3eb15d1273bba670183647754d">◆ </a></span>reset()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void reset </td>
+<td>(</td>
+<td class="paramtype">pointer</td> <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval">pointer()</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Deletes the owned object, if any, and takes ownership of a new object, if one is passed. </p>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1OwningPtr_aa431df3eb15d1273bba670183647754d_icgraph.svg" width="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ade8c51b6d74389b2bfc1509802d59811" name="ade8c51b6d74389b2bfc1509802d59811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8c51b6d74389b2bfc1509802d59811">◆ </a></span>swap()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void swap </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn_1_1OwningPtr.html">type</a> &amp;</td> <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Swap pointers with another <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a> of the same type. </p>
+</div>
+</div>
+<a id="a315419f26d3c59fa143b49b90a019049" name="a315419f26d3c59fa143b49b90a019049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315419f26d3c59fa143b49b90a019049">◆ </a></span>valid()</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename D  = DefaultDeleter&lt;T&gt;&gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool valid </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Checks pointer validity </p>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="139" scrolling="no" src="classvrpn_1_1OwningPtr_a315419f26d3c59fa143b49b90a019049_icgraph.svg" width="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__OwningPtr_8h_source.html">vrpn_OwningPtr.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Auxiliary_Logger.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Auxiliary_Logger.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// This is a base class interface that has been designed for use by</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// scientific data-collection applications that make use of VRPN to</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// connect to microscope imagers and tracking system for nanoscale</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// science research at UNC.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// The idea of this interface is to enable a client GUI to start and</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// stop logging of full-rate data on the server while receiving only</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// a subset of the data during the experiment for preview; this keeps</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// from overloading the network bandwidth with data and also keeps</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// the client-side log files from filling up.  When new log file(s)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// are requested, the old log files are closed.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Note that a particular implementation of the auxiliary logger server</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// may need to know about a second connection (not the one it talks</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// to its client over) in case that is where it is doing its logging.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef VRPN_AUXILIARY_LOGGER_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define VRPN_AUXILIARY_LOGGER_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string.h&gt;</span> <span class="comment">// for NULL</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include "<a class="code" href="vrpn__BaseClass_8h.html">vrpn_BaseClass.h</a>"</span> <span class="comment">// for vrpn_Callback_List, etc</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_CALLBACK, VRPN_API</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include "vrpn_Connection.h"</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include "vrpn_Shared.h"</span> <span class="comment">// for timeval</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include "vrpn_Types.h"</span> <span class="comment">// for vrpn_int32</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00027">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger.html">   27</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Auxiliary__Logger.html">vrpn_Auxiliary_Logger</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__BaseClass.html">vrpn_BaseClass</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger.html">vrpn_Auxiliary_Logger</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="comment">// Handle registration of all message types we're going to deal with.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger.html#ad323fbb3a0d01ece28df8432733664fb">   33</a></span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Auxiliary__Logger.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    vrpn_int32 request_logging_m_id; <span class="comment">// ID of remote-&gt;server request message</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    vrpn_int32 report_logging_m_id;  <span class="comment">// ID of server-&gt;client response message</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    vrpn_int32 request_logging_status_m_id; <span class="comment">// ID of remote-&gt;server</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> <span class="comment">// status-request message</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> <span class="comment">// Pack a log description into the message whose type is passed</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> <span class="comment">// as the parameter (this is used to pack both the request and</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="comment">// report messages.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keywordtype">bool</span> pack_log_message_of_type(vrpn_int32 type,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_in_logfile_name,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_out_logfile_name,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_in_logfile_name,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_out_logfile_name);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> <span class="comment">// Unpack a log description from a message into the four strings that</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="comment">// were passed in (this is used to unpack both the request and the</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> <span class="comment">// report messages).</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> <span class="comment">// NOTE: This routine will allocate space for the strings.  The caller</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> <span class="comment">// must delete [] this space when they are done with it to avoid</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> <span class="comment">// memory leaks.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> <span class="keywordtype">bool</span> unpack_log_message_from_buffer(<span class="keyword">const</span> <span class="keywordtype">char</span> *buf, vrpn_int32 buflen,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> <span class="keywordtype">char</span> **local_in_logfile_name,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> <span class="keywordtype">char</span> **local_out_logfile_name,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="keywordtype">char</span> **remote_in_logfile_name,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> <span class="keywordtype">char</span> **remote_out_logfile_name);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// Virtual base server class for an auxiliiary logger.  An implementation must</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// implement the specified message-handling functions and must call the base-</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// class constructor to set up the calling of them.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00065">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger__Server.html">   65</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Server.html">vrpn_Auxiliary_Logger_Server</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger.html">vrpn_Auxiliary_Logger</a> {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Server.html">vrpn_Auxiliary_Logger_Server</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> <span class="comment">// Required for servers.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger__Server.html#a5ffa64c53e73a3bd81ecbbf33edac527">   70</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Auxiliary__Logger__Server.html#a5ffa64c53e73a3bd81ecbbf33edac527">mainloop</a>(<span class="keywordtype">void</span>) { <a class="code hl_function" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop</a>(); }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> <span class="comment">// Handle a logging-request message.  The request contains four file</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="comment">// names, two for local (to the Auxiliary server itself) and two for</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="comment">// remote (the far side of its connection to the server).  It must</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> <span class="comment">// also respond to the client with a message saying what logging has</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> <span class="comment">// been set up (using the send_logging_response function).  Logging is</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> <span class="comment">// turned off on a particular file by sending an empty-string name ("").</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> <span class="comment">// The in/out local/remote are with respect to the connection that the</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> <span class="comment">// logging is to occur on, which may or may not be the same one that the</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> <span class="comment">// client has connected to the object on using the constructor above.</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> <span class="comment">// Make sure to send a response saying what you did.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    handle_request_logging(<span class="keyword">const</span> <span class="keywordtype">char</span> *local_in_logfile_name,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_out_logfile_name,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_in_logfile_name,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_out_logfile_name) = 0;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> <span class="comment">// Send a response to the client telling it what logging has been</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> <span class="comment">// established.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> <span class="keywordtype">bool</span> send_report_logging(<span class="keyword">const</span> <span class="keywordtype">char</span> *local_in_logfile_name,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_out_logfile_name,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_in_logfile_name,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_out_logfile_name)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> <span class="keywordflow">if</span> (!d_connection) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <span class="keywordflow">return</span> pack_log_message_of_type(</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            report_logging_m_id, local_in_logfile_name, local_out_logfile_name,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            remote_in_logfile_name, remote_out_logfile_name);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> <span class="comment">// Handle dropped last connection on server object by turning off</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> <span class="comment">// logging.  The static method basically looks up the this</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> <span class="comment">// pointer and calls the virtual method.  A derived class should</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> <span class="comment">// re-implement the non-static method below if it doesn't want to drop all</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <span class="comment">// logging or if it wants to do something else in addition.  The static</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> <span class="comment">// method basically just calls the non-static method.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> handle_dropped_last_connection(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    vrpn_int32 dropped_last_connection_m_id; <span class="comment">// ID of message that all</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> <span class="comment">// connections dropped</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    static_handle_dropped_last_connection(<span class="keywordtype">void</span> *userdata, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> <span class="comment">// Static portion of handling (unpacking) the request_logging message.  It</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> <span class="comment">// then calls the non-static virtual method above.</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    static_handle_request_logging(<span class="keywordtype">void</span> *userdata, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> <span class="comment">// Handle request for logging status.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> handle_request_logging_status() = 0;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    static_handle_request_logging_status(<span class="keywordtype">void</span> *userdata, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// Generic server that will start auxiliary logs on the connection whose name</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// is passed in (which can be the same as the name of the connection it is</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// created on, but does not have to be).  The "local" in and out are with</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// respect to the new connection that is made; the "remote" in and out are with</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">// respect to the named connection.  No logging is started in the constructor.</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00133">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger__Server__Generic.html">  133</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Server__Generic.html">vrpn_Auxiliary_Logger_Server_Generic</a></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Server.html">vrpn_Auxiliary_Logger_Server</a> {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> <span class="comment">// Does not start logging, just records what to log when it is started.</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Server__Generic.html">vrpn_Auxiliary_Logger_Server_Generic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *logger_name,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *connection_to_log,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c = NULL);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Server__Generic.html">~vrpn_Auxiliary_Logger_Server_Generic</a>();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> <span class="comment">// Close an existing logging connection, then (if any of the file</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> <span class="comment">// names are non-empty) open a new logging connection to the</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> <span class="comment">// connection we are to log (even if this process already has a</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> <span class="comment">// connection to it) and then send back the report that we've started</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> <span class="comment">// logging if we are able.  If we cannot open it, then fill in all</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> <span class="comment">// blank names for the return report.</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> handle_request_logging(<span class="keyword">const</span> <span class="keywordtype">char</span> *local_in_logfile_name,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_out_logfile_name,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_in_logfile_name,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_out_logfile_name);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> handle_request_logging_status();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> <span class="comment">// If we have an active logging connection, mainloop it and save all of its</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> <span class="comment">// pending messages in addition to handling the base-class functions.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> <span class="comment">// Then call the parent class mainloop().</span></div>
+<div class="foldopen" data-end="}" data-start="{" id="foldopen00158">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger__Server__Generic.html#a5ffa64c53e73a3bd81ecbbf33edac527">  158</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Auxiliary__Logger__Server__Generic.html#a5ffa64c53e73a3bd81ecbbf33edac527">mainloop</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> <span class="keywordflow">if</span> (d_logging_connection) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            d_logging_connection-&gt;mainloop();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            d_logging_connection-&gt;save_log_so_far();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> <a class="code hl_function" href="classvrpn__Auxiliary__Logger__Server.html#a5ffa64c53e73a3bd81ecbbf33edac527">vrpn_Auxiliary_Logger_Server::mainloop</a>();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> <span class="keywordtype">char</span> *d_connection_name;               <span class="comment">// Name to connect to when logging.</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *d_logging_connection; <span class="comment">// Connection to use for logging.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>};</div>
+</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">//************** Client code uses the following *************</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">// Type of a client routine to request new logging and to handle a</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">// report of changed logging.  This callback is called when the</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">// logging server reports a new set of files, which should happen</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// after each request is made.</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00180">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="struct__vrpn__AUXLOGGERCB.html">  180</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__vrpn__AUXLOGGERCB.html">_vrpn_AUXLOGGERCB</a> {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> <span class="keyword">struct </span>timeval msg_time; <span class="comment">// Timestamp of new logging</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        local_in_logfile_name; <span class="comment">// Name of the incoming local log ("" if none).</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_out_logfile_name;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_in_logfile_name;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_out_logfile_name;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>} <a class="code hl_struct" href="struct__vrpn__AUXLOGGERCB.html">vrpn_AUXLOGGERCB</a>;</div>
+</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">typedef</span> void(VRPN_CALLBACK *vrpn_AUXLOGGERREPORTHANDLER)(</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> <span class="keywordtype">void</span> *userdata, <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__AUXLOGGERCB.html">vrpn_AUXLOGGERCB</a> info);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00192">
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger__Remote.html">  192</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Remote.html">vrpn_Auxiliary_Logger_Remote</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger.html">vrpn_Auxiliary_Logger</a> {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> <a class="code hl_class" href="classvrpn__Auxiliary__Logger__Remote.html">vrpn_Auxiliary_Logger_Remote</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c = NULL);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> <span class="comment">// Send a request to the server asking it to log the following.  Each of</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> <span class="comment">// these is with respect to the connection that the auxiliary logger server</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> <span class="comment">// is handling, which may or may not be the one that it is connected to to</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> <span class="comment">// receive this message; it refers to the other side of the new connection</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> <span class="comment">// that the server establishes to do its logging.  Passing a NULL or empty</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> <span class="comment">// string ("") to any of the entries disables that log.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> <span class="comment">// WARNING: If the server is set to connect to its own connection and log</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> <span class="comment">// it, then you must explicitly request a set of empty log files to stop</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> <span class="comment">// it logging the last time because otherwise it never gets the message</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> <span class="comment">// that it dropped the last connection and will continue logging after the</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> <span class="comment">// object is destroyed.</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> <span class="keywordtype">bool</span> send_logging_request(<span class="keyword">const</span> <span class="keywordtype">char</span> *local_in_logfile_name,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *local_out_logfile_name = <span class="stringliteral">""</span>,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_in_logfile_name = <span class="stringliteral">""</span>,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *remote_out_logfile_name = <span class="stringliteral">""</span>)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> <span class="keywordflow">if</span> (!d_connection) {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> <span class="keywordflow">return</span> pack_log_message_of_type(</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            request_logging_m_id, local_in_logfile_name, local_out_logfile_name,</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            remote_in_logfile_name, remote_out_logfile_name);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> <span class="keywordtype">bool</span> send_logging_status_request()</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> <span class="keywordflow">if</span> (!d_connection) {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> <span class="keywordflow">return</span> pack_log_message_of_type(request_logging_status_m_id, NULL, NULL,</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                                        NULL, NULL);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> <span class="comment">// Register/unregister a callback handler for the logging response.</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> register_report_handler(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                                        vrpn_AUXLOGGERREPORTHANDLER handler)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> <span class="keywordflow">return</span> d_callback_list.register_handler(userdata, handler);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    };</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> unregister_report_handler(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                                          vrpn_AUXLOGGERREPORTHANDLER handler)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> <span class="keywordflow">return</span> d_callback_list.unregister_handler(userdata, handler);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> <span class="comment">// This routine calls the mainloop of the connection it's on</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classvrpn__Auxiliary__Logger__Remote.html#a5ffa64c53e73a3bd81ecbbf33edac527">  242</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Auxiliary__Logger__Remote.html#a5ffa64c53e73a3bd81ecbbf33edac527">mainloop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> <span class="comment">// Static handler for the logging report message.</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> <span class="comment">// Use the base-class unpack method to convert the data into strings.</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> <a class="code hl_class" href="classvrpn__Callback__List.html">vrpn_Callback_List&lt;vrpn_AUXLOGGERCB&gt;</a> d_callback_list;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    handle_report_message(<span class="keywordtype">void</span> *userdata, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>};</div>
+</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger__Remote_html"><div class="ttname"><a href="classvrpn__Auxiliary__Logger__Remote.html">vrpn_Auxiliary_Logger_Remote</a></div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:192</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger__Remote_html_a5ffa64c53e73a3bd81ecbbf33edac527"><div class="ttname"><a href="classvrpn__Auxiliary__Logger__Remote.html#a5ffa64c53e73a3bd81ecbbf33edac527">vrpn_Auxiliary_Logger_Remote::mainloop</a></div><div class="ttdeci">virtual void mainloop(void)</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger__Server__Generic_html"><div class="ttname"><a href="classvrpn__Auxiliary__Logger__Server__Generic.html">vrpn_Auxiliary_Logger_Server_Generic</a></div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:134</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger__Server__Generic_html_a5ffa64c53e73a3bd81ecbbf33edac527"><div class="ttname"><a href="classvrpn__Auxiliary__Logger__Server__Generic.html#a5ffa64c53e73a3bd81ecbbf33edac527">vrpn_Auxiliary_Logger_Server_Generic::mainloop</a></div><div class="ttdeci">virtual void mainloop(void)</div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:158</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger__Server_html"><div class="ttname"><a href="classvrpn__Auxiliary__Logger__Server.html">vrpn_Auxiliary_Logger_Server</a></div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:65</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger__Server_html_a5ffa64c53e73a3bd81ecbbf33edac527"><div class="ttname"><a href="classvrpn__Auxiliary__Logger__Server.html#a5ffa64c53e73a3bd81ecbbf33edac527">vrpn_Auxiliary_Logger_Server::mainloop</a></div><div class="ttdeci">virtual void mainloop(void)</div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:70</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger_html"><div class="ttname"><a href="classvrpn__Auxiliary__Logger.html">vrpn_Auxiliary_Logger</a></div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:27</div></div>
+<div class="ttc" id="aclassvrpn__Auxiliary__Logger_html_ad323fbb3a0d01ece28df8432733664fb"><div class="ttname"><a href="classvrpn__Auxiliary__Logger.html#ad323fbb3a0d01ece28df8432733664fb">vrpn_Auxiliary_Logger::register_types</a></div><div class="ttdeci">virtual int register_types(void)</div></div>
+<div class="ttc" id="aclassvrpn__BaseClassUnique_html_a5f63dfe395699defbadb9a7cd1ee9e29"><div class="ttname"><a href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">vrpn_BaseClassUnique::server_mainloop</a></div><div class="ttdeci">void server_mainloop(void)</div></div>
+<div class="ttc" id="aclassvrpn__BaseClass_html"><div class="ttname"><a href="classvrpn__BaseClass.html">vrpn_BaseClass</a></div><div class="ttdef"><b>定义</b> vrpn_BaseClass.h:310</div></div>
+<div class="ttc" id="aclassvrpn__Callback__List_html"><div class="ttname"><a href="classvrpn__Callback__List.html">vrpn_Callback_List</a></div><div class="ttdef"><b>定义</b> vrpn_BaseClass.h:361</div></div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="astruct__vrpn__AUXLOGGERCB_html"><div class="ttname"><a href="struct__vrpn__AUXLOGGERCB.html">_vrpn_AUXLOGGERCB</a></div><div class="ttdef"><b>定义</b> vrpn_Auxiliary_Logger.h:180</div></div>
+<div class="ttc" id="astructvrpn__HANDLERPARAM_html"><div class="ttname"><a href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></div><div class="ttdoc">This structure is what is passed to a vrpn_Connection message callback.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:41</div></div>
+<div class="ttc" id="avrpn__BaseClass_8h_html"><div class="ttname"><a href="vrpn__BaseClass_8h.html">vrpn_BaseClass.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

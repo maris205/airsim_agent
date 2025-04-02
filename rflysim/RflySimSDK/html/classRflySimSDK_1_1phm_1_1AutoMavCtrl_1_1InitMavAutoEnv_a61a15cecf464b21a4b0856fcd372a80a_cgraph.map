@@ -1,0 +1,7 @@
+<map id="BReset" name="BReset">
+<area shape="rect" id="Node000001" title="重置环境到原始状态的方法。" alt="" coords="5,31,71,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ad2e2c4da9d12bfe2ef0002eccc08a00f" title="修改批处理文件以设置单个无人机的方法。" alt="" coords="120,5,186,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,34,104,27,105,32,72,39"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac56b15c3f8372b0c42dce1110c686660" title="获取指定框架的路径的方法。" alt="" coords="119,56,188,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="72,49,104,56,103,61,71,54"/>
+</map>

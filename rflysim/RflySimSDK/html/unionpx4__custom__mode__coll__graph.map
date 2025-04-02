@@ -1,0 +1,5 @@
+<map id="px4_custom_mode" name="px4_custom_mode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,137,139"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,5,98,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,47,74,112,68,112,68,47"/>
+</map>

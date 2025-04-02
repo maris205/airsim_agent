@@ -1,0 +1,1216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: ReqCopterSim类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>ReqCopterSim</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html">ReqCopterSim</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">ReqCopterSim类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>类用于初始化指定CopterSim  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化ReqCopterSim类的实例。 开始监听20005端口以获取CopterID的 <a class="el" href="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1RflyTimeStmp.html">RflyTimeStmp</a> <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a972c48d31eefa5b8e0820c0dfa1f035a" id="r_a972c48d31eefa5b8e0820c0dfa1f035a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a972c48d31eefa5b8e0820c0dfa1f035a">getLocalIp</a> (self)</td></tr>
+<tr class="memdesc:a972c48d31eefa5b8e0820c0dfa1f035a"><td class="mdescLeft"> </td><td class="mdescRight">获取本地IP地址。  <br/></td></tr>
+<tr class="separator:a972c48d31eefa5b8e0820c0dfa1f035a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a022e8f000f8bfc1a75627bb87bded56e" id="r_a022e8f000f8bfc1a75627bb87bded56e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a022e8f000f8bfc1a75627bb87bded56e">isValidIp</a> (self, address)</td></tr>
+<tr class="memdesc:a022e8f000f8bfc1a75627bb87bded56e"><td class="mdescLeft"> </td><td class="mdescRight">检查给定的IP地址是否有效。  <br/></td></tr>
+<tr class="separator:a022e8f000f8bfc1a75627bb87bded56e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bdf524c13fb972e4dfab08b68ae9b20" id="r_a9bdf524c13fb972e4dfab08b68ae9b20"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bdf524c13fb972e4dfab08b68ae9b20">get_all_ip</a> (self)</td></tr>
+<tr class="memdesc:a9bdf524c13fb972e4dfab08b68ae9b20"><td class="mdescLeft"> </td><td class="mdescRight">获取本机所有 IP 地址  <br/></td></tr>
+<tr class="separator:a9bdf524c13fb972e4dfab08b68ae9b20"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acd00c8d0488929bc3e87dc9204a56042" id="r_acd00c8d0488929bc3e87dc9204a56042"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acd00c8d0488929bc3e87dc9204a56042">isIpLocal</a> (self, IP)</td></tr>
+<tr class="memdesc:acd00c8d0488929bc3e87dc9204a56042"><td class="mdescLeft"> </td><td class="mdescRight">判断IP地址是否为本地IP  <br/></td></tr>
+<tr class="separator:acd00c8d0488929bc3e87dc9204a56042"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a44f42a7b3d36ea204a341ec7a73ee01f" id="r_a44f42a7b3d36ea204a341ec7a73ee01f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a44f42a7b3d36ea204a341ec7a73ee01f">updateSimMsg</a> (self)</td></tr>
+<tr class="memdesc:a44f42a7b3d36ea204a341ec7a73ee01f"><td class="mdescLeft"> </td><td class="mdescRight">更新模拟消息。  <br/></td></tr>
+<tr class="separator:a44f42a7b3d36ea204a341ec7a73ee01f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afff451d4624bbcb1e325de38bb8fd3bf" id="r_afff451d4624bbcb1e325de38bb8fd3bf"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afff451d4624bbcb1e325de38bb8fd3bf">getSimIpList</a> (self)</td></tr>
+<tr class="memdesc:afff451d4624bbcb1e325de38bb8fd3bf"><td class="mdescLeft"> </td><td class="mdescRight">获取CopterSim IP列表。  <br/></td></tr>
+<tr class="separator:afff451d4624bbcb1e325de38bb8fd3bf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af2780f533f88d104886b21e69602baaf" id="r_af2780f533f88d104886b21e69602baaf"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af2780f533f88d104886b21e69602baaf">getSimIpID</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:af2780f533f88d104886b21e69602baaf"><td class="mdescLeft"> </td><td class="mdescRight">根据CopterID获取其IP地址。  <br/></td></tr>
+<tr class="separator:af2780f533f88d104886b21e69602baaf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15060d73a33b6cf6a2a9d72c603e5cf6" id="r_a15060d73a33b6cf6a2a9d72c603e5cf6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a15060d73a33b6cf6a2a9d72c603e5cf6">getHostIP</a> (self)</td></tr>
+<tr class="memdesc:a15060d73a33b6cf6a2a9d72c603e5cf6"><td class="mdescLeft"> </td><td class="mdescRight">获取主机IP地址。  <br/></td></tr>
+<tr class="separator:a15060d73a33b6cf6a2a9d72c603e5cf6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e53c2c2f48a4f24cfeb8f02bce9af36" id="r_a4e53c2c2f48a4f24cfeb8f02bce9af36"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e53c2c2f48a4f24cfeb8f02bce9af36">sendReCopterSim</a> (self, CopterID=1, isReqIP=1, UDP_mode=-1, isXyYaw=0, xyYaw=[0, 0, 0], isZRP=0, zRollPitch=[0, 0, 0], otherParams=[0, 0, 0, 0])</td></tr>
+<tr class="memdesc:a4e53c2c2f48a4f24cfeb8f02bce9af36"><td class="mdescLeft"> </td><td class="mdescRight">请求初始化指定的CopterSim。  <br/></td></tr>
+<tr class="separator:a4e53c2c2f48a4f24cfeb8f02bce9af36"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a349f88574a88e69138ab1cd4f4d428b2" id="r_a349f88574a88e69138ab1cd4f4d428b2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a349f88574a88e69138ab1cd4f4d428b2">sendReDllMap</a> (self, CopterID=0, dllOrMap=-1, index=-1, name='')</td></tr>
+<tr class="memdesc:a349f88574a88e69138ab1cd4f4d428b2"><td class="mdescLeft"> </td><td class="mdescRight">请求更改CopterSim的DLL模型和地图。  <br/></td></tr>
+<tr class="separator:a349f88574a88e69138ab1cd4f4d428b2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a23a25d5e2913be5cc45e8a53d00f78e3" id="r_a23a25d5e2913be5cc45e8a53d00f78e3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a23a25d5e2913be5cc45e8a53d00f78e3">sendReSimDllName</a> (self, CopterID=1, name='')</td></tr>
+<tr class="memdesc:a23a25d5e2913be5cc45e8a53d00f78e3"><td class="mdescLeft"> </td><td class="mdescRight">请求通过名称更改CopterSim的DLL模型。  <br/></td></tr>
+<tr class="separator:a23a25d5e2913be5cc45e8a53d00f78e3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae0fb448b206ebc2889f3cc504c53c181" id="r_ae0fb448b206ebc2889f3cc504c53c181"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0fb448b206ebc2889f3cc504c53c181">sendReSimDllIdx</a> (self, CopterID=1, index=-1)</td></tr>
+<tr class="memdesc:ae0fb448b206ebc2889f3cc504c53c181"><td class="mdescLeft"> </td><td class="mdescRight">请求通过索引更改CopterSim的DLL模型。  <br/></td></tr>
+<tr class="separator:ae0fb448b206ebc2889f3cc504c53c181"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a066bdb88bd2e8932f363919b217b8033" id="r_a066bdb88bd2e8932f363919b217b8033"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a066bdb88bd2e8932f363919b217b8033">sendReSimMapName</a> (self, CopterID=1, name='')</td></tr>
+<tr class="memdesc:a066bdb88bd2e8932f363919b217b8033"><td class="mdescLeft"> </td><td class="mdescRight">请求通过名称更改CopterSim的地图。  <br/></td></tr>
+<tr class="separator:a066bdb88bd2e8932f363919b217b8033"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4abdd798c7d2ab6e879f9e23bbd881b7" id="r_a4abdd798c7d2ab6e879f9e23bbd881b7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4abdd798c7d2ab6e879f9e23bbd881b7">sendReSimMapIdx</a> (self, CopterID=1, index=-1)</td></tr>
+<tr class="memdesc:a4abdd798c7d2ab6e879f9e23bbd881b7"><td class="mdescLeft"> </td><td class="mdescRight">请求通过索引更改CopterSim的地图。  <br/></td></tr>
+<tr class="separator:a4abdd798c7d2ab6e879f9e23bbd881b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adc3fe54f46508551752140a37c88e873" id="r_adc3fe54f46508551752140a37c88e873"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adc3fe54f46508551752140a37c88e873">sendReSimIP</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:adc3fe54f46508551752140a37c88e873"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim向主机计算机发送数据。  <br/></td></tr>
+<tr class="separator:adc3fe54f46508551752140a37c88e873"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a16ca1f216db12b50e76043d9134d6e0a" id="r_a16ca1f216db12b50e76043d9134d6e0a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a16ca1f216db12b50e76043d9134d6e0a">sendReSimUdpMode</a> (self, CopterID=1, UDP_mode=-1)</td></tr>
+<tr class="memdesc:a16ca1f216db12b50e76043d9134d6e0a"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim将UDP模式更改为指定的值。  <br/></td></tr>
+<tr class="separator:a16ca1f216db12b50e76043d9134d6e0a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a74cc604f93fd8e353b368293dd065e58" id="r_a74cc604f93fd8e353b368293dd065e58"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a74cc604f93fd8e353b368293dd065e58">sendReSimXYyaw</a> (self, CopterID=1, xyYaw=[0, 0, 0])</td></tr>
+<tr class="memdesc:a74cc604f93fd8e353b368293dd065e58"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim将xyYaw更改为指定的值。  <br/></td></tr>
+<tr class="separator:a74cc604f93fd8e353b368293dd065e58"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6327a91322c51ca16bb60cde06b6d0ce" id="r_a6327a91322c51ca16bb60cde06b6d0ce"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6327a91322c51ca16bb60cde06b6d0ce">sendReGPSOrin</a> (self, CopterID=1, LLA=[0, 0, 0])</td></tr>
+<tr class="memdesc:a6327a91322c51ca16bb60cde06b6d0ce"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim将GPS原点更改为指定的值。  <br/></td></tr>
+<tr class="separator:a6327a91322c51ca16bb60cde06b6d0ce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9a4004e6c8a009eca2bd38c89d2b03b8" id="r_a9a4004e6c8a009eca2bd38c89d2b03b8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4004e6c8a009eca2bd38c89d2b03b8">sendReGPSPos</a> (self, CopterID=1, lat=0, lon=0, yaw=0)</td></tr>
+<tr class="memdesc:a9a4004e6c8a009eca2bd38c89d2b03b8"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim将位置更改为指定的GPS值。  <br/></td></tr>
+<tr class="separator:a9a4004e6c8a009eca2bd38c89d2b03b8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a58140f602a3a10fd9053dac25543f772" id="r_a58140f602a3a10fd9053dac25543f772"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a58140f602a3a10fd9053dac25543f772">sendEnGpsMode</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:a58140f602a3a10fd9053dac25543f772"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim切换到GPS显示模式。  <br/></td></tr>
+<tr class="separator:a58140f602a3a10fd9053dac25543f772"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8cda8c4be87d0efe8cf4dc8d8f79d2d6" id="r_a8cda8c4be87d0efe8cf4dc8d8f79d2d6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cda8c4be87d0efe8cf4dc8d8f79d2d6">sendEnXyMode</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:a8cda8c4be87d0efe8cf4dc8d8f79d2d6"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim切换到xy显示模式。  <br/></td></tr>
+<tr class="separator:a8cda8c4be87d0efe8cf4dc8d8f79d2d6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21d7a1c9435d67453f1830cb56e4753e" id="r_a21d7a1c9435d67453f1830cb56e4753e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d7a1c9435d67453f1830cb56e4753e">sendReSimXyzRPYaw</a> (self, CopterID=1, Xyz=[0, 0, 0], RPYaw=[0, 0, 0])</td></tr>
+<tr class="memdesc:a21d7a1c9435d67453f1830cb56e4753e"><td class="mdescLeft"> </td><td class="mdescRight">请求指定的CopterSim将Xyz和RollPitchYaw更改为指定的值。  <br/></td></tr>
+<tr class="separator:a21d7a1c9435d67453f1830cb56e4753e"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a94828fba7af3db74d6b37a116f5e19fa" id="r_a94828fba7af3db74d6b37a116f5e19fa"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a94828fba7af3db74d6b37a116f5e19fa">udp_time</a></td></tr>
+<tr class="memdesc:a94828fba7af3db74d6b37a116f5e19fa"><td class="mdescLeft"> </td><td class="mdescRight">创建UDP套接字并设置选项。  <br/></td></tr>
+<tr class="separator:a94828fba7af3db74d6b37a116f5e19fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51c9c8ae3bfde53994362ed68af45813" id="r_a51c9c8ae3bfde53994362ed68af45813"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a51c9c8ae3bfde53994362ed68af45813">RflyTimeVect</a></td></tr>
+<tr class="memdesc:a51c9c8ae3bfde53994362ed68af45813"><td class="mdescLeft"> </td><td class="mdescRight">存储接收到的RflyTimeStmp数据的向量。  <br/></td></tr>
+<tr class="separator:a51c9c8ae3bfde53994362ed68af45813"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7fe8b824e5d0f1cec8b76b251f7a88b2" id="r_a7fe8b824e5d0f1cec8b76b251f7a88b2"><td align="right" class="memItemLeft" valign="top"># 为本机 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fe8b824e5d0f1cec8b76b251f7a88b2">RflyLocalIPVect</a></td></tr>
+<tr class="memdesc:a7fe8b824e5d0f1cec8b76b251f7a88b2"><td class="mdescLeft"> </td><td class="mdescRight">存储本电脑的所有本地IP地址，用于判断数据是否来着本机  <br/></td></tr>
+<tr class="separator:a7fe8b824e5d0f1cec8b76b251f7a88b2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aabe6aad5d00fba9b50e45b2daf7b065d" id="r_aabe6aad5d00fba9b50e45b2daf7b065d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe6aad5d00fba9b50e45b2daf7b065d">hostIp</a></td></tr>
+<tr class="memdesc:aabe6aad5d00fba9b50e45b2daf7b065d"><td class="mdescLeft"> </td><td class="mdescRight">获取并存储本地主机的IP地址。  <br/></td></tr>
+<tr class="separator:aabe6aad5d00fba9b50e45b2daf7b065d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a82243dac20a759e1d2001034cb36f9e0" id="r_a82243dac20a759e1d2001034cb36f9e0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a82243dac20a759e1d2001034cb36f9e0">isFalseMulti</a></td></tr>
+<tr class="memdesc:a82243dac20a759e1d2001034cb36f9e0"><td class="mdescLeft"> </td><td class="mdescRight">表示是否为错误的多播状态。  <br/></td></tr>
+<tr class="separator:a82243dac20a759e1d2001034cb36f9e0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a92ebcc3bd3f8061ffd1197f4910382df" id="r_a92ebcc3bd3f8061ffd1197f4910382df"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ebcc3bd3f8061ffd1197f4910382df">Iplist</a></td></tr>
+<tr class="memdesc:a92ebcc3bd3f8061ffd1197f4910382df"><td class="mdescLeft"> </td><td class="mdescRight">CopterSim的IP列表  <br/></td></tr>
+<tr class="separator:a92ebcc3bd3f8061ffd1197f4910382df"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>类用于初始化指定CopterSim </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化ReqCopterSim类的实例。 开始监听20005端口以获取CopterID的 <a class="el" href="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1RflyTimeStmp.html">RflyTimeStmp</a> </p>
+<pre class="fragment">Start to listen to 20005 port to get RflyTimeStmp of CopterID</pre>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9bdf524c13fb972e4dfab08b68ae9b20" name="a9bdf524c13fb972e4dfab08b68ae9b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdf524c13fb972e4dfab08b68ae9b20">◆ </a></span>get_all_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_all_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取本机所有 IP 地址 </p>
+<ul>
+<li><a class="anchor" id="get_all_ip"></a> <dl class="section return"><dt>返回</dt><dd>返回本地IP地址列表。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a15060d73a33b6cf6a2a9d72c603e5cf6" name="a15060d73a33b6cf6a2a9d72c603e5cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15060d73a33b6cf6a2a9d72c603e5cf6">◆ </a></span>getHostIP()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getHostIP </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取主机IP地址。 </p>
+<ul>
+<li><a class="anchor" id="getHostIP"></a> <dl class="section return"><dt>返回</dt><dd>返回主机IP地址。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a972c48d31eefa5b8e0820c0dfa1f035a" name="a972c48d31eefa5b8e0820c0dfa1f035a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972c48d31eefa5b8e0820c0dfa1f035a">◆ </a></span>getLocalIp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getLocalIp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取本地IP地址。 </p>
+<ul>
+<li><a class="anchor" id="getLocalIp"></a> <dl class="section return"><dt>返回</dt><dd>返回本地IP地址字符串。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="70" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a972c48d31eefa5b8e0820c0dfa1f035a_icgraph.svg" width="586"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="af2780f533f88d104886b21e69602baaf" name="af2780f533f88d104886b21e69602baaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2780f533f88d104886b21e69602baaf">◆ </a></span>getSimIpID()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getSimIpID </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据CopterID获取其IP地址。 </p>
+<ul>
+<li><a class="anchor" id="getSimIpID"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要获取IP地址的CopterSim的ID。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>对应CopterSim的IP地址，如果未找到则为空字符串。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="138" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_af2780f533f88d104886b21e69602baaf_cgraph.svg" width="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="595" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_af2780f533f88d104886b21e69602baaf_icgraph.svg" width="479"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="afff451d4624bbcb1e325de38bb8fd3bf" name="afff451d4624bbcb1e325de38bb8fd3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff451d4624bbcb1e325de38bb8fd3bf">◆ </a></span>getSimIpList()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getSimIpList </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取CopterSim IP列表。 </p>
+<ul>
+<li><a class="anchor" id="getSimIpList"></a> 返回包含所有检测到的CopterSim的ID和IP地址的列表。 <dl class="section return"><dt>返回</dt><dd>CopterSim的ID和IP地址的列表。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="acd00c8d0488929bc3e87dc9204a56042" name="acd00c8d0488929bc3e87dc9204a56042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd00c8d0488929bc3e87dc9204a56042">◆ </a></span>isIpLocal()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isIpLocal </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>判断IP地址是否为本地IP </p>
+<ul>
+<li><a class="anchor" id="isIpLocal"></a> <dl class="section return"><dt>返回</dt><dd>返回本地IP地址列表。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_acd00c8d0488929bc3e87dc9204a56042_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a022e8f000f8bfc1a75627bb87bded56e" name="a022e8f000f8bfc1a75627bb87bded56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022e8f000f8bfc1a75627bb87bded56e">◆ </a></span>isValidIp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isValidIp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>address</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检查给定的IP地址是否有效。 </p>
+<ul>
+<li><a class="anchor" id="isValidIp"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">address</td><td>要检查的IP地址字符串。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果IP地址有效，则返回True，否则返回False。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="595" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a022e8f000f8bfc1a75627bb87bded56e_icgraph.svg" width="598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a58140f602a3a10fd9053dac25543f772" name="a58140f602a3a10fd9053dac25543f772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58140f602a3a10fd9053dac25543f772">◆ </a></span>sendEnGpsMode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendEnGpsMode </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim切换到GPS显示模式。 </p>
+<ul>
+<li><a class="anchor" id="sendEnGpsMode"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a58140f602a3a10fd9053dac25543f772_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a8cda8c4be87d0efe8cf4dc8d8f79d2d6" name="a8cda8c4be87d0efe8cf4dc8d8f79d2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cda8c4be87d0efe8cf4dc8d8f79d2d6">◆ </a></span>sendEnXyMode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendEnXyMode </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim切换到xy显示模式。 </p>
+<ul>
+<li><a class="anchor" id="sendEnXyMode"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a8cda8c4be87d0efe8cf4dc8d8f79d2d6_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a4e53c2c2f48a4f24cfeb8f02bce9af36" name="a4e53c2c2f48a4f24cfeb8f02bce9af36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e53c2c2f48a4f24cfeb8f02bce9af36">◆ </a></span>sendReCopterSim()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReCopterSim </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isReqIP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>UDP_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isXyYaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>xyYaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isZRP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>zRollPitch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>otherParams</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0,0]</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求初始化指定的CopterSim。 </p>
+<ul>
+<li><a class="anchor" id="sendReCopterSim"></a> </li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认值为1。 </td></tr>
+<tr><td class="paramname">isReqIP</td><td>表示是否进行IP请求。小于等于0表示不发响应，大于0表示将进行请求。默认值为1。 </td></tr>
+<tr><td class="paramname">UDP_mode</td><td>设置UDP模式。小于0表示不发响应，大于等于0将UDP模式设置为指定值。默认值为-1。 </td></tr>
+<tr><td class="paramname">isXyYaw</td><td>表示是否使用XY和Yaw值。小于等于0表示不发响应，大于0表示将使用这些值。默认值为0。 </td></tr>
+<tr><td class="paramname">xyYaw</td><td>一个列表，包含XY坐标和Yaw角度。默认值为[0, 0, 0]。 </td></tr>
+<tr><td class="paramname">isZRP</td><td>表示是否使用Z、Roll和Pitch值。小于等于0表示不发响应，大于0表示将使用这些值。默认值为0。 </td></tr>
+<tr><td class="paramname">zRollPitch</td><td>一个列表，包含Z、Roll和Pitch值。默认值为[0, 0, 0]。 </td></tr>
+<tr><td class="paramname">otherParams</td><td>一个列表，用于保留未来使用的其他参数。默认值为[0, 0, 0, 0]。</td></tr>
+</table>
+</dd>
+</dl>
+<p>此方法根据指定的参数构建一条消息，并将其发送到指定的Copter。</p>
+<p>如果<code>isReqIP</code>大于0且Copter的IP地址为<code>127.0.0.1</code>，则将<code>isReqIP</code>的值设置为0。 消息然后发送到组播地址<code>224.0.0.10</code>上的端口<code>20002</code>。如果<code>isFalseMulti</code>为真且Copter的IP地址不为空， 则消息还将直接发送到Copter的IP地址上的端口<code>20002</code>。</p>
+<pre class="fragment">struct reCopterSimMsg{
+    int checksum; //数据校验位1234567，用于校验数据是否正确
+    int CopterID;// 请求的CopterID，用于校验请求是否正确。
+    int8_t isReqIP; //如果&lt;=0则不响应，如果&gt;0则勾选联机勾选，且将飞控数据发给本电脑IP（发送本请求消息的电脑）
+    int8_t isXyYaw; //如果&lt;=0则不响应，如果&gt;0，则使用后面xyYaw的值，重新部署飞机位置
+    int8_t isZRP; // 如果&lt;=0则不响应（默认z会贴合地形，rollPitch会变为0），如果&gt;0，则使用zRollPitch的值部署飞机位姿。本接口可以让飞机初始化在空中
+    int8_t UDP_mode; //如果&lt;0，则不响应。如果&gt;=0，则修改UDP模式为指定值。
+    uint8_t otherParams[4]; //保留位其他参数，留给将来使用。
+    float zRollPitch[3]; //zRollPitch的初始值，单位米和度，z向下为正
+    float yaw;// 初始偏航角，单位度
+    double xy[2]; // 初始xy的值，支持双精度大地图，单位米，北东地
+}; //2i4b4B4f2d
+if isXyYaw==2: configure GPS Origin through lat: xy[0] lon: xy[1] alt: yaw
+if isXyYaw==3: configure GPS pos through lat: xy[0] lon: xy[1] yaw
+</pre> <div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a4e53c2c2f48a4f24cfeb8f02bce9af36_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="392" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a4e53c2c2f48a4f24cfeb8f02bce9af36_icgraph.svg" width="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a349f88574a88e69138ab1cd4f4d428b2" name="a349f88574a88e69138ab1cd4f4d428b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349f88574a88e69138ab1cd4f4d428b2">◆ </a></span>sendReDllMap()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReDllMap </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>dllOrMap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求更改CopterSim的DLL模型和地图。 </p>
+<ul>
+<li><a class="anchor" id="sendReDllMap"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。如果为0，则不给出任何响应。如果为-1，则命令会广播到所有的Copter。如果大于0，则命令会发送到指定的Copter。 </td></tr>
+<tr><td class="paramname">dllOrMap</td><td>切换选项：小于等于0表示不发响应，1表示更改DLL模型，2表示更改地图。 </td></tr>
+<tr><td class="paramname">index</td><td>选项ID号；如果小于0，则使用名称确定选项。如果大于等于0，则使用索引替代名称。 </td></tr>
+<tr><td class="paramname">name</td><td>DLL模型或地图的名称。默认为空字符串。</td></tr>
+</table>
+</dd>
+</dl>
+此方法根据指定的参数构建一条消息，并将其发送到CopterSim。 消息发送到组播地址<code>224.0.0.10</code>上的端口<code>20002</code>。如果<code>isFalseMulti</code>为真且Copter的IP地址不为空， 则消息还将直接发送到Copter的IP地址上的端口<code>20002</code>。</li>
+</ul>
+<pre class="fragment">请求改变CopterSim的DLL模型和地图
+struct CptSimCMD{
+    int checksum;//校验码，用于确认数据正确性，这里取值 1234567895
+    int CopterID; //目标飞机ID，如果为0则不响应；如果为-1，则广播给所有飞机；如果&gt;0则给指定飞机。
+    int flag; //切换选项：如果&lt;=0则不响应；如果=1，则修改DLL模型；如果=2，则修改地图；
+    int index; // 选项ID序号；如果&lt;0则不响应，使用name来确定选项；如果&gt;=0，则用序号而不是name来确定选项。
+    char name[48]; //DLL模型或地图的名字
+}//长度64，4i48s
+</pre> <div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="138" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a349f88574a88e69138ab1cd4f4d428b2_cgraph.svg" width="663"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="190" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a349f88574a88e69138ab1cd4f4d428b2_icgraph.svg" width="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a6327a91322c51ca16bb60cde06b6d0ce" name="a6327a91322c51ca16bb60cde06b6d0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6327a91322c51ca16bb60cde06b6d0ce">◆ </a></span>sendReGPSOrin()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReGPSOrin </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>LLA</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim将GPS原点更改为指定的值。 </p>
+<ul>
+<li><a class="anchor" id="sendReGPSOrin"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">LLA</td><td>所需的GPS原点值（纬度、经度、高度）。默认为[0, 0, 0]。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a6327a91322c51ca16bb60cde06b6d0ce_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a9a4004e6c8a009eca2bd38c89d2b03b8" name="a9a4004e6c8a009eca2bd38c89d2b03b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4004e6c8a009eca2bd38c89d2b03b8">◆ </a></span>sendReGPSPos()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReGPSPos </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim将位置更改为指定的GPS值。 </p>
+<ul>
+<li><a class="anchor" id="sendReGPSPos"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">lat</td><td>所需的纬度值。默认为0。 </td></tr>
+<tr><td class="paramname">lon</td><td>所需的经度值。默认为0。 </td></tr>
+<tr><td class="paramname">yaw</td><td>所需的偏航值。默认为0。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a9a4004e6c8a009eca2bd38c89d2b03b8_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ae0fb448b206ebc2889f3cc504c53c181" name="ae0fb448b206ebc2889f3cc504c53c181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0fb448b206ebc2889f3cc504c53c181">◆ </a></span>sendReSimDllIdx()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimDllIdx </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求通过索引更改CopterSim的DLL模型。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimDllIdx"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">index</td><td>DLL模型的索引。默认为-1。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_ae0fb448b206ebc2889f3cc504c53c181_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a23a25d5e2913be5cc45e8a53d00f78e3" name="a23a25d5e2913be5cc45e8a53d00f78e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a25d5e2913be5cc45e8a53d00f78e3">◆ </a></span>sendReSimDllName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimDllName </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求通过名称更改CopterSim的DLL模型。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimDllName"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">name</td><td>DLL模型的名称。默认为空字符串。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a23a25d5e2913be5cc45e8a53d00f78e3_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="adc3fe54f46508551752140a37c88e873" name="adc3fe54f46508551752140a37c88e873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3fe54f46508551752140a37c88e873">◆ </a></span>sendReSimIP()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimIP </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim向主机计算机发送数据。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimIP"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_adc3fe54f46508551752140a37c88e873_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a4abdd798c7d2ab6e879f9e23bbd881b7" name="a4abdd798c7d2ab6e879f9e23bbd881b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abdd798c7d2ab6e879f9e23bbd881b7">◆ </a></span>sendReSimMapIdx()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimMapIdx </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求通过索引更改CopterSim的地图。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimMapIdx"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">index</td><td>地图的索引。默认为-1。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-16-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-16-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-16-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a4abdd798c7d2ab6e879f9e23bbd881b7_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a066bdb88bd2e8932f363919b217b8033" name="a066bdb88bd2e8932f363919b217b8033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066bdb88bd2e8932f363919b217b8033">◆ </a></span>sendReSimMapName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimMapName </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求通过名称更改CopterSim的地图。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimMapName"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">name</td><td>地图的名称。默认为空字符串。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-17-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-17-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-17-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a066bdb88bd2e8932f363919b217b8033_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a16ca1f216db12b50e76043d9134d6e0a" name="a16ca1f216db12b50e76043d9134d6e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ca1f216db12b50e76043d9134d6e0a">◆ </a></span>sendReSimUdpMode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimUdpMode </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>UDP_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim将UDP模式更改为指定的值。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimUdpMode"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">UDP_mode</td><td>所需的UDP模式。默认为-1。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-18-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-18-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-18-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a16ca1f216db12b50e76043d9134d6e0a_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a74cc604f93fd8e353b368293dd065e58" name="a74cc604f93fd8e353b368293dd065e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74cc604f93fd8e353b368293dd065e58">◆ </a></span>sendReSimXYyaw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimXYyaw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>xyYaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim将xyYaw更改为指定的值。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimXYyaw"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">xyYaw</td><td>所需的xyYaw值。默认为[0, 0, 0]。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-19-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-19-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-19-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a74cc604f93fd8e353b368293dd065e58_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a21d7a1c9435d67453f1830cb56e4753e" name="a21d7a1c9435d67453f1830cb56e4753e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d7a1c9435d67453f1830cb56e4753e">◆ </a></span>sendReSimXyzRPYaw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReSimXyzRPYaw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Xyz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>RPYaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求指定的CopterSim将Xyz和RollPitchYaw更改为指定的值。 </p>
+<ul>
+<li><a class="anchor" id="sendReSimXyzRPYaw"></a> <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>要发送命令的Copter的ID。默认为1。 </td></tr>
+<tr><td class="paramname">Xyz</td><td>所需的Xyz值。默认为[0, 0, 0]。 </td></tr>
+<tr><td class="paramname">RPYaw</td><td>所需的滚转、俯仰和偏航值。默认为[0, 0, 0]。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-20-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-20-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-20-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="403" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a21d7a1c9435d67453f1830cb56e4753e_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a44f42a7b3d36ea204a341ec7a73ee01f" name="a44f42a7b3d36ea204a341ec7a73ee01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f42a7b3d36ea204a341ec7a73ee01f">◆ </a></span>updateSimMsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">updateSimMsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>更新模拟消息。 </p>
+<ul>
+<li><a class="anchor" id="updateSimMsg"></a> 设置UDP套接字的超时时间，并监听CopterSim的心跳消息。 将接收到的有效消息存储在 <a class="el" href="#a51c9c8ae3bfde53994362ed68af45813">RflyTimeVect</a> 向量中。 </li>
+</ul>
+<div class="dynheader closed" id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-21-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-21-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-21-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a44f42a7b3d36ea204a341ec7a73ee01f_cgraph.svg" width="372"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-22-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-22-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-22-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="595" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim_a44f42a7b3d36ea204a341ec7a73ee01f_icgraph.svg" width="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aabe6aad5d00fba9b50e45b2daf7b065d" name="aabe6aad5d00fba9b50e45b2daf7b065d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe6aad5d00fba9b50e45b2daf7b065d">◆ </a></span>hostIp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">hostIp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取并存储本地主机的IP地址。 </p>
+</div>
+</div>
+<a id="a92ebcc3bd3f8061ffd1197f4910382df" name="a92ebcc3bd3f8061ffd1197f4910382df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ebcc3bd3f8061ffd1197f4910382df">◆ </a></span>Iplist</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Iplist</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>CopterSim的IP列表 </p>
+</div>
+</div>
+<a id="a82243dac20a759e1d2001034cb36f9e0" name="a82243dac20a759e1d2001034cb36f9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82243dac20a759e1d2001034cb36f9e0">◆ </a></span>isFalseMulti</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isFalseMulti</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>表示是否为错误的多播状态。 </p>
+</div>
+</div>
+<a id="a7fe8b824e5d0f1cec8b76b251f7a88b2" name="a7fe8b824e5d0f1cec8b76b251f7a88b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe8b824e5d0f1cec8b76b251f7a88b2">◆ </a></span>RflyLocalIPVect</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"># 为本机 RflyLocalIPVect</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储本电脑的所有本地IP地址，用于判断数据是否来着本机 </p>
+</div>
+</div>
+<a id="a51c9c8ae3bfde53994362ed68af45813" name="a51c9c8ae3bfde53994362ed68af45813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c9c8ae3bfde53994362ed68af45813">◆ </a></span>RflyTimeVect</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">RflyTimeVect</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储接收到的RflyTimeStmp数据的向量。 </p>
+</div>
+</div>
+<a id="a94828fba7af3db74d6b37a116f5e19fa" name="a94828fba7af3db74d6b37a116f5e19fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94828fba7af3db74d6b37a116f5e19fa">◆ </a></span>udp_time</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">udp_time</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>创建UDP套接字并设置选项。 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="ReqCopterSim_8py.html">ReqCopterSim.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

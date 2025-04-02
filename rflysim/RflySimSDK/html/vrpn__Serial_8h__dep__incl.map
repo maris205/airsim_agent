@@ -1,0 +1,107 @@
+<map id="simulink/vrpn/vrpn_Serial.h" name="simulink/vrpn/vrpn_Serial.h">
+<area shape="rect" id="Node000001" title="vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system..." alt="" coords="3152,5,3279,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Analog_8h_source.html" title=" " alt="" coords="2924,96,3051,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3149,57,3042,98,3040,93,3147,52"/>
+<area shape="rect" id="Node000062" href="$vrpn__Dyna_8h_source.html" title=" " alt="" coords="3076,96,3203,139"/>
+<area shape="poly" id="edge53_Node000001_Node000062" title=" " alt="" coords="3190,62,3159,97,3155,94,3186,58"/>
+<area shape="rect" id="Node000063" href="$vrpn__Poser__Tek4662_8h_source.html" title=" " alt="" coords="3227,96,3356,139"/>
+<area shape="poly" id="edge54_Node000001_Node000063" title=" " alt="" coords="3245,58,3276,94,3272,97,3241,62"/>
+<area shape="rect" id="Node000064" href="$vrpn__SerialPort_8h.html" title="Header" alt="" coords="3380,96,3507,139"/>
+<area shape="poly" id="edge55_Node000001_Node000064" title=" " alt="" coords="3284,52,3391,93,3389,98,3282,57"/>
+<area shape="rect" id="Node000003" href="$vrpn__3DConnexion_8h_source.html" title=" " alt="" coords="5,187,133,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2908,122,2334,129,1470,143,634,163,327,175,145,189,133,191,133,186,145,184,326,170,634,157,1470,137,2334,124,2908,117"/>
+<area shape="rect" id="Node000004" href="$vrpn__5DT16_8h_source.html" title=" " alt="" coords="157,187,285,229"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="2909,121,2411,120,1654,126,1252,134,872,147,544,165,409,176,297,189,286,191,285,186,297,184,408,171,543,160,871,142,1251,129,1654,121,2411,115,2909,116"/>
+<area shape="rect" id="Node000005" href="$vrpn__ADBox_8h_source.html" title=" " alt="" coords="309,187,437,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="2908,121,2436,121,1723,128,1345,136,988,149,681,166,449,189,438,191,437,186,449,184,680,161,988,143,1345,131,1723,123,2435,116,2908,116"/>
+<area shape="rect" id="Node000006" href="$vrpn__Adafruit_8h_source.html" title=" " alt="" coords="461,187,589,229"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="2908,121,2460,122,1792,130,1438,139,1105,151,818,167,601,189,590,191,589,186,601,184,817,162,1105,145,1438,133,1792,125,2460,117,2908,116"/>
+<area shape="rect" id="Node000007" href="$vrpn__Analog__5dt_8h_source.html" title=" " alt="" coords="613,187,741,229"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="2909,121,2486,123,1861,132,1532,140,1221,152,954,168,752,189,742,191,741,186,751,184,953,163,1221,147,1531,135,1861,126,2486,118,2909,116"/>
+<area shape="rect" id="Node000008" href="$vrpn__Analog__5dtUSB_8h.html" title="header for 5DT USB (HID) dataglove driver" alt="" coords="764,187,896,229"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="2909,122,2514,126,1937,137,1348,157,1102,171,916,189,897,192,896,187,915,184,1101,166,1348,152,1937,132,2514,121,2909,117"/>
+<area shape="rect" id="Node000009" href="$vrpn__Analog__Output_8h_source.html" title=" " alt="" coords="1073,187,1201,229"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="2908,122,2565,128,2077,140,1582,160,1376,173,1220,189,1202,192,1201,187,1219,184,1375,168,1582,155,2077,135,2565,123,2908,117"/>
+<area shape="rect" id="Node000010" href="$vrpn__Atmel_8h_source.html" title=" " alt="" coords="680,277,807,320"/>
+<area shape="poly" id="edge18_Node000002_Node000010" title=" " alt="" coords="2909,121,2483,122,1875,130,1569,139,1298,151,1088,167,1014,178,966,189,949,198,938,208,927,220,910,232,857,258,805,279,803,274,855,253,908,227,923,216,934,204,946,193,964,184,1013,172,1087,162,1297,145,1569,133,1874,125,2483,117,2908,116"/>
+<area shape="rect" id="Node000011" href="$vrpn__BiosciencesTools_8h_source.html" title=" " alt="" coords="832,277,973,320"/>
+<area shape="poly" id="edge19_Node000002_Node000011" title=" " alt="" coords="2909,121,2497,122,1913,131,1619,139,1359,151,1158,168,1088,178,1042,189,1006,207,972,231,922,279,918,275,969,227,1003,203,1040,184,1087,172,1158,162,1359,146,1619,134,1913,125,2497,117,2909,116"/>
+<area shape="rect" id="Node000012" href="$vrpn__IDEA_8h_source.html" title=" " alt="" coords="997,277,1125,320"/>
+<area shape="poly" id="edge29_Node000002_Node000012" title=" " alt="" coords="2909,121,2480,122,1877,130,1581,138,1328,150,1145,167,1089,177,1063,189,1052,208,1048,232,1051,255,1056,276,1051,278,1046,256,1043,231,1047,206,1059,185,1088,172,1144,162,1327,145,1581,133,1876,124,2480,117,2909,116"/>
+<area shape="rect" id="Node000013" href="$vrpn__LUDL_8h_source.html" title=" " alt="" coords="1149,277,1277,320"/>
+<area shape="poly" id="edge33_Node000002_Node000013" title=" " alt="" coords="2909,121,2553,124,2060,133,1815,142,1599,153,1432,169,1373,179,1335,189,1303,207,1273,231,1230,279,1226,275,1270,227,1300,203,1333,184,1372,173,1431,164,1598,148,1815,136,2060,128,2553,119,2909,116"/>
+<area shape="rect" id="Node000014" href="$vrpn__NationalInstruments_8h_source.html" title=" " alt="" coords="1300,277,1456,320"/>
+<area shape="poly" id="edge39_Node000002_Node000014" title=" " alt="" coords="2908,122,2538,125,2030,135,1783,143,1572,155,1420,170,1374,179,1352,189,1343,208,1345,231,1354,255,1366,276,1361,278,1349,257,1339,232,1338,207,1348,185,1372,174,1419,165,1572,150,1783,138,2030,129,2537,120,2908,116"/>
+<area shape="rect" id="Node000015" href="$vrpn__OmegaTemperature_8h_source.html" title=" " alt="" coords="1480,277,1634,320"/>
+<area shape="poly" id="edge41_Node000002_Node000015" title=" " alt="" coords="2909,122,2541,125,2038,135,1793,144,1584,155,1434,170,1389,179,1367,189,1360,198,1359,207,1367,228,1384,242,1411,255,1481,277,1479,282,1409,260,1381,246,1363,231,1353,208,1355,196,1363,185,1387,174,1433,165,1584,150,1793,138,2038,130,2541,120,2909,116"/>
+<area shape="rect" id="Node000018" href="$vrpn__Analog__Radamec__SPI_8h_source.html" title=" " alt="" coords="1377,187,1548,229"/>
+<area shape="poly" id="edge15_Node000002_Node000018" title=" " alt="" coords="2909,121,2679,122,2345,131,1956,151,1756,168,1560,189,1549,191,1548,186,1559,184,1755,163,1956,146,2345,125,2679,117,2909,115"/>
+<area shape="rect" id="Node000019" href="$vrpn__Analog__USDigital__A2_8h_source.html" title=" " alt="" coords="1572,187,1737,229"/>
+<area shape="poly" id="edge16_Node000002_Node000019" title=" " alt="" coords="2908,121,2705,125,2418,134,2086,155,1916,170,1749,189,1738,191,1737,186,1749,184,1915,165,2086,149,2418,129,2705,119,2908,116"/>
+<area shape="rect" id="Node000020" href="$vrpn__Android_8h_source.html" title=" " alt="" coords="1761,187,1889,229"/>
+<area shape="poly" id="edge17_Node000002_Node000020" title=" " alt="" coords="2908,121,2728,123,2477,133,2191,153,2044,169,1901,189,1890,191,1889,186,1901,184,2044,164,2190,148,2477,127,2727,118,2908,116"/>
+<area shape="rect" id="Node000021" href="$vrpn__CHProducts__Controller__Raw_8h_source.html" title=" " alt="" coords="1913,187,2121,229"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="2909,125,2571,147,2353,165,2133,189,2122,191,2121,186,2133,184,2353,160,2571,141,2909,120"/>
+<area shape="rect" id="Node000022" href="$vrpn__CerealBox_8h_source.html" title=" " alt="" coords="2145,187,2273,229"/>
+<area shape="poly" id="edge21_Node000002_Node000022" title=" " alt="" coords="2909,125,2632,145,2459,163,2285,189,2274,192,2273,186,2285,184,2458,158,2632,139,2908,120"/>
+<area shape="rect" id="Node000023" href="$vrpn__Contour_8h_source.html" title=" " alt="" coords="2297,187,2425,229"/>
+<area shape="poly" id="edge22_Node000002_Node000023" title=" " alt="" coords="2909,128,2695,150,2566,168,2437,189,2426,192,2425,187,2437,184,2565,162,2694,145,2908,122"/>
+<area shape="rect" id="Node000024" href="$vrpn__DevInput_8h_source.html" title=" " alt="" coords="2449,187,2577,229"/>
+<area shape="poly" id="edge23_Node000002_Node000024" title=" " alt="" coords="2909,133,2760,157,2590,189,2578,192,2577,187,2588,184,2759,151,2908,127"/>
+<area shape="rect" id="Node000025" href="$vrpn__Event__Analog_8h_source.html" title=" " alt="" coords="2601,187,2729,229"/>
+<area shape="poly" id="edge24_Node000002_Node000025" title=" " alt="" coords="2910,143,2730,192,2728,187,2908,138"/>
+<area shape="rect" id="Node000027" href="$vrpn__FunctionGenerator_8h_source.html" title=" " alt="" coords="2753,187,2900,229"/>
+<area shape="poly" id="edge25_Node000002_Node000027" title=" " alt="" coords="2938,149,2865,189,2863,184,2935,144"/>
+<area shape="rect" id="Node000028" href="$vrpn__Futaba_8h_source.html" title=" " alt="" coords="2924,187,3051,229"/>
+<area shape="poly" id="edge26_Node000002_Node000028" title=" " alt="" coords="2990,154,2990,186,2985,186,2985,154"/>
+<area shape="rect" id="Node000029" href="$vrpn__GlobalHapticsOrb_8h_source.html" title=" " alt="" coords="3075,187,3218,229"/>
+<area shape="poly" id="edge27_Node000002_Node000029" title=" " alt="" coords="3039,144,3111,184,3108,188,3037,149"/>
+<area shape="rect" id="Node000030" href="$vrpn__Griffin_8h_source.html" title=" " alt="" coords="3241,187,3369,229"/>
+<area shape="poly" id="edge28_Node000002_Node000030" title=" " alt="" coords="3067,138,3242,186,3240,191,3066,143"/>
+<area shape="rect" id="Node000031" href="$vrpn__ImmersionBox_8h_source.html" title=" " alt="" coords="3393,187,3521,229"/>
+<area shape="poly" id="edge30_Node000002_Node000031" title=" " alt="" coords="3067,136,3156,152,3226,160,3295,169,3382,184,3393,187,3392,192,3380,189,3294,174,3225,165,3155,157,3066,142"/>
+<area shape="rect" id="Node000032" href="$vrpn__JoyFly_8h_source.html" title=" " alt="" coords="3545,187,3673,229"/>
+<area shape="poly" id="edge31_Node000002_Node000032" title=" " alt="" coords="3067,136,3198,154,3302,160,3404,166,3533,184,3545,186,3544,192,3533,189,3404,171,3301,165,3198,159,3067,142"/>
+<area shape="rect" id="Node000033" href="$vrpn__Joylin_8h_source.html" title=" " alt="" coords="3697,187,3825,229"/>
+<area shape="poly" id="edge32_Node000002_Node000033" title=" " alt="" coords="3067,136,3161,149,3241,156,3378,160,3514,164,3593,171,3685,184,3697,186,3696,192,3685,189,3592,176,3513,169,3377,165,3240,161,3160,154,3066,142"/>
+<area shape="rect" id="Node000034" href="$vrpn__Laputa_8h.html" title="Header for Laputa VR devices." alt="" coords="3849,187,3977,229"/>
+<area shape="poly" id="edge34_Node000002_Node000034" title=" " alt="" coords="3067,136,3184,151,3283,158,3454,160,3623,161,3722,169,3837,184,3849,186,3848,191,3837,189,3721,174,3623,167,3453,165,3283,164,3183,156,3066,141"/>
+<area shape="rect" id="Node000035" href="$vrpn__Logitech__Controller__Raw_8h_source.html" title=" " alt="" coords="4001,187,4185,229"/>
+<area shape="poly" id="edge35_Node000002_Node000035" title=" " alt="" coords="3067,136,3206,154,3325,163,3431,165,3529,165,3732,164,3850,170,3989,184,4001,186,4000,191,3989,189,3850,176,3732,170,3529,170,3431,171,3325,168,3206,159,3066,141"/>
+<area shape="rect" id="Node000036" href="$vrpn__Magellan_8h_source.html" title=" " alt="" coords="4209,187,4337,229"/>
+<area shape="poly" id="edge36_Node000002_Node000036" title=" " alt="" coords="3067,136,3238,156,3384,164,3513,164,3633,160,3754,155,3882,155,4027,164,4197,184,4209,186,4208,191,4197,189,4027,169,3882,161,3754,161,3634,165,3513,169,3384,169,3238,161,3066,141"/>
+<area shape="rect" id="Node000037" href="$vrpn__Microsoft__Controller__Raw_8h_source.html" title=" " alt="" coords="4361,187,4550,229"/>
+<area shape="poly" id="edge37_Node000002_Node000037" title=" " alt="" coords="3067,136,3261,159,3426,169,3572,171,3709,167,3845,163,3991,161,4156,167,4349,184,4361,185,4360,191,4349,189,4155,173,3991,167,3845,168,3709,173,3572,176,3426,175,3261,164,3067,141"/>
+<area shape="rect" id="Node000038" href="$vrpn__Mouse_8h_source.html" title=" " alt="" coords="4575,187,4702,229"/>
+<area shape="poly" id="edge38_Node000002_Node000038" title=" " alt="" coords="3067,136,3294,161,3487,170,3657,167,3816,159,3975,152,4145,149,4337,158,4563,184,4575,186,4574,191,4562,189,4337,164,4145,155,3975,157,3816,165,3657,173,3486,175,3293,167,3067,141"/>
+<area shape="rect" id="Node000039" href="$vrpn__Oculus_8h.html" title="Header for various Oculus devices. Initially, just the DK1 &amp; DK2." alt="" coords="4727,187,4854,229"/>
+<area shape="poly" id="edge40_Node000002_Node000039" title=" " alt="" coords="3067,136,3197,152,3317,163,3529,172,3717,169,3892,159,4067,150,4255,147,4466,156,4585,167,4715,184,4727,186,4726,191,4714,189,4585,173,4466,162,4255,152,4068,155,3892,165,3717,174,3529,178,3316,169,3197,158,3066,141"/>
+<area shape="rect" id="Node000040" href="$vrpn__OzzMaker_8h_source.html" title=" " alt="" coords="4879,187,5006,229"/>
+<area shape="poly" id="edge42_Node000002_Node000040" title=" " alt="" coords="3067,136,3209,154,3339,165,3460,172,3571,175,3777,170,3968,159,4159,149,4364,145,4475,147,4595,154,4725,166,4867,184,4879,186,4878,191,4866,189,4725,171,4595,159,4475,153,4364,150,4160,154,3968,165,3777,176,3571,180,3459,177,3339,171,3208,159,3066,141"/>
+<area shape="rect" id="Node000041" href="$vrpn__Retrolink_8h_source.html" title=" " alt="" coords="5031,187,5158,229"/>
+<area shape="poly" id="edge43_Node000002_Node000041" title=" " alt="" coords="3067,136,3221,155,3362,168,3493,175,3614,177,3836,172,4044,159,4251,147,4473,142,4594,145,4724,152,4865,165,5019,184,5031,186,5030,191,5018,189,4865,170,4724,157,4594,150,4473,147,4252,152,4044,165,3837,177,3614,182,3493,180,3362,173,3220,160,3066,141"/>
+<area shape="rect" id="Node000042" href="$vrpn__Saitek__Controller__Raw_8h_source.html" title=" " alt="" coords="5182,187,5354,229"/>
+<area shape="poly" id="edge44_Node000002_Node000042" title=" " alt="" coords="3067,136,3166,147,3278,154,3536,163,3824,166,4128,164,4716,164,4968,170,5171,184,5182,185,5181,191,5170,189,4968,175,4716,169,4128,170,3824,171,3535,168,3278,160,3165,152,3067,141"/>
+<area shape="rect" id="Node000043" href="$vrpn__Spaceball_8h_source.html" title=" " alt="" coords="5377,187,5505,229"/>
+<area shape="poly" id="edge45_Node000002_Node000043" title=" " alt="" coords="3067,136,3174,147,3297,155,3578,163,3894,163,4226,159,4557,156,4870,156,5145,164,5264,172,5367,184,5377,186,5376,191,5366,189,5263,178,5145,170,4870,161,4557,161,4226,165,3894,168,3578,168,3297,160,3174,153,3066,141"/>
+<area shape="rect" id="Node000044" href="$vrpn__Streaming__Arduino_8h_source.html" title=" " alt="" coords="5529,187,5678,229"/>
+<area shape="poly" id="edge46_Node000002_Node000044" title=" " alt="" coords="3067,136,3181,148,3312,156,3611,165,3947,166,4301,163,4654,159,4987,159,5281,166,5407,173,5517,184,5529,186,5528,191,5517,189,5407,179,5281,171,4987,164,4654,164,4301,168,3948,171,3611,171,3311,162,3181,153,3067,141"/>
+<area shape="rect" id="Node000045" href="$vrpn__Tng3_8h_source.html" title=" " alt="" coords="5703,187,5830,229"/>
+<area shape="poly" id="edge47_Node000002_Node000045" title=" " alt="" coords="3067,136,3189,149,3328,157,3649,165,4009,165,4388,160,4766,155,5123,154,5438,162,5573,171,5691,184,5703,186,5702,191,5690,189,5573,177,5437,168,5123,159,4766,160,4388,165,4009,170,3649,171,3328,163,3188,154,3066,141"/>
+<area shape="rect" id="Node000046" href="$vrpn__Tracker__AnalogFly_8h_source.html" title=" " alt="" coords="5854,187,6001,229"/>
+<area shape="poly" id="edge48_Node000002_Node000046" title=" " alt="" coords="3067,136,3196,149,3343,159,3682,168,4063,168,4464,163,4864,157,5241,156,5575,164,5718,172,5843,184,5854,186,5853,191,5842,189,5718,177,5574,169,5241,162,4864,163,4464,168,4063,173,3682,173,3343,164,3195,155,3066,141"/>
+<area shape="rect" id="Node000047" href="$vrpn__Tracker__ButtonFly_8h_source.html" title=" " alt="" coords="6026,187,6171,229"/>
+<area shape="poly" id="edge49_Node000002_Node000047" title=" " alt="" coords="3067,136,3204,150,3360,160,3720,169,4124,169,4549,163,4974,157,5375,155,5729,163,5881,171,6013,184,6026,186,6025,191,6013,189,5881,177,5728,168,5375,160,4974,162,4550,168,4124,174,3720,175,3360,165,3203,155,3067,141"/>
+<area shape="rect" id="Node000048" href="$vrpn__Tracker__DTrack_8h_source.html" title=" " alt="" coords="6196,187,6329,229"/>
+<area shape="poly" id="edge50_Node000002_Node000048" title=" " alt="" coords="3067,136,3211,151,3376,161,3757,170,4184,168,4635,161,5084,153,5508,151,5883,160,6044,170,6184,184,6196,186,6195,191,6183,189,6044,175,5883,165,5508,157,5084,159,4635,166,4184,173,3757,175,3376,166,3211,156,3066,141"/>
+<area shape="rect" id="Node000049" href="$vrpn__Tracker__GameTrak_8h_source.html" title=" " alt="" coords="6353,187,6505,229"/>
+<area shape="poly" id="edge51_Node000002_Node000049" title=" " alt="" coords="3067,136,3219,152,3392,162,3584,169,3791,172,4240,171,4713,164,5185,157,5631,154,6025,161,6194,170,6341,184,6353,186,6352,191,6341,189,6194,176,6024,167,5631,159,5185,162,4713,169,4240,176,3791,178,3583,174,3391,168,3218,157,3067,141"/>
+<area shape="rect" id="Node000050" href="$vrpn__Tracker__IMU_8h.html" title=" " alt="" coords="6529,187,6657,229"/>
+<area shape="poly" id="edge52_Node000002_Node000050" title=" " alt="" coords="3067,136,3226,152,3408,163,3611,169,3829,172,4303,169,4802,159,5299,150,5769,147,5985,150,6184,157,6363,168,6517,184,6529,186,6529,191,6517,189,6362,173,6184,162,5985,155,5769,153,5299,156,4802,165,4303,174,3829,177,3611,175,3408,168,3226,158,3066,141"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1059,228,820,280,809,283,807,278,819,275,1058,223"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1069,238,958,279,956,274,1067,233"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="1112,243,1081,279,1077,275,1108,239"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="1166,239,1197,275,1193,279,1162,243"/>
+<area shape="poly" id="edge13_Node000009_Node000014" title=" " alt="" coords="1209,233,1323,274,1321,279,1207,238"/>
+<area shape="poly" id="edge14_Node000009_Node000015" title=" " alt="" coords="1216,222,1470,275,1480,277,1479,282,1468,280,1215,228"/>
+</map>

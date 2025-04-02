@@ -1,0 +1,17 @@
+<map id="sendUE4PosNew" name="sendUE4PosNew">
+<area shape="rect" id="Node000001" title="发送无人机位姿和状态到Rflysim3D" alt="" coords="953,64,1078,91"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a58910926ae0abb02a8414ae62a6ab7db" title="控制无人机在点质量模型下循环运行" alt="" coords="736,5,882,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="954,61,904,47,863,35,864,30,905,41,956,56"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ac76590069409fc52a725b9a1d24cbf74" title="将当前飞行器的真实状态（位置、姿态、速度）发送给RflySim3D以更新显示。" alt="" coords="716,56,902,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="937,80,902,80,902,75,937,75"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a1affe06e535cdcf936f46380374bf152" title="在指定位置创建/更新模型" alt="" coords="713,123,905,165"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="958,99,878,125,877,120,956,93"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a57e299a4e222b92dd2413ce3d0e75644" title="初始化并启动用于无人机控制" alt="" coords="505,5,640,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="720,21,641,21,641,16,720,16"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a627393ae77146a2274349d34232b3981" title="模型单步更新函数。" alt="" coords="480,56,665,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="701,80,666,80,666,75,701,75"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#af7c3ee1bad28329314a5f489f1a6adff" title="点质量模型的主循环函数，以固定频率更新模型状态、发送UAV状态和输出数据到RflySim3D。" alt="" coords="239,56,432,99"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="464,80,433,80,433,75,464,75"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,56,191,99"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="223,80,191,80,191,75,223,75"/>
+</map>

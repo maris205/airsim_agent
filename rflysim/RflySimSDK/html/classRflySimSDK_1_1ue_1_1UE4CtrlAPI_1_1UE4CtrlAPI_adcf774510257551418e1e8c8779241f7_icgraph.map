@@ -1,0 +1,7 @@
+<map id="initUE4MsgRec" name="initUE4MsgRec">
+<area shape="rect" id="Node000001" title="启用监听" alt="" coords="147,31,260,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a152147b6cc6b2fda8923e17afb6fea3c" title="获取Copter数据" alt="" coords="5,5,99,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,35,99,29,100,24,132,29"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#ae36eba886255aacdf2bab5295f5f35b1" title="获取Copter位置" alt="" coords="8,56,96,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,59,97,65,96,59,131,53"/>
+</map>

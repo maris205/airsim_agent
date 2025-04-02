@@ -1,0 +1,9 @@
+<map id="debug" name="debug">
+<area shape="rect" id="Node000001" title="输出调试信息。" alt="" coords="120,56,176,83"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html#a70ffc580935fc264519a70d550745ed0" title="初始化串口连接，用于与飞控进行 MAVLink 通信。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,52,68,35,70,30,107,47"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html#a1c99c8c17ec76ba49907903807435fd4" title="读取指定长度的字节数据。" alt="" coords="15,56,62,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,72,62,72,62,67,104,67"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html#aaba36b77b9c0af01016f458211b2fa43" title="向飞控发送字节数据。" alt="" coords="14,107,63,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="107,91,65,111,62,106,104,86"/>
+</map>

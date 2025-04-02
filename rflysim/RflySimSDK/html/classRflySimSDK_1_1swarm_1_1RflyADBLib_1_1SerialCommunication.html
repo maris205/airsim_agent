@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: SerialCommunication类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>RflyADBLib</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication.html">SerialCommunication</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">SerialCommunication类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>     
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7732f144361034f7b33a179c562b8c03" id="r_a7732f144361034f7b33a179c562b8c03"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7732f144361034f7b33a179c562b8c03">__init__</a> (self, port='COM4', baudrate=115200, debug_mode=False)</td></tr>
+<tr class="memdesc:a7732f144361034f7b33a179c562b8c03"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，设置串口端口和波特率。  <br/></td></tr>
+<tr class="separator:a7732f144361034f7b33a179c562b8c03"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a362d3adb78ef1477ce73e2f3088b2f83" id="r_a362d3adb78ef1477ce73e2f3088b2f83"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a362d3adb78ef1477ce73e2f3088b2f83">send_command</a> (self, command)</td></tr>
+<tr class="memdesc:a362d3adb78ef1477ce73e2f3088b2f83"><td class="mdescLeft"> </td><td class="mdescRight">发送命令。  <br/></td></tr>
+<tr class="separator:a362d3adb78ef1477ce73e2f3088b2f83"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab91c209146a37f889e06a4746fae73ce" id="r_ab91c209146a37f889e06a4746fae73ce"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab91c209146a37f889e06a4746fae73ce">read_serial_data</a> (self)</td></tr>
+<tr class="memdesc:ab91c209146a37f889e06a4746fae73ce"><td class="mdescLeft"> </td><td class="mdescRight">读取串口数据。  <br/></td></tr>
+<tr class="separator:ab91c209146a37f889e06a4746fae73ce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4be3e8d8ff0545bec5c40d2d68242c64" id="r_a4be3e8d8ff0545bec5c40d2d68242c64"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4be3e8d8ff0545bec5c40d2d68242c64">close_serial</a> (self)</td></tr>
+<tr class="memdesc:a4be3e8d8ff0545bec5c40d2d68242c64"><td class="mdescLeft"> </td><td class="mdescRight">关闭串口。  <br/></td></tr>
+<tr class="separator:a4be3e8d8ff0545bec5c40d2d68242c64"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a5b7028344d79661ed4abe535b0e7e307" id="r_a5b7028344d79661ed4abe535b0e7e307"><td align="right" class="memItemLeft" valign="top"><a id="a5b7028344d79661ed4abe535b0e7e307" name="a5b7028344d79661ed4abe535b0e7e307"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ser</b></td></tr>
+<tr class="separator:a5b7028344d79661ed4abe535b0e7e307"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab1ac6a1c98ce4d1738de3c95235c5521" id="r_ab1ac6a1c98ce4d1738de3c95235c5521"><td align="right" class="memItemLeft" valign="top"><a id="ab1ac6a1c98ce4d1738de3c95235c5521" name="ab1ac6a1c98ce4d1738de3c95235c5521"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Debug_Mode</b></td></tr>
+<tr class="separator:ab1ac6a1c98ce4d1738de3c95235c5521"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>    </p>
+<p>类集成了串口传输相关方法。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a7732f144361034f7b33a179c562b8c03" name="a7732f144361034f7b33a179c562b8c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7732f144361034f7b33a179c562b8c03">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'COM4'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>baudrate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">115200</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>debug_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，设置串口端口和波特率。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">port(str)</td><td>目标端口号，默认为'COM4'。 </td></tr>
+<tr><td class="paramname">baudrate(int)</td><td>波特率默认为115200。 </td></tr>
+<tr><td class="paramname">debug_mode(bool)</td><td>是否启动调试模式，默认为False。 <br/>
+</td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a4be3e8d8ff0545bec5c40d2d68242c64" name="a4be3e8d8ff0545bec5c40d2d68242c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be3e8d8ff0545bec5c40d2d68242c64">◆ </a></span>close_serial()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">close_serial </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>关闭串口。 </p>
+<ul>
+<li><a class="anchor" id="close_serial"></a></li>
+</ul>
+</div>
+</div>
+<a id="ab91c209146a37f889e06a4746fae73ce" name="ab91c209146a37f889e06a4746fae73ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91c209146a37f889e06a4746fae73ce">◆ </a></span>read_serial_data()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">read_serial_data </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>读取串口数据。 </p>
+<ul>
+<li><a class="anchor" id="read_serial_data"></a> <dl class="section return"><dt>返回</dt><dd>返回串口数据 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication_ab91c209146a37f889e06a4746fae73ce_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a362d3adb78ef1477ce73e2f3088b2f83" name="a362d3adb78ef1477ce73e2f3088b2f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362d3adb78ef1477ce73e2f3088b2f83">◆ </a></span>send_command()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_command </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>command</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送命令。 </p>
+<ul>
+<li><a class="anchor" id="send_command"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">command(str)</td><td>发送的命令。 <br/>
+</td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication_a362d3adb78ef1477ce73e2f3088b2f83_cgraph.svg" width="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication_a362d3adb78ef1477ce73e2f3088b2f83_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="RflyADBLib_8py.html">RflyADBLib.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflySim Swarm</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflySim Swarm</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md238"></a> </p>
+<h1><a class="anchor" id="autotoc_md239"></a>
+使用简介</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240816165636361.png"><img alt="" class="thumbnail" height="auto" src="image-20240816165636361.png" width="100"/></a>
+</div>
+<p>实现集群通信主要功能的模块命名以Rfly开头</p>
+<p>后缀decoder的模块用于输出解码（需要连接通信模块的输出）</p>
+<p>控制输入编码模块（需要连接通信模块的输入），其中还有**Offboard PVA**模块主要用于<a href="md_ctrl_2md_2RflySim_01APIs.html">编码控制指令</a>，在仿真与实飞下使用完全相同。“Offboard PVA”模块完整兼容MAVLINK Offboard控制中的位置、速度、加速度控制，同时支持模拟遥控器信号控制。在集群控制中，常使用四维的控制，所以用户需要指定的输入是四维控制量。</p>
+<h1><a class="anchor" id="autotoc_md240"></a>
+功能模块索引</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">模块名称   </th><th class="markdownTableHeadNone">功能简介    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2RflyUdpFast.html">RflyUdpFast</a> </td><td class="markdownTableBodyNone">仿真UDP通信模块    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2RflyUdpRaw.html">RflyUdpRaw</a> </td><td class="markdownTableBodyNone">原始UDP通信模块（支持真机）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2RflySerialRaw.html">RflySerialRaw</a> </td><td class="markdownTableBodyNone">串口模式通信模块    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2RflyUdpMavlink.html">RflyUdpMavlink</a> </td><td class="markdownTableBodyNone">MavLink UDP通信模块    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2RflyVrpnRecv.html">RflyVrpnRecv</a> </td><td class="markdownTableBodyNone">动捕数据通信模块    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2vrpn__data__decoder.html">vrpn_data_decoder</a> </td><td class="markdownTableBodyNone">动捕数据输出解码    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2real__data__decoder.html">real_data_decoder</a> </td><td class="markdownTableBodyNone">真机Mavlink数据输出解码    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2Full__data__decoder.html">Full_data_decoder</a> </td><td class="markdownTableBodyNone">Full模式传输数据输出解码    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2Simple__data__decoder.html">Simple_data_decoder</a> </td><td class="markdownTableBodyNone">Simple模式传输数据输出解码    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2Offboard__full.html">Offboard_full</a> </td><td class="markdownTableBodyNone">Offboard控制输入编码    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2vel__ned__full.html">vel_ned_full</a> </td><td class="markdownTableBodyNone">NED坐标系速度控制输入编码    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2vel__body__full.html">vel_body_full</a> </td><td class="markdownTableBodyNone">机体系速度控制输入编码    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2pos__ned__full.html">pos_ned_full</a> </td><td class="markdownTableBodyNone">NED坐标系位置控制输入编码    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2RealCtrl28D.html">RealCtrl28D</a> </td><td class="markdownTableBodyNone">Offboard PVA控制    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2SimpleCtrl4D.html">SimpleCtrl4D</a> </td><td class="markdownTableBodyNone">简化Offboard PVA控制通    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2AutoFirmwareAPI.html">AutoFirmwareAPI</a> </td><td class="markdownTableBodyNone">自动代码生成Offboard PVA控制    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="md_swarm_2md_2HighLevelMode.html">HighLevelMode</a> </td><td class="markdownTableBodyNone">模式控制（安全设计）   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

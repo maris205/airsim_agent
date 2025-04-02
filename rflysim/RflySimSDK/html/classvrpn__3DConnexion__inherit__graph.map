@@ -1,0 +1,42 @@
+<map id="vrpn_3DConnexion" name="vrpn_3DConnexion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="694,341,826,368"/>
+<area shape="rect" id="Node000008" href="$classvrpn__3DConnexion__Navigator.html" title=" " alt="" coords="894,5,1089,32"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="760,326,768,266,786,189,800,149,819,110,843,73,872,42,892,29,895,33,876,46,847,77,823,112,805,151,791,191,773,267,765,326"/>
+<area shape="rect" id="Node000009" href="$classvrpn__3DConnexion__Navigator__for__Notebooks.html" title=" " alt="" coords="894,56,1089,99"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="764,326,776,278,796,220,828,160,848,133,872,109,892,95,895,100,876,113,852,136,832,163,801,222,781,280,769,327"/>
+<area shape="rect" id="Node000010" href="$classvrpn__3DConnexion__SpaceBall5000.html" title=" " alt="" coords="878,123,1105,149"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="767,325,781,287,803,242,833,197,872,159,893,147,896,152,876,163,837,200,808,245,786,290,772,327"/>
+<area shape="rect" id="Node000011" href="$classvrpn__3DConnexion__SpaceExplorer.html" title=" " alt="" coords="880,173,1104,200"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="773,326,812,266,840,236,873,210,897,198,899,203,875,214,844,239,816,270,777,329"/>
+<area shape="rect" id="Node000012" href="$classvrpn__3DConnexion__SpaceMouse.html" title=" " alt="" coords="884,224,1099,251"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="783,328,823,293,873,260,903,249,905,254,875,265,826,297,786,332"/>
+<area shape="rect" id="Node000013" href="$classvrpn__3DConnexion__SpaceMouseCompact.html" title=" " alt="" coords="884,275,1099,317"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="829,334,904,315,905,321,831,340"/>
+<area shape="rect" id="Node000014" href="$classvrpn__3DConnexion__SpaceMousePro.html" title=" " alt="" coords="874,341,1109,368"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="842,352,873,352,873,357,842,357"/>
+<area shape="rect" id="Node000015" href="$classvrpn__3DConnexion__SpaceMouseProWireless.html" title=" " alt="" coords="884,392,1099,435"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="831,370,905,389,904,394,829,375"/>
+<area shape="rect" id="Node000016" href="$classvrpn__3DConnexion__SpaceMouseWireless.html" title=" " alt="" coords="884,459,1099,501"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="787,377,826,412,875,444,901,456,899,461,873,449,823,416,783,381"/>
+<area shape="rect" id="Node000017" href="$classvrpn__3DConnexion__SpaceMouseWireless2.html" title=" " alt="" coords="884,525,1099,568"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="776,381,814,447,842,482,876,511,895,522,893,527,872,515,838,485,810,450,771,383"/>
+<area shape="rect" id="Node000018" href="$classvrpn__3DConnexion__SpacePilot.html" title=" " alt="" coords="890,592,1093,619"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="770,383,782,427,803,480,834,533,853,557,876,578,895,589,892,594,872,582,849,561,829,536,798,482,777,428,765,384"/>
+<area shape="rect" id="Node000019" href="$classvrpn__3DConnexion__SpacePilotPro.html" title=" " alt="" coords="880,643,1103,669"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="767,383,776,436,795,503,810,538,828,571,849,602,876,629,893,640,890,644,872,633,845,605,823,574,805,540,790,505,771,437,762,384"/>
+<area shape="rect" id="Node000020" href="$classvrpn__3DConnexion__Traveler.html" title=" " alt="" coords="898,693,1085,720"/>
+<area shape="poly" id="edge20_Node000001_Node000020" title=" " alt="" coords="765,383,771,445,788,526,803,568,822,609,846,647,876,679,900,694,897,699,872,683,842,650,817,612,798,570,783,527,766,446,759,384"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="518,291,646,317"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="647,320,711,338,710,343,645,325"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Button.html" title=" " alt="" coords="378,291,469,317"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,301,518,301,518,307,485,307"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="212,316,329,343"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,314,377,309,378,314,345,320"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="377,341,470,368"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="345,339,377,344,376,350,344,344"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,316,164,343"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,327,212,327,212,332,179,332"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="486,352,693,352,693,357,486,357"/>
+<area shape="rect" id="Node000007" href="$classvrpn__HidInterface.html" title=" " alt="" coords="520,392,644,419"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="645,385,710,366,711,371,647,390"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="disarm" name="disarm">
+<area shape="rect" id="Node000001" title="检查PX4的上锁状态" alt="" coords="769,47,830,73"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#aa4667a3b8769fa59836727ab4ecdffef" title="通过MAVLink发送解锁指令给PX4" alt="" coords="553,17,653,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="753,56,653,41,654,35,754,51"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a0a193a6e3a68a7e2d01772aec0faa3ee" title="发送解锁或锁定命令到无人机" alt="" coords="485,68,721,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="754,69,722,74,722,69,753,64"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="239,5,437,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="537,32,437,31,437,25,537,27"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="245,72,430,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="539,47,486,59,423,74,422,69,484,53,538,41"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,72,191,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="230,96,191,96,191,91,230,91"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="495,67,430,51,432,46,496,61"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="469,94,431,95,431,89,469,89"/>
+</map>

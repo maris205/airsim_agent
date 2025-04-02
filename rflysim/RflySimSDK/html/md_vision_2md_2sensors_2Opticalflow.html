@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: 光流传感器</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">光流传感器</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md462"></a> </p>
+<h2><a class="anchor" id="autotoc_md463"></a>
+a）Config相关配置</h2>
+<p>在Config中配置光流传感器时，以下参数尤为关键：</p>
+<ul>
+<li>**"DataWidth"** 和 **"DataHeight"**：这些参数指定了光流传感器的图像分辨率，决定了传感器捕捉画面的宽度和高度。</li>
+<li>**"CameraFOV"**：光流计算中视场角（FOV）用于确定像素偏移量的转换比例。</li>
+<li>**"SensorAngEular[1]"**：设置传感器角度（如<code>-90°</code>），用于确定传感器朝向，如向下对准地面。</li>
+<li>**"otherParams[0]"**：定义最大检测距离，即光流传感器的作用距离。</li>
+<li>**"otherParams[1]"**：置为0以真值计算光流，置为1以OpenCV处理图像来计算光流</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md464"></a>
+b) 结构体 <code>OpticalFlow</code></h2>
+<p>光流数据结构体包含以下字段：</p>
+<ul>
+<li><b>sensor_id**：传感器ID，区分不同的光流传感器。</b></li>
+<li><b>**flow_x</b> 和 <b>flow_y**：表示光流在 x 和 y 方向上的像素偏移量（单位是像素，<code>dipix</code>）。</b></li>
+<li><b>**flow_comp_m_x</b> 和 <b>flow_comp_m_y**：光流在 m/s（米/秒）为单位的实际速度，用于描述相对运动速度。</b></li>
+<li><b>**quality**：光流质量，反映检测结果的可信度。</b></li>
+<li><b>**ground_distance**：表示光流传感器到地面的距离，有助于计算精确的光流速度。</b></li>
+<li><b>**flow_rate_x</b> 和 **flow_rate_y**：角速度，表示图像中的旋转运动速度。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md465"></a>
+c) 参考例程</h2>
+<p>参考路径 <code>4.RflySimModel\3.CustExps\e7_ExternalSensors\e3_Opticalflow_UE</code> 中的例程，其中包含4种方式计算光流：</p>
+<ol type="1">
+<li>**Python 真值计算**：通过Python代码基于地面真值计算光流。</li>
+<li>**UE 真值计算**：使用UE真实值计算光流。</li>
+<li>**UE OpenCV 计算**：在UE中调用OpenCV库计算光流。</li>
+<li>**外部 OpenCV 计算**：在外部环境中（如Python或C++）调用OpenCV库计算光流。</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md466"></a>
+d) 计算光流的方式</h2>
+<p>光流计算主要有以下两种方法：</p>
+<ol type="1">
+<li><p class="startli">直接计算</p>
+<p class="startli">：</p><ul>
+<li>利用传感器配置中的分辨率（Width和Height）以及FOV，计算光流在像素上的偏移量。这种方法适用于计算简单、实时性要求高的场景。</li>
+</ul>
+</li>
+<li><p class="startli">OpenCV函数计算</p>
+<p class="startli">：</p><ul>
+<li>使用OpenCV库的 <code>goodFeaturesToTrack</code> 和 <code>calcOpticalFlowPyrLK</code> 函数计算光流。</li>
+<li>**角点检测**：<code>goodFeaturesToTrack</code> 函数检测图像中的角点数量，角点越多，光流的质量越高。</li>
+<li>**稀疏光流计算**：<code>calcOpticalFlowPyrLK</code> 函数基于检测的角点计算光流，并获得每个点的偏移量和追踪状态。</li>
+<li>通过识别的角点数量与最大角点数量的比值，估算光流质量，平均值可用于描述光流的方向和速度。</li>
+</ul>
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md467"></a>
+e) 数据准确性验证</h2>
+<p>为了验证光流数据的准确性，可以考虑以下方法：</p>
+<ul>
+<li>**与地面真值对比**：将计算得到的光流数据与地面真值（或其他可靠传感器数据）进行对比。</li>
+<li>**质量指标检查**：使用结构体中的 <code>quality</code> 字段检查光流质量，当质量较低时可能需要过滤或重新计算。</li>
+<li>**多次采样求平均**：通过对多帧光流数据求平均，减少噪声影响，提升准确性。 </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<map id="vrpn_Serial_Analog" name="vrpn_Serial_Analog">
+<area shape="rect" id="Node000001" title=" " alt="" coords="518,411,652,437"/>
+<area shape="rect" id="Node000005" href="$classvrpn__5dt.html" title="Class to support reading data from serial 5DT data gloves." alt="" coords="746,5,817,32"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="584,395,588,325,604,230,618,180,638,130,664,83,698,42,720,27,744,20,746,25,722,32,701,46,669,86,643,132,623,182,609,232,593,325,589,396"/>
+<area shape="rect" id="Node000006" href="$classvrpn__5dt16.html" title=" " alt="" coords="739,56,824,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="585,395,593,333,611,252,625,209,644,167,668,128,698,93,716,80,737,72,739,77,719,85,701,97,672,131,649,169,630,211,616,253,598,334,590,395"/>
+<area shape="rect" id="Node000007" href="$classvrpn__BiosciencesTools.html" title=" " alt="" coords="704,107,859,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="587,394,598,341,618,274,650,204,672,172,698,143,715,132,718,136,701,147,676,175,655,207,623,276,603,342,593,395"/>
+<area shape="rect" id="Node000008" href="$classvrpn__CerealBox.html" title=" " alt="" coords="724,157,838,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="590,395,603,351,625,297,656,242,675,216,698,194,722,180,725,184,701,198,679,220,660,245,630,299,608,353,595,396"/>
+<area shape="rect" id="Node000009" href="$classvrpn__GlobalHapticsOrb.html" title=" " alt="" coords="703,208,860,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="595,395,610,360,633,320,662,279,698,245,718,233,721,238,701,249,666,283,637,323,615,363,599,397"/>
+<area shape="rect" id="Node000010" href="$classvrpn__IDEA.html" title=" " alt="" coords="739,259,824,285"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="601,396,642,345,668,318,698,295,737,278,739,283,701,300,672,322,645,349,605,399"/>
+<area shape="rect" id="Node000011" href="$classvrpn__ImmersionBox.html" title=" " alt="" coords="713,309,850,336"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="614,399,653,372,699,346,727,334,729,339,701,350,656,376,617,403"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Joystick.html" title=" " alt="" coords="730,360,832,387"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="654,404,729,384,731,389,655,409"/>
+<area shape="rect" id="Node000013" href="$classvrpn__Magellan.html" title=" " alt="" coords="729,411,834,437"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="667,421,729,421,729,427,667,427"/>
+<area shape="rect" id="Node000014" href="$classvrpn__Nikon__Controls.html" title=" " alt="" coords="710,461,853,488"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="655,439,727,458,726,463,654,444"/>
+<area shape="rect" id="Node000015" href="$classvrpn__Radamec__SPI.html" title=" " alt="" coords="712,512,850,539"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="617,445,656,472,701,498,729,509,727,514,699,502,653,476,614,449"/>
+<area shape="rect" id="Node000016" href="$classvrpn__Spaceball.html" title=" " alt="" coords="726,563,836,589"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="605,449,645,499,672,526,701,548,727,561,725,566,698,553,668,530,642,503,601,452"/>
+<area shape="rect" id="Node000017" href="$classvrpn__Streaming__Arduino.html" title=" " alt="" coords="700,613,863,640"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="599,451,615,485,637,525,666,565,701,599,721,610,718,615,698,603,662,569,633,528,610,488,595,453"/>
+<area shape="rect" id="Node000018" href="$classvrpn__Tng3.html" title=" " alt="" coords="740,664,822,691"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="595,452,608,495,630,549,660,603,679,628,701,650,720,661,741,669,739,674,718,666,698,654,675,632,656,606,625,551,603,497,590,453"/>
+<area shape="rect" id="Node000019" href="$classvrpn__Wanda.html" title=" " alt="" coords="735,715,828,741"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="593,453,603,506,623,572,655,641,676,673,701,701,717,711,735,719,733,723,715,716,698,705,672,676,650,644,618,574,598,507,587,454"/>
+<area shape="rect" id="Node000020" href="$classvrpn__Zaber.html" title=" " alt="" coords="738,765,824,792"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="590,453,598,514,616,595,630,637,649,679,672,717,701,751,719,763,739,771,737,776,716,768,698,755,668,720,644,681,625,639,611,596,593,515,585,453"/>
+<area shape="rect" id="Node000021" href="$classvrpn__inertiamouse.html" title=" " alt="" coords="718,816,845,843"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="589,452,593,523,609,616,623,666,643,716,669,762,701,802,719,814,716,819,698,806,664,765,638,718,618,668,604,618,588,523,584,453"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog.html" title=" " alt="" coords="377,411,470,437"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="486,421,518,421,518,427,486,427"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="212,411,329,437"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,421,377,421,377,427,345,427"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,411,164,437"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="179,421,212,421,212,427,179,427"/>
+</map>

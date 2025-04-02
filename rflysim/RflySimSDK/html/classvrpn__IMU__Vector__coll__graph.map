@@ -1,0 +1,30 @@
+<map id="vrpn_IMU_Vector" name="vrpn_IMU_Vector">
+<area shape="rect" id="Node000001" title=" " alt="" coords="560,561,683,588"/>
+<area shape="rect" id="Node000002" href="$classvrpn__IMU__Axis__Params.html" title="Describes information describing an IMU axis. It describes the analog channel to use to drive the axi..." alt="" coords="361,471,524,497"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,502,597,558,595,563,481,507"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog__Remote.html" title=" " alt="" coords="548,471,695,497"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="624,513,624,561,619,561,619,513"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Analog.html" title=" " alt="" coords="479,395,572,421"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="555,429,607,468,604,473,552,433"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClass.html" title=" " alt="" coords="363,304,480,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="449,339,512,392,509,396,446,343"/>
+<area shape="rect" id="Node000006" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="320,187,478,213"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="407,228,422,303,416,304,402,229"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="179,96,298,123"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="269,130,316,160,367,184,364,188,314,165,266,134"/>
+<area shape="rect" id="Node000008" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="86,47,88,59,94,70,107,79,127,86,179,98,178,103,126,91,104,84,90,74,83,61,80,48"/>
+<area shape="rect" id="Node000009" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="207,5,335,32"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="264,48,246,96,241,95,259,46"/>
+<area shape="rect" id="Node000010" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="323,96,488,123"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="406,139,402,186,397,186,401,138"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="549,5,603,32"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="619,23,657,32,694,48,710,59,723,73,732,89,735,108,735,486,728,513,710,534,686,551,661,563,658,558,683,547,706,530,723,510,730,485,730,108,727,91,719,76,707,63,691,53,655,37,618,28"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="556,45,537,74,531,91,528,108,528,319,528,394,523,394,523,319,523,108,525,89,532,72,551,42"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="534,27,490,38,447,58,428,77,414,97,410,94,424,73,444,54,489,33,533,22"/>
+<area shape="rect" id="Node000013" href="$structvrpn__Callback__List_1_1vrpn__CBS.html" title=" " alt="" coords="576,96,657,123"/>
+<area shape="poly" id="edge14_Node000013_Node000011" title=" " alt="" coords="590,45,613,94,608,97,586,47"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Callback__List.html" title=" " alt="" coords="548,237,706,280"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="628,295,626,355,624,470,619,470,621,355,623,295"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="621,138,628,237,623,237,616,139"/>
+</map>

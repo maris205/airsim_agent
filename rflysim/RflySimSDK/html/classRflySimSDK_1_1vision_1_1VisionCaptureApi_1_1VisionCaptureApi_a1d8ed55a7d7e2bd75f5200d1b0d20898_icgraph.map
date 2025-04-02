@@ -1,0 +1,5 @@
+<map id="img_mem_thrd" name="img_mem_thrd">
+<area shape="rect" id="Node000001" title="从共享内存读取数据并进行处理，以不同的传感器类型来解析数据" alt="" coords="147,5,254,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#af1e50bb2020628758ed286f0876443be" title="用于启动图像捕获的循环过程，先是一些初始化，然后根据SendProtocol[0]来判断是内存共享还是UDP传输，分别进行相应的处理函数" alt="" coords="5,5,99,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,21,99,21,99,16,131,16"/>
+</map>

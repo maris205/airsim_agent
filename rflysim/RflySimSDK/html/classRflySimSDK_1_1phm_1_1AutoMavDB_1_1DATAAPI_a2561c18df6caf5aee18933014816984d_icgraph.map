@@ -1,0 +1,9 @@
+<map id="MFolder" name="MFolder">
+<area shape="rect" id="Node000001" title="创建目录。" alt="" coords="334,5,403,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a48db88bf7597dfa1974e0814cf4a5413" title="创建数据存储所需的目录结构。" alt="" coords="208,5,286,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,21,287,21,287,16,319,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a2013ae7d27179446e088f64bcb17bae3" title="处理数据并准备存储。该方法进行数据处理，包括创建必要的目录、处理数据，并准备存储到文件或数据库。" alt="" coords="120,5,160,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,21,160,21,160,16,192,16"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a16fc170c516701a1aaf697be9bc4422c" title="构造函数，初始化DATAAPI类的实例。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

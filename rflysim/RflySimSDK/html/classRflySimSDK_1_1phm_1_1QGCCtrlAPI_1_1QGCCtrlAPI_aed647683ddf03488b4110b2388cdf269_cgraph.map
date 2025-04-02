@@ -1,0 +1,9 @@
+<map id="ReqQgcLog" name="ReqQgcLog">
+<area shape="rect" id="Node000001" title="请求QGroundControl的日志文件。" alt="" coords="5,64,96,91"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI.html#a5c32e1748566595651d93887eabc606f" title="从指定路径获取文本文件内容，并删除该文件。" alt="" coords="210,5,314,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,61,143,41,195,29,196,34,144,47,88,66"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a706caa6907194e69837c0797ccd31b12" title="将 MAVLink 的长指令消息发送到 QGC" alt="" coords="144,56,381,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,75,128,75,128,80,96,80"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI.html#a706caa6907194e69837c0797ccd31b12" title="发送长格式的MAVLink命令至QGroundControl。" alt="" coords="197,123,328,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="88,89,144,108,182,118,181,123,143,113,86,94"/>
+</map>

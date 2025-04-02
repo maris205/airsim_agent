@@ -1,0 +1,7 @@
+<map id="auto_configure_ip" name="auto_configure_ip">
+<area shape="rect" id="Node000001" title="根据目标飞控 ID 自动生成 IP 地址。" alt="" coords="5,43,129,69"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a972c48d31eefa5b8e0820c0dfa1f035a" title="获取本地IP地址。" alt="" coords="177,5,375,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,45,161,40,162,45,129,50"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a972c48d31eefa5b8e0820c0dfa1f035a" title="获取本地IP地址。" alt="" coords="235,72,316,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,62,221,75,220,80,129,67"/>
+</map>

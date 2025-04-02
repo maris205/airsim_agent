@@ -1,0 +1,13 @@
+<map id="vrpn_Analog_Output_Server" name="vrpn_Analog_Output_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="73,229,213,272"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Analog__Output__Callback__Server.html" title=" " alt="" coords="5,320,145,363"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="120,286,93,321,89,318,116,283"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Atmel.html" title=" " alt="" coords="169,328,256,355"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="171,283,205,326,200,329,166,286"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog__Output.html" title=" " alt="" coords="73,155,213,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,197,146,229,140,229,140,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="84,80,202,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,122,146,154,140,154,140,122"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="64,5,222,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,48,146,80,140,80,140,48"/>
+</map>

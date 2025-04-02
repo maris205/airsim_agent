@@ -1,0 +1,15 @@
+<map id="enFixedWRWTO" name="enFixedWRWTO">
+<area shape="rect" id="Node000001" title="发送指令使飞机起飞" alt="" coords="5,85,126,112"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html#ad584eaa3a3e2a747d67313910fa4e9d0" title=" " alt="" coords="203,5,412,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,82,127,61,173,41,200,34,201,39,175,47,129,66,91,87"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a831172bea8ba4f655418913776e1f30e" title="向 Pixhawk 发送命令更改其参数" alt="" coords="241,56,374,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,89,225,77,226,82,126,94"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a162081480a066efd9dc4aa4b2fdb95d9" title="发送MAVLink设置参数请求，用于通过MAVLink协议设置无人机的参数。根据参数类型，它可以设置整型或实型参数。" alt="" coords="174,107,441,149"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="126,103,158,107,158,113,126,109"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a162081480a066efd9dc4aa4b2fdb95d9" title="设置MAVLink参数" alt="" coords="202,173,412,232"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="89,110,128,135,175,159,189,165,187,170,173,164,125,139,86,115"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="489,56,560,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="374,67,473,67,473,72,374,72"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="608,56,722,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="561,67,593,67,593,72,561,72"/>
+</map>

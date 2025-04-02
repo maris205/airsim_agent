@@ -1,0 +1,5 @@
+<map id="OffboardSendMode" name="OffboardSendMode">
+<area shape="rect" id="Node000001" title="循环发送MAVLink的offboard模式控制命令" alt="" coords="146,5,278,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="5,5,98,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,21,98,21,98,16,130,16"/>
+</map>

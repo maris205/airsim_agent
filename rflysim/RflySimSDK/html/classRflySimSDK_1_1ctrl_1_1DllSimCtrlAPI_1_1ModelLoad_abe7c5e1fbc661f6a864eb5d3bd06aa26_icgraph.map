@@ -1,0 +1,17 @@
+<map id="DllTerrainIn15d" name="DllTerrainIn15d">
+<area shape="rect" id="Node000001" title="输入三维场景的地形高度数据给DLL，用于仿真环境的地形建模，参见 sendTerrIn15d" alt="" coords="639,31,747,57"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="720,18,710,12,693,9,676,11,668,16,665,21,670,29,665,31,660,22,664,12,675,6,693,4,712,7,723,13"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#af988b1ebd5bd032166adebe23944ff0d" title="初始化并配置载具模型。参数的详细含义参考 Bat脚本使用参考" alt="" coords="324,5,426,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="623,41,426,25,427,20,623,36"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a89209829462275f36c55e891d6bc2bd2" title="用于更新载具模型仿真输出，读取车辆当前的运动状态数据并更新到 out3Ddata 和 outHilData，并与地形数据进行交互。" alt="" coords="474,56,591,83"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="624,58,591,63,591,58,623,52"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#acd4dae14df46a8213f9e9331fbce7549" title="这是类的构造函数，用于初始化 ModelLoad 类的实例。参数的详细含义参考 Bat脚本使用参考" alt="" coords="187,5,254,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,21,254,21,254,16,309,16"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="473,53,418,35,420,30,475,48"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ad11f7333488004e462347852a1865330" title="手动更新仿真状态的接口" alt="" coords="326,56,424,83"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="459,72,425,72,425,67,459,67"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#aea9ac8705048bee7d45d790c5c62ee10" title="自动更新循环的核心逻辑，实现持续的仿真更新、数据发送等功能。" alt="" coords="165,56,276,83"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="311,72,276,72,276,67,311,67"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a82efff7d738f6b3ea1aca95b38625b05" title="用于启动自动更新循环，以指定的频率更新仿真状态。" alt="" coords="5,56,117,83"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="149,72,117,72,117,67,149,67"/>
+</map>

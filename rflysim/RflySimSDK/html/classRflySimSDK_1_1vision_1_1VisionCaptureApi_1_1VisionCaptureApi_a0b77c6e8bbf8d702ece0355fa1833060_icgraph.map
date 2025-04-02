@@ -1,0 +1,7 @@
+<map id="getIMUDataLoop" name="getIMUDataLoop">
+<area shape="rect" id="Node000001" title="接收来自CopterSim（模拟飞行器）的IMU（惯性测量单元）数据，" alt="" coords="388,5,508,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#abc5b593be1dbe4128363457b6aad2678" title="发送命令到 CopterSim 请求IMU数据，并初始化一个线程监听IMU数据" alt="" coords="211,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,21,340,21,340,16,373,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#ad4e46526719d42015eb47dcd276693d2" title="发送请求给 CopterSim 以获取 IMU 数据，并初始化一个线程监听 IMU 数据" alt="" coords="5,5,163,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,21,163,21,163,16,195,16"/>
+</map>

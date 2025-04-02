@@ -1,0 +1,11 @@
+<map id="BMap" name="BMap">
+<area shape="rect" id="Node000001" title="设置地图的方法。" alt="" coords="5,56,61,83"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#a0a17a0c6b8ceadc505a088fdeeddd7e5" title="修改批处理文件以设置地图的方法。" alt="" coords="111,31,176,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,60,95,52,97,57,62,66"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac56b15c3f8372b0c42dce1110c686660" title="获取指定框架的路径的方法。" alt="" coords="109,81,178,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="62,73,94,81,93,86,60,78"/>
+<area shape="rect" id="Node000003" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="226,5,436,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="176,37,212,32,213,37,176,42"/>
+<area shape="rect" id="Node000004" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="238,56,424,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="176,46,223,52,222,57,176,51"/>
+</map>

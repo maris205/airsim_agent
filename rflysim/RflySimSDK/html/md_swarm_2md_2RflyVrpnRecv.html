@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyVrpnRecv——通信模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflyVrpnRecv——通信模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md235"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240815163710844.png"><img alt="" class="thumbnail" height="auto" src="image-20240815163710844.png" width="100"/></a>
+<div class="caption">
+image-20240815163710844</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">RflyVrpnRecv动捕数据接收模块仅用于实飞。该模块的作用是使用MATLAB直接接收动捕数据，这样相对于ROS有更小的时延。该模块可以直接将动捕消息转发给飞机，勾选选项isSendVision时就会发送。通常动捕的数据包含飞机的位置、速度、加速度等。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><p class="starttd"><a data_lightbox="image" href="image-20240816172752256.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240816172752256.png" width="100"/></a> <a data_lightbox="image" href="image-20240816172817041.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240816172817041.png" width="100"/></a> </p>
+<p class="endtd"></p>
+</td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Vrpn IP Address   </td><td class="markdownTableBodyLeft">动捕的ip地址。一般情况下设置成127.0.0.1即可。当MATLAB控制程序与动捕软件程序不在同一台电脑上时，动捕IP应该设置成部署动捕软件的电脑的IP，例如“”192.168.151.168。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Vehicle number or CopterID list   </td><td class="markdownTableBodyLeft">配置飞机ID号或者数量，如果飞机ID是连续的，那么就直接填写飞机的数量；如果飞机不从1号开始编号，需要下一项base端口改为最小的飞机端口。对于单架飞机不从1号开始编号，假设是3号飞机，那么应该写成[3]；单个飞机的另一种配置方式是Base端口设成15503然后端口填写1。如果是多架不连续的飞机，那么应该写成[1 3 7]这样的以空格分割的从小到大形式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Sample Time   </td><td class="markdownTableBodyLeft">设置发送给飞机动捕数据的频率，推荐频率为30Hz，即采样时间间隔需要设置为1/30。通常可以将该模块的频率设置为-1，然后Simulink仿真频率设置为30Hz。当系统中使用不同的频率进行控制时，往往需要对数据进行采样，否则Simulink模型将会报错。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">isSendVision   </td><td class="markdownTableBodyLeft">是否将动捕数据发送给飞机。一般情况下将飞机数据发送给飞机，让飞机自身的滤波器能感知自身的位置。做开环控制时可以不勾选。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Drone base IP Address or IP list seperated by ','   </td><td class="markdownTableBodyLeft">设置飞机IP。配置单个飞机时直接填写飞机在局域网中的IP“192.168.151.1”。当配置多个飞机时，分为两种情况，一种是飞机IP是连续的，另一种是飞机IP不连续。当飞机IP连续时，只需要配置第一架飞机的IP即可。当飞机编号不连续时，使用逗号分割的方式填写不连续IP“192.168.151.1，192.168.151.3”。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Drone base UDP Port or list   </td><td class="markdownTableBodyLeft">Base端口设置。最小飞机的端口，需配合第二项配置使用，例如15501。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft">模块的输出为一个或多个无人机的状态反馈数据。输出是30维的向量，需要搭配vrpn_data_decoder使用。   </td></tr>
+</table>
+<p>使用示例：<a href="../../10.RflySimSwarm/1.BasicExps/e1_RflyUdpSwarmExp/index.html">[安装目录]\RflySimAPIs\10.RflySimSwarm\1.BasicExps\e1_RflyUdpSwarmExp\index.html</a></p>
+<div class="image">
+<a data_lightbox="image" href="image-20241209191136695.png"><img alt="" class="thumbnail" height="auto" src="image-20241209191136695.png" width="100"/></a>
+<div class="caption">
+RflyVrpnRecv模块</div></div>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

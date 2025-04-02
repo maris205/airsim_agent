@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_BaseClass.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#enum-members">枚举</a> |
+<a href="#var-members">变量</a> </div>
+<div class="headertitle"><div class="title">vrpn_BaseClass.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include "vrpn_Configure.h"</code><br/>
+<code>#include "vrpn_Connection.h"</code><br/>
+<code>#include "vrpn_Shared.h"</code><br/>
+<code>#include "vrpn_Types.h"</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> vrpn_BaseClass.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="vrpn__BaseClass_8h__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="544" scrolling="no" src="vrpn__BaseClass_8h__dep__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="vrpn__BaseClass_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__TextPrinter.html">vrpn_TextPrinter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__TextPrinter_1_1vrpn__TextPrinter__Watch__Entry.html">vrpn_TextPrinter::vrpn_TextPrinter_Watch_Entry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">Structure to hold the objects that are being watched.  <a href="classvrpn__TextPrinter_1_1vrpn__TextPrinter__Watch__Entry.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">vrpn_BaseClassUnique::SendTextMessageBoundCall</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Callback__List.html">vrpn_Callback_List&lt; CALLBACK_STRUCT &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__Callback__List_1_1vrpn__CBS.html">vrpn_Callback_List&lt; CALLBACK_STRUCT &gt;::vrpn_CBS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a35dd37cc637ed317d75325ef8c43c162" id="r_a35dd37cc637ed317d75325ef8c43c162"><td align="right" class="memItemLeft" valign="top">enum  </td><td class="memItemRight" valign="bottom"><a class="el" href="#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> { <b>vrpn_TEXT_NORMAL</b> = 0
+, <b>vrpn_TEXT_WARNING</b> = 1
+, <b>vrpn_TEXT_ERROR</b> = 2
+ }</td></tr>
+<tr class="separator:a35dd37cc637ed317d75325ef8c43c162"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aa72ae31fd578fc4d34395f93adcbd612" id="r_aa72ae31fd578fc4d34395f93adcbd612"><td align="right" class="memItemLeft" valign="top">const int </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa72ae31fd578fc4d34395f93adcbd612">vrpn_MAX_BCADRS</a> = 100</td></tr>
+<tr class="memdesc:aa72ae31fd578fc4d34395f93adcbd612"><td class="mdescLeft"> </td><td class="mdescRight">Internal value for number of BaseClass addresses  <br/></td></tr>
+<tr class="separator:aa72ae31fd578fc4d34395f93adcbd612"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8623e4df4aa24fcb4cc3096beeded01d" id="r_a8623e4df4aa24fcb4cc3096beeded01d"><td align="right" class="memItemLeft" valign="top"><a id="a8623e4df4aa24fcb4cc3096beeded01d" name="a8623e4df4aa24fcb4cc3096beeded01d"></a>
+const unsigned </td><td class="memItemRight" valign="bottom"><b>vrpn_MAX_TEXT_LEN</b> = 1024</td></tr>
+<tr class="separator:a8623e4df4aa24fcb4cc3096beeded01d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1be1a3d0494f3f1cea65ae9775988a44" id="r_a1be1a3d0494f3f1cea65ae9775988a44"><td align="right" class="memItemLeft" valign="top"><a id="a1be1a3d0494f3f1cea65ae9775988a44" name="a1be1a3d0494f3f1cea65ae9775988a44"></a>
+class VRPN_API </td><td class="memItemRight" valign="bottom"><b>vrpn_BaseClass</b></td></tr>
+<tr class="separator:a1be1a3d0494f3f1cea65ae9775988a44"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afaaec55ff5b0e98c6a673e04bdc349f6" id="r_afaaec55ff5b0e98c6a673e04bdc349f6"><td align="right" class="memItemLeft" valign="top"><a id="afaaec55ff5b0e98c6a673e04bdc349f6" name="afaaec55ff5b0e98c6a673e04bdc349f6"></a>
+VRPN_API <a class="el" href="classvrpn__TextPrinter.html">vrpn_TextPrinter</a> &amp; </td><td class="memItemRight" valign="bottom"><b>vrpn_System_TextPrinter</b></td></tr>
+<tr class="separator:afaaec55ff5b0e98c6a673e04bdc349f6"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>All types of client/server/peer objects in VRPN should be derived from the <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a> type described here. This includes Tracker, Button, Analog, Clock, Dial, ForceDevice, Sound, and Text; it should include any user-defined objects as well.</p>
+<p>This class both implements code that will be shared by most (if not all) objects in the system and forms a skeleton for the definition of new objects by requiring certain virtual member functions to be defined.</p>
+<p>See the VRPN web pages or another simple type (such as <a class="el" href="classvrpn__Analog.html">vrpn_Analog</a>) for an example of how to create a new VRPN object type using this as a base class. </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a35dd37cc637ed317d75325ef8c43c162" name="a35dd37cc637ed317d75325ef8c43c162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35dd37cc637ed317d75325ef8c43c162">◆ </a></span>vrpn_TEXT_SEVERITY</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">enum <a class="el" href="#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Since the sending of text messages has been pulled into the base class (so that every object can send error/warning/info messages this way), these definitions have been pulled in here as well. </p>
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="aa72ae31fd578fc4d34395f93adcbd612" name="aa72ae31fd578fc4d34395f93adcbd612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72ae31fd578fc4d34395f93adcbd612">◆ </a></span>vrpn_MAX_BCADRS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">const int vrpn_MAX_BCADRS = 100</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Internal value for number of BaseClass addresses </p>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

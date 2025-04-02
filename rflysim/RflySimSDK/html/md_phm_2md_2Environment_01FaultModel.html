@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Environment FaultModel模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">Environment FaultModel模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md190"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240725101802272.png"><img alt="" class="thumbnail" height="auto" src="image-20240725101802272.png" width="100"/></a>
+<div class="caption">
+image-20240725101802272</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">包含WindFult环境风模块以及其他环境模块。WindFult环境风模块用于对环境风进行数学建模，其他环境模块对TempC 温度、PosGPS定位、gravity重力、AirPressure气压、Rho大气压强进行建模。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">FaultIn   </td><td class="markdownTableBodyNone">故障输入，包括故障类型和故障参数。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">6DOF Bus1   </td><td class="markdownTableBodyNone">将简易环境模型和刚体六自由度模型的输出封装在总线中。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">envAltitude   </td><td class="markdownTableBodyNone">无人机所飞行的高度    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Environment Model Bus   </td><td class="markdownTableBodyNone">将TempC 温度、PosGPS定位、gravity重力、AirPressure气压、Rho大气压强、Windb、Wind封装在总线中   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md191"></a>
+WindFault模块（内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725104400894.png"><img alt="" class="thumbnail" height="auto" src="image-20240725104400894.png" width="100"/></a>
+<div class="caption">
+image-20240725104400894</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">WindFult环境风模块用于对环境风进行数学建模    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">123458为常风故障ID(故障参数为3个)<br/>
+123459为阵风故障ID(故障参数为2个，1个阵风强度，1个方向)<br/>
+123540为素流风故障ID(故障参数为1个，强度)<br/>
+123541为切向风故障ID(故障参数为1个，强度)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FaultIn   </td><td class="markdownTableBodyNone">故障输入，包括故障类型和故障参数。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">6DOF Bus1   </td><td class="markdownTableBodyNone">将简易环境模型和刚体六自由度模型的输出封装在总线中。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">WindOut   </td><td class="markdownTableBodyNone">将Windb、Wind封装在总线中   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md192"></a>
+FaultParamsExtract1模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725104603663.png"><img alt="" class="thumbnail" height="auto" src="image-20240725104603663.png" width="100"/></a>
+<div class="caption">
+image-20240725104603663</div></div>
+<p>具体参考**同目录下的FaultParamsExtract说明文档**</p>
+<h1><a class="anchor" id="autotoc_md193"></a>
+noiseUpperWindBodySwitch模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725105334878.png"><img alt="" class="thumbnail" height="auto" src="image-20240725105334878.png" width="100"/></a>
+<div class="caption">
+image-20240725105334878</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">根据噪声参数和噪声故障标志来调整噪声数据。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">NoiseParams   </td><td class="markdownTableBodyNone">一个向量或数组，包含了噪声参数。在这个函数中，<code>NoiseParams(1)</code>表示访问这个向量的第一个元素，这个元素被用来作为全局噪声增益开关。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Noise   </td><td class="markdownTableBodyNone">一个向量，代表了噪声数据。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">isNoiseFault   </td><td class="markdownTableBodyNone">这是一个逻辑输入参数，用来指示是否存在噪声故障。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">y   </td><td class="markdownTableBodyNone">默认情况下，<code>y</code>被初始化为<code>[0;0;0]</code>。如果<code>isNoiseFault</code>为<code>true</code>，则<code>y</code>会被计算为<code>Noise</code>乘以<code>Param_GlobalNoiseGainSwitch</code>。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md194"></a>
+GustWindModel模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725105727261.png"><img alt="" class="thumbnail" height="auto" src="image-20240725105727261.png" width="100"/></a>
+<div class="caption">
+image-20240725105727261</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">模拟阵风的风速模型。函数的输入参数包括当前时间、阵风状态、阵风参数和湍流数据，输出参数是当前时间点的风速向量 <code>gWind</code>。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">t   </td><td class="markdownTableBodyNone">当前时间。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isGustWin   </td><td class="markdownTableBodyNone">布尔值（true或false）,一个标志，指示是否存在阵风。如果为true，表示有阵风；否则表示没有阵风。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">GustWindParams   </td><td class="markdownTableBodyNone">包含阵风参数的向量。第一个元素是最大风速 <code>vmax</code>，第二个元素是阵风的频率参数。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">turb   </td><td class="markdownTableBodyNone">包含湍流数据的向量，用于在风速计算中增加湍流成分。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">gWind   </td><td class="markdownTableBodyNone">向量，当前时间点的风速向量，包含三个分量（x, y, z）。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md195"></a>
+TurbWindStrength_Dec_Switch模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725105805142.png"><img alt="" class="thumbnail" height="auto" src="image-20240725105805142.png" width="100"/></a>
+<div class="caption">
+image-20240725105805142</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">使用给定的湍流参数调整输入的风速数据。这个模型可以用于在风速数据中引入湍流效应，从而得到更接近实际情况的风速信息。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vwind   </td><td class="markdownTableBodyNone">风速数据。这是基础的风速信息，代表某个时间点或位置的风速。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TurbWindParams   </td><td class="markdownTableBodyNone">包含湍流参数的向量。在这个函数中，<code>TurbWindParams</code>的第一个元素用于调整湍流风速。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TurbWind   </td><td class="markdownTableBodyNone">基础风速 <code>vwind</code> 经过湍流参数调整后的风速。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md196"></a>
+SheerWindStrength_Dec_Switch模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725105841187.png"><img alt="" class="thumbnail" height="auto" src="image-20240725105841187.png" width="100"/></a>
+<div class="caption">
+image-20240725105841187</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">使用给定的风切变参数调整输入的风速数据，从而模拟风切变效应。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vwind   </td><td class="markdownTableBodyNone">基础风速数据。这表示原始的风速信息，代表某个时间点或位置的风速。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SheerWindParams   </td><td class="markdownTableBodyNone">包含风切变参数的向量。在这个函数中，<code>SheerWindParams</code>的第一个元素用于调整风切变效应。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SheerWind   </td><td class="markdownTableBodyNone">调整后的风速数据，是基础风速 <code>vwind</code> 经过风切变参数调整后的风速。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md197"></a>
+WindFun模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240725105926101.png"><img alt="" class="thumbnail" height="auto" src="image-20240725105926101.png" width="100"/></a>
+<div class="caption">
+image-20240725105926101</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">根据不同的风速模式（常风、阵风、湍流风、切变风）来确定输出的风速向量。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">isConstWind   </td><td class="markdownTableBodyNone">指示是否使用常风模式。如果为true，表示使用常风模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isGustWind   </td><td class="markdownTableBodyNone">指示是否使用阵风模式。如果为true，表示使用阵风模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">isTurbWind   </td><td class="markdownTableBodyNone">指示是否使用湍流风模式。如果为true，表示使用湍流风模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isSheerWind   </td><td class="markdownTableBodyNone">指示是否使用切变风模式。如果为true，表示使用切变风模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ConstWind   </td><td class="markdownTableBodyNone">常风模式下的风速向量 <code>[wind_x, wind_y, wind_z]</code>。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">GustWind   </td><td class="markdownTableBodyNone">阵风模式下的风速向量。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">TurbWind   </td><td class="markdownTableBodyNone">湍流风模式下的风速向量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SheerWind   </td><td class="markdownTableBodyNone">切变风模式下的风速向量。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">wind   </td><td class="markdownTableBodyNone">输出的风速向量，根据输入参数确定的风速模式生成的风速。   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

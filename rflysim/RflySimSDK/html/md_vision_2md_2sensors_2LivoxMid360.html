@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: 仿Livox mid360激光雷达</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">仿Livox mid360激光雷达</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md421"></a> </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">特性   </th><th class="markdownTableHeadNone">传统机械式激光雷达   </th><th class="markdownTableHeadNone">Livox Mid-360    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">扫描方式   </td><td class="markdownTableBodyNone">机械旋转   </td><td class="markdownTableBodyNone">混合固态技术    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">水平视场角   </td><td class="markdownTableBodyNone">360°   </td><td class="markdownTableBodyNone">360°    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">垂直视场角   </td><td class="markdownTableBodyNone">10°-30°   </td><td class="markdownTableBodyNone">59°    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">点云密度   </td><td class="markdownTableBodyNone">高线数时高密度（线性扫描）   </td><td class="markdownTableBodyNone">随积分时间增加，逐渐提高（非线性扫描）   </td></tr>
+</table>
+<div class="image">
+<a data_lightbox="image" href="image-20241018191229154.png"><img alt="" class="thumbnail" height="auto" src="image-20241018191229154.png" width="100"/></a>
+<div class="caption">
+mid360激光雷达输出</div></div>
+<h2><a class="anchor" id="autotoc_md422"></a>
+<b>1. 功能概述</b></h2>
+<h3><a class="anchor" id="autotoc_md423"></a>
+<b>1.1 支持的功能操作</b></h3>
+<p><b>传感器输出</b></p>
+<ul>
+<li><p class="startli">输出稠密点云数据，直接映射到世界坐标系。</p>
+<p class="startli">动态实时更新，点云分布具有非重复性，适合长时间扫描覆盖的应用场景。</p>
+<p class="startli">提供高效、高覆盖率的点云数据，支持复杂环境的精准感知。</p>
+</li>
+</ul>
+<p><b>应用场景</b></p>
+<ul>
+<li><p class="startli">**无人机测绘与建模**：提供高覆盖率点云数据，用于生成地形图、三维建模。</p>
+<p class="startli">**自动驾驶环境感知**：实时点云采集，用于障碍物检测和路径规划。</p>
+<p class="startli">**机器人导航与SLAM**：高覆盖率点云支持动态环境的同步定位与建图。</p>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md424"></a>
+<b>1.2 使用示例</b></h3>
+<p><b>配置文件添加传感器</b> 以下是配置文件 <code>Config.json</code> 的示例代码，用于添加激光雷达传感器：</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    "VisionSensors":[</div>
+<div class="line">        {</div>
+<div class="line">            "SeqID":0,</div>
+<div class="line">            "TypeID":23,</div>
+<div class="line">            "TargetCopter":1,</div>
+<div class="line">            "TargetMountType":0,</div>
+<div class="line">            "DataWidth":64,//这里无作用</div>
+<div class="line">            "DataHeight":272,//这里无作用</div>
+<div class="line">            "DataCheckFreq":10,//点云发布频率(hz)</div>
+<div class="line">            "SendProtocol":[0,127,0,0,1,9999,0,0],</div>
+<div class="line">            "CameraFOV":0,</div>
+<div class="line">            "SensorPosXYZ":[0,0,-0.3],</div>
+<div class="line">            "SensorAngEular":[0,0,0],</div>
+<div class="line">            "otherParams":[100,0,0,0,0,0,0,0]//otherParams[0]激光最远距离(m)，其余为预留位</div>
+<div class="line">        }</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><b>Python 调用传感器接口</b> 取图显示相关代码：</p>
+<div class="fragment"><div class="line">vis = VisionCaptureApi.VisionCaptureApi() # 创建一个视觉传感器实例</div>
+<div class="line">vis.jsonLoad() # 加载Config.json中的传感器配置文件</div>
+<div class="line">isSuss = vis.sendReqToUE4() # 向RflySim3D发送取图请求</div>
+<div class="line">vis.startImgCap() # 开启取图</div>
+<div class="line">vis.hasData[i] # 图片i数据是否更新</div>
+<div class="line">vis.Img[i] # 图片i数据</div>
+<div class="line">show3d=Open3DShow.Open3DShow() # 创建3D点云显示实例</div>
+<div class="line">show3d.CreatShow(0) # 创建点云显示窗口</div>
+<div class="line">show3d.UpdateShow(vis.Img[0]) # 更新点云</div>
+</div><!-- fragment --><p><b>例程链接</b></p>
+<ul>
+<li>示例工程：<a href="../../8.RflySimVision/0.ApiExps/10.Mid360Demo">8.RflySimVision\0.ApiExps\10.Mid360Demo</a></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md425"></a>
+<b>1.3 现实中的Mid40激光雷达</b></h3>
+<ul>
+<li>硬件示例<ul>
+<li><a href="https://www.livoxtech.com/cn/mid-360">Livox Mid-360</a></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2><a class="anchor" id="autotoc_md427"></a>
+<b>2. 传感器配置</b></h2>
+<h3><a class="anchor" id="autotoc_md428"></a>
+<b>2.1 传感器安装</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">TargetMountType</a></b> </td><td class="markdownTableBodyNone">0: 固定载具上（相对几何中心）；1: 固定载具上 （相对底部中心）；2: 固定地面上（监控）；3：相对地面坐标系的吊舱相机，固定飞机上，但相机姿态不随飞机变化（地面坐标系）；4：将传感器附加到另外一个传感器上   </td><td class="markdownTableBodyNone">决定传感器的所属载体对象及安装方式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">TargetCopter</a></b> </td><td class="markdownTableBodyNone">目标传感器ID（默认为0）或目标实体对象 ID (默认 1）   </td><td class="markdownTableBodyNone">决定传感器安装方式后，选择目标测量对象ID。传感器固定在载具或地面上时，该值对应目标载具或其它实体对象的CopterID；传感器固定在其它传感器上时，该值对应目标传感器**SeqID**。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SensorPosXYZ</a></b> </td><td class="markdownTableBodyNone">[x, y, z] (单位：米)   </td><td class="markdownTableBodyNone">相对于传感器所属载体对象的安装位置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">EulerOrQuat</a></b> </td><td class="markdownTableBodyNone">0: 欧拉角；1: 四元数   </td><td class="markdownTableBodyNone">选择安装姿态的表示方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SensorAngEular</a></b> </td><td class="markdownTableBodyNone">[roll, pitch, yaw] (弧度)   </td><td class="markdownTableBodyNone">安装姿态，欧拉角方式表示。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SensorAngQuat</a></b> </td><td class="markdownTableBodyNone">[q0, q1, q2, q3]   </td><td class="markdownTableBodyNone">安装姿态，四元数方式表示。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md429"></a>
+<b>2.2 网络通信配置</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SendProtocol</a></b> </td><td class="markdownTableBodyNone">[mode, IP, port, …]   </td><td class="markdownTableBodyNone">配置数据传输协议，支持共享内存和 UDP。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SendProtocol[0]</a></b> </td><td class="markdownTableBodyNone">0: 共享内存；1: UDP 压缩传输   </td><td class="markdownTableBodyNone">选择传输方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SendProtocol[5]</a></b> </td><td class="markdownTableBodyNone">端口号   </td><td class="markdownTableBodyNone">数据传输的目标端口号。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md430"></a>
+<b>2.3 传感器技术规格</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数名称   </th><th class="markdownTableHeadNone">示例值   </th><th class="markdownTableHeadNone">说明    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SeqID</b> </td><td class="markdownTableBodyNone"><code>0</code> </td><td class="markdownTableBodyNone">每个传感器在配置文件中的唯一编号，若为 <code>0</code> 则自动递增排序。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TypeID</b> </td><td class="markdownTableBodyNone"><code>23</code> </td><td class="markdownTableBodyNone">传感器类型，23 表示 Livox MID360 激光雷达。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>TargetCopter</b> </td><td class="markdownTableBodyNone"><code>1</code> </td><td class="markdownTableBodyNone">传感器绑定的无人机编号，默认为绑定 1 号无人机。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TargetMountType</b> </td><td class="markdownTableBodyNone"><code>0</code> </td><td class="markdownTableBodyNone">安装方式，<code>0</code> 表示固定在无人机几何中心。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataWidth</b> </td><td class="markdownTableBodyNone"><code>64</code> </td><td class="markdownTableBodyNone">对 Livox MID360 无实际作用。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>DataHeight</b> </td><td class="markdownTableBodyNone"><code>272</code> </td><td class="markdownTableBodyNone">对 Livox MID360 无实际作用。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataCheckFreq</b> </td><td class="markdownTableBodyNone"><code>10</code> Hz   </td><td class="markdownTableBodyNone">点云更新频率，单位为 Hz，表示每秒点云发布的帧数。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>CameraFOV</b> </td><td class="markdownTableBodyNone"><code>0</code> </td><td class="markdownTableBodyNone">不适用，Livox MID360 不使用此参数。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>otherParams[0]</b> </td><td class="markdownTableBodyNone"><code>100</code> </td><td class="markdownTableBodyNone">激光雷达的最大测距范围，单位为米。点云超出该范围的数据将被裁剪。   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

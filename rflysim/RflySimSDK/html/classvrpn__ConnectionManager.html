@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_ConnectionManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-static-methods">静态 Public 成员函数</a> |
+<a href="classvrpn__ConnectionManager-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_ConnectionManager类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Singleton class that keeps track of all known VRPN connections and makes sure they're deleted on shutdown.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afc6b26c08396b951a4b738e55021ecc2" id="r_afc6b26c08396b951a4b738e55021ecc2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6b26c08396b951a4b738e55021ecc2">getByName</a> (const char *name)</td></tr>
+<tr class="separator:afc6b26c08396b951a4b738e55021ecc2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a4a022c8a7c001a35a41e970fcbdbc6a5" id="r_a4a022c8a7c001a35a41e970fcbdbc6a5"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a022c8a7c001a35a41e970fcbdbc6a5">addConnection</a> (<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *, const char *name)</td></tr>
+<tr class="separator:a4a022c8a7c001a35a41e970fcbdbc6a5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67806b970088ad65c27e3c0da8c02caf" id="r_a67806b970088ad65c27e3c0da8c02caf"><td align="right" class="memItemLeft" valign="top"><a id="a67806b970088ad65c27e3c0da8c02caf" name="a67806b970088ad65c27e3c0da8c02caf"></a>
+void </td><td class="memItemRight" valign="bottom"><b>deleteConnection</b> (<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *)</td></tr>
+<tr class="separator:a67806b970088ad65c27e3c0da8c02caf"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a58c8cfbb6c3bb8a3b43bda494214555f" id="r_a58c8cfbb6c3bb8a3b43bda494214555f"><td align="right" class="memItemLeft" valign="top">static <a class="el" href="classvrpn__ConnectionManager.html">vrpn_ConnectionManager</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="#a58c8cfbb6c3bb8a3b43bda494214555f">instance</a> (void)</td></tr>
+<tr class="memdesc:a58c8cfbb6c3bb8a3b43bda494214555f"><td class="mdescLeft"> </td><td class="mdescRight">The only way to get access to an instance of this class. Guarantees that there is only one, global object. Also guarantees that it will be constructed the first time this function is called, and (hopefully?) destructed when the program terminates.  <br/></td></tr>
+<tr class="separator:a58c8cfbb6c3bb8a3b43bda494214555f"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Singleton class that keeps track of all known VRPN connections and makes sure they're deleted on shutdown. </p>
+<p>We make it static to guarantee that the destructor is called on program close so that the destructors of all the vrpn_Connections that have been allocated are called so that all open logs are flushed to disk. Each connection should add itself to this list in its constructor and should remove itself from this list in its destructor. </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a4a022c8a7c001a35a41e970fcbdbc6a5" name="a4a022c8a7c001a35a41e970fcbdbc6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a022c8a7c001a35a41e970fcbdbc6a5">◆ </a></span>addConnection()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void addConnection </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *</td> <td class="paramname"><span class="paramname"><em></em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>name</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>NB implementation is not particularly efficient; we expect to have O(10) connections, not O(1000). </p>
+</div>
+</div>
+<a id="afc6b26c08396b951a4b738e55021ecc2" name="afc6b26c08396b951a4b738e55021ecc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6b26c08396b951a4b738e55021ecc2">◆ </a></span>getByName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * getByName </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Searches through d_kcList but NOT d_anonList (Connections constructed with no name) </p>
+</div>
+</div>
+<a id="a58c8cfbb6c3bb8a3b43bda494214555f" name="a58c8cfbb6c3bb8a3b43bda494214555f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c8cfbb6c3bb8a3b43bda494214555f">◆ </a></span>instance()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static <a class="el" href="classvrpn__ConnectionManager.html">vrpn_ConnectionManager</a> &amp; instance </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>The only way to get access to an instance of this class. Guarantees that there is only one, global object. Also guarantees that it will be constructed the first time this function is called, and (hopefully?) destructed when the program terminates. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

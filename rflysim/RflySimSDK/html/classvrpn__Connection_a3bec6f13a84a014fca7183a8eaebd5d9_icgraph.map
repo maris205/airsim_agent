@@ -1,0 +1,11 @@
+<map id="addReference" name="addReference">
+<area shape="rect" id="Node000001" title="Counting references to this connection." alt="" coords="198,113,300,140"/>
+<area shape="rect" id="Node000002" href="$classvrpn__ConnectionPtr.html#a9af1d6b1ddc9c28eb7c7deb99b9d77df" title="Assignment operator from non&#45;smart pointer" alt="" coords="9,5,146,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,106,148,62,127,51,129,46,151,58,218,102"/>
+<area shape="rect" id="Node000003" href="$classvrpn__ConnectionPtr.html#adb76c2d77c292814b4b4277cde1ea869" title="Assignment operator from smart pointer" alt="" coords="9,72,146,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,116,145,109,146,104,183,111"/>
+<area shape="rect" id="Node000004" href="$classvrpn__ConnectionPtr.html#ae9b37e0000cb513e2ebf9eef190d950c" title="Explicit constructor from a non&#45;smart connection pointer" alt="" coords="5,139,150,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,142,151,148,150,143,182,137"/>
+<area shape="rect" id="Node000005" href="$classvrpn__ConnectionPtr.html#aed351dbc9de7611c5174df00796d947f" title="Copy constructor from smart pointer" alt="" coords="5,205,150,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,152,151,196,129,207,127,202,148,191,215,147"/>
+</map>

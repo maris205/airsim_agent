@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: binary_logger—数据记录模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">binary_logger—数据记录模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md53"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240813102958386.png"><img alt="" class="thumbnail" height="auto" src="image-20240813102958386.png" width="100"/></a>
+<div class="caption">
+image-20240813102958386</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">将double数据向量记录到SD卡上的文件。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="image-20240813103230280.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240813103230280.png" title="image-20240813103230280" width="100"/></a> </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Directory Path   </td><td class="markdownTableBodyLeft">这里指定了数据记录文件存储的目录路径请确保上述目录路径指向 <code>/fs/microsd/</code> 目录中的某个位置。例如，<code>/fs/microsd/log/mw</code> 表示将数据文件保存到SD卡的该目录中。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Cache in Memory   </td><td class="markdownTableBodyLeft">如果启用此选项，数据会首先缓存在内存中。当<code>en</code>信号变为低电平或达到指定的最大记录数量时，数据才会写入SD卡。如果该选项未启用，数据将直接写入SD卡，可能会更频繁地访问存储设备，但可以减少内存使用。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Max Record Count   </td><td class="markdownTableBodyLeft">这是允许缓存的最大记录数量。当缓存中存储的数据条目达到这个数量时，模块会将数据从内存刷新到SD卡中。如果启用了“Cache in Memory”选项，这个参数用于控制缓存的数据量，以避免内存溢出或过多的数据积累。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">en   </td><td class="markdownTableBodyLeft">Cache in Memory启用后，启用端口必须在程序执行期间先变为高电平，然后变为低电平，才能成功写入磁盘空间。如果启用端口在生成的代码执行完毕之前没有变为低电平，文件将仍然被视为“打开”状态且无法访问。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">data   </td><td class="markdownTableBodyLeft">数据输入可以是连接在一起的向量信号，以允许多信号记录。这些信号都需要具有相同的数据类型（单精度浮点数）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft">日志文件的格式为一个头部后跟二进制记录数据    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>使用示例</b> </td><td class="markdownTableBodyLeft"><a href="../../5.RflySimFlyCtrl/0.ApiExps/5.Log-Write-Read/Readme.pdf">../../5.RflySimFlyCtrl/0.ApiExps/5.Log-Write-Read/Readme.pdf</a> </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

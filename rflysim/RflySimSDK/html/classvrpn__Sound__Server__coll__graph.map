@@ -1,0 +1,23 @@
+<map id="vrpn_Sound_Server" name="vrpn_Sound_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="370,415,505,441"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Sound.html" title=" " alt="" coords="459,339,549,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="485,378,451,416,447,413,481,375"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="318,263,435,289"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,295,484,336,481,340,410,300"/>
+<area shape="rect" id="Node000010" href="$classvrpn__Text__Sender.html" title="Allows a user to send text messages from a device (usually," alt="" coords="309,339,435,365"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="377,305,376,338,370,338,372,304"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="297,187,455,213"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="379,228,379,262,374,262,374,228"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="158,96,277,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="247,130,294,160,344,184,342,189,291,165,244,134"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="79,47,79,60,83,70,94,78,112,86,158,97,157,102,110,91,91,83,79,74,74,61,74,47"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="207,5,335,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="259,47,244,73,228,97,224,94,239,71,255,44"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="302,96,467,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="384,139,380,186,375,186,379,138"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="404,5,458,32"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="465,39,493,69,503,87,507,108,507,277,507,338,502,338,502,277,502,108,498,89,489,72,461,43"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="419,47,393,97,388,94,415,45"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="395,375,428,413,424,416,391,379"/>
+</map>

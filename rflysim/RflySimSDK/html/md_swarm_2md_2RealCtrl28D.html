@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RealCtrl28D——控制接口</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RealCtrl28D——控制接口</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md224"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240815163830918.png"><img alt="" class="thumbnail" height="auto" src="image-20240815163830918.png" width="100"/></a>
+</div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">用于将控制指令和控制量打包成可以通信的格式    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>参数</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Select channels to control   </td><td class="markdownTableBodyNone">- 选择要控制的通道，包括以下选项：<br/>
+ 1. <b>x, y, z:</b> 位置（单位：米）。<br/>
+ 2. <b>vx, vy, vz:</b> 速度（单位：米/秒）。<br/>
+ 3. <b>ax, ay, az:</b> 加速度（单位：米/秒²）。<br/>
+ 4. <b>yaw:</b> 期望的欧拉角（单位：弧度，范围：-π到+π）。<br/>
+ 5. <b>yawspeed:</b> 绕NED框架Z轴的角速度（单位：弧度/秒）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Simulate Rcc Direct   </td><td class="markdownTableBodyNone">- 勾选后，模块将发送RCC信号给飞行器，信号关系为：[vx, vy, vz, yawspeed] -&gt; [ch1, ch2, ch3, ch4]。用户的[vx, vy, vz, yawspeed]范围在[-1, 1]之间，模块会自动将其映射到[1000-2000]。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Enable Force   </td><td class="markdownTableBodyNone">- 勾选后，<code>ax, ay, az</code>将被视为力（而非加速度）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Sample Time (s)   </td><td class="markdownTableBodyNone">- 模块的采样时间，单位为秒。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isEnCtrl是否使能控制   </td><td class="markdownTableBodyNone">该信号可由“<a href="md_swarm_2md_2HighLevelMode.html">模式控制</a>”模块生成EnableControl，也可自定义。当没有使能控制时该模块所有输出信号都为0。当该模块用作位置控制时，可能需要自定义isEnCtrl而不是使用“模式控制”模块生成的EnableControl。因为在进入Offboard并解锁后，设为位置0可能让飞机产生运动，这在室内多机时一定有飞机位置不为0。这种情况下，需要在解锁后就使能控制并将飞机当前位置作为指令传递给飞机。所以，在集群控制时建议优先使用速度控制模式，这样上层控制程序更方便操作。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd控制指令   </td><td class="markdownTableBodyNone">该模块一定来自于“<a href="md_swarm_2md_2HighLevelMode.html">模式控制</a>”模块。该指令传入“Offboard PVA”模块后，会进一步加工，例如会添加MAVLINK协议中SendPositionTarget相关的标志。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Ctrls四维控制输入   </td><td class="markdownTableBodyNone">四维控制输入将会被如何解析取决于该模块配置界面的设置。双击该模块可进入配置界面。虽然理论上可以任意勾选各个选项，但为了保持无人机稳定，勾选选项是有约束的。无人机的X、Y、Z和偏航四个自由度中，每个自由度都必须勾选一个量。也就是说，x、vx、ax中必须勾选一个，类似的Y和Z也是如此。对于偏航，必须在yaw和yawrate中选择一个勾选。如果“Simulate Rcc Direct”被勾选，那么四维控制信号将被解析为模拟遥控器信号。用户的输入仍然是[-1, 1]，模块会自动映射到1000-2000的PWM波。当使能加速度控制时，如果“Enable Force”被勾选，那么加速度将被解析为力。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone">28维double型向量，将控制数据输出给通信模块（如<a href="md_swarm_2md_2RflyUdpMavlink.html">RflyUdpMavlink</a>）   </td></tr>
+</table>
+<div class="image">
+<a data_lightbox="image" href="image-20241209164623929.png"><img alt="" class="thumbnail" height="auto" src="image-20241209164623929.png" width="100"/></a>
+</div>
+<p>最后，总结一下该模块的使用要点：1）根据需要在配置界面中勾选合适的控制指令，无人机的X、Y、Z和偏航四个自由度中，每个自由度都必须勾选一个量。2）isEnCtrl在位置控制多机时需要自定义，以保证正确的行为。</p>
+<p>**功能**：</p>
+<ul>
+<li><b>RealCtrl28D</b> 模块用于在NED本地坐标框架下执行offboard控制，允许控制飞行器的位置、速度、加速度以及姿态角和角速度。</li>
+<li>该模块支持模拟RCC直接控制和力控制选项，使其适用于各种控制场景。</li>
+</ul>
+<p>**使用场景**：</p><ul>
+<li>在飞行控制系统中用于执行高级控制算法，通过控制飞行器的多维度参数来实现复杂的飞行任务。</li>
+</ul>
+<p>使用示例：<a href="../../10.RflySimSwarm/1.BasicExps/e1_RflyUdpSwarmExp/index.html">[安装目录]\RflySimAPIs\10.RflySimSwarm\1.BasicExps\e1_RflyUdpSwarmExp\index.html</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

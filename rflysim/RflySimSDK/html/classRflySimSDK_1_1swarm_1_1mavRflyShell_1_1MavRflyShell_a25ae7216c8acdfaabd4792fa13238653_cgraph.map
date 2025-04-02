@@ -1,0 +1,11 @@
+<map id="monitorSerialPorts" name="monitorSerialPorts">
+<area shape="rect" id="Node000001" title="监控串口状态，检测新设备连接。" alt="" coords="5,31,134,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#ad86dfd00e96bd45dee408b1c9a71811b" title="检查当前串口是否仍然可用" alt="" coords="182,5,324,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,32,166,28,166,33,134,38"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#ad0da89f7796ae63b8060b7feafdfff99" title="等待用户插入新的飞控设备" alt="" coords="187,56,319,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,50,172,55,171,61,134,56"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a5781c33e6830b07570f7d09d454ac8ec" title="获取当前可用的串口列表" alt="" coords="372,5,528,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="324,16,356,16,356,21,324,21"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a6ed651c1d63afda9513e07ba30a266f1" title="获取主机上的可用串口。" alt="" coords="404,56,496,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,67,388,67,388,72,320,72"/>
+</map>

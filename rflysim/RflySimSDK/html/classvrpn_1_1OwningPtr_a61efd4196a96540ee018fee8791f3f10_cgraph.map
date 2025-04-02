@@ -1,0 +1,5 @@
+<map id="operator!" name="operator!">
+<area shape="rect" id="Node000001" title="Redundant way of checking pointer validity" alt="" coords="5,5,78,32"/>
+<area shape="rect" id="Node000002" href="$classvrpn_1_1OwningPtr.html#a315419f26d3c59fa143b49b90a019049" title="Checks pointer validity" alt="" coords="126,5,174,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,16,110,16,110,21,78,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="BatEnvConf" name="BatEnvConf">
+<area shape="rect" id="Node000001" title="配置多无人机环境的方法。" alt="" coords="5,56,98,83"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ab83426dda1d526182c0309c88eb10ed5" title="修改批处理文件以配置环境的方法。" alt="" coords="154,5,207,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,53,138,32,140,37,89,58"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac5bec7d7183ca3f4b41be73b98c5b319" title="设置批处理文件中的车辆数量的方法。" alt="" coords="147,56,214,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,67,131,67,131,72,98,72"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac56b15c3f8372b0c42dce1110c686660" title="获取指定框架的路径的方法。" alt="" coords="146,107,215,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="89,81,132,98,130,103,87,86"/>
+</map>

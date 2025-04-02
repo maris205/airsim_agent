@@ -1,0 +1,7 @@
+<map id="mavlink_quaternion_to_euler" name="mavlink_quaternion_to_euler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,139,69"/>
+<area shape="rect" id="Node000002" href="$mavlink__conversions_8h.html#a034c8265f27e81fa17cf4cf483b7ad8c" title=" " alt="" coords="187,5,338,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,35,171,30,171,35,139,40"/>
+<area shape="rect" id="Node000003" href="$mavlink__conversions_8h.html#a1acebd1df006ab806149f3bf9cc5544e" title=" " alt="" coords="196,56,329,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,56,181,62,180,67,139,61"/>
+</map>

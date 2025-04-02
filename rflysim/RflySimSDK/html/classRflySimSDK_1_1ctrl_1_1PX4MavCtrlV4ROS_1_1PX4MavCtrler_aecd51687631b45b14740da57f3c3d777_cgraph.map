@@ -1,0 +1,7 @@
+<map id="convert_to_rosmsg" name="convert_to_rosmsg">
+<area shape="rect" id="Node000001" title="将 pymavlink 库中的一个MAVLink消息对象转换为ROS消息格式。" alt="" coords="5,39,138,65"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ac191e5f90f81a3609656cdd0213c50c5" title="将传入的字节序列（payload_bytes）转换成MAVLink协议中的payload64格式。" alt="" coords="212,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,39,196,30,197,35,138,44"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ac191e5f90f81a3609656cdd0213c50c5" title="将payload字节转换为Mavlink的payload64格式" alt="" coords="186,56,386,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,60,171,65,170,70,138,65"/>
+</map>

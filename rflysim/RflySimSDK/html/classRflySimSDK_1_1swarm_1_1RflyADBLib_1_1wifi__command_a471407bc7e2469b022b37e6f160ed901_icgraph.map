@@ -1,0 +1,5 @@
+<map id="open_wifi" name="open_wifi">
+<area shape="rect" id="Node000001" title="打开wifi" alt="" coords="148,5,224,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command.html#a95016dc8fe1efbc6ff0b43d4dbd4e42a" title="连接wifi" alt="" coords="5,5,100,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,21,100,21,100,16,132,16"/>
+</map>

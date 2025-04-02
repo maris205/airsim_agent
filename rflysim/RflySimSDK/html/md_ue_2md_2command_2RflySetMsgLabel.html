@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflySetMsgLabel(int CopterID, FString Text, FString colorStr, float size, float time, int flag)（设置CopterID标签下方显示）</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflySetMsgLabel(int CopterID, FString Text, FString colorStr, float size, float time, int flag)（设置CopterID标签下方显示）</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md284"></a>设置一个 Copter 头顶的 Message 显示的内容。 </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数   </th><th class="markdownTableHeadNone">解释    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">CopterID   </td><td class="markdownTableBodyNone">要设置 Message 显示内容的 Copter 的 ID    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Text   </td><td class="markdownTableBodyNone">要在 Message 显示的文本内容    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">colorStr   </td><td class="markdownTableBodyNone">文本的颜色。可以用表示颜色值的字符串进行指定，例如 "FF0000" 表示红色，"00FF00" 表示绿色    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">size   </td><td class="markdownTableBodyNone">文本的大小    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">time   </td><td class="markdownTableBodyNone">文本的显示时间，以**秒**为单位。在指定的时间结束后，消息将消失    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">操作的消息行数。共有 5 个消息标签，当 flag &lt; 0 时表示新增一个消息   </td></tr>
+</table>
+<p><b>操作示例</b> <br/>
+<code>RflySetMsgLabel 1000 "Hi, here's the test string" FFFF00 20 5 0</code> <br/>
+ 将在 ID 标签下方显示一个紫色的文本字符串。这样使用 RflySetMsgLabel 函数，可以设置 Copter 的 Message 显示内容。您可以指定不同的参数来创建多行的 Message，每行消息可以在指定的时间内显示并消失。通过设置不同的 flag 值，可以操作不同的行数来更新或新增消息内容。 <br/>
+</p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+<map id="sendReSimXyzRPYaw" name="sendReSimXyzRPYaw">
+<area shape="rect" id="Node000001" title="请求指定的CopterSim将Xyz和RollPitchYaw更改为指定的值。" alt="" coords="5,31,162,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a4e53c2c2f48a4f24cfeb8f02bce9af36" title="请求初始化指定的CopterSim。" alt="" coords="210,31,338,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,41,194,41,194,47,162,47"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#af2780f533f88d104886b21e69602baaf" title="根据CopterID获取其IP地址。" alt="" coords="386,31,473,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,41,370,41,370,47,338,47"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a022e8f000f8bfc1a75627bb87bded56e" title="检查给定的IP地址是否有效。" alt="" coords="540,5,611,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="473,34,525,25,526,30,474,39"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a44f42a7b3d36ea204a341ec7a73ee01f" title="更新模拟消息。" alt="" coords="521,56,630,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="474,49,507,55,506,60,473,54"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="744,23,817,49"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="630,58,728,42,729,47,630,63"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="678,73,883,132"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="630,75,663,81,662,86,630,81"/>
+</map>

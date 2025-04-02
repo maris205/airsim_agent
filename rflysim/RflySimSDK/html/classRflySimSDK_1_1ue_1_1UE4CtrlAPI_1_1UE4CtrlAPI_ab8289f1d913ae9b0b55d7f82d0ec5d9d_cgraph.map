@@ -1,0 +1,13 @@
+<map id="sendUE4Attatch" name="sendUE4Attatch">
+<area shape="rect" id="Node000001" title="设置在UE4中将一个或多个自建物体附加到其他物体上" alt="" coords="5,147,123,173"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="176,5,358,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,144,114,102,140,79,169,58,178,53,181,57,172,62,144,83,117,106,78,148"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="176,72,358,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,143,185,117,187,123,108,149"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="171,139,364,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="123,157,155,157,155,163,123,163"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="240,205,295,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="109,171,171,191,225,206,224,211,170,196,107,176"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="172,256,363,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="81,172,121,206,172,242,182,247,180,252,169,246,117,211,78,176"/>
+</map>

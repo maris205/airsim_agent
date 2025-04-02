@@ -1,0 +1,15 @@
+<map id="vrpn_Analog_Server" name="vrpn_Analog_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="121,229,260,256"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Atmel.html" title=" " alt="" coords="5,312,93,339"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,266,72,314,70,309,154,262"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Clipping__Analog__Server.html" title="Analog server that can scale and clip its range to &#45;1..1." alt="" coords="117,304,264,347"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="193,272,193,304,188,304,188,272"/>
+<area shape="rect" id="Node000007" href="$classvrpn__IMU__Magnetometer.html" title="Normalizes the three directions for a magnetometer into a unit vector." alt="" coords="288,312,456,339"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="233,260,345,309,342,314,231,265"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog.html" title=" " alt="" coords="144,155,237,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,197,193,229,188,229,188,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="132,80,249,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,122,193,154,188,154,188,122"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="111,5,270,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,48,193,80,188,80,188,48"/>
+</map>

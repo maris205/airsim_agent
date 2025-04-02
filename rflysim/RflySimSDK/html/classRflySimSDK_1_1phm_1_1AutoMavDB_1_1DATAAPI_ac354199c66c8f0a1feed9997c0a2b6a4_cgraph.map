@@ -1,0 +1,26 @@
+<map id="test_result_to_html" name="test_result_to_html">
+<area shape="rect" id="Node000001" title="将测试结果转换为HTML格式并写入文件。" alt="" coords="5,259,138,285"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#ab947a30fe889217104c7c92b5135c535" title="为测试结果HTML数据显示添加换行标签。" alt="" coords="186,107,364,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,256,122,205,151,176,184,150,208,137,210,142,187,154,155,180,126,209,84,260"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#ad94849e1dad58129c1614830db502fe6" title="从测试结果描述中提取无人机框架信息。" alt="" coords="420,157,571,184"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="96,256,137,235,185,216,298,190,405,175,405,180,299,195,186,221,139,240,98,260"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a5f477a6c75cb0cba2607feaaf741f91f" title="从测试结果描述中提取仿真类型信息。" alt="" coords="425,208,566,235"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="127,255,185,244,302,230,409,222,410,228,303,236,186,249,128,261"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a9136846e1dac3247a77451a5a8fe81c0" title="将文本中的换行符转换为HTML的换行标签。" alt="" coords="196,259,354,285"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="138,269,180,269,180,275,138,275"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a0eadcb441950cc1c874b8ae525df4ad4" title="生成测试结果HTML文件的头部，包含测试结果表格的列标题。" alt="" coords="205,309,344,352"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="121,283,191,304,189,309,120,288"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a986ea646a810643080ea3a6358d05d2c" title="生成带有特定样式的测试结果HTML表格。" alt="" coords="426,339,565,381"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="86,284,127,325,155,346,187,361,243,376,302,381,359,379,411,374,411,379,359,385,302,386,242,381,185,367,152,350,123,329,82,288"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#aaa19030d02aa32e114905ab242955499" title="从HTML文件中读取数据并转换为列表。" alt="" coords="203,427,346,469"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="83,284,124,342,154,376,187,406,204,417,201,421,184,410,150,379,120,345,79,287"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a529842a87b67568059a0da75a60ba379" title="为测试结果描述添加HTML换行标签。" alt="" coords="414,5,578,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,104,347,73,411,42,428,35,430,40,413,46,350,78,299,108"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#acce7e42d79869f417f97756175c7a128" title="为控制序列描述添加HTML换行标签。" alt="" coords="412,56,579,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="336,103,419,84,420,89,337,109"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a513e32608d9c9f5ec1fc8bdca49a80d1" title="为测试结果添加HTML换行标签。" alt="" coords="430,107,561,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="364,117,415,117,415,123,364,123"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="337,131,420,151,419,156,336,137"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="299,132,350,162,413,194,430,200,428,205,411,198,347,167,296,136"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="345,337,411,346,410,351,344,343"/>
+</map>

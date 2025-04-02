@@ -1,0 +1,32 @@
+<map id="vrpn_Tracker_WiimoteHead" name="vrpn_Tracker_WiimoteHead">
+<area shape="rect" id="Node000001" title="Provides a tracker device given data from a Wii Remote and LED glasses." alt="" coords="55,588,238,615"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker.html" title=" " alt="" coords="334,421,431,448"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,459,166,590,163,585,351,455"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="324,320,441,347"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,362,385,421,380,421,380,362"/>
+<area shape="rect" id="Node000011" href="$classvrpn__Analog.html" title=" " alt="" coords="195,421,288,448"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="354,358,261,423,258,419,351,354"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="328,189,486,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,232,388,320,382,319,399,231"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="571,96,690,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="587,131,439,191,437,186,585,126"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="692,5,852,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="745,44,700,74,658,98,655,93,697,70,742,39"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="540,5,668,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="615,46,629,95,624,96,610,48"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="276,96,441,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="355,137,359,162,370,176,384,187,380,191,366,179,354,164,350,138"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="212,5,266,32"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="197,30,138,42,76,60,27,82,13,95,8,108,8,512,15,538,33,558,59,574,88,585,86,590,57,579,30,562,10,541,3,512,3,108,9,92,24,78,74,55,137,37,195,24"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="282,21,356,31,439,47,476,58,507,72,528,88,536,107,536,335,533,353,526,369,501,395,467,413,432,425,431,420,465,408,497,390,521,366,528,351,531,334,531,109,524,91,504,76,474,63,437,52,355,36,281,26"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="269,39,343,93,340,98,266,43"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="242,48,244,421,239,421,236,48"/>
+<area shape="rect" id="Node000013" href="$structvrpn__Callback__List_1_1vrpn__CBS.html" title=" " alt="" coords="107,96,189,123"/>
+<area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="210,43,193,58,159,97,155,94,189,54,207,39"/>
+<area shape="rect" id="Node000010" href="$classvrpn__Analog__Remote.html" title=" " alt="" coords="74,497,220,524"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="149,540,149,587,144,587,144,540"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="215,460,164,499,161,495,212,455"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Callback__List.html" title=" " alt="" coords="53,243,211,285"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="134,301,135,397,147,497,142,497,130,398,128,301"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="141,138,139,147,134,198,134,242,128,242,128,198,133,146,136,137"/>
+</map>

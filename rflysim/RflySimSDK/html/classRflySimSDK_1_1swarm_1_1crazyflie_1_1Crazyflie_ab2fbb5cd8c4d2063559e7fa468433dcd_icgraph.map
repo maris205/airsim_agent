@@ -1,0 +1,4 @@
+<map id="land" name="land">
+<area shape="rect" id="Node000001" title="执行降落动作，以设定的速度飞回指定高度。" alt="" coords="5,29,51,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="34,15,31,10,28,8,25,9,23,13,23,29,18,29,18,12,21,5,28,3,35,6,38,13"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ctrlLeftPress" name="ctrlLeftPress">
+<area shape="rect" id="Node000001" title="控制横滚角（Roll）的向左调整" alt="" coords="227,5,322,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#aedf1ff13bec1ee22492f69bf7db30fcd" title="初始化键盘快捷键。为每个方向键、Ctrl+方向键和Alt+方向键添加快捷键，并将其绑定到相应的方法上" alt="" coords="120,5,179,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,21,180,21,180,16,211,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#abdd362d5f799ad16b5d6700efe590290" title="KeyCtrl的构造函数" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

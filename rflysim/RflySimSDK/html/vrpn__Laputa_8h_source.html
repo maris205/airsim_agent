@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Laputa.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Laputa.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vrpn__Laputa_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Based on vrpn_Oculus driver</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include "vrpn_HumanInterface.h"</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include "vrpn_Analog.h"</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#if defined(VRPN_USE_HID)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00019">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html">   19</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Laputa.html">vrpn_Laputa</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Analog.html">vrpn_Analog</a>, <span class="keyword">protected</span> <a class="code hl_class" href="classvrpn__HidInterface.html">vrpn_HidInterface</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html#a387f337e5457d9eea8cf0755d3be96b5">   26</a></span> <a class="code hl_function" href="classvrpn__Laputa.html#a387f337e5457d9eea8cf0755d3be96b5">vrpn_Laputa</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c = NULL);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html#a40b98b3866b0981b2311e7e9e448a602">   31</a></span> <span class="keyword">virtual</span> <a class="code hl_function" href="classvrpn__Laputa.html#a40b98b3866b0981b2311e7e9e448a602">~vrpn_Laputa</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">   33</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Laputa.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> <span class="comment">//-------------------------------------------------------------</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> <span class="comment">// Parsers for different report types.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> <span class="comment">// Override to define more parsers</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> <span class="keyword">virtual</span> <span class="keywordtype">bool</span> parse_message(std::size_t bytes, vrpn_uint8 *buffer);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="comment">//-------------------------------------------------------------</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="comment">// Parsers for different report types.  The Laputa Hero sends type-1</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> <span class="comment">// reports in response to inertial-only keep-alive messages</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="comment">//</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html#a308c6a4a35f82bbb2faa846221d5f87c">   46</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Laputa.html#a308c6a4a35f82bbb2faa846221d5f87c">parse_message_type_1</a>(std::size_t bytes, vrpn_uint8 *buffer);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html#a14bbb59c23a0372fca178e3e4ba91332">   50</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Laputa.html#a14bbb59c23a0372fca178e3e4ba91332">on_data_received</a>(std::size_t bytes, vrpn_uint8 *buffer);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classvrpn__Laputa.html#a99066ecbb84aa452eab654ce3cf82dd0">   53</a></span> <span class="keyword">struct </span>timeval d_timestamp;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// VRPN_USE_HID</span></div>
+<div class="ttc" id="aclassvrpn__Analog_html"><div class="ttname"><a href="classvrpn__Analog.html">vrpn_Analog</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:28</div></div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="aclassvrpn__HidInterface_html"><div class="ttname"><a href="classvrpn__HidInterface.html">vrpn_HidInterface</a></div><div class="ttdef"><b>定义</b> vrpn_HumanInterface.h:70</div></div>
+<div class="ttc" id="aclassvrpn__Laputa_html"><div class="ttname"><a href="classvrpn__Laputa.html">vrpn_Laputa</a></div><div class="ttdoc">Laputa VR head-mounted display base class</div><div class="ttdef"><b>定义</b> vrpn_Laputa.h:19</div></div>
+<div class="ttc" id="aclassvrpn__Laputa_html_a14bbb59c23a0372fca178e3e4ba91332"><div class="ttname"><a href="classvrpn__Laputa.html#a14bbb59c23a0372fca178e3e4ba91332">vrpn_Laputa::on_data_received</a></div><div class="ttdeci">void on_data_received(std::size_t bytes, vrpn_uint8 *buffer)</div></div>
+<div class="ttc" id="aclassvrpn__Laputa_html_a308c6a4a35f82bbb2faa846221d5f87c"><div class="ttname"><a href="classvrpn__Laputa.html#a308c6a4a35f82bbb2faa846221d5f87c">vrpn_Laputa::parse_message_type_1</a></div><div class="ttdeci">void parse_message_type_1(std::size_t bytes, vrpn_uint8 *buffer)</div><div class="ttdoc">Parse and send reports for type-1 message</div></div>
+<div class="ttc" id="aclassvrpn__Laputa_html_a387f337e5457d9eea8cf0755d3be96b5"><div class="ttname"><a href="classvrpn__Laputa.html#a387f337e5457d9eea8cf0755d3be96b5">vrpn_Laputa::vrpn_Laputa</a></div><div class="ttdeci">vrpn_Laputa(const char *name, vrpn_Connection *c=NULL)</div></div>
+<div class="ttc" id="aclassvrpn__Laputa_html_a40b98b3866b0981b2311e7e9e448a602"><div class="ttname"><a href="classvrpn__Laputa.html#a40b98b3866b0981b2311e7e9e448a602">vrpn_Laputa::~vrpn_Laputa</a></div><div class="ttdeci">virtual ~vrpn_Laputa()</div><div class="ttdoc">Destructor.</div></div>
+<div class="ttc" id="aclassvrpn__Laputa_html_a5299ecc517aeaf6e61dc5d2c5316b4cb"><div class="ttname"><a href="classvrpn__Laputa.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">vrpn_Laputa::mainloop</a></div><div class="ttdeci">virtual void mainloop()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

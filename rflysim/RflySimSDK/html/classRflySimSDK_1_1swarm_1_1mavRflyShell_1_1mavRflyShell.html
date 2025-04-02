@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: MavRflyShell类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><a class="el" href="namespaceRflySimSDK_1_1swarm_1_1mavRflyShell.html">mavRflyShell</a></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html">MavRflyShell</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">MavRflyShell类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>     
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6ed651c1d63afda9513e07ba30a266f1" id="r_a6ed651c1d63afda9513e07ba30a266f1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ed651c1d63afda9513e07ba30a266f1">getPX4Com</a> (self)</td></tr>
+<tr class="memdesc:a6ed651c1d63afda9513e07ba30a266f1"><td class="mdescLeft"> </td><td class="mdescRight">获取主机上的可用串口。  <br/></td></tr>
+<tr class="separator:a6ed651c1d63afda9513e07ba30a266f1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a972c48d31eefa5b8e0820c0dfa1f035a" id="r_a972c48d31eefa5b8e0820c0dfa1f035a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a972c48d31eefa5b8e0820c0dfa1f035a">getLocalIp</a> (self)</td></tr>
+<tr class="memdesc:a972c48d31eefa5b8e0820c0dfa1f035a"><td class="mdescLeft"> </td><td class="mdescRight">获取本地IP地址。  <br/></td></tr>
+<tr class="separator:a972c48d31eefa5b8e0820c0dfa1f035a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afafe645ae5127cb358eb333a7ef950fd" id="r_afafe645ae5127cb358eb333a7ef950fd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afafe645ae5127cb358eb333a7ef950fd">validate_ip</a> (self, ip)</td></tr>
+<tr class="memdesc:afafe645ae5127cb358eb333a7ef950fd"><td class="mdescLeft"> </td><td class="mdescRight">检查 IP 地址是否符合标准格式。  <br/></td></tr>
+<tr class="separator:afafe645ae5127cb358eb333a7ef950fd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a926026339546bf6bd7c93c028aa0f62e" id="r_a926026339546bf6bd7c93c028aa0f62e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a926026339546bf6bd7c93c028aa0f62e">auto_configure_ip</a> (self, targetID)</td></tr>
+<tr class="memdesc:a926026339546bf6bd7c93c028aa0f62e"><td class="mdescLeft"> </td><td class="mdescRight">根据目标飞控 ID 自动生成 IP 地址。  <br/></td></tr>
+<tr class="separator:a926026339546bf6bd7c93c028aa0f62e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a046fe9810c33cc4ddfa6c971be7624" id="r_a0a046fe9810c33cc4ddfa6c971be7624"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a046fe9810c33cc4ddfa6c971be7624">setSysIDIP</a> (self, com, airplane_id, baud=921600, is_last=False)</td></tr>
+<tr class="memdesc:a0a046fe9810c33cc4ddfa6c971be7624"><td class="mdescLeft"> </td><td class="mdescRight">设置飞控的系统 ID 和 IP 地址，并进行参数配置。  <br/></td></tr>
+<tr class="separator:a0a046fe9810c33cc4ddfa6c971be7624"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a25ae7216c8acdfaabd4792fa13238653" id="r_a25ae7216c8acdfaabd4792fa13238653"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a25ae7216c8acdfaabd4792fa13238653">monitorSerialPorts</a> (self, com)</td></tr>
+<tr class="memdesc:a25ae7216c8acdfaabd4792fa13238653"><td class="mdescLeft"> </td><td class="mdescRight">监控串口状态，检测新设备连接。  <br/></td></tr>
+<tr class="separator:a25ae7216c8acdfaabd4792fa13238653"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad86dfd00e96bd45dee408b1c9a71811b" id="r_ad86dfd00e96bd45dee408b1c9a71811b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad86dfd00e96bd45dee408b1c9a71811b">checkSerialAvailable</a> (self, com)</td></tr>
+<tr class="memdesc:ad86dfd00e96bd45dee408b1c9a71811b"><td class="mdescLeft"> </td><td class="mdescRight">检查当前串口是否仍然可用  <br/></td></tr>
+<tr class="separator:ad86dfd00e96bd45dee408b1c9a71811b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5781c33e6830b07570f7d09d454ac8ec" id="r_a5781c33e6830b07570f7d09d454ac8ec"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5781c33e6830b07570f7d09d454ac8ec">getAvailableSerialPorts</a> (self)</td></tr>
+<tr class="memdesc:a5781c33e6830b07570f7d09d454ac8ec"><td class="mdescLeft"> </td><td class="mdescRight">获取当前可用的串口列表  <br/></td></tr>
+<tr class="separator:a5781c33e6830b07570f7d09d454ac8ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad0da89f7796ae63b8060b7feafdfff99" id="r_ad0da89f7796ae63b8060b7feafdfff99"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0da89f7796ae63b8060b7feafdfff99">waitForNewDevice</a> (self)</td></tr>
+<tr class="memdesc:ad0da89f7796ae63b8060b7feafdfff99"><td class="mdescLeft"> </td><td class="mdescRight">等待用户插入新的飞控设备  <br/></td></tr>
+<tr class="separator:ad0da89f7796ae63b8060b7feafdfff99"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa7348d725a020bed972795edd3b80054" id="r_aa7348d725a020bed972795edd3b80054"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7348d725a020bed972795edd3b80054">check_udp_data</a> (self, port)</td></tr>
+<tr class="memdesc:aa7348d725a020bed972795edd3b80054"><td class="mdescLeft"> </td><td class="mdescRight">从指定的UDP端口读取数据  <br/></td></tr>
+<tr class="separator:aa7348d725a020bed972795edd3b80054"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a55beb85070d8daaf4f5f3a46003daa4a" id="r_a55beb85070d8daaf4f5f3a46003daa4a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a55beb85070d8daaf4f5f3a46003daa4a">connect_to_device</a> (self, port, baud)</td></tr>
+<tr class="memdesc:a55beb85070d8daaf4f5f3a46003daa4a"><td class="mdescLeft"> </td><td class="mdescRight">连接到指定串口，包含错误处理与重试机制。  <br/></td></tr>
+<tr class="separator:a55beb85070d8daaf4f5f3a46003daa4a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8ee97a80e050165172093bcf47c829f" id="r_af8ee97a80e050165172093bcf47c829f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af8ee97a80e050165172093bcf47c829f">query_mav_sys_id</a> (self, rflyShell, sys_id)</td></tr>
+<tr class="memdesc:af8ee97a80e050165172093bcf47c829f"><td class="mdescLeft"> </td><td class="mdescRight">重新查询 MAV_SYS_ID 参数，直到找到为止。  <br/></td></tr>
+<tr class="separator:af8ee97a80e050165172093bcf47c829f"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>    </p>
+<p>定义一个 <a class="el" href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html" title="   ">MavRflyShell</a> 类，用于 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a926026339546bf6bd7c93c028aa0f62e" name="a926026339546bf6bd7c93c028aa0f62e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926026339546bf6bd7c93c028aa0f62e">◆ </a></span>auto_configure_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">auto_configure_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>targetID</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据目标飞控 ID 自动生成 IP 地址。 </p>
+<ul>
+<li><a class="anchor" id="auto_configure_ip"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">targetID</td><td>目标设备的 ID。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>生成的 IP 地址字符串。</dd></dl>
+<pre class="fragment"> 自动配置飞控的 IP 地址 </pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a926026339546bf6bd7c93c028aa0f62e_cgraph.svg" width="380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a926026339546bf6bd7c93c028aa0f62e_icgraph.svg" width="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aa7348d725a020bed972795edd3b80054" name="aa7348d725a020bed972795edd3b80054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7348d725a020bed972795edd3b80054">◆ </a></span>check_udp_data()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">check_udp_data </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>port</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从指定的UDP端口读取数据 </p>
+<ul>
+<li><a class="anchor" id="check_udp_data"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">port</td><td>要读取数据的 UDP 端口。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>接收到的 UDP 数据。</dd></dl>
+<pre class="fragment"> 从指定的UDP端口读取数据 </pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_aa7348d725a020bed972795edd3b80054_icgraph.svg" width="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad86dfd00e96bd45dee408b1c9a71811b" name="ad86dfd00e96bd45dee408b1c9a71811b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86dfd00e96bd45dee408b1c9a71811b">◆ </a></span>checkSerialAvailable()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">checkSerialAvailable </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>com</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检查当前串口是否仍然可用 </p>
+<ul>
+<li><a class="anchor" id="checkSerialAvailable"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">com</td><td>串口名称 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>布尔值，检查的串口是否仍然可用</dd></dl>
+<pre class="fragment"> 检查当前串口是否仍然可用 </pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_ad86dfd00e96bd45dee408b1c9a71811b_cgraph.svg" width="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_ad86dfd00e96bd45dee408b1c9a71811b_icgraph.svg" width="467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a55beb85070d8daaf4f5f3a46003daa4a" name="a55beb85070d8daaf4f5f3a46003daa4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55beb85070d8daaf4f5f3a46003daa4a">◆ </a></span>connect_to_device()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">connect_to_device </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>baud</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>连接到指定串口，包含错误处理与重试机制。 </p>
+<ul>
+<li><a class="anchor" id="connect_to_device"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">port</td><td>串口名称。 </td></tr>
+<tr><td class="paramname">baud</td><td>串口波特率。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>连接状态，成功返回 True，失败返回 False。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a55beb85070d8daaf4f5f3a46003daa4a_icgraph.svg" width="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a5781c33e6830b07570f7d09d454ac8ec" name="a5781c33e6830b07570f7d09d454ac8ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5781c33e6830b07570f7d09d454ac8ec">◆ </a></span>getAvailableSerialPorts()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getAvailableSerialPorts </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前可用的串口列表 </p>
+<ul>
+<li><a class="anchor" id="getAvailableSerialPorts"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>当前可用的串口列表</dd></dl>
+<pre class="fragment"> 获取当前可用的串口列表 </pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a5781c33e6830b07570f7d09d454ac8ec_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a972c48d31eefa5b8e0820c0dfa1f035a" name="a972c48d31eefa5b8e0820c0dfa1f035a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972c48d31eefa5b8e0820c0dfa1f035a">◆ </a></span>getLocalIp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getLocalIp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取本地IP地址。 </p>
+<ul>
+<li><a class="anchor" id="getLocalIp"></a> <dl class="section return"><dt>返回</dt><dd>返回本地IP地址字符串。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a972c48d31eefa5b8e0820c0dfa1f035a_icgraph.svg" width="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a6ed651c1d63afda9513e07ba30a266f1" name="a6ed651c1d63afda9513e07ba30a266f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed651c1d63afda9513e07ba30a266f1">◆ </a></span>getPX4Com()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getPX4Com </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取主机上的可用串口。 </p>
+<ul>
+<li><a class="anchor" id="getPX4Com"></a> <dl class="section return"><dt>返回</dt><dd>可用串口的列表。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a6ed651c1d63afda9513e07ba30a266f1_icgraph.svg" width="598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a25ae7216c8acdfaabd4792fa13238653" name="a25ae7216c8acdfaabd4792fa13238653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ae7216c8acdfaabd4792fa13238653">◆ </a></span>monitorSerialPorts()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">monitorSerialPorts </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>com</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>监控串口状态，检测新设备连接。 </p>
+<ul>
+<li><a class="anchor" id="monitorSerialPorts"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">com</td><td>串口名称。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a25ae7216c8acdfaabd4792fa13238653_cgraph.svg" width="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a25ae7216c8acdfaabd4792fa13238653_icgraph.svg" width="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="af8ee97a80e050165172093bcf47c829f" name="af8ee97a80e050165172093bcf47c829f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ee97a80e050165172093bcf47c829f">◆ </a></span>query_mav_sys_id()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">query_mav_sys_id </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>rflyShell</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>sys_id</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>重新查询 MAV_SYS_ID 参数，直到找到为止。 </p>
+<ul>
+<li><a class="anchor" id="query_mav_sys_id"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">rflyShell</td><td><a class="el" href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1RflyShell.html" title="   ">RflyShell</a> 实例。 </td></tr>
+<tr><td class="paramname">sys_id</td><td>目标系统 ID。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>找到的系统 ID。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_af8ee97a80e050165172093bcf47c829f_icgraph.svg" width="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a0a046fe9810c33cc4ddfa6c971be7624" name="a0a046fe9810c33cc4ddfa6c971be7624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a046fe9810c33cc4ddfa6c971be7624">◆ </a></span>setSysIDIP()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setSysIDIP </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>com</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>airplane_id</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>baud</em></span><span class="paramdefsep"> = </span><span class="paramdefval">921600</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>is_last</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置飞控的系统 ID 和 IP 地址，并进行参数配置。 </p>
+<ul>
+<li><a class="anchor" id="setSysIDIP"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">com</td><td>串口名称。 </td></tr>
+<tr><td class="paramname">airplane_id</td><td>飞机的系统 ID。 </td></tr>
+<tr><td class="paramname">baud</td><td>串口波特率，默认为 921600。 </td></tr>
+<tr><td class="paramname">is_last</td><td>是否为最后一个设备，默认为 False。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="535" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_a0a046fe9810c33cc4ddfa6c971be7624_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="afafe645ae5127cb358eb333a7ef950fd" name="afafe645ae5127cb358eb333a7ef950fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafe645ae5127cb358eb333a7ef950fd">◆ </a></span>validate_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">validate_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检查 IP 地址是否符合标准格式。 </p>
+<ul>
+<li><a class="anchor" id="validate_ip"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ip</td><td>要检查的 IP 地址字符串。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>布尔值，若 IP 地址格式正确则返回 True，否则返回 False。</dd></dl>
+<pre class="fragment"> 检查 IP 是否以 192.168.151 开头 </pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_afafe645ae5127cb358eb333a7ef950fd_icgraph.svg" width="232"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad0da89f7796ae63b8060b7feafdfff99" name="ad0da89f7796ae63b8060b7feafdfff99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0da89f7796ae63b8060b7feafdfff99">◆ </a></span>waitForNewDevice()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">waitForNewDevice </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>等待用户插入新的飞控设备 </p>
+<ul>
+<li><a class="anchor" id="waitForNewDevice"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新设备的串口号。</dd></dl>
+<pre class="fragment"> 等待用户插入新的飞控设备 </pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_ad0da89f7796ae63b8060b7feafdfff99_cgraph.svg" width="284"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell_ad0da89f7796ae63b8060b7feafdfff99_icgraph.svg" width="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="mavRflyShell_8py.html">mavRflyShell.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

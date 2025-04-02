@@ -1,0 +1,21 @@
+<map id="vrpn_RedundantReceiver" name="vrpn_RedundantReceiver">
+<area shape="rect" id="Node000001" title=" " alt="" coords="321,384,490,411"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="211,277,330,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,316,302,338,321,358,341,371,364,381,361,386,339,376,317,362,298,342,282,319"/>
+<area shape="rect" id="Node000003" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="5,187,166,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,227,102,240,112,251,135,265,160,275,211,286,210,291,158,280,132,270,109,255,98,243,91,229"/>
+<area shape="rect" id="Node000004" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="207,187,335,213"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="274,229,274,277,268,277,268,229"/>
+<area shape="rect" id="Node000005" href="$structvrpn__RedundantReceiver_1_1RRRecord.html" title=" " alt="" coords="364,277,447,304"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="408,319,408,384,403,384,403,319"/>
+<area shape="rect" id="Node000006" href="$structvrpnMsgCallbackEntry.html" title="Description of a callback entry for a user type." alt="" coords="360,187,513,213"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="429,229,412,278,407,276,424,227"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="530,192,539,200,531,208,514,211,513,205,529,203,534,200,527,196"/>
+<area shape="rect" id="Node000007" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="354,96,519,123"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="439,138,439,186,434,186,434,138"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="409,5,463,32"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="439,48,439,95,434,95,434,48"/>
+<area shape="rect" id="Node000009" href="$structvrpn__RedundantReceiver_1_1RRMemory.html" title=" " alt="" coords="471,277,559,304"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="504,319,491,341,473,362,437,386,434,381,469,358,486,338,500,316"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="576,282,586,291,577,299,560,302,559,297,575,294,580,291,573,286"/>
+</map>

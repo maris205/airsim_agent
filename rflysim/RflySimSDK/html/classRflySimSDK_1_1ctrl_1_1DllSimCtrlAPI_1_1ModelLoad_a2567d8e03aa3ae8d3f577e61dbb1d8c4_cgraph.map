@@ -1,0 +1,4 @@
+<map id="DllOutCopterData" name="DllOutCopterData">
+<area shape="rect" id="Node000001" title="从 DLL 获取 32 维数据，包括飞行器的传感器读数、状态信息等" alt="" coords="5,29,131,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="46,30,42,21,45,11,54,5,68,3,84,5,92,12,88,16,81,10,68,8,55,10,49,14,47,20,51,28"/>
+</map>

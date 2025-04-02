@@ -1,0 +1,17 @@
+<map id="SendPosVelNED" name="SendPosVelNED">
+<area shape="rect" id="Node000001" title="发送NED坐标系下的位置和速度命令" alt="" coords="5,197,127,224"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据提供的布尔列表 EnList 计算一个类型掩码（type mask）。" alt="" coords="175,5,415,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,196,107,130,137,91,173,58,180,54,183,58,176,62,141,95,112,133,75,198"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据输入的启用列表计算Type Mask" alt="" coords="242,72,348,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="76,195,115,152,143,128,173,108,199,98,226,90,228,96,201,103,176,113,146,132,119,156,80,199"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="204,123,386,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,194,174,175,199,167,201,173,175,180,112,199"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="204,189,386,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,208,188,208,188,213,127,213"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="198,256,392,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="112,222,175,241,201,249,199,254,174,247,110,227"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="199,323,390,365"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="80,223,120,265,147,288,176,308,186,314,184,318,173,313,143,293,116,269,76,226"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="267,389,322,416"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="74,224,87,255,109,297,138,340,176,375,213,392,252,399,251,404,212,397,173,380,134,343,104,300,83,258,70,226"/>
+</map>

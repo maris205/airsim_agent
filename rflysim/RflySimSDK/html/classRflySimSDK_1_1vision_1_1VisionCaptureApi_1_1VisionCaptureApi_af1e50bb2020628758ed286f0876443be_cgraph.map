@@ -1,0 +1,12 @@
+<map id="startImgCap" name="startImgCap">
+<area shape="rect" id="Node000001" title="用于启动图像捕获的循环过程，先是一些初始化，然后根据SendProtocol[0]来判断是内存共享还是UDP传输，分别进行相应的处理函数" alt="" coords="5,31,99,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a1d8ed55a7d7e2bd75f5200d1b0d20898" title="从共享内存读取数据并进行处理，以不同的传感器类型来解析数据" alt="" coords="156,5,264,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,34,141,27,141,32,99,39"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#af5b9ff08c785903546f906925d994d27" title="定义了一个线程，用于通过 UDP 接收图像数据包，并根据特定协议解析和处理这些数据包" alt="" coords="147,56,273,83"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="99,49,132,54,131,59,99,54"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a8f69aeccc41b656e9aacee0a3b3dd5fc" title="用于将图像数据分割为固定大小的数据包，并添加头部信息后发送 &#45;" alt="" coords="496,5,602,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,16,481,16,481,21,264,21"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a10eee193cf6fd47b0c23d5f8bf3ce023" title="用于图像数据的UDP发送" alt="" coords="321,31,448,57"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="264,24,306,30,305,35,263,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="449,31,481,26,482,32,449,37"/>
+</map>

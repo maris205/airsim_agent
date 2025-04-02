@@ -1,0 +1,10 @@
+<map id="sendMavTakeOff" name="sendMavTakeOff">
+<area shape="rect" id="Node000001" title=" " alt="" coords="508,5,628,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="167,5,265,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,21,266,21,266,16,493,16"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7e6b7d5dc106d745cf823364704a4904" title=" " alt="" coords="313,31,460,57"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="493,32,461,36,460,31,492,27"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,5,119,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,21,119,21,119,16,151,16"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="297,33,265,29,266,23,298,28"/>
+</map>

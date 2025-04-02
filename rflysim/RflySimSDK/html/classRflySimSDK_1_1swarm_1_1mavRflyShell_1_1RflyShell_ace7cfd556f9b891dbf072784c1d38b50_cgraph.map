@@ -1,0 +1,7 @@
+<map id="SendCmdNshS" name="SendCmdNshS">
+<area shape="rect" id="Node000001" title="向飞控发送参数并接收响应" alt="" coords="5,5,118,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1RflyShell.html#a62b5256d1fb860eb4e752ef8e7af98df" title="向飞控发送命令并接收响应。" alt="" coords="166,5,269,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,150,16,150,21,118,21"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1RflyShell.html#af4a136ca83436805a015e8aae2b7984a" title="检查数据中是否包含提示符（nsh&gt;），用于判断命令是否完成。" alt="" coords="317,5,395,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="269,16,301,16,301,21,269,21"/>
+</map>

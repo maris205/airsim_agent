@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: TimeHelper类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>crazyflie</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1TimeHelper.html">TimeHelper</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1TimeHelper-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">TimeHelper类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>提供与时间相关的功能。 该类的存在是为了在真实硬件和仿真环境（可能比实时快或慢）下使用相同的脚本逻辑。 在真实硬件上运行时，该类可使用ROS的时间函数；在仿真环境中不依赖ROS。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化TimeHelper类对象的相关属性。  <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1dc1bf097920db190e1e39ff0d0eeef5" id="r_a1dc1bf097920db190e1e39ff0d0eeef5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc1bf097920db190e1e39ff0d0eeef5">time</a> (self)</td></tr>
+<tr class="memdesc:a1dc1bf097920db190e1e39ff0d0eeef5"><td class="mdescLeft"> </td><td class="mdescRight">获取当前系统时间（单位：秒）。  <br/></td></tr>
+<tr class="separator:a1dc1bf097920db190e1e39ff0d0eeef5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa502c49c6aea11b5c09ec306efe43f40" id="r_aa502c49c6aea11b5c09ec306efe43f40"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa502c49c6aea11b5c09ec306efe43f40">sleep</a> (self, duration)</td></tr>
+<tr class="memdesc:aa502c49c6aea11b5c09ec306efe43f40"><td class="mdescLeft"> </td><td class="mdescRight">使当前线程休眠指定时长（秒）。  <br/></td></tr>
+<tr class="separator:aa502c49c6aea11b5c09ec306efe43f40"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a96348be412750c5b03891fb604882401" id="r_a96348be412750c5b03891fb604882401"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a96348be412750c5b03891fb604882401">sleepForRate</a> (self, rateHz)</td></tr>
+<tr class="memdesc:a96348be412750c5b03891fb604882401"><td class="mdescLeft"> </td><td class="mdescRight">根据设定的频率使循环以指定的速率执行。  <br/></td></tr>
+<tr class="separator:a96348be412750c5b03891fb604882401"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad85c22e848ba6e77a8959b935617b219" id="r_ad85c22e848ba6e77a8959b935617b219"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad85c22e848ba6e77a8959b935617b219">isShutdown</a> (self)</td></tr>
+<tr class="memdesc:ad85c22e848ba6e77a8959b935617b219"><td class="mdescLeft"> </td><td class="mdescRight">检查脚本是否应终止（例如用户Ctrl-C）。  <br/></td></tr>
+<tr class="separator:ad85c22e848ba6e77a8959b935617b219"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2a8526f3ba08014c18096ac4cbf55d3d" id="r_a2a8526f3ba08014c18096ac4cbf55d3d"><td align="right" class="memItemLeft" valign="top"><a id="a2a8526f3ba08014c18096ac4cbf55d3d" name="a2a8526f3ba08014c18096ac4cbf55d3d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rosRate</b></td></tr>
+<tr class="separator:a2a8526f3ba08014c18096ac4cbf55d3d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8d40c23e02cde0246f7138e86fc8b1af" id="r_a8d40c23e02cde0246f7138e86fc8b1af"><td align="right" class="memItemLeft" valign="top"><a id="a8d40c23e02cde0246f7138e86fc8b1af" name="a8d40c23e02cde0246f7138e86fc8b1af"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rateHz</b></td></tr>
+<tr class="separator:a8d40c23e02cde0246f7138e86fc8b1af"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adb95368c48467e7ecc8311cf5da4c062" id="r_adb95368c48467e7ecc8311cf5da4c062"><td align="right" class="memItemLeft" valign="top"><a id="adb95368c48467e7ecc8311cf5da4c062" name="adb95368c48467e7ecc8311cf5da4c062"></a>
+ </td><td class="memItemRight" valign="bottom"><b>visualizer</b></td></tr>
+<tr class="separator:adb95368c48467e7ecc8311cf5da4c062"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供与时间相关的功能。 该类的存在是为了在真实硬件和仿真环境（可能比实时快或慢）下使用相同的脚本逻辑。 在真实硬件上运行时，该类可使用ROS的时间函数；在仿真环境中不依赖ROS。 </p>
+<pre class="fragment">Object containing all time-related functionality.
+
+This class mainly exists to support both real hardware and (potentially
+faster or slower than realtime) simulation with the same script.
+When running on real hardware, this class uses ROS time functions.
+The simulation equivalent does not depend on ROS.
+
+Attributes:
+    visualizer: No-op object conforming to the Visualizer API used in
+        simulation scripts. Maintains the property that scripts should not
+        know/care if they are running in simulation or not.
+</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化TimeHelper类对象的相关属性。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a></li>
+</ul>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad85c22e848ba6e77a8959b935617b219" name="ad85c22e848ba6e77a8959b935617b219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85c22e848ba6e77a8959b935617b219">◆ </a></span>isShutdown()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isShutdown </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检查脚本是否应终止（例如用户Ctrl-C）。 </p>
+<ul>
+<li><a class="anchor" id="isShutdown"></a> <dl class="section return"><dt>返回</dt><dd>bool: True表示应终止脚本执行，False表示继续执行。</dd></dl>
+<pre class="fragment">Returns true if the script should abort, e.g. from Ctrl-C.</pre> </li>
+</ul>
+</div>
+</div>
+<a id="aa502c49c6aea11b5c09ec306efe43f40" name="aa502c49c6aea11b5c09ec306efe43f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa502c49c6aea11b5c09ec306efe43f40">◆ </a></span>sleep()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sleep </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>duration</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>使当前线程休眠指定时长（秒）。 </p>
+<ul>
+<li><a class="anchor" id="sleep"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">duration</td><td>(float): 需要休眠的时间，单位为秒。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sleeps for the provided duration in seconds.</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a96348be412750c5b03891fb604882401" name="a96348be412750c5b03891fb604882401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96348be412750c5b03891fb604882401">◆ </a></span>sleepForRate()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sleepForRate </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>rateHz</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据设定的频率使循环以指定的速率执行。 </p>
+<ul>
+<li><a class="anchor" id="sleepForRate"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">rateHz</td><td>(float): 期望的循环频率（Hz）。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sleeps so that, if called in a loop, executes at specified rate.</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a1dc1bf097920db190e1e39ff0d0eeef5" name="a1dc1bf097920db190e1e39ff0d0eeef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc1bf097920db190e1e39ff0d0eeef5">◆ </a></span>time()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">time </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前系统时间（单位：秒）。 </p>
+<ul>
+<li><a class="anchor" id="time"></a> <dl class="section return"><dt>返回</dt><dd>float: 返回当前系统时间（秒）。</dd></dl>
+<pre class="fragment">Returns the current time in seconds.</pre> </li>
+</ul>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="crazyflie_8py.html">crazyflie.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

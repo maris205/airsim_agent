@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_QuatFilterable类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-static-methods">静态 Public 成员函数</a> |
+<a href="classvrpn__QuatFilterable-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_QuatFilterable类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1833c4912b12e6cdc5250c8edc5b40a3" id="r_a1833c4912b12e6cdc5250c8edc5b40a3"><td align="right" class="memItemLeft" valign="top"><a id="a1833c4912b12e6cdc5250c8edc5b40a3" name="a1833c4912b12e6cdc5250c8edc5b40a3"></a>
+typedef double </td><td class="memItemRight" valign="bottom"><b>scalar_type</b></td></tr>
+<tr class="separator:a1833c4912b12e6cdc5250c8edc5b40a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae131485f38e4d607877d44e82f19c4c6" id="r_ae131485f38e4d607877d44e82f19c4c6"><td align="right" class="memItemLeft" valign="top"><a id="ae131485f38e4d607877d44e82f19c4c6" name="ae131485f38e4d607877d44e82f19c4c6"></a>
+typedef q_type </td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
+<tr class="separator:ae131485f38e4d607877d44e82f19c4c6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4f112fe8fdb69bcf8a1b277d98f116cc" id="r_a4f112fe8fdb69bcf8a1b277d98f116cc"><td align="right" class="memItemLeft" valign="top"><a id="a4f112fe8fdb69bcf8a1b277d98f116cc" name="a4f112fe8fdb69bcf8a1b277d98f116cc"></a>
+typedef q_type </td><td class="memItemRight" valign="bottom"><b>derivative_value_type</b></td></tr>
+<tr class="separator:a4f112fe8fdb69bcf8a1b277d98f116cc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a05e8c79ed17416f5e5dcac355744246a" id="r_a05e8c79ed17416f5e5dcac355744246a"><td align="right" class="memItemLeft" valign="top"><a id="a05e8c79ed17416f5e5dcac355744246a" name="a05e8c79ed17416f5e5dcac355744246a"></a>
+typedef q_type </td><td class="memItemRight" valign="bottom"><b>value_ptr_type</b></td></tr>
+<tr class="separator:a05e8c79ed17416f5e5dcac355744246a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a868c9b5f4cd5f2ffb7866ff976ef86a3" id="r_a868c9b5f4cd5f2ffb7866ff976ef86a3"><td align="right" class="memItemLeft" valign="top"><a id="a868c9b5f4cd5f2ffb7866ff976ef86a3" name="a868c9b5f4cd5f2ffb7866ff976ef86a3"></a>
+typedef <a class="el" href="classvrpn__LowPassFilterQuat.html">vrpn_LowPassFilterQuat</a> </td><td class="memItemRight" valign="bottom"><b>value_filter_type</b></td></tr>
+<tr class="separator:a868c9b5f4cd5f2ffb7866ff976ef86a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a13bafdcc0bec764b69eceab7ca452bce" id="r_a13bafdcc0bec764b69eceab7ca452bce"><td align="right" class="memItemLeft" valign="top"><a id="a13bafdcc0bec764b69eceab7ca452bce" name="a13bafdcc0bec764b69eceab7ca452bce"></a>
+typedef <a class="el" href="classvrpn__LowPassFilterQuat.html">vrpn_LowPassFilterQuat</a> </td><td class="memItemRight" valign="bottom"><b>derivative_filter_type</b></td></tr>
+<tr class="separator:a13bafdcc0bec764b69eceab7ca452bce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a01a19b5d517f1315cc6d606a92d894f7" id="r_a01a19b5d517f1315cc6d606a92d894f7"><td align="right" class="memItemLeft" valign="top"><a id="a01a19b5d517f1315cc6d606a92d894f7" name="a01a19b5d517f1315cc6d606a92d894f7"></a>
+typedef value_filter_type::return_type </td><td class="memItemRight" valign="bottom"><b>value_filter_return_type</b></td></tr>
+<tr class="separator:a01a19b5d517f1315cc6d606a92d894f7"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a9f6fbf61474e87e8b17296fdf1c464b9" id="r_a9f6fbf61474e87e8b17296fdf1c464b9"><td align="right" class="memItemLeft" valign="top"><a id="a9f6fbf61474e87e8b17296fdf1c464b9" name="a9f6fbf61474e87e8b17296fdf1c464b9"></a>
+static void </td><td class="memItemRight" valign="bottom"><b>setDxIdentity</b> (value_ptr_type dx)</td></tr>
+<tr class="separator:a9f6fbf61474e87e8b17296fdf1c464b9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ada84517007e35e2ee5bf596e6893f43d" id="r_ada84517007e35e2ee5bf596e6893f43d"><td align="right" class="memItemLeft" valign="top"><a id="ada84517007e35e2ee5bf596e6893f43d" name="ada84517007e35e2ee5bf596e6893f43d"></a>
+static void </td><td class="memItemRight" valign="bottom"><b>computeDerivative</b> (derivative_value_type dx, value_filter_return_type prev, const value_type current, scalar_type dt)</td></tr>
+<tr class="separator:ada84517007e35e2ee5bf596e6893f43d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aedb5d0d296953287ea45f926e5d70089" id="r_aedb5d0d296953287ea45f926e5d70089"><td align="right" class="memItemLeft" valign="top">static scalar_type </td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb5d0d296953287ea45f926e5d70089">computeDerivativeMagnitude</a> (derivative_value_type const dx)</td></tr>
+<tr class="separator:aedb5d0d296953287ea45f926e5d70089"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aedb5d0d296953287ea45f926e5d70089" name="aedb5d0d296953287ea45f926e5d70089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb5d0d296953287ea45f926e5d70089">◆ </a></span>computeDerivativeMagnitude()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static scalar_type computeDerivativeMagnitude </td>
+<td>(</td>
+<td class="paramtype">derivative_value_type const</td> <td class="paramname"><span class="paramname"><em>dx</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Should be safe since the quaternion we're given has been normalized.</p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__OneEuroFilter_8h_source.html">vrpn_OneEuroFilter.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="close_udp" name="close_udp">
+<area shape="rect" id="Node000001" title="关闭UDP套接字连接" alt="" coords="5,31,86,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1distSimCtrlAPI_1_1distSimCtrlAPI.html#a8406d82e66590d120313ea12cad332f9" title="发送指令给指定的节点或广播给所有节点" alt="" coords="134,5,265,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,35,118,29,118,35,87,40"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1distSimCtrlAPI_1_1distSimCtrlAPI.html#aea9c7c652ea1925f6ac2229d746685bf" title="扫描局域网内的组播数据，解析并存储节点信息" alt="" coords="161,56,238,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,48,146,58,145,63,86,53"/>
+</map>

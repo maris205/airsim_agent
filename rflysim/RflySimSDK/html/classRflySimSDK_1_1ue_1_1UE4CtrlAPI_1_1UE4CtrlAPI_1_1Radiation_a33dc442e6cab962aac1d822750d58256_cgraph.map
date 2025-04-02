@@ -1,0 +1,5 @@
+<map id="get_new_temp_emiss_from_radiance" name="get_new_temp_emiss_from_radiance">
+<area shape="rect" id="Node000001" title="由辐射强度计算模板值" alt="" coords="5,5,154,48"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#a43d8d620d12898ed28d3b3d0863665e2" title="物体辐射的计算" alt="" coords="202,13,272,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,24,186,24,186,29,154,29"/>
+</map>

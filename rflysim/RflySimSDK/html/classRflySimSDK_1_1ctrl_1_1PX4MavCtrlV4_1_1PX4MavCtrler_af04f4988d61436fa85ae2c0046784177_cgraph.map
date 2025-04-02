@@ -1,0 +1,53 @@
+<map id="initOffboardAcc" name="initOffboardAcc">
+<area shape="rect" id="Node000001" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="5,572,116,599"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html#ab1205d651a5b3851758de62e94690be3" title=" " alt="" coords="480,455,690,481"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,569,163,544,320,507,466,482,467,487,321,512,164,549,95,574"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551" title="将 MAVLink 的长指令消息发送到 Pixhawk 系统" alt="" coords="519,400,651,427"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="64,571,76,540,96,501,124,462,142,445,162,431,204,412,248,398,294,389,340,385,428,386,504,394,504,400,428,391,340,390,295,395,250,403,206,417,165,436,146,449,129,466,100,504,81,542,69,573"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3b674c6bf3ce93f9a964070e6fd21551" title="发送长命令到飞行控制器" alt="" coords="479,513,691,572"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="116,578,463,550,464,555,116,584"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a46109bd6d1ca77160fa728636dad4840" title="发送Offboard命令到PX4" alt="" coords="225,240,370,267"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="62,571,72,528,91,467,121,400,140,367,162,337,204,299,249,272,251,276,207,303,166,340,144,370,125,402,96,469,77,529,67,572"/>
+<area shape="rect" id="Node000016" href="$classRflyMavlink.html#ad584eaa3a3e2a747d67313910fa4e9d0" title=" " alt="" coords="193,597,402,624"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="116,589,178,595,177,600,116,594"/>
+<area shape="rect" id="Node000017" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a831172bea8ba4f655418913776e1f30e" title="向 Pixhawk 发送命令更改其参数" alt="" coords="519,349,651,376"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="62,571,71,533,90,482,119,430,139,407,162,388,203,367,246,351,292,341,338,336,427,335,504,344,503,349,427,341,338,341,293,346,248,356,205,372,165,393,143,411,123,433,94,484,76,534,67,572"/>
+<area shape="rect" id="Node000018" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a162081480a066efd9dc4aa4b2fdb95d9" title="发送MAVLink设置参数请求，用于通过MAVLink协议设置无人机的参数。根据参数类型，它可以设置整型或实型参数。" alt="" coords="164,648,431,691"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="87,597,165,634,185,641,183,646,163,638,85,602"/>
+<area shape="rect" id="Node000019" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a162081480a066efd9dc4aa4b2fdb95d9" title="设置MAVLink参数" alt="" coords="192,715,402,773"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="72,598,109,648,135,676,165,700,179,709,177,713,162,705,131,680,105,651,68,601"/>
+<area shape="rect" id="Node000020" href="$classRflyMavlink.html#a422e024e21a6b9dc076fa65632d9fe1b" title=" " alt="" coords="207,797,388,824"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="67,599,77,636,95,687,124,740,143,763,165,783,193,798,191,803,162,788,139,767,120,742,90,689,72,638,62,600"/>
+<area shape="rect" id="Node000021" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad29a52ae6a099350fc6319b302543e12" title="发送 MAVLink 命令到 PX4 以更改飞行模式" alt="" coords="246,445,349,472"/>
+<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="71,570,108,529,134,507,162,488,196,474,230,465,231,470,197,479,165,493,137,511,112,533,75,573"/>
+<area shape="rect" id="Node000022" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="257,848,338,875"/>
+<area shape="poly" id="edge27_Node000001_Node000022" title=" " alt="" coords="66,598,72,644,88,709,101,743,118,777,139,808,165,834,182,845,202,853,242,860,241,865,200,858,180,850,162,838,135,811,114,779,96,745,83,710,67,645,60,599"/>
+<area shape="rect" id="Node000023" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="205,899,390,941"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="65,599,69,652,83,730,96,772,113,813,136,851,165,885,192,902,189,906,162,889,132,855,109,816,91,774,78,731,64,653,59,599"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="799,336,871,363"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="645,397,691,385,784,360,785,366,692,391,646,402"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="979,336,1092,363"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="871,347,963,347,963,352,871,352"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="371,264,479,284,784,338,784,343,479,289,370,269"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a1f3099c4347f7c3eed28d21fa99d2bf6" title="饱和操作的函数，确保输入值在正负阈值内" alt="" coords="566,181,605,208"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="366,237,549,199,551,204,367,242"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a1f3099c4347f7c3eed28d21fa99d2bf6" title="对输入的PWM值进行饱和限制，限制在[&#45;thres, thres]范围内。" alt="" coords="492,232,678,275"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="371,251,477,251,477,256,371,256"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a48d5ff23dc613fc2cd1fb7d5ade86d7f" title="发送UDP简单数据" alt="" coords="517,131,653,157"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="323,237,392,203,478,167,502,159,504,164,480,172,394,207,325,242"/>
+<area shape="poly" id="edge16_Node000010_Node000004" title=" " alt="" coords="654,147,675,155,693,167,708,185,716,203,719,238,722,274,729,291,741,309,762,325,786,336,783,340,759,329,737,313,724,294,717,275,714,239,711,204,703,188,690,171,672,160,653,152"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="744,189,926,232"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="647,155,692,167,747,182,745,187,691,172,646,161"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="744,256,926,299"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="655,150,693,167,710,186,718,205,726,224,741,242,746,245,742,250,738,246,721,227,713,207,706,189,690,171,652,155"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="807,5,863,32"/>
+<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="602,128,660,86,698,62,738,42,791,24,793,29,740,46,701,67,663,90,605,132"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="739,56,931,99"/>
+<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="638,127,737,101,738,106,639,133"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="739,123,931,165"/>
+<area shape="poly" id="edge15_Node000010_Node000015" title=" " alt="" coords="653,141,724,141,724,147,653,147"/>
+<area shape="poly" id="edge19_Node000017_Node000004" title=" " alt="" coords="651,357,784,349,784,355,652,362"/>
+<area shape="poly" id="edge24_Node000021_Node000002" title=" " alt="" coords="350,458,465,461,465,467,350,463"/>
+<area shape="poly" id="edge25_Node000021_Node000003" title=" " alt="" coords="349,448,503,423,504,429,350,453"/>
+<area shape="poly" id="edge26_Node000021_Node000006" title=" " alt="" coords="347,470,469,506,467,511,345,475"/>
+</map>

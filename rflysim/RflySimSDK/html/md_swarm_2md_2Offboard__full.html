@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Offboard_full——编码模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">Offboard_full——编码模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md221"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240815163855269.png"><img alt="" class="thumbnail" height="auto" src="image-20240815163855269.png" width="100"/></a>
+</div>
+<p>**输入端口**：</p>
+<ol type="1">
+<li>CopterID：<ul>
+<li>**类型**：整型（uint8）</li>
+<li>**描述**：无人机的唯一标识符，用于区分多台无人机。</li>
+</ul>
+</li>
+<li>enPos、enVel、enAcc、enForce、enYaw、enYawrate：<ul>
+<li>**类型**：布尔型（boolean）</li>
+<li>**描述**：分别用于启用位置、速度、加速度、力、航向角和航向角速度的控制模式,汇总为一维type_mask 。</li>
+</ul>
+</li>
+<li>FrameIndex：<ul>
+<li>**类型**：整型（uint8）</li>
+<li>**描述**：坐标系索引，用于指定控制信号的参考坐标系，例如 <code>MAV_FRAME_LOCAL_NED</code>、<code>MAV_FRAME_BODY_FRD</code>，选择其一作为一维coordinate_frame。</li>
+<li><a data_lightbox="image" href="image-20241210101450653.png"><img alt="" class="inline thumbnail" height="auto" src="image-20241210101450653.png" width="100"/></a> </li>
+</ul>
+</li>
+</ol>
+<ol type="1">
+<li>Pos、Vel、Acc、Force、Yaw、Yawrate：<ul>
+<li>**类型**：均为3维浮点型（double）数组</li>
+<li>**描述**：控制量包括位置、速度、加速度、力、航向角和航向角速度</li>
+</ul>
+</li>
+<li>type_mask 和 frame_index：<ul>
+<li>**类型**：浮点型（double）</li>
+<li>**描述**：分别用于指定目标类型和帧索引。</li>
+</ul>
+</li>
+</ol>
+<p>**输出端口**：</p>
+<ol type="1">
+<li>Offboard_bytes：<ul>
+<li>**类型**：8维double型字节数组</li>
+<li>**描述**：生成的 MAVLink 消息，包含控制命令数据。</li>
+</ul>
+</li>
+</ol>
+<p>使用示例：<a href="../../10.RflySimSwarm/1.BasicExps/e1_RflyUdpSwarmExp/index.html">[安装目录]\RflySimAPIs\10.RflySimSwarm\1.BasicExps\e1_RflyUdpSwarmExp\index.html</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

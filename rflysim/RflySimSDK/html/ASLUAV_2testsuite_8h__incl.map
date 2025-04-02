@@ -1,0 +1,5 @@
+<map id="simulink/mavlink/ASLUAV/testsuite.h" name="simulink/mavlink/ASLUAV/testsuite.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol testsuite generated from ASLUAV.xml" alt="" coords="5,5,180,48"/>
+<area shape="rect" id="Node000002" href="$common_2testsuite_8h.html" title="MAVLink comm protocol testsuite generated from common.xml" alt="" coords="18,96,167,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,49,95,80,90,80,90,49"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="vrpn_HidNthMatchAcceptor" name="vrpn_HidNthMatchAcceptor">
+<area shape="rect" id="Node000001" title="Accepts the Nth device matching a given acceptor." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="Node000002" href="$classvrpn__HidAcceptor.html" title=" " alt="" coords="34,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,48,99,80,94,80,94,48"/>
+</map>

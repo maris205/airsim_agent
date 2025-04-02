@@ -1,0 +1,7 @@
+<map id="getUE4Pos" name="getUE4Pos">
+<area shape="rect" id="Node000001" title="获取Copter位置" alt="" coords="5,5,94,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#adcf774510257551418e1e8c8779241f7" title="启用监听" alt="" coords="142,5,255,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,16,126,16,126,21,94,21"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a316c3d33e1a7eee4991a31e0d3322040" title="监听循环" alt="" coords="303,5,427,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,16,287,16,287,21,255,21"/>
+</map>

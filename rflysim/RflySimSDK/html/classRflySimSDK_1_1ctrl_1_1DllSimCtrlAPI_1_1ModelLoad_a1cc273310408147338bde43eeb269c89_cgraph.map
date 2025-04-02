@@ -1,0 +1,86 @@
+<map id="Recv20100Loop" name="Recv20100Loop">
+<area shape="rect" id="Node000001" title="线程的主循环，用于接收20100端口的数据并根据控制模式执行相应的控制命令。" alt="" coords="5,448,121,475"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a2649cd24ce0ba2ab68984a1288fdc006" title="发送NED（北东地）地球参考系下的位置控制命令。" alt="" coords="237,88,340,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,448,64,388,77,301,90,253,108,206,134,163,167,125,192,109,221,101,222,106,194,114,170,129,138,166,113,209,95,255,82,302,69,389,67,448"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a5bafd7c7044c98ec3f09d85608ff9dea" title="地球北东地坐标系下控制飞机到指定位置" alt="" coords="184,440,393,483"/>
+<area shape="poly" id="edge23_Node000001_Node000011" title=" " alt="" coords="121,459,168,459,168,464,121,464"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a2649cd24ce0ba2ab68984a1288fdc006" title="发送目标位置与偏航指令给PX4（NED坐标系）。 设置CurFlag=2表示进入某种自定义模式(例如Offboard位置控制)，offMode=0表示SET_POSITION_TARGET_LOCAL_..." alt="" coords="196,507,381,549"/>
+<area shape="poly" id="edge26_Node000001_Node000014" title=" " alt="" coords="108,473,169,492,194,499,193,505,168,497,106,478"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a5bafd7c7044c98ec3f09d85608ff9dea" title="发送NED坐标系下的位置命令" alt="" coords="169,640,408,683"/>
+<area shape="poly" id="edge29_Node000001_Node000015" title=" " alt="" coords="71,474,84,505,105,547,133,589,170,626,176,630,173,634,167,630,129,593,100,549,79,508,66,476"/>
+<area shape="rect" id="Node000018" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a9b938fdbb107126817a048f796eab491" title="发送FRD(前右下)机体参考系下的速度控制命令。" alt="" coords="240,139,337,165"/>
+<area shape="poly" id="edge32_Node000001_Node000018" title=" " alt="" coords="62,447,68,396,83,322,97,282,115,243,138,207,167,175,194,159,224,151,225,156,196,164,170,179,142,210,119,246,102,284,88,324,73,397,68,448"/>
+<area shape="rect" id="Node000019" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a4e385d03553bd32945810388ef3003dc" title="前右下坐标系下操控飞机" alt="" coords="187,573,390,616"/>
+<area shape="poly" id="edge36_Node000001_Node000019" title=" " alt="" coords="77,473,115,516,141,539,170,559,180,564,178,569,167,564,138,543,111,520,73,477"/>
+<area shape="rect" id="Node000020" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a479d435c18dc1a908ec74abb86f90d0c" title=" " alt="" coords="196,240,381,283"/>
+<area shape="poly" id="edge39_Node000001_Node000020" title=" " alt="" coords="66,447,79,415,100,373,129,330,167,293,180,284,183,288,170,297,133,333,105,376,84,417,71,449"/>
+<area shape="rect" id="Node000021" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a4e385d03553bd32945810388ef3003dc" title="发送FRD（前、右、下）坐标系下的速度命令" alt="" coords="172,707,405,749"/>
+<area shape="poly" id="edge42_Node000001_Node000021" title=" " alt="" coords="69,475,78,517,96,576,126,639,146,668,170,693,174,696,171,700,167,697,142,671,122,642,91,578,73,519,64,476"/>
+<area shape="rect" id="Node000022" href="$classRflyMavlink.html#a9c59f412a058a512b4e777fca0beba88" title=" " alt="" coords="201,840,376,867"/>
+<area shape="poly" id="edge45_Node000001_Node000022" title=" " alt="" coords="66,475,67,539,78,634,91,686,110,737,136,785,170,826,188,838,185,843,167,830,131,788,105,740,86,688,73,635,62,539,61,475"/>
+<area shape="rect" id="Node000023" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1f2d620b2302df0f54bc44b1e7407f8f" title="发送NED（北东地）地球参考系下的速度及偏航控制命令。" alt="" coords="239,189,338,216"/>
+<area shape="poly" id="edge46_Node000001_Node000023" title=" " alt="" coords="64,447,72,404,90,344,121,280,142,251,167,226,194,211,224,203,225,208,196,216,170,230,146,254,125,283,95,346,77,405,69,448"/>
+<area shape="rect" id="Node000024" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf5bdea8e4b51e58b4e2572ff4115512" title="北东地坐标系下操控飞机" alt="" coords="186,307,390,349"/>
+<area shape="poly" id="edge50_Node000001_Node000024" title=" " alt="" coords="73,446,111,403,138,379,167,359,178,354,180,358,170,364,141,384,115,407,77,449"/>
+<area shape="rect" id="Node000025" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a48c1a545d22ec6c31d5707e75502e248" title=" " alt="" coords="196,373,381,416"/>
+<area shape="poly" id="edge53_Node000001_Node000025" title=" " alt="" coords="106,445,168,425,193,418,194,423,169,431,108,450"/>
+<area shape="rect" id="Node000026" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#adf5bdea8e4b51e58b4e2572ff4115512" title="发送NED（北、东、下）坐标系下的速度命令" alt="" coords="171,773,406,816"/>
+<area shape="poly" id="edge56_Node000001_Node000026" title=" " alt="" coords="67,475,73,528,88,605,101,646,119,688,142,726,171,759,174,762,170,766,167,763,137,729,114,690,96,648,83,606,67,529,62,475"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a67ed5ac48428dfaf4ba36a2b8359e3f2" title="综合模型外部控制指令输入接口，用于传递 28 维的双精度控制指令数据，参见 sendInDoubCtrls" alt="" coords="514,64,639,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,94,498,81,499,86,340,100"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a9ae2d332680d368f16f43aefa2c82575" title="将综合模型系统仿真输入数据传递给 DLL，参见 sendSILIntFloat" alt="" coords="530,139,623,165"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="341,108,515,139,514,144,340,113"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a21fefe0b9ef8e85b7970cf330efaeb3a" title="综合模型外部控制指令输入接口，用于传递 28 维的双精度控制指令数据，参见 sendInDoubCtrls" alt="" coords="532,213,621,240"/>
+<area shape="poly" id="edge16_Node000002_Node000010" title=" " alt="" coords="341,103,376,110,409,124,425,137,435,150,444,162,458,175,488,193,519,206,517,211,485,197,454,179,440,166,430,153,421,140,407,129,374,116,340,108"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="533,65,524,55,530,45,548,39,577,37,609,40,625,47,623,52,607,45,577,43,549,45,533,50,530,55,537,62"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="751,72,933,115"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="640,78,736,84,735,90,639,84"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="814,139,870,165"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="640,85,698,100,723,112,746,124,800,140,798,145,744,129,720,117,696,105,639,90"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="745,189,939,232"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="641,79,671,86,699,101,716,119,724,138,732,157,747,175,752,179,749,183,744,179,727,160,719,140,712,122,696,105,669,91,639,84"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="746,256,938,299"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="641,76,671,84,699,101,714,118,722,136,725,172,728,208,734,225,747,242,750,244,746,248,743,246,730,227,723,209,720,172,717,137,709,121,696,105,669,89,639,81"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="746,5,938,48"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="639,63,731,45,732,50,640,68"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="623,139,735,114,736,119,624,144"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="624,149,799,149,799,155,624,155"/>
+<area shape="poly" id="edge13_Node000009_Node000006" title=" " alt="" coords="625,159,698,175,733,183,732,188,697,180,623,164"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="624,151,662,159,699,175,716,192,724,209,732,226,747,242,752,246,749,250,744,246,728,229,719,211,711,195,696,180,660,164,623,156"/>
+<area shape="poly" id="edge15_Node000009_Node000008" title=" " alt="" coords="620,136,658,120,696,100,719,79,744,58,754,52,756,57,747,62,723,83,699,105,660,125,622,141"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="533,140,524,130,530,120,548,114,577,112,609,115,625,121,623,126,607,120,577,117,549,119,533,124,530,129,537,136"/>
+<area shape="poly" id="edge18_Node000010_Node000004" title=" " alt="" coords="620,211,658,196,696,175,710,163,719,150,728,137,744,124,752,120,754,124,747,129,732,141,723,153,714,166,699,180,661,201,622,216"/>
+<area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="620,211,745,175,799,160,800,165,746,180,622,216"/>
+<area shape="poly" id="edge20_Node000010_Node000006" title=" " alt="" coords="621,221,730,215,730,220,622,227"/>
+<area shape="poly" id="edge21_Node000010_Node000007" title=" " alt="" coords="622,232,732,254,731,259,621,238"/>
+<area shape="poly" id="edge22_Node000010_Node000008" title=" " alt="" coords="620,215,660,200,696,175,707,161,713,147,718,118,724,88,731,73,743,58,747,55,750,59,747,62,735,76,729,90,724,119,718,148,711,164,699,179,662,205,622,220"/>
+<area shape="poly" id="edge17_Node000010_Node000010" title=" " alt="" coords="533,215,524,205,530,195,548,189,577,187,609,189,625,196,623,201,607,195,577,192,549,194,533,199,530,204,537,211"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="480,440,673,483"/>
+<area shape="poly" id="edge24_Node000011_Node000012" title=" " alt="" coords="394,459,464,459,464,464,394,464"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="484,373,669,416"/>
+<area shape="poly" id="edge25_Node000011_Node000013" title=" " alt="" coords="383,437,468,417,470,422,384,442"/>
+<area shape="poly" id="edge27_Node000014_Node000012" title=" " alt="" coords="381,504,466,484,467,489,382,509"/>
+<area shape="poly" id="edge28_Node000014_Node000013" title=" " alt="" coords="380,507,406,493,422,477,430,460,438,443,454,426,469,417,472,422,458,430,442,446,434,462,426,480,410,497,382,511"/>
+<area shape="rect" id="Node000016" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据提供的布尔列表 EnList 计算一个类型掩码（type mask）。" alt="" coords="456,740,697,783"/>
+<area shape="poly" id="edge30_Node000015_Node000016" title=" " alt="" coords="380,681,409,692,434,709,457,726,471,732,469,737,455,730,430,714,407,697,378,686"/>
+<area shape="rect" id="Node000017" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据输入的启用列表计算Type Mask" alt="" coords="456,673,697,716"/>
+<area shape="poly" id="edge31_Node000015_Node000017" title=" " alt="" coords="409,673,441,676,440,682,408,678"/>
+<area shape="poly" id="edge33_Node000018_Node000003" title=" " alt="" coords="337,142,407,124,431,112,455,100,498,88,500,93,457,105,433,117,409,129,338,147"/>
+<area shape="poly" id="edge34_Node000018_Node000009" title=" " alt="" coords="337,149,514,149,514,155,337,155"/>
+<area shape="poly" id="edge35_Node000018_Node000010" title=" " alt="" coords="338,159,409,175,518,206,517,211,407,180,337,164"/>
+<area shape="poly" id="edge37_Node000019_Node000012" title=" " alt="" coords="376,570,407,559,473,525,530,489,533,494,476,530,409,564,378,575"/>
+<area shape="poly" id="edge38_Node000019_Node000013" title=" " alt="" coords="389,572,406,559,419,544,426,528,429,494,433,460,440,443,454,426,469,415,472,419,458,430,445,446,438,462,435,495,431,529,424,546,410,563,392,576"/>
+<area shape="poly" id="edge40_Node000020_Node000012" title=" " alt="" coords="383,275,410,293,424,310,431,327,435,361,438,394,445,410,458,426,468,434,465,438,454,430,440,413,433,396,429,362,426,328,419,312,406,297,380,280"/>
+<area shape="poly" id="edge41_Node000020_Node000013" title=" " alt="" coords="378,281,409,292,476,326,533,362,530,367,473,331,407,297,376,286"/>
+<area shape="poly" id="edge43_Node000021_Node000016" title=" " alt="" coords="406,739,441,743,441,748,405,744"/>
+<area shape="poly" id="edge44_Node000021_Node000017" title=" " alt="" coords="405,712,440,708,441,713,406,717"/>
+<area shape="poly" id="edge47_Node000023_Node000003" title=" " alt="" coords="337,198,373,191,406,175,422,158,430,139,437,119,454,101,475,89,498,82,499,87,477,94,458,105,442,122,434,141,427,161,410,179,375,196,339,203"/>
+<area shape="poly" id="edge48_Node000023_Node000009" title=" " alt="" coords="338,191,514,160,515,165,339,197"/>
+<area shape="poly" id="edge49_Node000023_Node000010" title=" " alt="" coords="338,204,517,219,517,224,338,209"/>
+<area shape="poly" id="edge51_Node000024_Node000012" title=" " alt="" coords="389,347,410,359,426,376,434,394,442,410,458,426,467,432,464,436,454,430,438,413,430,396,422,379,406,363,386,352"/>
+<area shape="poly" id="edge52_Node000024_Node000013" title=" " alt="" coords="384,347,470,367,468,372,383,353"/>
+<area shape="poly" id="edge54_Node000025_Node000012" title=" " alt="" coords="382,414,467,433,466,438,381,419"/>
+<area shape="poly" id="edge55_Node000025_Node000013" title=" " alt="" coords="382,392,468,392,468,397,382,397"/>
+<area shape="poly" id="edge57_Node000026_Node000016" title=" " alt="" coords="406,778,441,774,441,780,406,784"/>
+<area shape="poly" id="edge58_Node000026_Node000017" title=" " alt="" coords="378,770,407,759,430,742,455,726,469,719,471,724,457,730,434,747,409,764,380,775"/>
+</map>

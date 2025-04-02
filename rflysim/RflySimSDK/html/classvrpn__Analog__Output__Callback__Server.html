@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Analog_Output_Callback_Server类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pro-static-methods">静态 Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__Analog__Output__Callback__Server-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Analog_Output_Callback_Server类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_Analog_Output_Callback_Server 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="368" scrolling="no" src="classvrpn__Analog__Output__Callback__Server__inherit__graph.svg" width="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_Analog_Output_Callback_Server 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classvrpn__Analog__Output__Callback__Server__coll__graph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a65757b0fee469db910648c33f85eb0d7" id="r_a65757b0fee469db910648c33f85eb0d7"><td align="right" class="memItemLeft" valign="top"><a id="a65757b0fee469db910648c33f85eb0d7" name="a65757b0fee469db910648c33f85eb0d7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Analog_Output_Callback_Server</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c, vrpn_int32 numChannels=vrpn_CHANNEL_MAX)</td></tr>
+<tr class="separator:a65757b0fee469db910648c33f85eb0d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a814d425bb76d96881f8da7ad762dc3f4" id="r_a814d425bb76d96881f8da7ad762dc3f4"><td align="right" class="memItemLeft" valign="top"><a id="a814d425bb76d96881f8da7ad762dc3f4" name="a814d425bb76d96881f8da7ad762dc3f4"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>register_change_handler</b> (void *userdata, vrpn_ANALOGOUTPUTCHANGEHANDLER handler)</td></tr>
+<tr class="separator:a814d425bb76d96881f8da7ad762dc3f4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a606f08e765874a7069e90c91ee7240d7" id="r_a606f08e765874a7069e90c91ee7240d7"><td align="right" class="memItemLeft" valign="top"><a id="a606f08e765874a7069e90c91ee7240d7" name="a606f08e765874a7069e90c91ee7240d7"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>unregister_change_handler</b> (void *userdata, vrpn_ANALOGOUTPUTCHANGEHANDLER handler)</td></tr>
+<tr class="separator:a606f08e765874a7069e90c91ee7240d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Analog__Output__Server"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Analog__Output__Server')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Analog__Output__Server.html">vrpn_Analog_Output_Server</a></td></tr>
+<tr class="memitem:a323406df765dbbc070411ffd8f6b02cb inherit pub_methods_classvrpn__Analog__Output__Server" id="r_a323406df765dbbc070411ffd8f6b02cb"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Analog_Output_Server</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c, vrpn_int32 numChannels=vrpn_CHANNEL_MAX)</td></tr>
+<tr class="separator:a323406df765dbbc070411ffd8f6b02cb inherit pub_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5299ecc517aeaf6e61dc5d2c5316b4cb inherit pub_methods_classvrpn__Analog__Output__Server" id="r_a5299ecc517aeaf6e61dc5d2c5316b4cb"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output__Server.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a> ()</td></tr>
+<tr class="separator:a5299ecc517aeaf6e61dc5d2c5316b4cb inherit pub_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6ac42090247ab0c404f682a0f5888d3 inherit pub_methods_classvrpn__Analog__Output__Server" id="r_ad6ac42090247ab0c404f682a0f5888d3"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output__Server.html#ad6ac42090247ab0c404f682a0f5888d3">setNumChannels</a> (vrpn_int32 sizeRequested)</td></tr>
+<tr class="separator:ad6ac42090247ab0c404f682a0f5888d3 inherit pub_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c565e2ba09c315739eb731b572dfcae inherit pub_methods_classvrpn__Analog__Output__Server" id="r_a4c565e2ba09c315739eb731b572dfcae"><td align="right" class="memItemLeft" valign="top">const vrpn_float64 * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output__Server.html#a4c565e2ba09c315739eb731b572dfcae">o_channels</a> (void) const</td></tr>
+<tr class="memdesc:a4c565e2ba09c315739eb731b572dfcae inherit pub_methods_classvrpn__Analog__Output__Server"><td class="mdescLeft"> </td><td class="mdescRight">Exposes an array of values for the user to read from.  <br/></td></tr>
+<tr class="separator:a4c565e2ba09c315739eb731b572dfcae inherit pub_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Analog__Output"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Analog__Output')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Analog__Output.html">vrpn_Analog_Output</a></td></tr>
+<tr class="memitem:ad7f44802be006510e108e298120899a9 inherit pub_methods_classvrpn__Analog__Output" id="r_ad7f44802be006510e108e298120899a9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Analog_Output</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:ad7f44802be006510e108e298120899a9 inherit pub_methods_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6fdb8b1201c58c89a9af13963387a8e3 inherit pub_methods_classvrpn__Analog__Output" id="r_a6fdb8b1201c58c89a9af13963387a8e3"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>o_print</b> (void)</td></tr>
+<tr class="separator:a6fdb8b1201c58c89a9af13963387a8e3 inherit pub_methods_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a84806fd8d33c45a42e88e16b927fa3f0 inherit pub_methods_classvrpn__Analog__Output" id="r_a84806fd8d33c45a42e88e16b927fa3f0"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>getNumChannels</b> () const</td></tr>
+<tr class="separator:a84806fd8d33c45a42e88e16b927fa3f0 inherit pub_methods_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass" id="r_a7a074af17ba19d3b0287e2add608e70b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a7a074af17ba19d3b0287e2add608e70b">vrpn_BaseClass</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique" id="r_af9949f7f3f722612c34f56c8351c54f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af9949f7f3f722612c34f56c8351c54f2">connectionPtr</a> ()</td></tr>
+<tr class="memdesc:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Returns a pointer to the connection this object is using  <br/></td></tr>
+<tr class="separator:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:a5fc7a49f75c0d128961addef5eb15d79" id="r_a5fc7a49f75c0d128961addef5eb15d79"><td align="right" class="memItemLeft" valign="top">static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fc7a49f75c0d128961addef5eb15d79">handle_change_message</a> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a5fc7a49f75c0d128961addef5eb15d79"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__Analog__Output__Server"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__Analog__Output__Server')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__Analog__Output__Server.html">vrpn_Analog_Output_Server</a></td></tr>
+<tr class="memitem:a48d0958b1d82e24ecb3045ca57ba0f4b inherit pro_static_methods_classvrpn__Analog__Output__Server" id="r_a48d0958b1d82e24ecb3045ca57ba0f4b"><td align="right" class="memItemLeft" valign="top">static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output__Server.html#a48d0958b1d82e24ecb3045ca57ba0f4b">handle_request_message</a> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a48d0958b1d82e24ecb3045ca57ba0f4b inherit pro_static_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a87f59da0c4b0d070d526f277fbda130f inherit pro_static_methods_classvrpn__Analog__Output__Server" id="r_a87f59da0c4b0d070d526f277fbda130f"><td align="right" class="memItemLeft" valign="top">static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output__Server.html#a87f59da0c4b0d070d526f277fbda130f">handle_request_channels_message</a> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a87f59da0c4b0d070d526f277fbda130f inherit pro_static_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8c1cc6fa2d45db333cd1640a847d09a4 inherit pro_static_methods_classvrpn__Analog__Output__Server" id="r_a8c1cc6fa2d45db333cd1640a847d09a4"><td align="right" class="memItemLeft" valign="top">static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output__Server.html#a8c1cc6fa2d45db333cd1640a847d09a4">handle_got_connection</a> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a8c1cc6fa2d45db333cd1640a847d09a4 inherit pro_static_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_ab920cd5e2843534727cf36ac30172dac"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ab920cd5e2843534727cf36ac30172dac">encode_text_message_to_buffer</a> (char *buf, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> severity, vrpn_uint32 level, const char *msg)</td></tr>
+<tr class="separator:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_af956afd27aaf4689728a9df78fa5de0d"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af956afd27aaf4689728a9df78fa5de0d">decode_text_message_from_buffer</a> (char *msg, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> *severity, vrpn_uint32 *level, const char *buf)</td></tr>
+<tr class="memdesc:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Decodes the body of the text message from a buffer from the connection  <br/></td></tr>
+<tr class="separator:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a06f29120edb0fa495b2586d699881c78" id="r_a06f29120edb0fa495b2586d699881c78"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Callback__List.html">vrpn_Callback_List</a>&lt; <a class="el" href="struct__vrpn__ANALOGOUTPUTCB.html">vrpn_ANALOGOUTPUTCB</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="#a06f29120edb0fa495b2586d699881c78">d_callback_list</a></td></tr>
+<tr class="separator:a06f29120edb0fa495b2586d699881c78"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Analog__Output"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Analog__Output')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Analog__Output.html">vrpn_Analog_Output</a></td></tr>
+<tr class="memitem:a58b17f00d221883855865a91831f4800 inherit pro_attribs_classvrpn__Analog__Output" id="r_a58b17f00d221883855865a91831f4800"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>o_channel</b> [vrpn_CHANNEL_MAX]</td></tr>
+<tr class="separator:a58b17f00d221883855865a91831f4800 inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7fdc4a6f0cf247520e12bae53c48688a inherit pro_attribs_classvrpn__Analog__Output" id="r_a7fdc4a6f0cf247520e12bae53c48688a"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>o_num_channel</b></td></tr>
+<tr class="separator:a7fdc4a6f0cf247520e12bae53c48688a inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a71468faafa2eb96cf224b3ebc70842f4 inherit pro_attribs_classvrpn__Analog__Output" id="r_a71468faafa2eb96cf224b3ebc70842f4"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>o_timestamp</b></td></tr>
+<tr class="separator:a71468faafa2eb96cf224b3ebc70842f4 inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a122cf4978d11724b2073b36ab5307d73 inherit pro_attribs_classvrpn__Analog__Output" id="r_a122cf4978d11724b2073b36ab5307d73"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_m_id</b></td></tr>
+<tr class="separator:a122cf4978d11724b2073b36ab5307d73 inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab6c9f4657166f67d3ac5ce866ed5fff0 inherit pro_attribs_classvrpn__Analog__Output" id="r_ab6c9f4657166f67d3ac5ce866ed5fff0"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_channels_m_id</b></td></tr>
+<tr class="separator:ab6c9f4657166f67d3ac5ce866ed5fff0 inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4d4e582c4c8b7b78618eb5644d6b074d inherit pro_attribs_classvrpn__Analog__Output" id="r_a4d4e582c4c8b7b78618eb5644d6b074d"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>report_num_channels_m_id</b></td></tr>
+<tr class="separator:a4d4e582c4c8b7b78618eb5644d6b074d inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36e86b3da777cb07da79f8c0bf9d89d1 inherit pro_attribs_classvrpn__Analog__Output" id="r_a36e86b3da777cb07da79f8c0bf9d89d1"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>got_connection_m_id</b></td></tr>
+<tr class="separator:a36e86b3da777cb07da79f8c0bf9d89d1 inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8ceca0efb9a4a210c4a810d4873b564 inherit pro_attribs_classvrpn__Analog__Output" id="r_af8ceca0efb9a4a210c4a810d4873b564"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>o_status</b></td></tr>
+<tr class="separator:af8ceca0efb9a4a210c4a810d4873b564 inherit pro_attribs_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_aa15df0bbfd40028dc70ad9da0c3749f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa15df0bbfd40028dc70ad9da0c3749f2">d_connection</a></td></tr>
+<tr class="memdesc:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Connection that this object talks to  <br/></td></tr>
+<tr class="separator:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_ad217413237b5fb9103f13faca74b9178"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ad217413237b5fb9103f13faca74b9178">d_servicename</a></td></tr>
+<tr class="separator:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af225875d2b9d3451084358b49ac19d93"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af225875d2b9d3451084358b49ac19d93">d_sender_id</a></td></tr>
+<tr class="memdesc:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">part  <br/></td></tr>
+<tr class="separator:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af010bf4b3b573708eec88ab965b55db6"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af010bf4b3b573708eec88ab965b55db6">d_text_message_id</a></td></tr>
+<tr class="memdesc:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">ID for text messages  <br/></td></tr>
+<tr class="separator:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a9bd51620536e883c3fd68f10e7991f32"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a9bd51620536e883c3fd68f10e7991f32">d_ping_message_id</a></td></tr>
+<tr class="memdesc:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Ask the server if they are there  <br/></td></tr>
+<tr class="separator:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a15d130460086a15b944b5c5388ead25f"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a15d130460086a15b944b5c5388ead25f">d_pong_message_id</a></td></tr>
+<tr class="memdesc:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Server telling that it is there  <br/></td></tr>
+<tr class="separator:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique" id="r_a6757110b074584b237001f720ba94259"><td align="right" class="memItemLeft" valign="top">
+bool </td><td class="memItemRight" valign="bottom"><b>shutup</b></td></tr>
+<tr class="separator:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Analog__Output__Server"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Analog__Output__Server')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Analog__Output__Server.html">vrpn_Analog_Output_Server</a></td></tr>
+<tr class="memitem:ad267ff944c412590d9589581cab67bb4 inherit pro_methods_classvrpn__Analog__Output__Server" id="r_ad267ff944c412590d9589581cab67bb4"><td align="right" class="memItemLeft" valign="top">
+virtual bool </td><td class="memItemRight" valign="bottom"><b>report_num_channels</b> (vrpn_uint32 class_of_service=vrpn_CONNECTION_RELIABLE)</td></tr>
+<tr class="separator:ad267ff944c412590d9589581cab67bb4 inherit pro_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab0ce56832bb5ce6394da39ee5bbb9653 inherit pro_methods_classvrpn__Analog__Output__Server" id="r_ab0ce56832bb5ce6394da39ee5bbb9653"><td align="right" class="memItemLeft" valign="top">
+virtual vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>encode_num_channels_to</b> (char *buf, vrpn_int32 num)</td></tr>
+<tr class="separator:ab0ce56832bb5ce6394da39ee5bbb9653 inherit pro_methods_classvrpn__Analog__Output__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Analog__Output"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Analog__Output')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Analog__Output.html">vrpn_Analog_Output</a></td></tr>
+<tr class="memitem:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Analog__Output" id="r_ad323fbb3a0d01ece28df8432733664fb"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog__Output.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a> (void)</td></tr>
+<tr class="separator:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Analog__Output"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass" id="r_a39894293265380f47e12dc38773b1f69"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a39894293265380f47e12dc38773b1f69">init</a> (void)</td></tr>
+<tr class="separator:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass" id="r_a3c7c050ad9bb970957dfa6c2f4c833c3"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a3c7c050ad9bb970957dfa6c2f4c833c3">register_senders</a> (void)</td></tr>
+<tr class="separator:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique" id="r_ac27f3c80c7edd28bb1b955358d221d58"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ac27f3c80c7edd28bb1b955358d221d58">register_autodeleted_handler</a> (vrpn_int32 type, vrpn_MESSAGEHANDLER handler, void *userdata, vrpn_int32 sender=vrpn_ANY_SENDER)</td></tr>
+<tr class="separator:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a1a4e9d1d8858036f3ac8c37eb8f67aa3"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a1a4e9d1d8858036f3ac8c37eb8f67aa3">send_text_message</a> (const char *msg, struct timeval timestamp, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL, vrpn_uint32 level=0)</td></tr>
+<tr class="memdesc:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Sends a NULL-terminated text message from the device d_sender_id  <br/></td></tr>
+<tr class="separator:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique" id="r_aa818797ad32c8be380cb3f9962048088"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">SendTextMessageBoundCall</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa818797ad32c8be380cb3f9962048088">send_text_message</a> (<a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL)</td></tr>
+<tr class="separator:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a5f63dfe395699defbadb9a7cd1ee9e29"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop</a> (void)</td></tr>
+<tr class="separator:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique" id="r_afec33d974c2286b9b2cefdcfbfa2430b"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#afec33d974c2286b9b2cefdcfbfa2430b">client_mainloop</a> (void)</td></tr>
+<tr class="separator:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5fc7a49f75c0d128961addef5eb15d79" name="a5fc7a49f75c0d128961addef5eb15d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc7a49f75c0d128961addef5eb15d79">◆ </a></span>handle_change_message()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static int VRPN_CALLBACK handle_change_message </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></td> <td class="paramname"><span class="paramname"><em>p</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Handles BOTH types of changes messages, and will be called after the <a class="el" href="classvrpn__Analog__Output__Server.html">vrpn_Analog_Output_Server</a> class has already filled in the values. It just calls the user callbacks with the appropriate pointer to the data values. </p>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a06f29120edb0fa495b2586d699881c78" name="a06f29120edb0fa495b2586d699881c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f29120edb0fa495b2586d699881c78">◆ </a></span>d_callback_list</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Callback__List.html">vrpn_Callback_List</a>&lt;<a class="el" href="struct__vrpn__ANALOGOUTPUTCB.html">vrpn_ANALOGOUTPUTCB</a>&gt; d_callback_list</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>List of user-level routines that need to be called back to let them know that the values have changed. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Analog__Output_8h_source.html">vrpn_Analog_Output.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

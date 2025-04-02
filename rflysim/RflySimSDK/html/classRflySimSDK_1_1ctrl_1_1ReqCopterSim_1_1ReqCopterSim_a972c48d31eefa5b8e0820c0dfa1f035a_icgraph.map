@@ -1,0 +1,7 @@
+<map id="getLocalIp" name="getLocalIp">
+<area shape="rect" id="Node000001" title="获取本地IP地址。" alt="" coords="498,21,579,48"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a926026339546bf6bd7c93c028aa0f62e" title="根据目标飞控 ID 自动生成 IP 地址。" alt="" coords="258,5,450,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,37,451,37,451,32,482,32"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a0a046fe9810c33cc4ddfa6c971be7624" title="设置飞控的系统 ID 和 IP 地址，并进行参数配置。" alt="" coords="5,13,210,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,37,210,37,210,32,242,32"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="vrpn_Tracker_GameTrak" name="vrpn_Tracker_GameTrak">
+<area shape="rect" id="Node000001" title=" " alt="" coords="60,567,225,593"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker.html" title=" " alt="" coords="318,400,415,427"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,438,199,545,164,569,161,564,196,540,338,434"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="308,309,425,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,352,369,399,364,399,364,352"/>
+<area shape="rect" id="Node000011" href="$classvrpn__Analog.html" title=" " alt="" coords="179,400,272,427"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="335,347,247,402,244,397,332,342"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="313,189,471,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="389,232,372,309,367,308,383,231"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="556,96,676,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="572,131,424,191,422,186,570,126"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="677,5,838,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="730,44,685,74,643,98,640,93,683,70,727,39"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="525,5,654,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="600,46,615,95,610,96,595,48"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="261,96,427,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="341,137,344,162,355,176,369,187,366,191,351,179,340,164,335,138"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="197,5,251,32"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="181,22,127,26,70,38,46,49,26,64,13,84,8,108,8,490,15,517,33,537,59,552,87,564,85,569,56,557,30,541,10,519,3,491,3,108,8,82,22,61,43,45,69,33,127,20,181,16"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="267,21,341,31,424,47,461,58,492,72,513,88,521,107,521,324,519,342,511,357,485,381,451,397,416,407,415,402,450,392,482,377,507,354,514,340,516,324,516,109,509,91,489,76,460,63,423,52,340,36,266,26"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="255,39,328,93,325,98,251,43"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="227,48,228,400,223,400,221,48"/>
+<area shape="rect" id="Node000013" href="$structvrpn__Callback__List_1_1vrpn__CBS.html" title=" " alt="" coords="93,96,174,123"/>
+<area shape="poly" id="edge17_Node000013_Node000009" title=" " alt="" coords="195,43,178,58,144,97,140,94,174,54,192,39"/>
+<area shape="rect" id="Node000010" href="$classvrpn__Analog__Remote.html" title=" " alt="" coords="70,476,216,503"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="145,518,145,566,140,566,140,518"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="202,439,158,478,155,474,198,435"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Callback__List.html" title=" " alt="" coords="37,243,195,285"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="117,301,119,376,130,431,141,475,136,476,125,433,114,376,112,301"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="126,138,124,147,118,198,118,242,113,242,113,198,119,146,121,137"/>
+</map>

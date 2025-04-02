@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: AutoMavMonitor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>phm</b></li><li class="navelem"><b>AutoMavCtrl</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavMonitor.html">AutoMavMonitor</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavMonitor-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">AutoMavMonitor类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>用于监控无人机测试过程中的线程和进程的类。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abc1b785959b47505de72feabab160402" id="r_abc1b785959b47505de72feabab160402"><td align="right" class="memItemLeft" valign="top">None </td><td class="memItemRight" valign="bottom"><a class="el" href="#abc1b785959b47505de72feabab160402">__init__</a> (self)</td></tr>
+<tr class="memdesc:abc1b785959b47505de72feabab160402"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化监控器。  <br/></td></tr>
+<tr class="separator:abc1b785959b47505de72feabab160402"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab0b1f30a962e53f70c1aa81ca9b90f9b" id="r_ab0b1f30a962e53f70c1aa81ca9b90f9b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0b1f30a962e53f70c1aa81ca9b90f9b">AutoMavThreadMonitor</a> (self)</td></tr>
+<tr class="memdesc:ab0b1f30a962e53f70c1aa81ca9b90f9b"><td class="mdescLeft"> </td><td class="mdescRight">监控无人机测试线程的方法。  <br/></td></tr>
+<tr class="separator:ab0b1f30a962e53f70c1aa81ca9b90f9b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21043afe5f77da032c9c31ac4e41f048" id="r_a21043afe5f77da032c9c31ac4e41f048"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a21043afe5f77da032c9c31ac4e41f048">SimProcessStartThreadMonitor</a> (self)</td></tr>
+<tr class="memdesc:a21043afe5f77da032c9c31ac4e41f048"><td class="mdescLeft"> </td><td class="mdescRight">监控仿真进程启动线程的方法。  <br/></td></tr>
+<tr class="separator:a21043afe5f77da032c9c31ac4e41f048"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afe09789d4e185088acc90cb77e056e62" id="r_afe09789d4e185088acc90cb77e056e62"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afe09789d4e185088acc90cb77e056e62">SimProcessEndThreadMonitor</a> (self)</td></tr>
+<tr class="memdesc:afe09789d4e185088acc90cb77e056e62"><td class="mdescLeft"> </td><td class="mdescRight">监控仿真进程结束线程的方法。  <br/></td></tr>
+<tr class="separator:afe09789d4e185088acc90cb77e056e62"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f1c9e05610706144034dd5f2b4e3919" id="r_a2f1c9e05610706144034dd5f2b4e3919"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1c9e05610706144034dd5f2b4e3919">DataRecordThreadMonitor</a> (self)</td></tr>
+<tr class="memdesc:a2f1c9e05610706144034dd5f2b4e3919"><td class="mdescLeft"> </td><td class="mdescRight">监控数据记录线程的方法。  <br/></td></tr>
+<tr class="separator:a2f1c9e05610706144034dd5f2b4e3919"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于监控无人机测试过程中的线程和进程的类。 </p>
+<dl class="section note"><dt>注解</dt><dd>此类负责监控无人机测试过程中的多个线程和进程，确保测试环境的稳定性和数据的准确性。它提供了启动和结束监控的方法，以及对数据记录线程的监控。 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abc1b785959b47505de72feabab160402" name="abc1b785959b47505de72feabab160402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1b785959b47505de72feabab160402">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"> None __init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化监控器。 </p>
+<ul>
+<li><a class="anchor" id="AutoMavMonitor"></a>.__init__ </li>
+</ul>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab0b1f30a962e53f70c1aa81ca9b90f9b" name="ab0b1f30a962e53f70c1aa81ca9b90f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b1f30a962e53f70c1aa81ca9b90f9b">◆ </a></span>AutoMavThreadMonitor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">AutoMavThreadMonitor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>监控无人机测试线程的方法。 </p>
+<ul>
+<li><a class="anchor" id="AutoMavThreadMonitor"></a></li>
+</ul>
+</div>
+</div>
+<a id="a2f1c9e05610706144034dd5f2b4e3919" name="a2f1c9e05610706144034dd5f2b4e3919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1c9e05610706144034dd5f2b4e3919">◆ </a></span>DataRecordThreadMonitor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">DataRecordThreadMonitor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>监控数据记录线程的方法。 </p>
+<ul>
+<li><a class="anchor" id="DataRecordThreadMonitor"></a></li>
+</ul>
+</div>
+</div>
+<a id="afe09789d4e185088acc90cb77e056e62" name="afe09789d4e185088acc90cb77e056e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe09789d4e185088acc90cb77e056e62">◆ </a></span>SimProcessEndThreadMonitor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SimProcessEndThreadMonitor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>监控仿真进程结束线程的方法。 </p>
+<ul>
+<li><a class="anchor" id="SimProcessEndThreadMonitor"></a></li>
+</ul>
+<pre class="fragment">Set the Frame type with the smallest serial number as the main Bat, which means opening all simulation software for this Bat.
+So, need to open the smallest serial number’ bat ---&gt; Quadcopter (AutoREG.MAV_FRAME [1,2,3])
+</pre>
+</div>
+</div>
+<a id="a21043afe5f77da032c9c31ac4e41f048" name="a21043afe5f77da032c9c31ac4e41f048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21043afe5f77da032c9c31ac4e41f048">◆ </a></span>SimProcessStartThreadMonitor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SimProcessStartThreadMonitor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>监控仿真进程启动线程的方法。 </p>
+<ul>
+<li><a class="anchor" id="SimProcessStartThreadMonitor"></a></li>
+</ul>
+<pre class="fragment">Set the Frame type with the smallest serial number as the main Bat, which means opening all simulation software for this Bat.
+So, need to open the smallest serial number’ bat ---&gt; Quadcopter (AutoREG.MAV_FRAME [1,2,3])
+</pre>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>phm/<a class="el" href="AutoMavCtrl_8py.html">AutoMavCtrl.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

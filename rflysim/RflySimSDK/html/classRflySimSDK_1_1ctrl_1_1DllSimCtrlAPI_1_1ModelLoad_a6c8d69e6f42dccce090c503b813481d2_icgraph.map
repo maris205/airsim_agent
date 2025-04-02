@@ -1,0 +1,14 @@
+<map id="Dllstep" name="Dllstep">
+<area shape="rect" id="Node000001" title="执行一次仿真步骤。这是对 DLL 中仿真时间推进的基本调用。" alt="" coords="474,31,537,57"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="527,18,519,12,505,9,492,11,485,16,484,22,487,29,482,31,478,22,481,13,491,6,506,4,522,7,530,13"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#af988b1ebd5bd032166adebe23944ff0d" title="初始化并配置载具模型。参数的详细含义参考 Bat脚本使用参考" alt="" coords="324,5,426,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="459,38,426,31,427,26,460,32"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ad11f7333488004e462347852a1865330" title="手动更新仿真状态的接口" alt="" coords="326,56,424,83"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="459,56,425,62,424,57,458,50"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#acd4dae14df46a8213f9e9331fbce7549" title="这是类的构造函数，用于初始化 ModelLoad 类的实例。参数的详细含义参考 Bat脚本使用参考" alt="" coords="187,5,254,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,21,254,21,254,16,309,16"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#aea9ac8705048bee7d45d790c5c62ee10" title="自动更新循环的核心逻辑，实现持续的仿真更新、数据发送等功能。" alt="" coords="165,56,276,83"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="311,72,276,72,276,67,311,67"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a82efff7d738f6b3ea1aca95b38625b05" title="用于启动自动更新循环，以指定的频率更新仿真状态。" alt="" coords="5,56,117,83"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="149,72,117,72,117,67,149,67"/>
+</map>

@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: __mavlink_status结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-attribs">Public 属性</a> |
+<a href="struct____mavlink__status-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">__mavlink_status结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> __mavlink_status 的协作图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="144" scrolling="no" src="struct____mavlink__status__coll__graph.svg" width="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab029d89ac450568aed34a07d20c748d7" id="r_ab029d89ac450568aed34a07d20c748d7"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab029d89ac450568aed34a07d20c748d7">msg_received</a></td></tr>
+<tr class="memdesc:ab029d89ac450568aed34a07d20c748d7"><td class="mdescLeft"> </td><td class="mdescRight">Number of received messages  <br/></td></tr>
+<tr class="separator:ab029d89ac450568aed34a07d20c748d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46645179d13142df11bbf65dd46e3763" id="r_a46645179d13142df11bbf65dd46e3763"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#a46645179d13142df11bbf65dd46e3763">buffer_overrun</a></td></tr>
+<tr class="memdesc:a46645179d13142df11bbf65dd46e3763"><td class="mdescLeft"> </td><td class="mdescRight">Number of buffer overruns  <br/></td></tr>
+<tr class="separator:a46645179d13142df11bbf65dd46e3763"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00f0bf638777ef02791bdb2d21209d75" id="r_a00f0bf638777ef02791bdb2d21209d75"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f0bf638777ef02791bdb2d21209d75">parse_error</a></td></tr>
+<tr class="memdesc:a00f0bf638777ef02791bdb2d21209d75"><td class="mdescLeft"> </td><td class="mdescRight">Number of parse errors  <br/></td></tr>
+<tr class="separator:a00f0bf638777ef02791bdb2d21209d75"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a55340ddbc135478dc09ae22ba9d254b2" id="r_a55340ddbc135478dc09ae22ba9d254b2"><td align="right" class="memItemLeft" valign="top">mavlink_parse_state_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#a55340ddbc135478dc09ae22ba9d254b2">parse_state</a></td></tr>
+<tr class="memdesc:a55340ddbc135478dc09ae22ba9d254b2"><td class="mdescLeft"> </td><td class="mdescRight">Parsing state machine  <br/></td></tr>
+<tr class="separator:a55340ddbc135478dc09ae22ba9d254b2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adbc7ba6354e62de69b8312b2ecc6a98f" id="r_adbc7ba6354e62de69b8312b2ecc6a98f"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#adbc7ba6354e62de69b8312b2ecc6a98f">packet_idx</a></td></tr>
+<tr class="memdesc:adbc7ba6354e62de69b8312b2ecc6a98f"><td class="mdescLeft"> </td><td class="mdescRight">Index in current packet  <br/></td></tr>
+<tr class="separator:adbc7ba6354e62de69b8312b2ecc6a98f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adbf19b3f1f3bbabeac55dc07dc7ec421" id="r_adbf19b3f1f3bbabeac55dc07dc7ec421"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#adbf19b3f1f3bbabeac55dc07dc7ec421">current_rx_seq</a></td></tr>
+<tr class="memdesc:adbf19b3f1f3bbabeac55dc07dc7ec421"><td class="mdescLeft"> </td><td class="mdescRight">Sequence number of last packet received  <br/></td></tr>
+<tr class="separator:adbf19b3f1f3bbabeac55dc07dc7ec421"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab9f64a07cb96598f8f5775fed387a038" id="r_ab9f64a07cb96598f8f5775fed387a038"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9f64a07cb96598f8f5775fed387a038">current_tx_seq</a></td></tr>
+<tr class="memdesc:ab9f64a07cb96598f8f5775fed387a038"><td class="mdescLeft"> </td><td class="mdescRight">Sequence number of last packet sent  <br/></td></tr>
+<tr class="separator:ab9f64a07cb96598f8f5775fed387a038"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a35104ed155d69237557f75df44e8c875" id="r_a35104ed155d69237557f75df44e8c875"><td align="right" class="memItemLeft" valign="top">uint16_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#a35104ed155d69237557f75df44e8c875">packet_rx_success_count</a></td></tr>
+<tr class="memdesc:a35104ed155d69237557f75df44e8c875"><td class="mdescLeft"> </td><td class="mdescRight">Received packets  <br/></td></tr>
+<tr class="separator:a35104ed155d69237557f75df44e8c875"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaba220c7b044ea14cc2a303d60202be5" id="r_aaba220c7b044ea14cc2a303d60202be5"><td align="right" class="memItemLeft" valign="top">uint16_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba220c7b044ea14cc2a303d60202be5">packet_rx_drop_count</a></td></tr>
+<tr class="memdesc:aaba220c7b044ea14cc2a303d60202be5"><td class="mdescLeft"> </td><td class="mdescRight">Number of packet drops  <br/></td></tr>
+<tr class="separator:aaba220c7b044ea14cc2a303d60202be5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa2585d779da0ab21273a8d92de9a0ebe" id="r_aa2585d779da0ab21273a8d92de9a0ebe"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></td></tr>
+<tr class="memdesc:aa2585d779da0ab21273a8d92de9a0ebe"><td class="mdescLeft"> </td><td class="mdescRight">MAVLINK_STATUS_FLAG_*  <br/></td></tr>
+<tr class="separator:aa2585d779da0ab21273a8d92de9a0ebe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2437d42e6e096c1b4d50d78fce7ee1a" id="r_ad2437d42e6e096c1b4d50d78fce7ee1a"><td align="right" class="memItemLeft" valign="top">uint8_t </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2437d42e6e096c1b4d50d78fce7ee1a">signature_wait</a></td></tr>
+<tr class="memdesc:ad2437d42e6e096c1b4d50d78fce7ee1a"><td class="mdescLeft"> </td><td class="mdescRight">number of signature bytes left to receive  <br/></td></tr>
+<tr class="separator:ad2437d42e6e096c1b4d50d78fce7ee1a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed24a8983aa3f005c04eca07c8403635" id="r_aed24a8983aa3f005c04eca07c8403635"><td align="right" class="memItemLeft" valign="top">struct <a class="el" href="struct____mavlink__signing.html">__mavlink_signing</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#aed24a8983aa3f005c04eca07c8403635">signing</a></td></tr>
+<tr class="memdesc:aed24a8983aa3f005c04eca07c8403635"><td class="mdescLeft"> </td><td class="mdescRight">optional signing state  <br/></td></tr>
+<tr class="separator:aed24a8983aa3f005c04eca07c8403635"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f0ebcf65eac8fa5f0d2430d39663ac2" id="r_a2f0ebcf65eac8fa5f0d2430d39663ac2"><td align="right" class="memItemLeft" valign="top">struct <a class="el" href="struct____mavlink__signing__streams.html">__mavlink_signing_streams</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0ebcf65eac8fa5f0d2430d39663ac2">signing_streams</a></td></tr>
+<tr class="memdesc:a2f0ebcf65eac8fa5f0d2430d39663ac2"><td class="mdescLeft"> </td><td class="mdescRight">global record of stream timestamps  <br/></td></tr>
+<tr class="separator:a2f0ebcf65eac8fa5f0d2430d39663ac2"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a46645179d13142df11bbf65dd46e3763" name="a46645179d13142df11bbf65dd46e3763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46645179d13142df11bbf65dd46e3763">◆ </a></span>buffer_overrun</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t buffer_overrun</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Number of buffer overruns </p>
+</div>
+</div>
+<a id="adbf19b3f1f3bbabeac55dc07dc7ec421" name="adbf19b3f1f3bbabeac55dc07dc7ec421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf19b3f1f3bbabeac55dc07dc7ec421">◆ </a></span>current_rx_seq</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t current_rx_seq</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Sequence number of last packet received </p>
+</div>
+</div>
+<a id="ab9f64a07cb96598f8f5775fed387a038" name="ab9f64a07cb96598f8f5775fed387a038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f64a07cb96598f8f5775fed387a038">◆ </a></span>current_tx_seq</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t current_tx_seq</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Sequence number of last packet sent </p>
+</div>
+</div>
+<a id="aa2585d779da0ab21273a8d92de9a0ebe" name="aa2585d779da0ab21273a8d92de9a0ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2585d779da0ab21273a8d92de9a0ebe">◆ </a></span>flags</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t flags</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>MAVLINK_STATUS_FLAG_* </p>
+</div>
+</div>
+<a id="ab029d89ac450568aed34a07d20c748d7" name="ab029d89ac450568aed34a07d20c748d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab029d89ac450568aed34a07d20c748d7">◆ </a></span>msg_received</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t msg_received</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Number of received messages </p>
+</div>
+</div>
+<a id="adbc7ba6354e62de69b8312b2ecc6a98f" name="adbc7ba6354e62de69b8312b2ecc6a98f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc7ba6354e62de69b8312b2ecc6a98f">◆ </a></span>packet_idx</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t packet_idx</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Index in current packet </p>
+</div>
+</div>
+<a id="aaba220c7b044ea14cc2a303d60202be5" name="aaba220c7b044ea14cc2a303d60202be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba220c7b044ea14cc2a303d60202be5">◆ </a></span>packet_rx_drop_count</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint16_t packet_rx_drop_count</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Number of packet drops </p>
+</div>
+</div>
+<a id="a35104ed155d69237557f75df44e8c875" name="a35104ed155d69237557f75df44e8c875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35104ed155d69237557f75df44e8c875">◆ </a></span>packet_rx_success_count</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint16_t packet_rx_success_count</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Received packets </p>
+</div>
+</div>
+<a id="a00f0bf638777ef02791bdb2d21209d75" name="a00f0bf638777ef02791bdb2d21209d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f0bf638777ef02791bdb2d21209d75">◆ </a></span>parse_error</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t parse_error</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Number of parse errors </p>
+</div>
+</div>
+<a id="a55340ddbc135478dc09ae22ba9d254b2" name="a55340ddbc135478dc09ae22ba9d254b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55340ddbc135478dc09ae22ba9d254b2">◆ </a></span>parse_state</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">mavlink_parse_state_t parse_state</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Parsing state machine </p>
+</div>
+</div>
+<a id="ad2437d42e6e096c1b4d50d78fce7ee1a" name="ad2437d42e6e096c1b4d50d78fce7ee1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2437d42e6e096c1b4d50d78fce7ee1a">◆ </a></span>signature_wait</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uint8_t signature_wait</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>number of signature bytes left to receive </p>
+</div>
+</div>
+<a id="aed24a8983aa3f005c04eca07c8403635" name="aed24a8983aa3f005c04eca07c8403635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed24a8983aa3f005c04eca07c8403635">◆ </a></span>signing</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">struct <a class="el" href="struct____mavlink__signing.html">__mavlink_signing</a>* signing</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>optional signing state </p>
+</div>
+</div>
+<a id="a2f0ebcf65eac8fa5f0d2430d39663ac2" name="a2f0ebcf65eac8fa5f0d2430d39663ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0ebcf65eac8fa5f0d2430d39663ac2">◆ </a></span>signing_streams</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">struct <a class="el" href="struct____mavlink__signing__streams.html">__mavlink_signing_streams</a>* signing_streams</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>global record of stream timestamps </p>
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>simulink/mavlink/<a class="el" href="mavlink__types_8h_source.html">mavlink_types.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

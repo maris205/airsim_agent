@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Endpoint_IP类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn__Endpoint__IP-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Endpoint_IP类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Encapsulation of the data and methods for a single IP-based connection to take care of one part of many clients talking to a single server.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a>&gt;</code></p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_Endpoint_IP 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classvrpn__Endpoint__IP__inherit__graph.svg" width="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_Endpoint_IP 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classvrpn__Endpoint__IP__coll__graph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1412c2d327ba3b09a724f06e5235b7d1" id="r_a1412c2d327ba3b09a724f06e5235b7d1"><td align="right" class="memItemLeft" valign="top"><a id="a1412c2d327ba3b09a724f06e5235b7d1" name="a1412c2d327ba3b09a724f06e5235b7d1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Endpoint_IP</b> (vrpn_TypeDispatcher *dispatcher, vrpn_int32 *connectedEndpointCounter)</td></tr>
+<tr class="separator:a1412c2d327ba3b09a724f06e5235b7d1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Accessors</div></td></tr>
+<tr class="memitem:a4595d6e2793856ce48642e92f52be73d" id="r_a4595d6e2793856ce48642e92f52be73d"><td align="right" class="memItemLeft" valign="top">virtual vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4595d6e2793856ce48642e92f52be73d">doing_okay</a> (void) const</td></tr>
+<tr class="separator:a4595d6e2793856ce48642e92f52be73d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6238d43c110bfab8b6c1e445eafa25b8" id="r_a6238d43c110bfab8b6c1e445eafa25b8"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6238d43c110bfab8b6c1e445eafa25b8">outbound_udp_open</a> (void) const</td></tr>
+<tr class="memdesc:a6238d43c110bfab8b6c1e445eafa25b8"><td class="mdescLeft"> </td><td class="mdescRight">True if the UDP outbound is open, False if not.  <br/></td></tr>
+<tr class="separator:a6238d43c110bfab8b6c1e445eafa25b8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab079794626cb000c858dd5574bda73a4" id="r_ab079794626cb000c858dd5574bda73a4"><td align="right" class="memItemLeft" valign="top"><a id="ab079794626cb000c858dd5574bda73a4" name="ab079794626cb000c858dd5574bda73a4"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>tcp_outbuf_size</b> (void) const</td></tr>
+<tr class="separator:ab079794626cb000c858dd5574bda73a4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9467cb91141e24eac2d3cc5d6ed30353" id="r_a9467cb91141e24eac2d3cc5d6ed30353"><td align="right" class="memItemLeft" valign="top"><a id="a9467cb91141e24eac2d3cc5d6ed30353" name="a9467cb91141e24eac2d3cc5d6ed30353"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>udp_outbuf_size</b> (void) const</td></tr>
+<tr class="separator:a9467cb91141e24eac2d3cc5d6ed30353"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Endpoint"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Endpoint')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a></td></tr>
+<tr class="memitem:a81f7f883365605f7120304b3869f63ae inherit pub_methods_classvrpn__Endpoint" id="r_a81f7f883365605f7120304b3869f63ae"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Endpoint</b> (vrpn_TypeDispatcher *dispatcher, vrpn_int32 *connectedEndpointCounter)</td></tr>
+<tr class="separator:a81f7f883365605f7120304b3869f63ae inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a28dfc6e5a9855d3fb0d448c18b735fe4 inherit pub_methods_classvrpn__Endpoint" id="r_a28dfc6e5a9855d3fb0d448c18b735fe4"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a28dfc6e5a9855d3fb0d448c18b735fe4">pack_log_description</a> (void)</td></tr>
+<tr class="memdesc:a28dfc6e5a9855d3fb0d448c18b735fe4 inherit pub_methods_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Packs the log description set by <a class="el" href="classvrpn__Endpoint.html#acaca2bbf975d4c655a7b2318d05898cc">setup_new_connection()</a>.  <br/></td></tr>
+<tr class="separator:a28dfc6e5a9855d3fb0d448c18b735fe4 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae2a724e867de8390b3cc3c473f7cc97d inherit pub_methods_classvrpn__Endpoint" id="r_ae2a724e867de8390b3cc3c473f7cc97d"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#ae2a724e867de8390b3cc3c473f7cc97d">pack_sender_description</a> (vrpn_int32 which)</td></tr>
+<tr class="memdesc:ae2a724e867de8390b3cc3c473f7cc97d inherit pub_methods_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Packs a sender description over our socket.  <br/></td></tr>
+<tr class="separator:ae2a724e867de8390b3cc3c473f7cc97d inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a415e8048615fcce92d20e2bc5b57da05 inherit pub_methods_classvrpn__Endpoint" id="r_a415e8048615fcce92d20e2bc5b57da05"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a415e8048615fcce92d20e2bc5b57da05">pack_type_description</a> (vrpn_int32 which)</td></tr>
+<tr class="memdesc:a415e8048615fcce92d20e2bc5b57da05 inherit pub_methods_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Packs a type description.  <br/></td></tr>
+<tr class="separator:a415e8048615fcce92d20e2bc5b57da05 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a114a0ef9c97e6608a898bcedb739fb09 inherit pub_methods_classvrpn__Endpoint" id="r_a114a0ef9c97e6608a898bcedb739fb09"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a114a0ef9c97e6608a898bcedb739fb09">local_type_id</a> (vrpn_int32 remote_type) const</td></tr>
+<tr class="memdesc:a114a0ef9c97e6608a898bcedb739fb09 inherit pub_methods_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Returns the local mapping for the remote type (-1 if none).  <br/></td></tr>
+<tr class="separator:a114a0ef9c97e6608a898bcedb739fb09 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d187e7c95be0353c818ac571fa0792c inherit pub_methods_classvrpn__Endpoint" id="r_a1d187e7c95be0353c818ac571fa0792c"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a1d187e7c95be0353c818ac571fa0792c">local_sender_id</a> (vrpn_int32 remote_sender) const</td></tr>
+<tr class="memdesc:a1d187e7c95be0353c818ac571fa0792c inherit pub_methods_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Returns the local mapping for the remote sender (-1 if none).  <br/></td></tr>
+<tr class="separator:a1d187e7c95be0353c818ac571fa0792c inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2858154e2009b0e6e616f313177762bc inherit pub_methods_classvrpn__Endpoint" id="r_a2858154e2009b0e6e616f313177762bc"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>init</b> (void)</td></tr>
+<tr class="separator:a2858154e2009b0e6e616f313177762bc inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e2670fa595f3a7ea661e45f0649a408 inherit pub_methods_classvrpn__Endpoint" id="r_a4e2670fa595f3a7ea661e45f0649a408"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a4e2670fa595f3a7ea661e45f0649a408">clear_other_senders_and_types</a> (void)</td></tr>
+<tr class="separator:a4e2670fa595f3a7ea661e45f0649a408 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0d22ec68d09836bc007cc360cca80bd0 inherit pub_methods_classvrpn__Endpoint" id="r_a0d22ec68d09836bc007cc360cca80bd0"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a0d22ec68d09836bc007cc360cca80bd0">newLocalSender</a> (const char *name, vrpn_int32 which)</td></tr>
+<tr class="separator:a0d22ec68d09836bc007cc360cca80bd0 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abe4705cd8d4c568bc58a03ec9664a2f2 inherit pub_methods_classvrpn__Endpoint" id="r_abe4705cd8d4c568bc58a03ec9664a2f2"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>newLocalType</b> (const char *name, vrpn_int32 which)</td></tr>
+<tr class="separator:abe4705cd8d4c568bc58a03ec9664a2f2 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a428761446e83725199c7da629367c609 inherit pub_methods_classvrpn__Endpoint" id="r_a428761446e83725199c7da629367c609"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a428761446e83725199c7da629367c609">newRemoteType</a> (vrpn_CNAME type_name, vrpn_int32 remote_id, vrpn_int32 local_id)</td></tr>
+<tr class="separator:a428761446e83725199c7da629367c609 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa63a796f3d87ea427a55f9f2350e4798 inherit pub_methods_classvrpn__Endpoint" id="r_aa63a796f3d87ea427a55f9f2350e4798"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>newRemoteSender</b> (vrpn_CNAME sender_name, vrpn_int32 remote_id, vrpn_int32 local_id)</td></tr>
+<tr class="separator:aa63a796f3d87ea427a55f9f2350e4798 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb62158ac7055151eada5a99c57ad43e inherit pub_methods_classvrpn__Endpoint" id="r_acb62158ac7055151eada5a99c57ad43e"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setConnection</b> (<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *conn)</td></tr>
+<tr class="separator:acb62158ac7055151eada5a99c57ad43e inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af7b14dc026db3fb1dba5186b9c830131 inherit pub_methods_classvrpn__Endpoint" id="r_af7b14dc026db3fb1dba5186b9c830131"><td align="right" class="memItemLeft" valign="top">
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><b>getConnection</b> ()</td></tr>
+<tr class="separator:af7b14dc026db3fb1dba5186b9c830131 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab121705841918c06063bc551306203be inherit pub_methods_classvrpn__Endpoint" id="r_ab121705841918c06063bc551306203be"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setLogNames</b> (const char *inName, const char *outName)</td></tr>
+<tr class="separator:ab121705841918c06063bc551306203be inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a83b09f96a1d7741c476d9985d5101986 inherit pub_methods_classvrpn__Endpoint" id="r_a83b09f96a1d7741c476d9985d5101986"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>openLogs</b> (void)</td></tr>
+<tr class="separator:a83b09f96a1d7741c476d9985d5101986 inherit pub_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Manipulators</h2></td></tr>
+<tr class="memitem:afb2012ea8af08c9e782977b5684a90bf" id="r_afb2012ea8af08c9e782977b5684a90bf"><td align="right" class="memItemLeft" valign="top">vrpn_SOCKET </td><td class="memItemRight" valign="bottom"><a class="el" href="#afb2012ea8af08c9e782977b5684a90bf">d_tcpSocket</a></td></tr>
+<tr class="separator:afb2012ea8af08c9e782977b5684a90bf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac973530adb9f2ade39ad643522cbf160" id="r_ac973530adb9f2ade39ad643522cbf160"><td align="right" class="memItemLeft" valign="top">vrpn_SOCKET </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac973530adb9f2ade39ad643522cbf160">d_tcpListenSocket</a></td></tr>
+<tr class="separator:ac973530adb9f2ade39ad643522cbf160"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a496b5d0a28b2c9b5c36ccaf5c95f1d35" id="r_a496b5d0a28b2c9b5c36ccaf5c95f1d35"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a496b5d0a28b2c9b5c36ccaf5c95f1d35">d_tcpListenPort</a></td></tr>
+<tr class="separator:a496b5d0a28b2c9b5c36ccaf5c95f1d35"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aba51e8b9e819ad213776c52621fda8e0" id="r_aba51e8b9e819ad213776c52621fda8e0"><td align="right" class="memItemLeft" valign="top">vrpn_SOCKET </td><td class="memItemRight" valign="bottom"><a class="el" href="#aba51e8b9e819ad213776c52621fda8e0">d_udpLobSocket</a></td></tr>
+<tr class="separator:aba51e8b9e819ad213776c52621fda8e0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1ab05b008e495cd1744dc47a88dcaa92" id="r_a1ab05b008e495cd1744dc47a88dcaa92"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab05b008e495cd1744dc47a88dcaa92">d_remote_machine_name</a></td></tr>
+<tr class="memdesc:a1ab05b008e495cd1744dc47a88dcaa92"><td class="mdescLeft"> </td><td class="mdescRight">Machine to call  <br/></td></tr>
+<tr class="separator:a1ab05b008e495cd1744dc47a88dcaa92"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a83e35e1d78ac1c9e0dacf4a4cee97051" id="r_a83e35e1d78ac1c9e0dacf4a4cee97051"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a83e35e1d78ac1c9e0dacf4a4cee97051">d_remote_port_number</a></td></tr>
+<tr class="memdesc:a83e35e1d78ac1c9e0dacf4a4cee97051"><td class="mdescLeft"> </td><td class="mdescRight">Port to connect to on remote machine  <br/></td></tr>
+<tr class="separator:a83e35e1d78ac1c9e0dacf4a4cee97051"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a874b3a25c14ba9eda0f26e030c616a75" id="r_a874b3a25c14ba9eda0f26e030c616a75"><td align="right" class="memItemLeft" valign="top">timeval </td><td class="memItemRight" valign="bottom"><a class="el" href="#a874b3a25c14ba9eda0f26e030c616a75">d_last_connect_attempt</a></td></tr>
+<tr class="memdesc:a874b3a25c14ba9eda0f26e030c616a75"><td class="mdescLeft"> </td><td class="mdescRight">When the last UDP lob occurred  <br/></td></tr>
+<tr class="separator:a874b3a25c14ba9eda0f26e030c616a75"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aee66d613571a30b7c78d803c4231620c" id="r_aee66d613571a30b7c78d803c4231620c"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#aee66d613571a30b7c78d803c4231620c">d_tcp_only</a></td></tr>
+<tr class="separator:aee66d613571a30b7c78d803c4231620c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeecab0bfd48a0f148bea8e82db6c543e" id="r_aeecab0bfd48a0f148bea8e82db6c543e"><td align="right" class="memItemLeft" valign="top"><a id="aeecab0bfd48a0f148bea8e82db6c543e" name="aeecab0bfd48a0f148bea8e82db6c543e"></a>
+vrpn_SOCKET </td><td class="memItemRight" valign="bottom"><b>d_udpOutboundSocket</b></td></tr>
+<tr class="separator:aeecab0bfd48a0f148bea8e82db6c543e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ffb1a595eed027210b6380a4e452123" id="r_a0ffb1a595eed027210b6380a4e452123"><td align="right" class="memItemLeft" valign="top">vrpn_SOCKET </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ffb1a595eed027210b6380a4e452123">d_udpInboundSocket</a></td></tr>
+<tr class="separator:a0ffb1a595eed027210b6380a4e452123"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2db08e6e67cd84a8c9fcff852b0d438c" id="r_a2db08e6e67cd84a8c9fcff852b0d438c"><td align="right" class="memItemLeft" valign="top"><a id="a2db08e6e67cd84a8c9fcff852b0d438c" name="a2db08e6e67cd84a8c9fcff852b0d438c"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_tcpOutbuf</b></td></tr>
+<tr class="separator:a2db08e6e67cd84a8c9fcff852b0d438c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a2a13e367931988c13aeb30bd05b7d4" id="r_a0a2a13e367931988c13aeb30bd05b7d4"><td align="right" class="memItemLeft" valign="top"><a id="a0a2a13e367931988c13aeb30bd05b7d4" name="a0a2a13e367931988c13aeb30bd05b7d4"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_udpOutbuf</b></td></tr>
+<tr class="separator:a0a2a13e367931988c13aeb30bd05b7d4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a50ec1a5d1615086c85c7a3c550cb4e4a" id="r_a50ec1a5d1615086c85c7a3c550cb4e4a"><td align="right" class="memItemLeft" valign="top"><a id="a50ec1a5d1615086c85c7a3c550cb4e4a" name="a50ec1a5d1615086c85c7a3c550cb4e4a"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_tcpBuflen</b></td></tr>
+<tr class="separator:a50ec1a5d1615086c85c7a3c550cb4e4a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a688de73c23e3d07800d9073c4cc37ea1" id="r_a688de73c23e3d07800d9073c4cc37ea1"><td align="right" class="memItemLeft" valign="top"><a id="a688de73c23e3d07800d9073c4cc37ea1" name="a688de73c23e3d07800d9073c4cc37ea1"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_udpBuflen</b></td></tr>
+<tr class="separator:a688de73c23e3d07800d9073c4cc37ea1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d1eba625572905a991da865615a798e" id="r_a1d1eba625572905a991da865615a798e"><td align="right" class="memItemLeft" valign="top"><a id="a1d1eba625572905a991da865615a798e" name="a1d1eba625572905a991da865615a798e"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_tcpNumOut</b></td></tr>
+<tr class="separator:a1d1eba625572905a991da865615a798e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3763d94a1c4eb1e83c7a60717507bf94" id="r_a3763d94a1c4eb1e83c7a60717507bf94"><td align="right" class="memItemLeft" valign="top"><a id="a3763d94a1c4eb1e83c7a60717507bf94" name="a3763d94a1c4eb1e83c7a60717507bf94"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_udpNumOut</b></td></tr>
+<tr class="separator:a3763d94a1c4eb1e83c7a60717507bf94"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a73909b90cc9024084cb4cdf88bd9e8f4" id="r_a73909b90cc9024084cb4cdf88bd9e8f4"><td align="right" class="memItemLeft" valign="top"><a id="a73909b90cc9024084cb4cdf88bd9e8f4" name="a73909b90cc9024084cb4cdf88bd9e8f4"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_tcpSequenceNumber</b></td></tr>
+<tr class="separator:a73909b90cc9024084cb4cdf88bd9e8f4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a71624e567cefe2583aa1d2b79771fbca" id="r_a71624e567cefe2583aa1d2b79771fbca"><td align="right" class="memItemLeft" valign="top"><a id="a71624e567cefe2583aa1d2b79771fbca" name="a71624e567cefe2583aa1d2b79771fbca"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_udpSequenceNumber</b></td></tr>
+<tr class="separator:a71624e567cefe2583aa1d2b79771fbca"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6120b1f718eb6860f07b91c521d56c3a" id="r_a6120b1f718eb6860f07b91c521d56c3a"><td align="right" class="memItemLeft" valign="top"><a id="a6120b1f718eb6860f07b91c521d56c3a" name="a6120b1f718eb6860f07b91c521d56c3a"></a>
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>d_tcpAlignedInbuf</b> [vrpn_CONNECTION_TCP_BUFLEN/sizeof(vrpn_float64)+1]</td></tr>
+<tr class="separator:a6120b1f718eb6860f07b91c521d56c3a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a736a27d5e4ea46d698f5211d363cd724" id="r_a736a27d5e4ea46d698f5211d363cd724"><td align="right" class="memItemLeft" valign="top"><a id="a736a27d5e4ea46d698f5211d363cd724" name="a736a27d5e4ea46d698f5211d363cd724"></a>
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>d_udpAlignedInbuf</b> [vrpn_CONNECTION_UDP_BUFLEN/sizeof(vrpn_float64)+1]</td></tr>
+<tr class="separator:a736a27d5e4ea46d698f5211d363cd724"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15993df8a329feed56775683519d0164" id="r_a15993df8a329feed56775683519d0164"><td align="right" class="memItemLeft" valign="top"><a id="a15993df8a329feed56775683519d0164" name="a15993df8a329feed56775683519d0164"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_tcpInbuf</b></td></tr>
+<tr class="separator:a15993df8a329feed56775683519d0164"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af11e5f6506c2705f962c9fd27f269cfc" id="r_af11e5f6506c2705f962c9fd27f269cfc"><td align="right" class="memItemLeft" valign="top"><a id="af11e5f6506c2705f962c9fd27f269cfc" name="af11e5f6506c2705f962c9fd27f269cfc"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_udpInbuf</b></td></tr>
+<tr class="separator:af11e5f6506c2705f962c9fd27f269cfc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab0e31282057144fd9c9300512f7ac68c" id="r_ab0e31282057144fd9c9300512f7ac68c"><td align="right" class="memItemLeft" valign="top"><a id="ab0e31282057144fd9c9300512f7ac68c" name="ab0e31282057144fd9c9300512f7ac68c"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_NICaddress</b></td></tr>
+<tr class="separator:ab0e31282057144fd9c9300512f7ac68c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2858154e2009b0e6e616f313177762bc" id="r_a2858154e2009b0e6e616f313177762bc"><td align="right" class="memItemLeft" valign="top"><a id="a2858154e2009b0e6e616f313177762bc" name="a2858154e2009b0e6e616f313177762bc"></a>
+void </td><td class="memItemRight" valign="bottom"><b>init</b> (void)</td></tr>
+<tr class="separator:a2858154e2009b0e6e616f313177762bc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac9d8f73e4188a7957100d1edd4960783" id="r_ac9d8f73e4188a7957100d1edd4960783"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9d8f73e4188a7957100d1edd4960783">mainloop</a> (timeval *timeout)</td></tr>
+<tr class="separator:ac9d8f73e4188a7957100d1edd4960783"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b9ae46271cd70274b15129144ced65f" id="r_a6b9ae46271cd70274b15129144ced65f"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b9ae46271cd70274b15129144ced65f">pack_message</a> (vrpn_uint32 len, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer, vrpn_uint32 class_of_service)</td></tr>
+<tr class="memdesc:a6b9ae46271cd70274b15129144ced65f"><td class="mdescLeft"> </td><td class="mdescRight">Pack a message that will be sent the next time mainloop() is called.  <br/></td></tr>
+<tr class="separator:a6b9ae46271cd70274b15129144ced65f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0d15a45d4d53c276eeacff2dace0dce" id="r_aa0d15a45d4d53c276eeacff2dace0dce"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0d15a45d4d53c276eeacff2dace0dce">send_pending_reports</a> (void)</td></tr>
+<tr class="memdesc:aa0d15a45d4d53c276eeacff2dace0dce"><td class="mdescLeft"> </td><td class="mdescRight">send pending report, clear the buffer.  <br/></td></tr>
+<tr class="separator:aa0d15a45d4d53c276eeacff2dace0dce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bb3679ca55b0c4dca80f3bdb5f32e1c" id="r_a5bb3679ca55b0c4dca80f3bdb5f32e1c"><td align="right" class="memItemLeft" valign="top"><a id="a5bb3679ca55b0c4dca80f3bdb5f32e1c" name="a5bb3679ca55b0c4dca80f3bdb5f32e1c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>pack_udp_description</b> (int portno)</td></tr>
+<tr class="separator:a5bb3679ca55b0c4dca80f3bdb5f32e1c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46c7c9eefbb915a9718cf9fbddabf065" id="r_a46c7c9eefbb915a9718cf9fbddabf065"><td align="right" class="memItemLeft" valign="top"><a id="a46c7c9eefbb915a9718cf9fbddabf065" name="a46c7c9eefbb915a9718cf9fbddabf065"></a>
+int </td><td class="memItemRight" valign="bottom"><b>handle_tcp_messages</b> (const timeval *timeout)</td></tr>
+<tr class="separator:a46c7c9eefbb915a9718cf9fbddabf065"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af276da22fe14192e435aabedf6d4382f" id="r_af276da22fe14192e435aabedf6d4382f"><td align="right" class="memItemLeft" valign="top"><a id="af276da22fe14192e435aabedf6d4382f" name="af276da22fe14192e435aabedf6d4382f"></a>
+int </td><td class="memItemRight" valign="bottom"><b>handle_udp_messages</b> (const timeval *timeout)</td></tr>
+<tr class="separator:af276da22fe14192e435aabedf6d4382f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a13dcb69f674687be506fa6bbbca05b12" id="r_a13dcb69f674687be506fa6bbbca05b12"><td align="right" class="memItemLeft" valign="top"><a id="a13dcb69f674687be506fa6bbbca05b12" name="a13dcb69f674687be506fa6bbbca05b12"></a>
+int </td><td class="memItemRight" valign="bottom"><b>connect_tcp_to</b> (const char *msg)</td></tr>
+<tr class="separator:a13dcb69f674687be506fa6bbbca05b12"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afc8e40caabe5e83ae6da13c638120c2c" id="r_afc8e40caabe5e83ae6da13c638120c2c"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#afc8e40caabe5e83ae6da13c638120c2c">connect_tcp_to</a> (const char *addr, int port)</td></tr>
+<tr class="separator:afc8e40caabe5e83ae6da13c638120c2c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac4a0d63d1b1c39e920c88cd74bbf5305" id="r_ac4a0d63d1b1c39e920c88cd74bbf5305"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a0d63d1b1c39e920c88cd74bbf5305">connect_udp_to</a> (const char *addr, int port)</td></tr>
+<tr class="separator:ac4a0d63d1b1c39e920c88cd74bbf5305"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ec3e9b4e1572b6b0ae06368035a0b9e" id="r_a9ec3e9b4e1572b6b0ae06368035a0b9e"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ec3e9b4e1572b6b0ae06368035a0b9e">setup_new_connection</a> (void)</td></tr>
+<tr class="separator:a9ec3e9b4e1572b6b0ae06368035a0b9e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae39595e643a220de1670ef15833f7bef" id="r_ae39595e643a220de1670ef15833f7bef"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae39595e643a220de1670ef15833f7bef">poll_for_cookie</a> (const timeval *timeout=NULL)</td></tr>
+<tr class="separator:ae39595e643a220de1670ef15833f7bef"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac8778c79bbbc7d67e3360f9c6e7b8129" id="r_ac8778c79bbbc7d67e3360f9c6e7b8129"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8778c79bbbc7d67e3360f9c6e7b8129">finish_new_connection_setup</a> (void)</td></tr>
+<tr class="separator:ac8778c79bbbc7d67e3360f9c6e7b8129"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab6c316a9e289f1d864f3ee49e762b19e" id="r_ab6c316a9e289f1d864f3ee49e762b19e"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6c316a9e289f1d864f3ee49e762b19e">drop_connection</a> (void)</td></tr>
+<tr class="separator:ab6c316a9e289f1d864f3ee49e762b19e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6ac0f722988875759090b733e27a80f9" id="r_a6ac0f722988875759090b733e27a80f9"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac0f722988875759090b733e27a80f9">clearBuffers</a> (void)</td></tr>
+<tr class="separator:a6ac0f722988875759090b733e27a80f9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3dd1594975279a4a325761d7438aa65e" id="r_a3dd1594975279a4a325761d7438aa65e"><td align="right" class="memItemLeft" valign="top"><a id="a3dd1594975279a4a325761d7438aa65e" name="a3dd1594975279a4a325761d7438aa65e"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setNICaddress</b> (const char *)</td></tr>
+<tr class="separator:a3dd1594975279a4a325761d7438aa65e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad025e68349772bc8db3c92b518a046fa" id="r_ad025e68349772bc8db3c92b518a046fa"><td align="right" class="memItemLeft" valign="top"><a id="ad025e68349772bc8db3c92b518a046fa" name="ad025e68349772bc8db3c92b518a046fa"></a>
+int </td><td class="memItemRight" valign="bottom"><b>getOneTCPMessage</b> (int fd, char *buf, size_t buflen)</td></tr>
+<tr class="separator:ad025e68349772bc8db3c92b518a046fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7bb21863b53e532219e2dac8c870e2ca" id="r_a7bb21863b53e532219e2dac8c870e2ca"><td align="right" class="memItemLeft" valign="top"><a id="a7bb21863b53e532219e2dac8c870e2ca" name="a7bb21863b53e532219e2dac8c870e2ca"></a>
+int </td><td class="memItemRight" valign="bottom"><b>getOneUDPMessage</b> (char *buf, size_t buflen)</td></tr>
+<tr class="separator:a7bb21863b53e532219e2dac8c870e2ca"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classvrpn__Endpoint"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classvrpn__Endpoint')"><img alt="-" src="closed.png"/> 静态 Public 成员函数 继承自 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a></td></tr>
+<tr class="memitem:a0a4eb10a3cf159638f6fce898eb752a5 inherit pub_static_methods_classvrpn__Endpoint" id="r_a0a4eb10a3cf159638f6fce898eb752a5"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_sender_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a0a4eb10a3cf159638f6fce898eb752a5 inherit pub_static_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac5543265db8c9fda1d26b10465b0e010 inherit pub_static_methods_classvrpn__Endpoint" id="r_ac5543265db8c9fda1d26b10465b0e010"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_type_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:ac5543265db8c9fda1d26b10465b0e010 inherit pub_static_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_attribs_classvrpn__Endpoint"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classvrpn__Endpoint')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a></td></tr>
+<tr class="memitem:a6e27f49150e9a14580fb313cc2777e00 inherit pub_attribs_classvrpn__Endpoint" id="r_a6e27f49150e9a14580fb313cc2777e00"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a6e27f49150e9a14580fb313cc2777e00 inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3c9c3240b935101a7e456c70e8ffc1d9 inherit pub_attribs_classvrpn__Endpoint" id="r_a3c9c3240b935101a7e456c70e8ffc1d9"><td align="right" class="memItemLeft" valign="top">long </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a3c9c3240b935101a7e456c70e8ffc1d9">d_remoteLogMode</a></td></tr>
+<tr class="memdesc:a3c9c3240b935101a7e456c70e8ffc1d9 inherit pub_attribs_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Mode to put the remote logging in  <br/></td></tr>
+<tr class="separator:a3c9c3240b935101a7e456c70e8ffc1d9 inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a49b899dd73f15922deac6867ddc795b4 inherit pub_attribs_classvrpn__Endpoint" id="r_a49b899dd73f15922deac6867ddc795b4"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a49b899dd73f15922deac6867ddc795b4">d_remoteInLogName</a></td></tr>
+<tr class="memdesc:a49b899dd73f15922deac6867ddc795b4 inherit pub_attribs_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Name of the remote log file  <br/></td></tr>
+<tr class="separator:a49b899dd73f15922deac6867ddc795b4 inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0bf8e01c0d7a05bf5730efef4d74d218 inherit pub_attribs_classvrpn__Endpoint" id="r_a0bf8e01c0d7a05bf5730efef4d74d218"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a0bf8e01c0d7a05bf5730efef4d74d218">d_remoteOutLogName</a></td></tr>
+<tr class="memdesc:a0bf8e01c0d7a05bf5730efef4d74d218 inherit pub_attribs_classvrpn__Endpoint"><td class="mdescLeft"> </td><td class="mdescRight">Name of the remote log file  <br/></td></tr>
+<tr class="separator:a0bf8e01c0d7a05bf5730efef4d74d218 inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0482279f3bd1ded9027719b37670c77b inherit pub_attribs_classvrpn__Endpoint" id="r_a0482279f3bd1ded9027719b37670c77b"><td align="right" class="memItemLeft" valign="top">
+char </td><td class="memItemRight" valign="bottom"><b>rhostname</b> [150]</td></tr>
+<tr class="separator:a0482279f3bd1ded9027719b37670c77b inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa544c35126856b257129bb03ff21110e inherit pub_attribs_classvrpn__Endpoint" id="r_aa544c35126856b257129bb03ff21110e"><td align="right" class="memItemLeft" valign="top">
+<a class="el" href="classvrpn__Log.html">vrpn_Log</a> * </td><td class="memItemRight" valign="bottom"><b>d_inLog</b></td></tr>
+<tr class="separator:aa544c35126856b257129bb03ff21110e inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2819326bcc2814d0fac666e214f1686d inherit pub_attribs_classvrpn__Endpoint" id="r_a2819326bcc2814d0fac666e214f1686d"><td align="right" class="memItemLeft" valign="top">
+<a class="el" href="classvrpn__Log.html">vrpn_Log</a> * </td><td class="memItemRight" valign="bottom"><b>d_outLog</b></td></tr>
+<tr class="separator:a2819326bcc2814d0fac666e214f1686d inherit pub_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Endpoint"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Endpoint')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a></td></tr>
+<tr class="memitem:a8a26fb15f401d5f1fba3a038c5f9181d inherit pro_methods_classvrpn__Endpoint" id="r_a8a26fb15f401d5f1fba3a038c5f9181d"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>dispatch</b> (vrpn_int32 type, vrpn_int32 sender, timeval time, vrpn_uint32 payload_len, char *bufptr)</td></tr>
+<tr class="separator:a8a26fb15f401d5f1fba3a038c5f9181d inherit pro_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a347bdebf47639a7f163e3ec5d47c687b inherit pro_methods_classvrpn__Endpoint" id="r_a347bdebf47639a7f163e3ec5d47c687b"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Endpoint.html#a347bdebf47639a7f163e3ec5d47c687b">tryToMarshall</a> (char *outbuf, vrpn_int32 &amp;buflen, vrpn_int32 &amp;numOut, vrpn_uint32 len, timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer, vrpn_uint32 classOfService)</td></tr>
+<tr class="separator:a347bdebf47639a7f163e3ec5d47c687b inherit pro_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afb9eb9d7cbff9c45bd6205dd4d9472b0 inherit pro_methods_classvrpn__Endpoint" id="r_afb9eb9d7cbff9c45bd6205dd4d9472b0"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>marshall_message</b> (char *outbuf, vrpn_uint32 outbuf_size, vrpn_uint32 initial_out, vrpn_uint32 len, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer, vrpn_uint32 sequenceNumber)</td></tr>
+<tr class="separator:afb9eb9d7cbff9c45bd6205dd4d9472b0 inherit pro_methods_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Endpoint"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Endpoint')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a></td></tr>
+<tr class="memitem:a387e01be9328e5df4982fff8219a5cf6 inherit pro_attribs_classvrpn__Endpoint" id="r_a387e01be9328e5df4982fff8219a5cf6"><td align="right" class="memItemLeft" valign="top">
+vrpn_TranslationTable * </td><td class="memItemRight" valign="bottom"><b>d_senders</b></td></tr>
+<tr class="separator:a387e01be9328e5df4982fff8219a5cf6 inherit pro_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a376a524f19f62aeada840f0e693c18 inherit pro_attribs_classvrpn__Endpoint" id="r_a7a376a524f19f62aeada840f0e693c18"><td align="right" class="memItemLeft" valign="top">
+vrpn_TranslationTable * </td><td class="memItemRight" valign="bottom"><b>d_types</b></td></tr>
+<tr class="separator:a7a376a524f19f62aeada840f0e693c18 inherit pro_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab056ed1ea182c9780f545775f4edfd73 inherit pro_attribs_classvrpn__Endpoint" id="r_ab056ed1ea182c9780f545775f4edfd73"><td align="right" class="memItemLeft" valign="top">
+vrpn_TypeDispatcher * </td><td class="memItemRight" valign="bottom"><b>d_dispatcher</b></td></tr>
+<tr class="separator:ab056ed1ea182c9780f545775f4edfd73 inherit pro_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3ca72b2ecb3b78a5b7f22793acc25ee2 inherit pro_attribs_classvrpn__Endpoint" id="r_a3ca72b2ecb3b78a5b7f22793acc25ee2"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 * </td><td class="memItemRight" valign="bottom"><b>d_connectionCounter</b></td></tr>
+<tr class="separator:a3ca72b2ecb3b78a5b7f22793acc25ee2 inherit pro_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad52f2bee9f81d71e09206bd4e3670e7d inherit pro_attribs_classvrpn__Endpoint" id="r_ad52f2bee9f81d71e09206bd4e3670e7d"><td align="right" class="memItemLeft" valign="top">
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><b>d_parent</b></td></tr>
+<tr class="separator:ad52f2bee9f81d71e09206bd4e3670e7d inherit pro_attribs_classvrpn__Endpoint"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Encapsulation of the data and methods for a single IP-based connection to take care of one part of many clients talking to a single server. </p>
+<p>This will only be used from within the <a class="el" href="classvrpn__Connection__IP.html">vrpn_Connection_IP</a> class; it should not be instantiated by users or devices. Should not be visible! </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a6ac0f722988875759090b733e27a80f9" name="a6ac0f722988875759090b733e27a80f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac0f722988875759090b733e27a80f9">◆ </a></span>clearBuffers()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void clearBuffers </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Empties out the TCP and UDP send buffers. Needed by vrpn_FileConnection to get at {udp,tcp}NumOut. </p>
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html#a7f867ab7059fcd3b16a32e1e9245bfde">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="afc8e40caabe5e83ae6da13c638120c2c" name="afc8e40caabe5e83ae6da13c638120c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8e40caabe5e83ae6da13c638120c2c">◆ </a></span>connect_tcp_to()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int connect_tcp_to </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>addr</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>port</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Connects d_tcpSocket to the specified address (msg = "IP port"); sets status to COOKIE_PENDING; returns 0 on success, -1 on failure </p>
+</div>
+</div>
+<a id="ac4a0d63d1b1c39e920c88cd74bbf5305" name="ac4a0d63d1b1c39e920c88cd74bbf5305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a0d63d1b1c39e920c88cd74bbf5305">◆ </a></span>connect_udp_to()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int connect_udp_to </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>addr</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>port</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Connects d_udpSocket to the specified address and port; returns 0 on success, sets status to BROKEN and returns -1 on failure. </p>
+</div>
+</div>
+<a id="a4595d6e2793856ce48642e92f52be73d" name="a4595d6e2793856ce48642e92f52be73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4595d6e2793856ce48642e92f52be73d">◆ </a></span>doing_okay()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual vrpn_bool doing_okay </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="ab6c316a9e289f1d864f3ee49e762b19e" name="ab6c316a9e289f1d864f3ee49e762b19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c316a9e289f1d864f3ee49e762b19e">◆ </a></span>drop_connection()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void drop_connection </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Should only be called by vrpn_Connection::drop_connection(), since there's more housecleaning to do at that level. I suppose that argues against separating this function out. </p>
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html#aac0a5cbd6d041fa0f1ab55249324d229">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="ac8778c79bbbc7d67e3360f9c6e7b8129" name="ac8778c79bbbc7d67e3360f9c6e7b8129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8778c79bbbc7d67e3360f9c6e7b8129">◆ </a></span>finish_new_connection_setup()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int finish_new_connection_setup </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="ac9d8f73e4188a7957100d1edd4960783" name="ac9d8f73e4188a7957100d1edd4960783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d8f73e4188a7957100d1edd4960783">◆ </a></span>mainloop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int mainloop </td>
+<td>(</td>
+<td class="paramtype">timeval *</td> <td class="paramname"><span class="paramname"><em>timeout</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="a6238d43c110bfab8b6c1e445eafa25b8" name="a6238d43c110bfab8b6c1e445eafa25b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6238d43c110bfab8b6c1e445eafa25b8">◆ </a></span>outbound_udp_open()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool outbound_udp_open </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>True if the UDP outbound is open, False if not. </p>
+</div>
+</div>
+<a id="a6b9ae46271cd70274b15129144ced65f" name="a6b9ae46271cd70274b15129144ced65f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9ae46271cd70274b15129144ced65f">◆ </a></span>pack_message()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int pack_message </td>
+<td>(</td>
+<td class="paramtype">vrpn_uint32</td> <td class="paramname"><span class="paramname"><em>len</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">struct timeval</td> <td class="paramname"><span class="paramname"><em>time</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint32</td> <td class="paramname"><span class="paramname"><em>class_of_service</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Pack a message that will be sent the next time mainloop() is called. </p>
+<p>Turn off the RELIABLE flag if you want low-latency (UDP) send. </p>
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html#a82bcce7a2249c5c9726edae0e3196428">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="ae39595e643a220de1670ef15833f7bef" name="ae39595e643a220de1670ef15833f7bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae39595e643a220de1670ef15833f7bef">◆ </a></span>poll_for_cookie()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void poll_for_cookie </td>
+<td>(</td>
+<td class="paramtype">const timeval *</td> <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="aa0d15a45d4d53c276eeacff2dace0dce" name="aa0d15a45d4d53c276eeacff2dace0dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d15a45d4d53c276eeacff2dace0dce">◆ </a></span>send_pending_reports()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int send_pending_reports </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>send pending report, clear the buffer. </p>
+<p>This function was protected, now is public, so we can use it to send out intermediate results without calling mainloop </p>
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html#a9695f65f0e8c446eb0a915130b9744c0">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<a id="a9ec3e9b4e1572b6b0ae06368035a0b9e" name="a9ec3e9b4e1572b6b0ae06368035a0b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec3e9b4e1572b6b0ae06368035a0b9e">◆ </a></span>setup_new_connection()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int setup_new_connection </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Sends the magic cookie and other information to its peer. It is called by both the client and server setup routines. </p>
+<p>实现了 <a class="el" href="classvrpn__Endpoint.html#acaca2bbf975d4c655a7b2318d05898cc">vrpn_Endpoint</a>.</p>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a874b3a25c14ba9eda0f26e030c616a75" name="a874b3a25c14ba9eda0f26e030c616a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874b3a25c14ba9eda0f26e030c616a75">◆ </a></span>d_last_connect_attempt</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">timeval d_last_connect_attempt</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>When the last UDP lob occurred </p>
+</div>
+</div>
+<a id="a1ab05b008e495cd1744dc47a88dcaa92" name="a1ab05b008e495cd1744dc47a88dcaa92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab05b008e495cd1744dc47a88dcaa92">◆ </a></span>d_remote_machine_name</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">char* d_remote_machine_name</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Machine to call </p>
+</div>
+</div>
+<a id="a83e35e1d78ac1c9e0dacf4a4cee97051" name="a83e35e1d78ac1c9e0dacf4a4cee97051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e35e1d78ac1c9e0dacf4a4cee97051">◆ </a></span>d_remote_port_number</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int d_remote_port_number</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Port to connect to on remote machine </p>
+</div>
+</div>
+<a id="aee66d613571a30b7c78d803c4231620c" name="aee66d613571a30b7c78d803c4231620c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee66d613571a30b7c78d803c4231620c">◆ </a></span>d_tcp_only</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool d_tcp_only</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>For connections made through firewalls or NAT with the tcp: URL, we do not want to allow the endpoints on either end to open a UDP link to their counterparts. If this is the case, then this flag should be set to true. </p>
+</div>
+</div>
+<a id="a496b5d0a28b2c9b5c36ccaf5c95f1d35" name="a496b5d0a28b2c9b5c36ccaf5c95f1d35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496b5d0a28b2c9b5c36ccaf5c95f1d35">◆ </a></span>d_tcpListenPort</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int d_tcpListenPort</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Socket and port that the client listens on when lobbing datagrams at the server and waiting for it to call back. </p>
+</div>
+</div>
+<a id="ac973530adb9f2ade39ad643522cbf160" name="ac973530adb9f2ade39ad643522cbf160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac973530adb9f2ade39ad643522cbf160">◆ </a></span>d_tcpListenSocket</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_SOCKET d_tcpListenSocket</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>This section deals with when a client connection is trying to establish (or re-establish) a connection with its server. It keeps track of what we need to know to make this happen. </p>
+</div>
+</div>
+<a id="afb2012ea8af08c9e782977b5684a90bf" name="afb2012ea8af08c9e782977b5684a90bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2012ea8af08c9e782977b5684a90bf">◆ </a></span>d_tcpSocket</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_SOCKET d_tcpSocket</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">待办事项</a></b></dt><dd>XXX These should be protected; making them so will lead to making the code split the functions between Endpoint and Connection protected: </dd></dl>
+</div>
+</div>
+<a id="a0ffb1a595eed027210b6380a4e452123" name="a0ffb1a595eed027210b6380a4e452123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ffb1a595eed027210b6380a4e452123">◆ </a></span>d_udpInboundSocket</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_SOCKET d_udpInboundSocket</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Inbound unreliable messages come here. Need one for each due to different clock synchronization for each; we need to know which server each message is from. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">待办事项</a></b></dt><dd>XXX Now that we don't need multiple clocks, can we collapse this? </dd></dl>
+</div>
+</div>
+<a id="aba51e8b9e819ad213776c52621fda8e0" name="aba51e8b9e819ad213776c52621fda8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba51e8b9e819ad213776c52621fda8e0">◆ </a></span>d_udpLobSocket</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_SOCKET d_udpLobSocket</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Socket to use to lob UDP requests asking for the server to call us back. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

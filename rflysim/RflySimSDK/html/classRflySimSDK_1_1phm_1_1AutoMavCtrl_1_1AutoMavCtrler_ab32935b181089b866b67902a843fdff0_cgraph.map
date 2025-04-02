@@ -1,0 +1,5 @@
+<map id="DataRecordLoop" name="DataRecordLoop">
+<area shape="rect" id="Node000001" title="启动数据记录的方法。该方法启动无人机数据记录的线程。" alt="" coords="5,5,125,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#ab6d6db57aaeffa61c629bd125a7c5e51" title="记录无人机测试数据的方法。该方法启动一个或多个线程来记录无人机在测试过程中的关键数据，为后续分析提供支持。" alt="" coords="173,5,264,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,16,157,16,157,21,125,21"/>
+</map>

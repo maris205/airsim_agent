@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: uORB Write Advanced_dai—uORB消息数据发布接口进阶模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">uORB Write Advanced_dai—uORB消息数据发布接口进阶模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md183"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240809102544957.png"><img alt="" class="thumbnail" height="auto" src="image-20240809102544957.png" width="100"/></a>
+<div class="caption">
+image-20240809102544957</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">相比于<a href="md_ctrl_2md_2uORB_01Write_01Advanced.html">uORB Write Advanced模块</a>，uORB Write Advanced_dai 模块支持uORB消息ID和文件名不同，且支持通过isSend接口，控制是否发送消息，适合命令类消息（只需发送一次，而不是持续发送），或者控制发送频率等。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="image-20240809104539248.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240809104539248.png" title="image-20240809104539248" width="100"/></a> </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">uORB Topic（主题名称）   </td><td class="markdownTableBodyLeft">输入话题名或点击按钮“Select.msg file”打开话题列表选择，点击按钮“Open.msg file”打开对应的消息内容，点击按钮“Apply”应用该消息字段对应设置    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">uORB Parameter Names and Data Type区域   </td><td class="markdownTableBodyLeft">配置一个或多个输入端口，每个端口对应一个uORB话题的消息字段（还有一个额外的issend端口）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">设置变量名（输入端口名称），根据uORB Topic自动填充    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">设置变量类型（double，single，...），根据uORB Topic自动填充    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">设置变量维度，根据uORB Topic自动填充    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Advertisement Queue(消息队列优先级)   </td><td class="markdownTableBodyLeft">0=noqueue，所以从1开始排列    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Sample time（s）   </td><td class="markdownTableBodyLeft">采样时间    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft">由uORB Parameter Names and Data Type区域配置的输入端口决定    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>使用示例</b> </td><td class="markdownTableBodyLeft">[<a href="../../5.RflySimFlyCtrl/0.ApiExps/6.uORB-Read-Write/Intro.pdf">安装目录]\RflySimAPIs\5.RflySimFlyCtrl\0.ApiExps\6.uORB-Read-Write\Exp3_uORB_write.slx</a>Send1Hz模块，通过时间整除运算，得到1秒钟触发一次的信号，发送给isSend,使得rfly_ext消息的频率被限制在1Hz<a data_lightbox="image" href="image-20240809104932085.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240809104932085.png" title="image-20240809104932085" width="100"/></a> <a data_lightbox="image" href="image-20240809104950188.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240809104950188.png" title="image-20240809104950188" width="100"/></a> </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

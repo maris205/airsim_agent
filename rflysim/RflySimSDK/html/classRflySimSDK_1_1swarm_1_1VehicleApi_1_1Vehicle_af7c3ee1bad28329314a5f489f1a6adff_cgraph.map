@@ -1,0 +1,64 @@
+<map id="SimpleModelLoop" name="SimpleModelLoop">
+<area shape="rect" id="Node000001" title="点质量模型的主循环函数，以固定频率更新模型状态、发送UAV状态和输出数据到RflySim3D。" alt="" coords="5,446,130,472"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a627393ae77146a2274349d34232b3981" title="模型单步更新函数。" alt="" coords="178,446,261,472"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,456,162,456,162,462,130,462"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ab2bb5d240dd23a40c0cd49b4692ef942" title="根据当前模式和控制指令对输入进行处理的函数。" alt="" coords="320,176,404,203"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,444,345,215,349,218,230,447"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ac76590069409fc52a725b9a1d24cbf74" title="将当前飞行器的真实状态（位置、姿态、速度）发送给RflySim3D以更新显示。" alt="" coords="317,547,407,574"/>
+<area shape="poly" id="edge15_Node000002_Node000010" title=" " alt="" coords="241,471,331,536,328,540,238,475"/>
+<area shape="rect" id="Node000020" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a6308cfbb63f3146f7f3021479c89ecbe" title="发送UAV的状态数据给Simulink，用于模拟PX4内部估计状态。" alt="" coords="309,598,415,624"/>
+<area shape="poly" id="edge30_Node000002_Node000020" title=" " alt="" coords="230,472,261,525,284,556,311,584,315,587,312,592,307,588,280,559,256,528,225,474"/>
+<area shape="rect" id="Node000021" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ac64a1088c753d9121c095feb3841aa55" title="使用龙格&#45;库塔法以及内部定义的动力学方程，进行状态更新（位置、速度、高度、航向等）。" alt="" coords="338,344,386,371"/>
+<area shape="poly" id="edge31_Node000002_Node000021" title=" " alt="" coords="238,443,328,378,331,383,241,448"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a12c556a4261dfd5f2755454199a89247" title="根据当前速度vel来确定飞行器的俯仰角。" alt="" coords="515,227,643,254"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="405,198,464,213,501,221,499,226,463,218,404,203"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a1f3099c4347f7c3eed28d21fa99d2bf6" title="饱和操作的函数，确保输入值在正负阈值内" alt="" coords="482,278,676,320"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="380,202,417,233,465,263,477,269,475,274,462,268,413,237,376,206"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a1f3099c4347f7c3eed28d21fa99d2bf6" title="对输入的PWM值进行饱和限制，限制在[&#45;thres, thres]范围内。" alt="" coords="559,176,599,203"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="405,187,544,187,544,192,405,192"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5" title="调整偏航角在&#45;π到π之间" alt="" coords="482,110,676,152"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="404,176,482,155,484,160,405,181"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#adf8269c75db7e139aaa12454d041afc5" title="对输入的偏航角进行角度约束，将偏航角限制在[&#45;pi, pi]区间内。" alt="" coords="807,118,872,144"/>
+<area shape="poly" id="edge13_Node000003_Node000008" title=" " alt="" coords="368,175,402,122,429,93,462,71,507,57,553,50,600,51,647,58,732,81,799,108,797,113,731,86,646,63,600,57,553,56,508,62,465,76,433,97,406,125,372,178"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#adf8269c75db7e139aaa12454d041afc5" title="对偏航角进行限制，使其保持在[&#45;π/2, π/2]范围内" alt="" coords="984,135,1185,178"/>
+<area shape="poly" id="edge14_Node000003_Node000009" title=" " alt="" coords="365,175,377,146,397,108,425,71,442,55,462,42,499,26,538,14,578,7,618,4,700,8,780,23,856,45,926,72,1035,125,1032,130,924,77,855,50,779,28,699,13,618,9,578,12,539,19,501,31,465,47,446,59,429,75,402,111,382,148,370,177"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="538,110,536,100,543,91,557,85,579,83,602,86,616,92,614,97,601,91,579,88,559,90,546,95,541,101,543,109"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="676,137,791,136,791,141,676,143"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="676,146,743,154,859,159,969,158,969,164,859,164,742,159,676,151"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="806,128,691,125,692,120,806,122"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="805,123,792,112,794,101,810,94,839,91,878,97,887,104,887,111,882,111,882,106,876,102,839,96,812,99,798,104,797,110,808,119"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="873,132,969,142,968,147,872,137"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6702a7019fc28e675ea5d042f7074c1b" title="发送无人机位姿和状态到Rflysim3D" alt="" coords="463,598,695,640"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="409,570,483,591,482,596,407,575"/>
+<area shape="rect" id="Node000017" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a6702a7019fc28e675ea5d042f7074c1b" title=" " alt="" coords="516,547,642,574"/>
+<area shape="poly" id="edge22_Node000010_Node000017" title=" " alt="" coords="408,558,501,558,501,563,408,563"/>
+<area shape="rect" id="Node000019" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a6702a7019fc28e675ea5d042f7074c1b" title="创建/更新模型" alt="" coords="480,664,678,707"/>
+<area shape="poly" id="edge24_Node000010_Node000019" title=" " alt="" coords="399,572,417,584,433,602,441,619,449,635,465,650,472,655,469,659,462,655,445,638,436,621,428,605,414,588,396,577"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="748,531,930,574"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="664,595,738,576,739,581,666,600"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="748,598,930,640"/>
+<area shape="poly" id="edge18_Node000011_Node000013" title=" " alt="" coords="695,616,732,616,732,622,695,622"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="743,664,936,707"/>
+<area shape="poly" id="edge19_Node000011_Node000014" title=" " alt="" coords="666,638,739,657,738,663,664,644"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="744,731,935,774"/>
+<area shape="poly" id="edge20_Node000011_Node000015" title=" " alt="" coords="676,639,696,650,713,667,721,684,729,701,744,717,750,721,747,725,741,721,725,704,716,687,708,670,693,655,673,643"/>
+<area shape="rect" id="Node000016" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="744,798,935,840"/>
+<area shape="poly" id="edge21_Node000011_Node000016" title=" " alt="" coords="681,639,697,651,710,667,718,685,722,718,725,752,732,768,745,784,747,786,743,790,741,788,727,770,720,753,716,719,713,686,706,670,693,654,678,643"/>
+<area shape="rect" id="Node000018" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a2fe80de8986dc01c293e3fb4a47b375c" title=" " alt="" coords="805,480,874,507"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="642,545,694,533,742,517,789,503,791,509,743,522,695,538,643,551"/>
+<area shape="poly" id="edge25_Node000019_Node000012" title=" " alt="" coords="673,662,693,650,708,635,716,618,725,601,741,584,747,580,750,584,744,588,729,604,721,621,713,638,696,655,676,666"/>
+<area shape="poly" id="edge26_Node000019_Node000013" title=" " alt="" coords="664,661,738,642,739,648,666,666"/>
+<area shape="poly" id="edge27_Node000019_Node000014" title=" " alt="" coords="678,683,727,683,727,688,678,688"/>
+<area shape="poly" id="edge28_Node000019_Node000015" title=" " alt="" coords="666,705,739,724,738,729,664,710"/>
+<area shape="poly" id="edge29_Node000019_Node000016" title=" " alt="" coords="612,705,672,744,744,783,757,789,754,794,741,788,669,749,609,710"/>
+<area shape="poly" id="edge32_Node000021_Node000004" title=" " alt="" coords="372,342,409,303,434,281,462,263,499,249,501,254,465,268,437,286,413,306,376,346"/>
+<area shape="poly" id="edge35_Node000021_Node000005" title=" " alt="" coords="386,349,483,322,484,328,388,354"/>
+<area shape="poly" id="edge36_Node000021_Node000006" title=" " alt="" coords="367,343,400,280,427,243,462,213,503,195,543,188,544,194,504,200,465,217,431,247,405,282,371,345"/>
+<area shape="poly" id="edge37_Node000021_Node000007" title=" " alt="" coords="364,344,374,307,393,259,422,207,440,183,462,162,468,158,471,162,465,167,444,187,426,210,398,261,379,309,369,345"/>
+<area shape="poly" id="edge38_Node000021_Node000008" title=" " alt="" coords="387,360,445,367,524,370,567,367,611,360,654,348,693,330,718,314,740,293,778,247,806,199,825,158,830,160,811,201,782,250,744,297,721,318,696,335,655,353,612,365,568,373,524,375,444,373,386,365"/>
+<area shape="poly" id="edge39_Node000021_Node000009" title=" " alt="" coords="387,362,443,374,519,385,607,388,651,384,694,375,746,359,798,337,896,286,980,232,1043,185,1046,190,983,236,899,290,801,342,748,364,695,380,652,389,607,393,519,390,442,379,386,367"/>
+<area shape="rect" id="Node000022" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="474,496,684,523"/>
+<area shape="poly" id="edge33_Node000021_Node000022" title=" " alt="" coords="372,370,407,425,433,456,465,482,474,487,472,492,462,487,429,460,402,429,368,373"/>
+<area shape="rect" id="Node000023" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="486,446,672,472"/>
+<area shape="poly" id="edge34_Node000021_Node000023" title=" " alt="" coords="381,370,418,397,464,425,500,438,498,443,462,430,415,402,378,374"/>
+</map>

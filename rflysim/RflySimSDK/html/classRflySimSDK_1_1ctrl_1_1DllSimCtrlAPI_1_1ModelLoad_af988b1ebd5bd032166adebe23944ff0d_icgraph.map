@@ -1,0 +1,5 @@
+<map id="CreateVehicle" name="CreateVehicle">
+<area shape="rect" id="Node000001" title="初始化并配置载具模型。参数的详细含义参考 Bat脚本使用参考" alt="" coords="120,5,222,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#acd4dae14df46a8213f9e9331fbce7549" title="这是类的构造函数，用于初始化 ModelLoad 类的实例。参数的详细含义参考 Bat脚本使用参考" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="UavInfo" name="UavInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="122,263,190,289"/>
+<area shape="rect" id="Node000002" href="$classSerialCPP.html" title=" " alt="" coords="5,172,88,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,207,142,260,139,264,72,211"/>
+<area shape="rect" id="Node000003" href="$classUDPServer.html" title=" " alt="" coords="112,172,200,199"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,214,158,262,153,262,153,214"/>
+<area shape="rect" id="Node000004" href="$classUDPSocket.html" title=" " alt="" coords="102,81,194,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="153,123,157,171,152,172,148,124"/>
+<area shape="rect" id="Node000005" href="$classBaseSocket.html" title=" " alt="" coords="102,5,194,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,47,150,81,145,81,145,47"/>
+<area shape="rect" id="Node000006" href="$structRflySimData.html" title=" " alt="" coords="226,172,323,199"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="247,211,174,264,171,260,244,206"/>
+<area shape="rect" id="Node000007" href="$classWgsConversions.html" title=" " alt="" coords="218,81,339,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="280,124,278,172,272,171,275,124"/>
+</map>

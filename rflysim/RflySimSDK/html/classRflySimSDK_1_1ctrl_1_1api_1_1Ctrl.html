@@ -1,0 +1,1390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Ctrl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>api</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html">Ctrl</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">Ctrl类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 Ctrl 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl__inherit__graph.svg" width="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> Ctrl 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl__coll__graph.svg" width="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3d5ed55a222a0f21c15d24cec0c9be28" id="r_a3d5ed55a222a0f21c15d24cec0c9be28"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d5ed55a222a0f21c15d24cec0c9be28">__init__</a> (self, copter_id=1, ip='127.0.0.1', com='udp', port=0, simulink_dll=False)</td></tr>
+<tr class="separator:a3d5ed55a222a0f21c15d24cec0c9be28"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aab18ae41ec0ce0e2d0683d8a9b5238db" id="r_aab18ae41ec0ce0e2d0683d8a9b5238db"><td align="right" class="memItemLeft" valign="top"><a id="aab18ae41ec0ce0e2d0683d8a9b5238db" name="aab18ae41ec0ce0e2d0683d8a9b5238db"></a>
+ </td><td class="memItemRight" valign="bottom"><b>init_loop</b> (self, ct_mode=2, offboard=False)</td></tr>
+<tr class="separator:aab18ae41ec0ce0e2d0683d8a9b5238db"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a33a32b83d70a4b043666af7373a0927b" id="r_a33a32b83d70a4b043666af7373a0927b"><td align="right" class="memItemLeft" valign="top"><a id="a33a32b83d70a4b043666af7373a0927b" name="a33a32b83d70a4b043666af7373a0927b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>is_full_send</b> (self)</td></tr>
+<tr class="separator:a33a32b83d70a4b043666af7373a0927b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa8243ff0f26e277da65de9ec0359766" id="r_aaa8243ff0f26e277da65de9ec0359766"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa8243ff0f26e277da65de9ec0359766">takeoff</a> (self, height=0, pos_x=0, pos_y=0)</td></tr>
+<tr class="separator:aaa8243ff0f26e277da65de9ec0359766"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a86823365dfb528d4c93ca2c931c5b2ff" id="r_a86823365dfb528d4c93ca2c931c5b2ff"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a86823365dfb528d4c93ca2c931c5b2ff">return_home</a> (self, height=0)</td></tr>
+<tr class="separator:a86823365dfb528d4c93ca2c931c5b2ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af675e8615a228d0c8c9ce1c880274752" id="r_af675e8615a228d0c8c9ce1c880274752"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af675e8615a228d0c8c9ce1c880274752">land</a> (self, height=0)</td></tr>
+<tr class="separator:af675e8615a228d0c8c9ce1c880274752"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0613cdee783308f1059a3c7d488cc4ff" id="r_a0613cdee783308f1059a3c7d488cc4ff"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0613cdee783308f1059a3c7d488cc4ff">send_pos_ned</a> (self, pos, yaw)</td></tr>
+<tr class="separator:a0613cdee783308f1059a3c7d488cc4ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4729213ebbccc9c0f8963b432483c70e" id="r_a4729213ebbccc9c0f8963b432483c70e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4729213ebbccc9c0f8963b432483c70e">send_pos_speed_fw</a> (self, pos, speed)</td></tr>
+<tr class="separator:a4729213ebbccc9c0f8963b432483c70e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a054e65e47aa13840d7ba97d6c2064bd3" id="r_a054e65e47aa13840d7ba97d6c2064bd3"><td align="right" class="memItemLeft" valign="top"><a id="a054e65e47aa13840d7ba97d6c2064bd3" name="a054e65e47aa13840d7ba97d6c2064bd3"></a>
+ </td><td class="memItemRight" valign="bottom"><b>send_pos_global</b> (self, pos, yaw)</td></tr>
+<tr class="separator:a054e65e47aa13840d7ba97d6c2064bd3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8e6c69e5a3a934768ed6cf5d98c6faa2" id="r_a8e6c69e5a3a934768ed6cf5d98c6faa2"><td align="right" class="memItemLeft" valign="top"><a id="a8e6c69e5a3a934768ed6cf5d98c6faa2" name="a8e6c69e5a3a934768ed6cf5d98c6faa2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>send_vel_ned</b> (self, vel, yaw_rate)</td></tr>
+<tr class="separator:a8e6c69e5a3a934768ed6cf5d98c6faa2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a671452b29850a4fb91a9880d1fa2e10d" id="r_a671452b29850a4fb91a9880d1fa2e10d"><td align="right" class="memItemLeft" valign="top"><a id="a671452b29850a4fb91a9880d1fa2e10d" name="a671452b29850a4fb91a9880d1fa2e10d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>send_vel_body</b> (self, vel, yaw_rate)</td></tr>
+<tr class="separator:a671452b29850a4fb91a9880d1fa2e10d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7642d00b2f4464c15d3ffc3ad2cd8622" id="r_a7642d00b2f4464c15d3ffc3ad2cd8622"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7642d00b2f4464c15d3ffc3ad2cd8622">send_acc</a> (self, acc)</td></tr>
+<tr class="separator:a7642d00b2f4464c15d3ffc3ad2cd8622"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae885da0b97f4325af151ef992cf939de" id="r_ae885da0b97f4325af151ef992cf939de"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae885da0b97f4325af151ef992cf939de">send_att_thrust</a> (self, att, thrust)</td></tr>
+<tr class="separator:ae885da0b97f4325af151ef992cf939de"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a602b82d7c0e99da7c95a1fe3d49ce5ef" id="r_a602b82d7c0e99da7c95a1fe3d49ce5ef"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a602b82d7c0e99da7c95a1fe3d49ce5ef">send_att</a> (self, att)</td></tr>
+<tr class="separator:a602b82d7c0e99da7c95a1fe3d49ce5ef"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a94d9c919ea2f9e1ff65fa25d3f8f1b79" id="r_a94d9c919ea2f9e1ff65fa25d3f8f1b79"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a94d9c919ea2f9e1ff65fa25d3f8f1b79">send_cruise_speed_fw</a> (self, speed)</td></tr>
+<tr class="separator:a94d9c919ea2f9e1ff65fa25d3f8f1b79"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8d8c0bf267e64ca9f00984fedcf154fd" id="r_a8d8c0bf267e64ca9f00984fedcf154fd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d8c0bf267e64ca9f00984fedcf154fd">send_cruise_radius_fw</a> (self, radius)</td></tr>
+<tr class="separator:a8d8c0bf267e64ca9f00984fedcf154fd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60c0020f7b51b86da323b7d1f8709ff3" id="r_a60c0020f7b51b86da323b7d1f8709ff3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a60c0020f7b51b86da323b7d1f8709ff3">get_vehicle_id</a> (self)</td></tr>
+<tr class="separator:a60c0020f7b51b86da323b7d1f8709ff3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa8cd2e0ef62743e29144866ceb38709a" id="r_aa8cd2e0ef62743e29144866ceb38709a"><td align="right" class="memItemLeft" valign="top"><a id="aa8cd2e0ef62743e29144866ceb38709a" name="aa8cd2e0ef62743e29144866ceb38709a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>get_time_s</b> (self)</td></tr>
+<tr class="separator:aa8cd2e0ef62743e29144866ceb38709a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af4a948fdc74fea2cce366929e35e17f8" id="r_af4a948fdc74fea2cce366929e35e17f8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af4a948fdc74fea2cce366929e35e17f8">get_pos_ned</a> (self)</td></tr>
+<tr class="separator:af4a948fdc74fea2cce366929e35e17f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7215a2b122ceb00a8a0f5efcc49b616a" id="r_a7215a2b122ceb00a8a0f5efcc49b616a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7215a2b122ceb00a8a0f5efcc49b616a">get_pos_ned_global</a> (self)</td></tr>
+<tr class="separator:a7215a2b122ceb00a8a0f5efcc49b616a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a91113ea96cf26eff5cd6459fa9169c87" id="r_a91113ea96cf26eff5cd6459fa9169c87"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a91113ea96cf26eff5cd6459fa9169c87">get_pos_global</a> (self)</td></tr>
+<tr class="separator:a91113ea96cf26eff5cd6459fa9169c87"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3aa7d0ac52a8fba8af9f72a8a4f17a6b" id="r_a3aa7d0ac52a8fba8af9f72a8a4f17a6b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aa7d0ac52a8fba8af9f72a8a4f17a6b">get_home_pos</a> (self)</td></tr>
+<tr class="separator:a3aa7d0ac52a8fba8af9f72a8a4f17a6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaecd408d3ee66e9ebc88955a98db8deb" id="r_aaecd408d3ee66e9ebc88955a98db8deb"><td align="right" class="memItemLeft" valign="top"><a id="aaecd408d3ee66e9ebc88955a98db8deb" name="aaecd408d3ee66e9ebc88955a98db8deb"></a>
+ </td><td class="memItemRight" valign="bottom"><b>get_vel_ned</b> (self)</td></tr>
+<tr class="separator:aaecd408d3ee66e9ebc88955a98db8deb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab73ca4147bdc2c0710572b0048569f54" id="r_ab73ca4147bdc2c0710572b0048569f54"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab73ca4147bdc2c0710572b0048569f54">get_acc</a> (self)</td></tr>
+<tr class="separator:ab73ca4147bdc2c0710572b0048569f54"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a219006822d7c791142df0e20c1e5f228" id="r_a219006822d7c791142df0e20c1e5f228"><td align="right" class="memItemLeft" valign="top"><a id="a219006822d7c791142df0e20c1e5f228" name="a219006822d7c791142df0e20c1e5f228"></a>
+ </td><td class="memItemRight" valign="bottom"><b>get_euler</b> (self)</td></tr>
+<tr class="separator:a219006822d7c791142df0e20c1e5f228"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a92ec2e5828410afb740f012e57c6987c" id="r_a92ec2e5828410afb740f012e57c6987c"><td align="right" class="memItemLeft" valign="top"><a id="a92ec2e5828410afb740f012e57c6987c" name="a92ec2e5828410afb740f012e57c6987c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>get_angular_rate</b> (self)</td></tr>
+<tr class="separator:a92ec2e5828410afb740f012e57c6987c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00127c16221c86e43c67ffa136e7efe1" id="r_a00127c16221c86e43c67ffa136e7efe1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a00127c16221c86e43c67ffa136e7efe1">get_quaternion</a> (self)</td></tr>
+<tr class="separator:a00127c16221c86e43c67ffa136e7efe1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7eb14ed12fff6a0b8f0b5b93f8dc1a50" id="r_a7eb14ed12fff6a0b8f0b5b93f8dc1a50"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eb14ed12fff6a0b8f0b5b93f8dc1a50">get_actuator_speed</a> (self)</td></tr>
+<tr class="separator:a7eb14ed12fff6a0b8f0b5b93f8dc1a50"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1ca22bf8e8be8ae6d8c6a38c1fa7dc59" id="r_a1ca22bf8e8be8ae6d8c6a38c1fa7dc59"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ca22bf8e8be8ae6d8c6a38c1fa7dc59">get_max_vel_xy</a> (self)</td></tr>
+<tr class="separator:a1ca22bf8e8be8ae6d8c6a38c1fa7dc59"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf8570fc9aadac95a7dd33ae520c947b" id="r_adf8570fc9aadac95a7dd33ae520c947b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adf8570fc9aadac95a7dd33ae520c947b">get_max_vel_z</a> (self)</td></tr>
+<tr class="separator:adf8570fc9aadac95a7dd33ae520c947b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5c389af86c30a5c8ef735d637c6d501a" id="r_a5c389af86c30a5c8ef735d637c6d501a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c389af86c30a5c8ef735d637c6d501a">get_max_acc_xy</a> (self)</td></tr>
+<tr class="separator:a5c389af86c30a5c8ef735d637c6d501a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a99199ef8e10f1698028ffd03d7d7cda6" id="r_a99199ef8e10f1698028ffd03d7d7cda6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a99199ef8e10f1698028ffd03d7d7cda6">get_max_acc_z</a> (self)</td></tr>
+<tr class="separator:a99199ef8e10f1698028ffd03d7d7cda6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html">PX4MavCtrler</a></td></tr>
+<tr class="memitem:a8a2b734fe58ba395639b61d4cf7e0800 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a8a2b734fe58ba395639b61d4cf7e0800"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800">fillList</a> (self, data, inLen, fill=0)</td></tr>
+<tr class="memdesc:a8a2b734fe58ba395639b61d4cf7e0800 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">填充或裁剪一个列表  <br/></td></tr>
+<tr class="separator:a8a2b734fe58ba395639b61d4cf7e0800 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2aace2981c883db51d6457d40a00fd7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab2aace2981c883db51d6457d40a00fd7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2aace2981c883db51d6457d40a00fd7">sendStartMsg</a> (self, copterID=-1)</td></tr>
+<tr class="memdesc:ab2aace2981c883db51d6457d40a00fd7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">向无人机发送启动信号  <br/></td></tr>
+<tr class="separator:ab2aace2981c883db51d6457d40a00fd7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a11b008bff9b89e05d746927b770f8c3f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a11b008bff9b89e05d746927b770f8c3f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a11b008bff9b89e05d746927b770f8c3f">waitForStartMsg</a> (self)</td></tr>
+<tr class="memdesc:a11b008bff9b89e05d746927b770f8c3f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">等待来自 sendStartMsg 函数发送的启动信号  <br/></td></tr>
+<tr class="separator:a11b008bff9b89e05d746927b770f8c3f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a57e299a4e222b92dd2413ce3d0e75644 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a57e299a4e222b92dd2413ce3d0e75644"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a57e299a4e222b92dd2413ce3d0e75644">initPointMassModel</a> (self, intAlt=0, intState=[0, 0, 0])</td></tr>
+<tr class="memdesc:a57e299a4e222b92dd2413ce3d0e75644 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">初始化并启动用于无人机控制  <br/></td></tr>
+<tr class="separator:a57e299a4e222b92dd2413ce3d0e75644 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5b58220296a3c2c3d8c6b0b853da3ddd inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a5b58220296a3c2c3d8c6b0b853da3ddd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a5b58220296a3c2c3d8c6b0b853da3ddd">EndPointMassModel</a> (self)</td></tr>
+<tr class="memdesc:a5b58220296a3c2c3d8c6b0b853da3ddd inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">终止模型  <br/></td></tr>
+<tr class="separator:a5b58220296a3c2c3d8c6b0b853da3ddd inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf8269c75db7e139aaa12454d041afc5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_adf8269c75db7e139aaa12454d041afc5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5">yawSat</a> (self, yaw)</td></tr>
+<tr class="memdesc:adf8269c75db7e139aaa12454d041afc5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">调整偏航角在-π到π之间  <br/></td></tr>
+<tr class="separator:adf8269c75db7e139aaa12454d041afc5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a58910926ae0abb02a8414ae62a6ab7db inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a58910926ae0abb02a8414ae62a6ab7db"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a58910926ae0abb02a8414ae62a6ab7db">PointMassModelLoop</a> (self)</td></tr>
+<tr class="memdesc:a58910926ae0abb02a8414ae62a6ab7db inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">控制无人机在点质量模型下循环运行  <br/></td></tr>
+<tr class="separator:a58910926ae0abb02a8414ae62a6ab7db inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6702a7019fc28e675ea5d042f7074c1b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6702a7019fc28e675ea5d042f7074c1b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6702a7019fc28e675ea5d042f7074c1b">sendUE4PosNew</a> (self, copterID=1, vehicleType=3, PosE=[0, 0, 0], AngEuler=[0, 0, 0], VelE=[0, 0, 0], PWMs=[0] *8, runnedTime=-1, windowID=-1)</td></tr>
+<tr class="memdesc:a6702a7019fc28e675ea5d042f7074c1b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送无人机位姿和状态到Rflysim3D  <br/></td></tr>
+<tr class="separator:a6702a7019fc28e675ea5d042f7074c1b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40a811a202c96d57a4f6aaa8c70837d7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a40a811a202c96d57a4f6aaa8c70837d7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a40a811a202c96d57a4f6aaa8c70837d7">InitTrueDataLoop</a> (self)</td></tr>
+<tr class="memdesc:a40a811a202c96d57a4f6aaa8c70837d7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">初始化真实数据接收机制  <br/></td></tr>
+<tr class="separator:a40a811a202c96d57a4f6aaa8c70837d7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4472adb3bb8bd6f23e36cd8d7d1cd128 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4472adb3bb8bd6f23e36cd8d7d1cd128"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a4472adb3bb8bd6f23e36cd8d7d1cd128">EndTrueDataLoop</a> (self)</td></tr>
+<tr class="memdesc:a4472adb3bb8bd6f23e36cd8d7d1cd128 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">结束真实数据接收的循环  <br/></td></tr>
+<tr class="separator:a4472adb3bb8bd6f23e36cd8d7d1cd128 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a754e691f986ca6e1747209aea4cf0b2c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a754e691f986ca6e1747209aea4cf0b2c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a754e691f986ca6e1747209aea4cf0b2c">SendOffAll</a> (self, type_mask=<a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PosTypeMask.html">PosTypeMask</a>(), coordinate_frame=1, pos=[0, 0, 0], vel=[0, 0, 0], acc=[0, 0, 0], yaw=0, yawrate=0)</td></tr>
+<tr class="memdesc:a754e691f986ca6e1747209aea4cf0b2c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">设置和准备发送无人机的位置信息和控制参数  <br/></td></tr>
+<tr class="separator:a754e691f986ca6e1747209aea4cf0b2c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa23dafd954b06947afbbfb729160b696 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa23dafd954b06947afbbfb729160b696"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#aa23dafd954b06947afbbfb729160b696">SendAttAll</a> (self, type_mask=<a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1AttTypeMask.html">AttTypeMask</a>(), q=[1, 0, 0, 0], body_rate=[0, 0, 0], thrust=0)</td></tr>
+<tr class="memdesc:aa23dafd954b06947afbbfb729160b696 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">结束真实数据接收的循环  <br/></td></tr>
+<tr class="separator:aa23dafd954b06947afbbfb729160b696 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8db56cecaedeed885a617c2ccc9f457e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a8db56cecaedeed885a617c2ccc9f457e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e">InitMavLoop</a> (self, UDPMode=2)</td></tr>
+<tr class="memdesc:a8db56cecaedeed885a617c2ccc9f457e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">初始化 MAVLink 通信循环，并与coptersim进行通信  <br/></td></tr>
+<tr class="separator:a8db56cecaedeed885a617c2ccc9f457e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae877b1ee5bd7f48bc0c48cf206648681 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ae877b1ee5bd7f48bc0c48cf206648681"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ae877b1ee5bd7f48bc0c48cf206648681">endMavLoop</a> (self)</td></tr>
+<tr class="memdesc:ae877b1ee5bd7f48bc0c48cf206648681 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">结束通信  <br/></td></tr>
+<tr class="separator:ae877b1ee5bd7f48bc0c48cf206648681 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:add4ec820eb545a387192d4e02f410183 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_add4ec820eb545a387192d4e02f410183"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#add4ec820eb545a387192d4e02f410183">SendVisionPosition</a> (self, x, y, z, yaw)</td></tr>
+<tr class="memdesc:add4ec820eb545a387192d4e02f410183 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送视觉定位数据给 MAVLink 连接  <br/></td></tr>
+<tr class="separator:add4ec820eb545a387192d4e02f410183 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6fc4affbd9c9f981aa06bd142b110b03 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6fc4affbd9c9f981aa06bd142b110b03"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6fc4affbd9c9f981aa06bd142b110b03">SendHILGps</a> (self, lat=40.1540302, lon=116.2593683, alt=50, vel=0, vn=0, ve=0, vd=0, cog=0, time_usec=-1, eph=0.3, epv=0.4, fix_type=3, satellites_visible=15)</td></tr>
+<tr class="memdesc:a6fc4affbd9c9f981aa06bd142b110b03 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送GPS仿真数据给 MAVLink 连接  <br/></td></tr>
+<tr class="separator:a6fc4affbd9c9f981aa06bd142b110b03 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21d5a8085840fe831a90a679270c0c61 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a21d5a8085840fe831a90a679270c0c61"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61">SendRedisData</a> (self, key, buf)</td></tr>
+<tr class="memdesc:a21d5a8085840fe831a90a679270c0c61 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送数据到redis  <br/></td></tr>
+<tr class="separator:a21d5a8085840fe831a90a679270c0c61 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac9815dd5305413ed032cd5db6d07aefa inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ac9815dd5305413ed032cd5db6d07aefa"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa">SendBuf</a> (self, buf)</td></tr>
+<tr class="memdesc:ac9815dd5305413ed032cd5db6d07aefa inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送数据  <br/></td></tr>
+<tr class="separator:ac9815dd5305413ed032cd5db6d07aefa inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab1cbcf22653b34755c2a029802f46df7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab1cbcf22653b34755c2a029802f46df7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab1cbcf22653b34755c2a029802f46df7">SendBufTrue</a> (self, buf, port=None)</td></tr>
+<tr class="memdesc:ab1cbcf22653b34755c2a029802f46df7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送数据  <br/></td></tr>
+<tr class="separator:ab1cbcf22653b34755c2a029802f46df7 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1f3099c4347f7c3eed28d21fa99d2bf6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a1f3099c4347f7c3eed28d21fa99d2bf6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a1f3099c4347f7c3eed28d21fa99d2bf6">sat</a> (self, inPwm=0, thres=1)</td></tr>
+<tr class="memdesc:a1f3099c4347f7c3eed28d21fa99d2bf6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">饱和操作的函数，确保输入值在正负阈值内  <br/></td></tr>
+<tr class="separator:a1f3099c4347f7c3eed28d21fa99d2bf6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3b674c6bf3ce93f9a964070e6fd21551 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3b674c6bf3ce93f9a964070e6fd21551"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551">SendMavCmdLong</a> (self, command, param1=0, param2=0, param3=0, param4=0, param5=0, param6=0, param7=0)</td></tr>
+<tr class="memdesc:a3b674c6bf3ce93f9a964070e6fd21551 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">将 MAVLink 的长指令消息发送到 Pixhawk 系统  <br/></td></tr>
+<tr class="separator:a3b674c6bf3ce93f9a964070e6fd21551 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a706caa6907194e69837c0797ccd31b12 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a706caa6907194e69837c0797ccd31b12"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a706caa6907194e69837c0797ccd31b12">SendQgcCmdLong</a> (self, command, param1=0, param2=0, param3=0, param4=0, param5=0, param6=0, param7=0)</td></tr>
+<tr class="memdesc:a706caa6907194e69837c0797ccd31b12 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">将 MAVLink 的长指令消息发送到 QGC  <br/></td></tr>
+<tr class="separator:a706caa6907194e69837c0797ccd31b12 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a74b61468b85ed35d6180ea82234ce52c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a74b61468b85ed35d6180ea82234ce52c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a74b61468b85ed35d6180ea82234ce52c">sendMavOffboardCmd</a> (self, type_mask, coordinate_frame, x, y, z, vx, vy, vz, afx, afy, afz, yaw, yaw_rate)</td></tr>
+<tr class="memdesc:a74b61468b85ed35d6180ea82234ce52c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送Offboard命令到PX4  <br/></td></tr>
+<tr class="separator:a74b61468b85ed35d6180ea82234ce52c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7909afcca64461bbd9b8c24cdeef47ea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a7909afcca64461bbd9b8c24cdeef47ea"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea">TypeMask</a> (self, EnList)</td></tr>
+<tr class="memdesc:a7909afcca64461bbd9b8c24cdeef47ea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">获取offboard消息的位图  <br/></td></tr>
+<tr class="separator:a7909afcca64461bbd9b8c24cdeef47ea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46109bd6d1ca77160fa728636dad4840 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a46109bd6d1ca77160fa728636dad4840"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a46109bd6d1ca77160fa728636dad4840">sendMavOffboardAPI</a> (self, type_mask=0, coordinate_frame=0, pos=[0, 0, 0], vel=[0, 0, 0], acc=[0, 0, 0], yaw=0, yawrate=0)</td></tr>
+<tr class="memdesc:a46109bd6d1ca77160fa728636dad4840 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送Offboard命令到PX4  <br/></td></tr>
+<tr class="separator:a46109bd6d1ca77160fa728636dad4840 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a48d5ff23dc613fc2cd1fb7d5ade86d7f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a48d5ff23dc613fc2cd1fb7d5ade86d7f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a48d5ff23dc613fc2cd1fb7d5ade86d7f">sendUDPSimpData</a> (self, ctrlMode, ctrls)</td></tr>
+<tr class="memdesc:a48d5ff23dc613fc2cd1fb7d5ade86d7f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送UDP简单数据  <br/></td></tr>
+<tr class="separator:a48d5ff23dc613fc2cd1fb7d5ade86d7f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a633042b601380e3beb82284ed6d8b2c8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a633042b601380e3beb82284ed6d8b2c8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a633042b601380e3beb82284ed6d8b2c8">sendPX4UorbRflyCtrl</a> (self, data=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], modes=1, flags=1)</td></tr>
+<tr class="memdesc:a633042b601380e3beb82284ed6d8b2c8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送UDP简单数据  <br/></td></tr>
+<tr class="separator:a633042b601380e3beb82284ed6d8b2c8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf5bdea8e4b51e58b4e2572ff4115512 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_adf5bdea8e4b51e58b4e2572ff4115512"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf5bdea8e4b51e58b4e2572ff4115512">SendVelNED</a> (self, vx=math.nan, vy=math.nan, vz=math.nan, yawrate=math.nan)</td></tr>
+<tr class="memdesc:adf5bdea8e4b51e58b4e2572ff4115512 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">北东地坐标系下操控飞机  <br/></td></tr>
+<tr class="separator:adf5bdea8e4b51e58b4e2572ff4115512 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9f65fc4c753bed9123b87c43a257e3b0 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a9f65fc4c753bed9123b87c43a257e3b0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a9f65fc4c753bed9123b87c43a257e3b0">SendVelNEDNoYaw</a> (self, vx, vy, vz)</td></tr>
+<tr class="memdesc:a9f65fc4c753bed9123b87c43a257e3b0 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">北东地坐标系下操控飞机  <br/></td></tr>
+<tr class="separator:a9f65fc4c753bed9123b87c43a257e3b0 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e385d03553bd32945810388ef3003dc inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4e385d03553bd32945810388ef3003dc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a4e385d03553bd32945810388ef3003dc">SendVelFRD</a> (self, vx=math.nan, vy=math.nan, vz=math.nan, yawrate=math.nan)</td></tr>
+<tr class="memdesc:a4e385d03553bd32945810388ef3003dc inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">前右下坐标系下操控飞机  <br/></td></tr>
+<tr class="separator:a4e385d03553bd32945810388ef3003dc inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a195bf49afd0bcbc24b1fe96bf045f75a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a195bf49afd0bcbc24b1fe96bf045f75a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a195bf49afd0bcbc24b1fe96bf045f75a">SendAttPX4</a> (self, att=[0, 0, 0, 0], thrust=0.5, CtrlFlag=0, AltFlg=0)</td></tr>
+<tr class="memdesc:a195bf49afd0bcbc24b1fe96bf045f75a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">前右下坐标系以目标姿态控制飞机  <br/></td></tr>
+<tr class="separator:a195bf49afd0bcbc24b1fe96bf045f75a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab403645c821175d54998b27d1e0d2b9e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab403645c821175d54998b27d1e0d2b9e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab403645c821175d54998b27d1e0d2b9e">EulerToQuat</a> (self, Euler)</td></tr>
+<tr class="memdesc:ab403645c821175d54998b27d1e0d2b9e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">将欧拉角转化为四元数  <br/></td></tr>
+<tr class="separator:ab403645c821175d54998b27d1e0d2b9e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ada32b746a487540168fb2685fa7040d2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ada32b746a487540168fb2685fa7040d2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ada32b746a487540168fb2685fa7040d2">SendAccPX4</a> (self, afx=math.nan, afy=math.nan, afz=math.nan, yawValue=math.nan, yawType=0, frameType=0)</td></tr>
+<tr class="memdesc:ada32b746a487540168fb2685fa7040d2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送目标加速度给PX4  <br/></td></tr>
+<tr class="separator:ada32b746a487540168fb2685fa7040d2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0905a3ad4f9b343d5a48f6ed2b7c9362 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a0905a3ad4f9b343d5a48f6ed2b7c9362"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a0905a3ad4f9b343d5a48f6ed2b7c9362">SendVelNoYaw</a> (self, vx=math.nan, vy=math.nan, vz=math.nan)</td></tr>
+<tr class="memdesc:a0905a3ad4f9b343d5a48f6ed2b7c9362 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">机体前右下坐标系下控制飞机  <br/></td></tr>
+<tr class="separator:a0905a3ad4f9b343d5a48f6ed2b7c9362 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bafd7c7044c98ec3f09d85608ff9dea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a5bafd7c7044c98ec3f09d85608ff9dea"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a5bafd7c7044c98ec3f09d85608ff9dea">SendPosNED</a> (self, x=math.nan, y=math.nan, z=math.nan, yaw=math.nan)</td></tr>
+<tr class="memdesc:a5bafd7c7044c98ec3f09d85608ff9dea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">地球北东地坐标系下控制飞机到指定位置  <br/></td></tr>
+<tr class="separator:a5bafd7c7044c98ec3f09d85608ff9dea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abcf26b66c1aedc0394b4e3484f9bc215 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_abcf26b66c1aedc0394b4e3484f9bc215"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#abcf26b66c1aedc0394b4e3484f9bc215">SendVelYawAlt</a> (self, vel=10, yaw=6.28, alt=-100)</td></tr>
+<tr class="memdesc:abcf26b66c1aedc0394b4e3484f9bc215 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">地球北东地坐标系下控制飞机  <br/></td></tr>
+<tr class="separator:abcf26b66c1aedc0394b4e3484f9bc215 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a622f62ab8da83795fc5c8738455e3cab inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a622f62ab8da83795fc5c8738455e3cab"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a622f62ab8da83795fc5c8738455e3cab">SendPosGlobal</a> (self, lat=0, lon=0, alt=0, yawValue=0, yawType=0)</td></tr>
+<tr class="memdesc:a622f62ab8da83795fc5c8738455e3cab inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">地球北东地坐标系下控制飞机到目标全球位置  <br/></td></tr>
+<tr class="separator:a622f62ab8da83795fc5c8738455e3cab inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a13440452d9491fdd2e90d2000a3a0641 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a13440452d9491fdd2e90d2000a3a0641"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a13440452d9491fdd2e90d2000a3a0641">SendPosNEDNoYaw</a> (self, x=math.nan, y=math.nan, z=math.nan)</td></tr>
+<tr class="memdesc:a13440452d9491fdd2e90d2000a3a0641 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">地球北东地坐标系下控制飞机到目标位置  <br/></td></tr>
+<tr class="separator:a13440452d9491fdd2e90d2000a3a0641 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aabf103e87a6d741341200264f6161de6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aabf103e87a6d741341200264f6161de6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#aabf103e87a6d741341200264f6161de6">SendPosFRD</a> (self, x=math.nan, y=math.nan, z=math.nan, yaw=math.nan)</td></tr>
+<tr class="memdesc:aabf103e87a6d741341200264f6161de6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">机体前右下坐标系下控制飞机到目标位置  <br/></td></tr>
+<tr class="separator:aabf103e87a6d741341200264f6161de6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abf3150f85290d97f3d58af5e294f6226 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_abf3150f85290d97f3d58af5e294f6226"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#abf3150f85290d97f3d58af5e294f6226">SendPosFRDNoYaw</a> (self, x=math.nan, y=math.nan, z=math.nan)</td></tr>
+<tr class="memdesc:abf3150f85290d97f3d58af5e294f6226 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">机体前右下坐标系下控制飞机到目标位置  <br/></td></tr>
+<tr class="separator:abf3150f85290d97f3d58af5e294f6226 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a61b528ceab1d4b8abef93c19cc107ff8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a61b528ceab1d4b8abef93c19cc107ff8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a61b528ceab1d4b8abef93c19cc107ff8">SendPosNEDExt</a> (self, x=math.nan, y=math.nan, z=math.nan, mode=3, isNED=True)</td></tr>
+<tr class="memdesc:a61b528ceab1d4b8abef93c19cc107ff8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">机体前右下坐标系下控制飞机到目标位置  <br/></td></tr>
+<tr class="separator:a61b528ceab1d4b8abef93c19cc107ff8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:addf531f952f5bd26e149d7fa66b16cbe inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_addf531f952f5bd26e149d7fa66b16cbe"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#addf531f952f5bd26e149d7fa66b16cbe">enFixedWRWTO</a> (self)</td></tr>
+<tr class="memdesc:addf531f952f5bd26e149d7fa66b16cbe inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指令使飞机起飞  <br/></td></tr>
+<tr class="separator:addf531f952f5bd26e149d7fa66b16cbe inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2439e1ba892ef9bfc5d404483d6df32 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab2439e1ba892ef9bfc5d404483d6df32"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2439e1ba892ef9bfc5d404483d6df32">SendCruiseSpeed</a> (self, Speed=0)</td></tr>
+<tr class="memdesc:ab2439e1ba892ef9bfc5d404483d6df32 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指定改变飞机的巡航速度  <br/></td></tr>
+<tr class="separator:ab2439e1ba892ef9bfc5d404483d6df32 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac682eb48ec96857f15c60a50fe57c26b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ac682eb48ec96857f15c60a50fe57c26b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac682eb48ec96857f15c60a50fe57c26b">SendCopterSpeed</a> (self, Speed=0)</td></tr>
+<tr class="memdesc:ac682eb48ec96857f15c60a50fe57c26b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送设定多旋翼飞行器的最大速度  <br/></td></tr>
+<tr class="separator:ac682eb48ec96857f15c60a50fe57c26b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7d1bf2f78e1ba0ef5091ef993d6a3df8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a7d1bf2f78e1ba0ef5091ef993d6a3df8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7d1bf2f78e1ba0ef5091ef993d6a3df8">SendGroundSpeed</a> (self, Speed=0)</td></tr>
+<tr class="memdesc:a7d1bf2f78e1ba0ef5091ef993d6a3df8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指定改变飞机的地面速度  <br/></td></tr>
+<tr class="separator:a7d1bf2f78e1ba0ef5091ef993d6a3df8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2b9fb60ce7dcd3b4a34fa97917227e1 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab2b9fb60ce7dcd3b4a34fa97917227e1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2b9fb60ce7dcd3b4a34fa97917227e1">SendCruiseRadius</a> (self, rad=0)</td></tr>
+<tr class="memdesc:ab2b9fb60ce7dcd3b4a34fa97917227e1 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指定改变飞机的巡航半径  <br/></td></tr>
+<tr class="separator:ab2b9fb60ce7dcd3b4a34fa97917227e1 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abb9b7198036c12a8ca3fc8e833822cff inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_abb9b7198036c12a8ca3fc8e833822cff"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#abb9b7198036c12a8ca3fc8e833822cff">sendTakeoffMode</a> (self, alt=0)</td></tr>
+<tr class="memdesc:abb9b7198036c12a8ca3fc8e833822cff inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指定使飞机起飞  <br/></td></tr>
+<tr class="separator:abb9b7198036c12a8ca3fc8e833822cff inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c1cc012ad8e1158a31b05c16fc7e16f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6c1cc012ad8e1158a31b05c16fc7e16f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f">initOffboard</a> (self)</td></tr>
+<tr class="memdesc:a6c1cc012ad8e1158a31b05c16fc7e16f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送命令进入offboard模式，消息发送频率为30HZ  <br/></td></tr>
+<tr class="separator:a6c1cc012ad8e1158a31b05c16fc7e16f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af04f4988d61436fa85ae2c0046784177 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af04f4988d61436fa85ae2c0046784177"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af04f4988d61436fa85ae2c0046784177">initOffboardAcc</a> (self)</td></tr>
+<tr class="memdesc:af04f4988d61436fa85ae2c0046784177 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送命令进入offboard模式，消息发送频率为30HZ  <br/></td></tr>
+<tr class="separator:af04f4988d61436fa85ae2c0046784177 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad7bbe8d48aa560565aa63b39edd37e77 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ad7bbe8d48aa560565aa63b39edd37e77"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad7bbe8d48aa560565aa63b39edd37e77">initOffboardAtt</a> (self)</td></tr>
+<tr class="memdesc:ad7bbe8d48aa560565aa63b39edd37e77 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送命令进入offboard模式，消息发送频率为30HZ  <br/></td></tr>
+<tr class="separator:ad7bbe8d48aa560565aa63b39edd37e77 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8e46a45fbec1a107548def62999b1994 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a8e46a45fbec1a107548def62999b1994"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8e46a45fbec1a107548def62999b1994">initOffboard2</a> (self)</td></tr>
+<tr class="memdesc:a8e46a45fbec1a107548def62999b1994 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送命令进入offboard模式，消息发送频率为30HZ  <br/></td></tr>
+<tr class="separator:a8e46a45fbec1a107548def62999b1994 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b235bdc0efb19b913b8526b4ee53bf6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6b235bdc0efb19b913b8526b4ee53bf6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6b235bdc0efb19b913b8526b4ee53bf6">sendMavTakeOff</a> (self, xM=0, yM=0, zM=0, YawRad=0, PitchRad=0)</td></tr>
+<tr class="memdesc:a6b235bdc0efb19b913b8526b4ee53bf6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送命令让飞行器起飞到指定位置  <br/></td></tr>
+<tr class="separator:a6b235bdc0efb19b913b8526b4ee53bf6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a22f06fb6400e808c57c0f645d2be09b4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a22f06fb6400e808c57c0f645d2be09b4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a22f06fb6400e808c57c0f645d2be09b4">sendMavTakeOffLocal</a> (self, xM=0, yM=0, zM=0, YawRad=0, PitchRad=0, AscendRate=2)</td></tr>
+<tr class="memdesc:a22f06fb6400e808c57c0f645d2be09b4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指令使飞机从指定的本地位置起飞，并允许设置俯仰角、偏航角和上升速率  <br/></td></tr>
+<tr class="separator:a22f06fb6400e808c57c0f645d2be09b4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7e6b7d5dc106d745cf823364704a4904 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a7e6b7d5dc106d745cf823364704a4904"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7e6b7d5dc106d745cf823364704a4904">sendMavTakeOffGPS</a> (self, lat, lon, alt, yawDeg=0, pitchDeg=15)</td></tr>
+<tr class="memdesc:a7e6b7d5dc106d745cf823364704a4904 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指令使飞机从指定的本地位置起飞，并允许设置俯仰角、偏航角和上升速率  <br/></td></tr>
+<tr class="separator:a7e6b7d5dc106d745cf823364704a4904 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8d8400032dac10394ff73c335726a40d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a8d8400032dac10394ff73c335726a40d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8d8400032dac10394ff73c335726a40d">sendMavLand</a> (self, xM, yM, zM)</td></tr>
+<tr class="memdesc:a8d8400032dac10394ff73c335726a40d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指令使飞机降落到指定位置  <br/></td></tr>
+<tr class="separator:a8d8400032dac10394ff73c335726a40d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a1a11b1bc9e1cfda997ddaf465fa6bb inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4a1a11b1bc9e1cfda997ddaf465fa6bb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a4a1a11b1bc9e1cfda997ddaf465fa6bb">sendMavLandGPS</a> (self, lat, lon, alt)</td></tr>
+<tr class="memdesc:a4a1a11b1bc9e1cfda997ddaf465fa6bb inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指令使飞机降落到指定全球位置  <br/></td></tr>
+<tr class="separator:a4a1a11b1bc9e1cfda997ddaf465fa6bb inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4713173eafcc9af7aaa4f6cbcb7961fd inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4713173eafcc9af7aaa4f6cbcb7961fd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a4713173eafcc9af7aaa4f6cbcb7961fd">endOffboard</a> (self)</td></tr>
+<tr class="memdesc:a4713173eafcc9af7aaa4f6cbcb7961fd inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">退出offboard模式，停止消息发送  <br/></td></tr>
+<tr class="separator:a4713173eafcc9af7aaa4f6cbcb7961fd inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a831172bea8ba4f655418913776e1f30e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a831172bea8ba4f655418913776e1f30e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a831172bea8ba4f655418913776e1f30e">sendMavSetParam</a> (self, param_id, param_value, param_type)</td></tr>
+<tr class="memdesc:a831172bea8ba4f655418913776e1f30e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">向 Pixhawk 发送命令更改其参数  <br/></td></tr>
+<tr class="separator:a831172bea8ba4f655418913776e1f30e inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2018f073b03f7909e5b76dbefe514fc4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a2018f073b03f7909e5b76dbefe514fc4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a2018f073b03f7909e5b76dbefe514fc4">SendHILCtrlMsg</a> (self, ctrls=[0] *16, idx=0, flags=1)</td></tr>
+<tr class="memdesc:a2018f073b03f7909e5b76dbefe514fc4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送 hil_actuator_controls 消息发送到 Pixhawk  <br/></td></tr>
+<tr class="separator:a2018f073b03f7909e5b76dbefe514fc4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3e9259129f18d6ce822d2f6cee0a5487 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3e9259129f18d6ce822d2f6cee0a5487"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3e9259129f18d6ce822d2f6cee0a5487">SendHILCtrlMsg1</a> (self)</td></tr>
+<tr class="memdesc:a3e9259129f18d6ce822d2f6cee0a5487 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送 debug_vect 消息发送到 Pixhawk  <br/></td></tr>
+<tr class="separator:a3e9259129f18d6ce822d2f6cee0a5487 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4667a3b8769fa59836727ab4ecdffef inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa4667a3b8769fa59836727ab4ecdffef"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#aa4667a3b8769fa59836727ab4ecdffef">SendMavArm</a> (self, isArm=1)</td></tr>
+<tr class="memdesc:aa4667a3b8769fa59836727ab4ecdffef inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送指令到 Pixhawk 使其上锁/解锁  <br/></td></tr>
+<tr class="separator:aa4667a3b8769fa59836727ab4ecdffef inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a04ece5591e0d1823e3f2f5fcd2142d98 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a04ece5591e0d1823e3f2f5fcd2142d98"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a04ece5591e0d1823e3f2f5fcd2142d98">initRCSendLoop</a> (self, Hz=30)</td></tr>
+<tr class="memdesc:a04ece5591e0d1823e3f2f5fcd2142d98 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">初始化遥控器发送循环  <br/></td></tr>
+<tr class="separator:a04ece5591e0d1823e3f2f5fcd2142d98 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d7aaa25b7b81877334b643f1581d88f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a1d7aaa25b7b81877334b643f1581d88f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a1d7aaa25b7b81877334b643f1581d88f">endRCSendLoop</a> (self)</td></tr>
+<tr class="memdesc:a1d7aaa25b7b81877334b643f1581d88f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">结束遥控器发送循环  <br/></td></tr>
+<tr class="separator:a1d7aaa25b7b81877334b643f1581d88f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af9633646d4e14673a6d76ffdc4e2a42b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af9633646d4e14673a6d76ffdc4e2a42b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af9633646d4e14673a6d76ffdc4e2a42b">RcSendLoop</a> (self)</td></tr>
+<tr class="memdesc:af9633646d4e14673a6d76ffdc4e2a42b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">循环发送遥控器信号  <br/></td></tr>
+<tr class="separator:af9633646d4e14673a6d76ffdc4e2a42b inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2dbeacb9e86a195fef75c56a28c976e9 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a2dbeacb9e86a195fef75c56a28c976e9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a2dbeacb9e86a195fef75c56a28c976e9">SendRCPwms</a> (self, Pwms)</td></tr>
+<tr class="memdesc:a2dbeacb9e86a195fef75c56a28c976e9 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">更新遥控器 PWM 信号  <br/></td></tr>
+<tr class="separator:a2dbeacb9e86a195fef75c56a28c976e9 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af4e3011c0e9bf932f4704ccfd5504198 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af4e3011c0e9bf932f4704ccfd5504198"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af4e3011c0e9bf932f4704ccfd5504198">SendRcOverride</a> (self, ch1=1500, ch2=1500, ch3=1100, ch4=1500, ch5=1100, ch6=1100, ch7=1500, ch8=1500)</td></tr>
+<tr class="memdesc:af4e3011c0e9bf932f4704ccfd5504198 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">通过 MAVLink 协议向 PX4 发送遥控信号覆盖命令  <br/></td></tr>
+<tr class="separator:af4e3011c0e9bf932f4704ccfd5504198 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ca05ac64fe7653975f0de16cf26f349 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a0ca05ac64fe7653975f0de16cf26f349"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a0ca05ac64fe7653975f0de16cf26f349">sendMavManualCtrl</a> (self, x=0, y=0, z=0, r=0)</td></tr>
+<tr class="memdesc:a0ca05ac64fe7653975f0de16cf26f349 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">通过 MAVLink 协议向 PX4 发送手动控制信号  <br/></td></tr>
+<tr class="separator:a0ca05ac64fe7653975f0de16cf26f349 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad29a52ae6a099350fc6319b302543e12 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ad29a52ae6a099350fc6319b302543e12"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad29a52ae6a099350fc6319b302543e12">SendSetMode</a> (self, mainmode, cusmode=0)</td></tr>
+<tr class="memdesc:ad29a52ae6a099350fc6319b302543e12 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送 MAVLink 命令到 PX4 以更改飞行模式  <br/></td></tr>
+<tr class="separator:ad29a52ae6a099350fc6319b302543e12 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af090fcf8098052b109026c210d36f067 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af090fcf8098052b109026c210d36f067"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af090fcf8098052b109026c210d36f067">stopRun</a> (self)</td></tr>
+<tr class="memdesc:af090fcf8098052b109026c210d36f067 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">停止 MAVLink 的监听循环  <br/></td></tr>
+<tr class="separator:af090fcf8098052b109026c210d36f067 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac055bb2906da02fee8b58cf19eebaed1 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ac055bb2906da02fee8b58cf19eebaed1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac055bb2906da02fee8b58cf19eebaed1">getTrueDataMsg</a> (self)</td></tr>
+<tr class="memdesc:ac055bb2906da02fee8b58cf19eebaed1 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">从30100串口监听真是数据，更新Pixhawk状态  <br/></td></tr>
+<tr class="separator:ac055bb2906da02fee8b58cf19eebaed1 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7cdad9f66b8a5ba9f8d39d5ca5e85aa2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a7cdad9f66b8a5ba9f8d39d5ca5e85aa2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7cdad9f66b8a5ba9f8d39d5ca5e85aa2">getPX4DataMsg</a> (self)</td></tr>
+<tr class="memdesc:a7cdad9f66b8a5ba9f8d39d5ca5e85aa2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">从40100串口监听真是数据，更新Pixhawk状态  <br/></td></tr>
+<tr class="separator:a7cdad9f66b8a5ba9f8d39d5ca5e85aa2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a88c56e58b9ff4b473eac5e5e18e54876 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a88c56e58b9ff4b473eac5e5e18e54876"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a88c56e58b9ff4b473eac5e5e18e54876">setMsgDict</a> (self, stName)</td></tr>
+<tr class="memdesc:a88c56e58b9ff4b473eac5e5e18e54876 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">设置消息字典的状态  <br/></td></tr>
+<tr class="separator:a88c56e58b9ff4b473eac5e5e18e54876 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2ee32b965155be2e2d7b43489cf9929 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ad2ee32b965155be2e2d7b43489cf9929"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad2ee32b965155be2e2d7b43489cf9929">netForwardData</a> (self)</td></tr>
+<tr class="memdesc:ad2ee32b965155be2e2d7b43489cf9929 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">用于网络通信的事件信号  <br/></td></tr>
+<tr class="separator:ad2ee32b965155be2e2d7b43489cf9929 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a630e159c1669cf72f802f12e534d1cf8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a630e159c1669cf72f802f12e534d1cf8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a630e159c1669cf72f802f12e534d1cf8">GetUDPRedisBuf</a> (self, sock)</td></tr>
+<tr class="memdesc:a630e159c1669cf72f802f12e534d1cf8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">从套接字或 Redis 订阅中获取数据  <br/></td></tr>
+<tr class="separator:a630e159c1669cf72f802f12e534d1cf8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9767c3d317e268dd34143eaa2a4d836d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a9767c3d317e268dd34143eaa2a4d836d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a9767c3d317e268dd34143eaa2a4d836d">getMavMsg</a> (self)</td></tr>
+<tr class="memdesc:a9767c3d317e268dd34143eaa2a4d836d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">开始循环监听来自20100系列端口或COM端口的MAVLink数据，更新Pixhawk状态  <br/></td></tr>
+<tr class="separator:a9767c3d317e268dd34143eaa2a4d836d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a71d512a670869eb9ea8d615517e7a13a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a71d512a670869eb9ea8d615517e7a13a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a71d512a670869eb9ea8d615517e7a13a">OffboardSendMode</a> (self)</td></tr>
+<tr class="memdesc:a71d512a670869eb9ea8d615517e7a13a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">循环发送MAVLink的offboard模式控制命令  <br/></td></tr>
+<tr class="separator:a71d512a670869eb9ea8d615517e7a13a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf3ee4f955f72b06775bc2e6a9012a0c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_adf3ee4f955f72b06775bc2e6a9012a0c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf3ee4f955f72b06775bc2e6a9012a0c">sendRebootPix</a> (self, copterID, delay=-1)</td></tr>
+<tr class="memdesc:adf3ee4f955f72b06775bc2e6a9012a0c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送消息重启飞机仿真  <br/></td></tr>
+<tr class="separator:adf3ee4f955f72b06775bc2e6a9012a0c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a30822be2d92b1894d91e09bbcf8e3da5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a30822be2d92b1894d91e09bbcf8e3da5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a30822be2d92b1894d91e09bbcf8e3da5">sendCustomData</a> (self, CopterID, data=[0] *16, checksum=123456, port=50000, IP='127.0.0.1')</td></tr>
+<tr class="memdesc:a30822be2d92b1894d91e09bbcf8e3da5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">发送一个16维double型数据到指定端口，本接口可用于与Simulink通信  <br/></td></tr>
+<tr class="separator:a30822be2d92b1894d91e09bbcf8e3da5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a397232cb06ce676afe7f7feaa8c0a678 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a397232cb06ce676afe7f7feaa8c0a678"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a397232cb06ce676afe7f7feaa8c0a678">setGPSOriLLA</a> (self, LonLatAlt)</td></tr>
+<tr class="memdesc:a397232cb06ce676afe7f7feaa8c0a678 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="mdescLeft"> </td><td class="mdescRight">设置GPS的原点位置，并根据提供的GPS坐标计算位置偏差  <br/></td></tr>
+<tr class="separator:a397232cb06ce676afe7f7feaa8c0a678 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aff2b72c0b9fe760782a85a5a41dc82ac inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aff2b72c0b9fe760782a85a5a41dc82ac"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>sendSILIntFloat</b> (self, inSILInts=[0] *8, inSILFLoats=[0] *20, copterID=-1)</td></tr>
+<tr class="separator:aff2b72c0b9fe760782a85a5a41dc82ac inherit pub_methods_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a902a3144f3c311eadea3547cd272de57" id="r_a902a3144f3c311eadea3547cd272de57"><td align="right" class="memItemLeft" valign="top"><a id="a902a3144f3c311eadea3547cd272de57" name="a902a3144f3c311eadea3547cd272de57"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rflysim_cmd</b></td></tr>
+<tr class="separator:a902a3144f3c311eadea3547cd272de57"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea942c6505c87b9be0a030b72fd23983" id="r_aea942c6505c87b9be0a030b72fd23983"><td align="right" class="memItemLeft" valign="top"><a id="aea942c6505c87b9be0a030b72fd23983" name="aea942c6505c87b9be0a030b72fd23983"></a>
+ </td><td class="memItemRight" valign="bottom"><b>UDPMode</b></td></tr>
+<tr class="separator:aea942c6505c87b9be0a030b72fd23983"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64ec3ecc21364d6cf9f67a6aab7a53d0" id="r_a64ec3ecc21364d6cf9f67a6aab7a53d0"><td align="right" class="memItemLeft" valign="top"><a id="a64ec3ecc21364d6cf9f67a6aab7a53d0" name="a64ec3ecc21364d6cf9f67a6aab7a53d0"></a>
+ </td><td class="memItemRight" valign="bottom"><b>simulinkDLL</b></td></tr>
+<tr class="separator:a64ec3ecc21364d6cf9f67a6aab7a53d0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa416bb407ea19e49f8be7cfa1ada0e6" id="r_aaa416bb407ea19e49f8be7cfa1ada0e6"><td align="right" class="memItemLeft" valign="top"><a id="aaa416bb407ea19e49f8be7cfa1ada0e6" name="aaa416bb407ea19e49f8be7cfa1ada0e6"></a>
+ </td><td class="memItemRight" valign="bottom"><b>truePosNED</b></td></tr>
+<tr class="separator:aaa416bb407ea19e49f8be7cfa1ada0e6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6710280b239d465b717aaf810fc3a6a2" id="r_a6710280b239d465b717aaf810fc3a6a2"><td align="right" class="memItemLeft" valign="top"><a id="a6710280b239d465b717aaf810fc3a6a2" name="a6710280b239d465b717aaf810fc3a6a2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavPosNED</b></td></tr>
+<tr class="separator:a6710280b239d465b717aaf810fc3a6a2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a100ca2254d70ab7d74939b25a1dd1476" id="r_a100ca2254d70ab7d74939b25a1dd1476"><td align="right" class="memItemLeft" valign="top"><a id="a100ca2254d70ab7d74939b25a1dd1476" name="a100ca2254d70ab7d74939b25a1dd1476"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavGlobalPos</b></td></tr>
+<tr class="separator:a100ca2254d70ab7d74939b25a1dd1476"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a82d2d0365aa4d65d1af4448d5af26495" id="r_a82d2d0365aa4d65d1af4448d5af26495"><td align="right" class="memItemLeft" valign="top"><a id="a82d2d0365aa4d65d1af4448d5af26495" name="a82d2d0365aa4d65d1af4448d5af26495"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavPosGPS</b></td></tr>
+<tr class="separator:a82d2d0365aa4d65d1af4448d5af26495"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab919f92b39e3091dfb27c5454d677016" id="r_ab919f92b39e3091dfb27c5454d677016"><td align="right" class="memItemLeft" valign="top"><a id="ab919f92b39e3091dfb27c5454d677016" name="ab919f92b39e3091dfb27c5454d677016"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavPosGPSHome</b></td></tr>
+<tr class="separator:ab919f92b39e3091dfb27c5454d677016"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5ea477f534d3b451962f36cec8e87277" id="r_a5ea477f534d3b451962f36cec8e87277"><td align="right" class="memItemLeft" valign="top"><a id="a5ea477f534d3b451962f36cec8e87277" name="a5ea477f534d3b451962f36cec8e87277"></a>
+ </td><td class="memItemRight" valign="bottom"><b>trueVelNED</b></td></tr>
+<tr class="separator:a5ea477f534d3b451962f36cec8e87277"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a236bd5ab2dfc4c11e6a26011d7184427" id="r_a236bd5ab2dfc4c11e6a26011d7184427"><td align="right" class="memItemLeft" valign="top"><a id="a236bd5ab2dfc4c11e6a26011d7184427" name="a236bd5ab2dfc4c11e6a26011d7184427"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavVelNED</b></td></tr>
+<tr class="separator:a236bd5ab2dfc4c11e6a26011d7184427"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0f822c40b9c88e86bb9d35096147854c" id="r_a0f822c40b9c88e86bb9d35096147854c"><td align="right" class="memItemLeft" valign="top"><a id="a0f822c40b9c88e86bb9d35096147854c" name="a0f822c40b9c88e86bb9d35096147854c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>trueAccB</b></td></tr>
+<tr class="separator:a0f822c40b9c88e86bb9d35096147854c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a367261a719c871d921504450de36c0dc" id="r_a367261a719c871d921504450de36c0dc"><td align="right" class="memItemLeft" valign="top"><a id="a367261a719c871d921504450de36c0dc" name="a367261a719c871d921504450de36c0dc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavAccB</b></td></tr>
+<tr class="separator:a367261a719c871d921504450de36c0dc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a164b8a4e61860047720620e5d05f9401" id="r_a164b8a4e61860047720620e5d05f9401"><td align="right" class="memItemLeft" valign="top"><a id="a164b8a4e61860047720620e5d05f9401" name="a164b8a4e61860047720620e5d05f9401"></a>
+ </td><td class="memItemRight" valign="bottom"><b>trueAngEular</b></td></tr>
+<tr class="separator:a164b8a4e61860047720620e5d05f9401"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8b72134a11b47cc026de2c90c44d0f15" id="r_a8b72134a11b47cc026de2c90c44d0f15"><td align="right" class="memItemLeft" valign="top"><a id="a8b72134a11b47cc026de2c90c44d0f15" name="a8b72134a11b47cc026de2c90c44d0f15"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavAngEular</b></td></tr>
+<tr class="separator:a8b72134a11b47cc026de2c90c44d0f15"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a288727969b0105a7697c9e4e3560c6cd" id="r_a288727969b0105a7697c9e4e3560c6cd"><td align="right" class="memItemLeft" valign="top"><a id="a288727969b0105a7697c9e4e3560c6cd" name="a288727969b0105a7697c9e4e3560c6cd"></a>
+ </td><td class="memItemRight" valign="bottom"><b>trueAngRate</b></td></tr>
+<tr class="separator:a288727969b0105a7697c9e4e3560c6cd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a161e363079707437fef42cbad8c9c5d8" id="r_a161e363079707437fef42cbad8c9c5d8"><td align="right" class="memItemLeft" valign="top"><a id="a161e363079707437fef42cbad8c9c5d8" name="a161e363079707437fef42cbad8c9c5d8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavAngRate</b></td></tr>
+<tr class="separator:a161e363079707437fef42cbad8c9c5d8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6683905b5869c18fa4407e0279e48ebf" id="r_a6683905b5869c18fa4407e0279e48ebf"><td align="right" class="memItemLeft" valign="top"><a id="a6683905b5869c18fa4407e0279e48ebf" name="a6683905b5869c18fa4407e0279e48ebf"></a>
+ </td><td class="memItemRight" valign="bottom"><b>trueAngQuatern</b></td></tr>
+<tr class="separator:a6683905b5869c18fa4407e0279e48ebf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9655942ee48a5b0ee7ae6fc59cb7335" id="r_aa9655942ee48a5b0ee7ae6fc59cb7335"><td align="right" class="memItemLeft" valign="top"><a id="aa9655942ee48a5b0ee7ae6fc59cb7335" name="aa9655942ee48a5b0ee7ae6fc59cb7335"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavAngQuatern</b></td></tr>
+<tr class="separator:aa9655942ee48a5b0ee7ae6fc59cb7335"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31e80b428a6c45a39f550a8f345efcd2" id="r_a31e80b428a6c45a39f550a8f345efcd2"><td align="right" class="memItemLeft" valign="top"><a id="a31e80b428a6c45a39f550a8f345efcd2" name="a31e80b428a6c45a39f550a8f345efcd2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>trueMotorRPMS</b></td></tr>
+<tr class="separator:a31e80b428a6c45a39f550a8f345efcd2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32aa52268ddabd67dc1875357327617c" id="r_a32aa52268ddabd67dc1875357327617c"><td align="right" class="memItemLeft" valign="top"><a id="a32aa52268ddabd67dc1875357327617c" name="a32aa52268ddabd67dc1875357327617c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>uavMotorRPMS</b></td></tr>
+<tr class="separator:a32aa52268ddabd67dc1875357327617c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html">PX4MavCtrler</a></td></tr>
+<tr class="memitem:ab6f8f3ed8fed4d71b1731059c4721a25 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab6f8f3ed8fed4d71b1731059c4721a25"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isInPointMode</b></td></tr>
+<tr class="separator:ab6f8f3ed8fed4d71b1731059c4721a25 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abab070b71afa0e95b9a1e13368a97f68 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_abab070b71afa0e95b9a1e13368a97f68"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isCom</b></td></tr>
+<tr class="separator:abab070b71afa0e95b9a1e13368a97f68 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0294f2b7541099fa3b7ee8e680ea6f8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa0294f2b7541099fa3b7ee8e680ea6f8"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>Com</b></td></tr>
+<tr class="separator:aa0294f2b7541099fa3b7ee8e680ea6f8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76432121357072730f76c1bf26df93ec inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a76432121357072730f76c1bf26df93ec"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>baud</b></td></tr>
+<tr class="separator:a76432121357072730f76c1bf26df93ec inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a973a931bf688a934cceb6778d0eb8fdd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a973a931bf688a934cceb6778d0eb8fdd"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isRealFly</b></td></tr>
+<tr class="separator:a973a931bf688a934cceb6778d0eb8fdd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>ip</b></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a81ab910f56813543665602eb682afeb1 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a81ab910f56813543665602eb682afeb1"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isRedis</b></td></tr>
+<tr class="separator:a81ab910f56813543665602eb682afeb1 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>CopterID</b></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8fb0f45ee0195c7422a49e6a8d72369 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af8fb0f45ee0195c7422a49e6a8d72369"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>port</b></td></tr>
+<tr class="separator:af8fb0f45ee0195c7422a49e6a8d72369 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abdd4ed730af9da2f879591bdf408e3ff inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_abdd4ed730af9da2f879591bdf408e3ff"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>ComName</b></td></tr>
+<tr class="separator:abdd4ed730af9da2f879591bdf408e3ff inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac9d13df5b7d3f6b631b8664372c7755 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aac9d13df5b7d3f6b631b8664372c7755"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>redisCon</b></td></tr>
+<tr class="separator:aac9d13df5b7d3f6b631b8664372c7755 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8380a213547f100de13ce0863be40025 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a8380a213547f100de13ce0863be40025"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>redisHost</b></td></tr>
+<tr class="separator:a8380a213547f100de13ce0863be40025 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2060c15d15fd41e530ceaa6853f916ae inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a2060c15d15fd41e530ceaa6853f916ae"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>redisPort</b></td></tr>
+<tr class="separator:a2060c15d15fd41e530ceaa6853f916ae inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3892790221314b3943327943737c8b8c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3892790221314b3943327943737c8b8c"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>redisPass</b></td></tr>
+<tr class="separator:a3892790221314b3943327943737c8b8c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a30fffdb4a8121a5862d5fe9e593c6346 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a30fffdb4a8121a5862d5fe9e593c6346"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>pubsub</b></td></tr>
+<tr class="separator:a30fffdb4a8121a5862d5fe9e593c6346 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4daf39a93cd0b0fe7a8c9c6082396fba inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4daf39a93cd0b0fe7a8c9c6082396fba"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>redisKey</b></td></tr>
+<tr class="separator:a4daf39a93cd0b0fe7a8c9c6082396fba inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a633de4b0c14ca52ea2432a3c8a5c4c31 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a633de4b0c14ca52ea2432a3c8a5c4c31"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
+<tr class="separator:a633de4b0c14ca52ea2432a3c8a5c4c31 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3d9567a2ae79f9a85fd500725bcc901d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3d9567a2ae79f9a85fd500725bcc901d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>stopFlag</b></td></tr>
+<tr class="separator:a3d9567a2ae79f9a85fd500725bcc901d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0969a6176518f77bdb143670c38581aa inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a0969a6176518f77bdb143670c38581aa"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>mav0</b></td></tr>
+<tr class="separator:a0969a6176518f77bdb143670c38581aa inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae39156fb07ed42ab04b44381baa97ac7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ae39156fb07ed42ab04b44381baa97ac7"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_socket</b></td></tr>
+<tr class="separator:ae39156fb07ed42ab04b44381baa97ac7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4f255b03c4e4ecabab1fc8ab4230168 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa4f255b03c4e4ecabab1fc8ab4230168"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_socketUDP</b></td></tr>
+<tr class="separator:aa4f255b03c4e4ecabab1fc8ab4230168 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a584c0c3144c5699c4d172f7787e99122 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a584c0c3144c5699c4d172f7787e99122"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_socketTrue</b></td></tr>
+<tr class="separator:a584c0c3144c5699c4d172f7787e99122 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3e52993db36b4f53f25dbbefb44f80e0 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3e52993db36b4f53f25dbbefb44f80e0"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_socketPX4</b></td></tr>
+<tr class="separator:a3e52993db36b4f53f25dbbefb44f80e0 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5ea6c60116e535f45103635cf2e9c1dc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a5ea6c60116e535f45103635cf2e9c1dc"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_socketUE4</b></td></tr>
+<tr class="separator:a5ea6c60116e535f45103635cf2e9c1dc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afd86453903c3b4faada9b748fe40dedc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_afd86453903c3b4faada9b748fe40dedc"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavTimeStmp</b></td></tr>
+<tr class="separator:afd86453903c3b4faada9b748fe40dedc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a50955b6541ca28f03c4d67a6a80f42b0 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a50955b6541ca28f03c4d67a6a80f42b0"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueTimeStmp</b></td></tr>
+<tr class="separator:a50955b6541ca28f03c4d67a6a80f42b0 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8b72134a11b47cc026de2c90c44d0f15 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a8b72134a11b47cc026de2c90c44d0f15"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavAngEular</b></td></tr>
+<tr class="separator:a8b72134a11b47cc026de2c90c44d0f15 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a164b8a4e61860047720620e5d05f9401 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a164b8a4e61860047720620e5d05f9401"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueAngEular</b></td></tr>
+<tr class="separator:a164b8a4e61860047720620e5d05f9401 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a161e363079707437fef42cbad8c9c5d8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a161e363079707437fef42cbad8c9c5d8"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavAngRate</b></td></tr>
+<tr class="separator:a161e363079707437fef42cbad8c9c5d8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a288727969b0105a7697c9e4e3560c6cd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a288727969b0105a7697c9e4e3560c6cd"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueAngRate</b></td></tr>
+<tr class="separator:a288727969b0105a7697c9e4e3560c6cd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6710280b239d465b717aaf810fc3a6a2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6710280b239d465b717aaf810fc3a6a2"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavPosNED</b></td></tr>
+<tr class="separator:a6710280b239d465b717aaf810fc3a6a2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa416bb407ea19e49f8be7cfa1ada0e6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aaa416bb407ea19e49f8be7cfa1ada0e6"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>truePosNED</b></td></tr>
+<tr class="separator:aaa416bb407ea19e49f8be7cfa1ada0e6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a236bd5ab2dfc4c11e6a26011d7184427 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a236bd5ab2dfc4c11e6a26011d7184427"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavVelNED</b></td></tr>
+<tr class="separator:a236bd5ab2dfc4c11e6a26011d7184427 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5ea477f534d3b451962f36cec8e87277 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a5ea477f534d3b451962f36cec8e87277"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueVelNED</b></td></tr>
+<tr class="separator:a5ea477f534d3b451962f36cec8e87277 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:add790af874c7800486c8594c69268fef inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_add790af874c7800486c8594c69268fef"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isVehicleCrash</b></td></tr>
+<tr class="separator:add790af874c7800486c8594c69268fef inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6ff50bbc45a6a6adff526b8c666bc7ed inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6ff50bbc45a6a6adff526b8c666bc7ed"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isVehicleCrashID</b></td></tr>
+<tr class="separator:a6ff50bbc45a6a6adff526b8c666bc7ed inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a82d2d0365aa4d65d1af4448d5af26495 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a82d2d0365aa4d65d1af4448d5af26495"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavPosGPS</b></td></tr>
+<tr class="separator:a82d2d0365aa4d65d1af4448d5af26495 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab919f92b39e3091dfb27c5454d677016 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab919f92b39e3091dfb27c5454d677016"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavPosGPSHome</b></td></tr>
+<tr class="separator:ab919f92b39e3091dfb27c5454d677016 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a100ca2254d70ab7d74939b25a1dd1476 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a100ca2254d70ab7d74939b25a1dd1476"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavGlobalPos</b></td></tr>
+<tr class="separator:a100ca2254d70ab7d74939b25a1dd1476 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6683905b5869c18fa4407e0279e48ebf inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6683905b5869c18fa4407e0279e48ebf"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueAngQuatern</b></td></tr>
+<tr class="separator:a6683905b5869c18fa4407e0279e48ebf inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9655942ee48a5b0ee7ae6fc59cb7335 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa9655942ee48a5b0ee7ae6fc59cb7335"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavAngQuatern</b></td></tr>
+<tr class="separator:aa9655942ee48a5b0ee7ae6fc59cb7335 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31e80b428a6c45a39f550a8f345efcd2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a31e80b428a6c45a39f550a8f345efcd2"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueMotorRPMS</b></td></tr>
+<tr class="separator:a31e80b428a6c45a39f550a8f345efcd2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32aa52268ddabd67dc1875357327617c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a32aa52268ddabd67dc1875357327617c"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavMotorRPMS</b></td></tr>
+<tr class="separator:a32aa52268ddabd67dc1875357327617c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0f822c40b9c88e86bb9d35096147854c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a0f822c40b9c88e86bb9d35096147854c"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueAccB</b></td></tr>
+<tr class="separator:a0f822c40b9c88e86bb9d35096147854c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a367261a719c871d921504450de36c0dc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a367261a719c871d921504450de36c0dc"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavAccB</b></td></tr>
+<tr class="separator:a367261a719c871d921504450de36c0dc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4c85a274564f9ee3aa7ba3554759931 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab4c85a274564f9ee3aa7ba3554759931"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavGyro</b></td></tr>
+<tr class="separator:ab4c85a274564f9ee3aa7ba3554759931 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a82baa37a7b1c8ad5fb1157b4b792fe68 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a82baa37a7b1c8ad5fb1157b4b792fe68"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavMag</b></td></tr>
+<tr class="separator:a82baa37a7b1c8ad5fb1157b4b792fe68 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acee6fa93519e1ee21652b225785ae7dd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_acee6fa93519e1ee21652b225785ae7dd"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavVibr</b></td></tr>
+<tr class="separator:acee6fa93519e1ee21652b225785ae7dd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32cae479b42909b0f55eab23c215e0b9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a32cae479b42909b0f55eab23c215e0b9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>out3Ddata</b></td></tr>
+<tr class="separator:a32cae479b42909b0f55eab23c215e0b9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5c3dc297c1154fe4944c529a91e4b372 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a5c3dc297c1154fe4944c529a91e4b372"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>truePosGPS</b></td></tr>
+<tr class="separator:a5c3dc297c1154fe4944c529a91e4b372 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a242d6980608e99cfb7bfa34044ce3e95 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a242d6980608e99cfb7bfa34044ce3e95"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueSimulinkData</b></td></tr>
+<tr class="separator:a242d6980608e99cfb7bfa34044ce3e95 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a49e9919b0bcc2a875dc50400635ee344 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a49e9919b0bcc2a875dc50400635ee344"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>useCustGPSOri</b></td></tr>
+<tr class="separator:a49e9919b0bcc2a875dc50400635ee344 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af222c453b1d5ce32b8cca96dd156b15d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af222c453b1d5ce32b8cca96dd156b15d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueGpsUeCenter</b></td></tr>
+<tr class="separator:af222c453b1d5ce32b8cca96dd156b15d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12536ef83a7ffc7cc4e6bf2d6c1e9020 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a12536ef83a7ffc7cc4e6bf2d6c1e9020"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>GpsOriOffset</b></td></tr>
+<tr class="separator:a12536ef83a7ffc7cc4e6bf2d6c1e9020 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a867ce5c071a1a6e6de4b0d6c2a3810ab inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a867ce5c071a1a6e6de4b0d6c2a3810ab"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavThrust</b></td></tr>
+<tr class="separator:a867ce5c071a1a6e6de4b0d6c2a3810ab inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a056e515d5f72b5eac5f9dc03f1f76540 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a056e515d5f72b5eac5f9dc03f1f76540"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>zInt</b></td></tr>
+<tr class="separator:a056e515d5f72b5eac5f9dc03f1f76540 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afc1d4ceffd9b0e84690f51b697f4f335 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_afc1d4ceffd9b0e84690f51b697f4f335"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>EnList</b></td></tr>
+<tr class="separator:afc1d4ceffd9b0e84690f51b697f4f335 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab5ea8f02ae373eb029e27d92792d5816 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab5ea8f02ae373eb029e27d92792d5816"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>type_mask</b></td></tr>
+<tr class="separator:ab5ea8f02ae373eb029e27d92792d5816 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a23c3c2431d03a4e108e1ce3bfb4d4fa8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a23c3c2431d03a4e108e1ce3bfb4d4fa8"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>coordinate_frame</b></td></tr>
+<tr class="separator:a23c3c2431d03a4e108e1ce3bfb4d4fa8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf54215d760dbf0f9fe5627a39015333 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_adf54215d760dbf0f9fe5627a39015333"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>pos</b></td></tr>
+<tr class="separator:adf54215d760dbf0f9fe5627a39015333 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa69ee4d0ac87385b7d07d0b97d900ff4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa69ee4d0ac87385b7d07d0b97d900ff4"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vel</b></td></tr>
+<tr class="separator:aa69ee4d0ac87385b7d07d0b97d900ff4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4ecce0cbecc7f36338ed1a74dd5bee49 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a4ecce0cbecc7f36338ed1a74dd5bee49"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>acc</b></td></tr>
+<tr class="separator:a4ecce0cbecc7f36338ed1a74dd5bee49 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaeddb3af347c13f3d0915fb2e613acce inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aaeddb3af347c13f3d0915fb2e613acce"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>yaw</b></td></tr>
+<tr class="separator:aaeddb3af347c13f3d0915fb2e613acce inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a28d4058dfdfc0d2445667e57d62e8dd1 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a28d4058dfdfc0d2445667e57d62e8dd1"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>yawrate</b></td></tr>
+<tr class="separator:a28d4058dfdfc0d2445667e57d62e8dd1 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae51a721ce7bee177aaa20b0323940d8e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ae51a721ce7bee177aaa20b0323940d8e"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isInOffboard</b></td></tr>
+<tr class="separator:ae51a721ce7bee177aaa20b0323940d8e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bacfd242ce44a634d4e3614aa889976 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a9bacfd242ce44a634d4e3614aa889976"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isArmed</b></td></tr>
+<tr class="separator:a9bacfd242ce44a634d4e3614aa889976 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40dbbadb226eedc064906f0488081f33 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a40dbbadb226eedc064906f0488081f33"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>hasSendDisableRTLRC</b></td></tr>
+<tr class="separator:a40dbbadb226eedc064906f0488081f33 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea942c6505c87b9be0a030b72fd23983 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aea942c6505c87b9be0a030b72fd23983"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>UDPMode</b></td></tr>
+<tr class="separator:aea942c6505c87b9be0a030b72fd23983 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9927793f1f69327ecd9ebf938e0deb92 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a9927793f1f69327ecd9ebf938e0deb92"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr>
+<tr class="separator:a9927793f1f69327ecd9ebf938e0deb92 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a391ad6525cf3a6e6989f00dd7d5f5225 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a391ad6525cf3a6e6989f00dd7d5f5225"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>MaxSpeed</b></td></tr>
+<tr class="separator:a391ad6525cf3a6e6989f00dd7d5f5225 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6ac8b4bec6ff40c31bb25dbc0bc12e7a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6ac8b4bec6ff40c31bb25dbc0bc12e7a"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>stopFlagTrueData</b></td></tr>
+<tr class="separator:a6ac8b4bec6ff40c31bb25dbc0bc12e7a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aff26e0514e34d902bc72617c4cd8b636 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aff26e0514e34d902bc72617c4cd8b636"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>hasTrueDataRec</b></td></tr>
+<tr class="separator:aff26e0514e34d902bc72617c4cd8b636 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7014a0bce21aa4eaf097e6217b793493 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a7014a0bce21aa4eaf097e6217b793493"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isPX4Ekf3DFixed</b></td></tr>
+<tr class="separator:a7014a0bce21aa4eaf097e6217b793493 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac913d4050e9c9c43f5bb7ec76cd2ea6c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ac913d4050e9c9c43f5bb7ec76cd2ea6c"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isArmerror</b></td></tr>
+<tr class="separator:ac913d4050e9c9c43f5bb7ec76cd2ea6c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af72dcc417edbe0cb708fd8db14d2a5e9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af72dcc417edbe0cb708fd8db14d2a5e9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>truegyro</b></td></tr>
+<tr class="separator:af72dcc417edbe0cb708fd8db14d2a5e9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afa92380fb4d40b49b5acd634b7f1ca9b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_afa92380fb4d40b49b5acd634b7f1ca9b"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>truemag</b></td></tr>
+<tr class="separator:afa92380fb4d40b49b5acd634b7f1ca9b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5a8b86b56ce600ef55020c129cc987b4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a5a8b86b56ce600ef55020c129cc987b4"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>RCPWMs</b></td></tr>
+<tr class="separator:a5a8b86b56ce600ef55020c129cc987b4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac361fd24061ba19fa7593414fb2eb26c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ac361fd24061ba19fa7593414fb2eb26c"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isRCLoop</b></td></tr>
+<tr class="separator:ac361fd24061ba19fa7593414fb2eb26c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9dd51876f008587ea587ab235379e919 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a9dd51876f008587ea587ab235379e919"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>tRCHz</b></td></tr>
+<tr class="separator:a9dd51876f008587ea587ab235379e919 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6906f96a22e0b236cbb7724bd4517e10 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6906f96a22e0b236cbb7724bd4517e10"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isFailsafeEn</b></td></tr>
+<tr class="separator:a6906f96a22e0b236cbb7724bd4517e10 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afba3935c373e938745052f079eef5d71 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_afba3935c373e938745052f079eef5d71"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>FailsafeInfo</b></td></tr>
+<tr class="separator:afba3935c373e938745052f079eef5d71 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afa863558a34cf140504074ca64f23d4f inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_afa863558a34cf140504074ca64f23d4f"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>px4ext</b></td></tr>
+<tr class="separator:afa863558a34cf140504074ca64f23d4f inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:addcff316f9b500348157e131c874b44d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_addcff316f9b500348157e131c874b44d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>px4extTrue</b></td></tr>
+<tr class="separator:addcff316f9b500348157e131c874b44d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c7f5c6594ef01e2132ca36d14206b93 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a9c7f5c6594ef01e2132ca36d14206b93"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>offMode</b></td></tr>
+<tr class="separator:a9c7f5c6594ef01e2132ca36d14206b93 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12f4c8eabf6e50c4af0307b6e966c5d9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a12f4c8eabf6e50c4af0307b6e966c5d9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>ctrlMode</b></td></tr>
+<tr class="separator:a12f4c8eabf6e50c4af0307b6e966c5d9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95556287304834951e5a83e42333b6e7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a95556287304834951e5a83e42333b6e7"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>cmdVel</b></td></tr>
+<tr class="separator:a95556287304834951e5a83e42333b6e7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2a7ef1f4c22538dd377cf691a43d3de2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a2a7ef1f4c22538dd377cf691a43d3de2"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>system_status</b></td></tr>
+<tr class="separator:a2a7ef1f4c22538dd377cf691a43d3de2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0d28f70b9b7238e7de23f1128d858d39 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a0d28f70b9b7238e7de23f1128d858d39"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>connected</b></td></tr>
+<tr class="separator:a0d28f70b9b7238e7de23f1128d858d39 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0190c121ac850c42c6dd93fe9bed9970 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a0190c121ac850c42c6dd93fe9bed9970"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>batInfo</b></td></tr>
+<tr class="separator:a0190c121ac850c42c6dd93fe9bed9970 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aecee87057d7993b493c15f7769c0e86e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aecee87057d7993b493c15f7769c0e86e"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>nId</b></td></tr>
+<tr class="separator:aecee87057d7993b493c15f7769c0e86e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4acb9962465d7ac1513a4fbbf67d257 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa4acb9962465d7ac1513a4fbbf67d257"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isOffBoard</b></td></tr>
+<tr class="separator:aa4acb9962465d7ac1513a4fbbf67d257 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adffc8f4f245800f0b0ff104acda539e7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_adffc8f4f245800f0b0ff104acda539e7"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>hasMsgDict</b></td></tr>
+<tr class="separator:adffc8f4f245800f0b0ff104acda539e7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa233fc16249b6d9c143831a3d01468b4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aa233fc16249b6d9c143831a3d01468b4"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trigMsgVect</b></td></tr>
+<tr class="separator:aa233fc16249b6d9c143831a3d01468b4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af02600e452ff56b4741e08e9151cdc0f inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af02600e452ff56b4741e08e9151cdc0f"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>hasMsgEvent</b></td></tr>
+<tr class="separator:af02600e452ff56b4741e08e9151cdc0f inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a332006f318850ee16f190ad6de0195fd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a332006f318850ee16f190ad6de0195fd"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueMsgEvent</b></td></tr>
+<tr class="separator:a332006f318850ee16f190ad6de0195fd inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac0870ed1147c3a0ba959602774869d6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aac0870ed1147c3a0ba959602774869d6"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>geo</b></td></tr>
+<tr class="separator:aac0870ed1147c3a0ba959602774869d6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1f9171fcc75326b51143e6e28684188d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a1f9171fcc75326b51143e6e28684188d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>netEvent</b></td></tr>
+<tr class="separator:a1f9171fcc75326b51143e6e28684188d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a555e3d252b25797d2a9b05e270e76fe6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a555e3d252b25797d2a9b05e270e76fe6"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavEvent</b></td></tr>
+<tr class="separator:a555e3d252b25797d2a9b05e270e76fe6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4e71e648f97d653445c3a71fe3f874b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ad4e71e648f97d653445c3a71fe3f874b"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>uavMsg</b></td></tr>
+<tr class="separator:ad4e71e648f97d653445c3a71fe3f874b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a469994e78f66a44815c015b7f4b8b2f8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a469994e78f66a44815c015b7f4b8b2f8"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>t1</b></td></tr>
+<tr class="separator:a469994e78f66a44815c015b7f4b8b2f8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af7da274d5120713ece9e9a84089e9c06 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af7da274d5120713ece9e9a84089e9c06"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>intAlt</b></td></tr>
+<tr class="separator:af7da274d5120713ece9e9a84089e9c06 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae30368a7bef26afd142f8ce930d460e4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ae30368a7bef26afd142f8ce930d460e4"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>intStateX</b></td></tr>
+<tr class="separator:ae30368a7bef26afd142f8ce930d460e4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3a33b680674bbf641c7f3fd8b558ecfa inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3a33b680674bbf641c7f3fd8b558ecfa"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>intStateY</b></td></tr>
+<tr class="separator:a3a33b680674bbf641c7f3fd8b558ecfa inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a011401005ffef19894e6f3a31b259e1a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a011401005ffef19894e6f3a31b259e1a"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>intStateYaw</b></td></tr>
+<tr class="separator:a011401005ffef19894e6f3a31b259e1a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad63ffee70a630b49aa4e5677ad59c3a9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ad63ffee70a630b49aa4e5677ad59c3a9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>t3</b></td></tr>
+<tr class="separator:ad63ffee70a630b49aa4e5677ad59c3a9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64384bdc6b9761e8bede36fb73bce6fe inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a64384bdc6b9761e8bede36fb73bce6fe"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>startTime3</b></td></tr>
+<tr class="separator:a64384bdc6b9761e8bede36fb73bce6fe inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4ad63a55b658b1cf5be182ec000d239 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ab4ad63a55b658b1cf5be182ec000d239"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>lastTime3</b></td></tr>
+<tr class="separator:ab4ad63a55b658b1cf5be182ec000d239 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c5ed9e8df61e9f9a085379027380ef9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a6c5ed9e8df61e9f9a085379027380ef9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>trueAngRat</b></td></tr>
+<tr class="separator:a6c5ed9e8df61e9f9a085379027380ef9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a479f0def25b55a8fd276faca5e0fb9ad inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a479f0def25b55a8fd276faca5e0fb9ad"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>tTrue</b></td></tr>
+<tr class="separator:a479f0def25b55a8fd276faca5e0fb9ad inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3a9db1a93eb915b42f27c8281a795260 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a3a9db1a93eb915b42f27c8281a795260"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>stopFlagPX4Data</b></td></tr>
+<tr class="separator:a3a9db1a93eb915b42f27c8281a795260 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46d72ef398322cc453e7d9fd40aec22d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a46d72ef398322cc453e7d9fd40aec22d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>tPX4</b></td></tr>
+<tr class="separator:a46d72ef398322cc453e7d9fd40aec22d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a929f9cb5e8ef4c47938ee0675937c79f inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a929f9cb5e8ef4c47938ee0675937c79f"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>the_connection</b></td></tr>
+<tr class="separator:a929f9cb5e8ef4c47938ee0675937c79f inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae2617d7a20ec69c0f1c7d23f007cbd20 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_ae2617d7a20ec69c0f1c7d23f007cbd20"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>lastTime</b></td></tr>
+<tr class="separator:ae2617d7a20ec69c0f1c7d23f007cbd20 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a24aeadb733f27244ec14e4cba82eeee9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a24aeadb733f27244ec14e4cba82eeee9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>t2</b></td></tr>
+<tr class="separator:a24aeadb733f27244ec14e4cba82eeee9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a97921f04f3a443ea883afd5711862f02 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a97921f04f3a443ea883afd5711862f02"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>lastTime2</b></td></tr>
+<tr class="separator:a97921f04f3a443ea883afd5711862f02 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea0e44ed7d6130b18bc811bd22f43ca2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_aea0e44ed7d6130b18bc811bd22f43ca2"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>startTime2</b></td></tr>
+<tr class="separator:aea0e44ed7d6130b18bc811bd22f43ca2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a738b5458482729dfc9ca8fa2fdf333b5 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_a738b5458482729dfc9ca8fa2fdf333b5"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>tRC</b></td></tr>
+<tr class="separator:a738b5458482729dfc9ca8fa2fdf333b5 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html">PX4MavCtrler</a></td></tr>
+<tr class="memitem:af3a9be048c5fe2e322216ba3f63df4b6 inherit pro_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler" id="r_af3a9be048c5fe2e322216ba3f63df4b6"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>_active</b></td></tr>
+<tr class="separator:af3a9be048c5fe2e322216ba3f63df4b6 inherit pro_attribs_classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3d5ed55a222a0f21c15d24cec0c9be28" name="a3d5ed55a222a0f21c15d24cec0c9be28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d5ed55a222a0f21c15d24cec0c9be28">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copter_id</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>com</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'udp'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>simulink_dll</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>重载 <a class="el" href="classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html">PX4MavCtrler</a> .</p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab73ca4147bdc2c0710572b0048569f54" name="ab73ca4147bdc2c0710572b0048569f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73ca4147bdc2c0710572b0048569f54">◆ </a></span>get_acc()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_acc </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">目前仅综合模型支持返回加速度
+:return: 载体坐标系中加速度
+</pre>
+</div>
+</div>
+<a id="a7eb14ed12fff6a0b8f0b5b93f8dc1a50" name="a7eb14ed12fff6a0b8f0b5b93f8dc1a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb14ed12fff6a0b8f0b5b93f8dc1a50">◆ </a></span>get_actuator_speed()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_actuator_speed </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 电机转速，转/min
+</pre>
+</div>
+</div>
+<a id="a3aa7d0ac52a8fba8af9f72a8a4f17a6b" name="a3aa7d0ac52a8fba8af9f72a8a4f17a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa7d0ac52a8fba8af9f72a8a4f17a6b">◆ </a></span>get_home_pos()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_home_pos </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: WGS84坐标系下Home点位置，纬经高
+</pre>
+</div>
+</div>
+<a id="a5c389af86c30a5c8ef735d637c6d501a" name="a5c389af86c30a5c8ef735d637c6d501a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c389af86c30a5c8ef735d637c6d501a">◆ </a></span>get_max_acc_xy()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_max_acc_xy </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 最大水平加速度，m/s2
+</pre>
+</div>
+</div>
+<a id="a99199ef8e10f1698028ffd03d7d7cda6" name="a99199ef8e10f1698028ffd03d7d7cda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99199ef8e10f1698028ffd03d7d7cda6">◆ </a></span>get_max_acc_z()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_max_acc_z </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 最大竖直，m/s2
+</pre>
+</div>
+</div>
+<a id="a1ca22bf8e8be8ae6d8c6a38c1fa7dc59" name="a1ca22bf8e8be8ae6d8c6a38c1fa7dc59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca22bf8e8be8ae6d8c6a38c1fa7dc59">◆ </a></span>get_max_vel_xy()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_max_vel_xy </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 最大水平速度，m/s
+</pre>
+</div>
+</div>
+<a id="adf8570fc9aadac95a7dd33ae520c947b" name="adf8570fc9aadac95a7dd33ae520c947b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8570fc9aadac95a7dd33ae520c947b">◆ </a></span>get_max_vel_z()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_max_vel_z </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 最大竖直速度，m/s
+</pre>
+</div>
+</div>
+<a id="a91113ea96cf26eff5cd6459fa9169c87" name="a91113ea96cf26eff5cd6459fa9169c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91113ea96cf26eff5cd6459fa9169c87">◆ </a></span>get_pos_global()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_pos_global </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: WGS84坐标系下位置,纬经高
+</pre>
+</div>
+</div>
+<a id="af4a948fdc74fea2cce366929e35e17f8" name="af4a948fdc74fea2cce366929e35e17f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a948fdc74fea2cce366929e35e17f8">◆ </a></span>get_pos_ned()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_pos_ned </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: PX4返回局部NED坐标系下的位置，每一架飞机都以起飞点为原点；综合模型返回全局NED(相对UE中心) TRUEpos
+</pre>
+</div>
+</div>
+<a id="a7215a2b122ceb00a8a0f5efcc49b616a" name="a7215a2b122ceb00a8a0f5efcc49b616a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7215a2b122ceb00a8a0f5efcc49b616a">◆ </a></span>get_pos_ned_global()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_pos_ned_global </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 返回全局NED(相对UE中心)位置
+</pre>
+</div>
+</div>
+<a id="a00127c16221c86e43c67ffa136e7efe1" name="a00127c16221c86e43c67ffa136e7efe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00127c16221c86e43c67ffa136e7efe1">◆ </a></span>get_quaternion()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_quaternion </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">目前仅综合模型支持返回四元数
+:return: 四元数描述的姿态
+</pre>
+</div>
+</div>
+<a id="a60c0020f7b51b86da323b7d1f8709ff3" name="a60c0020f7b51b86da323b7d1f8709ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c0020f7b51b86da323b7d1f8709ff3">◆ </a></span>get_vehicle_id()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_vehicle_id </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:return: 返回载具ID，默认从1开始编号
+</pre>
+</div>
+</div>
+<a id="af675e8615a228d0c8c9ce1c880274752" name="af675e8615a228d0c8c9ce1c880274752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af675e8615a228d0c8c9ce1c880274752">◆ </a></span>land()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">land </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>height</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">高度降落到home点高度
+</pre>
+</div>
+</div>
+<a id="a86823365dfb528d4c93ca2c931c5b2ff" name="a86823365dfb528d4c93ca2c931c5b2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86823365dfb528d4c93ca2c931c5b2ff">◆ </a></span>return_home()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">return_home </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>height</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">水平位置到达home点，高度保持不变
+</pre>
+</div>
+</div>
+<a id="a7642d00b2f4464c15d3ffc3ad2cd8622" name="a7642d00b2f4464c15d3ffc3ad2cd8622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7642d00b2f4464c15d3ffc3ad2cd8622">◆ </a></span>send_acc()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_acc </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>acc</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">仅适用于旋翼无人机
+:param acc: NED坐标系下期望加速度，x， y方向响应非常灵敏，z方向为了定高响应缓慢
+</pre>
+</div>
+</div>
+<a id="a602b82d7c0e99da7c95a1fe3d49ce5ef" name="a602b82d7c0e99da7c95a1fe3d49ce5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602b82d7c0e99da7c95a1fe3d49ce5ef">◆ </a></span>send_att()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_att </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>att</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:param att: 欧拉角[滚转角、俯仰角、偏航角]
+</pre>
+</div>
+</div>
+<a id="ae885da0b97f4325af151ef992cf939de" name="ae885da0b97f4325af151ef992cf939de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae885da0b97f4325af151ef992cf939de">◆ </a></span>send_att_thrust()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_att_thrust </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>att</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>thrust</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">:param att: 欧拉角[滚转角、俯仰角、偏航角]
+:param thrust: 油门
+</pre>
+</div>
+</div>
+<a id="a8d8c0bf267e64ca9f00984fedcf154fd" name="a8d8c0bf267e64ca9f00984fedcf154fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8c0bf267e64ca9f00984fedcf154fd">◆ </a></span>send_cruise_radius_fw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_cruise_radius_fw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>radius</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">仅支持固定翼，对应QGC中NAV_LOITER_RAD
+:param radius:盘旋半径，25m-1000m，正常误差可达10-20m，设置超出范围的值在QGC中会显示修改，但实际不会超过范围
+</pre> <div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl_a8d8c0bf267e64ca9f00984fedcf154fd_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a94d9c919ea2f9e1ff65fa25d3f8f1b79" name="a94d9c919ea2f9e1ff65fa25d3f8f1b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d9c919ea2f9e1ff65fa25d3f8f1b79">◆ </a></span>send_cruise_speed_fw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_cruise_speed_fw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>speed</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">仅支持固定翼，对应QGC中FW_AIRSPD_TRIM
+速度限制10-20m/s，默认15m/s
+速度限制定义在src/modules/fw_pos_control_l1/fw_pos_control_l1_params.c
+:param speed: 水平速度
+</pre> <div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl_a94d9c919ea2f9e1ff65fa25d3f8f1b79_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a0613cdee783308f1059a3c7d488cc4ff" name="a0613cdee783308f1059a3c7d488cc4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0613cdee783308f1059a3c7d488cc4ff">◆ </a></span>send_pos_ned()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_pos_ned </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">PX4版本时每架飞机相对于起飞点，综合模型时相对UE中心
+出现这种差异是综合模型使用True pos控制，而PX4使用滤波后位置控制
+:param pos: NED坐标系下x,y,z方向位置，单位m
+:param yaw: 偏航角，单位rad
+</pre> <div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl_a0613cdee783308f1059a3c7d488cc4ff_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a4729213ebbccc9c0f8963b432483c70e" name="a4729213ebbccc9c0f8963b432483c70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4729213ebbccc9c0f8963b432483c70e">◆ </a></span>send_pos_speed_fw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">send_pos_speed_fw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>speed</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">固定翼综合模型同时支持位置和速度控制
+</pre> <div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl_a4729213ebbccc9c0f8963b432483c70e_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="aaa8243ff0f26e277da65de9ec0359766" name="aaa8243ff0f26e277da65de9ec0359766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8243ff0f26e277da65de9ec0359766">◆ </a></span>takeoff()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">takeoff </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>height</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pos_x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pos_y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">该高度为NED坐标系下的高度，PX4版本的固定翼支持指定起飞后位置，综合模型只支持指定高度
+</pre> <div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="440" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl_aaa8243ff0f26e277da65de9ec0359766_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="api_8py.html">api.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

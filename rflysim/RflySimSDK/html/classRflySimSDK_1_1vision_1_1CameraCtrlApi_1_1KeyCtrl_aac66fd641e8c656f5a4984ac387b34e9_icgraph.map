@@ -1,0 +1,9 @@
+<map id="upPress" name="upPress">
+<area shape="rect" id="Node000001" title="控制俯仰角的增大，根据当前模式（角度或角速度）进行相应的处理" alt="" coords="237,31,306,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#ad59bd5ab0e4894fa0da10325ac89e7f5" title="处理键盘事件的回调方法" alt="" coords="120,5,189,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,36,189,29,190,24,222,31"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#aedf1ff13bec1ee22492f69bf7db30fcd" title="初始化键盘快捷键。为每个方向键、Ctrl+方向键和Alt+方向键添加快捷键，并将其绑定到相应的方法上" alt="" coords="125,56,184,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,57,185,66,184,60,221,52"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#abdd362d5f799ad16b5d6700efe590290" title="KeyCtrl的构造函数" alt="" coords="5,56,72,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,72,72,72,72,67,109,67"/>
+</map>

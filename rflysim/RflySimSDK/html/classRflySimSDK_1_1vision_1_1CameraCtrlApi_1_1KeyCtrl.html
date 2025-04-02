@@ -1,0 +1,1036 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: KeyCtrl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>CameraCtrlApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html">KeyCtrl</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">KeyCtrl类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>KeyCtrl结构体类。用于通过键盘控制吊舱相机的运动和参数调节  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">KeyCtrl的构造函数  <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae40cecfd81a027044bbb1c9ae7462814" id="r_ae40cecfd81a027044bbb1c9ae7462814"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae40cecfd81a027044bbb1c9ae7462814">getYaw</a> (self)</td></tr>
+<tr class="memdesc:ae40cecfd81a027044bbb1c9ae7462814"><td class="mdescLeft"> </td><td class="mdescRight">获取相机的当前偏航角  <br/></td></tr>
+<tr class="separator:ae40cecfd81a027044bbb1c9ae7462814"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad8376fcf609eb1a5d6d3176c4482f424" id="r_ad8376fcf609eb1a5d6d3176c4482f424"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8376fcf609eb1a5d6d3176c4482f424">getPitch</a> (self)</td></tr>
+<tr class="memdesc:ad8376fcf609eb1a5d6d3176c4482f424"><td class="mdescLeft"> </td><td class="mdescRight">获取相机的当前俯仰角  <br/></td></tr>
+<tr class="separator:ad8376fcf609eb1a5d6d3176c4482f424"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aee4c6d7edd99e2259c236a85fb94f2c4" id="r_aee4c6d7edd99e2259c236a85fb94f2c4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aee4c6d7edd99e2259c236a85fb94f2c4">getRoll</a> (self)</td></tr>
+<tr class="memdesc:aee4c6d7edd99e2259c236a85fb94f2c4"><td class="mdescLeft"> </td><td class="mdescRight">获取相机的当前滚转角  <br/></td></tr>
+<tr class="separator:aee4c6d7edd99e2259c236a85fb94f2c4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95139c576bf995df8d2af33bfc8d04e7" id="r_a95139c576bf995df8d2af33bfc8d04e7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a95139c576bf995df8d2af33bfc8d04e7">getCameraFOV</a> (self)</td></tr>
+<tr class="memdesc:a95139c576bf995df8d2af33bfc8d04e7"><td class="mdescLeft"> </td><td class="mdescRight">获取相机的当前视场角  <br/></td></tr>
+<tr class="separator:a95139c576bf995df8d2af33bfc8d04e7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af96365555801d2438e9f3b2941194d2f" id="r_af96365555801d2438e9f3b2941194d2f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af96365555801d2438e9f3b2941194d2f">getRadiansAngEular</a> (self)</td></tr>
+<tr class="memdesc:af96365555801d2438e9f3b2941194d2f"><td class="mdescLeft"> </td><td class="mdescRight">获取相机的当前欧拉角  <br/></td></tr>
+<tr class="separator:af96365555801d2438e9f3b2941194d2f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac66fd641e8c656f5a4984ac387b34e9" id="r_aac66fd641e8c656f5a4984ac387b34e9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aac66fd641e8c656f5a4984ac387b34e9">upPress</a> (self)</td></tr>
+<tr class="memdesc:aac66fd641e8c656f5a4984ac387b34e9"><td class="mdescLeft"> </td><td class="mdescRight">控制俯仰角的增大，根据当前模式（角度或角速度）进行相应的处理  <br/></td></tr>
+<tr class="separator:aac66fd641e8c656f5a4984ac387b34e9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a11ebf9f735d1e2ebf6d8218cd6dffcbd" id="r_a11ebf9f735d1e2ebf6d8218cd6dffcbd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a11ebf9f735d1e2ebf6d8218cd6dffcbd">downPress</a> (self)</td></tr>
+<tr class="memdesc:a11ebf9f735d1e2ebf6d8218cd6dffcbd"><td class="mdescLeft"> </td><td class="mdescRight">控制俯仰角（Pitch）的向下调整  <br/></td></tr>
+<tr class="separator:a11ebf9f735d1e2ebf6d8218cd6dffcbd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d05f29e7c4570cfb737cc73496c3c51" id="r_a1d05f29e7c4570cfb737cc73496c3c51"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d05f29e7c4570cfb737cc73496c3c51">rightPress</a> (self)</td></tr>
+<tr class="memdesc:a1d05f29e7c4570cfb737cc73496c3c51"><td class="mdescLeft"> </td><td class="mdescRight">控制偏航角（Yaw）的向右调整  <br/></td></tr>
+<tr class="separator:a1d05f29e7c4570cfb737cc73496c3c51"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40642f77e9a686fbca817d2ece700035" id="r_a40642f77e9a686fbca817d2ece700035"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a40642f77e9a686fbca817d2ece700035">leftPress</a> (self)</td></tr>
+<tr class="memdesc:a40642f77e9a686fbca817d2ece700035"><td class="mdescLeft"> </td><td class="mdescRight">控制偏航角（Yaw）的向左调整  <br/></td></tr>
+<tr class="separator:a40642f77e9a686fbca817d2ece700035"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac703326e2e6c88041c5b42b784d5d596" id="r_ac703326e2e6c88041c5b42b784d5d596"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac703326e2e6c88041c5b42b784d5d596">ctrlLeftPress</a> (self)</td></tr>
+<tr class="memdesc:ac703326e2e6c88041c5b42b784d5d596"><td class="mdescLeft"> </td><td class="mdescRight">控制横滚角（Roll）的向左调整  <br/></td></tr>
+<tr class="separator:ac703326e2e6c88041c5b42b784d5d596"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5515886c5ab905d7b15877b469d5363a" id="r_a5515886c5ab905d7b15877b469d5363a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5515886c5ab905d7b15877b469d5363a">ctrlRightPress</a> (self)</td></tr>
+<tr class="memdesc:a5515886c5ab905d7b15877b469d5363a"><td class="mdescLeft"> </td><td class="mdescRight">控制横滚角（Roll）的向右调整  <br/></td></tr>
+<tr class="separator:a5515886c5ab905d7b15877b469d5363a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a888236f8e6ea5429241e8dfcb3926507" id="r_a888236f8e6ea5429241e8dfcb3926507"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a888236f8e6ea5429241e8dfcb3926507">altUpPress</a> (self)</td></tr>
+<tr class="memdesc:a888236f8e6ea5429241e8dfcb3926507"><td class="mdescLeft"> </td><td class="mdescRight">控制视场角（FOV）的缩小  <br/></td></tr>
+<tr class="separator:a888236f8e6ea5429241e8dfcb3926507"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad05b8d06904b5a962cb4231c5bf2e126" id="r_ad05b8d06904b5a962cb4231c5bf2e126"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad05b8d06904b5a962cb4231c5bf2e126">altDownPress</a> (self)</td></tr>
+<tr class="memdesc:ad05b8d06904b5a962cb4231c5bf2e126"><td class="mdescLeft"> </td><td class="mdescRight">控制视场角（FOV）的放大  <br/></td></tr>
+<tr class="separator:ad05b8d06904b5a962cb4231c5bf2e126"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a585888e6fe54ce7163cdbaa757a37064" id="r_a585888e6fe54ce7163cdbaa757a37064"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a585888e6fe54ce7163cdbaa757a37064">Reset</a> (self)</td></tr>
+<tr class="memdesc:a585888e6fe54ce7163cdbaa757a37064"><td class="mdescLeft"> </td><td class="mdescRight">将相机的滚转角、俯仰角和偏航角设置为当前的滚转角、俯仰角和偏航角  <br/></td></tr>
+<tr class="separator:a585888e6fe54ce7163cdbaa757a37064"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a483948c8f5e0fbe5b4a664b4c05ee77b" id="r_a483948c8f5e0fbe5b4a664b4c05ee77b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a483948c8f5e0fbe5b4a664b4c05ee77b">inner</a> (self, angle, i)</td></tr>
+<tr class="memdesc:a483948c8f5e0fbe5b4a664b4c05ee77b"><td class="mdescLeft"> </td><td class="mdescRight">根据当前角度值和偏移量将角度归零  <br/></td></tr>
+<tr class="separator:a483948c8f5e0fbe5b4a664b4c05ee77b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab76f3943f2f5fbb42bf2cf361c220598" id="r_ab76f3943f2f5fbb42bf2cf361c220598"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab76f3943f2f5fbb42bf2cf361c220598">fun</a> (angle)</td></tr>
+<tr class="memdesc:ab76f3943f2f5fbb42bf2cf361c220598"><td class="mdescLeft"> </td><td class="mdescRight">静态方法，将角度限制在[-π, π]范围内  <br/></td></tr>
+<tr class="separator:ab76f3943f2f5fbb42bf2cf361c220598"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a320f5e5fbf7d6a7ea726c31ad4af6cf9" id="r_a320f5e5fbf7d6a7ea726c31ad4af6cf9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a320f5e5fbf7d6a7ea726c31ad4af6cf9">CheckAngleWid</a> (self)</td></tr>
+<tr class="memdesc:a320f5e5fbf7d6a7ea726c31ad4af6cf9"><td class="mdescLeft"> </td><td class="mdescRight">将相机的所有角度限制在[-π, π]范围内  <br/></td></tr>
+<tr class="separator:a320f5e5fbf7d6a7ea726c31ad4af6cf9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad59bd5ab0e4894fa0da10325ac89e7f5" id="r_ad59bd5ab0e4894fa0da10325ac89e7f5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59bd5ab0e4894fa0da10325ac89e7f5">callback</a> (self, key_v)</td></tr>
+<tr class="memdesc:ad59bd5ab0e4894fa0da10325ac89e7f5"><td class="mdescLeft"> </td><td class="mdescRight">处理键盘事件的回调方法  <br/></td></tr>
+<tr class="separator:ad59bd5ab0e4894fa0da10325ac89e7f5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aedf1ff13bec1ee22492f69bf7db30fcd" id="r_aedf1ff13bec1ee22492f69bf7db30fcd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aedf1ff13bec1ee22492f69bf7db30fcd">initkey</a> (self)</td></tr>
+<tr class="memdesc:aedf1ff13bec1ee22492f69bf7db30fcd"><td class="mdescLeft"> </td><td class="mdescRight">初始化键盘快捷键。为每个方向键、Ctrl+方向键和Alt+方向键添加快捷键，并将其绑定到相应的方法上  <br/></td></tr>
+<tr class="separator:aedf1ff13bec1ee22492f69bf7db30fcd"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab0b6df565a2cf036f4dfb03a59201f9f" id="r_ab0b6df565a2cf036f4dfb03a59201f9f"><td align="right" class="memItemLeft" valign="top"><a id="ab0b6df565a2cf036f4dfb03a59201f9f" name="ab0b6df565a2cf036f4dfb03a59201f9f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_FOV</b></td></tr>
+<tr class="separator:ab0b6df565a2cf036f4dfb03a59201f9f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f34ff737e5fd0c14f341824752043b7" id="r_a3f34ff737e5fd0c14f341824752043b7"><td align="right" class="memItemLeft" valign="top"><a id="a3f34ff737e5fd0c14f341824752043b7" name="a3f34ff737e5fd0c14f341824752043b7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_Ang</b></td></tr>
+<tr class="separator:a3f34ff737e5fd0c14f341824752043b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a62e9b4f670c1a74e53cf72c1be7148a3" id="r_a62e9b4f670c1a74e53cf72c1be7148a3"><td align="right" class="memItemLeft" valign="top"><a id="a62e9b4f670c1a74e53cf72c1be7148a3" name="a62e9b4f670c1a74e53cf72c1be7148a3"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_Quat</b></td></tr>
+<tr class="separator:a62e9b4f670c1a74e53cf72c1be7148a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa8535a327b11fc94564ee6719370b019" id="r_aa8535a327b11fc94564ee6719370b019"><td align="right" class="memItemLeft" valign="top"><a id="aa8535a327b11fc94564ee6719370b019" name="aa8535a327b11fc94564ee6719370b019"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_FocalLength</b></td></tr>
+<tr class="separator:aa8535a327b11fc94564ee6719370b019"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e982611112e7f824b5f1009d8a6b195" id="r_a1e982611112e7f824b5f1009d8a6b195"><td align="right" class="memItemLeft" valign="top"><a id="a1e982611112e7f824b5f1009d8a6b195" name="a1e982611112e7f824b5f1009d8a6b195"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_BackCenter</b></td></tr>
+<tr class="separator:a1e982611112e7f824b5f1009d8a6b195"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af844523b2f5c8ea56f958cce5796702e" id="r_af844523b2f5c8ea56f958cce5796702e"><td align="right" class="memItemLeft" valign="top"><a id="af844523b2f5c8ea56f958cce5796702e" name="af844523b2f5c8ea56f958cce5796702e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_AngVel</b></td></tr>
+<tr class="separator:af844523b2f5c8ea56f958cce5796702e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4cec7944aa099e1d91d3be2a36de219d" id="r_a4cec7944aa099e1d91d3be2a36de219d"><td align="right" class="memItemLeft" valign="top"><a id="a4cec7944aa099e1d91d3be2a36de219d" name="a4cec7944aa099e1d91d3be2a36de219d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_OpticalZoom</b></td></tr>
+<tr class="separator:a4cec7944aa099e1d91d3be2a36de219d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c271fa059163cddd70ad25f3c79f2e7" id="r_a4c271fa059163cddd70ad25f3c79f2e7"><td align="right" class="memItemLeft" valign="top"><a id="a4c271fa059163cddd70ad25f3c79f2e7" name="a4c271fa059163cddd70ad25f3c79f2e7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_OpticalBase</b></td></tr>
+<tr class="separator:a4c271fa059163cddd70ad25f3c79f2e7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a87c8f52d917055d9b5a31b0886e32128" id="r_a87c8f52d917055d9b5a31b0886e32128"><td align="right" class="memItemLeft" valign="top"><a id="a87c8f52d917055d9b5a31b0886e32128" name="a87c8f52d917055d9b5a31b0886e32128"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_Track</b></td></tr>
+<tr class="separator:a87c8f52d917055d9b5a31b0886e32128"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad087e45a5a82b30fc967b1ebbca92714" id="r_ad087e45a5a82b30fc967b1ebbca92714"><td align="right" class="memItemLeft" valign="top"><a id="ad087e45a5a82b30fc967b1ebbca92714" name="ad087e45a5a82b30fc967b1ebbca92714"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_Distance</b></td></tr>
+<tr class="separator:ad087e45a5a82b30fc967b1ebbca92714"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab27f2f9d582552987f5fd78a47e8f93f" id="r_ab27f2f9d582552987f5fd78a47e8f93f"><td align="right" class="memItemLeft" valign="top"><a id="ab27f2f9d582552987f5fd78a47e8f93f" name="ab27f2f9d582552987f5fd78a47e8f93f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mask_SensorType</b></td></tr>
+<tr class="separator:ab27f2f9d582552987f5fd78a47e8f93f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a118e81ec5ba87f0ac92747393fa0ce4a" id="r_a118e81ec5ba87f0ac92747393fa0ce4a"><td align="right" class="memItemLeft" valign="top"><a id="a118e81ec5ba87f0ac92747393fa0ce4a" name="a118e81ec5ba87f0ac92747393fa0ce4a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>bitMask</b></td></tr>
+<tr class="separator:a118e81ec5ba87f0ac92747393fa0ce4a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9177111a7246321a1a4dec0a0262e5a2" id="r_a9177111a7246321a1a4dec0a0262e5a2"><td align="right" class="memItemLeft" valign="top"><a id="a9177111a7246321a1a4dec0a0262e5a2" name="a9177111a7246321a1a4dec0a0262e5a2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AngFlag</b></td></tr>
+<tr class="separator:a9177111a7246321a1a4dec0a0262e5a2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e3d5f213d26ba809b96a613a8d1e3a1" id="r_a2e3d5f213d26ba809b96a613a8d1e3a1"><td align="right" class="memItemLeft" valign="top"><a id="a2e3d5f213d26ba809b96a613a8d1e3a1" name="a2e3d5f213d26ba809b96a613a8d1e3a1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AngOrAngV</b></td></tr>
+<tr class="separator:a2e3d5f213d26ba809b96a613a8d1e3a1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9eee860f1676526eb41c3487f5cf09d7" id="r_a9eee860f1676526eb41c3487f5cf09d7"><td align="right" class="memItemLeft" valign="top"><a id="a9eee860f1676526eb41c3487f5cf09d7" name="a9eee860f1676526eb41c3487f5cf09d7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AngEular</b></td></tr>
+<tr class="separator:a9eee860f1676526eb41c3487f5cf09d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a86587c79975c8f16fc791edaa540910a" id="r_a86587c79975c8f16fc791edaa540910a"><td align="right" class="memItemLeft" valign="top"><a id="a86587c79975c8f16fc791edaa540910a" name="a86587c79975c8f16fc791edaa540910a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AngVel</b></td></tr>
+<tr class="separator:a86587c79975c8f16fc791edaa540910a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a229a4786deeddd59c6091247a8c8a6" id="r_a7a229a4786deeddd59c6091247a8c8a6"><td align="right" class="memItemLeft" valign="top"><a id="a7a229a4786deeddd59c6091247a8c8a6" name="a7a229a4786deeddd59c6091247a8c8a6"></a>
+ </td><td class="memItemRight" valign="bottom"><b>offset</b></td></tr>
+<tr class="separator:a7a229a4786deeddd59c6091247a8c8a6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36f573395010262fc0098f4293b046d6" id="r_a36f573395010262fc0098f4293b046d6"><td align="right" class="memItemLeft" valign="top"><a id="a36f573395010262fc0098f4293b046d6" name="a36f573395010262fc0098f4293b046d6"></a>
+ </td><td class="memItemRight" valign="bottom"><b>angle_scalar</b></td></tr>
+<tr class="separator:a36f573395010262fc0098f4293b046d6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1dd8abad77abae6868b08eadaf67da7c" id="r_a1dd8abad77abae6868b08eadaf67da7c"><td align="right" class="memItemLeft" valign="top"><a id="a1dd8abad77abae6868b08eadaf67da7c" name="a1dd8abad77abae6868b08eadaf67da7c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>FOV_offset</b></td></tr>
+<tr class="separator:a1dd8abad77abae6868b08eadaf67da7c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afe26a3798802df250ffe6cdbd368200a" id="r_afe26a3798802df250ffe6cdbd368200a"><td align="right" class="memItemLeft" valign="top"><a id="afe26a3798802df250ffe6cdbd368200a" name="afe26a3798802df250ffe6cdbd368200a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>FOV_scalar</b></td></tr>
+<tr class="separator:afe26a3798802df250ffe6cdbd368200a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a6b6fb557d8d37d59700faf4e4c9167" id="r_a1a6b6fb557d8d37d59700faf4e4c9167"><td align="right" class="memItemLeft" valign="top"><a id="a1a6b6fb557d8d37d59700faf4e4c9167" name="a1a6b6fb557d8d37d59700faf4e4c9167"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="separator:a1a6b6fb557d8d37d59700faf4e4c9167"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0954d2593022a7b36c4d0bb8482a75db" id="r_a0954d2593022a7b36c4d0bb8482a75db"><td align="right" class="memItemLeft" valign="top"><a id="a0954d2593022a7b36c4d0bb8482a75db" name="a0954d2593022a7b36c4d0bb8482a75db"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_up</b></td></tr>
+<tr class="separator:a0954d2593022a7b36c4d0bb8482a75db"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a496e1db048bc99ad2c3705fb795eed76" id="r_a496e1db048bc99ad2c3705fb795eed76"><td align="right" class="memItemLeft" valign="top"><a id="a496e1db048bc99ad2c3705fb795eed76" name="a496e1db048bc99ad2c3705fb795eed76"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_down</b></td></tr>
+<tr class="separator:a496e1db048bc99ad2c3705fb795eed76"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a01e2b5b5b565eb5086648de8777c8356" id="r_a01e2b5b5b565eb5086648de8777c8356"><td align="right" class="memItemLeft" valign="top"><a id="a01e2b5b5b565eb5086648de8777c8356" name="a01e2b5b5b565eb5086648de8777c8356"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_right</b></td></tr>
+<tr class="separator:a01e2b5b5b565eb5086648de8777c8356"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15446f066aec55b86eb9e2e7b5a4596f" id="r_a15446f066aec55b86eb9e2e7b5a4596f"><td align="right" class="memItemLeft" valign="top"><a id="a15446f066aec55b86eb9e2e7b5a4596f" name="a15446f066aec55b86eb9e2e7b5a4596f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_left</b></td></tr>
+<tr class="separator:a15446f066aec55b86eb9e2e7b5a4596f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac26e9bd79ca26896b6a1a750ae3fb8b2" id="r_ac26e9bd79ca26896b6a1a750ae3fb8b2"><td align="right" class="memItemLeft" valign="top"><a id="ac26e9bd79ca26896b6a1a750ae3fb8b2" name="ac26e9bd79ca26896b6a1a750ae3fb8b2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_r_ctrl</b></td></tr>
+<tr class="separator:ac26e9bd79ca26896b6a1a750ae3fb8b2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a37d02626e4d5092a38453ec495255849" id="r_a37d02626e4d5092a38453ec495255849"><td align="right" class="memItemLeft" valign="top"><a id="a37d02626e4d5092a38453ec495255849" name="a37d02626e4d5092a38453ec495255849"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_r_alt</b></td></tr>
+<tr class="separator:a37d02626e4d5092a38453ec495255849"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac931fb7918dc406ce1d0c42f452b4414" id="r_ac931fb7918dc406ce1d0c42f452b4414"><td align="right" class="memItemLeft" valign="top"><a id="ac931fb7918dc406ce1d0c42f452b4414" name="ac931fb7918dc406ce1d0c42f452b4414"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_CenterBack</b></td></tr>
+<tr class="separator:ac931fb7918dc406ce1d0c42f452b4414"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9d7063b443d8da49442552b7b432771" id="r_aa9d7063b443d8da49442552b7b432771"><td align="right" class="memItemLeft" valign="top"><a id="aa9d7063b443d8da49442552b7b432771" name="aa9d7063b443d8da49442552b7b432771"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_AngOrAngV</b></td></tr>
+<tr class="separator:aa9d7063b443d8da49442552b7b432771"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a81dad5a8aabf1e8ff91cd6795732a1" id="r_a4a81dad5a8aabf1e8ff91cd6795732a1"><td align="right" class="memItemLeft" valign="top"><a id="a4a81dad5a8aabf1e8ff91cd6795732a1" name="a4a81dad5a8aabf1e8ff91cd6795732a1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_FovOrFL</b></td></tr>
+<tr class="separator:a4a81dad5a8aabf1e8ff91cd6795732a1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15a0158cabc1b1e251261f369f59ff0a" id="r_a15a0158cabc1b1e251261f369f59ff0a"><td align="right" class="memItemLeft" valign="top"><a id="a15a0158cabc1b1e251261f369f59ff0a" name="a15a0158cabc1b1e251261f369f59ff0a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_Ang_Sub</b></td></tr>
+<tr class="separator:a15a0158cabc1b1e251261f369f59ff0a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae8eebfc33ff6a8db9d04510fd5af9e01" id="r_ae8eebfc33ff6a8db9d04510fd5af9e01"><td align="right" class="memItemLeft" valign="top"><a id="ae8eebfc33ff6a8db9d04510fd5af9e01" name="ae8eebfc33ff6a8db9d04510fd5af9e01"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_Ang_Add</b></td></tr>
+<tr class="separator:ae8eebfc33ff6a8db9d04510fd5af9e01"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeae8e2d0776bf63bb7486f5c10537d7f" id="r_aeae8e2d0776bf63bb7486f5c10537d7f"><td align="right" class="memItemLeft" valign="top"><a id="aeae8e2d0776bf63bb7486f5c10537d7f" name="aeae8e2d0776bf63bb7486f5c10537d7f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_OZ_Next</b></td></tr>
+<tr class="separator:aeae8e2d0776bf63bb7486f5c10537d7f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9a29f95b30e5e8a9e58d3a995ab6d07d" id="r_a9a29f95b30e5e8a9e58d3a995ab6d07d"><td align="right" class="memItemLeft" valign="top"><a id="a9a29f95b30e5e8a9e58d3a995ab6d07d" name="a9a29f95b30e5e8a9e58d3a995ab6d07d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_OZ_Back</b></td></tr>
+<tr class="separator:a9a29f95b30e5e8a9e58d3a995ab6d07d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67728a5fe4add59eff25387371802206" id="r_a67728a5fe4add59eff25387371802206"><td align="right" class="memItemLeft" valign="top"><a id="a67728a5fe4add59eff25387371802206" name="a67728a5fe4add59eff25387371802206"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_Track</b></td></tr>
+<tr class="separator:a67728a5fe4add59eff25387371802206"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a18811427303ff244994a2a88b0ec9ffc" id="r_a18811427303ff244994a2a88b0ec9ffc"><td align="right" class="memItemLeft" valign="top"><a id="a18811427303ff244994a2a88b0ec9ffc" name="a18811427303ff244994a2a88b0ec9ffc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>press_Sensor</b></td></tr>
+<tr class="separator:a18811427303ff244994a2a88b0ec9ffc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aacf51b8a1085db1779c5611bf443c1a8" id="r_aacf51b8a1085db1779c5611bf443c1a8"><td align="right" class="memItemLeft" valign="top"><a id="aacf51b8a1085db1779c5611bf443c1a8" name="aacf51b8a1085db1779c5611bf443c1a8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>is_press_ctrl</b></td></tr>
+<tr class="separator:aacf51b8a1085db1779c5611bf443c1a8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a68bcc9933b42925ec6831d0850f7c774" id="r_a68bcc9933b42925ec6831d0850f7c774"><td align="right" class="memItemLeft" valign="top"><a id="a68bcc9933b42925ec6831d0850f7c774" name="a68bcc9933b42925ec6831d0850f7c774"></a>
+ </td><td class="memItemRight" valign="bottom"><b>is_press_alt</b></td></tr>
+<tr class="separator:a68bcc9933b42925ec6831d0850f7c774"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae11b3deb3de3df7dc48e439074023e35" id="r_ae11b3deb3de3df7dc48e439074023e35"><td align="right" class="memItemLeft" valign="top"><a id="ae11b3deb3de3df7dc48e439074023e35" name="ae11b3deb3de3df7dc48e439074023e35"></a>
+ </td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
+<tr class="separator:ae11b3deb3de3df7dc48e439074023e35"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8790f5c33b2835b269634c499df86ca3" id="r_a8790f5c33b2835b269634c499df86ca3"><td align="right" class="memItemLeft" valign="top"><a id="a8790f5c33b2835b269634c499df86ca3" name="a8790f5c33b2835b269634c499df86ca3"></a>
+ </td><td class="memItemRight" valign="bottom"><b>FOVOrFocalLength</b></td></tr>
+<tr class="separator:a8790f5c33b2835b269634c499df86ca3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36cf4686a939282cb3b23820875acd31" id="r_a36cf4686a939282cb3b23820875acd31"><td align="right" class="memItemLeft" valign="top"><a id="a36cf4686a939282cb3b23820875acd31" name="a36cf4686a939282cb3b23820875acd31"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CameraFlag</b></td></tr>
+<tr class="separator:a36cf4686a939282cb3b23820875acd31"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a113d33f0eafc55b46d8cb3e2f9b4eeea" id="r_a113d33f0eafc55b46d8cb3e2f9b4eeea"><td align="right" class="memItemLeft" valign="top"><a id="a113d33f0eafc55b46d8cb3e2f9b4eeea" name="a113d33f0eafc55b46d8cb3e2f9b4eeea"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CameraFOV</b></td></tr>
+<tr class="separator:a113d33f0eafc55b46d8cb3e2f9b4eeea"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a985f9c1511bb2e8d62eb76eb1397bc59" id="r_a985f9c1511bb2e8d62eb76eb1397bc59"><td align="right" class="memItemLeft" valign="top"><a id="a985f9c1511bb2e8d62eb76eb1397bc59" name="a985f9c1511bb2e8d62eb76eb1397bc59"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CameraFocalLength</b></td></tr>
+<tr class="separator:a985f9c1511bb2e8d62eb76eb1397bc59"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3811391911596b5874f0375435546c01" id="r_a3811391911596b5874f0375435546c01"><td align="right" class="memItemLeft" valign="top"><a id="a3811391911596b5874f0375435546c01" name="a3811391911596b5874f0375435546c01"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CmaeraFocalLengthBaseNum</b></td></tr>
+<tr class="separator:a3811391911596b5874f0375435546c01"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab3cf220b0ef6fe6ba4f90de1e7cc8859" id="r_ab3cf220b0ef6fe6ba4f90de1e7cc8859"><td align="right" class="memItemLeft" valign="top"><a id="ab3cf220b0ef6fe6ba4f90de1e7cc8859" name="ab3cf220b0ef6fe6ba4f90de1e7cc8859"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CurOZ</b></td></tr>
+<tr class="separator:ab3cf220b0ef6fe6ba4f90de1e7cc8859"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5fd7b298f7cd8e6d589aa118306fb612" id="r_a5fd7b298f7cd8e6d589aa118306fb612"><td align="right" class="memItemLeft" valign="top"><a id="a5fd7b298f7cd8e6d589aa118306fb612" name="a5fd7b298f7cd8e6d589aa118306fb612"></a>
+ </td><td class="memItemRight" valign="bottom"><b>OZBaseNum</b></td></tr>
+<tr class="separator:a5fd7b298f7cd8e6d589aa118306fb612"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaba7463e1421d7f5abfd4318a0174b0d" id="r_aaba7463e1421d7f5abfd4318a0174b0d"><td align="right" class="memItemLeft" valign="top"><a id="aaba7463e1421d7f5abfd4318a0174b0d" name="aaba7463e1421d7f5abfd4318a0174b0d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>TrackID</b></td></tr>
+<tr class="separator:aaba7463e1421d7f5abfd4318a0174b0d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a234d6bdc83b66050c5f77b7dccd6b2f9" id="r_a234d6bdc83b66050c5f77b7dccd6b2f9"><td align="right" class="memItemLeft" valign="top"><a id="a234d6bdc83b66050c5f77b7dccd6b2f9" name="a234d6bdc83b66050c5f77b7dccd6b2f9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>SensorTypeID</b></td></tr>
+<tr class="separator:a234d6bdc83b66050c5f77b7dccd6b2f9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa65978e279e77a63198ec9ee1a2b8343" id="r_aa65978e279e77a63198ec9ee1a2b8343"><td align="right" class="memItemLeft" valign="top"><a id="aa65978e279e77a63198ec9ee1a2b8343" name="aa65978e279e77a63198ec9ee1a2b8343"></a>
+ </td><td class="memItemRight" valign="bottom"><b>leftPress</b></td></tr>
+<tr class="separator:aa65978e279e77a63198ec9ee1a2b8343"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a78fadf14da20e1f20fa595e523dec46b" id="r_a78fadf14da20e1f20fa595e523dec46b"><td align="right" class="memItemLeft" valign="top"><a id="a78fadf14da20e1f20fa595e523dec46b" name="a78fadf14da20e1f20fa595e523dec46b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rightPress</b></td></tr>
+<tr class="separator:a78fadf14da20e1f20fa595e523dec46b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af54babba7feff82eac6f68c76b4d1863" id="r_af54babba7feff82eac6f68c76b4d1863"><td align="right" class="memItemLeft" valign="top"><a id="af54babba7feff82eac6f68c76b4d1863" name="af54babba7feff82eac6f68c76b4d1863"></a>
+ </td><td class="memItemRight" valign="bottom"><b>upPress</b></td></tr>
+<tr class="separator:af54babba7feff82eac6f68c76b4d1863"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a43f5f8bb2b2762dfd6fcfc0f75fd0b62" id="r_a43f5f8bb2b2762dfd6fcfc0f75fd0b62"><td align="right" class="memItemLeft" valign="top"><a id="a43f5f8bb2b2762dfd6fcfc0f75fd0b62" name="a43f5f8bb2b2762dfd6fcfc0f75fd0b62"></a>
+ </td><td class="memItemRight" valign="bottom"><b>downPress</b></td></tr>
+<tr class="separator:a43f5f8bb2b2762dfd6fcfc0f75fd0b62"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32915607bba319989886df94c15be186" id="r_a32915607bba319989886df94c15be186"><td align="right" class="memItemLeft" valign="top"><a id="a32915607bba319989886df94c15be186" name="a32915607bba319989886df94c15be186"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ctrlLeftPress</b></td></tr>
+<tr class="separator:a32915607bba319989886df94c15be186"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3b0ab7be503a3d8c5735310eb66465e8" id="r_a3b0ab7be503a3d8c5735310eb66465e8"><td align="right" class="memItemLeft" valign="top"><a id="a3b0ab7be503a3d8c5735310eb66465e8" name="a3b0ab7be503a3d8c5735310eb66465e8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ctrlRightPress</b></td></tr>
+<tr class="separator:a3b0ab7be503a3d8c5735310eb66465e8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a91a2ab42f95ff6a26f8f2ce9b6a49fdc" id="r_a91a2ab42f95ff6a26f8f2ce9b6a49fdc"><td align="right" class="memItemLeft" valign="top"><a id="a91a2ab42f95ff6a26f8f2ce9b6a49fdc" name="a91a2ab42f95ff6a26f8f2ce9b6a49fdc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>altUpPress</b></td></tr>
+<tr class="separator:a91a2ab42f95ff6a26f8f2ce9b6a49fdc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a249c8eb4c30d282b753bb684744e175d" id="r_a249c8eb4c30d282b753bb684744e175d"><td align="right" class="memItemLeft" valign="top"><a id="a249c8eb4c30d282b753bb684744e175d" name="a249c8eb4c30d282b753bb684744e175d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>altDownPress</b></td></tr>
+<tr class="separator:a249c8eb4c30d282b753bb684744e175d"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>KeyCtrl结构体类。用于通过键盘控制吊舱相机的运动和参数调节 </p>
+<pre class="fragment">    该类是通过键盘控制吊舱相机运动
+        上(↑)下(↓)键控制俯仰角(pitch)；
+        左(←)右(→)键控制偏航角(yaw);
+        右Ctrl建 + 左(←)右(→) 控制横滚角(roll)
+        焦距调节 alt+上, alt+下
+</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>KeyCtrl的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化各种参数</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">    增加参数
+        mask_***: &amp;比较, 0: 未激活  1: 激活
+        press_**: 按键控制
+        FOVOrFocalLength: 视场角/焦距       模式切换的时候会同步焦距/视场角
+        CameraFocalLength: 焦距
+        CmaeraFocalLengthBaseNum: 焦距步长
+        AngOrAngV: 角度/角速度      切换至角度模式控制的时候会同步下当前角度
+        AngVel: 角速度
+        CurOZ: 当前变倍, 默认1
+        OZBaseNum: 变倍基数
+        TrackID: 追踪目标的ID
+
+    控制按键
+        上、下、左、右: Pitch、Yaw角度和角速度控制
+        Num1: 角度/角速度控制模式切换
+        Num3: 焦距/视场角控制模式切换
+        Num5: 相机回中(只调整角度为初始化状态, 不会调整焦距)
+        Num7、9: 焦距/视场角控制
+        +、-: 光学变倍, 基于基数变倍 (非当前焦距)
+        /: 追踪默认目标ID(1000 仅供测试
+        *: 切换传感器类型(0:图像 1:热力图 2:红外灰度)
+</pre> <div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="392" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_abdd362d5f799ad16b5d6700efe590290_cgraph.svg" width="338"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad05b8d06904b5a962cb4231c5bf2e126" name="ad05b8d06904b5a962cb4231c5bf2e126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05b8d06904b5a962cb4231c5bf2e126">◆ </a></span>altDownPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">altDownPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制视场角（FOV）的放大 </p>
+<h1><a class="anchor" id="autotoc_md356"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_ad05b8d06904b5a962cb4231c5bf2e126_icgraph.svg" width="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a888236f8e6ea5429241e8dfcb3926507" name="a888236f8e6ea5429241e8dfcb3926507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888236f8e6ea5429241e8dfcb3926507">◆ </a></span>altUpPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">altUpPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制视场角（FOV）的缩小 </p>
+<h1><a class="anchor" id="autotoc_md355"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 <br/>
+</dd></dl>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a888236f8e6ea5429241e8dfcb3926507_icgraph.svg" width="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad59bd5ab0e4894fa0da10325ac89e7f5" name="ad59bd5ab0e4894fa0da10325ac89e7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59bd5ab0e4894fa0da10325ac89e7f5">◆ </a></span>callback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">callback </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>key_v</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理键盘事件的回调方法 </p>
+<h1><a class="anchor" id="autotoc_md361"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">key_v</td><td>键盘事件 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="342" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_ad59bd5ab0e4894fa0da10325ac89e7f5_cgraph.svg" width="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a320f5e5fbf7d6a7ea726c31ad4af6cf9" name="a320f5e5fbf7d6a7ea726c31ad4af6cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320f5e5fbf7d6a7ea726c31ad4af6cf9">◆ </a></span>CheckAngleWid()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">CheckAngleWid </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将相机的所有角度限制在[-π, π]范围内 </p>
+<h1><a class="anchor" id="autotoc_md360"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无</dd></dl>
+<pre class="fragment">每个角度范围(-pi,pi)</pre> <div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a320f5e5fbf7d6a7ea726c31ad4af6cf9_cgraph.svg" width="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a320f5e5fbf7d6a7ea726c31ad4af6cf9_icgraph.svg" width="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ac703326e2e6c88041c5b42b784d5d596" name="ac703326e2e6c88041c5b42b784d5d596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac703326e2e6c88041c5b42b784d5d596">◆ </a></span>ctrlLeftPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ctrlLeftPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制横滚角（Roll）的向左调整 </p>
+<h1><a class="anchor" id="autotoc_md353"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_ac703326e2e6c88041c5b42b784d5d596_icgraph.svg" width="328"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a5515886c5ab905d7b15877b469d5363a" name="a5515886c5ab905d7b15877b469d5363a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5515886c5ab905d7b15877b469d5363a">◆ </a></span>ctrlRightPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ctrlRightPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制横滚角（Roll）的向右调整 </p>
+<h1><a class="anchor" id="autotoc_md354"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a5515886c5ab905d7b15877b469d5363a_icgraph.svg" width="338"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a11ebf9f735d1e2ebf6d8218cd6dffcbd" name="a11ebf9f735d1e2ebf6d8218cd6dffcbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ebf9f735d1e2ebf6d8218cd6dffcbd">◆ </a></span>downPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">downPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制俯仰角（Pitch）的向下调整 </p>
+<h1><a class="anchor" id="autotoc_md350"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a11ebf9f735d1e2ebf6d8218cd6dffcbd_icgraph.svg" width="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ab76f3943f2f5fbb42bf2cf361c220598" name="ab76f3943f2f5fbb42bf2cf361c220598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76f3943f2f5fbb42bf2cf361c220598">◆ </a></span>fun()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">fun </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>angle</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>静态方法，将角度限制在[-π, π]范围内 </p>
+<h1><a class="anchor" id="autotoc_md359"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_ab76f3943f2f5fbb42bf2cf361c220598_icgraph.svg" width="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a95139c576bf995df8d2af33bfc8d04e7" name="a95139c576bf995df8d2af33bfc8d04e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95139c576bf995df8d2af33bfc8d04e7">◆ </a></span>getCameraFOV()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getCameraFOV </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取相机的当前视场角 </p>
+<h1><a class="anchor" id="autotoc_md347"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相机的当前视场角 </dd></dl>
+</div>
+</div>
+<a id="ad8376fcf609eb1a5d6d3176c4482f424" name="ad8376fcf609eb1a5d6d3176c4482f424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8376fcf609eb1a5d6d3176c4482f424">◆ </a></span>getPitch()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getPitch </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取相机的当前俯仰角 </p>
+<h1><a class="anchor" id="autotoc_md345"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相机的当前俯仰角 </dd></dl>
+<div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_ad8376fcf609eb1a5d6d3176c4482f424_icgraph.svg" width="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="af96365555801d2438e9f3b2941194d2f" name="af96365555801d2438e9f3b2941194d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96365555801d2438e9f3b2941194d2f">◆ </a></span>getRadiansAngEular()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getRadiansAngEular </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取相机的当前欧拉角 </p>
+<h1><a class="anchor" id="autotoc_md348"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相机的当前欧拉角 </dd></dl>
+</div>
+</div>
+<a id="aee4c6d7edd99e2259c236a85fb94f2c4" name="aee4c6d7edd99e2259c236a85fb94f2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4c6d7edd99e2259c236a85fb94f2c4">◆ </a></span>getRoll()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getRoll </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取相机的当前滚转角 </p>
+<h1><a class="anchor" id="autotoc_md346"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相机的当前滚转角 </dd></dl>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_aee4c6d7edd99e2259c236a85fb94f2c4_icgraph.svg" width="178"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ae40cecfd81a027044bbb1c9ae7462814" name="ae40cecfd81a027044bbb1c9ae7462814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40cecfd81a027044bbb1c9ae7462814">◆ </a></span>getYaw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getYaw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取相机的当前偏航角 </p>
+<h1><a class="anchor" id="autotoc_md344"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相机的当前偏航角 </dd></dl>
+<div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_ae40cecfd81a027044bbb1c9ae7462814_icgraph.svg" width="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aedf1ff13bec1ee22492f69bf7db30fcd" name="aedf1ff13bec1ee22492f69bf7db30fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf1ff13bec1ee22492f69bf7db30fcd">◆ </a></span>initkey()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">initkey </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>初始化键盘快捷键。为每个方向键、Ctrl+方向键和Alt+方向键添加快捷键，并将其绑定到相应的方法上 </p>
+<h1><a class="anchor" id="autotoc_md362"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="392" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_aedf1ff13bec1ee22492f69bf7db30fcd_cgraph.svg" width="223"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_aedf1ff13bec1ee22492f69bf7db30fcd_icgraph.svg" width="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a483948c8f5e0fbe5b4a664b4c05ee77b" name="a483948c8f5e0fbe5b4a664b4c05ee77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483948c8f5e0fbe5b4a664b4c05ee77b">◆ </a></span>inner()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">inner </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>angle</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>i</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据当前角度值和偏移量将角度归零 </p>
+<h1><a class="anchor" id="autotoc_md358"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">angle</td><td>角度值 </td></tr>
+<tr><td class="paramname">i</td><td>欧拉角中的第i+1位 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a483948c8f5e0fbe5b4a664b4c05ee77b_icgraph.svg" width="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a40642f77e9a686fbca817d2ece700035" name="a40642f77e9a686fbca817d2ece700035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40642f77e9a686fbca817d2ece700035">◆ </a></span>leftPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">leftPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制偏航角（Yaw）的向左调整 </p>
+<h1><a class="anchor" id="autotoc_md352"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-16-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-16-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-16-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a40642f77e9a686fbca817d2ece700035_icgraph.svg" width="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a585888e6fe54ce7163cdbaa757a37064" name="a585888e6fe54ce7163cdbaa757a37064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585888e6fe54ce7163cdbaa757a37064">◆ </a></span>Reset()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Reset </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将相机的滚转角、俯仰角和偏航角设置为当前的滚转角、俯仰角和偏航角 </p>
+<h1><a class="anchor" id="autotoc_md357"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 <br/>
+</dd></dl>
+<div class="dynheader closed" id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-17-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-17-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-17-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="190" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a585888e6fe54ce7163cdbaa757a37064_cgraph.svg" width="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a1d05f29e7c4570cfb737cc73496c3c51" name="a1d05f29e7c4570cfb737cc73496c3c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d05f29e7c4570cfb737cc73496c3c51">◆ </a></span>rightPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">rightPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制偏航角（Yaw）的向右调整 </p>
+<h1><a class="anchor" id="autotoc_md351"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-18-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-18-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-18-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_a1d05f29e7c4570cfb737cc73496c3c51_icgraph.svg" width="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aac66fd641e8c656f5a4984ac387b34e9" name="aac66fd641e8c656f5a4984ac387b34e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac66fd641e8c656f5a4984ac387b34e9">◆ </a></span>upPress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">upPress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>控制俯仰角的增大，根据当前模式（角度或角速度）进行相应的处理 </p>
+<h1><a class="anchor" id="autotoc_md349"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-19-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-19-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-19-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl_aac66fd641e8c656f5a4984ac387b34e9_icgraph.svg" width="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="CameraCtrlApi_8py.html">CameraCtrlApi.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

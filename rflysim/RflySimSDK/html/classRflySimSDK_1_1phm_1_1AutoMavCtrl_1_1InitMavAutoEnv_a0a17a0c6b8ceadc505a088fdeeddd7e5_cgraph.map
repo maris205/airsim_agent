@@ -1,0 +1,7 @@
+<map id="BEMap" name="BEMap">
+<area shape="rect" id="Node000001" title="修改批处理文件以设置地图的方法。" alt="" coords="5,31,70,57"/>
+<area shape="rect" id="Node000002" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="118,5,328,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,37,105,32,106,37,71,42"/>
+<area shape="rect" id="Node000003" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="130,56,316,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="71,46,115,52,114,57,70,51"/>
+</map>

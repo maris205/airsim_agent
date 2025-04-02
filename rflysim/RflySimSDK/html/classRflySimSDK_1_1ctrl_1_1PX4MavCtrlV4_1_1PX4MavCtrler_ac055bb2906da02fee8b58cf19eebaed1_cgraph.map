@@ -1,0 +1,5 @@
+<map id="getTrueDataMsg" name="getTrueDataMsg">
+<area shape="rect" id="Node000001" title="从30100串口监听真是数据，更新Pixhawk状态" alt="" coords="5,5,124,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a630e159c1669cf72f802f12e534d1cf8" title="从套接字或 Redis 订阅中获取数据" alt="" coords="172,5,297,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,16,156,16,156,21,124,21"/>
+</map>

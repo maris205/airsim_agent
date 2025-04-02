@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflySim3D场景所需文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflySim3D场景所需文件</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md328"></a> RflySim3D中完整的仿真场景需要两部分信息</p>
+<h2><a class="anchor" id="autotoc_md329"></a>
+1.场景文件(”****.umap”)</h2>
+<p>需要将<a href="https://docs.unrealengine.com/5.1/zh-CN/cooking-content-in-unreal-engine/">烘焙</a>完成后“【UE项目主文件夹】\Saved\Cooked\WindowsNoEditor\【工程名】\Content”目录下的场景文件拷贝到【安装目录】\RflySim3D\RflySim3D\Content目录下。</p>
+<p>注意：</p>
+<p>烘焙完拷贝出来后不能再修改得到文件和文件夹的名字，也不能在\RflySim3D\Content目录下新建文件夹。重命名只能在UE编辑器中进行。</p>
+<p>每个”****.umap”（烘焙前后有区别）地图文件对应了一个独立的三维场景，RflySim3D/RflySimUE5会自动扫描PX4PSP\RflySim3D\RflySim3D\Content目录下所有的.umap。</p>
+<p>场景中水平面以下部分的高度不能超过50m（这是由CopterSim中的dll模型初始点参考海拔设置的，由*init.m文件中的ModelParam_envAlitude参数指定），为了确保场景最低点在水平面上方，应该将场景中最低点设为场景参考点。下面以OldFactory场景为例说明这一过程：</p>
+<p>先将场景导入RflySim3D，在RflySim3D中目测该场景最低点，双击读取该点高程信息，这里说明该场景最低点在水平面下方70m处。</p>
+<p><a data_lightbox="image" href="./image-20241009101747498.png"><img alt="image-20241009101747498" class="inline thumbnail" height="auto" src="./image-20241009101747498.png" width="100"/></a> <br/>
+</p>
+<p>因此在UE中打开该场景的关卡蓝图，如下将场景最低点（水平面下方7000cm处）设为参考点，相当于把场景整体上移70m，保存关卡蓝图，重新把场景打包导入RflySim3D。</p>
+<p><a data_lightbox="image" href="./image-20241009101755500.png"><img alt="image-20241009101755500" class="inline thumbnail" height="auto" src="./image-20241009101755500.png" width="100"/></a></p>
+<h2><a class="anchor" id="autotoc_md330"></a>
+2.地形高程信息(“****.png”)</h2>
+<p>场景导入前，在UE编辑器中观测并记录场景的大致范围（单位为厘米）；烘焙场景并导入RflySim3D后，在RflySim3D中利用比”****.umap”场景地形略大的范围（单位为米）使用RflyScanTerrainH（扫描地形）命令，这将在PX4PSP\RflySim3D目录找到对应“****.png”和“****.txt”文件，分别存入了该场景的高程信息和地形校准及范围。将这两个文件拷贝到PX4PSP\CopterSim\external\map中即可完成导入。</p>
+<p>注意：</p>
+<p>png地形文件实际上是以图片形式存储的二维矩阵，包含了场景的高程图。以png格式存储矩阵能够很好的实现高程矩阵的压缩，便于节省空间。</p>
+<p>png的高程文件并不包含坐标原点、缩放尺度、场景范围等信息，因此需要一个校正文件，RflySim平台采用txt格式输入9维数组或12维数组（多出经纬高地理基准信息）传入校正信息。</p>
+<h2><a class="anchor" id="autotoc_md331"></a>
+3.地形校准数据(“****.txt”)</h2>
+<p>平台中txt校正文件存储的是右上角三维坐标点（xy全为正，z向上为正）、左下角三维坐标点（xy全为负，z向上为正）、第3点三维坐标点，单位均为厘米。前两个点的目的是为了确认地形的范围和中心坐标，第3点坐标可自行选取，理论上需要尽量在高度上与前两个点有落差，用于校正高度尺度。</p>
+<p>除此之外，当在RflySim3D中使用cesium全球大场景（仅个人高级版以上）时，在txt中，还可以上述9维数据之后输入三维GPS地形数据，按纬度、经度、高度顺序加入，可配置QGroundControl中对应的显示基准坐标。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

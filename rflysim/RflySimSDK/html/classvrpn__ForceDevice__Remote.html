@@ -1,0 +1,976 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_ForceDevice_Remote类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-static-methods">静态 Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__ForceDevice__Remote-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_ForceDevice_Remote类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_ForceDevice_Remote 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="262" scrolling="no" src="classvrpn__ForceDevice__Remote__inherit__graph.svg" width="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_ForceDevice_Remote 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="562" scrolling="no" src="classvrpn__ForceDevice__Remote__coll__graph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aaf5165db45c68ef61ebe8ed0db1fefeb" id="r_aaf5165db45c68ef61ebe8ed0db1fefeb"><td align="right" class="memItemLeft" valign="top"><a id="aaf5165db45c68ef61ebe8ed0db1fefeb" name="aaf5165db45c68ef61ebe8ed0db1fefeb"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_ForceDevice_Remote</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *cn=NULL)</td></tr>
+<tr class="separator:aaf5165db45c68ef61ebe8ed0db1fefeb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4604ca1701752c050215810d68d7df9" id="r_ab4604ca1701752c050215810d68d7df9"><td align="right" class="memItemLeft" valign="top"><a id="ab4604ca1701752c050215810d68d7df9" name="ab4604ca1701752c050215810d68d7df9"></a>
+void </td><td class="memItemRight" valign="bottom"><b>sendSurface</b> (void)</td></tr>
+<tr class="separator:ab4604ca1701752c050215810d68d7df9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8c5695444d5f3ce3f757480a3771adb3" id="r_a8c5695444d5f3ce3f757480a3771adb3"><td align="right" class="memItemLeft" valign="top"><a id="a8c5695444d5f3ce3f757480a3771adb3" name="a8c5695444d5f3ce3f757480a3771adb3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>startSurface</b> (void)</td></tr>
+<tr class="separator:a8c5695444d5f3ce3f757480a3771adb3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a987b50b2e5fd458ce5231c36cf72174a" id="r_a987b50b2e5fd458ce5231c36cf72174a"><td align="right" class="memItemLeft" valign="top"><a id="a987b50b2e5fd458ce5231c36cf72174a" name="a987b50b2e5fd458ce5231c36cf72174a"></a>
+void </td><td class="memItemRight" valign="bottom"><b>stopSurface</b> (void)</td></tr>
+<tr class="separator:a987b50b2e5fd458ce5231c36cf72174a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a47fd7471cc042c3e70155947cf87e75b" id="r_a47fd7471cc042c3e70155947cf87e75b"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a47fd7471cc042c3e70155947cf87e75b">setVertex</a> (vrpn_int32 vertNum, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a47fd7471cc042c3e70155947cf87e75b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64cd527a61aa952c1c6a010c875adbe1" id="r_a64cd527a61aa952c1c6a010c875adbe1"><td align="right" class="memItemLeft" valign="top"><a id="a64cd527a61aa952c1c6a010c875adbe1" name="a64cd527a61aa952c1c6a010c875adbe1"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setNormal</b> (vrpn_int32 normNum, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a64cd527a61aa952c1c6a010c875adbe1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac7dc59e9eb5c8b2acc058e442f014865" id="r_ac7dc59e9eb5c8b2acc058e442f014865"><td align="right" class="memItemLeft" valign="top"><a id="ac7dc59e9eb5c8b2acc058e442f014865" name="ac7dc59e9eb5c8b2acc058e442f014865"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setTriangle</b> (vrpn_int32 triNum, vrpn_int32 vert0, vrpn_int32 vert1, vrpn_int32 vert2, vrpn_int32 norm0=-1, vrpn_int32 norm1=-1, vrpn_int32 norm2=-1)</td></tr>
+<tr class="separator:ac7dc59e9eb5c8b2acc058e442f014865"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8f37ca68b0730ce0787f10039c2a8cb8" id="r_a8f37ca68b0730ce0787f10039c2a8cb8"><td align="right" class="memItemLeft" valign="top"><a id="a8f37ca68b0730ce0787f10039c2a8cb8" name="a8f37ca68b0730ce0787f10039c2a8cb8"></a>
+void </td><td class="memItemRight" valign="bottom"><b>removeTriangle</b> (vrpn_int32 triNum)</td></tr>
+<tr class="separator:a8f37ca68b0730ce0787f10039c2a8cb8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af7cdf66cb30d1f0c3b2711710ec461eb" id="r_af7cdf66cb30d1f0c3b2711710ec461eb"><td align="right" class="memItemLeft" valign="top"><a id="af7cdf66cb30d1f0c3b2711710ec461eb" name="af7cdf66cb30d1f0c3b2711710ec461eb"></a>
+void </td><td class="memItemRight" valign="bottom"><b>updateTrimeshChanges</b> ()</td></tr>
+<tr class="separator:af7cdf66cb30d1f0c3b2711710ec461eb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1425b678a1bae3692aed81e5953870e3" id="r_a1425b678a1bae3692aed81e5953870e3"><td align="right" class="memItemLeft" valign="top"><a id="a1425b678a1bae3692aed81e5953870e3" name="a1425b678a1bae3692aed81e5953870e3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setTrimeshTransform</b> (vrpn_float32 homMatrix[16])</td></tr>
+<tr class="separator:a1425b678a1bae3692aed81e5953870e3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a543578247a2d17e276c0886da9a452c8" id="r_a543578247a2d17e276c0886da9a452c8"><td align="right" class="memItemLeft" valign="top"><a id="a543578247a2d17e276c0886da9a452c8" name="a543578247a2d17e276c0886da9a452c8"></a>
+void </td><td class="memItemRight" valign="bottom"><b>clearTrimesh</b> (void)</td></tr>
+<tr class="separator:a543578247a2d17e276c0886da9a452c8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afb6f8b4691df5408840fcabab92e74e4" id="r_afb6f8b4691df5408840fcabab92e74e4"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#afb6f8b4691df5408840fcabab92e74e4">addObject</a> (vrpn_int32 objNum, vrpn_int32 ParentNum=-1)</td></tr>
+<tr class="separator:afb6f8b4691df5408840fcabab92e74e4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a24d62381a68866145f5bec1b1caa8c1b" id="r_a24d62381a68866145f5bec1b1caa8c1b"><td align="right" class="memItemLeft" valign="top"><a id="a24d62381a68866145f5bec1b1caa8c1b" name="a24d62381a68866145f5bec1b1caa8c1b"></a>
+void </td><td class="memItemRight" valign="bottom"><b>addObjectExScene</b> (vrpn_int32 objNum)</td></tr>
+<tr class="separator:a24d62381a68866145f5bec1b1caa8c1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95de8723163b9ab036f87c3b6571fd86" id="r_a95de8723163b9ab036f87c3b6571fd86"><td align="right" class="memItemLeft" valign="top"><a id="a95de8723163b9ab036f87c3b6571fd86" name="a95de8723163b9ab036f87c3b6571fd86"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectVertex</b> (vrpn_int32 objNum, vrpn_int32 vertNum, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a95de8723163b9ab036f87c3b6571fd86"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c7101da24af01b45825ec88e28dd692" id="r_a9c7101da24af01b45825ec88e28dd692"><td align="right" class="memItemLeft" valign="top"><a id="a9c7101da24af01b45825ec88e28dd692" name="a9c7101da24af01b45825ec88e28dd692"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectNormal</b> (vrpn_int32 objNum, vrpn_int32 normNum, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a9c7101da24af01b45825ec88e28dd692"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb10064f8e2c204fb6f3a13c5e8d1efe" id="r_aeb10064f8e2c204fb6f3a13c5e8d1efe"><td align="right" class="memItemLeft" valign="top"><a id="aeb10064f8e2c204fb6f3a13c5e8d1efe" name="aeb10064f8e2c204fb6f3a13c5e8d1efe"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectTriangle</b> (vrpn_int32 objNum, vrpn_int32 triNum, vrpn_int32 vert0, vrpn_int32 vert1, vrpn_int32 vert2, vrpn_int32 norm0=-1, vrpn_int32 norm1=-1, vrpn_int32 norm2=-1)</td></tr>
+<tr class="separator:aeb10064f8e2c204fb6f3a13c5e8d1efe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab37cbab23248dc87dbf332db1a50ccf2" id="r_ab37cbab23248dc87dbf332db1a50ccf2"><td align="right" class="memItemLeft" valign="top"><a id="ab37cbab23248dc87dbf332db1a50ccf2" name="ab37cbab23248dc87dbf332db1a50ccf2"></a>
+void </td><td class="memItemRight" valign="bottom"><b>removeObjectTriangle</b> (vrpn_int32 objNum, vrpn_int32 triNum)</td></tr>
+<tr class="separator:ab37cbab23248dc87dbf332db1a50ccf2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae1fd54095fef4149b2268818ca8151c7" id="r_ae1fd54095fef4149b2268818ca8151c7"><td align="right" class="memItemLeft" valign="top"><a id="ae1fd54095fef4149b2268818ca8151c7" name="ae1fd54095fef4149b2268818ca8151c7"></a>
+void </td><td class="memItemRight" valign="bottom"><b>updateObjectTrimeshChanges</b> (vrpn_int32 objNum)</td></tr>
+<tr class="separator:ae1fd54095fef4149b2268818ca8151c7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad8e06fc7812785f85c8422d29e2af159" id="r_ad8e06fc7812785f85c8422d29e2af159"><td align="right" class="memItemLeft" valign="top"><a id="ad8e06fc7812785f85c8422d29e2af159" name="ad8e06fc7812785f85c8422d29e2af159"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectTrimeshTransform</b> (vrpn_int32 objNum, vrpn_float32 homMatrix[16])</td></tr>
+<tr class="separator:ad8e06fc7812785f85c8422d29e2af159"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a83b98530873592fe044df409b44a8023" id="r_a83b98530873592fe044df409b44a8023"><td align="right" class="memItemLeft" valign="top"><a id="a83b98530873592fe044df409b44a8023" name="a83b98530873592fe044df409b44a8023"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectPosition</b> (vrpn_int32 objNum, vrpn_float32 Pos[3])</td></tr>
+<tr class="separator:a83b98530873592fe044df409b44a8023"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a443cf036fd34c11478f409f7f245504d" id="r_a443cf036fd34c11478f409f7f245504d"><td align="right" class="memItemLeft" valign="top"><a id="a443cf036fd34c11478f409f7f245504d" name="a443cf036fd34c11478f409f7f245504d"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectOrientation</b> (vrpn_int32 objNum, vrpn_float32 axis[3], vrpn_float32 angle)</td></tr>
+<tr class="separator:a443cf036fd34c11478f409f7f245504d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab28ee936790512795d26c7043b5e69f0" id="r_ab28ee936790512795d26c7043b5e69f0"><td align="right" class="memItemLeft" valign="top"><a id="ab28ee936790512795d26c7043b5e69f0" name="ab28ee936790512795d26c7043b5e69f0"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectScale</b> (vrpn_int32 objNum, vrpn_float32 Scale[3])</td></tr>
+<tr class="separator:ab28ee936790512795d26c7043b5e69f0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad637cffe3f17c4e8327d0a58ed51a126" id="r_ad637cffe3f17c4e8327d0a58ed51a126"><td align="right" class="memItemLeft" valign="top"><a id="ad637cffe3f17c4e8327d0a58ed51a126" name="ad637cffe3f17c4e8327d0a58ed51a126"></a>
+void </td><td class="memItemRight" valign="bottom"><b>removeObject</b> (vrpn_int32 objNum)</td></tr>
+<tr class="separator:ad637cffe3f17c4e8327d0a58ed51a126"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a322f69d154a205f2b27151f561a5525e" id="r_a322f69d154a205f2b27151f561a5525e"><td align="right" class="memItemLeft" valign="top"><a id="a322f69d154a205f2b27151f561a5525e" name="a322f69d154a205f2b27151f561a5525e"></a>
+void </td><td class="memItemRight" valign="bottom"><b>clearObjectTrimesh</b> (vrpn_int32 objNum)</td></tr>
+<tr class="separator:a322f69d154a205f2b27151f561a5525e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a43c0a6ddc972630495f536477b638598" id="r_a43c0a6ddc972630495f536477b638598"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c0a6ddc972630495f536477b638598">moveToParent</a> (vrpn_int32 objNum, vrpn_int32 ParentNum)</td></tr>
+<tr class="separator:a43c0a6ddc972630495f536477b638598"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a79f5e5e07cf83235d70f80cc7b5c8f02" id="r_a79f5e5e07cf83235d70f80cc7b5c8f02"><td align="right" class="memItemLeft" valign="top"><a id="a79f5e5e07cf83235d70f80cc7b5c8f02" name="a79f5e5e07cf83235d70f80cc7b5c8f02"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setHapticOrigin</b> (vrpn_float32 Pos[3], vrpn_float32 axis[3], vrpn_float32 angle)</td></tr>
+<tr class="separator:a79f5e5e07cf83235d70f80cc7b5c8f02"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a166904d212c0ae44d2c103551bd99e34" id="r_a166904d212c0ae44d2c103551bd99e34"><td align="right" class="memItemLeft" valign="top"><a id="a166904d212c0ae44d2c103551bd99e34" name="a166904d212c0ae44d2c103551bd99e34"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setHapticScale</b> (vrpn_float32 Scale)</td></tr>
+<tr class="separator:a166904d212c0ae44d2c103551bd99e34"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac65630870cea3aab19241db45a001c2c" id="r_ac65630870cea3aab19241db45a001c2c"><td align="right" class="memItemLeft" valign="top"><a id="ac65630870cea3aab19241db45a001c2c" name="ac65630870cea3aab19241db45a001c2c"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setSceneOrigin</b> (vrpn_float32 Pos[3], vrpn_float32 axis[3], vrpn_float32 angle)</td></tr>
+<tr class="separator:ac65630870cea3aab19241db45a001c2c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a161dc3c85cbdeac61fc6fb3b3dbfbc03" id="r_a161dc3c85cbdeac61fc6fb3b3dbfbc03"><td align="right" class="memItemLeft" valign="top"><a id="a161dc3c85cbdeac61fc6fb3b3dbfbc03" name="a161dc3c85cbdeac61fc6fb3b3dbfbc03"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>getNewObjectID</b> ()</td></tr>
+<tr class="separator:a161dc3c85cbdeac61fc6fb3b3dbfbc03"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4ef3ff84fa0de506c348e38729ca3f7" id="r_aa4ef3ff84fa0de506c348e38729ca3f7"><td align="right" class="memItemLeft" valign="top"><a id="aa4ef3ff84fa0de506c348e38729ca3f7" name="aa4ef3ff84fa0de506c348e38729ca3f7"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setObjectIsTouchable</b> (vrpn_int32 objNum, vrpn_bool IsTouchable=true)</td></tr>
+<tr class="separator:aa4ef3ff84fa0de506c348e38729ca3f7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a818191eaae39e17b761077d86c87e47d" id="r_a818191eaae39e17b761077d86c87e47d"><td align="right" class="memItemLeft" valign="top"><a id="a818191eaae39e17b761077d86c87e47d" name="a818191eaae39e17b761077d86c87e47d"></a>
+void </td><td class="memItemRight" valign="bottom"><b>useHcollide</b> ()</td></tr>
+<tr class="separator:a818191eaae39e17b761077d86c87e47d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b2dbdc19e53480d5b3b2c2b34008074" id="r_a7b2dbdc19e53480d5b3b2c2b34008074"><td align="right" class="memItemLeft" valign="top"><a id="a7b2dbdc19e53480d5b3b2c2b34008074" name="a7b2dbdc19e53480d5b3b2c2b34008074"></a>
+void </td><td class="memItemRight" valign="bottom"><b>useGhost</b> ()</td></tr>
+<tr class="separator:a7b2dbdc19e53480d5b3b2c2b34008074"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2539afb4f071ee06dbe38c6ebc4b96e3" id="r_a2539afb4f071ee06dbe38c6ebc4b96e3"><td align="right" class="memItemLeft" valign="top"><a id="a2539afb4f071ee06dbe38c6ebc4b96e3" name="a2539afb4f071ee06dbe38c6ebc4b96e3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>enableConstraint</b> (vrpn_int32 enable)</td></tr>
+<tr class="separator:a2539afb4f071ee06dbe38c6ebc4b96e3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a621c2c3afd26b8573b9e0565793d889d" id="r_a621c2c3afd26b8573b9e0565793d889d"><td align="right" class="memItemLeft" valign="top"><a id="a621c2c3afd26b8573b9e0565793d889d" name="a621c2c3afd26b8573b9e0565793d889d"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintMode</b> (ConstraintGeometry mode)</td></tr>
+<tr class="separator:a621c2c3afd26b8573b9e0565793d889d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4092bf5649eadbdde59bdf5cd23108f3" id="r_a4092bf5649eadbdde59bdf5cd23108f3"><td align="right" class="memItemLeft" valign="top"><a id="a4092bf5649eadbdde59bdf5cd23108f3" name="a4092bf5649eadbdde59bdf5cd23108f3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintPoint</b> (vrpn_float32 point[3])</td></tr>
+<tr class="separator:a4092bf5649eadbdde59bdf5cd23108f3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0248fd65c17b77c6f488972789612db9" id="r_a0248fd65c17b77c6f488972789612db9"><td align="right" class="memItemLeft" valign="top"><a id="a0248fd65c17b77c6f488972789612db9" name="a0248fd65c17b77c6f488972789612db9"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintLinePoint</b> (vrpn_float32 point[3])</td></tr>
+<tr class="separator:a0248fd65c17b77c6f488972789612db9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1923c0a4af1f4167ee5f5e58d733103f" id="r_a1923c0a4af1f4167ee5f5e58d733103f"><td align="right" class="memItemLeft" valign="top"><a id="a1923c0a4af1f4167ee5f5e58d733103f" name="a1923c0a4af1f4167ee5f5e58d733103f"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintLineDirection</b> (vrpn_float32 direction[3])</td></tr>
+<tr class="separator:a1923c0a4af1f4167ee5f5e58d733103f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a148d360733dd2411264865a68d583e35" id="r_a148d360733dd2411264865a68d583e35"><td align="right" class="memItemLeft" valign="top"><a id="a148d360733dd2411264865a68d583e35" name="a148d360733dd2411264865a68d583e35"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintPlanePoint</b> (vrpn_float32 point[3])</td></tr>
+<tr class="separator:a148d360733dd2411264865a68d583e35"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaadae83516512361e0e5b0b4e6229566" id="r_aaadae83516512361e0e5b0b4e6229566"><td align="right" class="memItemLeft" valign="top"><a id="aaadae83516512361e0e5b0b4e6229566" name="aaadae83516512361e0e5b0b4e6229566"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintPlaneNormal</b> (vrpn_float32 normal[3])</td></tr>
+<tr class="separator:aaadae83516512361e0e5b0b4e6229566"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32f1ccfdf88eab026ab418becde231ad" id="r_a32f1ccfdf88eab026ab418becde231ad"><td align="right" class="memItemLeft" valign="top"><a id="a32f1ccfdf88eab026ab418becde231ad" name="a32f1ccfdf88eab026ab418becde231ad"></a>
+void </td><td class="memItemRight" valign="bottom"><b>setConstraintKSpring</b> (vrpn_float32 k)</td></tr>
+<tr class="separator:a32f1ccfdf88eab026ab418becde231ad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab70f428d5ee6e28698df454ebf96736d" id="r_ab70f428d5ee6e28698df454ebf96736d"><td align="right" class="memItemLeft" valign="top"><a id="ab70f428d5ee6e28698df454ebf96736d" name="ab70f428d5ee6e28698df454ebf96736d"></a>
+void </td><td class="memItemRight" valign="bottom"><b>sendForceField</b> (vrpn_float32 origin[3], vrpn_float32 force[3], vrpn_float32 jacobian[3][3], vrpn_float32 radius)</td></tr>
+<tr class="separator:ab70f428d5ee6e28698df454ebf96736d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a01f8061d02bb9dc03955ce1d53cb545c" id="r_a01f8061d02bb9dc03955ce1d53cb545c"><td align="right" class="memItemLeft" valign="top"><a id="a01f8061d02bb9dc03955ce1d53cb545c" name="a01f8061d02bb9dc03955ce1d53cb545c"></a>
+void </td><td class="memItemRight" valign="bottom"><b>sendForceField</b> (void)</td></tr>
+<tr class="separator:a01f8061d02bb9dc03955ce1d53cb545c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abb86683d69ea0b3420b03612179d0524" id="r_abb86683d69ea0b3420b03612179d0524"><td align="right" class="memItemLeft" valign="top"><a id="abb86683d69ea0b3420b03612179d0524" name="abb86683d69ea0b3420b03612179d0524"></a>
+void </td><td class="memItemRight" valign="bottom"><b>stopForceField</b> (void)</td></tr>
+<tr class="separator:abb86683d69ea0b3420b03612179d0524"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad53bdd7cd0198ca2e9e2a528fd33a18a" id="r_ad53bdd7cd0198ca2e9e2a528fd33a18a"><td align="right" class="memItemLeft" valign="top"><a id="ad53bdd7cd0198ca2e9e2a528fd33a18a" name="ad53bdd7cd0198ca2e9e2a528fd33a18a"></a>
+void </td><td class="memItemRight" valign="bottom"><b>startEffect</b> (void)</td></tr>
+<tr class="separator:ad53bdd7cd0198ca2e9e2a528fd33a18a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acd31ebf98b5a7cf5de3796c7b63ed842" id="r_acd31ebf98b5a7cf5de3796c7b63ed842"><td align="right" class="memItemLeft" valign="top"><a id="acd31ebf98b5a7cf5de3796c7b63ed842" name="acd31ebf98b5a7cf5de3796c7b63ed842"></a>
+void </td><td class="memItemRight" valign="bottom"><b>stopEffect</b> (void)</td></tr>
+<tr class="separator:acd31ebf98b5a7cf5de3796c7b63ed842"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5299ecc517aeaf6e61dc5d2c5316b4cb" id="r_a5299ecc517aeaf6e61dc5d2c5316b4cb"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a> ()</td></tr>
+<tr class="separator:a5299ecc517aeaf6e61dc5d2c5316b4cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa20858f4c0ac8b08a981a91d5176c892" id="r_aa20858f4c0ac8b08a981a91d5176c892"><td align="right" class="memItemLeft" valign="top"><a id="aa20858f4c0ac8b08a981a91d5176c892" name="aa20858f4c0ac8b08a981a91d5176c892"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>register_force_change_handler</b> (void *userdata, vrpn_FORCECHANGEHANDLER handler)</td></tr>
+<tr class="separator:aa20858f4c0ac8b08a981a91d5176c892"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21df70c9e279f5430ebb2dd027fb7014" id="r_a21df70c9e279f5430ebb2dd027fb7014"><td align="right" class="memItemLeft" valign="top"><a id="a21df70c9e279f5430ebb2dd027fb7014" name="a21df70c9e279f5430ebb2dd027fb7014"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>unregister_force_change_handler</b> (void *userdata, vrpn_FORCECHANGEHANDLER handler)</td></tr>
+<tr class="separator:a21df70c9e279f5430ebb2dd027fb7014"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67bd1d07b1c5a640b866d48a28ca4d4f" id="r_a67bd1d07b1c5a640b866d48a28ca4d4f"><td align="right" class="memItemLeft" valign="top"><a id="a67bd1d07b1c5a640b866d48a28ca4d4f" name="a67bd1d07b1c5a640b866d48a28ca4d4f"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>register_scp_change_handler</b> (void *userdata, vrpn_FORCESCPHANDLER handler)</td></tr>
+<tr class="separator:a67bd1d07b1c5a640b866d48a28ca4d4f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa8fe7e7959181fe9ec56834c8d948254" id="r_aa8fe7e7959181fe9ec56834c8d948254"><td align="right" class="memItemLeft" valign="top"><a id="aa8fe7e7959181fe9ec56834c8d948254" name="aa8fe7e7959181fe9ec56834c8d948254"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>unregister_scp_change_handler</b> (void *userdata, vrpn_FORCESCPHANDLER handler)</td></tr>
+<tr class="separator:aa8fe7e7959181fe9ec56834c8d948254"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a540d45d59876cf3aa1fc77bf96482290" id="r_a540d45d59876cf3aa1fc77bf96482290"><td align="right" class="memItemLeft" valign="top"><a id="a540d45d59876cf3aa1fc77bf96482290" name="a540d45d59876cf3aa1fc77bf96482290"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>register_error_handler</b> (void *userdata, vrpn_FORCEERRORHANDLER handler)</td></tr>
+<tr class="separator:a540d45d59876cf3aa1fc77bf96482290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60d023149ef3caa9baf021cdb1fdd6fe" id="r_a60d023149ef3caa9baf021cdb1fdd6fe"><td align="right" class="memItemLeft" valign="top"><a id="a60d023149ef3caa9baf021cdb1fdd6fe" name="a60d023149ef3caa9baf021cdb1fdd6fe"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>unregister_error_handler</b> (void *userdata, vrpn_FORCEERRORHANDLER handler)</td></tr>
+<tr class="separator:a60d023149ef3caa9baf021cdb1fdd6fe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__ForceDevice"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__ForceDevice')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__ForceDevice.html">vrpn_ForceDevice</a></td></tr>
+<tr class="memitem:a63b53fecb6eeca9e656889d146f70b18 inherit pub_methods_classvrpn__ForceDevice" id="r_a63b53fecb6eeca9e656889d146f70b18"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_ForceDevice</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c)</td></tr>
+<tr class="separator:a63b53fecb6eeca9e656889d146f70b18 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a23f9b2292e819b2cb0447db8928af8bf inherit pub_methods_classvrpn__ForceDevice" id="r_a23f9b2292e819b2cb0447db8928af8bf"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>print_report</b> (void)</td></tr>
+<tr class="separator:a23f9b2292e819b2cb0447db8928af8bf inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac834bdec588e3f240674469373059182 inherit pub_methods_classvrpn__ForceDevice" id="r_ac834bdec588e3f240674469373059182"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>print_plane</b> (void)</td></tr>
+<tr class="separator:ac834bdec588e3f240674469373059182 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aff8bb853a36b408bc1a5bc50790fc81d inherit pub_methods_classvrpn__ForceDevice" id="r_aff8bb853a36b408bc1a5bc50790fc81d"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceKspring</b> (vrpn_float32 k)</td></tr>
+<tr class="separator:aff8bb853a36b408bc1a5bc50790fc81d inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a890e202a49e1170da5d9396311e02018 inherit pub_methods_classvrpn__ForceDevice" id="r_a890e202a49e1170da5d9396311e02018"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceKdamping</b> (vrpn_float32 d)</td></tr>
+<tr class="separator:a890e202a49e1170da5d9396311e02018 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5018064443ab95270987c813589b6035 inherit pub_methods_classvrpn__ForceDevice" id="r_a5018064443ab95270987c813589b6035"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceFstatic</b> (vrpn_float32 ks)</td></tr>
+<tr class="separator:a5018064443ab95270987c813589b6035 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afa50e7e47eccf0194515434f98c58e64 inherit pub_methods_classvrpn__ForceDevice" id="r_afa50e7e47eccf0194515434f98c58e64"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceFdynamic</b> (vrpn_float32 kd)</td></tr>
+<tr class="separator:afa50e7e47eccf0194515434f98c58e64 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab5605425adf5e10dffe64c7d481383b7 inherit pub_methods_classvrpn__ForceDevice" id="r_ab5605425adf5e10dffe64c7d481383b7"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setRecoveryTime</b> (int rt)</td></tr>
+<tr class="separator:ab5605425adf5e10dffe64c7d481383b7 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae02101c3b7797b4342718a5d8c24862f inherit pub_methods_classvrpn__ForceDevice" id="r_ae02101c3b7797b4342718a5d8c24862f"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceKadhesionNormal</b> (vrpn_float32 k)</td></tr>
+<tr class="separator:ae02101c3b7797b4342718a5d8c24862f inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6aa17e2529fbef32df2c85ecc57677b5 inherit pub_methods_classvrpn__ForceDevice" id="r_a6aa17e2529fbef32df2c85ecc57677b5"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceKadhesionLateral</b> (vrpn_float32 k)</td></tr>
+<tr class="separator:a6aa17e2529fbef32df2c85ecc57677b5 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa1f502fdadae7c995b400864c093826e inherit pub_methods_classvrpn__ForceDevice" id="r_aa1f502fdadae7c995b400864c093826e"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceBuzzFrequency</b> (vrpn_float32 freq)</td></tr>
+<tr class="separator:aa1f502fdadae7c995b400864c093826e inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a97fee3455a9a04cad309b04ae83705cd inherit pub_methods_classvrpn__ForceDevice" id="r_a97fee3455a9a04cad309b04ae83705cd"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceBuzzAmplitude</b> (vrpn_float32 amp)</td></tr>
+<tr class="separator:a97fee3455a9a04cad309b04ae83705cd inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad16dd7a16dbc78cac1f6bdbc294f345d inherit pub_methods_classvrpn__ForceDevice" id="r_ad16dd7a16dbc78cac1f6bdbc294f345d"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceTextureWavelength</b> (vrpn_float32 wl)</td></tr>
+<tr class="separator:ad16dd7a16dbc78cac1f6bdbc294f345d inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0d6e361dfd9bce6a911b10b6c7bd61ae inherit pub_methods_classvrpn__ForceDevice" id="r_a0d6e361dfd9bce6a911b10b6c7bd61ae"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setSurfaceTextureAmplitude</b> (vrpn_float32 amp)</td></tr>
+<tr class="separator:a0d6e361dfd9bce6a911b10b6c7bd61ae inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6f60124571319f3f8e48662affea4d02 inherit pub_methods_classvrpn__ForceDevice" id="r_a6f60124571319f3f8e48662affea4d02"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setCustomEffect</b> (vrpn_int32 effectId, vrpn_float32 *params=NULL, vrpn_uint32 nbParams=0)</td></tr>
+<tr class="separator:a6f60124571319f3f8e48662affea4d02 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab42471594f44891d5a35795fedb29b99 inherit pub_methods_classvrpn__ForceDevice" id="r_ab42471594f44891d5a35795fedb29b99"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setFF_Origin</b> (vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:ab42471594f44891d5a35795fedb29b99 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a178fa484adbd192c2035020de47f9b6f inherit pub_methods_classvrpn__ForceDevice" id="r_a178fa484adbd192c2035020de47f9b6f"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setFF_Origin</b> (vrpn_float32 x[3])</td></tr>
+<tr class="separator:a178fa484adbd192c2035020de47f9b6f inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:accf96c51cb0eee2d535c4aa6906e3a7c inherit pub_methods_classvrpn__ForceDevice" id="r_accf96c51cb0eee2d535c4aa6906e3a7c"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setFF_Force</b> (vrpn_float32 fx, vrpn_float32 fy, vrpn_float32 fz)</td></tr>
+<tr class="separator:accf96c51cb0eee2d535c4aa6906e3a7c inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9067fba2bfd64e742f05f847f95ec1c2 inherit pub_methods_classvrpn__ForceDevice" id="r_a9067fba2bfd64e742f05f847f95ec1c2"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setFF_Force</b> (vrpn_float32 f[3])</td></tr>
+<tr class="separator:a9067fba2bfd64e742f05f847f95ec1c2 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac86603892aea01a03d4b4aad2cb24e16 inherit pub_methods_classvrpn__ForceDevice" id="r_ac86603892aea01a03d4b4aad2cb24e16"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setFF_Jacobian</b> (vrpn_float32 dfxdx, vrpn_float32 dfxdy, vrpn_float32 dfxdz, vrpn_float32 dfydx, vrpn_float32 dfydy, vrpn_float32 dfydz, vrpn_float32 dfzdx, vrpn_float32 dfzdy, vrpn_float32 dfzdz)</td></tr>
+<tr class="separator:ac86603892aea01a03d4b4aad2cb24e16 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acbc14988a85df818dd5661354b3a95cb inherit pub_methods_classvrpn__ForceDevice" id="r_acbc14988a85df818dd5661354b3a95cb"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>setFF_Radius</b> (vrpn_float32 r)</td></tr>
+<tr class="separator:acbc14988a85df818dd5661354b3a95cb inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a56414a14aa00526a5ef1a85903775ec6 inherit pub_methods_classvrpn__ForceDevice" id="r_a56414a14aa00526a5ef1a85903775ec6"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>set_plane</b> (vrpn_float32 *p)</td></tr>
+<tr class="separator:a56414a14aa00526a5ef1a85903775ec6 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4f2cc450f81ba5301b95f8d903d9be2 inherit pub_methods_classvrpn__ForceDevice" id="r_ab4f2cc450f81ba5301b95f8d903d9be2"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>set_plane</b> (vrpn_float32 *p, vrpn_float32 d)</td></tr>
+<tr class="separator:ab4f2cc450f81ba5301b95f8d903d9be2 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c46fe90a933c2bc1035e4c577f21136 inherit pub_methods_classvrpn__ForceDevice" id="r_a6c46fe90a933c2bc1035e4c577f21136"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>set_plane</b> (vrpn_float32 a, vrpn_float32 b, vrpn_float32 c, vrpn_float32 d)</td></tr>
+<tr class="separator:a6c46fe90a933c2bc1035e4c577f21136 inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1b38fbf78f7bfdbb91ae6fbd151b379b inherit pub_methods_classvrpn__ForceDevice" id="r_a1b38fbf78f7bfdbb91ae6fbd151b379b"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>sendError</b> (int error_code)</td></tr>
+<tr class="separator:a1b38fbf78f7bfdbb91ae6fbd151b379b inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a633f41de5cc4a463f48ef6303e3a820b inherit pub_methods_classvrpn__ForceDevice" id="r_a633f41de5cc4a463f48ef6303e3a820b"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>getRecoveryTime</b> (void)</td></tr>
+<tr class="separator:a633f41de5cc4a463f48ef6303e3a820b inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4ea0f91e3dfc4baa0308ad00c9ae3e2f inherit pub_methods_classvrpn__ForceDevice" id="r_a4ea0f91e3dfc4baa0308ad00c9ae3e2f"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>connectionAvailable</b> (void)</td></tr>
+<tr class="separator:a4ea0f91e3dfc4baa0308ad00c9ae3e2f inherit pub_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass" id="r_a7a074af17ba19d3b0287e2add608e70b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a7a074af17ba19d3b0287e2add608e70b">vrpn_BaseClass</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique" id="r_af9949f7f3f722612c34f56c8351c54f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af9949f7f3f722612c34f56c8351c54f2">connectionPtr</a> ()</td></tr>
+<tr class="memdesc:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Returns a pointer to the connection this object is using  <br/></td></tr>
+<tr class="separator:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a393da7b7c7228bea8370b1ff4dc31ee3" id="r_a393da7b7c7228bea8370b1ff4dc31ee3"><td align="right" class="memItemLeft" valign="top"><a id="a393da7b7c7228bea8370b1ff4dc31ee3" name="a393da7b7c7228bea8370b1ff4dc31ee3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>send</b> (const char *msgbuf, vrpn_int32 len, vrpn_int32 type)</td></tr>
+<tr class="separator:a393da7b7c7228bea8370b1ff4dc31ee3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abdd208f6057614030c546efb1fa78416" id="r_abdd208f6057614030c546efb1fa78416"><td align="right" class="memItemLeft" valign="top"><a id="abdd208f6057614030c546efb1fa78416" name="abdd208f6057614030c546efb1fa78416"></a>
+void </td><td class="memItemRight" valign="bottom"><b>constraintToForceField</b> (void)</td></tr>
+<tr class="separator:abdd208f6057614030c546efb1fa78416"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__ForceDevice"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__ForceDevice')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__ForceDevice.html">vrpn_ForceDevice</a></td></tr>
+<tr class="memitem:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__ForceDevice" id="r_ad323fbb3a0d01ece28df8432733664fb"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__ForceDevice.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a> (void)</td></tr>
+<tr class="separator:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass" id="r_a39894293265380f47e12dc38773b1f69"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a39894293265380f47e12dc38773b1f69">init</a> (void)</td></tr>
+<tr class="separator:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass" id="r_a3c7c050ad9bb970957dfa6c2f4c833c3"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a3c7c050ad9bb970957dfa6c2f4c833c3">register_senders</a> (void)</td></tr>
+<tr class="separator:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique" id="r_ac27f3c80c7edd28bb1b955358d221d58"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ac27f3c80c7edd28bb1b955358d221d58">register_autodeleted_handler</a> (vrpn_int32 type, vrpn_MESSAGEHANDLER handler, void *userdata, vrpn_int32 sender=vrpn_ANY_SENDER)</td></tr>
+<tr class="separator:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a1a4e9d1d8858036f3ac8c37eb8f67aa3"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a1a4e9d1d8858036f3ac8c37eb8f67aa3">send_text_message</a> (const char *msg, struct timeval timestamp, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL, vrpn_uint32 level=0)</td></tr>
+<tr class="memdesc:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Sends a NULL-terminated text message from the device d_sender_id  <br/></td></tr>
+<tr class="separator:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique" id="r_aa818797ad32c8be380cb3f9962048088"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">SendTextMessageBoundCall</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa818797ad32c8be380cb3f9962048088">send_text_message</a> (<a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL)</td></tr>
+<tr class="separator:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a5f63dfe395699defbadb9a7cd1ee9e29"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop</a> (void)</td></tr>
+<tr class="separator:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique" id="r_afec33d974c2286b9b2cefdcfbfa2430b"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#afec33d974c2286b9b2cefdcfbfa2430b">client_mainloop</a> (void)</td></tr>
+<tr class="separator:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:af3b4fe7b6b0447c02b13371525124119" id="r_af3b4fe7b6b0447c02b13371525124119"><td align="right" class="memItemLeft" valign="top"><a id="af3b4fe7b6b0447c02b13371525124119" name="af3b4fe7b6b0447c02b13371525124119"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_force_change_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:af3b4fe7b6b0447c02b13371525124119"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa5165e795c0576f520667fbb785b5620" id="r_aa5165e795c0576f520667fbb785b5620"><td align="right" class="memItemLeft" valign="top"><a id="aa5165e795c0576f520667fbb785b5620" name="aa5165e795c0576f520667fbb785b5620"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_scp_change_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:aa5165e795c0576f520667fbb785b5620"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afb776a592b3964413ffac572d6f1de60" id="r_afb776a592b3964413ffac572d6f1de60"><td align="right" class="memItemLeft" valign="top"><a id="afb776a592b3964413ffac572d6f1de60" name="afb776a592b3964413ffac572d6f1de60"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_error_change_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:afb776a592b3964413ffac572d6f1de60"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__ForceDevice"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__ForceDevice')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__ForceDevice.html">vrpn_ForceDevice</a></td></tr>
+<tr class="memitem:add5cc46949241095fe365f197c6e94bc inherit pro_static_methods_classvrpn__ForceDevice" id="r_add5cc46949241095fe365f197c6e94bc"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_custom_effect</b> (vrpn_int32 &amp;len, vrpn_uint32 effectId, const vrpn_float32 *params, vrpn_uint32 nbParams)</td></tr>
+<tr class="separator:add5cc46949241095fe365f197c6e94bc inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bdf8886c3d43a103b76dd701cd80eab inherit pro_static_methods_classvrpn__ForceDevice" id="r_a5bdf8886c3d43a103b76dd701cd80eab"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_force</b> (vrpn_int32 &amp;length, const vrpn_float64 *force)</td></tr>
+<tr class="separator:a5bdf8886c3d43a103b76dd701cd80eab inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b645a64f988e0145db01fbb07b2a0a1 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a7b645a64f988e0145db01fbb07b2a0a1"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_scp</b> (vrpn_int32 &amp;length, const vrpn_float64 *pos, const vrpn_float64 *quat)</td></tr>
+<tr class="separator:a7b645a64f988e0145db01fbb07b2a0a1 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15a9eab6559656ef7d766fd4407f6ab6 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a15a9eab6559656ef7d766fd4407f6ab6"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_plane</b> (vrpn_int32 &amp;length, const vrpn_float32 *plane, const vrpn_float32 kspring, const vrpn_float32 kdamp, const vrpn_float32 fdyn, const vrpn_float32 fstat, const vrpn_int32 plane_index, const vrpn_int32 n_rec_cycles)</td></tr>
+<tr class="separator:a15a9eab6559656ef7d766fd4407f6ab6 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afec6359d4036c229a82a7a74ae83c1e3 inherit pro_static_methods_classvrpn__ForceDevice" id="r_afec6359d4036c229a82a7a74ae83c1e3"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_surface_effects</b> (vrpn_int32 &amp;len, const vrpn_float32 k_adhesion_norm, const vrpn_float32 k_adhesion_lat, const vrpn_float32 tex_amp, const vrpn_float32 tex_wl, const vrpn_float32 buzz_amp, const vrpn_float32 buzz_freq)</td></tr>
+<tr class="separator:afec6359d4036c229a82a7a74ae83c1e3 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa77f238282f84111e80edec7135d6715 inherit pro_static_methods_classvrpn__ForceDevice" id="r_aa77f238282f84111e80edec7135d6715"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_vertex</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 vertNum, const vrpn_float32 x, const vrpn_float32 y, const vrpn_float32 z)</td></tr>
+<tr class="separator:aa77f238282f84111e80edec7135d6715 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a09a400b3fa223369e3513a647d036914 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a09a400b3fa223369e3513a647d036914"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_normal</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 vertNum, const vrpn_float32 x, const vrpn_float32 y, const vrpn_float32 z)</td></tr>
+<tr class="separator:a09a400b3fa223369e3513a647d036914 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af0fa7fe683b75983476eb6c9ba6a3b99 inherit pro_static_methods_classvrpn__ForceDevice" id="r_af0fa7fe683b75983476eb6c9ba6a3b99"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_triangle</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 triNum, const vrpn_int32 vert0, const vrpn_int32 vert1, const vrpn_int32 vert2, const vrpn_int32 norm0, const vrpn_int32 norm1, const vrpn_int32 norm2)</td></tr>
+<tr class="separator:af0fa7fe683b75983476eb6c9ba6a3b99 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae238864844c795eedaccae965fda000c inherit pro_static_methods_classvrpn__ForceDevice" id="r_ae238864844c795eedaccae965fda000c"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_removeTriangle</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 triNum)</td></tr>
+<tr class="separator:ae238864844c795eedaccae965fda000c inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adc1094a4e2e91ce7f8c97434dba0ae5a inherit pro_static_methods_classvrpn__ForceDevice" id="r_adc1094a4e2e91ce7f8c97434dba0ae5a"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_updateTrimeshChanges</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_float32 kspring, const vrpn_float32 kdamp, const vrpn_float32 fdyn, const vrpn_float32 fstat)</td></tr>
+<tr class="separator:adc1094a4e2e91ce7f8c97434dba0ae5a inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac40dbf915d432c8585fb5b9e06578e0e inherit pro_static_methods_classvrpn__ForceDevice" id="r_ac40dbf915d432c8585fb5b9e06578e0e"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setTrimeshType</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 type)</td></tr>
+<tr class="separator:ac40dbf915d432c8585fb5b9e06578e0e inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a394702f44c2ab21aec6dd21bce3e020f inherit pro_static_methods_classvrpn__ForceDevice" id="r_a394702f44c2ab21aec6dd21bce3e020f"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_trimeshTransform</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_float32 homMatrix[16])</td></tr>
+<tr class="separator:a394702f44c2ab21aec6dd21bce3e020f inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af88a59186ce0ce6f6f31dbd7e1192b84 inherit pro_static_methods_classvrpn__ForceDevice" id="r_af88a59186ce0ce6f6f31dbd7e1192b84"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_addObject</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 ParentNum)</td></tr>
+<tr class="separator:af88a59186ce0ce6f6f31dbd7e1192b84 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acf2585ee4c005b953b3590b68f0ae1af inherit pro_static_methods_classvrpn__ForceDevice" id="r_acf2585ee4c005b953b3590b68f0ae1af"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_addObjectExScene</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum)</td></tr>
+<tr class="separator:acf2585ee4c005b953b3590b68f0ae1af inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00eb8dd855562eb97c4518c93fd9cd11 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a00eb8dd855562eb97c4518c93fd9cd11"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_objectPosition</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_float32 Pos[3])</td></tr>
+<tr class="separator:a00eb8dd855562eb97c4518c93fd9cd11 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a476e00988671c716eba03ff2796e06f1 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a476e00988671c716eba03ff2796e06f1"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_objectOrientation</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_float32 axis[3], const vrpn_float32 angle)</td></tr>
+<tr class="separator:a476e00988671c716eba03ff2796e06f1 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a815b102de83a90202b0fe5614dfabddd inherit pro_static_methods_classvrpn__ForceDevice" id="r_a815b102de83a90202b0fe5614dfabddd"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_objectScale</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_float32 Scale[3])</td></tr>
+<tr class="separator:a815b102de83a90202b0fe5614dfabddd inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c88345db7b93540081021f27339a0cc inherit pro_static_methods_classvrpn__ForceDevice" id="r_a9c88345db7b93540081021f27339a0cc"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_removeObject</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum)</td></tr>
+<tr class="separator:a9c88345db7b93540081021f27339a0cc inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaf490373fd91e64363ef9d0cd263f95f inherit pro_static_methods_classvrpn__ForceDevice" id="r_aaf490373fd91e64363ef9d0cd263f95f"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_clearTrimesh</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum)</td></tr>
+<tr class="separator:aaf490373fd91e64363ef9d0cd263f95f inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a87ba79098d7701953598ac12c2cc175e inherit pro_static_methods_classvrpn__ForceDevice" id="r_a87ba79098d7701953598ac12c2cc175e"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_moveToParent</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_int32 parentNum)</td></tr>
+<tr class="separator:a87ba79098d7701953598ac12c2cc175e inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a27948847844ce84670025950fe056b46 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a27948847844ce84670025950fe056b46"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setHapticOrigin</b> (vrpn_int32 &amp;len, const vrpn_float32 Pos[3], const vrpn_float32 axis[3], const vrpn_float32 angle)</td></tr>
+<tr class="separator:a27948847844ce84670025950fe056b46 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2032d2d6729ed563f59d2295454ebc91 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a2032d2d6729ed563f59d2295454ebc91"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setSceneOrigin</b> (vrpn_int32 &amp;len, const vrpn_float32 Pos[3], const vrpn_float32 axis[3], const vrpn_float32 angle)</td></tr>
+<tr class="separator:a2032d2d6729ed563f59d2295454ebc91 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e0d42c36bb3dadb35fbe16f9bee3372 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a2e0d42c36bb3dadb35fbe16f9bee3372"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setHapticScale</b> (vrpn_int32 &amp;len, const vrpn_float32 Scale)</td></tr>
+<tr class="separator:a2e0d42c36bb3dadb35fbe16f9bee3372 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac660d0a7158c5e90ff671d00d70a4dc8 inherit pro_static_methods_classvrpn__ForceDevice" id="r_ac660d0a7158c5e90ff671d00d70a4dc8"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setObjectIsTouchable</b> (vrpn_int32 &amp;len, const vrpn_int32 objNum, const vrpn_bool isTouchable)</td></tr>
+<tr class="separator:ac660d0a7158c5e90ff671d00d70a4dc8 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8ef94504a1b5dcf5d1bf88ba262cd89d inherit pro_static_methods_classvrpn__ForceDevice" id="r_a8ef94504a1b5dcf5d1bf88ba262cd89d"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_forcefield</b> (vrpn_int32 &amp;len, const vrpn_float32 origin[3], const vrpn_float32 force[3], const vrpn_float32 jacobian[3][3], const vrpn_float32 radius)</td></tr>
+<tr class="separator:a8ef94504a1b5dcf5d1bf88ba262cd89d inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0c025e21b15ad7f254da8af376f529f5 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a0c025e21b15ad7f254da8af376f529f5"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_error</b> (vrpn_int32 &amp;len, const vrpn_int32 error_code)</td></tr>
+<tr class="separator:a0c025e21b15ad7f254da8af376f529f5 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2299ef3e2de0aa649b562188eb9b2410 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a2299ef3e2de0aa649b562188eb9b2410"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_custom_effect</b> (const char *buffer, const vrpn_int32 len, vrpn_uint32 *effectId, vrpn_float32 **params, vrpn_uint32 *nbParams)</td></tr>
+<tr class="separator:a2299ef3e2de0aa649b562188eb9b2410 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3bbc3c42c5baa249f018b3de2ea56e7f inherit pro_static_methods_classvrpn__ForceDevice" id="r_a3bbc3c42c5baa249f018b3de2ea56e7f"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_force</b> (const char *buffer, const vrpn_int32 len, vrpn_float64 *force)</td></tr>
+<tr class="separator:a3bbc3c42c5baa249f018b3de2ea56e7f inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a07a72858de4dc7b89082b3adf5121809 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a07a72858de4dc7b89082b3adf5121809"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_scp</b> (const char *buffer, const vrpn_int32 len, vrpn_float64 *pos, vrpn_float64 *quat)</td></tr>
+<tr class="separator:a07a72858de4dc7b89082b3adf5121809 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3e64a65b1d18af523f133d06841cdbb2 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a3e64a65b1d18af523f133d06841cdbb2"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_plane</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *plane, vrpn_float32 *kspring, vrpn_float32 *kdamp, vrpn_float32 *fdyn, vrpn_float32 *fstat, vrpn_int32 *plane_index, vrpn_int32 *n_rec_cycles)</td></tr>
+<tr class="separator:a3e64a65b1d18af523f133d06841cdbb2 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acea1edc36ef1e7bfe5a2261c9910b26d inherit pro_static_methods_classvrpn__ForceDevice" id="r_acea1edc36ef1e7bfe5a2261c9910b26d"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_surface_effects</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *k_adhesion_norm, vrpn_float32 *k_adhesion_lat, vrpn_float32 *tex_amp, vrpn_float32 *tex_wl, vrpn_float32 *buzz_amp, vrpn_float32 *buzz_freq)</td></tr>
+<tr class="separator:acea1edc36ef1e7bfe5a2261c9910b26d inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bdcf888c75e1741bd38ac098bf0e82e inherit pro_static_methods_classvrpn__ForceDevice" id="r_a5bdcf888c75e1741bd38ac098bf0e82e"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_vertex</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *vertNum, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:a5bdcf888c75e1741bd38ac098bf0e82e inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1652e9c15e35a5b3beb755cf09c4b701 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a1652e9c15e35a5b3beb755cf09c4b701"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_normal</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *vertNum, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:a1652e9c15e35a5b3beb755cf09c4b701 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a041336adfa2e2890388df8d6d4de6a98 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a041336adfa2e2890388df8d6d4de6a98"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_triangle</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *triNum, vrpn_int32 *vert0, vrpn_int32 *vert1, vrpn_int32 *vert2, vrpn_int32 *norm0, vrpn_int32 *norm1, vrpn_int32 *norm2)</td></tr>
+<tr class="separator:a041336adfa2e2890388df8d6d4de6a98 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a33137e1b795c6cb2e8ef39118e665eba inherit pro_static_methods_classvrpn__ForceDevice" id="r_a33137e1b795c6cb2e8ef39118e665eba"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_removeTriangle</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *triNum)</td></tr>
+<tr class="separator:a33137e1b795c6cb2e8ef39118e665eba inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3d297e9dc4dab3bf93e736212e4f4917 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a3d297e9dc4dab3bf93e736212e4f4917"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_updateTrimeshChanges</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_float32 *kspring, vrpn_float32 *kdamp, vrpn_float32 *fdyn, vrpn_float32 *fstat)</td></tr>
+<tr class="separator:a3d297e9dc4dab3bf93e736212e4f4917 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af42513fdcd7820e6e283536df0c67542 inherit pro_static_methods_classvrpn__ForceDevice" id="r_af42513fdcd7820e6e283536df0c67542"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setTrimeshType</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *type)</td></tr>
+<tr class="separator:af42513fdcd7820e6e283536df0c67542 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4ef6d9cfa1acaa9869e1f541b24c232c inherit pro_static_methods_classvrpn__ForceDevice" id="r_a4ef6d9cfa1acaa9869e1f541b24c232c"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_trimeshTransform</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *objNum, vrpn_float32 homMatrix[16])</td></tr>
+<tr class="separator:a4ef6d9cfa1acaa9869e1f541b24c232c inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ba686231142889c099e637ef083d24b inherit pro_static_methods_classvrpn__ForceDevice" id="r_a0ba686231142889c099e637ef083d24b"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_addObject</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *ParentNum)</td></tr>
+<tr class="separator:a0ba686231142889c099e637ef083d24b inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9af33d26bda504a4549a0f5e0ccfcf26 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a9af33d26bda504a4549a0f5e0ccfcf26"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_addObjectExScene</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum)</td></tr>
+<tr class="separator:a9af33d26bda504a4549a0f5e0ccfcf26 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ada34166a8180e93a3b84d9be15c53cb4 inherit pro_static_methods_classvrpn__ForceDevice" id="r_ada34166a8180e93a3b84d9be15c53cb4"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_objectPosition</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum, vrpn_float32 Pos[3])</td></tr>
+<tr class="separator:ada34166a8180e93a3b84d9be15c53cb4 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5cdc65ecee5ded3c6be1ff5040717d1e inherit pro_static_methods_classvrpn__ForceDevice" id="r_a5cdc65ecee5ded3c6be1ff5040717d1e"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_objectOrientation</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum, vrpn_float32 axis[3], vrpn_float32 *angle)</td></tr>
+<tr class="separator:a5cdc65ecee5ded3c6be1ff5040717d1e inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d23ea013e9d6534f06d25b1ef0a3dbe inherit pro_static_methods_classvrpn__ForceDevice" id="r_a1d23ea013e9d6534f06d25b1ef0a3dbe"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_objectScale</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum, vrpn_float32 Scale[3])</td></tr>
+<tr class="separator:a1d23ea013e9d6534f06d25b1ef0a3dbe inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae0fd05824013d475500ac9ee8391637a inherit pro_static_methods_classvrpn__ForceDevice" id="r_ae0fd05824013d475500ac9ee8391637a"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_removeObject</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum)</td></tr>
+<tr class="separator:ae0fd05824013d475500ac9ee8391637a inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac270cc7a07f980061d5d1c3ac919b5b inherit pro_static_methods_classvrpn__ForceDevice" id="r_aac270cc7a07f980061d5d1c3ac919b5b"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_clearTrimesh</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum)</td></tr>
+<tr class="separator:aac270cc7a07f980061d5d1c3ac919b5b inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a48a5582245c1e45586a542e22faf15c7 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a48a5582245c1e45586a542e22faf15c7"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_moveToParent</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum, vrpn_int32 *parentNum)</td></tr>
+<tr class="separator:a48a5582245c1e45586a542e22faf15c7 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab46ec337c813d567ceb9475d4e5a7f90 inherit pro_static_methods_classvrpn__ForceDevice" id="r_ab46ec337c813d567ceb9475d4e5a7f90"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setHapticOrigin</b> (const char *buffer, vrpn_int32 len, vrpn_float32 Pos[3], vrpn_float32 axis[3], vrpn_float32 *angle)</td></tr>
+<tr class="separator:ab46ec337c813d567ceb9475d4e5a7f90 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af3c949a8e627a59dfd6ca21c1551389c inherit pro_static_methods_classvrpn__ForceDevice" id="r_af3c949a8e627a59dfd6ca21c1551389c"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setHapticScale</b> (const char *buffer, vrpn_int32 len, vrpn_float32 *Scale)</td></tr>
+<tr class="separator:af3c949a8e627a59dfd6ca21c1551389c inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a56f10757e862a1d4283d49fe1f016d84 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a56f10757e862a1d4283d49fe1f016d84"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setSceneOrigin</b> (const char *buffer, vrpn_int32 len, vrpn_float32 Pos[3], vrpn_float32 axis[3], vrpn_float32 *angle)</td></tr>
+<tr class="separator:a56f10757e862a1d4283d49fe1f016d84 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12787d0ba9a64459c52d1ae0a09d3799 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a12787d0ba9a64459c52d1ae0a09d3799"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setObjectIsTouchable</b> (const char *buffer, vrpn_int32 len, vrpn_int32 *objNum, vrpn_bool *isTouchable)</td></tr>
+<tr class="separator:a12787d0ba9a64459c52d1ae0a09d3799 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a4781778bb904bbc159eca7872b1bad inherit pro_static_methods_classvrpn__ForceDevice" id="r_a0a4781778bb904bbc159eca7872b1bad"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_forcefield</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 origin[3], vrpn_float32 force[3], vrpn_float32 jacobian[3][3], vrpn_float32 *radius)</td></tr>
+<tr class="separator:a0a4781778bb904bbc159eca7872b1bad inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ada15687728a3300590953ba4b419c3dd inherit pro_static_methods_classvrpn__ForceDevice" id="r_ada15687728a3300590953ba4b419c3dd"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_error</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *error_code)</td></tr>
+<tr class="separator:ada15687728a3300590953ba4b419c3dd inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a832d05c45ce7ad00dc05f797a24953bb inherit pro_static_methods_classvrpn__ForceDevice" id="r_a832d05c45ce7ad00dc05f797a24953bb"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_enableConstraint</b> (vrpn_int32 &amp;len, vrpn_int32 enable)</td></tr>
+<tr class="separator:a832d05c45ce7ad00dc05f797a24953bb inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36e1a90685f9d5e1b5886571e71ce3cc inherit pro_static_methods_classvrpn__ForceDevice" id="r_a36e1a90685f9d5e1b5886571e71ce3cc"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_enableConstraint</b> (const char *buffer, const vrpn_int32 len, vrpn_int32 *enable)</td></tr>
+<tr class="separator:a36e1a90685f9d5e1b5886571e71ce3cc inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a61ce249e52e3eb9e383ebc970dba84 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a0a61ce249e52e3eb9e383ebc970dba84"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintMode</b> (vrpn_int32 &amp;len, ConstraintGeometry mode)</td></tr>
+<tr class="separator:a0a61ce249e52e3eb9e383ebc970dba84 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af686496d969ec291ddecfdfab4cacd36 inherit pro_static_methods_classvrpn__ForceDevice" id="r_af686496d969ec291ddecfdfab4cacd36"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintMode</b> (const char *buffer, const vrpn_int32 len, ConstraintGeometry *mode)</td></tr>
+<tr class="separator:af686496d969ec291ddecfdfab4cacd36 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6168f59a1ce4a8a418840d0ee4e4cb3a inherit pro_static_methods_classvrpn__ForceDevice" id="r_a6168f59a1ce4a8a418840d0ee4e4cb3a"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintPoint</b> (vrpn_int32 &amp;len, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a6168f59a1ce4a8a418840d0ee4e4cb3a inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0fdd7201cd1f4f46ae4ffc202b762d18 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a0fdd7201cd1f4f46ae4ffc202b762d18"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintPoint</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:a0fdd7201cd1f4f46ae4ffc202b762d18 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aafb31f2862c1b5eec30ad73ee2d236b1 inherit pro_static_methods_classvrpn__ForceDevice" id="r_aafb31f2862c1b5eec30ad73ee2d236b1"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintLinePoint</b> (vrpn_int32 &amp;len, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:aafb31f2862c1b5eec30ad73ee2d236b1 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aca1c19a85eb5457a87247fe30dfc81a3 inherit pro_static_methods_classvrpn__ForceDevice" id="r_aca1c19a85eb5457a87247fe30dfc81a3"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintLinePoint</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:aca1c19a85eb5457a87247fe30dfc81a3 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af3a35d04901a5f19445a159592ea4dd6 inherit pro_static_methods_classvrpn__ForceDevice" id="r_af3a35d04901a5f19445a159592ea4dd6"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintLineDirection</b> (vrpn_int32 &amp;len, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:af3a35d04901a5f19445a159592ea4dd6 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab58218151bd596b6eb94c327e4217972 inherit pro_static_methods_classvrpn__ForceDevice" id="r_ab58218151bd596b6eb94c327e4217972"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintLineDirection</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:ab58218151bd596b6eb94c327e4217972 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a681d543d54c5a5c0c38b5d31b57bcde2 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a681d543d54c5a5c0c38b5d31b57bcde2"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintPlanePoint</b> (vrpn_int32 &amp;len, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a681d543d54c5a5c0c38b5d31b57bcde2 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6977e864ef41a39397948f0711070ca5 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a6977e864ef41a39397948f0711070ca5"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintPlanePoint</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:a6977e864ef41a39397948f0711070ca5 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a80c976feb60a06411d61945be7e62623 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a80c976feb60a06411d61945be7e62623"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintPlaneNormal</b> (vrpn_int32 &amp;len, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a80c976feb60a06411d61945be7e62623 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6badc594d9a26e2336d378770de6491d inherit pro_static_methods_classvrpn__ForceDevice" id="r_a6badc594d9a26e2336d378770de6491d"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintPlaneNormal</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:a6badc594d9a26e2336d378770de6491d inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae8733595cf8e142535d6b9254449aebd inherit pro_static_methods_classvrpn__ForceDevice" id="r_ae8733595cf8e142535d6b9254449aebd"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encode_setConstraintKSpring</b> (vrpn_int32 &amp;len, vrpn_float32 k)</td></tr>
+<tr class="separator:ae8733595cf8e142535d6b9254449aebd inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1612fc294d35e383f6edbee2882c9fa7 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a1612fc294d35e383f6edbee2882c9fa7"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decode_setConstraintKSpring</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *k)</td></tr>
+<tr class="separator:a1612fc294d35e383f6edbee2882c9fa7 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0bfdb74c92f2c5e44cf43310b67c1314 inherit pro_static_methods_classvrpn__ForceDevice" id="r_a0bfdb74c92f2c5e44cf43310b67c1314"><td align="right" class="memItemLeft" valign="top">
+static char * </td><td class="memItemRight" valign="bottom"><b>encodePoint</b> (vrpn_int32 &amp;len, vrpn_float32 x, vrpn_float32 y, vrpn_float32 z)</td></tr>
+<tr class="separator:a0bfdb74c92f2c5e44cf43310b67c1314 inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3203d036ca137bba327498b87f3011dd inherit pro_static_methods_classvrpn__ForceDevice" id="r_a3203d036ca137bba327498b87f3011dd"><td align="right" class="memItemLeft" valign="top">
+static vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>decodePoint</b> (const char *buffer, const vrpn_int32 len, vrpn_float32 *x, vrpn_float32 *y, vrpn_float32 *z)</td></tr>
+<tr class="separator:a3203d036ca137bba327498b87f3011dd inherit pro_static_methods_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_ab920cd5e2843534727cf36ac30172dac"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ab920cd5e2843534727cf36ac30172dac">encode_text_message_to_buffer</a> (char *buf, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> severity, vrpn_uint32 level, const char *msg)</td></tr>
+<tr class="separator:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_af956afd27aaf4689728a9df78fa5de0d"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af956afd27aaf4689728a9df78fa5de0d">decode_text_message_from_buffer</a> (char *msg, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> *severity, vrpn_uint32 *level, const char *buf)</td></tr>
+<tr class="memdesc:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Decodes the body of the text message from a buffer from the connection  <br/></td></tr>
+<tr class="separator:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a36bbf7c65e9c663e5e0f7e4584bb4c9b" id="r_a36bbf7c65e9c663e5e0f7e4584bb4c9b"><td align="right" class="memItemLeft" valign="top"><a id="a36bbf7c65e9c663e5e0f7e4584bb4c9b" name="a36bbf7c65e9c663e5e0f7e4584bb4c9b"></a>
+<a class="el" href="classvrpn__Callback__List.html">vrpn_Callback_List</a>&lt; <a class="el" href="struct__vrpn__FORCECB.html">vrpn_FORCECB</a> &gt; </td><td class="memItemRight" valign="bottom"><b>d_change_list</b></td></tr>
+<tr class="separator:a36bbf7c65e9c663e5e0f7e4584bb4c9b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a613e3538191ceb896dc050cd6044cd67" id="r_a613e3538191ceb896dc050cd6044cd67"><td align="right" class="memItemLeft" valign="top"><a id="a613e3538191ceb896dc050cd6044cd67" name="a613e3538191ceb896dc050cd6044cd67"></a>
+<a class="el" href="classvrpn__Callback__List.html">vrpn_Callback_List</a>&lt; <a class="el" href="struct__vrpn__FORCESCPCB.html">vrpn_FORCESCPCB</a> &gt; </td><td class="memItemRight" valign="bottom"><b>d_scp_change_list</b></td></tr>
+<tr class="separator:a613e3538191ceb896dc050cd6044cd67"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ffe7a36282060b7ddb7679579d757cb" id="r_a9ffe7a36282060b7ddb7679579d757cb"><td align="right" class="memItemLeft" valign="top"><a id="a9ffe7a36282060b7ddb7679579d757cb" name="a9ffe7a36282060b7ddb7679579d757cb"></a>
+<a class="el" href="classvrpn__Callback__List.html">vrpn_Callback_List</a>&lt; <a class="el" href="struct__vrpn__FORCEERRORCB.html">vrpn_FORCEERRORCB</a> &gt; </td><td class="memItemRight" valign="bottom"><b>d_error_change_list</b></td></tr>
+<tr class="separator:a9ffe7a36282060b7ddb7679579d757cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a39f45ce2118a8f2d18c87c958448fecd" id="r_a39f45ce2118a8f2d18c87c958448fecd"><td align="right" class="memItemLeft" valign="top"><a id="a39f45ce2118a8f2d18c87c958448fecd" name="a39f45ce2118a8f2d18c87c958448fecd"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_conEnabled</b></td></tr>
+<tr class="separator:a39f45ce2118a8f2d18c87c958448fecd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5379fe2e459beace13b257822db2964e" id="r_a5379fe2e459beace13b257822db2964e"><td align="right" class="memItemLeft" valign="top"><a id="a5379fe2e459beace13b257822db2964e" name="a5379fe2e459beace13b257822db2964e"></a>
+ConstraintGeometry </td><td class="memItemRight" valign="bottom"><b>d_conMode</b></td></tr>
+<tr class="separator:a5379fe2e459beace13b257822db2964e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afb632e7bc65e735f44323ab2a57120f1" id="r_afb632e7bc65e735f44323ab2a57120f1"><td align="right" class="memItemLeft" valign="top"><a id="afb632e7bc65e735f44323ab2a57120f1" name="afb632e7bc65e735f44323ab2a57120f1"></a>
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>d_conPoint</b> [3]</td></tr>
+<tr class="separator:afb632e7bc65e735f44323ab2a57120f1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad094da16437d62c976fb58eac519549c" id="r_ad094da16437d62c976fb58eac519549c"><td align="right" class="memItemLeft" valign="top"><a id="ad094da16437d62c976fb58eac519549c" name="ad094da16437d62c976fb58eac519549c"></a>
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>d_conLinePoint</b> [3]</td></tr>
+<tr class="separator:ad094da16437d62c976fb58eac519549c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aca698f75801936ac74804d01a948398f" id="r_aca698f75801936ac74804d01a948398f"><td align="right" class="memItemLeft" valign="top"><a id="aca698f75801936ac74804d01a948398f" name="aca698f75801936ac74804d01a948398f"></a>
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>d_conLineDirection</b> [3]</td></tr>
+<tr class="separator:aca698f75801936ac74804d01a948398f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6866854ade0e3bf046b5ee0e9319c93c" id="r_a6866854ade0e3bf046b5ee0e9319c93c"><td align="right" class="memItemLeft" valign="top"><a id="a6866854ade0e3bf046b5ee0e9319c93c" name="a6866854ade0e3bf046b5ee0e9319c93c"></a>
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>d_conPlanePoint</b> [3]</td></tr>
+<tr class="separator:a6866854ade0e3bf046b5ee0e9319c93c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a411394d24e817f5ce8acf6926f73d3fa" id="r_a411394d24e817f5ce8acf6926f73d3fa"><td align="right" class="memItemLeft" valign="top"><a id="a411394d24e817f5ce8acf6926f73d3fa" name="a411394d24e817f5ce8acf6926f73d3fa"></a>
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>d_conPlaneNormal</b> [3]</td></tr>
+<tr class="separator:a411394d24e817f5ce8acf6926f73d3fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae9d16e96ef99aa06722e793b3bbfbbeb" id="r_ae9d16e96ef99aa06722e793b3bbfbbeb"><td align="right" class="memItemLeft" valign="top"><a id="ae9d16e96ef99aa06722e793b3bbfbbeb" name="ae9d16e96ef99aa06722e793b3bbfbbeb"></a>
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>d_conKSpring</b></td></tr>
+<tr class="separator:ae9d16e96ef99aa06722e793b3bbfbbeb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa2c8ef918980ffceca68208449fcf4d7" id="r_aa2c8ef918980ffceca68208449fcf4d7"><td align="right" class="memItemLeft" valign="top"><a id="aa2c8ef918980ffceca68208449fcf4d7" name="aa2c8ef918980ffceca68208449fcf4d7"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>m_NextAvailableObjectID</b></td></tr>
+<tr class="separator:aa2c8ef918980ffceca68208449fcf4d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__ForceDevice"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__ForceDevice')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__ForceDevice.html">vrpn_ForceDevice</a></td></tr>
+<tr class="memitem:a81684cc9f02586dab86a3d5d9909bba7 inherit pro_attribs_classvrpn__ForceDevice" id="r_a81684cc9f02586dab86a3d5d9909bba7"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>force_message_id</b></td></tr>
+<tr class="separator:a81684cc9f02586dab86a3d5d9909bba7 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abf44fded4d83c4cfc9c0c56d1056effc inherit pro_attribs_classvrpn__ForceDevice" id="r_abf44fded4d83c4cfc9c0c56d1056effc"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>plane_message_id</b></td></tr>
+<tr class="separator:abf44fded4d83c4cfc9c0c56d1056effc inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed4741154dbb12ffd063a3b3c2abca85 inherit pro_attribs_classvrpn__ForceDevice" id="r_aed4741154dbb12ffd063a3b3c2abca85"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>plane_effects_message_id</b></td></tr>
+<tr class="separator:aed4741154dbb12ffd063a3b3c2abca85 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a94a74ff39a2d2c187e2a89db28afc5dd inherit pro_attribs_classvrpn__ForceDevice" id="r_a94a74ff39a2d2c187e2a89db28afc5dd"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>forcefield_message_id</b></td></tr>
+<tr class="separator:a94a74ff39a2d2c187e2a89db28afc5dd inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5890ae7083e554b20967d48a73067033 inherit pro_attribs_classvrpn__ForceDevice" id="r_a5890ae7083e554b20967d48a73067033"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>scp_message_id</b></td></tr>
+<tr class="separator:a5890ae7083e554b20967d48a73067033 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa242907e3a9bd46573ba2bd6cf0d17b0 inherit pro_attribs_classvrpn__ForceDevice" id="r_aa242907e3a9bd46573ba2bd6cf0d17b0"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>enableConstraint_message_id</b></td></tr>
+<tr class="separator:aa242907e3a9bd46573ba2bd6cf0d17b0 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac42da925203a39bec4f0b6334c60e900 inherit pro_attribs_classvrpn__ForceDevice" id="r_ac42da925203a39bec4f0b6334c60e900"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintMode_message_id</b></td></tr>
+<tr class="separator:ac42da925203a39bec4f0b6334c60e900 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a674d9ce3c28d323209e86e84cc673b87 inherit pro_attribs_classvrpn__ForceDevice" id="r_a674d9ce3c28d323209e86e84cc673b87"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintPoint_message_id</b></td></tr>
+<tr class="separator:a674d9ce3c28d323209e86e84cc673b87 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3fcdcade186cedbfc5aa71a7fdad6c0a inherit pro_attribs_classvrpn__ForceDevice" id="r_a3fcdcade186cedbfc5aa71a7fdad6c0a"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintLinePoint_message_id</b></td></tr>
+<tr class="separator:a3fcdcade186cedbfc5aa71a7fdad6c0a inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad0360475685f6cd929142e7004246a70 inherit pro_attribs_classvrpn__ForceDevice" id="r_ad0360475685f6cd929142e7004246a70"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintLineDirection_message_id</b></td></tr>
+<tr class="separator:ad0360475685f6cd929142e7004246a70 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abe85127fe24efb30727ce8e38aa7e667 inherit pro_attribs_classvrpn__ForceDevice" id="r_abe85127fe24efb30727ce8e38aa7e667"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintPlanePoint_message_id</b></td></tr>
+<tr class="separator:abe85127fe24efb30727ce8e38aa7e667 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac228191aa0c074e25f50a5c0d1bbf8aa inherit pro_attribs_classvrpn__ForceDevice" id="r_ac228191aa0c074e25f50a5c0d1bbf8aa"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintPlaneNormal_message_id</b></td></tr>
+<tr class="separator:ac228191aa0c074e25f50a5c0d1bbf8aa inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:accb5217a54782e0360359fd2ec6bac10 inherit pro_attribs_classvrpn__ForceDevice" id="r_accb5217a54782e0360359fd2ec6bac10"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setConstraintKSpring_message_id</b></td></tr>
+<tr class="separator:accb5217a54782e0360359fd2ec6bac10 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad73a02859fbec9519e8c1bba71130609 inherit pro_attribs_classvrpn__ForceDevice" id="r_ad73a02859fbec9519e8c1bba71130609"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>error_message_id</b></td></tr>
+<tr class="separator:ad73a02859fbec9519e8c1bba71130609 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0e9d0db513376e45c193831185a579f6 inherit pro_attribs_classvrpn__ForceDevice" id="r_a0e9d0db513376e45c193831185a579f6"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>addObject_message_id</b></td></tr>
+<tr class="separator:a0e9d0db513376e45c193831185a579f6 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af780cc49634b124c5869bfd6df0afb1f inherit pro_attribs_classvrpn__ForceDevice" id="r_af780cc49634b124c5869bfd6df0afb1f"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>addObjectExScene_message_id</b></td></tr>
+<tr class="separator:af780cc49634b124c5869bfd6df0afb1f inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a921f8085b7d71d2341d2b0e79fb3eedc inherit pro_attribs_classvrpn__ForceDevice" id="r_a921f8085b7d71d2341d2b0e79fb3eedc"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>moveToParent_message_id</b></td></tr>
+<tr class="separator:a921f8085b7d71d2341d2b0e79fb3eedc inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a78a6a4b8d0c773f05a764f483f9ee553 inherit pro_attribs_classvrpn__ForceDevice" id="r_a78a6a4b8d0c773f05a764f483f9ee553"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setObjectPosition_message_id</b></td></tr>
+<tr class="separator:a78a6a4b8d0c773f05a764f483f9ee553 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad85139cf50e558737d68a0f16abb98ae inherit pro_attribs_classvrpn__ForceDevice" id="r_ad85139cf50e558737d68a0f16abb98ae"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setObjectOrientation_message_id</b></td></tr>
+<tr class="separator:ad85139cf50e558737d68a0f16abb98ae inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4cbeb631a9397179bc029dee4569d0e inherit pro_attribs_classvrpn__ForceDevice" id="r_aa4cbeb631a9397179bc029dee4569d0e"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setObjectScale_message_id</b></td></tr>
+<tr class="separator:aa4cbeb631a9397179bc029dee4569d0e inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afb2049f3332fe593994a83469a37318d inherit pro_attribs_classvrpn__ForceDevice" id="r_afb2049f3332fe593994a83469a37318d"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>removeObject_message_id</b></td></tr>
+<tr class="separator:afb2049f3332fe593994a83469a37318d inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bd8793d93d2f78014550110f3eb8f11 inherit pro_attribs_classvrpn__ForceDevice" id="r_a5bd8793d93d2f78014550110f3eb8f11"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setVertex_message_id</b></td></tr>
+<tr class="separator:a5bd8793d93d2f78014550110f3eb8f11 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad1217a3b3432f402a0057209b76aed71 inherit pro_attribs_classvrpn__ForceDevice" id="r_ad1217a3b3432f402a0057209b76aed71"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setNormal_message_id</b></td></tr>
+<tr class="separator:ad1217a3b3432f402a0057209b76aed71 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aba230a3e6660d627b09b48f1f5d3bdda inherit pro_attribs_classvrpn__ForceDevice" id="r_aba230a3e6660d627b09b48f1f5d3bdda"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setTriangle_message_id</b></td></tr>
+<tr class="separator:aba230a3e6660d627b09b48f1f5d3bdda inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8962bcf2c97806515b88e826ca078b2d inherit pro_attribs_classvrpn__ForceDevice" id="r_a8962bcf2c97806515b88e826ca078b2d"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>removeTriangle_message_id</b></td></tr>
+<tr class="separator:a8962bcf2c97806515b88e826ca078b2d inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9405f7d79b342ed7863595c1769caa62 inherit pro_attribs_classvrpn__ForceDevice" id="r_a9405f7d79b342ed7863595c1769caa62"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>updateTrimeshChanges_message_id</b></td></tr>
+<tr class="separator:a9405f7d79b342ed7863595c1769caa62 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae365efdd654647a81d6fafe8981707fd inherit pro_attribs_classvrpn__ForceDevice" id="r_ae365efdd654647a81d6fafe8981707fd"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>transformTrimesh_message_id</b></td></tr>
+<tr class="separator:ae365efdd654647a81d6fafe8981707fd inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a35ea2acb0c81893928bf813978a52d9c inherit pro_attribs_classvrpn__ForceDevice" id="r_a35ea2acb0c81893928bf813978a52d9c"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setTrimeshType_message_id</b></td></tr>
+<tr class="separator:a35ea2acb0c81893928bf813978a52d9c inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9d9a8800466e9a55a3efa1516f14d8e9 inherit pro_attribs_classvrpn__ForceDevice" id="r_a9d9a8800466e9a55a3efa1516f14d8e9"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>clearTrimesh_message_id</b></td></tr>
+<tr class="separator:a9d9a8800466e9a55a3efa1516f14d8e9 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acaeb8da6a941cadb6dd8009e979b2593 inherit pro_attribs_classvrpn__ForceDevice" id="r_acaeb8da6a941cadb6dd8009e979b2593"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setHapticOrigin_message_id</b></td></tr>
+<tr class="separator:acaeb8da6a941cadb6dd8009e979b2593 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a09d5674bd8498af5609c1e52b2d9908c inherit pro_attribs_classvrpn__ForceDevice" id="r_a09d5674bd8498af5609c1e52b2d9908c"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setHapticScale_message_id</b></td></tr>
+<tr class="separator:a09d5674bd8498af5609c1e52b2d9908c inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0e9fca160989065f8badc4623532a036 inherit pro_attribs_classvrpn__ForceDevice" id="r_a0e9fca160989065f8badc4623532a036"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setSceneOrigin_message_id</b></td></tr>
+<tr class="separator:a0e9fca160989065f8badc4623532a036 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae718f5ba15bcd5b2ee08e6a2b63f8ea8 inherit pro_attribs_classvrpn__ForceDevice" id="r_ae718f5ba15bcd5b2ee08e6a2b63f8ea8"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>getNewObjectID_message_id</b></td></tr>
+<tr class="separator:ae718f5ba15bcd5b2ee08e6a2b63f8ea8 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4bab70d3856eb565bdfd6fd6d7589ea4 inherit pro_attribs_classvrpn__ForceDevice" id="r_a4bab70d3856eb565bdfd6fd6d7589ea4"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>setObjectIsTouchable_message_id</b></td></tr>
+<tr class="separator:a4bab70d3856eb565bdfd6fd6d7589ea4 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a713d725ae944045e0aee9dff04c4b5d5 inherit pro_attribs_classvrpn__ForceDevice" id="r_a713d725ae944045e0aee9dff04c4b5d5"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>custom_effect_message_id</b></td></tr>
+<tr class="separator:a713d725ae944045e0aee9dff04c4b5d5 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__ForceDevice" id="r_a175ebf16736553ad076aefe3f02d180c"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>timestamp</b></td></tr>
+<tr class="separator:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a55d8a84e1d05eabbb2d9fb16d7fb30c4 inherit pro_attribs_classvrpn__ForceDevice" id="r_a55d8a84e1d05eabbb2d9fb16d7fb30c4"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>which_plane</b></td></tr>
+<tr class="separator:a55d8a84e1d05eabbb2d9fb16d7fb30c4 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed4fb9a1435d5c930251f1a206e9b9a5 inherit pro_attribs_classvrpn__ForceDevice" id="r_aed4fb9a1435d5c930251f1a206e9b9a5"><td align="right" class="memItemLeft" valign="top">vrpn_float64 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__ForceDevice.html#aed4fb9a1435d5c930251f1a206e9b9a5">d_force</a> [3]</td></tr>
+<tr class="separator:aed4fb9a1435d5c930251f1a206e9b9a5 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af803a337b77be78cbb09bc000371c557 inherit pro_attribs_classvrpn__ForceDevice" id="r_af803a337b77be78cbb09bc000371c557"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>scp_pos</b> [3]</td></tr>
+<tr class="separator:af803a337b77be78cbb09bc000371c557 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae22a08e83ec387ef1672ead4cc0e2532 inherit pro_attribs_classvrpn__ForceDevice" id="r_ae22a08e83ec387ef1672ead4cc0e2532"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>scp_quat</b> [4]</td></tr>
+<tr class="separator:ae22a08e83ec387ef1672ead4cc0e2532 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae6555a18c73e1eb227d5780bfdf85a95 inherit pro_attribs_classvrpn__ForceDevice" id="r_ae6555a18c73e1eb227d5780bfdf85a95"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>plane</b> [4]</td></tr>
+<tr class="separator:ae6555a18c73e1eb227d5780bfdf85a95 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7f9312cff6fa3135da7693e868f6e499 inherit pro_attribs_classvrpn__ForceDevice" id="r_a7f9312cff6fa3135da7693e868f6e499"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>ff_origin</b> [3]</td></tr>
+<tr class="separator:a7f9312cff6fa3135da7693e868f6e499 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a11f330c561053489e245553aed3ac9be inherit pro_attribs_classvrpn__ForceDevice" id="r_a11f330c561053489e245553aed3ac9be"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>ff_force</b> [3]</td></tr>
+<tr class="separator:a11f330c561053489e245553aed3ac9be inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a87bd06092c0159501e554c0bf2c99cc5 inherit pro_attribs_classvrpn__ForceDevice" id="r_a87bd06092c0159501e554c0bf2c99cc5"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>ff_jacobian</b> [3][3]</td></tr>
+<tr class="separator:a87bd06092c0159501e554c0bf2c99cc5 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae96819d7605deb370f3c11192419526a inherit pro_attribs_classvrpn__ForceDevice" id="r_ae96819d7605deb370f3c11192419526a"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>ff_radius</b></td></tr>
+<tr class="separator:ae96819d7605deb370f3c11192419526a inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ba31a9bfc407ddbc28d4fef8343f5f8 inherit pro_attribs_classvrpn__ForceDevice" id="r_a0ba31a9bfc407ddbc28d4fef8343f5f8"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceKspring</b></td></tr>
+<tr class="separator:a0ba31a9bfc407ddbc28d4fef8343f5f8 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a332765e9771ba3929be42be1ca3d7151 inherit pro_attribs_classvrpn__ForceDevice" id="r_a332765e9771ba3929be42be1ca3d7151"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceKdamping</b></td></tr>
+<tr class="separator:a332765e9771ba3929be42be1ca3d7151 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad5f479c75648d9747572adc6fe94c406 inherit pro_attribs_classvrpn__ForceDevice" id="r_ad5f479c75648d9747572adc6fe94c406"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceFstatic</b></td></tr>
+<tr class="separator:ad5f479c75648d9747572adc6fe94c406 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a18873d98e2f58625ff1638020fd9dcbf inherit pro_attribs_classvrpn__ForceDevice" id="r_a18873d98e2f58625ff1638020fd9dcbf"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceFdynamic</b></td></tr>
+<tr class="separator:a18873d98e2f58625ff1638020fd9dcbf inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7729c7a95997b130db2e8971bc64dc82 inherit pro_attribs_classvrpn__ForceDevice" id="r_a7729c7a95997b130db2e8971bc64dc82"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>numRecCycles</b></td></tr>
+<tr class="separator:a7729c7a95997b130db2e8971bc64dc82 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0ec13bcca286c553a2b3d1009df7bdc inherit pro_attribs_classvrpn__ForceDevice" id="r_aa0ec13bcca286c553a2b3d1009df7bdc"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>errorCode</b></td></tr>
+<tr class="separator:aa0ec13bcca286c553a2b3d1009df7bdc inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab24429fd631aafecc1ce2fe2d52eb1dd inherit pro_attribs_classvrpn__ForceDevice" id="r_ab24429fd631aafecc1ce2fe2d52eb1dd"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceKadhesionLateral</b></td></tr>
+<tr class="separator:ab24429fd631aafecc1ce2fe2d52eb1dd inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa8c010121c60e51d6fe28b6e0a9a17ec inherit pro_attribs_classvrpn__ForceDevice" id="r_aa8c010121c60e51d6fe28b6e0a9a17ec"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceKadhesionNormal</b></td></tr>
+<tr class="separator:aa8c010121c60e51d6fe28b6e0a9a17ec inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0f8eb5c08d6b6b21cdc5eb42b403eef inherit pro_attribs_classvrpn__ForceDevice" id="r_aa0f8eb5c08d6b6b21cdc5eb42b403eef"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceBuzzFreq</b></td></tr>
+<tr class="separator:aa0f8eb5c08d6b6b21cdc5eb42b403eef inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e7074d9c1481d7f04566dd3d7cb108f inherit pro_attribs_classvrpn__ForceDevice" id="r_a2e7074d9c1481d7f04566dd3d7cb108f"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceBuzzAmp</b></td></tr>
+<tr class="separator:a2e7074d9c1481d7f04566dd3d7cb108f inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3aabedb8db9d5b7e6a340e11b650d385 inherit pro_attribs_classvrpn__ForceDevice" id="r_a3aabedb8db9d5b7e6a340e11b650d385"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceTextureWavelength</b></td></tr>
+<tr class="separator:a3aabedb8db9d5b7e6a340e11b650d385 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a94c8ece0a6f394354976d24f3a41f474 inherit pro_attribs_classvrpn__ForceDevice" id="r_a94c8ece0a6f394354976d24f3a41f474"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>SurfaceTextureAmplitude</b></td></tr>
+<tr class="separator:a94c8ece0a6f394354976d24f3a41f474 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac4a0f9b89f0876b1033458a8831f3581 inherit pro_attribs_classvrpn__ForceDevice" id="r_ac4a0f9b89f0876b1033458a8831f3581"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>customEffectId</b></td></tr>
+<tr class="separator:ac4a0f9b89f0876b1033458a8831f3581 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a61bda906a3788358f3ac95865de0d0f4 inherit pro_attribs_classvrpn__ForceDevice" id="r_a61bda906a3788358f3ac95865de0d0f4"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 * </td><td class="memItemRight" valign="bottom"><b>customEffectParams</b></td></tr>
+<tr class="separator:a61bda906a3788358f3ac95865de0d0f4 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a118d3d691501feaea2a7c510a2c1c402 inherit pro_attribs_classvrpn__ForceDevice" id="r_a118d3d691501feaea2a7c510a2c1c402"><td align="right" class="memItemLeft" valign="top">
+vrpn_uint32 </td><td class="memItemRight" valign="bottom"><b>nbCustomEffectParams</b></td></tr>
+<tr class="separator:a118d3d691501feaea2a7c510a2c1c402 inherit pro_attribs_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_aa15df0bbfd40028dc70ad9da0c3749f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa15df0bbfd40028dc70ad9da0c3749f2">d_connection</a></td></tr>
+<tr class="memdesc:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Connection that this object talks to  <br/></td></tr>
+<tr class="separator:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_ad217413237b5fb9103f13faca74b9178"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ad217413237b5fb9103f13faca74b9178">d_servicename</a></td></tr>
+<tr class="separator:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af225875d2b9d3451084358b49ac19d93"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af225875d2b9d3451084358b49ac19d93">d_sender_id</a></td></tr>
+<tr class="memdesc:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">part  <br/></td></tr>
+<tr class="separator:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af010bf4b3b573708eec88ab965b55db6"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af010bf4b3b573708eec88ab965b55db6">d_text_message_id</a></td></tr>
+<tr class="memdesc:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">ID for text messages  <br/></td></tr>
+<tr class="separator:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a9bd51620536e883c3fd68f10e7991f32"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a9bd51620536e883c3fd68f10e7991f32">d_ping_message_id</a></td></tr>
+<tr class="memdesc:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Ask the server if they are there  <br/></td></tr>
+<tr class="separator:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a15d130460086a15b944b5c5388ead25f"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a15d130460086a15b944b5c5388ead25f">d_pong_message_id</a></td></tr>
+<tr class="memdesc:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Server telling that it is there  <br/></td></tr>
+<tr class="separator:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_classvrpn__ForceDevice"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classvrpn__ForceDevice')"><img alt="-" src="closed.png"/> Public 类型 继承自 <a class="el" href="classvrpn__ForceDevice.html">vrpn_ForceDevice</a></td></tr>
+<tr class="memitem:a7222ad5067996a2c15bd82525f53684c inherit pub_types_classvrpn__ForceDevice" id="r_a7222ad5067996a2c15bd82525f53684c"><td align="right" class="memItemLeft" valign="top"><a id="a7222ad5067996a2c15bd82525f53684c" name="a7222ad5067996a2c15bd82525f53684c"></a>enum  </td><td class="memItemRight" valign="bottom"><b>ConstraintGeometry</b> { <b>NO_CONSTRAINT</b>
+, <b>POINT_CONSTRAINT</b>
+, <b>LINE_CONSTRAINT</b>
+, <b>PLANE_CONSTRAINT</b>
+ }</td></tr>
+<tr class="separator:a7222ad5067996a2c15bd82525f53684c inherit pub_types_classvrpn__ForceDevice"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique" id="r_a6757110b074584b237001f720ba94259"><td align="right" class="memItemLeft" valign="top">
+bool </td><td class="memItemRight" valign="bottom"><b>shutup</b></td></tr>
+<tr class="separator:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="afb6f8b4691df5408840fcabab92e74e4" name="afb6f8b4691df5408840fcabab92e74e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6f8b4691df5408840fcabab92e74e4">◆ </a></span>addObject()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void addObject </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>objNum</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>ParentNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>functions for multiple objects in the haptic scene </p>
+</div>
+</div>
+<a id="a5299ecc517aeaf6e61dc5d2c5316b4cb" name="a5299ecc517aeaf6e61dc5d2c5316b4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">◆ </a></span>mainloop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void mainloop </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Called once through each main loop iteration to handle updates. Remote object <a class="el" href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop()</a> should call <a class="el" href="classvrpn__BaseClassUnique.html#afec33d974c2286b9b2cefdcfbfa2430b">client_mainloop()</a> and then call d_connection-&gt;<a class="el" href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop()</a>. Server object <a class="el" href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop()</a> should service the device and then call <a class="el" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop()</a>, but should not normally call d_connection-&gt;<a class="el" href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop()</a>. </p>
+<p>实现了 <a class="el" href="classvrpn__BaseClass.html#a3fff12fa6a7375d280cd6e3ee9db20cc">vrpn_BaseClass</a>.</p>
+</div>
+</div>
+<a id="a43c0a6ddc972630495f536477b638598" name="a43c0a6ddc972630495f536477b638598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c0a6ddc972630495f536477b638598">◆ </a></span>moveToParent()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void moveToParent </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>objNum</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>ParentNum</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Functions to organize the scene </p>
+</div>
+</div>
+<a id="a47fd7471cc042c3e70155947cf87e75b" name="a47fd7471cc042c3e70155947cf87e75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fd7471cc042c3e70155947cf87e75b">◆ </a></span>setVertex()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void setVertex </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>vertNum</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_float32</td> <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_float32</td> <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_float32</td> <td class="paramname"><span class="paramname"><em>z</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>functions for a single object </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__ForceDevice_8h_source.html">vrpn_ForceDevice.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

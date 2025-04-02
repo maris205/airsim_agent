@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Serial—串行通信模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">Serial—串行通信模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md106"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240813095418407.png"><img alt="" class="thumbnail" height="auto" src="image-20240813095418407.png" width="100"/></a>
+<div class="caption">
+image-20240813095418407</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">Serial模块用于在模型与外部设备之间通过串行端口进行数据通信。该模块允许模型通过串行接口发送或接收数据，常用于与硬件设备（如传感器、微控制器或其他外设）进行实时通信。这对于需要在仿真过程中与外部硬件交换数据的应用场景非常有用。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="image-20240813101503627.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240813101503627.png" title="image-20240813101503627" width="100"/></a> <a data_lightbox="image" href="image-20240813101938558.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240813101938558.png" title="image-20240813101938558" width="100"/></a> </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">源代码   </td><td class="markdownTableBodyLeft">点击“源代码”超链接，可以打开模块的MATLAB系统对象代码（系统对象使用面向对象的方法编写，可利用MATLAB Coder将MATLAB代码转换为C代码）。参见<a href="https://www.mathworks.com/help/simulink/slref/coder.ceval.html">Call C/C++ function from generated code - MATLAB coder.ceval (mathworks.com)</a> </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Device Name   </td><td class="markdownTableBodyLeft">指定要与之通信的串行设备名称。例如，<code>/dev/ttyS0</code> 表示系统中的一个串行端口设备。这通常是Linux系统中串行端口的路径。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Read or Write to serial   </td><td class="markdownTableBodyLeft">选择串行端口的操作模式，可以是“Writing”或“Reading”。“Writing”模式将数据从Simulink写入到串行端口，“Reading”模式则是从串行端口读取数据到Simulink。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Baud Rate   </td><td class="markdownTableBodyLeft">设置串行通信的波特率，即每秒传输的位数。典型的波特率值是115200、9600等。这需要与连接设备的波特率一致。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Blocking   </td><td class="markdownTableBodyLeft">如果启用此选项，模块将等待直到发送或接收操作完成后才继续执行下一步。否则，模块将继续执行而不等待。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Output Number of Bytes Receive   </td><td class="markdownTableBodyLeft">在“Reading”模式下,启用此选项后，模块将输出一个表示接收到的字节数的信号。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Enable Terminator   </td><td class="markdownTableBodyLeft">这个选项用于在每次发送数据后附加一个终止符（如换行符），通常用于文本数据的传输。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Enable Header   </td><td class="markdownTableBodyLeft">启用此选项后，发送的数据包将包含一个头部信息，用于标识数据包的开始。这在某些通信协议中是必需的。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Enable Comm Protocol   </td><td class="markdownTableBodyLeft">如果启用此选项，模块将使用特定的通信协议来处理数据传输。这通常用于更加复杂的通信场景。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">indicate number of bytes to read   </td><td class="markdownTableBodyLeft">在“Reading”模式下,指定要读取的字节数。如果设定为<code>4</code>，模块将在读取到4个字节的数据后停止读取操作。这有助于控制数据接收的数量，避免读取过多或过少的数据。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Simulate using   </td><td class="markdownTableBodyLeft">与ADC模块类似，这里可以选择**Interpreted Execution**或**Code Generation**。在解释执行模式下，模型将在MATLAB环境中解释执行，适合调试。在代码生成模式下，MATLAB代码将被编译为C代码并执行，适合更快的仿真和实际部署。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="image-20240813102153408.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240813102153408.png" title="image-20240813102153408" width="100"/></a>     在“Writing”模式下，Serial模块的主要功能是从Simulink模型中提取数据，并通过串行端口发送到指定的外部设备。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="image-20240813102221521.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240813102221521.png" title="image-20240813102221521" width="100"/></a>     在“Reading”模式下，Serial模块的主要功能是从指定的串行端口读取数据，并将其传递给Simulink模型。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>使用示例</b> </td><td class="markdownTableBodyLeft"><a href="../../5.RflySimFlyCtrl/0.ApiExps/2.PSPOfficialExps/Readme.pdf">../../5.RflySimFlyCtrl/0.ApiExps/2.PSPOfficialExps/Readme.pdf</a> </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

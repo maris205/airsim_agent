@@ -1,0 +1,5 @@
+<map id="InitModelConf" name="InitModelConf">
+<area shape="rect" id="Node000001" title="初始化无人机环境的方法。该方法根据传入的配置信息初始化无人机的仿真环境。" alt="" coords="120,5,222,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a081d2653a7e043d316eef6bf12d0dcb4" title="构造函数，初始化无人机控制器。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

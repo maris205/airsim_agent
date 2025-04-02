@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Data3D类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>DllSimCtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1Data3D.html">Data3D</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1Data3D-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">Data3D类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>仿真绝对数据接口类  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa218fbd8a2cc857b8705e3ad21ad9ddf" id="r_aa218fbd8a2cc857b8705e3ad21ad9ddf"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa218fbd8a2cc857b8705e3ad21ad9ddf">__init__</a> (self, copter_data=None, CopterID=-1, ClassID=-1)</td></tr>
+<tr class="memdesc:aa218fbd8a2cc857b8705e3ad21ad9ddf"><td class="mdescLeft"> </td><td class="mdescRight">构造函数  <br/></td></tr>
+<tr class="separator:aa218fbd8a2cc857b8705e3ad21ad9ddf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31df17c8087c6e4ef6109c8fd6c8b218" id="r_a31df17c8087c6e4ef6109c8fd6c8b218"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a31df17c8087c6e4ef6109c8fd6c8b218">update</a> (self, copter_data, CopterID=-1, ClassID=-1)</td></tr>
+<tr class="memdesc:a31df17c8087c6e4ef6109c8fd6c8b218"><td class="mdescLeft"> </td><td class="mdescRight">由copter_data更新状态变量  <br/></td></tr>
+<tr class="separator:a31df17c8087c6e4ef6109c8fd6c8b218"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6e37bd0ff858b5b3d4992517b86d365" id="r_ad6e37bd0ff858b5b3d4992517b86d365"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6e37bd0ff858b5b3d4992517b86d365">updateUdp</a> (self, UIV)</td></tr>
+<tr class="memdesc:ad6e37bd0ff858b5b3d4992517b86d365"><td class="mdescLeft"> </td><td class="mdescRight">由UIV更新状态变量  <br/></td></tr>
+<tr class="separator:ad6e37bd0ff858b5b3d4992517b86d365"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td align="right" class="memItemLeft" valign="top"><a id="a4bc1de2c250838e7456f6b1991f9d9d9" name="a4bc1de2c250838e7456f6b1991f9d9d9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CopterID</b></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aecc8f363437678911884b8b27af8dbce" id="r_aecc8f363437678911884b8b27af8dbce"><td align="right" class="memItemLeft" valign="top"><a id="aecc8f363437678911884b8b27af8dbce" name="aecc8f363437678911884b8b27af8dbce"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vehicleType</b></td></tr>
+<tr class="separator:aecc8f363437678911884b8b27af8dbce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaeb2148a4fd0285b504525c95a391012" id="r_aaeb2148a4fd0285b504525c95a391012"><td align="right" class="memItemLeft" valign="top"><a id="aaeb2148a4fd0285b504525c95a391012" name="aaeb2148a4fd0285b504525c95a391012"></a>
+ </td><td class="memItemRight" valign="bottom"><b>runnedTime</b></td></tr>
+<tr class="separator:aaeb2148a4fd0285b504525c95a391012"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12a3476123380885632b144b85737be5" id="r_a12a3476123380885632b144b85737be5"><td align="right" class="memItemLeft" valign="top"><a id="a12a3476123380885632b144b85737be5" name="a12a3476123380885632b144b85737be5"></a>
+ </td><td class="memItemRight" valign="bottom"><b>VelE</b></td></tr>
+<tr class="separator:a12a3476123380885632b144b85737be5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab98d2276e9692da2e398ffc1ba787310" id="r_ab98d2276e9692da2e398ffc1ba787310"><td align="right" class="memItemLeft" valign="top"><a id="ab98d2276e9692da2e398ffc1ba787310" name="ab98d2276e9692da2e398ffc1ba787310"></a>
+ </td><td class="memItemRight" valign="bottom"><b>PosE</b></td></tr>
+<tr class="separator:ab98d2276e9692da2e398ffc1ba787310"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aff4f0a4507ef1316d4987d3196c0b7da" id="r_aff4f0a4507ef1316d4987d3196c0b7da"><td align="right" class="memItemLeft" valign="top"><a id="aff4f0a4507ef1316d4987d3196c0b7da" name="aff4f0a4507ef1316d4987d3196c0b7da"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AngEuler</b></td></tr>
+<tr class="separator:aff4f0a4507ef1316d4987d3196c0b7da"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1276f4458e6a45e66838cf15fb51f552" id="r_a1276f4458e6a45e66838cf15fb51f552"><td align="right" class="memItemLeft" valign="top"><a id="a1276f4458e6a45e66838cf15fb51f552" name="a1276f4458e6a45e66838cf15fb51f552"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AngQuatern</b></td></tr>
+<tr class="separator:a1276f4458e6a45e66838cf15fb51f552"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a41973d0e41ca803edfae640bc03c264c" id="r_a41973d0e41ca803edfae640bc03c264c"><td align="right" class="memItemLeft" valign="top"><a id="a41973d0e41ca803edfae640bc03c264c" name="a41973d0e41ca803edfae640bc03c264c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>MotorRPMS</b></td></tr>
+<tr class="separator:a41973d0e41ca803edfae640bc03c264c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad5a8b0b0838450c25d0edf41f8e6284d" id="r_ad5a8b0b0838450c25d0edf41f8e6284d"><td align="right" class="memItemLeft" valign="top"><a id="ad5a8b0b0838450c25d0edf41f8e6284d" name="ad5a8b0b0838450c25d0edf41f8e6284d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AccB</b></td></tr>
+<tr class="separator:ad5a8b0b0838450c25d0edf41f8e6284d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae287af81bf8e1bab722c3236910dc472" id="r_ae287af81bf8e1bab722c3236910dc472"><td align="right" class="memItemLeft" valign="top"><a id="ae287af81bf8e1bab722c3236910dc472" name="ae287af81bf8e1bab722c3236910dc472"></a>
+ </td><td class="memItemRight" valign="bottom"><b>RateB</b></td></tr>
+<tr class="separator:ae287af81bf8e1bab722c3236910dc472"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a062f5eae678a130487220c6a485989df" id="r_a062f5eae678a130487220c6a485989df"><td align="right" class="memItemLeft" valign="top"><a id="a062f5eae678a130487220c6a485989df" name="a062f5eae678a130487220c6a485989df"></a>
+ </td><td class="memItemRight" valign="bottom"><b>PosGPS</b></td></tr>
+<tr class="separator:a062f5eae678a130487220c6a485989df"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a66f538babc389986738ec70104e0562b" id="r_a66f538babc389986738ec70104e0562b"><td align="right" class="memItemLeft" valign="top"><a id="a66f538babc389986738ec70104e0562b" name="a66f538babc389986738ec70104e0562b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>reserved</b></td></tr>
+<tr class="separator:a66f538babc389986738ec70104e0562b"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>仿真绝对数据接口类 </p>
+<p>用于存储和更新与载具（如无人机）相关的三维运动和状态数据。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa218fbd8a2cc857b8705e3ad21ad9ddf" name="aa218fbd8a2cc857b8705e3ad21ad9ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa218fbd8a2cc857b8705e3ad21ad9ddf">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copter_data</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ClassID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">copter_data</td><td>默认值为 None，是一个包含飞行器数据的列表。 </td></tr>
+<tr><td class="paramname">CopterID</td><td>飞行器的ID，默认值为 -1。 </td></tr>
+<tr><td class="paramname">ClassID</td><td>载具三维样式ID，默认值为 -1。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">解析
+    如果提供了 copter_data，则调用 update 方法进行初始化。
+    否则，初始化所有成员变量为默认值。
+    初始化的成员变量包括飞行器ID、三维样式、运行时间、速度、位置、姿态（欧拉角和四元数）、电机转速、加速度、角速度、GPS位置以及一些保留数据。
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="238" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1Data3D_aa218fbd8a2cc857b8705e3ad21ad9ddf_cgraph.svg" width="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a31df17c8087c6e4ef6109c8fd6c8b218" name="a31df17c8087c6e4ef6109c8fd6c8b218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31df17c8087c6e4ef6109c8fd6c8b218">◆ </a></span>update()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">update </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copter_data</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ClassID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>由copter_data更新状态变量 </p>
+<ul>
+<li><a class="anchor" id="update"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">copter_data</td><td>默认值为 None，是一个包含飞行器数据的列表。 </td></tr>
+<tr><td class="paramname">CopterID</td><td>飞行器的ID，默认值为 -1。 </td></tr>
+<tr><td class="paramname">ClassID</td><td>载具三维样式ID，默认值为 -1。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">解析
+    根据传入的 CopterID 和 ClassID，决定是否使用 copter_data 中的数据更新三维样式和飞机ID。
+    更新所有的状态变量：包括运行时间、速度、位置、姿态（欧拉角和四元数）、电机转速、加速度、角速度、GPS位置以及保留数据。
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1Data3D_a31df17c8087c6e4ef6109c8fd6c8b218_icgraph.svg" width="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad6e37bd0ff858b5b3d4992517b86d365" name="ad6e37bd0ff858b5b3d4992517b86d365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e37bd0ff858b5b3d4992517b86d365">◆ </a></span>updateUdp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">updateUdp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>UIV</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>由UIV更新状态变量 </p>
+<ul>
+<li><a class="anchor" id="updateUdp"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">UIV</td><td>是一个包含飞行器更新数据的列表。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="DllSimCtrlAPI_8py.html">DllSimCtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

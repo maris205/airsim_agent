@@ -1,0 +1,11 @@
+<map id="vrpn_Auxiliary_Logger_Server_Generic" name="vrpn_Auxiliary_Logger_Server_Generic">
+<area shape="rect" id="Node000001" title=" " alt="" coords="10,320,159,363"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Auxiliary__Logger__Server.html" title=" " alt="" coords="10,229,159,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,288,87,320,82,320,82,288"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Auxiliary__Logger.html" title=" " alt="" coords="10,155,159,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,197,87,229,82,229,82,197"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="26,80,143,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,122,87,154,82,154,82,122"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,5,164,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,48,87,80,82,80,82,48"/>
+</map>

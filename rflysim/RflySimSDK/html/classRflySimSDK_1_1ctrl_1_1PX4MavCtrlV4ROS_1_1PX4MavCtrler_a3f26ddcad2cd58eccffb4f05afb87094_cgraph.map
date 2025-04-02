@@ -1,0 +1,7 @@
+<map id="disarm" name="disarm">
+<area shape="rect" id="Node000001" title="检查PX4的上锁状态" alt="" coords="5,35,66,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a97b2df387a387f14d9ecb9ec9c327f68" title="给PX4发送解锁指令。" alt="" coords="182,5,253,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,41,166,24,167,29,66,46"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a97b2df387a387f14d9ecb9ec9c327f68" title="解锁或锁定PX4无人机" alt="" coords="114,56,321,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="66,50,98,55,98,61,66,55"/>
+</map>

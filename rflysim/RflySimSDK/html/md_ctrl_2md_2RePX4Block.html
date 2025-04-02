@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RePX4Block—在线屏蔽PX4输出模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RePX4Block—在线屏蔽PX4输出模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md93"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240807180108791.png"><img alt="" class="thumbnail" height="auto" src="image-20240807180108791.png" width="100"/></a>
+<div class="caption">
+image-20240807180108791</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">本模块可实现在线屏蔽PX4输出的，该控制切换功能，是一键安装脚本在部署固件时，自动新增的接口。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="./image-20240807180126784.png"><img alt="image-20240807180126784" class="inline thumbnail" height="auto" src="./image-20240807180126784.png" style="zoom:33%;" width="100"/></a> </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Sample Time(s)   </td><td class="markdownTableBodyLeft">采样时间    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">isEnCtr   </td><td class="markdownTableBodyLeft">当isEnCtrl端口输入为true时，则发送Mode中的数据进行自定义屏蔽输出，反则否    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">mode   </td><td class="markdownTableBodyLeft">可输入uint8类型数据实现不同的控制模式    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft">输出的CtrlS[16]最终将被发送到CopterSim的DLL模型的inPWM接口中。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>使用示例</b> </td><td class="markdownTableBodyLeft"><a href="../../5.RflySimFlyCtrl/2.AdvExps/e0_AdvApiExps/5.RepPX4Func/Readme.pdf">../../5.RflySimFlyCtrl/2.AdvExps/e0_AdvApiExps/5.RepPX4Func/Readme.pdf</a> </td></tr>
+</table>
+<p>mode具体协议如下：</p>
+<div class="fragment"><div class="line">Mode0：不屏蔽模式，PX4正常接收：actuator_outputs（软硬件在环仿真）、actuator_controls_0（力和力矩接口）、正常电机控制量</div>
+<div class="line"> </div>
+<div class="line">Mode1：完全屏蔽模式，SIL、HIL仿真时：接收actuator_outputs_rfly消息（不再接收PX4的actuator_outputs），需搭配HIL16CtrlsPWM或HIL16CtrlsNorm来发布消息；实飞时： 接收PWM_output和Aux_output模块控制（注意，不支持DShot等协议），屏蔽PX4底层电机舵机控制代码。</div>
+<div class="line"> </div>
+<div class="line">Mode2：中间力和力矩层屏蔽模式，，SIL、HIL仿真+真机：接收actuator_controls_rfly的力和力矩控制量（不再接收PX4的actuator_controls_0），需要搭配TorqueThrustCtrls模块来发送力和力矩控制量。本模块同时支持真机或仿真，也支持DShot、UartESC等特殊电调协议，兼容多旋翼、固定翼、无人车等多种载具。</div>
+<div class="line"> </div>
+<div class="line">Mode3：屏蔽PX4遥控器发出的manual_control_setpoint消息，通过RCOverCtrlAPI接口可以替换遥控器信号，实现更多控制功能。这个屏蔽接口，能够防止Simulink发送的遥控器信号和PX4发出的相冲突，导致控制抖动。</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

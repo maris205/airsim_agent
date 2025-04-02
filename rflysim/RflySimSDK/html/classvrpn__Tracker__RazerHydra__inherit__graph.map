@@ -1,0 +1,17 @@
+<map id="vrpn_Tracker_RazerHydra" name="vrpn_Tracker_RazerHydra">
+<area shape="rect" id="Node000001" title="Device supporting the Razer Hydra game controller as a tracker, analog device, and button device,..." alt="" coords="66,304,240,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog.html" title=" " alt="" coords="5,155,99,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,196,66,225,80,255,104,281,132,301,129,306,101,285,75,257,61,227,53,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="109,80,227,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,118,74,156,71,152,133,113"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Button.html" title=" " alt="" coords="122,155,214,181"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="171,122,171,154,165,154,165,122"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Tracker.html" title=" " alt="" coords="241,229,338,256"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="193,116,227,153,283,228,279,231,223,156,189,120"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="89,5,247,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="171,48,171,80,165,80,165,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="90,229,217,256"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,272,156,304,151,304,151,272"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="165,197,158,229,153,228,160,196"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="253,266,178,306,176,301,251,261"/>
+</map>

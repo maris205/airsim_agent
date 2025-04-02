@@ -1,0 +1,5 @@
+<map id="vrpn_Connection_Loopback" name="vrpn_Connection_Loopback">
+<area shape="rect" id="Node000001" title="Constructor for a Loopback connection that will basically just pass messages between objects that are..." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="37,5,156,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,48,99,80,94,80,94,48"/>
+</map>

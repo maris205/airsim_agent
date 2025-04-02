@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_RedundantTransmission.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_RedundantTransmission.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VRPN_REDUNDANT_TRANSMISSION_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VRPN_REDUNDANT_TRANSMISSION_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stddef.h&gt;</span> <span class="comment">// for NULL</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include "<a class="code" href="vrpn__BaseClass_8h.html">vrpn_BaseClass.h</a>"</span> <span class="comment">// for vrpn_BaseClass</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_API, VRPN_CALLBACK</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include "vrpn_Connection.h"</span> <span class="comment">// for vrpn_Connection (ptr only), etc</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include "vrpn_Shared.h"</span> <span class="comment">// for timeval</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include "vrpn_Types.h"</span> <span class="comment">// for vrpn_uint32, vrpn_bool, etc</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span>timeval;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00020">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classvrpn__RedundantTransmission.html">   20</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__RedundantTransmission.html">vrpn_RedundantTransmission</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> <a class="code hl_class" href="classvrpn__RedundantTransmission.html">vrpn_RedundantTransmission</a>(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvrpn__RedundantTransmission.html">~vrpn_RedundantTransmission</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> <span class="comment">// ACCESSORS</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    vrpn_uint32 defaultRetransmissions(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    timeval defaultInterval(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    vrpn_bool isEnabled(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="comment">// MANIPULATORS</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classvrpn__RedundantTransmission.html#a5ffa64c53e73a3bd81ecbbf33edac527">   34</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantTransmission.html#a5ffa64c53e73a3bd81ecbbf33edac527">mainloop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> <span class="keywordtype">void</span> enable(vrpn_bool);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classvrpn__RedundantTransmission.html#a0b1bfbf1cef737e1ff1db98823c40995">   40</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantTransmission.html#a0b1bfbf1cef737e1ff1db98823c40995">setDefaults</a>(vrpn_uint32 numRetransmissions,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                             timeval transmissionInterval);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classvrpn__RedundantTransmission.html#a414616e210996e6d35d123b2adbd2f67">   44</a></span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__RedundantTransmission.html#a414616e210996e6d35d123b2adbd2f67">pack_message</a>(vrpn_uint32 len, timeval time, vrpn_uint32 type,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                             vrpn_uint32 sender, <span class="keyword">const</span> <span class="keywordtype">char</span> *buffer,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                             vrpn_uint32 class_of_service,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                             vrpn_int32 numRetransmissions = -1,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                             timeval *transmissionInterval = NULL);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *d_connection;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00058">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structvrpn__RedundantTransmission_1_1queuedMessage.html">   58</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__RedundantTransmission_1_1queuedMessage.html">queuedMessage</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        vrpn_uint32 remainingTransmissions;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        timeval transmissionInterval;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        timeval nextValidTime;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> <a class="code hl_struct" href="structvrpn__RedundantTransmission_1_1queuedMessage.html">queuedMessage</a> *next;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    };</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> <a class="code hl_struct" href="structvrpn__RedundantTransmission_1_1queuedMessage.html">queuedMessage</a> *d_messageList;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classvrpn__RedundantTransmission.html#acd5b6156e2a1cdfa2a2ead9f122dbaac">   67</a></span>    vrpn_uint32 <a class="code hl_variable" href="classvrpn__RedundantTransmission.html#acd5b6156e2a1cdfa2a2ead9f122dbaac">d_numMessagesQueued</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> <span class="comment">// Default values.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    vrpn_uint32 d_numTransmissions;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    timeval d_transmissionInterval;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    vrpn_bool d_isEnabled;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00078">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structvrpn__RedundantController__Protocol.html">   78</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__RedundantController__Protocol.html">vrpn_RedundantController_Protocol</a> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> <span class="keywordtype">char</span> *encode_set(<span class="keywordtype">int</span> *len, vrpn_uint32 num, timeval interval);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> <span class="keywordtype">void</span> decode_set(<span class="keyword">const</span> <span class="keywordtype">char</span> **buf, vrpn_uint32 *num, timeval *interval);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> <span class="keywordtype">char</span> *encode_enable(<span class="keywordtype">int</span> *len, vrpn_bool);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> <span class="keywordtype">void</span> decode_enable(<span class="keyword">const</span> <span class="keywordtype">char</span> **buf, vrpn_bool *);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> <span class="keywordtype">void</span> register_types(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    vrpn_int32 d_set_type;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    vrpn_int32 d_enable_type;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00096">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classvrpn__RedundantController.html">   96</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__RedundantController.html">vrpn_RedundantController</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__BaseClass.html">vrpn_BaseClass</a> {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <a class="code hl_class" href="classvrpn__RedundantController.html">vrpn_RedundantController</a>(<a class="code hl_class" href="classvrpn__RedundantTransmission.html">vrpn_RedundantTransmission</a> *, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> <a class="code hl_class" href="classvrpn__RedundantController.html">~vrpn_RedundantController</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classvrpn__RedundantController.html#a5fe2749decbc9e4b882aa0aabb649fa4">  102</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantController.html#a5fe2749decbc9e4b882aa0aabb649fa4">mainloop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> <span class="comment">// Do nothing;  vrpn_BaseClass requires this.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classvrpn__RedundantController.html#ad323fbb3a0d01ece28df8432733664fb">  106</a></span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__RedundantController.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <a class="code hl_struct" href="structvrpn__RedundantController__Protocol.html">vrpn_RedundantController_Protocol</a> d_protocol;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_set(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_enable(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> <a class="code hl_class" href="classvrpn__RedundantTransmission.html">vrpn_RedundantTransmission</a> *d_object;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00120">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classvrpn__RedundantRemote.html">  120</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__RedundantRemote.html">vrpn_RedundantRemote</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__BaseClass.html">vrpn_BaseClass</a> {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> <a class="code hl_class" href="classvrpn__RedundantRemote.html">vrpn_RedundantRemote</a>(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> <a class="code hl_class" href="classvrpn__RedundantRemote.html">~vrpn_RedundantRemote</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classvrpn__RedundantRemote.html#a5fe2749decbc9e4b882aa0aabb649fa4">  126</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantRemote.html#a5fe2749decbc9e4b882aa0aabb649fa4">mainloop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> <span class="comment">// Do nothing;  vrpn_BaseClass requires this.</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> <span class="keywordtype">void</span> set(<span class="keywordtype">int</span> numRetransmissions, timeval transmissionInterval);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> <span class="keywordtype">void</span> enable(vrpn_bool);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classvrpn__RedundantRemote.html#aec4c6418fe8a449e792c1a2a3678016c">  133</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__RedundantRemote.html#aec4c6418fe8a449e792c1a2a3678016c">register_types</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> <a class="code hl_struct" href="structvrpn__RedundantController__Protocol.html">vrpn_RedundantController_Protocol</a> d_protocol;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">// A TypeDispatcher insists on too much control of its table for</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">// us to use one here - we want to use the same indices as the</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// vrpn_Connection we're attached to, but if we had our own TypeDispatcher</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// we'd have an independent, inconsistent set of type &amp; sender ids.</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#define VRPN_RR_LENGTH 8</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00157">
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="classvrpn__RedundantReceiver.html">  157</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__RedundantReceiver.html">vrpn_RedundantReceiver</a> {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> <a class="code hl_class" href="classvrpn__RedundantReceiver.html">vrpn_RedundantReceiver</a>(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvrpn__RedundantReceiver.html">~vrpn_RedundantReceiver</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> register_handler(vrpn_int32 type, vrpn_MESSAGEHANDLER handler,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> <span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                 vrpn_int32 sender = vrpn_ANY_SENDER);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> unregister_handler(vrpn_int32 type, vrpn_MESSAGEHANDLER handler,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> <span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                                   vrpn_int32 sender = vrpn_ANY_SENDER);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classvrpn__RedundantReceiver.html#a33223e9e08d9c5329a61d3c54a930a15">  170</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantReceiver.html#a33223e9e08d9c5329a61d3c54a930a15">record</a>(vrpn_bool);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classvrpn__RedundantReceiver.html#a119639998d413a63d9572b76b297bca7">  174</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantReceiver.html#a119639998d413a63d9572b76b297bca7">writeMemory</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classvrpn__RedundantReceiver.html#a510c9656f9fe18fe803a17827faa37d8">  180</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__RedundantReceiver.html#a510c9656f9fe18fe803a17827faa37d8">clearMemory</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *d_connection;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00186">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="structvrpn__RedundantReceiver_1_1RRRecord.html">  186</a></span> <span class="keyword">struct </span>VRPN_API <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRRecord.html">RRRecord</a> {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRRecord.html">RRRecord</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        timeval timestampSeen[VRPN_RR_LENGTH];</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> <span class="keywordtype">int</span> numSeen[VRPN_RR_LENGTH];</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> <span class="keywordtype">int</span> nextTimestampToReplace;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> <a class="code hl_struct" href="structvrpnMsgCallbackEntry.html">vrpnMsgCallbackEntry</a> *cb;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        vrpn_bool handlerIsRegistered;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    };</div>
+</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRRecord.html">RRRecord</a> d_records[vrpn_CONNECTION_MAX_TYPES];</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRRecord.html">RRRecord</a> d_generic;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00200">
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="structvrpn__RedundantReceiver_1_1RRMemory.html">  200</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRMemory.html">RRMemory</a> {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        timeval timestamp;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> <span class="keywordtype">int</span> numSeen;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRMemory.html">RRMemory</a> *next;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    };</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRMemory.html">RRMemory</a> *d_memory;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> <a class="code hl_struct" href="structvrpn__RedundantReceiver_1_1RRMemory.html">RRMemory</a> *d_lastMemory;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    vrpn_bool d_record;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    handle_possiblyRedundantMessage(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>};</div>
+</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#endif </span><span class="comment">// VRPN_REDUNDANT_TRANSMISSION_H</span></div>
+<div class="ttc" id="aclassvrpn__BaseClass_html"><div class="ttname"><a href="classvrpn__BaseClass.html">vrpn_BaseClass</a></div><div class="ttdef"><b>定义</b> vrpn_BaseClass.h:310</div></div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="aclassvrpn__RedundantController_html"><div class="ttname"><a href="classvrpn__RedundantController.html">vrpn_RedundantController</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:96</div></div>
+<div class="ttc" id="aclassvrpn__RedundantController_html_a5fe2749decbc9e4b882aa0aabb649fa4"><div class="ttname"><a href="classvrpn__RedundantController.html#a5fe2749decbc9e4b882aa0aabb649fa4">vrpn_RedundantController::mainloop</a></div><div class="ttdeci">void mainloop(void)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantController_html_ad323fbb3a0d01ece28df8432733664fb"><div class="ttname"><a href="classvrpn__RedundantController.html#ad323fbb3a0d01ece28df8432733664fb">vrpn_RedundantController::register_types</a></div><div class="ttdeci">virtual int register_types(void)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantReceiver_html"><div class="ttname"><a href="classvrpn__RedundantReceiver.html">vrpn_RedundantReceiver</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:157</div></div>
+<div class="ttc" id="aclassvrpn__RedundantReceiver_html_a119639998d413a63d9572b76b297bca7"><div class="ttname"><a href="classvrpn__RedundantReceiver.html#a119639998d413a63d9572b76b297bca7">vrpn_RedundantReceiver::writeMemory</a></div><div class="ttdeci">void writeMemory(const char *filename)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantReceiver_html_a33223e9e08d9c5329a61d3c54a930a15"><div class="ttname"><a href="classvrpn__RedundantReceiver.html#a33223e9e08d9c5329a61d3c54a930a15">vrpn_RedundantReceiver::record</a></div><div class="ttdeci">void record(vrpn_bool)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantReceiver_html_a510c9656f9fe18fe803a17827faa37d8"><div class="ttname"><a href="classvrpn__RedundantReceiver.html#a510c9656f9fe18fe803a17827faa37d8">vrpn_RedundantReceiver::clearMemory</a></div><div class="ttdeci">void clearMemory(void)</div><div class="ttdoc">Throws away / resets statistics.</div></div>
+<div class="ttc" id="aclassvrpn__RedundantRemote_html"><div class="ttname"><a href="classvrpn__RedundantRemote.html">vrpn_RedundantRemote</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:120</div></div>
+<div class="ttc" id="aclassvrpn__RedundantRemote_html_a5fe2749decbc9e4b882aa0aabb649fa4"><div class="ttname"><a href="classvrpn__RedundantRemote.html#a5fe2749decbc9e4b882aa0aabb649fa4">vrpn_RedundantRemote::mainloop</a></div><div class="ttdeci">void mainloop(void)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantRemote_html_aec4c6418fe8a449e792c1a2a3678016c"><div class="ttname"><a href="classvrpn__RedundantRemote.html#aec4c6418fe8a449e792c1a2a3678016c">vrpn_RedundantRemote::register_types</a></div><div class="ttdeci">int register_types(void)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantTransmission_html"><div class="ttname"><a href="classvrpn__RedundantTransmission.html">vrpn_RedundantTransmission</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:20</div></div>
+<div class="ttc" id="aclassvrpn__RedundantTransmission_html_a0b1bfbf1cef737e1ff1db98823c40995"><div class="ttname"><a href="classvrpn__RedundantTransmission.html#a0b1bfbf1cef737e1ff1db98823c40995">vrpn_RedundantTransmission::setDefaults</a></div><div class="ttdeci">virtual void setDefaults(vrpn_uint32 numRetransmissions, timeval transmissionInterval)</div><div class="ttdoc">Set default values for future calls to pack_message().</div></div>
+<div class="ttc" id="aclassvrpn__RedundantTransmission_html_a414616e210996e6d35d123b2adbd2f67"><div class="ttname"><a href="classvrpn__RedundantTransmission.html#a414616e210996e6d35d123b2adbd2f67">vrpn_RedundantTransmission::pack_message</a></div><div class="ttdeci">virtual int pack_message(vrpn_uint32 len, timeval time, vrpn_uint32 type, vrpn_uint32 sender, const char *buffer, vrpn_uint32 class_of_service, vrpn_int32 numRetransmissions=-1, timeval *transmissionInterval=NULL)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantTransmission_html_a5ffa64c53e73a3bd81ecbbf33edac527"><div class="ttname"><a href="classvrpn__RedundantTransmission.html#a5ffa64c53e73a3bd81ecbbf33edac527">vrpn_RedundantTransmission::mainloop</a></div><div class="ttdeci">virtual void mainloop(void)</div></div>
+<div class="ttc" id="aclassvrpn__RedundantTransmission_html_acd5b6156e2a1cdfa2a2ead9f122dbaac"><div class="ttname"><a href="classvrpn__RedundantTransmission.html#acd5b6156e2a1cdfa2a2ead9f122dbaac">vrpn_RedundantTransmission::d_numMessagesQueued</a></div><div class="ttdeci">vrpn_uint32 d_numMessagesQueued</div><div class="ttdoc">For debugging, mostly.</div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:67</div></div>
+<div class="ttc" id="astructvrpnMsgCallbackEntry_html"><div class="ttname"><a href="structvrpnMsgCallbackEntry.html">vrpnMsgCallbackEntry</a></div><div class="ttdoc">Description of a callback entry for a user type.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:228</div></div>
+<div class="ttc" id="astructvrpn__HANDLERPARAM_html"><div class="ttname"><a href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></div><div class="ttdoc">This structure is what is passed to a vrpn_Connection message callback.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:41</div></div>
+<div class="ttc" id="astructvrpn__RedundantController__Protocol_html"><div class="ttname"><a href="structvrpn__RedundantController__Protocol.html">vrpn_RedundantController_Protocol</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:78</div></div>
+<div class="ttc" id="astructvrpn__RedundantReceiver_1_1RRMemory_html"><div class="ttname"><a href="structvrpn__RedundantReceiver_1_1RRMemory.html">vrpn_RedundantReceiver::RRMemory</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:200</div></div>
+<div class="ttc" id="astructvrpn__RedundantReceiver_1_1RRRecord_html"><div class="ttname"><a href="structvrpn__RedundantReceiver_1_1RRRecord.html">vrpn_RedundantReceiver::RRRecord</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:186</div></div>
+<div class="ttc" id="astructvrpn__RedundantTransmission_1_1queuedMessage_html"><div class="ttname"><a href="structvrpn__RedundantTransmission_1_1queuedMessage.html">vrpn_RedundantTransmission::queuedMessage</a></div><div class="ttdef"><b>定义</b> vrpn_RedundantTransmission.h:58</div></div>
+<div class="ttc" id="avrpn__BaseClass_8h_html"><div class="ttname"><a href="vrpn__BaseClass_8h.html">vrpn_BaseClass.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

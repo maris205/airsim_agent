@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Thread.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#typedef-members">类型定义</a> |
+<a href="#func-members">函数</a> |
+<a href="#var-members">变量</a> </div>
+<div class="headertitle"><div class="title">vrpn_Thread.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Header containing <a class="el" href="classvrpn__Thread.html">vrpn_Thread</a>, <a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> (formerly in <a class="el" href="vrpn__Shared_8h_source.html">vrpn_Shared.h</a>), as well as a lock-guard class.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include "vrpn_Configure.h"</code><br/>
+<code>#include &lt;pthread.h&gt;</code><br/>
+<code>#include &lt;semaphore.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> vrpn_Thread.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="128" scrolling="no" src="vrpn__Thread_8h__incl.svg" width="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="vrpn__Thread_8h__dep__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="vrpn__Thread_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">An RAII lock/guard class for <a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> <a href="classvrpn_1_1SemaphoreGuard.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__ThreadData.html">vrpn_ThreadData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Thread.html">vrpn_Thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ae0c9e4b4776a36f2b7f2051883100cff" id="r_ae0c9e4b4776a36f2b7f2051883100cff"><td align="right" class="memItemLeft" valign="top"><a id="ae0c9e4b4776a36f2b7f2051883100cff" name="ae0c9e4b4776a36f2b7f2051883100cff"></a>
+typedef void(* </td><td class="memItemRight" valign="bottom"><b>vrpn_THREAD_FUNC</b>) (<a class="el" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> &amp;threadData)</td></tr>
+<tr class="separator:ae0c9e4b4776a36f2b7f2051883100cff"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad33338d3a19d878ab4fe739fa1a7f441" id="r_ad33338d3a19d878ab4fe739fa1a7f441"><td align="right" class="memItemLeft" valign="top"><a id="ad33338d3a19d878ab4fe739fa1a7f441" name="ad33338d3a19d878ab4fe739fa1a7f441"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>vrpn_test_threads_and_semaphores</b> (void)</td></tr>
+<tr class="separator:ad33338d3a19d878ab4fe739fa1a7f441"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:acd93b14d1ca3eb0b6f124e2df7d26c94" id="r_acd93b14d1ca3eb0b6f124e2df7d26c94"><td align="right" class="memItemLeft" valign="top">const <a class="el" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acd93b14d1ca3eb0b6f124e2df7d26c94">try_to_lock</a> = {}</td></tr>
+<tr class="memdesc:acd93b14d1ca3eb0b6f124e2df7d26c94"><td class="mdescLeft"> </td><td class="mdescRight">Dummy variable to pass to <a class="el" href="classvrpn_1_1SemaphoreGuard.html" title="An RAII lock/guard class for vrpn_Semaphore">SemaphoreGuard</a> to indicate we only want a conditional lock.  <br/></td></tr>
+<tr class="separator:acd93b14d1ca3eb0b6f124e2df7d26c94"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Header containing <a class="el" href="classvrpn__Thread.html">vrpn_Thread</a>, <a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> (formerly in <a class="el" href="vrpn__Shared_8h_source.html">vrpn_Shared.h</a>), as well as a lock-guard class. </p>
+<p>Semaphore and Thread classes derived from Hans Weber's classes from UNC. Don't let the existence of a Thread class fool you into thinking that VRPN is thread-safe. This and the Semaphore are included as building blocks towards making your own code thread-safe. They are here to enable the vrpn_Imager_Logger class to do its thing.</p>
+<dl class="section date"><dt>日期</dt><dd>2015</dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Sensics, Inc. <a href="http://sensics.com/osvr">http://sensics.com/osvr</a> </dd></dl>
+</div><h2 class="groupheader">变量说明</h2>
+<a id="acd93b14d1ca3eb0b6f124e2df7d26c94" name="acd93b14d1ca3eb0b6f124e2df7d26c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd93b14d1ca3eb0b6f124e2df7d26c94">◆ </a></span>try_to_lock</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">const try_to_lock_t try_to_lock = {}</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Dummy variable to pass to SemaphoreGuard to indicate we only want a conditional lock. </p>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

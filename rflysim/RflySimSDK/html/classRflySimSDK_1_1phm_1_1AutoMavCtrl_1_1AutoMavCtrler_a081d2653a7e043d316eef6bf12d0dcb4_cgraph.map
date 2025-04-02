@@ -1,0 +1,5 @@
+<map id="__init__" name="__init__">
+<area shape="rect" id="Node000001" title="构造函数，初始化无人机控制器。" alt="" coords="5,5,72,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a6de6180dfc72f949f1d5e619fd0be49b" title="初始化无人机环境的方法。该方法根据传入的配置信息初始化无人机的仿真环境。" alt="" coords="120,5,222,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,16,104,16,104,21,72,21"/>
+</map>

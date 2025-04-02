@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: EarthModel类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>EarthModel</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel.html">EarthModel</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="#pub-static-attribs">静态 Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">EarthModel类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>EarthModel类目前定义了同一地球基准下的坐标转换  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">EarthModel类的构造函数  <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a825c78ab0f02b7b9114536d77758a786" id="r_a825c78ab0f02b7b9114536d77758a786"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a825c78ab0f02b7b9114536d77758a786">lla2ecef</a> (self, lat, lon, h)</td></tr>
+<tr class="memdesc:a825c78ab0f02b7b9114536d77758a786"><td class="mdescLeft"> </td><td class="mdescRight">LLA坐标系转ECEF坐标系  <br/></td></tr>
+<tr class="separator:a825c78ab0f02b7b9114536d77758a786"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aef1d4945ffdc8a0101abcbb1bb4a2389" id="r_aef1d4945ffdc8a0101abcbb1bb4a2389"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aef1d4945ffdc8a0101abcbb1bb4a2389">ecef2enu</a> (self, x, y, z, lat0, lon0, h0)</td></tr>
+<tr class="memdesc:aef1d4945ffdc8a0101abcbb1bb4a2389"><td class="mdescLeft"> </td><td class="mdescRight">ECEF坐标系转ENU坐标系  <br/></td></tr>
+<tr class="separator:aef1d4945ffdc8a0101abcbb1bb4a2389"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a26df9609ce6086a0cee2f90cd1dcdcce" id="r_a26df9609ce6086a0cee2f90cd1dcdcce"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a26df9609ce6086a0cee2f90cd1dcdcce">enu2ecef</a> (self, xEast, yNorth, zUp, lat0, lon0, h0)</td></tr>
+<tr class="memdesc:a26df9609ce6086a0cee2f90cd1dcdcce"><td class="mdescLeft"> </td><td class="mdescRight">ENU坐标系转ECEF坐标系  <br/></td></tr>
+<tr class="separator:a26df9609ce6086a0cee2f90cd1dcdcce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5aa021b211555cbb843427817f1295dc" id="r_a5aa021b211555cbb843427817f1295dc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aa021b211555cbb843427817f1295dc">ecef2lla</a> (self, x, y, z)</td></tr>
+<tr class="memdesc:a5aa021b211555cbb843427817f1295dc"><td class="mdescLeft"> </td><td class="mdescRight">ECEF坐标系转LLA坐标系  <br/></td></tr>
+<tr class="separator:a5aa021b211555cbb843427817f1295dc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a72d6b35578790458e21dfdd18e12b26c" id="r_a72d6b35578790458e21dfdd18e12b26c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a72d6b35578790458e21dfdd18e12b26c">lla2enu</a> (self, lat, lon, h, lat_ref, lon_ref, h_ref)</td></tr>
+<tr class="memdesc:a72d6b35578790458e21dfdd18e12b26c"><td class="mdescLeft"> </td><td class="mdescRight">LLA到ENU之间的坐标系转换通过先转换为ECEF实现。  <br/></td></tr>
+<tr class="separator:a72d6b35578790458e21dfdd18e12b26c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3b1d857efd1ba0b5a4977122c1abfb12" id="r_a3b1d857efd1ba0b5a4977122c1abfb12"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b1d857efd1ba0b5a4977122c1abfb12">enu2lla</a> (self, xEast, yNorth, zUp, lat_ref, lon_ref, h_ref)</td></tr>
+<tr class="memdesc:a3b1d857efd1ba0b5a4977122c1abfb12"><td class="mdescLeft"> </td><td class="mdescRight">ENU到LLA之间的坐标系转换也通过先转换为ECEF实现。  <br/></td></tr>
+<tr class="separator:a3b1d857efd1ba0b5a4977122c1abfb12"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2c6f739eb92b0fe5bbf877915398ba11" id="r_a2c6f739eb92b0fe5bbf877915398ba11"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c6f739eb92b0fe5bbf877915398ba11">lla2ned</a> (self, lla, lla0)</td></tr>
+<tr class="memdesc:a2c6f739eb92b0fe5bbf877915398ba11"><td class="mdescLeft"> </td><td class="mdescRight">LLA到NED之间的坐标系转换通过先转换为ENU实现。  <br/></td></tr>
+<tr class="separator:a2c6f739eb92b0fe5bbf877915398ba11"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a70c49520236723acb52f742929324855" id="r_a70c49520236723acb52f742929324855"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a70c49520236723acb52f742929324855">ned2lla</a> (self, ned, lla0)</td></tr>
+<tr class="memdesc:a70c49520236723acb52f742929324855"><td class="mdescLeft"> </td><td class="mdescRight">NED到LLA之间的坐标系转换通过先转换为ENU实现。  <br/></td></tr>
+<tr class="separator:a70c49520236723acb52f742929324855"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4f86d5e27d26cbb14f33edecd77ad7dd" id="r_a4f86d5e27d26cbb14f33edecd77ad7dd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f86d5e27d26cbb14f33edecd77ad7dd">wgs84_f</a></td></tr>
+<tr class="memdesc:a4f86d5e27d26cbb14f33edecd77ad7dd"><td class="mdescLeft"> </td><td class="mdescRight">计算并定义地球模型的扁率（Flattening）。  <br/></td></tr>
+<tr class="separator:a4f86d5e27d26cbb14f33edecd77ad7dd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a96adb4c322a4b81d10324920375c6011" id="r_a96adb4c322a4b81d10324920375c6011"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a96adb4c322a4b81d10324920375c6011">pow_e_2</a></td></tr>
+<tr class="memdesc:a96adb4c322a4b81d10324920375c6011"><td class="mdescLeft"> </td><td class="mdescRight">计算并定义地球模型的第一偏心率的平方（Square of the First Eccentricity）。  <br/></td></tr>
+<tr class="separator:a96adb4c322a4b81d10324920375c6011"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:ad660c90589efbb535c7d55dc032c1b09" id="r_ad660c90589efbb535c7d55dc032c1b09"><td align="right" class="memItemLeft" valign="top"><a id="ad660c90589efbb535c7d55dc032c1b09" name="ad660c90589efbb535c7d55dc032c1b09"></a>
+int </td><td class="memItemRight" valign="bottom"><b>x2</b> = x ** 2</td></tr>
+<tr class="separator:ad660c90589efbb535c7d55dc032c1b09"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab01055e87d61c94f71e59f1116867f60" id="r_ab01055e87d61c94f71e59f1116867f60"><td align="right" class="memItemLeft" valign="top"><a id="ab01055e87d61c94f71e59f1116867f60" name="ab01055e87d61c94f71e59f1116867f60"></a>
+int </td><td class="memItemRight" valign="bottom"><b>y2</b> = y ** 2</td></tr>
+<tr class="separator:ab01055e87d61c94f71e59f1116867f60"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a487c8bcef68b4f19ea2a36b5e32fcfa3" id="r_a487c8bcef68b4f19ea2a36b5e32fcfa3"><td align="right" class="memItemLeft" valign="top"><a id="a487c8bcef68b4f19ea2a36b5e32fcfa3" name="a487c8bcef68b4f19ea2a36b5e32fcfa3"></a>
+int </td><td class="memItemRight" valign="bottom"><b>z2</b> = z ** 2</td></tr>
+<tr class="separator:a487c8bcef68b4f19ea2a36b5e32fcfa3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a55d2c640dfe2b13e736477d6cea07f92" id="r_a55d2c640dfe2b13e736477d6cea07f92"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d2c640dfe2b13e736477d6cea07f92">wgs84_a</a></td></tr>
+<tr class="memdesc:a55d2c640dfe2b13e736477d6cea07f92"><td class="mdescLeft"> </td><td class="mdescRight">定义地球模型的长半轴（Equatorial Radius），  <br/></td></tr>
+<tr class="separator:a55d2c640dfe2b13e736477d6cea07f92"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a422e06bd620b7d60a13746ee37a108ec" id="r_a422e06bd620b7d60a13746ee37a108ec"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a422e06bd620b7d60a13746ee37a108ec">wgs84_b</a></td></tr>
+<tr class="memdesc:a422e06bd620b7d60a13746ee37a108ec"><td class="mdescLeft"> </td><td class="mdescRight">定义地球模型的短半轴（Polar Radius），  <br/></td></tr>
+<tr class="separator:a422e06bd620b7d60a13746ee37a108ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a08a4415e9d594ff960030b921d42b91e" id="r_a08a4415e9d594ff960030b921d42b91e"><td align="right" class="memItemLeft" valign="top"><a id="a08a4415e9d594ff960030b921d42b91e" name="a08a4415e9d594ff960030b921d42b91e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>e</b> = math.sqrt (1-(self.wgs84_b/self.wgs84_a)**2)</td></tr>
+<tr class="separator:a08a4415e9d594ff960030b921d42b91e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60aee5f96367ea6d10b670a8c01da54b" id="r_a60aee5f96367ea6d10b670a8c01da54b"><td align="right" class="memItemLeft" valign="top"><a id="a60aee5f96367ea6d10b670a8c01da54b" name="a60aee5f96367ea6d10b670a8c01da54b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>b2</b> = self.wgs84_b*self.wgs84_b</td></tr>
+<tr class="separator:a60aee5f96367ea6d10b670a8c01da54b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abe2d58850d42470d1973f25924c00c47" id="r_abe2d58850d42470d1973f25924c00c47"><td align="right" class="memItemLeft" valign="top"><a id="abe2d58850d42470d1973f25924c00c47" name="abe2d58850d42470d1973f25924c00c47"></a>
+int </td><td class="memItemRight" valign="bottom"><b>e2</b> = e ** 2</td></tr>
+<tr class="separator:abe2d58850d42470d1973f25924c00c47"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a78004bb8c5d3458cf7c6ac8e7b6c8052" id="r_a78004bb8c5d3458cf7c6ac8e7b6c8052"><td align="right" class="memItemLeft" valign="top"><a id="a78004bb8c5d3458cf7c6ac8e7b6c8052" name="a78004bb8c5d3458cf7c6ac8e7b6c8052"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ep</b> = e*(self.wgs84_a/self.wgs84_b)</td></tr>
+<tr class="separator:a78004bb8c5d3458cf7c6ac8e7b6c8052"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a514f1b439f404f86f77090fa9edc96ce" id="r_a514f1b439f404f86f77090fa9edc96ce"><td align="right" class="memItemLeft" valign="top"><a id="a514f1b439f404f86f77090fa9edc96ce" name="a514f1b439f404f86f77090fa9edc96ce"></a>
+ </td><td class="memItemRight" valign="bottom"><b>r</b> = math.sqrt(x2+y2)</td></tr>
+<tr class="separator:a514f1b439f404f86f77090fa9edc96ce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3960f3a5b20ce741fcfe9b517e6201c2" id="r_a3960f3a5b20ce741fcfe9b517e6201c2"><td align="right" class="memItemLeft" valign="top"><a id="a3960f3a5b20ce741fcfe9b517e6201c2" name="a3960f3a5b20ce741fcfe9b517e6201c2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>r2</b> = r*r</td></tr>
+<tr class="separator:a3960f3a5b20ce741fcfe9b517e6201c2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a85ee5152b49c092345c56cd478ef927d" id="r_a85ee5152b49c092345c56cd478ef927d"><td align="right" class="memItemLeft" valign="top"><a id="a85ee5152b49c092345c56cd478ef927d" name="a85ee5152b49c092345c56cd478ef927d"></a>
+int </td><td class="memItemRight" valign="bottom"><b>E2</b> = self.wgs84_a ** 2 - self.wgs84_b ** 2</td></tr>
+<tr class="separator:a85ee5152b49c092345c56cd478ef927d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a83e4d55f5823e12da6439ef69be4a42a" id="r_a83e4d55f5823e12da6439ef69be4a42a"><td align="right" class="memItemLeft" valign="top"><a id="a83e4d55f5823e12da6439ef69be4a42a" name="a83e4d55f5823e12da6439ef69be4a42a"></a>
+int </td><td class="memItemRight" valign="bottom"><b>F</b> = 54*b2*z2</td></tr>
+<tr class="separator:a83e4d55f5823e12da6439ef69be4a42a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab8735735273b982cc3125e51fe46e2f4" id="r_ab8735735273b982cc3125e51fe46e2f4"><td align="right" class="memItemLeft" valign="top"><a id="ab8735735273b982cc3125e51fe46e2f4" name="ab8735735273b982cc3125e51fe46e2f4"></a>
+int </td><td class="memItemRight" valign="bottom"><b>G</b> = r2 + (1-e2)*z2 - e2*E2</td></tr>
+<tr class="separator:ab8735735273b982cc3125e51fe46e2f4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a365e974788581eee2dde0fff61173591" id="r_a365e974788581eee2dde0fff61173591"><td align="right" class="memItemLeft" valign="top"><a id="a365e974788581eee2dde0fff61173591" name="a365e974788581eee2dde0fff61173591"></a>
+tuple </td><td class="memItemRight" valign="bottom"><b>c</b> = (e2*e2*F*r2)/(G*G*G)</td></tr>
+<tr class="separator:a365e974788581eee2dde0fff61173591"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5fcf9c70fa717a8efd481752dcb8ffa4" id="r_a5fcf9c70fa717a8efd481752dcb8ffa4"><td align="right" class="memItemLeft" valign="top"><a id="a5fcf9c70fa717a8efd481752dcb8ffa4" name="a5fcf9c70fa717a8efd481752dcb8ffa4"></a>
+tuple </td><td class="memItemRight" valign="bottom"><b>s</b> = ( 1 + c + math.sqrt(c*c + 2*c) )**(1/3)</td></tr>
+<tr class="separator:a5fcf9c70fa717a8efd481752dcb8ffa4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aef94be98e2c9e4a4dece75f60ca9792c" id="r_aef94be98e2c9e4a4dece75f60ca9792c"><td align="right" class="memItemLeft" valign="top"><a id="aef94be98e2c9e4a4dece75f60ca9792c" name="aef94be98e2c9e4a4dece75f60ca9792c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>P</b> = F / (3 * (s+1/s+1)**2 * G*G)</td></tr>
+<tr class="separator:aef94be98e2c9e4a4dece75f60ca9792c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7e56035a736d269ad670f312496a0846" id="r_a7e56035a736d269ad670f312496a0846"><td align="right" class="memItemLeft" valign="top"><a id="a7e56035a736d269ad670f312496a0846" name="a7e56035a736d269ad670f312496a0846"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Q</b> = math.sqrt(1+2*e2*e2*P)</td></tr>
+<tr class="separator:a7e56035a736d269ad670f312496a0846"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a54b1d109dc7156ef46816a9527a861bc" id="r_a54b1d109dc7156ef46816a9527a861bc"><td align="right" class="memItemLeft" valign="top"><a id="a54b1d109dc7156ef46816a9527a861bc" name="a54b1d109dc7156ef46816a9527a861bc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ro</b> = -(P*e2*r)/(1+Q) + math.sqrt((self.wgs84_a*self.wgs84_a/2)*(1+1/Q) - (P*(1-e2)*z2)/(Q*(1+Q)) - P*r2/2)</td></tr>
+<tr class="separator:a54b1d109dc7156ef46816a9527a861bc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af7ee2158a6b0ee1644d855614e4275af" id="r_af7ee2158a6b0ee1644d855614e4275af"><td align="right" class="memItemLeft" valign="top"><a id="af7ee2158a6b0ee1644d855614e4275af" name="af7ee2158a6b0ee1644d855614e4275af"></a>
+tuple </td><td class="memItemRight" valign="bottom"><b>tmp</b> = (r - e2*ro) ** 2</td></tr>
+<tr class="separator:af7ee2158a6b0ee1644d855614e4275af"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a81cf6107131a3583e2b0b762cb9c2862" id="r_a81cf6107131a3583e2b0b762cb9c2862"><td align="right" class="memItemLeft" valign="top"><a id="a81cf6107131a3583e2b0b762cb9c2862" name="a81cf6107131a3583e2b0b762cb9c2862"></a>
+ </td><td class="memItemRight" valign="bottom"><b>U</b> = math.sqrt( tmp + z2 )</td></tr>
+<tr class="separator:a81cf6107131a3583e2b0b762cb9c2862"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac0055fa4cdc19a2690bfee3643413a7d" id="r_ac0055fa4cdc19a2690bfee3643413a7d"><td align="right" class="memItemLeft" valign="top"><a id="ac0055fa4cdc19a2690bfee3643413a7d" name="ac0055fa4cdc19a2690bfee3643413a7d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>V</b> = math.sqrt( tmp + (1-e2)*z2 )</td></tr>
+<tr class="separator:ac0055fa4cdc19a2690bfee3643413a7d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac017dcf7a98c772305b2db0cd5aa1610" id="r_ac017dcf7a98c772305b2db0cd5aa1610"><td align="right" class="memItemLeft" valign="top"><a id="ac017dcf7a98c772305b2db0cd5aa1610" name="ac017dcf7a98c772305b2db0cd5aa1610"></a>
+tuple </td><td class="memItemRight" valign="bottom"><b>zo</b> = (b2*z)/(self.wgs84_a*V)</td></tr>
+<tr class="separator:ac017dcf7a98c772305b2db0cd5aa1610"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a509290c21d570ff479c1b9d9b1fe8810" id="r_a509290c21d570ff479c1b9d9b1fe8810"><td align="right" class="memItemLeft" valign="top"><a id="a509290c21d570ff479c1b9d9b1fe8810" name="a509290c21d570ff479c1b9d9b1fe8810"></a>
+ </td><td class="memItemRight" valign="bottom"><b>height</b> = U*( 1 - b2/(self.wgs84_a*V) )</td></tr>
+<tr class="separator:a509290c21d570ff479c1b9d9b1fe8810"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abc5aa76a6d1e1812e4a79fa9c461dc75" id="r_abc5aa76a6d1e1812e4a79fa9c461dc75"><td align="right" class="memItemLeft" valign="top"><a id="abc5aa76a6d1e1812e4a79fa9c461dc75" name="abc5aa76a6d1e1812e4a79fa9c461dc75"></a>
+ </td><td class="memItemRight" valign="bottom"><b>lat</b> = math.atan( (z + ep*ep*zo)/r )</td></tr>
+<tr class="separator:abc5aa76a6d1e1812e4a79fa9c461dc75"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a905c521e05ec8042631a912b71d0454e" id="r_a905c521e05ec8042631a912b71d0454e"><td align="right" class="memItemLeft" valign="top"><a id="a905c521e05ec8042631a912b71d0454e" name="a905c521e05ec8042631a912b71d0454e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>temp</b> = math.atan(y/x)</td></tr>
+<tr class="separator:a905c521e05ec8042631a912b71d0454e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0bc651ef7626a7868da4cbfdbe70f96f" id="r_a0bc651ef7626a7868da4cbfdbe70f96f"><td align="right" class="memItemLeft" valign="top"><a id="a0bc651ef7626a7868da4cbfdbe70f96f" name="a0bc651ef7626a7868da4cbfdbe70f96f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>long</b> = temp</td></tr>
+<tr class="separator:a0bc651ef7626a7868da4cbfdbe70f96f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8716ad30dce6195bc9a6347d600bbab7" id="r_a8716ad30dce6195bc9a6347d600bbab7"><td align="right" class="memItemLeft" valign="top"><a id="a8716ad30dce6195bc9a6347d600bbab7" name="a8716ad30dce6195bc9a6347d600bbab7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>lat0</b> = lat/(math.pi/180)</td></tr>
+<tr class="separator:a8716ad30dce6195bc9a6347d600bbab7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac377f0325bff58a9c4149b9efd91ad2" id="r_aac377f0325bff58a9c4149b9efd91ad2"><td align="right" class="memItemLeft" valign="top"><a id="aac377f0325bff58a9c4149b9efd91ad2" name="aac377f0325bff58a9c4149b9efd91ad2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>lon0</b> = long/(math.pi/180)</td></tr>
+<tr class="separator:aac377f0325bff58a9c4149b9efd91ad2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2308d0c2ae7d54f6c8cdc7144797f414" id="r_a2308d0c2ae7d54f6c8cdc7144797f414"><td align="right" class="memItemLeft" valign="top"><a id="a2308d0c2ae7d54f6c8cdc7144797f414" name="a2308d0c2ae7d54f6c8cdc7144797f414"></a>
+ </td><td class="memItemRight" valign="bottom"><b>h0</b> = height</td></tr>
+<tr class="separator:a2308d0c2ae7d54f6c8cdc7144797f414"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>EarthModel类目前定义了同一地球基准下的坐标转换 </p>
+<p>该类目前定义了WGS84椭球体基准面（GPS的使用标准）下的坐标系变换。</p>
+<p>主要涉及三个坐标系，地心地固坐标系（ECEF，是空间直角坐标系中的一种，空间直角坐标系还包括参心系），大地坐标系（LLA）和站心坐标系（ENU或NED）。</p>
+<p>坐标转换的基本方法如下： </p><div class="image">
+<a data_lightbox="image" href="Possible_paths_for_datum_transform.svg.png"><img alt="" class="thumbnail" height="auto" src="Possible_paths_for_datum_transform.svg.png" width="100"/></a>
+</div>
+<p>坐标转换通常包含两个方面，坐标系的变换和基准面的变换：</p>
+<p>坐标系变换</p>
+<div class="image">
+<a data_lightbox="image" href="ENU.png"><img alt="" class="thumbnail" height="auto" src="ENU.png" width="100"/></a>
+<div class="caption">
+站心地平直角坐标系 (ENU)</div></div>
+<p> 坐标系变换就是在同一地球椭球下，空间点的不同坐标表示形式进行变换。包括大地坐标系与空间直角坐标系的相互转换、空间直角坐标系与站心坐标系的转换（若考虑投影变换，也就是将地球展平，还有大地坐标系与高斯平面坐标系的转换）。</p>
+<p>基准变换 </p><div class="image">
+<a data_lightbox="image" href="大地基准面.png"><img alt="" class="thumbnail" height="auto" src="大地基准面.png" width="100"/></a>
+<div class="caption">
+大地基准面和椭球体的关系</div></div>
+<p> 基准变换是指空间点在不同椭球的坐标转换。通常使用空间的七参数（Helmert模型）实现不同椭球间空间直角坐标系或者不同椭球间大地坐标系的转换。</p>
+<p>七参数公式如下: </p><p class="formulaDsp">
+\[\left[\begin{array}{l}X \\Y \\Z\end{array}\right]=\left[\begin{array}{l}\Delta X \\\Delta Y \\\Delta Z\end{array}\right]+(1+m)\left[\begin{array}{ccc}1 &amp; \theta_{z} &amp; -\theta_{y} \\-\theta_{z} &amp; 1 &amp; \theta_{x} \\\theta_{y} &amp; -\theta_{x} &amp; 1\end{array}\right]\left[\begin{array}{l}X_{0} \\Y_{0} \\Z_{0}\end{array}\right] \]
+</p>
+<p> 式中, ∆X, ∆Y, ∆Z为三个平移参数; θx, θy, θz为3个旋转参数，m为尺度参数。此七个参数可以通过在需要转化的区域里选取3个以上的转换控制点对而获取。</p>
+<p>坐标转换的一般实施步骤如下：</p>
+<p>1.收集、整理转换区域内重合点成果：</p>
+<p>重合点是指在两个坐标系下都有明确坐标的点。 需要收集足够数量的重合点数据，以确保转换精度。</p>
+<p>2.分析、选取用于计算坐标转换参数的重合点：</p>
+<p>检查重合点的分布和质量，确保它们覆盖转换区域并且数据准确。 根据实际需要，选取合适的重合点用于后续的参数计算。</p>
+<p>3.确定坐标转换参数计算方法与坐标转换模型：</p>
+<p>常见的转换模型有平面四参数模型和布尔莎七参数模型。 根据具体需求和重合点分布，选择适合的转换模型。</p>
+<p>4.两坐标系下重合点坐标形式的转换：</p>
+<p>若采用平面四参数转换模型，需要将重合点的两坐标系坐标转换成同一投影带的高斯平面坐标。至少需要两对重合点坐标。</p>
+<p>若采用布尔莎七参数转换模型，则要将重合点的两坐标系坐标转换成各自坐标系下的空间直角坐标。至少需要三对重合点坐标。</p>
+<p>5.根据确定的转换方法与转换模型利用最小二乘法初步计算坐标转换参数：</p>
+<p>使用最小二乘法对选取的重合点数据进行计算，得到初步的转换参数。</p>
+<p>6.分析重合点坐标转换残差，根据转换残差剔除粗差点：</p>
+<p>计算转换后的重合点残差，即实际坐标与转换后的坐标之间的差异。 剔除残差过大的点（粗差点），以确保转换模型的准确性。</p>
+<p>7.坐标转换残差满足精度要求时，计算最终的坐标转换参数并估计坐标转换精度：</p>
+<p>当残差在可接受范围内时，进行最终参数计算。 对转换精度进行评估，确保满足应用需求。</p>
+<p>8.根据计算得到的转换参数，转换得到转换点的目标坐标系坐标：</p>
+<p>使用最终确定的转换参数，对所有待转换点进行坐标转换，得到在目标坐标系下的坐标。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>EarthModel类的构造函数 </p>
+<p>在实例化类时会自动调用。它初始化了地球椭球体参数。 </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aef1d4945ffdc8a0101abcbb1bb4a2389" name="aef1d4945ffdc8a0101abcbb1bb4a2389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1d4945ffdc8a0101abcbb1bb4a2389">◆ </a></span>ecef2enu()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ecef2enu </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat0</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon0</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>h0</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>ECEF坐标系转ENU坐标系 </p>
+<p>由于ENU坐标系定义在局部坐标系下，所以转换前需要知道ENU局部坐标系的原点的ECEF坐标(Xr,Yr,Zr)，以及原点的经度ϕ和纬度λ。</p>
+<p>\(用户所在坐标点  P_{0}=\left(x_{0}, y_{0}, z_{0}\right)  ， 计算点  P=(x, y, z)  在以点  P_{0}  为坐标原点的enu坐标系位置  (e, n, u)  这里需要用到LLA坐标系的数据，  P_{0}  的LLA坐标点为  L L A_{0}=\left(l o n_{0}, l a t_{0}, a l t_{0}\right) ,计算式为：
+  
+  \\\begin{array}{l}{\left[\begin{array}{l}\Delta x \\\Delta y \\\Delta z\end{array}\right]=\left[\begin{array}{l}x \\y \\z\end{array}\right]-\left[\begin{array}{l}x_{0} \\y_{0} \\z_{0}\end{array}\right]} \\{\left[\begin{array}{l}e \\n \\u\end{array}\right]=S \cdot\left[\begin{array}{c}\Delta x \\\Delta y \\\Delta z\end{array}\right]=\left[\begin{array}{ccc}-\sin \left(\text{lon}_{0}\right) &amp; \cos \left(\text{lon}_{0}\right) &amp; 0 \\-\sin \left(\text{lat}_{0}\right) \cos \left(\text{lon}_{0}\right) &amp; -\sin \left(\text{lat}_{0}\right) \sin \left(\text{lon}_{0}\right) &amp; \cos \left(\text{lat}_{0}\right) \\\cos \left(\text { lat }_{0}\right) \cos \left(\text{lon}_{0}\right) &amp; \cos \left(\text{lat}_{0}\right) \sin \left(\text{lon}_{0}\right) &amp; \sin \left(\text{lat}_{0}\right)\end{array}\right] \cdot\left[\begin{array}{l}\Delta x \\\Delta y \\\Delta z\end{array}\right]} \\\end{array} \)</p>
+<p>\( 坐标变换矩阵S = \left[
+ \begin{array}{ccc}
+ -\sin(\text{lon}_{0}) &amp; \cos(\text{lon}_{0}) &amp; 0 \\
+ -\sin(\text{lat}_{0}) \cos(\text{lon}_{0}) &amp; -\sin(\text{lat}_{0}) \sin(\text{lon}_{0}) &amp; \cos(\text{lat}_{0}) \\
+ \cos(\text{lat}_{0}) \cos(\text{lon}_{0}) &amp; \cos(\text{lat}_{0}) \sin(\text{lon}_{0}) &amp; \sin(\text{lat}_{0})
+ \end{array}
+ \right]
+ \) </p><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">x</td><td></td></tr>
+<tr><td class="paramname">y</td><td></td></tr>
+<tr><td class="paramname">z</td><td></td></tr>
+<tr><td class="paramname">lat0</td><td></td></tr>
+<tr><td class="paramname">lon0</td><td></td></tr>
+<tr><td class="paramname">h0</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>xEast </dd>
+<dd>
+yNorth </dd>
+<dd>
+zUp </dd></dl>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_aef1d4945ffdc8a0101abcbb1bb4a2389_icgraph.svg" width="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a5aa021b211555cbb843427817f1295dc" name="a5aa021b211555cbb843427817f1295dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa021b211555cbb843427817f1295dc">◆ </a></span>ecef2lla()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ecef2lla </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>z</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>ECEF坐标系转LLA坐标系 </p>
+<p>ECEF坐标系下点(X,Y,Z)转换为LLA坐标系下的(lat,lon,alt)</p>
+<p>ECEF坐标到经度的换算为：</p>
+<p>\(\lambda=\text{atan} 2(Y, X) \)</p>
+<p>纬度和高度的转换涉及 N（曲率半径N 是纬度的函数） 的循环关系：</p>
+<p>\(  \frac{Z}{p} \cot \phi=1-\frac{e^{2} N}{N+h}\\
+ h=\frac{p}{\cos \phi}-N 
+ \)</p>
+<p>一个基于Ferrari's solution的迭代求解方法如下：</p>
+<p class="formulaDsp">
+\begin{align*} &amp; r  =  \sqrt{X^{2}+Y^{2}} \\&amp; e^{2}  = \left(a^{2}-b^{2}\right) / b^{2} \\&amp; F =  54 b^{2} Z^{2} \\&amp; G =  r^{2}+\left(1-e^{2}\right) Z^{2}-e^{2}\left(a^{2}-b^{2}\right) \\&amp; c  =  \frac{e^{4} r^{2}}{G^{3}} \\&amp; s  =  \sqrt[3]{1+c+\sqrt{c^{2}+2 c}} \\&amp; P  =  \frac{P}{3\left(s+\frac{1}{3}+1\right)^{2} G^{2}} \\&amp; Q  =  \sqrt{1+2 e^{4} P} \\&amp; r_{0}  =  \frac{-\left(P e^{2} r\right)}{1-Q}+\sqrt{\frac{1}{2} a^{2}(1+1 / Q)-\frac{P\left(1-e^{2}\right) Z^{2}}{Q(1+Q)}-\frac{1}{2} P r^{2}} \\&amp; U  =  \sqrt{\left(r-e^{2} r_{0}\right)^{2}+Z^{2}} \\&amp; V  =  \sqrt{\left(r-e^{2} r_{0}\right)^{2}+\left(1-e^{2}\right) Z^{2}} \\&amp; z_{0}  =  \frac{b^{2} Z}{a V} \\&amp; \text { alt }  =  U\left(1-\frac{b^{2}}{a V}\right) \\&amp; \text { lat }  =  \arctan \left[\frac{Z+e^{2} z_{0}}{r}\right] \\&amp; \text { lon }  =  \arctan \left(\frac{y}{x}\right) \end{align*}
+</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">x</td><td></td></tr>
+<tr><td class="paramname">y</td><td></td></tr>
+<tr><td class="paramname">z</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>lat0 </dd>
+<dd>
+lon0 </dd>
+<dd>
+h0 </dd></dl>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a5aa021b211555cbb843427817f1295dc_icgraph.svg" width="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a26df9609ce6086a0cee2f90cd1dcdcce" name="a26df9609ce6086a0cee2f90cd1dcdcce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26df9609ce6086a0cee2f90cd1dcdcce">◆ </a></span>enu2ecef()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">enu2ecef </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>xEast</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yNorth</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>zUp</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat0</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon0</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>h0</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>ENU坐标系转ECEF坐标系 </p>
+<p>ENU坐标系下的(xEast,yNorth,zUp)转换为ECEF坐标系下点(X,Y,Z):           </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a26df9609ce6086a0cee2f90cd1dcdcce_icgraph.svg" width="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a3b1d857efd1ba0b5a4977122c1abfb12" name="a3b1d857efd1ba0b5a4977122c1abfb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1d857efd1ba0b5a4977122c1abfb12">◆ </a></span>enu2lla()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">enu2lla </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>xEast</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yNorth</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>zUp</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat_ref</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon_ref</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>h_ref</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>ENU到LLA之间的坐标系转换也通过先转换为ECEF实现。 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">xEast</td><td></td></tr>
+<tr><td class="paramname">yNorth</td><td></td></tr>
+<tr><td class="paramname">zUp</td><td></td></tr>
+<tr><td class="paramname">lat_ref</td><td></td></tr>
+<tr><td class="paramname">lon_ref</td><td></td></tr>
+<tr><td class="paramname">h_ref</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>lat0 </dd>
+<dd>
+lon0 </dd>
+<dd>
+h0 </dd></dl>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a3b1d857efd1ba0b5a4977122c1abfb12_cgraph.svg" width="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a3b1d857efd1ba0b5a4977122c1abfb12_icgraph.svg" width="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a825c78ab0f02b7b9114536d77758a786" name="a825c78ab0f02b7b9114536d77758a786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825c78ab0f02b7b9114536d77758a786">◆ </a></span>lla2ecef()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">lla2ecef </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>h</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>LLA坐标系转ECEF坐标系 </p>
+<p>LLA坐标系下的(lon,lat,alt)转换为ECEF坐标系下点(X,Y,Z)</p>
+<p>\(\left\{\begin{array}{l}X=(N+\text { alt }) \cos (\text { lat }) \cos (\text { lon }) \\Y=(N+\text { alt }) \cos (\text { lat }) \sin (\text { lon }) \\Z=\left(N\left(1-e^{2}\right)+\text { alt }\right) \sin (\text { lat })\end{array}\right. \)</p>
+<p>其中e为椭球第一偏心率，N为基准椭球面的曲率半径</p>
+<p>\(\left\{\begin{array}{l}e^{2}=\frac{a^{2}-b^{2}}{a^{2}} \\N=\frac{a}{\sqrt{1-e^{2} \sin ^{2} \text { lat }}}\end{array}\right. \)</p>
+<div class="image">
+<a data_lightbox="image" href="Geodetic_latitude_and_the_length_of_Normal.svg.png"><img alt="" class="thumbnail" height="auto" src="Geodetic_latitude_and_the_length_of_Normal.svg.png" width="100"/></a>
+</div>
+<p><br/>
+</p>
+<p>地理坐标系和地心地固坐标系共用了同一套坐标轴。上图中，椭圆表示了地球的横截面，纵轴为Z轴，横轴为X-Y平面。假设地球的赤道半径为a，极轴半径为b。</p>
+<p>地表上空R点的地理坐标为：纬度ϕ，经度λ，海拔h。P点为发现RQ与椭球面的交点。 \( \mathrm{PQ} = N(\phi),  \mathrm{IQ} = e^{2} N(\phi) ,\mathrm{R} = (X, Y, Z) \)</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">lat</td><td></td></tr>
+<tr><td class="paramname">lon</td><td></td></tr>
+<tr><td class="paramname">h</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>x </dd>
+<dd>
+y </dd>
+<dd>
+z </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>这里经纬度单位为度，高度单位为米 </dd></dl>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a825c78ab0f02b7b9114536d77758a786_icgraph.svg" width="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a72d6b35578790458e21dfdd18e12b26c" name="a72d6b35578790458e21dfdd18e12b26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d6b35578790458e21dfdd18e12b26c">◆ </a></span>lla2enu()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">lla2enu </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lat_ref</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lon_ref</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>h_ref</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>LLA到ENU之间的坐标系转换通过先转换为ECEF实现。 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">lat</td><td></td></tr>
+<tr><td class="paramname">lon</td><td></td></tr>
+<tr><td class="paramname">h</td><td></td></tr>
+<tr><td class="paramname">lat_ref</td><td></td></tr>
+<tr><td class="paramname">lon_ref</td><td></td></tr>
+<tr><td class="paramname">h_ref</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>xEast </dd>
+<dd>
+yNorth </dd>
+<dd>
+zUp </dd></dl>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a72d6b35578790458e21dfdd18e12b26c_cgraph.svg" width="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a72d6b35578790458e21dfdd18e12b26c_icgraph.svg" width="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a2c6f739eb92b0fe5bbf877915398ba11" name="a2c6f739eb92b0fe5bbf877915398ba11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6f739eb92b0fe5bbf877915398ba11">◆ </a></span>lla2ned()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">lla2ned </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lla</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lla0</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>LLA到NED之间的坐标系转换通过先转换为ENU实现。 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">lla</td><td></td></tr>
+<tr><td class="paramname">lla0</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>yNorth </dd>
+<dd>
+xEast </dd>
+<dd>
+zUp </dd></dl>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="114" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a2c6f739eb92b0fe5bbf877915398ba11_cgraph.svg" width="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a70c49520236723acb52f742929324855" name="a70c49520236723acb52f742929324855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70c49520236723acb52f742929324855">◆ </a></span>ned2lla()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ned2lla </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ned</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>lla0</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>NED到LLA之间的坐标系转换通过先转换为ENU实现。 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ned</td><td></td></tr>
+<tr><td class="paramname">lla0</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>lat0 </dd>
+<dd>
+lon0 </dd>
+<dd>
+h0 </dd></dl>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="114" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1EarthModel_1_1EarthModel_a70c49520236723acb52f742929324855_cgraph.svg" width="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a96adb4c322a4b81d10324920375c6011" name="a96adb4c322a4b81d10324920375c6011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96adb4c322a4b81d10324920375c6011">◆ </a></span>pow_e_2</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">pow_e_2</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>计算并定义地球模型的第一偏心率的平方（Square of the First Eccentricity）。 </p>
+<p>偏心率是描述椭圆形状的重要参数，表示椭圆的离心程度。</p>
+<p>计算公式为：e^2 = f * (2 - f) 其中 f 是扁率。 对应的值计算为：self.wgs84_f * (2 - self.wgs84_f)。 </p>
+</div>
+</div>
+<a id="a55d2c640dfe2b13e736477d6cea07f92" name="a55d2c640dfe2b13e736477d6cea07f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d2c640dfe2b13e736477d6cea07f92">◆ </a></span>wgs84_a</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">wgs84_a</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>定义地球模型的长半轴（Equatorial Radius）， </p>
+<p>即地球在赤道上的半径，单位为米。值为 6378137 米。 </p>
+</div>
+</div>
+<a id="a422e06bd620b7d60a13746ee37a108ec" name="a422e06bd620b7d60a13746ee37a108ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422e06bd620b7d60a13746ee37a108ec">◆ </a></span>wgs84_b</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">wgs84_b</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>定义地球模型的短半轴（Polar Radius）， </p>
+<p>即地球在极点处的半径，单位为米。值为 6356752.3142 米。 </p>
+</div>
+</div>
+<a id="a4f86d5e27d26cbb14f33edecd77ad7dd" name="a4f86d5e27d26cbb14f33edecd77ad7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f86d5e27d26cbb14f33edecd77ad7dd">◆ </a></span>wgs84_f</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">wgs84_f</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>计算并定义地球模型的扁率（Flattening）。 </p>
+<p>扁率表示地球从球形被压扁成椭球形的程度。</p>
+<p>计算公式为：f = (a - b) / a 其中 a 是长半轴，b 是短半轴。 对应的值计算为：(6378137 - 6356752.3142) / 6378137。 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="EarthModel_8py.html">EarthModel.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

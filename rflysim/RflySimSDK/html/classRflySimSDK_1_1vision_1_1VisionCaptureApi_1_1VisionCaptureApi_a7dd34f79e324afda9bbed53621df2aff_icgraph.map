@@ -1,0 +1,21 @@
+<map id="sendUE4Cmd" name="sendUE4Cmd">
+<area shape="rect" id="Node000001" title="用于发送命令到UE4应用程序的一个或多个窗口。 它将命令转换成合适的格式，并通过UDP协议发送到指定的IP地址和端口" alt="" coords="533,172,636,199"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad84459ccd1f8f92397d1f4625c69f1dc" title="构造函数，初始化飞行器的ID、类型、地图场景、更新频率以及其他控制参数。" alt="" coords="272,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="567,160,533,110,510,84,484,62,456,48,459,43,486,58,514,80,537,106,571,157"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a08bbc02f2e508a22db16214c353bd491" title="请求场景内指定物体数据回传" alt="" coords="269,72,460,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="550,166,484,129,453,118,455,113,486,124,553,161"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#add972b32243d4f6b1f966a6825d2599e" title="用于将视觉传感器列表发送到 RflySim3D 以请求图像" alt="" coords="308,139,422,165"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="517,178,422,163,423,158,518,173"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a709be0ce4fad73b4eb6e320989d6cdef" title="将物体的模板值发送给UE（由Actor）" alt="" coords="245,189,485,248"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="518,198,486,203,485,198,517,193"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#ac1c09b7cd28d2245aa4ee2bfb29a2e7e" title="将物体的模板值发送给UE（由CopterID）" alt="" coords="245,272,485,331"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="559,211,525,237,486,262,462,274,460,269,484,258,522,233,555,207"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a40f1c4c22c562315f98a985aa1b7d9a7" title="将物体的模板值发送给UE（由mesh）" alt="" coords="245,355,485,413"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="575,215,542,280,517,315,487,345,469,356,466,352,483,341,513,311,537,277,570,212"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a8100a9848217d349c54e431c52fbc430" title=" " alt="" coords="5,5,197,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="262,70,188,51,189,46,264,65"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a4ed913dbcf51afc1c50dbb1df83f0fa6" title=" " alt="" coords="5,72,197,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="254,96,197,96,197,91,254,91"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a480bdd34fbe6d77df9898259b6e64de7" title=" " alt="" coords="5,139,197,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="264,122,189,141,188,135,262,116"/>
+</map>

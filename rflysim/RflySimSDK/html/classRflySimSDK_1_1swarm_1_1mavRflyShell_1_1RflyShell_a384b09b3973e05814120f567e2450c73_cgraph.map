@@ -1,0 +1,7 @@
+<map id="SendUpdateParam" name="SendUpdateParam">
+<area shape="rect" id="Node000001" title="更新指定参数的值。" alt="" coords="5,5,137,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1RflyShell.html#a62b5256d1fb860eb4e752ef8e7af98df" title="向飞控发送命令并接收响应。" alt="" coords="185,5,288,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,16,169,16,169,21,137,21"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1RflyShell.html#af4a136ca83436805a015e8aae2b7984a" title="检查数据中是否包含提示符（nsh&gt;），用于判断命令是否完成。" alt="" coords="336,5,414,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,16,320,16,320,21,288,21"/>
+</map>

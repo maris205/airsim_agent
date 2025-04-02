@@ -1,0 +1,5 @@
+<map id="write" name="write">
+<area shape="rect" id="Node000001" title="向飞控发送字节数据。" alt="" coords="5,5,55,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html#a69ee99c756714c09a55d9a5a0346dce4" title="输出调试信息。" alt="" coords="103,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,87,16,87,21,55,21"/>
+</map>

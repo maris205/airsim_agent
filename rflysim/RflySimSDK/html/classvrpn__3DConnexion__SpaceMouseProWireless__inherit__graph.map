@@ -1,0 +1,18 @@
+<map id="vrpn_3DConnexion_SpaceMouseProWireless" name="vrpn_3DConnexion_SpaceMouseProWireless">
+<area shape="rect" id="Node000001" title=" " alt="" coords="67,379,282,421"/>
+<area shape="rect" id="Node000002" href="$classvrpn__3DConnexion.html" title=" " alt="" coords="108,304,240,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,346,177,378,172,378,172,346"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="5,229,133,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,263,157,301,154,306,98,267"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Button.html" title=" " alt="" coords="17,155,108,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="68,197,71,229,65,229,62,197"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClass.html" title=" " alt="" coords="61,80,178,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="102,121,74,156,70,153,98,117"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Analog.html" title=" " alt="" coords="132,155,225,181"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="142,117,170,153,166,156,137,121"/>
+<area shape="rect" id="Node000006" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="40,5,199,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="122,48,122,80,117,80,117,48"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="180,197,177,304,172,303,175,197"/>
+<area shape="rect" id="Node000008" href="$classvrpn__HidInterface.html" title=" " alt="" coords="212,229,336,256"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="246,267,193,306,190,301,243,263"/>
+</map>

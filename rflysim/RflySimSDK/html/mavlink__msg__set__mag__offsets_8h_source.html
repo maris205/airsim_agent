@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/mavlink/ardupilotmega/mavlink_msg_set_mag_offsets.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_ad33f1dddab9e5eaec5103fc17ef0232.html">mavlink</a></li><li class="navelem"><a class="el" href="dir_0bc081e0fd7e1ba0adc82f866c5ec0b4.html">ardupilotmega</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">mavlink_msg_set_mag_offsets.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// MESSAGE SET_MAG_OFFSETS PACKING</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define MAVLINK_MSG_ID_SET_MAG_OFFSETS 151</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>MAVPACKED(</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">typedef</span> <span class="keyword">struct</span> __mavlink_set_mag_offsets_t {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> int16_t mag_ofs_x; <span class="comment">/*&lt; magnetometer X offset*/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> int16_t mag_ofs_y; <span class="comment">/*&lt; magnetometer Y offset*/</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> int16_t mag_ofs_z; <span class="comment">/*&lt; magnetometer Z offset*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> uint8_t target_system; <span class="comment">/*&lt; System ID*/</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> uint8_t target_component; <span class="comment">/*&lt; Component ID*/</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}) mavlink_set_mag_offsets_t;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN 8</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN 8</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define MAVLINK_MSG_ID_151_LEN 8</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define MAVLINK_MSG_ID_151_MIN_LEN 8</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC 219</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define MAVLINK_MSG_ID_151_CRC 219</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#if MAVLINK_COMMAND_24BIT</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define MAVLINK_MESSAGE_INFO_SET_MAG_OFFSETS { \</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">    151, \</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">    "SET_MAG_OFFSETS", \</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">    5, \</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">    {  { "target_system", NULL, MAVLINK_TYPE_UINT8_T, 0, 6, offsetof(mavlink_set_mag_offsets_t, target_system) }, \</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">         { "target_component", NULL, MAVLINK_TYPE_UINT8_T, 0, 7, offsetof(mavlink_set_mag_offsets_t, target_component) }, \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">         { "mag_ofs_x", NULL, MAVLINK_TYPE_INT16_T, 0, 0, offsetof(mavlink_set_mag_offsets_t, mag_ofs_x) }, \</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">         { "mag_ofs_y", NULL, MAVLINK_TYPE_INT16_T, 0, 2, offsetof(mavlink_set_mag_offsets_t, mag_ofs_y) }, \</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">         { "mag_ofs_z", NULL, MAVLINK_TYPE_INT16_T, 0, 4, offsetof(mavlink_set_mag_offsets_t, mag_ofs_z) }, \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">         } \</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define MAVLINK_MESSAGE_INFO_SET_MAG_OFFSETS { \</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    "SET_MAG_OFFSETS", \</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    5, \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    {  { "target_system", NULL, MAVLINK_TYPE_UINT8_T, 0, 6, offsetof(mavlink_set_mag_offsets_t, target_system) }, \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">         { "target_component", NULL, MAVLINK_TYPE_UINT8_T, 0, 7, offsetof(mavlink_set_mag_offsets_t, target_component) }, \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">         { "mag_ofs_x", NULL, MAVLINK_TYPE_INT16_T, 0, 0, offsetof(mavlink_set_mag_offsets_t, mag_ofs_x) }, \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">         { "mag_ofs_y", NULL, MAVLINK_TYPE_INT16_T, 0, 2, offsetof(mavlink_set_mag_offsets_t, mag_ofs_y) }, \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">         { "mag_ofs_z", NULL, MAVLINK_TYPE_INT16_T, 0, 4, offsetof(mavlink_set_mag_offsets_t, mag_ofs_z) }, \</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">         } \</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_set_mag_offsets_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                               uint8_t target_system, uint8_t target_component, int16_t mag_ofs_x, int16_t mag_ofs_y, int16_t mag_ofs_z)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> <span class="keywordtype">char</span> buf[MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    _mav_put_int16_t(buf, 0, mag_ofs_x);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    _mav_put_int16_t(buf, 2, mag_ofs_y);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    _mav_put_int16_t(buf, 4, mag_ofs_z);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    _mav_put_uint8_t(buf, 6, target_system);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    _mav_put_uint8_t(buf, 7, target_component);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), buf, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    mavlink_set_mag_offsets_t packet;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    packet.mag_ofs_x = mag_ofs_x;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    packet.mag_ofs_y = mag_ofs_y;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    packet.mag_ofs_z = mag_ofs_z;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    packet.target_system = target_system;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    packet.target_component = target_component;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), &amp;packet, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    msg-&gt;msgid = MAVLINK_MSG_ID_SET_MAG_OFFSETS;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> <span class="keywordflow">return</span> mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_set_mag_offsets_pack_chan(uint8_t system_id, uint8_t component_id, uint8_t chan,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                               mavlink_message_t* msg,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                                   uint8_t target_system,uint8_t target_component,int16_t mag_ofs_x,int16_t mag_ofs_y,int16_t mag_ofs_z)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <span class="keywordtype">char</span> buf[MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN];</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    _mav_put_int16_t(buf, 0, mag_ofs_x);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    _mav_put_int16_t(buf, 2, mag_ofs_y);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    _mav_put_int16_t(buf, 4, mag_ofs_z);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    _mav_put_uint8_t(buf, 6, target_system);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    _mav_put_uint8_t(buf, 7, target_component);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), buf, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    mavlink_set_mag_offsets_t packet;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    packet.mag_ofs_x = mag_ofs_x;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    packet.mag_ofs_y = mag_ofs_y;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    packet.mag_ofs_z = mag_ofs_z;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    packet.target_system = target_system;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    packet.target_component = target_component;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), &amp;packet, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    msg-&gt;msgid = MAVLINK_MSG_ID_SET_MAG_OFFSETS;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> <span class="keywordflow">return</span> mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_set_mag_offsets_encode(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg, <span class="keyword">const</span> mavlink_set_mag_offsets_t* set_mag_offsets)</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> <span class="keywordflow">return</span> mavlink_msg_set_mag_offsets_pack(system_id, component_id, msg, set_mag_offsets-&gt;target_system, set_mag_offsets-&gt;target_component, set_mag_offsets-&gt;mag_ofs_x, set_mag_offsets-&gt;mag_ofs_y, set_mag_offsets-&gt;mag_ofs_z);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_set_mag_offsets_encode_chan(uint8_t system_id, uint8_t component_id, uint8_t chan, mavlink_message_t* msg, <span class="keyword">const</span> mavlink_set_mag_offsets_t* set_mag_offsets)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> <span class="keywordflow">return</span> mavlink_msg_set_mag_offsets_pack_chan(system_id, component_id, chan, msg, set_mag_offsets-&gt;target_system, set_mag_offsets-&gt;target_component, set_mag_offsets-&gt;mag_ofs_x, set_mag_offsets-&gt;mag_ofs_y, set_mag_offsets-&gt;mag_ofs_z);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#ifdef MAVLINK_USE_CONVENIENCE_FUNCTIONS</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_set_mag_offsets_send(mavlink_channel_t chan, uint8_t target_system, uint8_t target_component, int16_t mag_ofs_x, int16_t mag_ofs_y, int16_t mag_ofs_z)</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>{</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> <span class="keywordtype">char</span> buf[MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN];</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    _mav_put_int16_t(buf, 0, mag_ofs_x);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    _mav_put_int16_t(buf, 2, mag_ofs_y);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    _mav_put_int16_t(buf, 4, mag_ofs_z);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    _mav_put_uint8_t(buf, 6, target_system);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    _mav_put_uint8_t(buf, 7, target_component);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SET_MAG_OFFSETS, buf, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    mavlink_set_mag_offsets_t packet;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    packet.mag_ofs_x = mag_ofs_x;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    packet.mag_ofs_y = mag_ofs_y;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    packet.mag_ofs_z = mag_ofs_z;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    packet.target_system = target_system;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    packet.target_component = target_component;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SET_MAG_OFFSETS, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;packet, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>}</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_set_mag_offsets_send_struct(mavlink_channel_t chan, <span class="keyword">const</span> mavlink_set_mag_offsets_t* set_mag_offsets)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>{</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    mavlink_msg_set_mag_offsets_send(chan, set_mag_offsets-&gt;target_system, set_mag_offsets-&gt;target_component, set_mag_offsets-&gt;mag_ofs_x, set_mag_offsets-&gt;mag_ofs_y, set_mag_offsets-&gt;mag_ofs_z);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SET_MAG_OFFSETS, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)set_mag_offsets, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#if MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN &lt;= MAVLINK_MAX_PAYLOAD_LEN</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">  This varient of _send() can be used to save stack space by re-using</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">  memory from the receive buffer.  The caller provides a</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">  mavlink_message_t which is the size of a full mavlink message. This</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">  is usually the receive buffer for the channel, and allows a reply to an</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">  incoming message with minimum stack space usage.</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_set_mag_offsets_send_buf(mavlink_message_t *msgbuf, mavlink_channel_t chan,  uint8_t target_system, uint8_t target_component, int16_t mag_ofs_x, int16_t mag_ofs_y, int16_t mag_ofs_z)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>{</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> <span class="keywordtype">char</span> *buf = (<span class="keywordtype">char</span> *)msgbuf;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    _mav_put_int16_t(buf, 0, mag_ofs_x);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    _mav_put_int16_t(buf, 2, mag_ofs_y);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    _mav_put_int16_t(buf, 4, mag_ofs_z);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    _mav_put_uint8_t(buf, 6, target_system);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    _mav_put_uint8_t(buf, 7, target_component);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SET_MAG_OFFSETS, buf, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    mavlink_set_mag_offsets_t *packet = (mavlink_set_mag_offsets_t *)msgbuf;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    packet-&gt;mag_ofs_x = mag_ofs_x;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    packet-&gt;mag_ofs_y = mag_ofs_y;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    packet-&gt;mag_ofs_z = mag_ofs_z;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    packet-&gt;target_system = target_system;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    packet-&gt;target_component = target_component;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SET_MAG_OFFSETS, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)packet, MAVLINK_MSG_ID_SET_MAG_OFFSETS_MIN_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN, MAVLINK_MSG_ID_SET_MAG_OFFSETS_CRC);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">// MESSAGE SET_MAG_OFFSETS UNPACKING</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="keyword">static</span> <span class="keyword">inline</span> uint8_t mavlink_msg_set_mag_offsets_get_target_system(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>{</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> <span class="keywordflow">return</span> _MAV_RETURN_uint8_t(msg,  6);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keyword">static</span> <span class="keyword">inline</span> uint8_t mavlink_msg_set_mag_offsets_get_target_component(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>{</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> <span class="keywordflow">return</span> _MAV_RETURN_uint8_t(msg,  7);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="keyword">static</span> <span class="keyword">inline</span> int16_t mavlink_msg_set_mag_offsets_get_mag_ofs_x(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>{</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> <span class="keywordflow">return</span> _MAV_RETURN_int16_t(msg,  0);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>}</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">static</span> <span class="keyword">inline</span> int16_t mavlink_msg_set_mag_offsets_get_mag_ofs_y(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>{</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> <span class="keywordflow">return</span> _MAV_RETURN_int16_t(msg,  2);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="keyword">static</span> <span class="keyword">inline</span> int16_t mavlink_msg_set_mag_offsets_get_mag_ofs_z(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> <span class="keywordflow">return</span> _MAV_RETURN_int16_t(msg,  4);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_set_mag_offsets_decode(<span class="keyword">const</span> mavlink_message_t* msg, mavlink_set_mag_offsets_t* set_mag_offsets)</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>{</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    set_mag_offsets-&gt;mag_ofs_x = mavlink_msg_set_mag_offsets_get_mag_ofs_x(msg);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    set_mag_offsets-&gt;mag_ofs_y = mavlink_msg_set_mag_offsets_get_mag_ofs_y(msg);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    set_mag_offsets-&gt;mag_ofs_z = mavlink_msg_set_mag_offsets_get_mag_ofs_z(msg);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    set_mag_offsets-&gt;target_system = mavlink_msg_set_mag_offsets_get_target_system(msg);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    set_mag_offsets-&gt;target_component = mavlink_msg_set_mag_offsets_get_target_component(msg);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        uint8_t len = msg-&gt;len &lt; MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN? msg-&gt;len : MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        memset(set_mag_offsets, 0, MAVLINK_MSG_ID_SET_MAG_OFFSETS_LEN);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    memcpy(set_mag_offsets, _MAV_PAYLOAD(msg), len);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

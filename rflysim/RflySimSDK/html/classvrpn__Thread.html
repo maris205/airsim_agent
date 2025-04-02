@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Thread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-static-methods">静态 Public 成员函数</a> |
+<a href="#pro-static-methods">静态 Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__Thread-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Thread类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> vrpn_Thread 的协作图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="128" scrolling="no" src="classvrpn__Thread__coll__graph.svg" width="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa406fd87cfd69d7c0a93b6a241978712" id="r_aa406fd87cfd69d7c0a93b6a241978712"><td align="right" class="memItemLeft" valign="top"><a id="aa406fd87cfd69d7c0a93b6a241978712" name="aa406fd87cfd69d7c0a93b6a241978712"></a>
+typedef pthread_t </td><td class="memItemRight" valign="bottom"><b>thread_t</b></td></tr>
+<tr class="separator:aa406fd87cfd69d7c0a93b6a241978712"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a48544c560d5293a75a239385f7d50038" id="r_a48544c560d5293a75a239385f7d50038"><td align="right" class="memItemLeft" valign="top"><a id="a48544c560d5293a75a239385f7d50038" name="a48544c560d5293a75a239385f7d50038"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Thread</b> (vrpn_THREAD_FUNC pfThread, <a class="el" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> td)</td></tr>
+<tr class="separator:a48544c560d5293a75a239385f7d50038"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9a3ca292af947e9bc86d6a2aabe35b1" id="r_aa9a3ca292af947e9bc86d6a2aabe35b1"><td align="right" class="memItemLeft" valign="top"><a id="aa9a3ca292af947e9bc86d6a2aabe35b1" name="aa9a3ca292af947e9bc86d6a2aabe35b1"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>go</b> ()</td></tr>
+<tr class="separator:aa9a3ca292af947e9bc86d6a2aabe35b1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab0fced35c1e8ce4deb05f8790844b6ab" id="r_ab0fced35c1e8ce4deb05f8790844b6ab"><td align="right" class="memItemLeft" valign="top"><a id="ab0fced35c1e8ce4deb05f8790844b6ab" name="ab0fced35c1e8ce4deb05f8790844b6ab"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>kill</b> ()</td></tr>
+<tr class="separator:ab0fced35c1e8ce4deb05f8790844b6ab"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa6432a11cc8aa43cdcac30e43bf038f" id="r_aaa6432a11cc8aa43cdcac30e43bf038f"><td align="right" class="memItemLeft" valign="top"><a id="aaa6432a11cc8aa43cdcac30e43bf038f" name="aaa6432a11cc8aa43cdcac30e43bf038f"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>running</b> ()</td></tr>
+<tr class="separator:aaa6432a11cc8aa43cdcac30e43bf038f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6d86cde07d0420dcb473aa805c4fdf2e" id="r_a6d86cde07d0420dcb473aa805c4fdf2e"><td align="right" class="memItemLeft" valign="top"><a id="a6d86cde07d0420dcb473aa805c4fdf2e" name="a6d86cde07d0420dcb473aa805c4fdf2e"></a>
+thread_t </td><td class="memItemRight" valign="bottom"><b>pid</b> ()</td></tr>
+<tr class="separator:a6d86cde07d0420dcb473aa805c4fdf2e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ff1639f33c1ed8ceb0b0ac69d4efeb0" id="r_a9ff1639f33c1ed8ceb0b0ac69d4efeb0"><td align="right" class="memItemLeft" valign="top"><a id="a9ff1639f33c1ed8ceb0b0ac69d4efeb0" name="a9ff1639f33c1ed8ceb0b0ac69d4efeb0"></a>
+void </td><td class="memItemRight" valign="bottom"><b>userData</b> (void *pvNewUserData)</td></tr>
+<tr class="separator:a9ff1639f33c1ed8ceb0b0ac69d4efeb0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab916a73e383af21f3e61d4603d30d5a9" id="r_ab916a73e383af21f3e61d4603d30d5a9"><td align="right" class="memItemLeft" valign="top"><a id="ab916a73e383af21f3e61d4603d30d5a9" name="ab916a73e383af21f3e61d4603d30d5a9"></a>
+void * </td><td class="memItemRight" valign="bottom"><b>userData</b> ()</td></tr>
+<tr class="separator:ab916a73e383af21f3e61d4603d30d5a9"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a98100f2f476b294d430b1a66c9039da1" id="r_a98100f2f476b294d430b1a66c9039da1"><td align="right" class="memItemLeft" valign="top"><a id="a98100f2f476b294d430b1a66c9039da1" name="a98100f2f476b294d430b1a66c9039da1"></a>
+static bool </td><td class="memItemRight" valign="bottom"><b>available</b> ()</td></tr>
+<tr class="separator:a98100f2f476b294d430b1a66c9039da1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac215c02132132af1591f4baa1e29dac1" id="r_ac215c02132132af1591f4baa1e29dac1"><td align="right" class="memItemLeft" valign="top"><a id="ac215c02132132af1591f4baa1e29dac1" name="ac215c02132132af1591f4baa1e29dac1"></a>
+static unsigned </td><td class="memItemRight" valign="bottom"><b>number_of_processors</b> ()</td></tr>
+<tr class="separator:ac215c02132132af1591f4baa1e29dac1"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:aca0638224e4355e294252a3d1371029d" id="r_aca0638224e4355e294252a3d1371029d"><td align="right" class="memItemLeft" valign="top"><a id="aca0638224e4355e294252a3d1371029d" name="aca0638224e4355e294252a3d1371029d"></a>
+static void </td><td class="memItemRight" valign="bottom"><b>threadFuncShell</b> (void *pvThread)</td></tr>
+<tr class="separator:aca0638224e4355e294252a3d1371029d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02bdb736aed0bb0e330cd12d9c64df31" id="r_a02bdb736aed0bb0e330cd12d9c64df31"><td align="right" class="memItemLeft" valign="top"><a id="a02bdb736aed0bb0e330cd12d9c64df31" name="a02bdb736aed0bb0e330cd12d9c64df31"></a>
+static void * </td><td class="memItemRight" valign="bottom"><b>threadFuncShellPosix</b> (void *pvThread)</td></tr>
+<tr class="separator:a02bdb736aed0bb0e330cd12d9c64df31"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ad2b4ad5f08f10813033e1be70a1ad36b" id="r_ad2b4ad5f08f10813033e1be70a1ad36b"><td align="right" class="memItemLeft" valign="top"><a id="ad2b4ad5f08f10813033e1be70a1ad36b" name="ad2b4ad5f08f10813033e1be70a1ad36b"></a>
+void(* </td><td class="memItemRight" valign="bottom"><b>pfThread</b> )(<a class="el" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> &amp;ThreadData)</td></tr>
+<tr class="separator:ad2b4ad5f08f10813033e1be70a1ad36b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaf6a9f963dd3ad7f8406f36fc8cb5017" id="r_aaf6a9f963dd3ad7f8406f36fc8cb5017"><td align="right" class="memItemLeft" valign="top"><a id="aaf6a9f963dd3ad7f8406f36fc8cb5017" name="aaf6a9f963dd3ad7f8406f36fc8cb5017"></a>
+<a class="el" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> </td><td class="memItemRight" valign="bottom"><b>td</b></td></tr>
+<tr class="separator:aaf6a9f963dd3ad7f8406f36fc8cb5017"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a235e94e65634fd27280efa14d0a07fc5" id="r_a235e94e65634fd27280efa14d0a07fc5"><td align="right" class="memItemLeft" valign="top"><a id="a235e94e65634fd27280efa14d0a07fc5" name="a235e94e65634fd27280efa14d0a07fc5"></a>
+thread_t </td><td class="memItemRight" valign="bottom"><b>threadID</b></td></tr>
+<tr class="separator:a235e94e65634fd27280efa14d0a07fc5"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Thread_8h_source.html">vrpn_Thread.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

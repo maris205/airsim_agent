@@ -1,0 +1,25 @@
+<map id="Step" name="Step">
+<area shape="rect" id="Node000001" title="使用龙格&#45;库塔法以及内部定义的动力学方程，进行状态更新（位置、速度、高度、航向等）。" alt="" coords="5,195,54,221"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a12c556a4261dfd5f2755454199a89247" title="根据当前速度vel来确定飞行器的俯仰角。" alt="" coords="143,5,270,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="30,194,36,162,49,121,69,79,100,42,127,26,130,31,103,46,74,81,54,123,41,164,35,195"/>
+<area shape="rect" id="Node000003" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="102,56,312,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="33,193,56,144,76,116,100,93,108,88,111,92,103,97,80,119,61,146,38,195"/>
+<area shape="rect" id="Node000004" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="114,107,300,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="41,192,66,167,100,143,114,137,116,142,103,148,70,171,44,196"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a1f3099c4347f7c3eed28d21fa99d2bf6" title="饱和操作的函数，确保输入值在正负阈值内" alt="" coords="110,157,304,200"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="54,201,94,195,95,200,54,207"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a1f3099c4347f7c3eed28d21fa99d2bf6" title="对输入的PWM值进行饱和限制，限制在[&#45;thres, thres]范围内。" alt="" coords="187,224,226,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="54,209,172,229,171,234,54,215"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5" title="调整偏航角在&#45;π到π之间" alt="" coords="110,349,304,392"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="41,220,66,260,103,305,151,339,148,344,100,309,62,264,36,223"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#adf8269c75db7e139aaa12454d041afc5" title="对输入的偏航角进行角度约束，将偏航角限制在[&#45;pi, pi]区间内。" alt="" coords="360,315,425,341"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="46,220,72,241,103,260,204,286,346,316,344,321,202,291,101,265,68,245,43,224"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#adf8269c75db7e139aaa12454d041afc5" title="对偏航角进行限制，使其保持在[&#45;π/2, π/2]范围内" alt="" coords="473,357,675,400"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="34,221,36,259,46,310,67,361,83,383,103,402,151,428,203,443,258,449,313,447,367,441,419,430,506,403,508,408,420,435,368,446,313,453,257,454,202,448,149,432,100,406,79,387,62,364,41,311,31,260,28,222"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="173,349,171,339,177,330,189,325,207,323,226,325,238,331,235,336,224,330,207,328,190,330,180,334,176,341,178,348"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="303,355,346,344,347,349,305,360"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="304,370,458,373,458,379,304,375"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="360,331,281,348,280,342,359,326"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="362,316,356,306,360,296,372,290,393,288,414,291,426,297,423,302,413,296,393,293,374,295,364,300,361,305,366,313"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="427,334,482,350,480,355,425,340"/>
+</map>

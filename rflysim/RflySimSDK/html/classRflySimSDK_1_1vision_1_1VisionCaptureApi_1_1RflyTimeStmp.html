@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyTimeStmp类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>VisionCaptureApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1RflyTimeStmp.html">RflyTimeStmp</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1RflyTimeStmp-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">RflyTimeStmp类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>RflyTimeStmp结构体类，用于处理与CopterSim仿真相关的时间戳信息  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">RflyTimeStmp的构造函数  <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3650577f29fe9e7fe932f19c4f03e0c1" id="r_a3650577f29fe9e7fe932f19c4f03e0c1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3650577f29fe9e7fe932f19c4f03e0c1">__init__</a> (self, iv)</td></tr>
+<tr class="memdesc:a3650577f29fe9e7fe932f19c4f03e0c1"><td class="mdescLeft"> </td><td class="mdescRight">RflyTimeStmp的构造函数  <br/></td></tr>
+<tr class="separator:a3650577f29fe9e7fe932f19c4f03e0c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9cf97154368cb0260e95c53c9c026178" id="r_a9cf97154368cb0260e95c53c9c026178"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cf97154368cb0260e95c53c9c026178">Update</a> (self, iv)</td></tr>
+<tr class="memdesc:a9cf97154368cb0260e95c53c9c026178"><td class="mdescLeft"> </td><td class="mdescRight">RflyTimeStmp的更新函数  <br/></td></tr>
+<tr class="separator:a9cf97154368cb0260e95c53c9c026178"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:acb8b87ad22c6173f552ba1965cfe9ab1" id="r_acb8b87ad22c6173f552ba1965cfe9ab1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8b87ad22c6173f552ba1965cfe9ab1">checksum</a></td></tr>
+<tr class="memdesc:acb8b87ad22c6173f552ba1965cfe9ab1"><td class="mdescLeft"> </td><td class="mdescRight">这是校验和的值，初始化为1234567897  <br/></td></tr>
+<tr class="separator:acb8b87ad22c6173f552ba1965cfe9ab1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0e0248f4f5e00948137dde5c5d020509" id="r_a0e0248f4f5e00948137dde5c5d020509"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e0248f4f5e00948137dde5c5d020509">copterID</a></td></tr>
+<tr class="memdesc:a0e0248f4f5e00948137dde5c5d020509"><td class="mdescLeft"> </td><td class="mdescRight">用于识别直升机的标识符  <br/></td></tr>
+<tr class="separator:a0e0248f4f5e00948137dde5c5d020509"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa43746e6e3663b5429f54246791219eb" id="r_aa43746e6e3663b5429f54246791219eb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa43746e6e3663b5429f54246791219eb">SysStartTime</a></td></tr>
+<tr class="memdesc:aa43746e6e3663b5429f54246791219eb"><td class="mdescLeft"> </td><td class="mdescRight">用于记录CopterSim开始仿真时，电脑的时间戳  <br/></td></tr>
+<tr class="separator:aa43746e6e3663b5429f54246791219eb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a708fde469bbc8b7164b182a72eca0aa2" id="r_a708fde469bbc8b7164b182a72eca0aa2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a708fde469bbc8b7164b182a72eca0aa2">SysCurrentTime</a></td></tr>
+<tr class="memdesc:a708fde469bbc8b7164b182a72eca0aa2"><td class="mdescLeft"> </td><td class="mdescRight">用于记录CopterSim运行电脑当前的时间戳  <br/></td></tr>
+<tr class="separator:a708fde469bbc8b7164b182a72eca0aa2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3ccab526755425b484f821e6f166f68b" id="r_a3ccab526755425b484f821e6f166f68b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ccab526755425b484f821e6f166f68b">HeartCount</a></td></tr>
+<tr class="memdesc:a3ccab526755425b484f821e6f166f68b"><td class="mdescLeft"> </td><td class="mdescRight">用于记录心跳计数，初始化为0  <br/></td></tr>
+<tr class="separator:a3ccab526755425b484f821e6f166f68b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac663638b3a7add3b3ea5b13ba3c87b9" id="r_aac663638b3a7add3b3ea5b13ba3c87b9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aac663638b3a7add3b3ea5b13ba3c87b9">isCopterSimOnPC</a></td></tr>
+<tr class="memdesc:aac663638b3a7add3b3ea5b13ba3c87b9"><td class="mdescLeft"> </td><td class="mdescRight">用于判断CopterSim和本Python脚本是否在一台电脑上运行，初始化为False  <br/></td></tr>
+<tr class="separator:aac663638b3a7add3b3ea5b13ba3c87b9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a84d4add867e1d5f627c7203e1d85e9b7" id="r_a84d4add867e1d5f627c7203e1d85e9b7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a84d4add867e1d5f627c7203e1d85e9b7">rosStartTimeStmp</a></td></tr>
+<tr class="memdesc:a84d4add867e1d5f627c7203e1d85e9b7"><td class="mdescLeft"> </td><td class="mdescRight">CopterSim开始仿真时，Python脚本电脑ROS的时间戳，初始化为0  <br/></td></tr>
+<tr class="separator:a84d4add867e1d5f627c7203e1d85e9b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4b725ed18db917beb9ded1bd266cd8a0" id="r_a4b725ed18db917beb9ded1bd266cd8a0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b725ed18db917beb9ded1bd266cd8a0">pyStartTimeStmp</a></td></tr>
+<tr class="memdesc:a4b725ed18db917beb9ded1bd266cd8a0"><td class="mdescLeft"> </td><td class="mdescRight">Python脚本处理的时间戳，初始化为0  <br/></td></tr>
+<tr class="separator:a4b725ed18db917beb9ded1bd266cd8a0"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>RflyTimeStmp结构体类，用于处理与CopterSim仿真相关的时间戳信息 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>RflyTimeStmp的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化一个包含校验和、CopterID、SysStartTime、SysCurrentTime等等参数的值，默认为0</td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a3650577f29fe9e7fe932f19c4f03e0c1" name="a3650577f29fe9e7fe932f19c4f03e0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3650577f29fe9e7fe932f19c4f03e0c1">◆ </a></span>__init__() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>iv</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>RflyTimeStmp的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化一个包含校验和、CopterID、SysStartTime、SysCurrentTime等等参数的值，默认为0</td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9cf97154368cb0260e95c53c9c026178" name="a9cf97154368cb0260e95c53c9c026178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf97154368cb0260e95c53c9c026178">◆ </a></span>Update()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Update </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>iv</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>RflyTimeStmp的更新函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">更新一个包含校验和、CopterID、SysStartTime、SysCurrentTime等等参数</td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="acb8b87ad22c6173f552ba1965cfe9ab1" name="acb8b87ad22c6173f552ba1965cfe9ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8b87ad22c6173f552ba1965cfe9ab1">◆ </a></span>checksum</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">checksum</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是校验和的值，初始化为1234567897 </p>
+<p>更新checksum为iv[0] </p>
+</div>
+</div>
+<a id="a0e0248f4f5e00948137dde5c5d020509" name="a0e0248f4f5e00948137dde5c5d020509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0248f4f5e00948137dde5c5d020509">◆ </a></span>copterID</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">copterID</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于识别直升机的标识符 </p>
+<p>更新checksum为iv[1] </p>
+</div>
+</div>
+<a id="a3ccab526755425b484f821e6f166f68b" name="a3ccab526755425b484f821e6f166f68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ccab526755425b484f821e6f166f68b">◆ </a></span>HeartCount</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">HeartCount</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于记录心跳计数，初始化为0 </p>
+<p>更新checksum为iv[4] </p>
+</div>
+</div>
+<a id="aac663638b3a7add3b3ea5b13ba3c87b9" name="aac663638b3a7add3b3ea5b13ba3c87b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac663638b3a7add3b3ea5b13ba3c87b9">◆ </a></span>isCopterSimOnPC</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isCopterSimOnPC</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于判断CopterSim和本Python脚本是否在一台电脑上运行，初始化为False </p>
+</div>
+</div>
+<a id="a4b725ed18db917beb9ded1bd266cd8a0" name="a4b725ed18db917beb9ded1bd266cd8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b725ed18db917beb9ded1bd266cd8a0">◆ </a></span>pyStartTimeStmp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">pyStartTimeStmp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Python脚本处理的时间戳，初始化为0 </p>
+</div>
+</div>
+<a id="a84d4add867e1d5f627c7203e1d85e9b7" name="a84d4add867e1d5f627c7203e1d85e9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d4add867e1d5f627c7203e1d85e9b7">◆ </a></span>rosStartTimeStmp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">rosStartTimeStmp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>CopterSim开始仿真时，Python脚本电脑ROS的时间戳，初始化为0 </p>
+</div>
+</div>
+<a id="a708fde469bbc8b7164b182a72eca0aa2" name="a708fde469bbc8b7164b182a72eca0aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a708fde469bbc8b7164b182a72eca0aa2">◆ </a></span>SysCurrentTime</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SysCurrentTime</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于记录CopterSim运行电脑当前的时间戳 </p>
+<p>更新checksum为iv[3] / 1000.0 </p>
+</div>
+</div>
+<a id="aa43746e6e3663b5429f54246791219eb" name="aa43746e6e3663b5429f54246791219eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43746e6e3663b5429f54246791219eb">◆ </a></span>SysStartTime</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SysStartTime</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于记录CopterSim开始仿真时，电脑的时间戳 </p>
+<p>更新checksum为iv[2] / 1000.0 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="VisionCaptureApi_8py.html">VisionCaptureApi.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

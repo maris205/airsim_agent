@@ -1,0 +1,19 @@
+<map id="arm" name="arm">
+<area shape="rect" id="Node000001" title="检查PX4的解锁状态" alt="" coords="769,93,813,120"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式" alt="" coords="560,5,647,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="767,84,745,63,720,46,684,33,647,25,648,20,685,28,723,42,749,59,770,80"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式并发送初始命令" alt="" coords="492,56,715,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="754,104,715,97,716,92,754,98"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#aa4667a3b8769fa59836727ab4ecdffef" title="通过MAVLink发送解锁指令给PX4" alt="" coords="553,123,653,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="754,115,654,131,653,126,753,110"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a0a193a6e3a68a7e2d01772aec0faa3ee" title="发送解锁或锁定命令到无人机" alt="" coords="485,173,721,216"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="767,132,723,164,696,175,694,170,720,159,764,128"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="239,111,437,153"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="537,138,437,136,437,131,537,132"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="245,177,430,220"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="539,152,486,164,423,179,422,174,484,159,538,147"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,177,191,220"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="230,201,191,201,191,196,230,196"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="495,172,430,156,432,151,496,167"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="469,199,431,200,431,195,469,194"/>
+</map>

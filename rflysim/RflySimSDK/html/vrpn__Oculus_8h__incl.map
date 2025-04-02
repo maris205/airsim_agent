@@ -1,0 +1,78 @@
+<map id="simulink/vrpn/vrpn_Oculus.h" name="simulink/vrpn/vrpn_Oculus.h">
+<area shape="rect" id="Node000001" title="Header for various Oculus devices. Initially, just the DK1 &amp; DK2." alt="" coords="389,5,516,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__HumanInterface_8h_source.html" title=" " alt="" coords="204,245,362,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="439,50,303,235,299,232,435,47"/>
+<area shape="rect" id="Node000012" href="$vrpn__Analog_8h_source.html" title=" " alt="" coords="698,96,802,123"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="517,43,689,89,688,94,516,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="570,395,638,421"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,270,455,344,557,386,555,391,453,349,305,275"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,320,73,347"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="241,275,88,320,87,315,240,270"/>
+<area shape="rect" id="Node000005" href="$vrpn__Configure_8h_source.html" title=" " alt="" coords="680,544,800,571"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="281,273,268,315,258,374,258,407,262,438,272,468,289,494,306,504,340,513,440,528,665,549,664,554,439,534,339,518,304,508,285,498,267,470,257,440,252,407,253,374,263,314,276,271"/>
+<area shape="rect" id="Node000006" href="$vrpn__Types_8h_source.html" title=" " alt="" coords="777,469,877,496"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="299,270,342,306,398,344,452,370,508,392,533,406,559,419,665,450,762,469,761,474,664,455,557,424,531,411,506,397,450,375,395,349,338,310,295,274"/>
+<area shape="rect" id="Node000007" href="$vrpn__OwningPtr_8h.html" title="Header" alt="" coords="96,320,222,347"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="263,275,195,314,192,310,260,270"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="814,499,768,536,765,532,810,494"/>
+<area shape="rect" id="Node000008" href="$vrpn__Assert_8h.html" title="Header for assert macros." alt="" coords="393,395,496,421"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="209,345,380,388,379,393,208,350"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="160,395,212,421"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="166,346,178,379,173,381,161,348"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="65,395,136,421"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="151,349,122,384,118,381,147,346"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="634,469,702,496"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="484,419,620,463,619,468,483,424"/>
+<area shape="poly" id="edge13_Node000012_Node000003" title=" " alt="" coords="744,124,695,205,636,321,615,380,610,378,631,319,691,203,740,122"/>
+<area shape="poly" id="edge44_Node000012_Node000005" title=" " alt="" coords="698,121,628,140,592,154,558,173,474,226,436,251,405,277,381,306,366,338,363,376,372,421,382,445,392,464,407,479,428,494,486,521,548,539,610,549,665,554,665,559,609,555,547,544,484,526,426,498,403,483,388,467,377,448,367,422,357,376,361,337,376,303,401,274,433,247,471,222,555,168,589,149,626,134,696,116"/>
+<area shape="poly" id="edge47_Node000012_Node000006" title=" " alt="" coords="780,121,817,142,856,171,873,190,887,210,897,233,900,257,900,335,895,370,883,404,849,458,845,456,878,402,890,369,895,334,895,258,892,234,883,213,869,193,852,175,814,146,777,126"/>
+<area shape="rect" id="Node000013" href="$vrpn__BaseClass_8h.html" title=" " alt="" coords="1064,171,1192,197"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="803,118,1050,165,1049,170,802,123"/>
+<area shape="rect" id="Node000015" href="$vrpn__Connection_8h_source.html" title=" " alt="" coords="935,245,1066,272"/>
+<area shape="poly" id="edge45_Node000012_Node000015" title=" " alt="" coords="803,120,860,139,918,168,955,199,984,231,980,235,951,203,915,173,858,144,802,126"/>
+<area shape="rect" id="Node000016" href="$vrpn__Shared_8h_source.html" title=" " alt="" coords="1088,395,1193,421"/>
+<area shape="poly" id="edge46_Node000012_Node000016" title=" " alt="" coords="802,111,1036,131,1147,148,1185,157,1206,169,1222,195,1228,223,1226,253,1218,283,1191,339,1162,383,1158,381,1187,337,1213,281,1221,252,1222,223,1217,196,1202,173,1183,162,1146,153,1036,136,802,116"/>
+<area shape="rect" id="Node000026" href="$vrpn__Serial_8h.html" title="vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system..." alt="" coords="466,320,564,347"/>
+<area shape="poly" id="edge48_Node000012_Node000026" title=" " alt="" coords="698,121,639,139,610,153,585,173,560,204,542,239,530,275,522,306,517,304,524,273,537,237,556,201,581,169,607,149,637,134,696,116"/>
+<area shape="poly" id="edge16_Node000013_Node000005" title=" " alt="" coords="1193,187,1328,200,1407,211,1485,225,1557,244,1615,268,1638,281,1656,297,1667,313,1671,332,1671,409,1670,459,1662,479,1645,498,1626,508,1598,516,1516,529,1408,540,1283,547,1023,556,816,559,816,553,1023,551,1282,542,1407,535,1515,524,1597,511,1624,503,1641,494,1658,476,1665,458,1666,409,1666,332,1662,315,1652,300,1635,286,1613,272,1555,249,1484,231,1406,216,1327,205,1193,192"/>
+<area shape="poly" id="edge43_Node000013_Node000006" title=" " alt="" coords="1125,199,1106,233,1080,274,1020,355,989,387,946,423,910,447,874,465,872,460,908,442,943,419,986,383,1016,352,1075,270,1101,230,1120,196"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1570,469,1630,496"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="1149,195,1569,459,1566,463,1147,200"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="1107,200,1037,240,1035,235,1105,196"/>
+<area shape="poly" id="edge42_Node000013_Node000016" title=" " alt="" coords="1132,198,1142,379,1136,380,1126,198"/>
+<area shape="poly" id="edge19_Node000015_Node000005" title=" " alt="" coords="935,267,865,273,789,284,722,300,697,310,680,322,664,344,661,367,661,392,653,422,640,444,626,461,619,476,624,495,646,519,676,535,673,540,643,523,619,497,614,476,622,458,636,441,649,420,655,392,656,366,659,342,676,318,695,306,721,295,788,279,864,268,935,261"/>
+<area shape="poly" id="edge34_Node000015_Node000006" title=" " alt="" coords="999,274,971,341,948,384,918,423,894,446,867,464,864,459,890,441,914,420,943,381,966,339,994,272"/>
+<area shape="poly" id="edge18_Node000015_Node000014" title=" " alt="" coords="1034,270,1433,419,1557,463,1555,468,1431,424,1032,275"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="1014,271,1120,382,1116,385,1010,274"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="901,469,993,496"/>
+<area shape="poly" id="edge41_Node000015_Node000022" title=" " alt="" coords="1001,273,989,337,970,422,959,456,954,454,964,421,984,336,996,272"/>
+<area shape="rect" id="Node000025" href="$vrpn__EndpointContainer_8h.html" title="Header" alt="" coords="689,320,861,347"/>
+<area shape="poly" id="edge35_Node000015_Node000025" title=" " alt="" coords="962,275,830,317,828,312,960,270"/>
+<area shape="poly" id="edge21_Node000016_Node000005" title=" " alt="" coords="1194,417,1308,441,1356,455,1381,468,1387,483,1381,498,1352,513,1298,524,1144,542,967,552,816,557,816,552,967,547,1144,536,1298,519,1350,508,1377,494,1382,483,1377,471,1354,460,1306,446,1193,422"/>
+<area shape="poly" id="edge22_Node000016_Node000006" title=" " alt="" coords="1088,424,893,469,892,464,1087,419"/>
+<area shape="poly" id="edge33_Node000016_Node000009" title=" " alt="" coords="1088,420,718,476,717,471,1087,415"/>
+<area shape="poly" id="edge28_Node000016_Node000014" title=" " alt="" coords="1194,416,1213,419,1383,439,1459,449,1555,466,1554,472,1458,454,1382,445,1212,424,1193,421"/>
+<area shape="rect" id="Node000017" href="$vrpn__Thread_8h.html" title="Header containing vrpn_Thread, vrpn_Semaphore (formerly in vrpn_Shared.h), as well as a lock&#45;guard cl..." alt="" coords="1442,469,1546,496"/>
+<area shape="poly" id="edge23_Node000016_Node000017" title=" " alt="" coords="1194,418,1427,465,1426,470,1193,423"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1018,469,1082,496"/>
+<area shape="poly" id="edge27_Node000016_Node000020" title=" " alt="" coords="1126,424,1079,462,1075,458,1123,420"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1106,469,1151,496"/>
+<area shape="poly" id="edge29_Node000016_Node000021" title=" " alt="" coords="1141,422,1136,455,1130,454,1136,421"/>
+<area shape="poly" id="edge30_Node000016_Node000022" title=" " alt="" coords="1108,424,996,466,994,461,1106,419"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="1175,469,1260,496"/>
+<area shape="poly" id="edge31_Node000016_Node000023" title=" " alt="" coords="1156,420,1195,457,1191,461,1152,424"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1284,469,1367,496"/>
+<area shape="poly" id="edge32_Node000016_Node000024" title=" " alt="" coords="1174,419,1280,461,1278,466,1172,424"/>
+<area shape="poly" id="edge24_Node000017_Node000005" title=" " alt="" coords="1441,496,1423,499,1253,518,1085,534,816,554,816,549,1084,529,1253,513,1423,493,1440,491"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="1511,544,1586,571"/>
+<area shape="poly" id="edge25_Node000017_Node000018" title=" " alt="" coords="1505,495,1532,530,1528,533,1501,498"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1391,544,1487,571"/>
+<area shape="poly" id="edge26_Node000017_Node000019" title=" " alt="" coords="1486,498,1460,533,1456,530,1482,495"/>
+<area shape="poly" id="edge40_Node000025_Node000003" title=" " alt="" coords="746,350,649,391,647,386,744,345"/>
+<area shape="poly" id="edge37_Node000025_Node000005" title=" " alt="" coords="776,348,747,529,742,528,770,347"/>
+<area shape="poly" id="edge36_Node000025_Node000006" title=" " alt="" coords="782,346,820,454,815,456,777,348"/>
+<area shape="poly" id="edge39_Node000025_Node000008" title=" " alt="" coords="718,350,511,395,510,390,716,345"/>
+<area shape="poly" id="edge38_Node000025_Node000016" title=" " alt="" coords="840,345,1073,391,1072,396,839,350"/>
+<area shape="poly" id="edge50_Node000026_Node000003" title=" " alt="" coords="532,345,579,383,575,387,529,349"/>
+<area shape="poly" id="edge49_Node000026_Node000005" title=" " alt="" coords="467,348,430,360,398,377,386,386,380,397,379,408,384,420,410,451,442,477,478,498,516,515,594,538,665,549,665,554,593,543,514,520,476,503,439,481,407,455,379,423,373,408,375,395,382,383,395,372,428,355,465,343"/>
+</map>

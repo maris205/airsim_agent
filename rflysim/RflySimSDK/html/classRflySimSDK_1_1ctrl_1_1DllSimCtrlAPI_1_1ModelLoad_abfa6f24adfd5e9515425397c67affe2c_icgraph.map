@@ -1,0 +1,4 @@
+<map id="DllInCtrlExt" name="DllInCtrlExt">
+<area shape="rect" id="Node000001" title="扩展控制数据，用于支持更高级的控制仿真功能，参见 sendInCtrlExtAll" alt="" coords="5,29,95,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="64,15,59,10,50,8,42,10,37,14,36,20,38,28,33,30,31,20,32,12,39,5,50,3,61,5,68,12"/>
+</map>

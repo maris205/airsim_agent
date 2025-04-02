@@ -1,0 +1,1427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: DATAAPI类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>phm</b></li><li class="navelem"><b>AutoMavDB</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html">DATAAPI</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">DATAAPI类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>用于API数据交互的类。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a16fc170c516701a1aaf697be9bc4422c" id="r_a16fc170c516701a1aaf697be9bc4422c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a16fc170c516701a1aaf697be9bc4422c">__init__</a> (self, CaseID, conf, Data, Info)</td></tr>
+<tr class="memdesc:a16fc170c516701a1aaf697be9bc4422c"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化DATAAPI类的实例。  <br/></td></tr>
+<tr class="separator:a16fc170c516701a1aaf697be9bc4422c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2013ae7d27179446e088f64bcb17bae3" id="r_a2013ae7d27179446e088f64bcb17bae3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2013ae7d27179446e088f64bcb17bae3">DP</a> (self)</td></tr>
+<tr class="memdesc:a2013ae7d27179446e088f64bcb17bae3"><td class="mdescLeft"> </td><td class="mdescRight">处理数据并准备存储。该方法进行数据处理，包括创建必要的目录、处理数据，并准备存储到文件或数据库。  <br/></td></tr>
+<tr class="separator:a2013ae7d27179446e088f64bcb17bae3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a48db88bf7597dfa1974e0814cf4a5413" id="r_a48db88bf7597dfa1974e0814cf4a5413"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a48db88bf7597dfa1974e0814cf4a5413">MKDPath</a> (self)</td></tr>
+<tr class="memdesc:a48db88bf7597dfa1974e0814cf4a5413"><td class="mdescLeft"> </td><td class="mdescRight">创建数据存储所需的目录结构。  <br/></td></tr>
+<tr class="separator:a48db88bf7597dfa1974e0814cf4a5413"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8535730a64e5afabf0ab7168d961ccfa" id="r_a8535730a64e5afabf0ab7168d961ccfa"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8535730a64e5afabf0ab7168d961ccfa">PX4Path</a> (self)</td></tr>
+<tr class="memdesc:a8535730a64e5afabf0ab7168d961ccfa"><td class="mdescLeft"> </td><td class="mdescRight">获取PX4的路径。  <br/></td></tr>
+<tr class="separator:a8535730a64e5afabf0ab7168d961ccfa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2561c18df6caf5aee18933014816984d" id="r_a2561c18df6caf5aee18933014816984d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2561c18df6caf5aee18933014816984d">MFolder</a> (self, TargetFilder_log, TargetFilder_truedata)</td></tr>
+<tr class="memdesc:a2561c18df6caf5aee18933014816984d"><td class="mdescLeft"> </td><td class="mdescRight">创建目录。  <br/></td></tr>
+<tr class="separator:a2561c18df6caf5aee18933014816984d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2be65e31c16a2b378b576e2bc1cd65be" id="r_a2be65e31c16a2b378b576e2bc1cd65be"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2be65e31c16a2b378b576e2bc1cd65be">DataPro</a> (self)</td></tr>
+<tr class="memdesc:a2be65e31c16a2b378b576e2bc1cd65be"><td class="mdescLeft"> </td><td class="mdescRight">处理数据。该方法处理从无人机接收到的测试数据，可能包括日志下载、数据解析等操作。  <br/></td></tr>
+<tr class="separator:a2be65e31c16a2b378b576e2bc1cd65be"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0891d2ea1d55865f9d1c86cc67cb3122" id="r_a0891d2ea1d55865f9d1c86cc67cb3122"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0891d2ea1d55865f9d1c86cc67cb3122">TruedataRecord</a> (self)</td></tr>
+<tr class="memdesc:a0891d2ea1d55865f9d1c86cc67cb3122"><td class="mdescLeft"> </td><td class="mdescRight">记录真实数据。该方法将无人机的真实测试数据记录到CSV文件中，包括速度、角度和位置等信息。  <br/></td></tr>
+<tr class="separator:a0891d2ea1d55865f9d1c86cc67cb3122"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad11883c36a12dbf597e842ea8d23bb37" id="r_ad11883c36a12dbf597e842ea8d23bb37"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad11883c36a12dbf597e842ea8d23bb37">InfoRecord</a> (self)</td></tr>
+<tr class="memdesc:ad11883c36a12dbf597e842ea8d23bb37"><td class="mdescLeft"> </td><td class="mdescRight">记录测试信息。该方法将测试信息记录到CSV文件中，包括日期、框架、案例ID、测试信息和数据路径等。  <br/></td></tr>
+<tr class="separator:ad11883c36a12dbf597e842ea8d23bb37"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a265fdb639ec6227b9fe5b8aaa71b191b" id="r_a265fdb639ec6227b9fe5b8aaa71b191b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a265fdb639ec6227b9fe5b8aaa71b191b">Test_result_Record</a> (self)</td></tr>
+<tr class="memdesc:a265fdb639ec6227b9fe5b8aaa71b191b"><td class="mdescLeft"> </td><td class="mdescRight">记录测试结果。该方法将测试结果记录到CSV文件中，包括案例ID、故障ID、案例描述、故障模式、控制序列和测试结果等。  <br/></td></tr>
+<tr class="separator:a265fdb639ec6227b9fe5b8aaa71b191b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb325af332705da1cdc154f0e7206463" id="r_acb325af332705da1cdc154f0e7206463"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acb325af332705da1cdc154f0e7206463">CMDAna</a> (self, cmd)</td></tr>
+<tr class="memdesc:acb325af332705da1cdc154f0e7206463"><td class="mdescLeft"> </td><td class="mdescRight">分析控制命令。  <br/></td></tr>
+<tr class="separator:acb325af332705da1cdc154f0e7206463"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a14d4a6d44c75ced8f13f49ee5be6a47e" id="r_a14d4a6d44c75ced8f13f49ee5be6a47e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a14d4a6d44c75ced8f13f49ee5be6a47e">GetInfoP</a> (self)</td></tr>
+<tr class="memdesc:a14d4a6d44c75ced8f13f49ee5be6a47e"><td class="mdescLeft"> </td><td class="mdescRight">用于获取测试信息的路径。  <br/></td></tr>
+<tr class="separator:a14d4a6d44c75ced8f13f49ee5be6a47e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa6602c16742d5855073bcc5dac5a9854" id="r_aa6602c16742d5855073bcc5dac5a9854"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6602c16742d5855073bcc5dac5a9854">RName</a> (self)</td></tr>
+<tr class="memdesc:aa6602c16742d5855073bcc5dac5a9854"><td class="mdescLeft"> </td><td class="mdescRight">重命名目录。该方法根据测试结果重命名目录，以便于后续的数据分析和归档。  <br/></td></tr>
+<tr class="separator:aa6602c16742d5855073bcc5dac5a9854"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a14ee720e2e5bef208ced49b4867f7a39" id="r_a14ee720e2e5bef208ced49b4867f7a39"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a14ee720e2e5bef208ced49b4867f7a39">SExecute</a> (self, start_dir)</td></tr>
+<tr class="memdesc:a14ee720e2e5bef208ced49b4867f7a39"><td class="mdescLeft"> </td><td class="mdescRight">执行数据后处理。  <br/></td></tr>
+<tr class="separator:a14ee720e2e5bef208ced49b4867f7a39"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9136846e1dac3247a77451a5a8fe81c0" id="r_a9136846e1dac3247a77451a5a8fe81c0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9136846e1dac3247a77451a5a8fe81c0">convert_newlines_to_br</a> (self, text)</td></tr>
+<tr class="memdesc:a9136846e1dac3247a77451a5a8fe81c0"><td class="mdescLeft"> </td><td class="mdescRight">将文本中的换行符转换为HTML的换行标签。  <br/></td></tr>
+<tr class="separator:a9136846e1dac3247a77451a5a8fe81c0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae6c0854c552c22016ffd9d56e4df0fd6" id="r_ae6c0854c552c22016ffd9d56e4df0fd6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c0854c552c22016ffd9d56e4df0fd6">generate_html_with_style</a> (self, html_table, bk)</td></tr>
+<tr class="memdesc:ae6c0854c552c22016ffd9d56e4df0fd6"><td class="mdescLeft"> </td><td class="mdescRight">生成带有特定样式的HTML表格。  <br/></td></tr>
+<tr class="separator:ae6c0854c552c22016ffd9d56e4df0fd6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a986ea646a810643080ea3a6358d05d2c" id="r_a986ea646a810643080ea3a6358d05d2c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a986ea646a810643080ea3a6358d05d2c">generate_test_result_html_with_style</a> (self, html_table, bk)</td></tr>
+<tr class="memdesc:a986ea646a810643080ea3a6358d05d2c"><td class="mdescLeft"> </td><td class="mdescRight">生成带有特定样式的测试结果HTML表格。  <br/></td></tr>
+<tr class="separator:a986ea646a810643080ea3a6358d05d2c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa19030d02aa32e114905ab242955499" id="r_aaa19030d02aa32e114905ab242955499"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa19030d02aa32e114905ab242955499">read_data_from_html_tolist</a> (self, html_file)</td></tr>
+<tr class="memdesc:aaa19030d02aa32e114905ab242955499"><td class="mdescLeft"> </td><td class="mdescRight">从HTML文件中读取数据并转换为列表。  <br/></td></tr>
+<tr class="separator:aaa19030d02aa32e114905ab242955499"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1dfbfb34b404f8c1e231905bf916a936" id="r_a1dfbfb34b404f8c1e231905bf916a936"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dfbfb34b404f8c1e231905bf916a936">generate_header</a> (self, html_file, bk_path)</td></tr>
+<tr class="memdesc:a1dfbfb34b404f8c1e231905bf916a936"><td class="mdescLeft"> </td><td class="mdescRight">生成HTML文件的头部，包含表格的列标题。  <br/></td></tr>
+<tr class="separator:a1dfbfb34b404f8c1e231905bf916a936"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0eadcb441950cc1c874b8ae525df4ad4" id="r_a0eadcb441950cc1c874b8ae525df4ad4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eadcb441950cc1c874b8ae525df4ad4">generate_test_result_header</a> (self, html_file, bk_path)</td></tr>
+<tr class="memdesc:a0eadcb441950cc1c874b8ae525df4ad4"><td class="mdescLeft"> </td><td class="mdescRight">生成测试结果HTML文件的头部，包含测试结果表格的列标题。  <br/></td></tr>
+<tr class="separator:a0eadcb441950cc1c874b8ae525df4ad4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed0bbc5821a617411e101b63d4cd40e1" id="r_aed0bbc5821a617411e101b63d4cd40e1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aed0bbc5821a617411e101b63d4cd40e1">add_br_to_html</a> (self, new_html_data_list)</td></tr>
+<tr class="memdesc:aed0bbc5821a617411e101b63d4cd40e1"><td class="mdescLeft"> </td><td class="mdescRight">为HTML数据显示添加换行标签。  <br/></td></tr>
+<tr class="separator:aed0bbc5821a617411e101b63d4cd40e1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae876a8866f8f4f33149974c85ba93674" id="r_ae876a8866f8f4f33149974c85ba93674"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae876a8866f8f4f33149974c85ba93674">to_html</a> (self, dataInfo, html_file_path, bk_path)</td></tr>
+<tr class="memdesc:ae876a8866f8f4f33149974c85ba93674"><td class="mdescLeft"> </td><td class="mdescRight">将测试信息转换为HTML格式并写入文件。  <br/></td></tr>
+<tr class="separator:ae876a8866f8f4f33149974c85ba93674"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac354199c66c8f0a1feed9997c0a2b6a4" id="r_ac354199c66c8f0a1feed9997c0a2b6a4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac354199c66c8f0a1feed9997c0a2b6a4">test_result_to_html</a> (self, testresultdata, html_file_path, bk_path)</td></tr>
+<tr class="memdesc:ac354199c66c8f0a1feed9997c0a2b6a4"><td class="mdescLeft"> </td><td class="mdescRight">将测试结果转换为HTML格式并写入文件。  <br/></td></tr>
+<tr class="separator:ac354199c66c8f0a1feed9997c0a2b6a4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab947a30fe889217104c7c92b5135c535" id="r_ab947a30fe889217104c7c92b5135c535"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab947a30fe889217104c7c92b5135c535">add_br_to_test_result_html</a> (self, new_html_data_list)</td></tr>
+<tr class="memdesc:ab947a30fe889217104c7c92b5135c535"><td class="mdescLeft"> </td><td class="mdescRight">为测试结果HTML数据显示添加换行标签。  <br/></td></tr>
+<tr class="separator:ab947a30fe889217104c7c92b5135c535"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a529842a87b67568059a0da75a60ba379" id="r_a529842a87b67568059a0da75a60ba379"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a529842a87b67568059a0da75a60ba379">add_CaseDescription_br</a> (self, caseDescription, variables)</td></tr>
+<tr class="memdesc:a529842a87b67568059a0da75a60ba379"><td class="mdescLeft"> </td><td class="mdescRight">为测试结果描述添加HTML换行标签。  <br/></td></tr>
+<tr class="separator:a529842a87b67568059a0da75a60ba379"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acce7e42d79869f417f97756175c7a128" id="r_acce7e42d79869f417f97756175c7a128"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acce7e42d79869f417f97756175c7a128">add_ControlSequence_br</a> (self, testInfo)</td></tr>
+<tr class="memdesc:acce7e42d79869f417f97756175c7a128"><td class="mdescLeft"> </td><td class="mdescRight">为控制序列描述添加HTML换行标签。  <br/></td></tr>
+<tr class="separator:acce7e42d79869f417f97756175c7a128"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a513e32608d9c9f5ec1fc8bdca49a80d1" id="r_a513e32608d9c9f5ec1fc8bdca49a80d1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a513e32608d9c9f5ec1fc8bdca49a80d1">add_TestResult_br</a> (self, testresult)</td></tr>
+<tr class="memdesc:a513e32608d9c9f5ec1fc8bdca49a80d1"><td class="mdescLeft"> </td><td class="mdescRight">为测试结果添加HTML换行标签。  <br/></td></tr>
+<tr class="separator:a513e32608d9c9f5ec1fc8bdca49a80d1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad94849e1dad58129c1614830db502fe6" id="r_ad94849e1dad58129c1614830db502fe6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad94849e1dad58129c1614830db502fe6">Get_test_result_frame</a> (self, text)</td></tr>
+<tr class="memdesc:ad94849e1dad58129c1614830db502fe6"><td class="mdescLeft"> </td><td class="mdescRight">从测试结果描述中提取无人机框架信息。  <br/></td></tr>
+<tr class="separator:ad94849e1dad58129c1614830db502fe6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f477a6c75cb0cba2607feaaf741f91f" id="r_a5f477a6c75cb0cba2607feaaf741f91f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f477a6c75cb0cba2607feaaf741f91f">Get_test_result_shitl</a> (self, text)</td></tr>
+<tr class="memdesc:a5f477a6c75cb0cba2607feaaf741f91f"><td class="mdescLeft"> </td><td class="mdescRight">从测试结果描述中提取仿真类型信息。  <br/></td></tr>
+<tr class="separator:a5f477a6c75cb0cba2607feaaf741f91f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ddb8a398fb9e6d94e62fc338fd313a2" id="r_a0ddb8a398fb9e6d94e62fc338fd313a2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddb8a398fb9e6d94e62fc338fd313a2">InfoDown</a> (self)</td></tr>
+<tr class="memdesc:a0ddb8a398fb9e6d94e62fc338fd313a2"><td class="mdescLeft"> </td><td class="mdescRight">处理并存储测试信息，等待所有数据处理线程完成后执行。  <br/></td></tr>
+<tr class="separator:a0ddb8a398fb9e6d94e62fc338fd313a2"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af5baa506e65b4caa6be6d1c6661dfe63" id="r_af5baa506e65b4caa6be6d1c6661dfe63"><td align="right" class="memItemLeft" valign="top"><a id="af5baa506e65b4caa6be6d1c6661dfe63" name="af5baa506e65b4caa6be6d1c6661dfe63"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Data</b></td></tr>
+<tr class="separator:af5baa506e65b4caa6be6d1c6661dfe63"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abd07cca8e4cbcf87da47e6e0d903ffa8" id="r_abd07cca8e4cbcf87da47e6e0d903ffa8"><td align="right" class="memItemLeft" valign="top"><a id="abd07cca8e4cbcf87da47e6e0d903ffa8" name="abd07cca8e4cbcf87da47e6e0d903ffa8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>conf</b></td></tr>
+<tr class="separator:abd07cca8e4cbcf87da47e6e0d903ffa8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00382b7bec136758b12a333cf5b7c513" id="r_a00382b7bec136758b12a333cf5b7c513"><td align="right" class="memItemLeft" valign="top"><a id="a00382b7bec136758b12a333cf5b7c513" name="a00382b7bec136758b12a333cf5b7c513"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CaseID</b></td></tr>
+<tr class="separator:a00382b7bec136758b12a333cf5b7c513"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a10e136332d6dc091c13986d59367f7a1" id="r_a10e136332d6dc091c13986d59367f7a1"><td align="right" class="memItemLeft" valign="top"><a id="a10e136332d6dc091c13986d59367f7a1" name="a10e136332d6dc091c13986d59367f7a1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Info</b></td></tr>
+<tr class="separator:a10e136332d6dc091c13986d59367f7a1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5fdb5259f4dca5d12ed2e528b4c95d34" id="r_a5fdb5259f4dca5d12ed2e528b4c95d34"><td align="right" class="memItemLeft" valign="top"><a id="a5fdb5259f4dca5d12ed2e528b4c95d34" name="a5fdb5259f4dca5d12ed2e528b4c95d34"></a>
+ </td><td class="memItemRight" valign="bottom"><b>jsonpath</b></td></tr>
+<tr class="separator:a5fdb5259f4dca5d12ed2e528b4c95d34"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f27c3177d66aa629e0f2338db51b126" id="r_a2f27c3177d66aa629e0f2338db51b126"><td align="right" class="memItemLeft" valign="top"><a id="a2f27c3177d66aa629e0f2338db51b126" name="a2f27c3177d66aa629e0f2338db51b126"></a>
+ </td><td class="memItemRight" valign="bottom"><b>batpath</b></td></tr>
+<tr class="separator:a2f27c3177d66aa629e0f2338db51b126"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a05b8505f26aacf05589e4f85b7c6a95c" id="r_a05b8505f26aacf05589e4f85b7c6a95c"><td align="right" class="memItemLeft" valign="top"><a id="a05b8505f26aacf05589e4f85b7c6a95c" name="a05b8505f26aacf05589e4f85b7c6a95c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>isTrueDataRecordOver</b></td></tr>
+<tr class="separator:a05b8505f26aacf05589e4f85b7c6a95c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa704fb8802455cb1ff8457c0339f6a32" id="r_aa704fb8802455cb1ff8457c0339f6a32"><td align="right" class="memItemLeft" valign="top"><a id="aa704fb8802455cb1ff8457c0339f6a32" name="aa704fb8802455cb1ff8457c0339f6a32"></a>
+ </td><td class="memItemRight" valign="bottom"><b>MacVechileNum</b></td></tr>
+<tr class="separator:aa704fb8802455cb1ff8457c0339f6a32"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab10a4384f6130e7b90fde3a735a407ab" id="r_ab10a4384f6130e7b90fde3a735a407ab"><td align="right" class="memItemLeft" valign="top"><a id="ab10a4384f6130e7b90fde3a735a407ab" name="ab10a4384f6130e7b90fde3a735a407ab"></a>
+ </td><td class="memItemRight" valign="bottom"><b>PlatFormpath</b></td></tr>
+<tr class="separator:ab10a4384f6130e7b90fde3a735a407ab"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afa192112f65376a24ca2925c1f59d3f2" id="r_afa192112f65376a24ca2925c1f59d3f2"><td align="right" class="memItemLeft" valign="top"><a id="afa192112f65376a24ca2925c1f59d3f2" name="afa192112f65376a24ca2925c1f59d3f2"></a>
+ </td><td class="memItemRight" valign="bottom"><b>DataPath</b></td></tr>
+<tr class="separator:afa192112f65376a24ca2925c1f59d3f2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a42810cf3c34f9bdf5a1490299b9f68af" id="r_a42810cf3c34f9bdf5a1490299b9f68af"><td align="right" class="memItemLeft" valign="top"><a id="a42810cf3c34f9bdf5a1490299b9f68af" name="a42810cf3c34f9bdf5a1490299b9f68af"></a>
+ </td><td class="memItemRight" valign="bottom"><b>MavFrameDataPath</b></td></tr>
+<tr class="separator:a42810cf3c34f9bdf5a1490299b9f68af"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa48b7558f7936ae18e9673b087ab7011" id="r_aa48b7558f7936ae18e9673b087ab7011"><td align="right" class="memItemLeft" valign="top"><a id="aa48b7558f7936ae18e9673b087ab7011" name="aa48b7558f7936ae18e9673b087ab7011"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mode1sInsp</b></td></tr>
+<tr class="separator:aa48b7558f7936ae18e9673b087ab7011"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adaa3402f4ce0ac8b469d7c9d15575405" id="r_adaa3402f4ce0ac8b469d7c9d15575405"><td align="right" class="memItemLeft" valign="top"><a id="adaa3402f4ce0ac8b469d7c9d15575405" name="adaa3402f4ce0ac8b469d7c9d15575405"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mode2mInsp</b></td></tr>
+<tr class="separator:adaa3402f4ce0ac8b469d7c9d15575405"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a20ce58adddfd2974819e0d70c0f7f7b5" id="r_a20ce58adddfd2974819e0d70c0f7f7b5"><td align="right" class="memItemLeft" valign="top"><a id="a20ce58adddfd2974819e0d70c0f7f7b5" name="a20ce58adddfd2974819e0d70c0f7f7b5"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mode3sInsp</b></td></tr>
+<tr class="separator:a20ce58adddfd2974819e0d70c0f7f7b5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5fc9bd7006ebdff657e82b82f7b7002e" id="r_a5fc9bd7006ebdff657e82b82f7b7002e"><td align="right" class="memItemLeft" valign="top"><a id="a5fc9bd7006ebdff657e82b82f7b7002e" name="a5fc9bd7006ebdff657e82b82f7b7002e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mode4mInsp</b></td></tr>
+<tr class="separator:a5fc9bd7006ebdff657e82b82f7b7002e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2de22aa5f9447cb67b422b5ccc352457" id="r_a2de22aa5f9447cb67b422b5ccc352457"><td align="right" class="memItemLeft" valign="top"><a id="a2de22aa5f9447cb67b422b5ccc352457" name="a2de22aa5f9447cb67b422b5ccc352457"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Mode1InsP</b></td></tr>
+<tr class="separator:a2de22aa5f9447cb67b422b5ccc352457"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa6aa0bb2036914eac9092d08f50a2dd7" id="r_aa6aa0bb2036914eac9092d08f50a2dd7"><td align="right" class="memItemLeft" valign="top"><a id="aa6aa0bb2036914eac9092d08f50a2dd7" name="aa6aa0bb2036914eac9092d08f50a2dd7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>logp</b></td></tr>
+<tr class="separator:aa6aa0bb2036914eac9092d08f50a2dd7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12bd3f348fe4c059346bc9c7c81d5909" id="r_a12bd3f348fe4c059346bc9c7c81d5909"><td align="right" class="memItemLeft" valign="top"><a id="a12bd3f348fe4c059346bc9c7c81d5909" name="a12bd3f348fe4c059346bc9c7c81d5909"></a>
+ </td><td class="memItemRight" valign="bottom"><b>truep</b></td></tr>
+<tr class="separator:a12bd3f348fe4c059346bc9c7c81d5909"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3ae362a6427d23559c9f2960eb44edfc" id="r_a3ae362a6427d23559c9f2960eb44edfc"><td align="right" class="memItemLeft" valign="top"><a id="a3ae362a6427d23559c9f2960eb44edfc" name="a3ae362a6427d23559c9f2960eb44edfc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tempCaseP</b></td></tr>
+<tr class="separator:a3ae362a6427d23559c9f2960eb44edfc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae3d89defab31cc40de110e1042ce36e9" id="r_ae3d89defab31cc40de110e1042ce36e9"><td align="right" class="memItemLeft" valign="top"><a id="ae3d89defab31cc40de110e1042ce36e9" name="ae3d89defab31cc40de110e1042ce36e9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mavTestID</b></td></tr>
+<tr class="separator:ae3d89defab31cc40de110e1042ce36e9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa28dc103258589d9cb421197fe2de90b" id="r_aa28dc103258589d9cb421197fe2de90b"><td align="right" class="memItemLeft" valign="top"><a id="aa28dc103258589d9cb421197fe2de90b" name="aa28dc103258589d9cb421197fe2de90b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
+<tr class="separator:aa28dc103258589d9cb421197fe2de90b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a354d3756f518cfd81e18cc74c3cf3a49" id="r_a354d3756f518cfd81e18cc74c3cf3a49"><td align="right" class="memItemLeft" valign="top"><a id="a354d3756f518cfd81e18cc74c3cf3a49" name="a354d3756f518cfd81e18cc74c3cf3a49"></a>
+ </td><td class="memItemRight" valign="bottom"><b>dataInfo</b></td></tr>
+<tr class="separator:a354d3756f518cfd81e18cc74c3cf3a49"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8b1ba47925f00b16e342b24e5e372a57" id="r_a8b1ba47925f00b16e342b24e5e372a57"><td align="right" class="memItemLeft" valign="top"><a id="a8b1ba47925f00b16e342b24e5e372a57" name="a8b1ba47925f00b16e342b24e5e372a57"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Mode2InsP</b></td></tr>
+<tr class="separator:a8b1ba47925f00b16e342b24e5e372a57"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c03779a0e67992042a8697d8aac66a3" id="r_a9c03779a0e67992042a8697d8aac66a3"><td align="right" class="memItemLeft" valign="top"><a id="a9c03779a0e67992042a8697d8aac66a3" name="a9c03779a0e67992042a8697d8aac66a3"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Mode3InsP</b></td></tr>
+<tr class="separator:a9c03779a0e67992042a8697d8aac66a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae187f1ff7fa79670129ca1beb1a372d4" id="r_ae187f1ff7fa79670129ca1beb1a372d4"><td align="right" class="memItemLeft" valign="top"><a id="ae187f1ff7fa79670129ca1beb1a372d4" name="ae187f1ff7fa79670129ca1beb1a372d4"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Mode4InsP</b></td></tr>
+<tr class="separator:ae187f1ff7fa79670129ca1beb1a372d4"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于API数据交互的类。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a16fc170c516701a1aaf697be9bc4422c" name="a16fc170c516701a1aaf697be9bc4422c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fc170c516701a1aaf697be9bc4422c">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CaseID</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>conf</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Data</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Info</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化DATAAPI类的实例。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CaseID</td><td>测试用例的ID。 </td></tr>
+<tr><td class="paramname">conf</td><td>包含无人机配置信息的列表。 </td></tr>
+<tr><td class="paramname">Data</td><td>测试数据。 </td></tr>
+<tr><td class="paramname">Info</td><td>附加信息。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a16fc170c516701a1aaf697be9bc4422c_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aed0bbc5821a617411e101b63d4cd40e1" name="aed0bbc5821a617411e101b63d4cd40e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0bbc5821a617411e101b63d4cd40e1">◆ </a></span>add_br_to_html()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">add_br_to_html </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>new_html_data_list</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>为HTML数据显示添加换行标签。 </p>
+<ul>
+<li><a class="anchor" id="add_br_to_html"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">new_html_data_list</td><td>新的HTML数据列表。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回包含换行标签的HTML数据列表。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_aed0bbc5821a617411e101b63d4cd40e1_cgraph.svg" width="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_aed0bbc5821a617411e101b63d4cd40e1_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ab947a30fe889217104c7c92b5135c535" name="ab947a30fe889217104c7c92b5135c535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab947a30fe889217104c7c92b5135c535">◆ </a></span>add_br_to_test_result_html()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">add_br_to_test_result_html </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>new_html_data_list</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>为测试结果HTML数据显示添加换行标签。 </p>
+<ul>
+<li><a class="anchor" id="add_br_to_test_result_html"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">new_html_data_list</td><td>新的测试结果HTML数据列表。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回包含换行标签的测试结果HTML数据列表。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="240" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ab947a30fe889217104c7c92b5135c535_cgraph.svg" width="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ab947a30fe889217104c7c92b5135c535_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a529842a87b67568059a0da75a60ba379" name="a529842a87b67568059a0da75a60ba379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529842a87b67568059a0da75a60ba379">◆ </a></span>add_CaseDescription_br()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">add_CaseDescription_br </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>caseDescription</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>variables</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>为测试结果描述添加HTML换行标签。 </p>
+<ul>
+<li><a class="anchor" id="add_CaseDescription_br"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">self</td><td>DATAAPI类的实例。 </td></tr>
+<tr><td class="paramname">caseDescription</td><td>测试结果描述文本。 </td></tr>
+<tr><td class="paramname">variables</td><td>需要添加换行标签的变量列表。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回添加了换行标签的测试结果描述文本。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a529842a87b67568059a0da75a60ba379_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="acce7e42d79869f417f97756175c7a128" name="acce7e42d79869f417f97756175c7a128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce7e42d79869f417f97756175c7a128">◆ </a></span>add_ControlSequence_br()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">add_ControlSequence_br </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>testInfo</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>为控制序列描述添加HTML换行标签。 </p>
+<ul>
+<li><a class="anchor" id="add_ControlSequence_br"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">self</td><td>DATAAPI类的实例。 </td></tr>
+<tr><td class="paramname">testInfo</td><td>控制序列描述文本。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回添加了换行标签的控制序列描述文本。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="366" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_acce7e42d79869f417f97756175c7a128_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a513e32608d9c9f5ec1fc8bdca49a80d1" name="a513e32608d9c9f5ec1fc8bdca49a80d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513e32608d9c9f5ec1fc8bdca49a80d1">◆ </a></span>add_TestResult_br()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">add_TestResult_br </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>testresult</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>为测试结果添加HTML换行标签。 </p>
+<ul>
+<li><a class="anchor" id="add_TestResult_br"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">self</td><td>DATAAPI类的实例。 </td></tr>
+<tr><td class="paramname">testresult</td><td>测试结果文本。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回添加了换行标签的测试结果文本。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a513e32608d9c9f5ec1fc8bdca49a80d1_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="acb325af332705da1cdc154f0e7206463" name="acb325af332705da1cdc154f0e7206463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb325af332705da1cdc154f0e7206463">◆ </a></span>CMDAna()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">CMDAna </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cmd</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>分析控制命令。 </p>
+<ul>
+<li><a class="anchor" id="CMDAna"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">cmd</td><td>控制命令序列。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回分析后的控制命令信息，可能包括命令类型、时间戳和参数等。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_acb325af332705da1cdc154f0e7206463_icgraph.svg" width="548"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a9136846e1dac3247a77451a5a8fe81c0" name="a9136846e1dac3247a77451a5a8fe81c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9136846e1dac3247a77451a5a8fe81c0">◆ </a></span>convert_newlines_to_br()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">convert_newlines_to_br </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>text</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将文本中的换行符转换为HTML的换行标签。 </p>
+<ul>
+<li><a class="anchor" id="convert_newlines_to_br"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">text</td><td>需要转换的原始文本。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回转换后的文本，其中的换行符被替换为HTML的<br/>
+标签。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="366" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a9136846e1dac3247a77451a5a8fe81c0_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a2be65e31c16a2b378b576e2bc1cd65be" name="a2be65e31c16a2b378b576e2bc1cd65be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be65e31c16a2b378b576e2bc1cd65be">◆ </a></span>DataPro()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">DataPro </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理数据。该方法处理从无人机接收到的测试数据，可能包括日志下载、数据解析等操作。 </p>
+<ul>
+<li><a class="anchor" id="DataPro"></a></li>
+</ul>
+<pre class="fragment"># QGC下载接口
+qgc = QGCCtrlAPI.QGCCtrlAPI()
+logName = qgc.ReqQgcLog(AutoREG.LOG_TIMEOUT, self.Info[2])
+if logName!='':
+        shutil.copyfile(qgc.QGCPath+'\\'+logName, self.logp + '\\' + logName)
+        print('Download log ' + logName+ f' for mav{self.Info[2]} successfully.')
+</pre> <div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a2be65e31c16a2b378b576e2bc1cd65be_icgraph.svg" width="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a2013ae7d27179446e088f64bcb17bae3" name="a2013ae7d27179446e088f64bcb17bae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2013ae7d27179446e088f64bcb17bae3">◆ </a></span>DP()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">DP </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理数据并准备存储。该方法进行数据处理，包括创建必要的目录、处理数据，并准备存储到文件或数据库。 </p>
+<ul>
+<li><a class="anchor" id="DP"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a2013ae7d27179446e088f64bcb17bae3_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a2013ae7d27179446e088f64bcb17bae3_icgraph.svg" width="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a1dfbfb34b404f8c1e231905bf916a936" name="a1dfbfb34b404f8c1e231905bf916a936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfbfb34b404f8c1e231905bf916a936">◆ </a></span>generate_header()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">generate_header </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_file</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bk_path</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>生成HTML文件的头部，包含表格的列标题。 </p>
+<ul>
+<li><a class="anchor" id="generate_header"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">html_file</td><td>HTML文件的路径。 </td></tr>
+<tr><td class="paramname">bk_path</td><td>背景图片的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果文件已存在，则返回True；否则，生成头部并返回False。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a1dfbfb34b404f8c1e231905bf916a936_cgraph.svg" width="311"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a1dfbfb34b404f8c1e231905bf916a936_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ae6c0854c552c22016ffd9d56e4df0fd6" name="ae6c0854c552c22016ffd9d56e4df0fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c0854c552c22016ffd9d56e4df0fd6">◆ </a></span>generate_html_with_style()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">generate_html_with_style </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_table</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bk</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>生成带有特定样式的HTML表格。 </p>
+<ul>
+<li><a class="anchor" id="generate_html_with_style"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">html_table</td><td>HTML表格的字符串表示。 </td></tr>
+<tr><td class="paramname">bk</td><td>背景图片的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回包含样式的HTML表格字符串。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ae6c0854c552c22016ffd9d56e4df0fd6_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a0eadcb441950cc1c874b8ae525df4ad4" name="a0eadcb441950cc1c874b8ae525df4ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eadcb441950cc1c874b8ae525df4ad4">◆ </a></span>generate_test_result_header()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">generate_test_result_header </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_file</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bk_path</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>生成测试结果HTML文件的头部，包含测试结果表格的列标题。 </p>
+<ul>
+<li><a class="anchor" id="generate_test_result_header"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">html_file</td><td>测试结果HTML文件的路径。 </td></tr>
+<tr><td class="paramname">bk_path</td><td>背景图片的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果文件已存在，则返回True；否则，生成头部并返回False。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-16-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-16-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-16-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a0eadcb441950cc1c874b8ae525df4ad4_cgraph.svg" width="338"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-17-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-17-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-17-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a0eadcb441950cc1c874b8ae525df4ad4_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a986ea646a810643080ea3a6358d05d2c" name="a986ea646a810643080ea3a6358d05d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986ea646a810643080ea3a6358d05d2c">◆ </a></span>generate_test_result_html_with_style()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">generate_test_result_html_with_style </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_table</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bk</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>生成带有特定样式的测试结果HTML表格。 </p>
+<ul>
+<li><a class="anchor" id="generate_test_result_html_with_style"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">html_table</td><td>测试结果HTML表格的字符串表示。 </td></tr>
+<tr><td class="paramname">bk</td><td>背景图片的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回包含样式的测试结果HTML表格字符串。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-18-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-18-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-18-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="362" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a986ea646a810643080ea3a6358d05d2c_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ad94849e1dad58129c1614830db502fe6" name="ad94849e1dad58129c1614830db502fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94849e1dad58129c1614830db502fe6">◆ </a></span>Get_test_result_frame()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Get_test_result_frame </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>text</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从测试结果描述中提取无人机框架信息。 </p>
+<ul>
+<li><a class="anchor" id="Get_test_result_frame"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">text</td><td>测试结果描述文本。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回提取的无人机框架信息。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-19-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-19-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-19-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ad94849e1dad58129c1614830db502fe6_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a5f477a6c75cb0cba2607feaaf741f91f" name="a5f477a6c75cb0cba2607feaaf741f91f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f477a6c75cb0cba2607feaaf741f91f">◆ </a></span>Get_test_result_shitl()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Get_test_result_shitl </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>text</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从测试结果描述中提取仿真类型信息。 </p>
+<ul>
+<li><a class="anchor" id="Get_test_result_shitl"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">text</td><td>测试结果描述文本。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回提取的仿真类型信息。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-20-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-20-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-20-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="300" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a5f477a6c75cb0cba2607feaaf741f91f_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a14d4a6d44c75ced8f13f49ee5be6a47e" name="a14d4a6d44c75ced8f13f49ee5be6a47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d4a6d44c75ced8f13f49ee5be6a47e">◆ </a></span>GetInfoP()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">GetInfoP </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于获取测试信息的路径。 </p>
+<ul>
+<li><a class="anchor" id="GetInfoP"></a> <dl class="section return"><dt>返回</dt><dd>返回存储测试信息的路径。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-21-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-21-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-21-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a14d4a6d44c75ced8f13f49ee5be6a47e_icgraph.svg" width="546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a0ddb8a398fb9e6d94e62fc338fd313a2" name="a0ddb8a398fb9e6d94e62fc338fd313a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddb8a398fb9e6d94e62fc338fd313a2">◆ </a></span>InfoDown()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">InfoDown </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理并存储测试信息，等待所有数据处理线程完成后执行。 </p>
+<ul>
+<li><a class="anchor" id="InfoDown"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-22-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-22-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-22-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="492" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a0ddb8a398fb9e6d94e62fc338fd313a2_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader closed" id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-23-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-23-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-23-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a0ddb8a398fb9e6d94e62fc338fd313a2_icgraph.svg" width="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad11883c36a12dbf597e842ea8d23bb37" name="ad11883c36a12dbf597e842ea8d23bb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11883c36a12dbf597e842ea8d23bb37">◆ </a></span>InfoRecord()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">InfoRecord </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>记录测试信息。该方法将测试信息记录到CSV文件中，包括日期、框架、案例ID、测试信息和数据路径等。 </p>
+<ul>
+<li><a class="anchor" id="InfoRecord"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-24-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-24-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-24-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="256" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ad11883c36a12dbf597e842ea8d23bb37_cgraph.svg" width="642"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-25-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-25-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-25-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ad11883c36a12dbf597e842ea8d23bb37_icgraph.svg" width="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a2561c18df6caf5aee18933014816984d" name="a2561c18df6caf5aee18933014816984d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2561c18df6caf5aee18933014816984d">◆ </a></span>MFolder()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MFolder </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>TargetFilder_log</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>TargetFilder_truedata</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>创建目录。 </p>
+<ul>
+<li><a class="anchor" id="MFolder"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">TargetFilder_log</td><td>日志文件的目标文件夹路径。 </td></tr>
+<tr><td class="paramname">TargetFilder_truedata</td><td>真实数据文件的目标文件夹路径。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-26-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-26-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-26-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a2561c18df6caf5aee18933014816984d_icgraph.svg" width="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a48db88bf7597dfa1974e0814cf4a5413" name="a48db88bf7597dfa1974e0814cf4a5413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48db88bf7597dfa1974e0814cf4a5413">◆ </a></span>MKDPath()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MKDPath </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>创建数据存储所需的目录结构。 </p>
+<ul>
+<li><a class="anchor" id="MKDPath"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">self</td><td>DATAAPI类的实例。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-27-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-27-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-27-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a48db88bf7597dfa1974e0814cf4a5413_cgraph.svg" width="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-28-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-28-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-28-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a48db88bf7597dfa1974e0814cf4a5413_icgraph.svg" width="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a8535730a64e5afabf0ab7168d961ccfa" name="a8535730a64e5afabf0ab7168d961ccfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8535730a64e5afabf0ab7168d961ccfa">◆ </a></span>PX4Path()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">PX4Path </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取PX4的路径。 </p>
+<ul>
+<li><a class="anchor" id="PX4Path"></a> <dl class="section return"><dt>返回</dt><dd>返回PX4控制台的路径，该路径可能用于后续的日志下载或参数配置。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-29-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-29-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-29-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a8535730a64e5afabf0ab7168d961ccfa_icgraph.svg" width="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aaa19030d02aa32e114905ab242955499" name="aaa19030d02aa32e114905ab242955499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa19030d02aa32e114905ab242955499">◆ </a></span>read_data_from_html_tolist()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">read_data_from_html_tolist </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_file</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从HTML文件中读取数据并转换为列表。 </p>
+<ul>
+<li><a class="anchor" id="read_data_from_html_tolist"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">html_file</td><td>HTML文件的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回从HTML文件中提取的数据列表。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-30-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-30-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-30-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="366" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_aaa19030d02aa32e114905ab242955499_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="aa6602c16742d5855073bcc5dac5a9854" name="aa6602c16742d5855073bcc5dac5a9854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6602c16742d5855073bcc5dac5a9854">◆ </a></span>RName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">RName </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>重命名目录。该方法根据测试结果重命名目录，以便于后续的数据分析和归档。 </p>
+<ul>
+<li><a class="anchor" id="RName"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-31" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-31-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-31-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-31-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_aa6602c16742d5855073bcc5dac5a9854_cgraph.svg" width="204"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-32" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-32-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-32-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-32-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_aa6602c16742d5855073bcc5dac5a9854_icgraph.svg" width="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a14ee720e2e5bef208ced49b4867f7a39" name="a14ee720e2e5bef208ced49b4867f7a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ee720e2e5bef208ced49b4867f7a39">◆ </a></span>SExecute()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SExecute </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>start_dir</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>执行数据后处理。 </p>
+<ul>
+<li><a class="anchor" id="SExecute"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">start_dir</td><td>起始目录路径。</td></tr>
+</table>
+</dd>
+</dl>
+该方法在数据后处理过程中执行必要的命令，例如日志文件的转换。 </li>
+</ul>
+<div class="dynheader closed" id="dynsection-33" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-33-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-33-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-33-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a14ee720e2e5bef208ced49b4867f7a39_icgraph.svg" width="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a265fdb639ec6227b9fe5b8aaa71b191b" name="a265fdb639ec6227b9fe5b8aaa71b191b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265fdb639ec6227b9fe5b8aaa71b191b">◆ </a></span>Test_result_Record()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Test_result_Record </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>记录测试结果。该方法将测试结果记录到CSV文件中，包括案例ID、故障ID、案例描述、故障模式、控制序列和测试结果等。 </p>
+<ul>
+<li><a class="anchor" id="Test_result_Record"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-34" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-34-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-34-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-34-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a265fdb639ec6227b9fe5b8aaa71b191b_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader closed" id="dynsection-35" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-35-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-35-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-35-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a265fdb639ec6227b9fe5b8aaa71b191b_icgraph.svg" width="348"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ac354199c66c8f0a1feed9997c0a2b6a4" name="ac354199c66c8f0a1feed9997c0a2b6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac354199c66c8f0a1feed9997c0a2b6a4">◆ </a></span>test_result_to_html()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">test_result_to_html </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>testresultdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_file_path</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bk_path</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将测试结果转换为HTML格式并写入文件。 </p>
+<ul>
+<li><a class="anchor" id="test_result_to_html"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">testresultdata</td><td>包含测试结果的数据列表。 </td></tr>
+<tr><td class="paramname">html_file_path</td><td>测试结果HTML文件的路径。 </td></tr>
+<tr><td class="paramname">bk_path</td><td>背景图片的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-36" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-36-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-36-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-36-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="475" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ac354199c66c8f0a1feed9997c0a2b6a4_cgraph.svg" width="586"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-37" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-37-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-37-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-37-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ac354199c66c8f0a1feed9997c0a2b6a4_icgraph.svg" width="528"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ae876a8866f8f4f33149974c85ba93674" name="ae876a8866f8f4f33149974c85ba93674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae876a8866f8f4f33149974c85ba93674">◆ </a></span>to_html()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">to_html </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>dataInfo</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>html_file_path</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bk_path</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将测试信息转换为HTML格式并写入文件。 </p>
+<ul>
+<li><a class="anchor" id="to_html"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">dataInfo</td><td>包含测试信息的数据列表。 </td></tr>
+<tr><td class="paramname">html_file_path</td><td>HTML文件的路径。 </td></tr>
+<tr><td class="paramname">bk_path</td><td>背景图片的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-38" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-38-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-38-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-38-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="256" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ae876a8866f8f4f33149974c85ba93674_cgraph.svg" width="498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-39" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-39-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-39-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-39-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_ae876a8866f8f4f33149974c85ba93674_icgraph.svg" width="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a0891d2ea1d55865f9d1c86cc67cb3122" name="a0891d2ea1d55865f9d1c86cc67cb3122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0891d2ea1d55865f9d1c86cc67cb3122">◆ </a></span>TruedataRecord()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">TruedataRecord </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>记录真实数据。该方法将无人机的真实测试数据记录到CSV文件中，包括速度、角度和位置等信息。 </p>
+<ul>
+<li><a class="anchor" id="TruedataRecord"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-40" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-40-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-40-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-40-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI_a0891d2ea1d55865f9d1c86cc67cb3122_icgraph.svg" width="328"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>phm/<a class="el" href="AutoMavDB_8py.html">AutoMavDB.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

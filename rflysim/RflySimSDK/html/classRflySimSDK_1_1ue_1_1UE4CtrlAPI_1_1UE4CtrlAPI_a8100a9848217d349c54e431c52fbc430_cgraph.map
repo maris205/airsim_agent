@@ -1,0 +1,13 @@
+<map id="reqCam" name="reqCam">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,73,99"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a08bbc02f2e508a22db16214c353bd491" title="请求场景内指定物体数据回传" alt="" coords="121,72,236,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,83,105,83,105,88,73,88"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7dd34f79e324afda9bbed53621df2aff" title=" " alt="" coords="303,5,488,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,69,299,50,300,55,231,74"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a7dd34f79e324afda9bbed53621df2aff" title="发送RflySim3D控制台命令的方法" alt="" coords="344,72,447,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="237,83,328,83,328,88,237,88"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a7dd34f79e324afda9bbed53621df2aff" title="用于发送命令到UE4应用程序的一个或多个窗口。 它将命令转换成合适的格式，并通过UDP协议发送到指定的IP地址和端口" alt="" coords="284,123,507,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="225,97,284,115,283,120,224,102"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a2fe80de8986dc01c293e3fb4a47b375c" title=" " alt="" coords="555,5,741,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="489,24,540,24,540,29,489,29"/>
+</map>

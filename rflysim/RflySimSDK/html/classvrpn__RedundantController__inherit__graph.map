@@ -1,0 +1,7 @@
+<map id="vrpn_RedundantController" name="vrpn_RedundantController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,178,181"/>
+<area shape="rect" id="Node000002" href="$classvrpn__BaseClass.html" title=" " alt="" coords="33,80,150,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,122,94,154,89,154,89,122"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="12,5,171,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,48,94,80,89,80,89,48"/>
+</map>

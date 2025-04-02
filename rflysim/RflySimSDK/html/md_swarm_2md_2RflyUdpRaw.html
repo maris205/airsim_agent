@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyUdpRaw——通信模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflyUdpRaw——通信模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md232"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240815162706738.png"><img alt="" class="thumbnail" height="auto" src="image-20240815162706738.png" width="100"/></a>
+<div class="caption">
+image-20240815162706738</div></div>
+<hr/>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">RflyUdpReal API模块用于多个真实无人机数据采集和控制。它通过RflySim APIs来获取或发送MAVLink数据，并可以控制多架无人机的模拟飞行或实际飞行。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="image-20240815145419877.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240815145419877.png" title="image-20240815145419877" width="100"/></a> <a data_lightbox="image" href="image-20240815150454218.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240815150454218.png" title="image-20240815150454218" width="100"/></a> </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Vehicle number or CopterID list   </td><td class="markdownTableBodyLeft">用一个向量表示，本模块一共仿真多少个飞机（向量长度），每个飞机的序号是多少（向量数值）。例如，[1:5] 等于 [1 2 3 4 5] 表示前五个飞机，或者[6:10]，或者[1 3 5 6]    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Sample Time   </td><td class="markdownTableBodyLeft">用于设定模块的采样时间。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">RealflyMode   </td><td class="markdownTableBodyLeft">是否启用真机模式，如果勾选，就会使用设定的IP和端口规则。如果不勾选，则默认使用RflySim平台的端口和Ip规则，即IP地址不会变，端口会自+2。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">不勾选RealflyMode   </td><td class="markdownTableBodyLeft">默认模式IP和端口规则    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**Target IP Address**：用于设置需要控制的CopterSim所在电脑的IP地址，默认是“127.0.0.1”。如果需要控制另一台电脑上的CopterSim，可在此处填写目标电脑的IP地址。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">勾选RealflyMode   </td><td class="markdownTableBodyLeft">真机模式IP和端口规则    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**Base IP Address**： 需要控制飞机的IP地址，通常情况下要取实际局域网中，飞机对应的IP地址。注意：所有飞机应该提前配置静态IP，确保IP规则保持基准IP自+1的模式。例如，基准IP是191.168.151.101，那么1号飞机是191.168.151.101，而5号飞机是191.168.151.105.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**Base Udp Port**：每个飞机的mavlink通信端口，这个端口号要提前在每个飞机上设定，并约定好是基准端口号自+1的形式。注意：基准端口是15501，则1号飞机需设置成mavlink发送端口15501，而5号端口需设置发送端口15505.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft">连接一个或多个无人机的控制信号。<a data_lightbox="image" href="image-20240815151659738.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240815151659738.png" title="image-20240815151659738" width="100"/></a> </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft">模块的输出为一个或多个无人机的状态反馈数据。<a data_lightbox="image" href="image-20240815151712856.png"><img alt="" class="inline thumbnail" height="auto" src="image-20240815151712856.png" title="image-20240815151712856" width="100"/></a> </td></tr>
+</table>
+<hr/>
+<p>使用示例：<a href="../../10.RflySimSwarm/1.BasicExps/e1_RflyUdpSwarmExp/index.html">[安装目录]\RflySimAPIs\10.RflySimSwarm\1.BasicExps\e1_RflyUdpSwarmExp\index.html</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="BReset" name="BReset">
+<area shape="rect" id="Node000001" title="重置环境到原始状态的方法。" alt="" coords="258,5,323,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#a24fa68ee502db8e0d23e1776c72981bb" title="初始化无人机环境的方法。" alt="" coords="120,5,210,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,21,210,21,210,16,242,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#a18a733ad7fce767df17e7e104de306cb" title="构造函数，初始化无人机测试环境。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

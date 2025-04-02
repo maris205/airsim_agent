@@ -1,0 +1,7 @@
+<map id="OffboardLoop" name="OffboardLoop">
+<area shape="rect" id="Node000001" title="启动Offboard模式循环" alt="" coords="277,35,375,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式" alt="" coords="73,5,161,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,42,161,27,161,22,262,36"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式并发送初始命令" alt="" coords="5,56,229,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,60,229,64,229,59,261,54"/>
+</map>

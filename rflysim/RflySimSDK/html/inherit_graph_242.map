@@ -1,0 +1,9 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classvrpn__MainloopObject.html" title=" " alt="" coords="5,80,149,107"/>
+<area shape="rect" id="Node000001" href="$classdetail_1_1TypedMainloopObject_3_01T_01_5_01_4.html" title=" " alt="" coords="204,5,350,48"/>
+<area shape="poly" id="edge350_Node000000_Node000001" title=" " alt="" coords="133,72,210,46,211,51,135,77"/>
+<area shape="rect" id="Node000002" href="$classdetail_1_1TypedMainloopObject_3_01vrpn__Connection_01_5_01_4.html" title="Specialization for connections, since they&#39;re reference&#45;counted." alt="" coords="201,72,353,115"/>
+<area shape="poly" id="edge351_Node000000_Node000002" title=" " alt="" coords="164,91,200,91,200,96,164,96"/>
+<area shape="rect" id="Node000003" href="$classdetail_1_1TypedMainloopObject_3_01vrpn__ConnectionPtr_01_4.html" title=" " alt="" coords="197,139,357,181"/>
+<area shape="poly" id="edge352_Node000000_Node000003" title=" " alt="" coords="135,110,211,136,210,141,133,115"/>
+</map>

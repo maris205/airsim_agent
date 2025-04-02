@@ -1,0 +1,5 @@
+<map id="getTerrainAltData" name="getTerrainAltData">
+<area shape="rect" id="Node000001" title="根据输入的X和Y坐标获取地形高度数据。" alt="" coords="162,5,284,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UEMapServe_1_1UEMapServe.html#aebe8cfe21b82a2bef32594f62998e866" title="生成地形点云。" alt="" coords="5,5,114,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,21,114,21,114,16,146,16"/>
+</map>

@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/mavlink/common/mavlink_msg_adsb_vehicle.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_ad33f1dddab9e5eaec5103fc17ef0232.html">mavlink</a></li><li class="navelem"><a class="el" href="dir_3d76a8205c28bb78cb81a3e7f96c4166.html">common</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">mavlink_msg_adsb_vehicle.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// MESSAGE ADSB_VEHICLE PACKING</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define MAVLINK_MSG_ID_ADSB_VEHICLE 246</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>MAVPACKED(</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">typedef</span> <span class="keyword">struct</span> __mavlink_adsb_vehicle_t {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> uint32_t ICAO_address; <span class="comment">/*&lt; ICAO address*/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> int32_t lat; <span class="comment">/*&lt; Latitude, expressed as degrees * 1E7*/</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> int32_t lon; <span class="comment">/*&lt; Longitude, expressed as degrees * 1E7*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> int32_t altitude; <span class="comment">/*&lt; Altitude(ASL) in millimeters*/</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> uint16_t heading; <span class="comment">/*&lt; Course over ground in centidegrees*/</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> uint16_t hor_velocity; <span class="comment">/*&lt; The horizontal velocity in centimeters/second*/</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> int16_t ver_velocity; <span class="comment">/*&lt; The vertical velocity in centimeters/second, positive is up*/</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> uint16_t flags; <span class="comment">/*&lt; Flags to indicate various statuses including valid data fields*/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> uint16_t squawk; <span class="comment">/*&lt; Squawk code*/</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> uint8_t altitude_type; <span class="comment">/*&lt; Type from ADSB_ALTITUDE_TYPE enum*/</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> <span class="keywordtype">char</span> callsign[9]; <span class="comment">/*&lt; The callsign, 8+null*/</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> uint8_t emitter_type; <span class="comment">/*&lt; Type from ADSB_EMITTER_TYPE enum*/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> uint8_t tslc; <span class="comment">/*&lt; Time since last communication in seconds*/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}) mavlink_adsb_vehicle_t;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define MAVLINK_MSG_ID_ADSB_VEHICLE_LEN 38</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN 38</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define MAVLINK_MSG_ID_246_LEN 38</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define MAVLINK_MSG_ID_246_MIN_LEN 38</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define MAVLINK_MSG_ID_ADSB_VEHICLE_CRC 184</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define MAVLINK_MSG_ID_246_CRC 184</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define MAVLINK_MSG_ADSB_VEHICLE_FIELD_CALLSIGN_LEN 9</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if MAVLINK_COMMAND_24BIT</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define MAVLINK_MESSAGE_INFO_ADSB_VEHICLE { \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">    246, \</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    "ADSB_VEHICLE", \</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    13, \</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    {  { "ICAO_address", NULL, MAVLINK_TYPE_UINT32_T, 0, 0, offsetof(mavlink_adsb_vehicle_t, ICAO_address) }, \</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">         { "lat", NULL, MAVLINK_TYPE_INT32_T, 0, 4, offsetof(mavlink_adsb_vehicle_t, lat) }, \</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">         { "lon", NULL, MAVLINK_TYPE_INT32_T, 0, 8, offsetof(mavlink_adsb_vehicle_t, lon) }, \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">         { "altitude_type", NULL, MAVLINK_TYPE_UINT8_T, 0, 26, offsetof(mavlink_adsb_vehicle_t, altitude_type) }, \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">         { "altitude", NULL, MAVLINK_TYPE_INT32_T, 0, 12, offsetof(mavlink_adsb_vehicle_t, altitude) }, \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">         { "heading", NULL, MAVLINK_TYPE_UINT16_T, 0, 16, offsetof(mavlink_adsb_vehicle_t, heading) }, \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">         { "hor_velocity", NULL, MAVLINK_TYPE_UINT16_T, 0, 18, offsetof(mavlink_adsb_vehicle_t, hor_velocity) }, \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">         { "ver_velocity", NULL, MAVLINK_TYPE_INT16_T, 0, 20, offsetof(mavlink_adsb_vehicle_t, ver_velocity) }, \</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">         { "callsign", NULL, MAVLINK_TYPE_CHAR, 9, 27, offsetof(mavlink_adsb_vehicle_t, callsign) }, \</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">         { "emitter_type", NULL, MAVLINK_TYPE_UINT8_T, 0, 36, offsetof(mavlink_adsb_vehicle_t, emitter_type) }, \</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">         { "tslc", NULL, MAVLINK_TYPE_UINT8_T, 0, 37, offsetof(mavlink_adsb_vehicle_t, tslc) }, \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">         { "flags", NULL, MAVLINK_TYPE_UINT16_T, 0, 22, offsetof(mavlink_adsb_vehicle_t, flags) }, \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">         { "squawk", NULL, MAVLINK_TYPE_UINT16_T, 0, 24, offsetof(mavlink_adsb_vehicle_t, squawk) }, \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">         } \</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#define MAVLINK_MESSAGE_INFO_ADSB_VEHICLE { \</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">    "ADSB_VEHICLE", \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">    13, \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">    {  { "ICAO_address", NULL, MAVLINK_TYPE_UINT32_T, 0, 0, offsetof(mavlink_adsb_vehicle_t, ICAO_address) }, \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">         { "lat", NULL, MAVLINK_TYPE_INT32_T, 0, 4, offsetof(mavlink_adsb_vehicle_t, lat) }, \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">         { "lon", NULL, MAVLINK_TYPE_INT32_T, 0, 8, offsetof(mavlink_adsb_vehicle_t, lon) }, \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">         { "altitude_type", NULL, MAVLINK_TYPE_UINT8_T, 0, 26, offsetof(mavlink_adsb_vehicle_t, altitude_type) }, \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">         { "altitude", NULL, MAVLINK_TYPE_INT32_T, 0, 12, offsetof(mavlink_adsb_vehicle_t, altitude) }, \</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">         { "heading", NULL, MAVLINK_TYPE_UINT16_T, 0, 16, offsetof(mavlink_adsb_vehicle_t, heading) }, \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">         { "hor_velocity", NULL, MAVLINK_TYPE_UINT16_T, 0, 18, offsetof(mavlink_adsb_vehicle_t, hor_velocity) }, \</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">         { "ver_velocity", NULL, MAVLINK_TYPE_INT16_T, 0, 20, offsetof(mavlink_adsb_vehicle_t, ver_velocity) }, \</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">         { "callsign", NULL, MAVLINK_TYPE_CHAR, 9, 27, offsetof(mavlink_adsb_vehicle_t, callsign) }, \</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">         { "emitter_type", NULL, MAVLINK_TYPE_UINT8_T, 0, 36, offsetof(mavlink_adsb_vehicle_t, emitter_type) }, \</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">         { "tslc", NULL, MAVLINK_TYPE_UINT8_T, 0, 37, offsetof(mavlink_adsb_vehicle_t, tslc) }, \</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">         { "flags", NULL, MAVLINK_TYPE_UINT16_T, 0, 22, offsetof(mavlink_adsb_vehicle_t, flags) }, \</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">         { "squawk", NULL, MAVLINK_TYPE_UINT16_T, 0, 24, offsetof(mavlink_adsb_vehicle_t, squawk) }, \</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">         } \</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                               uint32_t ICAO_address, int32_t lat, int32_t lon, uint8_t altitude_type, int32_t altitude, uint16_t heading, uint16_t hor_velocity, int16_t ver_velocity, <span class="keyword">const</span> <span class="keywordtype">char</span> *callsign, uint8_t emitter_type, uint8_t tslc, uint16_t flags, uint16_t squawk)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <span class="keywordtype">char</span> buf[MAVLINK_MSG_ID_ADSB_VEHICLE_LEN];</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    _mav_put_uint32_t(buf, 0, ICAO_address);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    _mav_put_int32_t(buf, 4, lat);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    _mav_put_int32_t(buf, 8, lon);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    _mav_put_int32_t(buf, 12, altitude);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    _mav_put_uint16_t(buf, 16, heading);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    _mav_put_uint16_t(buf, 18, hor_velocity);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    _mav_put_int16_t(buf, 20, ver_velocity);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    _mav_put_uint16_t(buf, 22, flags);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    _mav_put_uint16_t(buf, 24, squawk);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    _mav_put_uint8_t(buf, 26, altitude_type);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    _mav_put_uint8_t(buf, 36, emitter_type);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    _mav_put_uint8_t(buf, 37, tslc);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    _mav_put_char_array(buf, 27, callsign, 9);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), buf, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    mavlink_adsb_vehicle_t packet;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    packet.ICAO_address = ICAO_address;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    packet.lat = lat;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    packet.lon = lon;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    packet.altitude = altitude;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    packet.heading = heading;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    packet.hor_velocity = hor_velocity;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    packet.ver_velocity = ver_velocity;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    packet.flags = flags;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    packet.squawk = squawk;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    packet.altitude_type = altitude_type;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    packet.emitter_type = emitter_type;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    packet.tslc = tslc;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    mav_array_memcpy(packet.callsign, callsign, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*9);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), &amp;packet, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    msg-&gt;msgid = MAVLINK_MSG_ID_ADSB_VEHICLE;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> <span class="keywordflow">return</span> mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_pack_chan(uint8_t system_id, uint8_t component_id, uint8_t chan,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                               mavlink_message_t* msg,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                                   uint32_t ICAO_address,int32_t lat,int32_t lon,uint8_t altitude_type,int32_t altitude,uint16_t heading,uint16_t hor_velocity,int16_t ver_velocity,<span class="keyword">const</span> <span class="keywordtype">char</span> *callsign,uint8_t emitter_type,uint8_t tslc,uint16_t flags,uint16_t squawk)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> <span class="keywordtype">char</span> buf[MAVLINK_MSG_ID_ADSB_VEHICLE_LEN];</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    _mav_put_uint32_t(buf, 0, ICAO_address);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    _mav_put_int32_t(buf, 4, lat);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    _mav_put_int32_t(buf, 8, lon);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    _mav_put_int32_t(buf, 12, altitude);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    _mav_put_uint16_t(buf, 16, heading);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    _mav_put_uint16_t(buf, 18, hor_velocity);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    _mav_put_int16_t(buf, 20, ver_velocity);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    _mav_put_uint16_t(buf, 22, flags);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    _mav_put_uint16_t(buf, 24, squawk);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    _mav_put_uint8_t(buf, 26, altitude_type);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    _mav_put_uint8_t(buf, 36, emitter_type);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    _mav_put_uint8_t(buf, 37, tslc);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    _mav_put_char_array(buf, 27, callsign, 9);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), buf, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    mavlink_adsb_vehicle_t packet;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    packet.ICAO_address = ICAO_address;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    packet.lat = lat;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    packet.lon = lon;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    packet.altitude = altitude;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    packet.heading = heading;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    packet.hor_velocity = hor_velocity;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    packet.ver_velocity = ver_velocity;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    packet.flags = flags;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    packet.squawk = squawk;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    packet.altitude_type = altitude_type;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    packet.emitter_type = emitter_type;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    packet.tslc = tslc;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    mav_array_memcpy(packet.callsign, callsign, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*9);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        memcpy(_MAV_PAYLOAD_NON_CONST(msg), &amp;packet, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    msg-&gt;msgid = MAVLINK_MSG_ID_ADSB_VEHICLE;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> <span class="keywordflow">return</span> mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_encode(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg, <span class="keyword">const</span> mavlink_adsb_vehicle_t* adsb_vehicle)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>{</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> <span class="keywordflow">return</span> mavlink_msg_adsb_vehicle_pack(system_id, component_id, msg, adsb_vehicle-&gt;ICAO_address, adsb_vehicle-&gt;lat, adsb_vehicle-&gt;lon, adsb_vehicle-&gt;altitude_type, adsb_vehicle-&gt;altitude, adsb_vehicle-&gt;heading, adsb_vehicle-&gt;hor_velocity, adsb_vehicle-&gt;ver_velocity, adsb_vehicle-&gt;callsign, adsb_vehicle-&gt;emitter_type, adsb_vehicle-&gt;tslc, adsb_vehicle-&gt;flags, adsb_vehicle-&gt;squawk);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_encode_chan(uint8_t system_id, uint8_t component_id, uint8_t chan, mavlink_message_t* msg, <span class="keyword">const</span> mavlink_adsb_vehicle_t* adsb_vehicle)</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>{</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> <span class="keywordflow">return</span> mavlink_msg_adsb_vehicle_pack_chan(system_id, component_id, chan, msg, adsb_vehicle-&gt;ICAO_address, adsb_vehicle-&gt;lat, adsb_vehicle-&gt;lon, adsb_vehicle-&gt;altitude_type, adsb_vehicle-&gt;altitude, adsb_vehicle-&gt;heading, adsb_vehicle-&gt;hor_velocity, adsb_vehicle-&gt;ver_velocity, adsb_vehicle-&gt;callsign, adsb_vehicle-&gt;emitter_type, adsb_vehicle-&gt;tslc, adsb_vehicle-&gt;flags, adsb_vehicle-&gt;squawk);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>}</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#ifdef MAVLINK_USE_CONVENIENCE_FUNCTIONS</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_adsb_vehicle_send(mavlink_channel_t chan, uint32_t ICAO_address, int32_t lat, int32_t lon, uint8_t altitude_type, int32_t altitude, uint16_t heading, uint16_t hor_velocity, int16_t ver_velocity, <span class="keyword">const</span> <span class="keywordtype">char</span> *callsign, uint8_t emitter_type, uint8_t tslc, uint16_t flags, uint16_t squawk)</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>{</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> <span class="keywordtype">char</span> buf[MAVLINK_MSG_ID_ADSB_VEHICLE_LEN];</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    _mav_put_uint32_t(buf, 0, ICAO_address);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    _mav_put_int32_t(buf, 4, lat);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    _mav_put_int32_t(buf, 8, lon);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    _mav_put_int32_t(buf, 12, altitude);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    _mav_put_uint16_t(buf, 16, heading);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    _mav_put_uint16_t(buf, 18, hor_velocity);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    _mav_put_int16_t(buf, 20, ver_velocity);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    _mav_put_uint16_t(buf, 22, flags);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    _mav_put_uint16_t(buf, 24, squawk);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    _mav_put_uint8_t(buf, 26, altitude_type);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    _mav_put_uint8_t(buf, 36, emitter_type);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    _mav_put_uint8_t(buf, 37, tslc);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    _mav_put_char_array(buf, 27, callsign, 9);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_ADSB_VEHICLE, buf, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    mavlink_adsb_vehicle_t packet;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    packet.ICAO_address = ICAO_address;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    packet.lat = lat;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    packet.lon = lon;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    packet.altitude = altitude;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    packet.heading = heading;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    packet.hor_velocity = hor_velocity;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    packet.ver_velocity = ver_velocity;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    packet.flags = flags;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    packet.squawk = squawk;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    packet.altitude_type = altitude_type;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    packet.emitter_type = emitter_type;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    packet.tslc = tslc;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    mav_array_memcpy(packet.callsign, callsign, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*9);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_ADSB_VEHICLE, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;packet, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_adsb_vehicle_send_struct(mavlink_channel_t chan, <span class="keyword">const</span> mavlink_adsb_vehicle_t* adsb_vehicle)</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>{</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    mavlink_msg_adsb_vehicle_send(chan, adsb_vehicle-&gt;ICAO_address, adsb_vehicle-&gt;lat, adsb_vehicle-&gt;lon, adsb_vehicle-&gt;altitude_type, adsb_vehicle-&gt;altitude, adsb_vehicle-&gt;heading, adsb_vehicle-&gt;hor_velocity, adsb_vehicle-&gt;ver_velocity, adsb_vehicle-&gt;callsign, adsb_vehicle-&gt;emitter_type, adsb_vehicle-&gt;tslc, adsb_vehicle-&gt;flags, adsb_vehicle-&gt;squawk);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_ADSB_VEHICLE, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)adsb_vehicle, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>}</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#if MAVLINK_MSG_ID_ADSB_VEHICLE_LEN &lt;= MAVLINK_MAX_PAYLOAD_LEN</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">  This varient of _send() can be used to save stack space by re-using</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">  memory from the receive buffer.  The caller provides a</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">  mavlink_message_t which is the size of a full mavlink message. This</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">  is usually the receive buffer for the channel, and allows a reply to an</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">  incoming message with minimum stack space usage.</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_adsb_vehicle_send_buf(mavlink_message_t *msgbuf, mavlink_channel_t chan,  uint32_t ICAO_address, int32_t lat, int32_t lon, uint8_t altitude_type, int32_t altitude, uint16_t heading, uint16_t hor_velocity, int16_t ver_velocity, <span class="keyword">const</span> <span class="keywordtype">char</span> *callsign, uint8_t emitter_type, uint8_t tslc, uint16_t flags, uint16_t squawk)</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>{</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> <span class="keywordtype">char</span> *buf = (<span class="keywordtype">char</span> *)msgbuf;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    _mav_put_uint32_t(buf, 0, ICAO_address);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    _mav_put_int32_t(buf, 4, lat);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    _mav_put_int32_t(buf, 8, lon);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    _mav_put_int32_t(buf, 12, altitude);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    _mav_put_uint16_t(buf, 16, heading);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    _mav_put_uint16_t(buf, 18, hor_velocity);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    _mav_put_int16_t(buf, 20, ver_velocity);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    _mav_put_uint16_t(buf, 22, flags);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    _mav_put_uint16_t(buf, 24, squawk);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    _mav_put_uint8_t(buf, 26, altitude_type);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    _mav_put_uint8_t(buf, 36, emitter_type);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    _mav_put_uint8_t(buf, 37, tslc);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    _mav_put_char_array(buf, 27, callsign, 9);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_ADSB_VEHICLE, buf, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    mavlink_adsb_vehicle_t *packet = (mavlink_adsb_vehicle_t *)msgbuf;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    packet-&gt;ICAO_address = ICAO_address;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    packet-&gt;lat = lat;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    packet-&gt;lon = lon;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    packet-&gt;altitude = altitude;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    packet-&gt;heading = heading;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    packet-&gt;hor_velocity = hor_velocity;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    packet-&gt;ver_velocity = ver_velocity;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    packet-&gt;flags = flags;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    packet-&gt;squawk = squawk;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    packet-&gt;altitude_type = altitude_type;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    packet-&gt;emitter_type = emitter_type;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    packet-&gt;tslc = tslc;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    mav_array_memcpy(packet-&gt;callsign, callsign, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*9);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_ADSB_VEHICLE, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)packet, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>}</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">// MESSAGE ADSB_VEHICLE UNPACKING</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="keyword">static</span> <span class="keyword">inline</span> uint32_t mavlink_msg_adsb_vehicle_get_ICAO_address(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>{</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> <span class="keywordflow">return</span> _MAV_RETURN_uint32_t(msg,  0);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>}</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="keyword">static</span> <span class="keyword">inline</span> int32_t mavlink_msg_adsb_vehicle_get_lat(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>{</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> <span class="keywordflow">return</span> _MAV_RETURN_int32_t(msg,  4);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="keyword">static</span> <span class="keyword">inline</span> int32_t mavlink_msg_adsb_vehicle_get_lon(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>{</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> <span class="keywordflow">return</span> _MAV_RETURN_int32_t(msg,  8);</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>}</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="keyword">static</span> <span class="keyword">inline</span> uint8_t mavlink_msg_adsb_vehicle_get_altitude_type(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>{</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> <span class="keywordflow">return</span> _MAV_RETURN_uint8_t(msg,  26);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>}</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="keyword">static</span> <span class="keyword">inline</span> int32_t mavlink_msg_adsb_vehicle_get_altitude(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>{</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> <span class="keywordflow">return</span> _MAV_RETURN_int32_t(msg,  12);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>}</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_get_heading(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>{</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> <span class="keywordflow">return</span> _MAV_RETURN_uint16_t(msg,  16);</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>}</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_get_hor_velocity(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>{</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> <span class="keywordflow">return</span> _MAV_RETURN_uint16_t(msg,  18);</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>}</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="keyword">static</span> <span class="keyword">inline</span> int16_t mavlink_msg_adsb_vehicle_get_ver_velocity(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>{</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> <span class="keywordflow">return</span> _MAV_RETURN_int16_t(msg,  20);</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_get_callsign(<span class="keyword">const</span> mavlink_message_t* msg, <span class="keywordtype">char</span> *callsign)</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>{</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> <span class="keywordflow">return</span> _MAV_RETURN_char_array(msg, callsign, 9,  27);</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>}</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span><span class="keyword">static</span> <span class="keyword">inline</span> uint8_t mavlink_msg_adsb_vehicle_get_emitter_type(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>{</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> <span class="keywordflow">return</span> _MAV_RETURN_uint8_t(msg,  36);</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>}</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="keyword">static</span> <span class="keyword">inline</span> uint8_t mavlink_msg_adsb_vehicle_get_tslc(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>{</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> <span class="keywordflow">return</span> _MAV_RETURN_uint8_t(msg,  37);</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>}</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_get_flags(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>{</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> <span class="keywordflow">return</span> _MAV_RETURN_uint16_t(msg,  22);</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>}</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t mavlink_msg_adsb_vehicle_get_squawk(<span class="keyword">const</span> mavlink_message_t* msg)</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>{</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span> <span class="keywordflow">return</span> _MAV_RETURN_uint16_t(msg,  24);</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>}</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> mavlink_msg_adsb_vehicle_decode(<span class="keyword">const</span> mavlink_message_t* msg, mavlink_adsb_vehicle_t* adsb_vehicle)</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>{</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span><span class="preprocessor">#if MAVLINK_NEED_BYTE_SWAP || !MAVLINK_ALIGNED_FIELDS</span></div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    adsb_vehicle-&gt;ICAO_address = mavlink_msg_adsb_vehicle_get_ICAO_address(msg);</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    adsb_vehicle-&gt;lat = mavlink_msg_adsb_vehicle_get_lat(msg);</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    adsb_vehicle-&gt;lon = mavlink_msg_adsb_vehicle_get_lon(msg);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    adsb_vehicle-&gt;altitude = mavlink_msg_adsb_vehicle_get_altitude(msg);</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    adsb_vehicle-&gt;heading = mavlink_msg_adsb_vehicle_get_heading(msg);</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    adsb_vehicle-&gt;hor_velocity = mavlink_msg_adsb_vehicle_get_hor_velocity(msg);</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    adsb_vehicle-&gt;ver_velocity = mavlink_msg_adsb_vehicle_get_ver_velocity(msg);</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    adsb_vehicle-&gt;flags = mavlink_msg_adsb_vehicle_get_flags(msg);</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>    adsb_vehicle-&gt;squawk = mavlink_msg_adsb_vehicle_get_squawk(msg);</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    adsb_vehicle-&gt;altitude_type = mavlink_msg_adsb_vehicle_get_altitude_type(msg);</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    mavlink_msg_adsb_vehicle_get_callsign(msg, adsb_vehicle-&gt;callsign);</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    adsb_vehicle-&gt;emitter_type = mavlink_msg_adsb_vehicle_get_emitter_type(msg);</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    adsb_vehicle-&gt;tslc = mavlink_msg_adsb_vehicle_get_tslc(msg);</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>        uint8_t len = msg-&gt;len &lt; MAVLINK_MSG_ID_ADSB_VEHICLE_LEN? msg-&gt;len : MAVLINK_MSG_ID_ADSB_VEHICLE_LEN;</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>        memset(adsb_vehicle, 0, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN);</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    memcpy(adsb_vehicle, _MAV_PAYLOAD(msg), len);</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

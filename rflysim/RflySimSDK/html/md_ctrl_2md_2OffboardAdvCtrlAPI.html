@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: OffboardAdvCtrlAPI—Offboard模式高级控制模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">OffboardAdvCtrlAPI—Offboard模式高级控制模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md82"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240807162657239.png"><img alt="" class="thumbnail" height="auto" src="image-20240807162657239.png" width="100"/></a>
+<div class="caption">
+image-20240807162657239</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">可使能载具进入Offboard模式，通过发送的指令(可以是：x、y、z、vx、vy、vz、ax、ay、az、yaw、yawrate)控制载具在Offboard模式下运动。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"><a data_lightbox="image" href="./image-20240807163707272.png"><img alt="image-20240807163707272" class="inline thumbnail" height="auto" src="./image-20240807163707272.png" style="zoom:33%;" width="100"/></a> </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">控制通道选择区域①   </td><td class="markdownTableBodyLeft">控制通道选择区域可以根据个人需求自定义选择不同的Offboard模式的控制指令。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">功能选择区域   </td><td class="markdownTableBodyLeft">若勾选Auto arm，当isEnCtrl端口输入为true时，模块将发送解锁指令。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">若勾选Auto block PX4，则模块将发送信号屏蔽PX4的输出。当isEnCtrl接口输入为true时，将使用Simulink控制器控制载具。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">若勾选Auto Loiter，模块将发送命令解除对PX4输出的屏蔽，并切换到自动Loiter模式，当isEnCtrl接口输入为false时切换到Loiter模式，从而确保载具可以切换到PX4控制器并保持在空中。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">Sample Time(s)   </td><td class="markdownTableBodyLeft">采样时间    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">isEnCtr   </td><td class="markdownTableBodyLeft">当isEnCtrl端口输入为true时，则发送CtrlS[*]端口控制数据；否则不发送且PX4将进入Loiter模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">Ctrls[*]   </td><td class="markdownTableBodyLeft">该模块输入*维归一化控制信号，用于Offboard模式的控制指令。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>使用示例</b> </td><td class="markdownTableBodyLeft"><a href="../../5.RflySimFlyCtrl/0.ApiExps/17.OffboardCtrlsAPI/Readme.pdf">../../5.RflySimFlyCtrl/0.ApiExps/17.OffboardCtrlsAPI/Readme.pdf</a> </td></tr>
+</table>
+<p>Ctrls[*]具体协议如下：</p>
+<div class="fragment"><div class="line">NED坐标系下：</div>
+<div class="line"> </div>
+<div class="line">x、y、z：位置控制（m）</div>
+<div class="line"> </div>
+<div class="line">Vx、Vy、Vz：速度控制（m/s）</div>
+<div class="line"> </div>
+<div class="line">Ax、Ay、Az：加速度控制（m/s^2）</div>
+<div class="line"> </div>
+<div class="line">Yaw：偏航控制（rad，范围：-pi~pi）</div>
+<div class="line"> </div>
+<div class="line">Yawrate：偏航速度控制（rad/s）</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">% 为了平稳飞行，需要保持运动学上的一致性和可行性。</div>
+<div class="line"> </div>
+<div class="line">% 将值设置为NaN表示不应控制状态</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

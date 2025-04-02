@@ -1,0 +1,23 @@
+<map id="initRCSendLoop" name="initRCSendLoop">
+<area shape="rect" id="Node000001" title="初始化遥控器发送循环" alt="" coords="5,107,122,133"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af9633646d4e14673a6d76ffdc4e2a42b" title="循环发送遥控器信号" alt="" coords="255,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,104,117,72,169,42,204,30,239,22,240,28,205,35,171,46,120,77,81,108"/>
+<area shape="rect" id="Node000007" href="$classRflyMavlink.html#ad584eaa3a3e2a747d67313910fa4e9d0" title=" " alt="" coords="199,56,408,83"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="122,105,222,84,223,89,123,110"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a831172bea8ba4f655418913776e1f30e" title="向 Pixhawk 发送命令更改其参数" alt="" coords="488,107,620,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="122,117,472,117,472,123,122,123"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a162081480a066efd9dc4aa4b2fdb95d9" title="发送MAVLink设置参数请求，用于通过MAVLink协议设置无人机的参数。根据参数类型，它可以设置整型或实型参数。" alt="" coords="170,157,437,200"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="122,131,199,151,198,156,120,136"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a162081480a066efd9dc4aa4b2fdb95d9" title="设置MAVLink参数" alt="" coords="198,224,408,283"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="79,132,118,170,143,191,171,210,185,217,183,222,168,214,140,196,114,174,75,136"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a0ca05ac64fe7653975f0de16cf26f349" title="通过 MAVLink 协议向 PX4 发送手动控制信号" alt="" coords="485,5,622,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,16,470,16,470,21,352,21"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af4e3011c0e9bf932f4704ccfd5504198" title="通过 MAVLink 协议向 PX4 发送遥控信号覆盖命令" alt="" coords="495,56,612,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="352,25,438,41,481,51,480,56,436,47,351,30"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="670,56,742,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="597,30,657,50,655,55,595,35"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="790,56,903,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="742,67,774,67,774,72,742,72"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="613,67,655,67,655,72,613,72"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="595,103,655,83,657,88,597,109"/>
+</map>

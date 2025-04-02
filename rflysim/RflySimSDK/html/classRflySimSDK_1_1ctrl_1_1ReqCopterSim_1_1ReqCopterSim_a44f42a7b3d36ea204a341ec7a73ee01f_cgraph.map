@@ -1,0 +1,7 @@
+<map id="updateSimMsg" name="updateSimMsg">
+<area shape="rect" id="Node000001" title="更新模拟消息。" alt="" coords="5,39,114,65"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="228,5,301,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,41,212,24,213,30,114,46"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="162,56,367,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,58,147,63,146,69,114,63"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="sendTerrIn15d" name="sendTerrIn15d">
+<area shape="rect" id="Node000001" title="向CopterSim DLL模型的TerrainIn15d接口发送15维地形数据。" alt="" coords="5,131,109,157"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="226,5,281,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,128,102,85,127,62,155,42,182,30,209,22,211,27,184,35,158,46,130,66,106,89,70,132"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="162,56,344,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,128,173,102,175,107,100,133"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="157,123,350,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,141,141,141,141,147,109,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="158,189,349,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="100,155,175,181,173,186,98,160"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="158,256,349,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="71,156,107,198,131,221,158,242,166,246,163,251,155,246,128,226,103,202,67,160"/>
+</map>

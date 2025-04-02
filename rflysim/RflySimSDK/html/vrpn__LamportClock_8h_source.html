@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_LamportClock.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_LamportClock.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VRPN_LAMPORT_CLOCK_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VRPN_LAMPORT_CLOCK_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_API</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include "vrpn_Types.h"</span> <span class="comment">// for vrpn_uint32, vrpn_bool</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00016">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classvrpn__LamportTimestamp.html">   16</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> (<span class="keywordtype">int</span> vectorLength, vrpn_uint32 * vector);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> (<span class="keyword">const</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp;);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">~vrpn_LamportTimestamp</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp; operator = (<span class="keyword">const</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp;);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="comment">// ACCESSORS</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classvrpn__LamportTimestamp.html#aa870517e86919f26e4baf5bf63721eb8">   30</a></span>    vrpn_bool operator &lt; (<span class="keyword">const</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp; r) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> <span class="comment">// Utility functions.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classvrpn__LamportTimestamp.html#a76d53392377d6307bd878f5dd16554b9">   38</a></span>    vrpn_uint32 operator [] (<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classvrpn__LamportTimestamp.html#ae82eeca1d38c3edb70aa000cfa4edc56">   41</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__LamportTimestamp.html#ae82eeca1d38c3edb70aa000cfa4edc56">size</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> <span class="keywordtype">void</span> copy (<span class="keyword">const</span> vrpn_uint32 *);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> <span class="keywordtype">int</span> d_timestampSize;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    vrpn_uint32 * d_timestamp;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00060">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classvrpn__LamportClock.html">   60</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__LamportClock.html">vrpn_LamportClock</a> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> <a class="code hl_class" href="classvrpn__LamportClock.html">vrpn_LamportClock</a> (<span class="keywordtype">int</span> numHosts, <span class="keywordtype">int</span> ourIndex);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> <a class="code hl_class" href="classvrpn__LamportClock.html">~vrpn_LamportClock</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> <span class="comment">// MANIPULATORS</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classvrpn__LamportClock.html#a9326c93c966db75686752020d50da80e">   71</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__LamportClock.html#a9326c93c966db75686752020d50da80e">receive</a> (<span class="keyword">const</span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp;);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classvrpn__LamportClock.html#afc9c1e4b1eac112be6d31bf16d80838a">   75</a></span> <a class="code hl_class" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> * <a class="code hl_function" href="classvrpn__LamportClock.html#afc9c1e4b1eac112be6d31bf16d80838a">getTimestampAndAdvance</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> <span class="keywordtype">int</span> d_numHosts;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> <span class="keywordtype">int</span> d_ourIndex;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    vrpn_uint32 * d_currentTimestamp;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif  </span><span class="comment">// VRPN_LAMPORT_CLOCK_H</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="aclassvrpn__LamportClock_html"><div class="ttname"><a href="classvrpn__LamportClock.html">vrpn_LamportClock</a></div><div class="ttdef"><b>定义</b> vrpn_LamportClock.h:60</div></div>
+<div class="ttc" id="aclassvrpn__LamportClock_html_a9326c93c966db75686752020d50da80e"><div class="ttname"><a href="classvrpn__LamportClock.html#a9326c93c966db75686752020d50da80e">vrpn_LamportClock::receive</a></div><div class="ttdeci">void receive(const vrpn_LamportTimestamp &amp;)</div></div>
+<div class="ttc" id="aclassvrpn__LamportClock_html_afc9c1e4b1eac112be6d31bf16d80838a"><div class="ttname"><a href="classvrpn__LamportClock.html#afc9c1e4b1eac112be6d31bf16d80838a">vrpn_LamportClock::getTimestampAndAdvance</a></div><div class="ttdeci">vrpn_LamportTimestamp * getTimestampAndAdvance(void)</div><div class="ttdoc">Increments the current timestamp and returns it.</div></div>
+<div class="ttc" id="aclassvrpn__LamportTimestamp_html"><div class="ttname"><a href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a></div><div class="ttdef"><b>定义</b> vrpn_LamportClock.h:16</div></div>
+<div class="ttc" id="aclassvrpn__LamportTimestamp_html_ae82eeca1d38c3edb70aa000cfa4edc56"><div class="ttname"><a href="classvrpn__LamportTimestamp.html#ae82eeca1d38c3edb70aa000cfa4edc56">vrpn_LamportTimestamp::size</a></div><div class="ttdeci">int size(void) const</div><div class="ttdoc">Returns the number of hosts participating in the timestamp.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

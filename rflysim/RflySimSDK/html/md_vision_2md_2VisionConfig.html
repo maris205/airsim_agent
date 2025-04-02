@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: 1.支持的外部传感器类型</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">1.支持的外部传感器类型</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md539"></a> 这里的外部传感器是指独立于飞控之外的传感器模块，这些传感器中大部分是基于视觉的，按输出格式分为点云类和图像类，另外还配置了对于声音传感器的模拟，在RflySim工具链中对于这些传感器的模拟是基于RflySim3D（UE）实现的，具体地，外部传感器分为如下几类</p>
+<h2><a class="anchor" id="autotoc_md540"></a>
+1.1.图像类传感器</h2>
+<ul>
+<li>#### <a href="md_vision_2md_2sensors_2RGB.html">RGB图像</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Depth.html">深度图像</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Grayscale.html">灰度图像</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Split.html">分割图像</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Ranging_01.html">测距</a>(直线距离)</li>
+<li>#### <a href="md_vision_2md_2sensors_2FishEye.html">鱼眼相机</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2PodCamera.html">吊舱相机</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Opticalflow.html">光流传感器</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2SimpleSensorBaseOnYolo.html">简易视觉传感器</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Infrared.html">红外灰度图像</a>（仅限完整版）</li>
+<li>#### <a href="md_vision_2md_2sensors_2Thermal.html">热力彩色图像</a>（仅限完整版）</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md541"></a>
+1.2.点云类传感器</h2>
+<ul>
+<li>#### <a href="md_vision_2md_2sensors_2Deeptrans.html">深度转点云</a></li>
+<li>#### <a href="md_vision_2md_2sensors_2Lidar.html">激光雷达系列传感器</a>(主要模拟了LIVOX系列<a href="https://www.livoxtech.com/cn">览沃激光雷达 - Livox 览沃科技</a>)</li>
+<li>#### <a href="md_vision_2md_2sensors_2Simplelidar.html">简易激光雷达传感器</a>（开发中）</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md542"></a>
+1.3.声音类传感器</h2>
+<ul>
+<li>#### <a href="md_vision_2md_2sensors_2Voice.html">测试版声音传感器</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md543"></a>
+2.Config.json传感器配置协议</h1>
+<p>通过Config.json文件配置外部传感器（包括数量、种类、在飞机上的装配方式等），同一个传感器中各参数无先后顺序区分</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数名称和取值   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SeqID</b> </td><td class="markdownTableBodyNone">每个传感器在 RflySim3D 内的唯一编号。若设为0，将自动确认序号并递增排序    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_vision_2md_2TypeID.html"><b>TypeID</b></a> </td><td class="markdownTableBodyNone">**传感器类型**，具体数值代表不同类型的传感器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2RGB.html">RGB图像</a>（图像类）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Depth.html">深度图像</a>（图像类）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Grayscale.html">灰度图像</a>（图像类）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Split.html">分割图像</a>（图像类）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Ranging_01.html">测距</a>(直线距离)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Voice.html">声音传感器</a> </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Deeptrans.html">深度转点云</a>（点云类）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2FishEye.html">鱼眼相机</a>（图像类）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2PodCamera.html">吊舱相机</a>（图像类）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Opticalflow.html">光流传感器</a>（图像类）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">20~23   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Lidar.html">激光雷达</a>（点云类）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">30   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2SimpleSensorBaseOnYolo.html">简易视觉传感器</a>（图像类）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">31   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Simplelidar.html">简易激光雷达传感器</a>（点云类，开发中）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">40   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Infrared.html">红外灰度图像</a>（图像类，仅限完整版）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">41   </td><td class="markdownTableBodyNone"><a href="md_vision_2md_2sensors_2Thermal.html">热力彩色图像</a>（图像类，仅限完整版）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TargetMountType</b> </td><td class="markdownTableBodyNone">选择传感器的固定方式    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">固定载具上（相对几何中心）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">固定载具上 （相对底部中心）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">固定地面上（监控）也可变    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">相对地面坐标系的吊舱相机，固定飞机上，但相机姿态不随飞机变化（地面坐标系）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">将传感器附加到另外一个传感器上    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TargetCopter</b> </td><td class="markdownTableBodyNone">由**TargetMountType**确定传感器的固定方式后，选择传感器目标对象 ID。传感器固定在载具或地面上时，该值对应目标载具或其它实体对象的CopterID；传感器固定在其它传感器上时，该值对应目标传感器**SeqID**。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataHeight</b> </td><td class="markdownTableBodyNone">根据传感器类型设置数据高度，如图像的高，激光雷达的垂直激光线束数量等。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>DataWidth</b> </td><td class="markdownTableBodyNone">根据传感器类型设置数据宽度，如图像的宽，激光雷达的水平激光点数等。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataCheckFreq</b> </td><td class="markdownTableBodyNone">传感器数据的检测频率，，应保证RflySim3D刷新频率大于或等于所有配置传感器的最大数据频率。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="md_vision_2md_2SendProtocol.html"><b>SendProtocol</b></a> </td><td class="markdownTableBodyNone">**传输协议配置列表**，共7维    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SendProtocol[0]</b> </td><td class="markdownTableBodyNone">传输协议标志位    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">共享内存（仅限Windows下获取数据），RflySim3D    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">UDP网络传输模式（图片使用jpeg压缩，点云直传）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">UDP直传图片不压缩（仅限图像类数据）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">UDP直传图片png压缩（仅限图像类数据）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SendProtocol[1-4]</b> </td><td class="markdownTableBodyNone">IP地址位，表示请求返回的IP地址。默认都填0（或127.0.0.1），会自动请求UE返回图像到本电脑    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SendProtocol[5]</b> </td><td class="markdownTableBodyNone">端口位，指定传感器图像回传端口，需要为每个传感器设置不同端口。默认填0，会自动使用9999+SeqID的递增端口号    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SendProtocol[6-7]</b> </td><td class="markdownTableBodyNone">预留位    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>CameraFOV</b> </td><td class="markdownTableBodyNone">视场角，图像数据表示相机的视场角，激光雷达表示水平角范围。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SensorPosXYZ</b> </td><td class="markdownTableBodyNone">传感器位置（单位米），相对于载体中心的 FRD 坐标系。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>EulerOrQuat</b> </td><td class="markdownTableBodyNone">安装角度表示方式    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">表示欧拉角（SensorAngEular）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">表示四元数（SensorAngQuat）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SensorAngEular</b> </td><td class="markdownTableBodyNone">视觉传感器的安装姿态(单位弧度)，用欧拉角方式表示【roll, pitch, yaw】 ，相对于载体前右下坐标系。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SensorAngQuat</b> </td><td class="markdownTableBodyNone">视觉传感器的安装姿态，用四元数方式表示【q0,q1,q2,q3】    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>otherParams</b> </td><td class="markdownTableBodyNone">预留位，具体参数根据具体的传感器决定，默认为[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md544"></a>
+示例</h2>
+<p>具体示例见<a href="../../8.RflySimVision/0.ApiExps/1-UsageAPI/0.ConfigJsonAPI/Config.json">../../8.RflySimVision/0.ApiExps/1-UsageAPI/0.ConfigJsonAPI/Config.json</a></p>
+<h2><a class="anchor" id="autotoc_md545"></a>
+说明</h2>
+<ul>
+<li>**SeqID 自动排序**：当多个传感器的 SeqID 设置为 0 时，系统会自动递增排序。</li>
+<li>**SendProtocol 扩展传输模式**：针对不同传感器，扩展传输模式（2 到 5）有不同的传输方式，例如 UDP 网络传输下，JPEG 有损压缩（模式 1）、不压缩直传（模式 2）、PNG 无损压缩（模式 3）等。</li>
+<li>**TargetMountType 特殊情况**：当 TargetMountType 为 4 时（固定在某个传感器上），必须先定义目标传感器。</li>
+<li>**DataCheckFreq 实际的传感器数据刷新频率**：实际传感器数据的有效刷新频率，由 RflySim3D 刷新频率和DataCheckFreq配置的传感器数据检测频率共同决定，只有 RflySim3D 刷新频率足够高，才能有效降低延迟</li>
+<li>**CameraFOV**：视觉传感器的FOV视场角和焦距呈现一定数值关系，能间接修改焦距。</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md546"></a>
+3.其余外部传感器接口（不经过配置文件）</h1>
+<ol type="1">
+<li>基于Python的红外灰度图/热力分割图接口：<a href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#SetUE4RadianceValue">SetUE4RadianceValue</a> </li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Log类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__Log-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Log类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p><code>#include &lt;<a class="el" href="vrpn__Log_8h_source.html">vrpn_Log.h</a>&gt;</code></p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> vrpn_Log 的协作图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="331" scrolling="no" src="classvrpn__Log__coll__graph.svg" width="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aea9e2ea15f52ff54897b5bd22a374ddd" id="r_aea9e2ea15f52ff54897b5bd22a374ddd"><td align="right" class="memItemLeft" valign="top"><a id="aea9e2ea15f52ff54897b5bd22a374ddd" name="aea9e2ea15f52ff54897b5bd22a374ddd"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Log</b> (vrpn_TranslationTable *senders, vrpn_TranslationTable *types)</td></tr>
+<tr class="separator:aea9e2ea15f52ff54897b5bd22a374ddd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9eadefb2ec546e997646f385f2af2ff" id="r_aa9eadefb2ec546e997646f385f2af2ff"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9eadefb2ec546e997646f385f2af2ff">getName</a> ()</td></tr>
+<tr class="separator:aa9eadefb2ec546e997646f385f2af2ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac6d01a7a7107546c3a53d3a2e3a09ac" id="r_aac6d01a7a7107546c3a53d3a2e3a09ac"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#aac6d01a7a7107546c3a53d3a2e3a09ac">open</a> (void)</td></tr>
+<tr class="memdesc:aac6d01a7a7107546c3a53d3a2e3a09ac"><td class="mdescLeft"> </td><td class="mdescRight">Opens the log file.  <br/></td></tr>
+<tr class="separator:aac6d01a7a7107546c3a53d3a2e3a09ac"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac75a3edd7d38d2ff772c9285b5daf721" id="r_ac75a3edd7d38d2ff772c9285b5daf721"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac75a3edd7d38d2ff772c9285b5daf721">close</a> (void)</td></tr>
+<tr class="memdesc:ac75a3edd7d38d2ff772c9285b5daf721"><td class="mdescLeft"> </td><td class="mdescRight">Closes and saves the log file.  <br/></td></tr>
+<tr class="separator:ac75a3edd7d38d2ff772c9285b5daf721"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4edb5a61f00f2ff1d3a74557820087a9" id="r_a4edb5a61f00f2ff1d3a74557820087a9"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4edb5a61f00f2ff1d3a74557820087a9">saveLogSoFar</a> (void)</td></tr>
+<tr class="memdesc:a4edb5a61f00f2ff1d3a74557820087a9"><td class="mdescLeft"> </td><td class="mdescRight">Saves any messages logged so far.  <br/></td></tr>
+<tr class="separator:a4edb5a61f00f2ff1d3a74557820087a9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a35fa0dad30316650ca5a03ef3112f9ae" id="r_a35fa0dad30316650ca5a03ef3112f9ae"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a35fa0dad30316650ca5a03ef3112f9ae">logIncomingMessage</a> (size_t payloadLen, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer)</td></tr>
+<tr class="separator:a35fa0dad30316650ca5a03ef3112f9ae"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1efbe474e2fce4c8229f01f2ca860ad4" id="r_a1efbe474e2fce4c8229f01f2ca860ad4"><td align="right" class="memItemLeft" valign="top"><a id="a1efbe474e2fce4c8229f01f2ca860ad4" name="a1efbe474e2fce4c8229f01f2ca860ad4"></a>
+int </td><td class="memItemRight" valign="bottom"><b>logOutgoingMessage</b> (vrpn_int32 payloadLen, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer)</td></tr>
+<tr class="separator:a1efbe474e2fce4c8229f01f2ca860ad4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af2de6301b4407310b963b8fcc9d51471" id="r_af2de6301b4407310b963b8fcc9d51471"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#af2de6301b4407310b963b8fcc9d51471">logMessage</a> (vrpn_int32 payloadLen, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer, vrpn_bool isRemote=VRPN_FALSE)</td></tr>
+<tr class="separator:af2de6301b4407310b963b8fcc9d51471"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6fc5fcbf00e5ab8bf8bee3688163f230" id="r_a6fc5fcbf00e5ab8bf8bee3688163f230"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc5fcbf00e5ab8bf8bee3688163f230">setCookie</a> (const char *cookieBuffer)</td></tr>
+<tr class="separator:a6fc5fcbf00e5ab8bf8bee3688163f230"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae97010559eddf604f18c255d6de97d60" id="r_ae97010559eddf604f18c255d6de97d60"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae97010559eddf604f18c255d6de97d60">setCompoundName</a> (const char *name, int index)</td></tr>
+<tr class="separator:ae97010559eddf604f18c255d6de97d60"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4b466e28876b00fcd60e3f48772a2a67" id="r_a4b466e28876b00fcd60e3f48772a2a67"><td align="right" class="memItemLeft" valign="top"><a id="a4b466e28876b00fcd60e3f48772a2a67" name="a4b466e28876b00fcd60e3f48772a2a67"></a>
+int </td><td class="memItemRight" valign="bottom"><b>setName</b> (const char *name)</td></tr>
+<tr class="separator:a4b466e28876b00fcd60e3f48772a2a67"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a256c0d19eb6f5e5e2237574904d39e1d" id="r_a256c0d19eb6f5e5e2237574904d39e1d"><td align="right" class="memItemLeft" valign="top"><a id="a256c0d19eb6f5e5e2237574904d39e1d" name="a256c0d19eb6f5e5e2237574904d39e1d"></a>
+int </td><td class="memItemRight" valign="bottom"><b>setName</b> (const char *name, size_t len)</td></tr>
+<tr class="separator:a256c0d19eb6f5e5e2237574904d39e1d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa3b44af13c2102f800b976242c4eff96" id="r_aa3b44af13c2102f800b976242c4eff96"><td align="right" class="memItemLeft" valign="top">long &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3b44af13c2102f800b976242c4eff96">logMode</a> (void)</td></tr>
+<tr class="memdesc:aa3b44af13c2102f800b976242c4eff96"><td class="mdescLeft"> </td><td class="mdescRight">Returns a reference so we can |= it.  <br/></td></tr>
+<tr class="separator:aa3b44af13c2102f800b976242c4eff96"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a63803bde2092c7f0c53643b22c03b4a4" id="r_a63803bde2092c7f0c53643b22c03b4a4"><td align="right" class="memItemLeft" valign="top"><a id="a63803bde2092c7f0c53643b22c03b4a4" name="a63803bde2092c7f0c53643b22c03b4a4"></a>
+int </td><td class="memItemRight" valign="bottom"><b>addFilter</b> (vrpn_LOGFILTER filter, void *userdata)</td></tr>
+<tr class="separator:a63803bde2092c7f0c53643b22c03b4a4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad1a2bad5cfc3bf574e31a17a25611a00" id="r_ad1a2bad5cfc3bf574e31a17a25611a00"><td align="right" class="memItemLeft" valign="top">timeval </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1a2bad5cfc3bf574e31a17a25611a00">lastLogTime</a> ()</td></tr>
+<tr class="memdesc:ad1a2bad5cfc3bf574e31a17a25611a00"><td class="mdescLeft"> </td><td class="mdescRight">Returns the time of the last message that was logged  <br/></td></tr>
+<tr class="separator:ad1a2bad5cfc3bf574e31a17a25611a00"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ab26084f27c97087da07795d5de7727fe" id="r_ab26084f27c97087da07795d5de7727fe"><td align="right" class="memItemLeft" valign="top"><a id="ab26084f27c97087da07795d5de7727fe" name="ab26084f27c97087da07795d5de7727fe"></a>
+int </td><td class="memItemRight" valign="bottom"><b>checkFilters</b> (vrpn_int32 payloadLen, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer)</td></tr>
+<tr class="separator:ab26084f27c97087da07795d5de7727fe"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a7fbe0e5d5af53e6360ea8592d6a982c0" id="r_a7fbe0e5d5af53e6360ea8592d6a982c0"><td align="right" class="memItemLeft" valign="top"><a id="a7fbe0e5d5af53e6360ea8592d6a982c0" name="a7fbe0e5d5af53e6360ea8592d6a982c0"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_logFileName</b></td></tr>
+<tr class="separator:a7fbe0e5d5af53e6360ea8592d6a982c0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a879e544c889ff88b463dc94ccd2e84d6" id="r_a879e544c889ff88b463dc94ccd2e84d6"><td align="right" class="memItemLeft" valign="top"><a id="a879e544c889ff88b463dc94ccd2e84d6" name="a879e544c889ff88b463dc94ccd2e84d6"></a>
+long </td><td class="memItemRight" valign="bottom"><b>d_logmode</b></td></tr>
+<tr class="separator:a879e544c889ff88b463dc94ccd2e84d6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64deec48b9f91259adf534264af0e6af" id="r_a64deec48b9f91259adf534264af0e6af"><td align="right" class="memItemLeft" valign="top"><a id="a64deec48b9f91259adf534264af0e6af" name="a64deec48b9f91259adf534264af0e6af"></a>
+<a class="el" href="structvrpn__LOGLIST.html">vrpn_LOGLIST</a> * </td><td class="memItemRight" valign="bottom"><b>d_logTail</b></td></tr>
+<tr class="separator:a64deec48b9f91259adf534264af0e6af"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a50a552eca1e208e636a30c969198d424" id="r_a50a552eca1e208e636a30c969198d424"><td align="right" class="memItemLeft" valign="top"><a id="a50a552eca1e208e636a30c969198d424" name="a50a552eca1e208e636a30c969198d424"></a>
+<a class="el" href="structvrpn__LOGLIST.html">vrpn_LOGLIST</a> * </td><td class="memItemRight" valign="bottom"><b>d_firstEntry</b></td></tr>
+<tr class="separator:a50a552eca1e208e636a30c969198d424"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad36935610b402182ad1e92722e564551" id="r_ad36935610b402182ad1e92722e564551"><td align="right" class="memItemLeft" valign="top"><a id="ad36935610b402182ad1e92722e564551" name="ad36935610b402182ad1e92722e564551"></a>
+FILE * </td><td class="memItemRight" valign="bottom"><b>d_file</b></td></tr>
+<tr class="separator:ad36935610b402182ad1e92722e564551"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab5d08e038dd602b97a5b724634398402" id="r_ab5d08e038dd602b97a5b724634398402"><td align="right" class="memItemLeft" valign="top"><a id="ab5d08e038dd602b97a5b724634398402" name="ab5d08e038dd602b97a5b724634398402"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_magicCookie</b></td></tr>
+<tr class="separator:ab5d08e038dd602b97a5b724634398402"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa11119be4593f242377bbebed3bb6917" id="r_aa11119be4593f242377bbebed3bb6917"><td align="right" class="memItemLeft" valign="top"><a id="aa11119be4593f242377bbebed3bb6917" name="aa11119be4593f242377bbebed3bb6917"></a>
+vrpn_bool </td><td class="memItemRight" valign="bottom"><b>d_wroteMagicCookie</b></td></tr>
+<tr class="separator:aa11119be4593f242377bbebed3bb6917"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad02247019aba4c008e36596455146d4c" id="r_ad02247019aba4c008e36596455146d4c"><td align="right" class="memItemLeft" valign="top"><a id="ad02247019aba4c008e36596455146d4c" name="ad02247019aba4c008e36596455146d4c"></a>
+<a class="el" href="structvrpnLogFilterEntry.html">vrpnLogFilterEntry</a> * </td><td class="memItemRight" valign="bottom"><b>d_filters</b></td></tr>
+<tr class="separator:ad02247019aba4c008e36596455146d4c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a387e01be9328e5df4982fff8219a5cf6" id="r_a387e01be9328e5df4982fff8219a5cf6"><td align="right" class="memItemLeft" valign="top"><a id="a387e01be9328e5df4982fff8219a5cf6" name="a387e01be9328e5df4982fff8219a5cf6"></a>
+vrpn_TranslationTable * </td><td class="memItemRight" valign="bottom"><b>d_senders</b></td></tr>
+<tr class="separator:a387e01be9328e5df4982fff8219a5cf6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a376a524f19f62aeada840f0e693c18" id="r_a7a376a524f19f62aeada840f0e693c18"><td align="right" class="memItemLeft" valign="top"><a id="a7a376a524f19f62aeada840f0e693c18" name="a7a376a524f19f62aeada840f0e693c18"></a>
+vrpn_TranslationTable * </td><td class="memItemRight" valign="bottom"><b>d_types</b></td></tr>
+<tr class="separator:a7a376a524f19f62aeada840f0e693c18"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a506a842118bc42ee9cd4218fd00a3a02" id="r_a506a842118bc42ee9cd4218fd00a3a02"><td align="right" class="memItemLeft" valign="top"><a id="a506a842118bc42ee9cd4218fd00a3a02" name="a506a842118bc42ee9cd4218fd00a3a02"></a>
+timeval </td><td class="memItemRight" valign="bottom"><b>d_lastLogTime</b></td></tr>
+<tr class="separator:a506a842118bc42ee9cd4218fd00a3a02"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Logs a VRPN stream. Used by <a class="el" href="classvrpn__Endpoint.html" title="Encapsulation of the data and methods for a single generic connection to take care of one part of man...">vrpn_Endpoint</a>. </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ac75a3edd7d38d2ff772c9285b5daf721" name="ac75a3edd7d38d2ff772c9285b5daf721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75a3edd7d38d2ff772c9285b5daf721">◆ </a></span>close()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int close </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Closes and saves the log file. </p>
+</div>
+</div>
+<a id="aa9eadefb2ec546e997646f385f2af2ff" name="aa9eadefb2ec546e997646f385f2af2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9eadefb2ec546e997646f385f2af2ff">◆ </a></span>getName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">char * getName </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Allocates a new string and copies the log file name to it. IMPORTANT: code calling this function is responsible for freeing the memory. </p>
+</div>
+</div>
+<a id="ad1a2bad5cfc3bf574e31a17a25611a00" name="ad1a2bad5cfc3bf574e31a17a25611a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a2bad5cfc3bf574e31a17a25611a00">◆ </a></span>lastLogTime()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">timeval lastLogTime </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the time of the last message that was logged </p>
+</div>
+</div>
+<a id="a35fa0dad30316650ca5a03ef3112f9ae" name="a35fa0dad30316650ca5a03ef3112f9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fa0dad30316650ca5a03ef3112f9ae">◆ </a></span>logIncomingMessage()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int logIncomingMessage </td>
+<td>(</td>
+<td class="paramtype">size_t</td> <td class="paramname"><span class="paramname"><em>payloadLen</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">struct timeval</td> <td class="paramname"><span class="paramname"><em>time</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Should be called with the timeval adjusted by the clock offset on the receiving Endpoint. </p>
+</div>
+</div>
+<a id="af2de6301b4407310b963b8fcc9d51471" name="af2de6301b4407310b963b8fcc9d51471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2de6301b4407310b963b8fcc9d51471">◆ </a></span>logMessage()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int logMessage </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>payloadLen</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">struct timeval</td> <td class="paramname"><span class="paramname"><em>time</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_bool</td> <td class="paramname"><span class="paramname"><em>isRemote</em></span><span class="paramdefsep"> = </span><span class="paramdefval">VRPN_FALSE</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>We'd like to make this protected, but there's one place it needs to be exposed, at least until we get cleverer. </p>
+</div>
+</div>
+<a id="aa3b44af13c2102f800b976242c4eff96" name="aa3b44af13c2102f800b976242c4eff96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b44af13c2102f800b976242c4eff96">◆ </a></span>logMode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">long &amp; logMode </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a reference so we can |= it. </p>
+</div>
+</div>
+<a id="aac6d01a7a7107546c3a53d3a2e3a09ac" name="aac6d01a7a7107546c3a53d3a2e3a09ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6d01a7a7107546c3a53d3a2e3a09ac">◆ </a></span>open()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int open </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Opens the log file. </p>
+</div>
+</div>
+<a id="a4edb5a61f00f2ff1d3a74557820087a9" name="a4edb5a61f00f2ff1d3a74557820087a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4edb5a61f00f2ff1d3a74557820087a9">◆ </a></span>saveLogSoFar()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int saveLogSoFar </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Saves any messages logged so far. </p>
+</div>
+</div>
+<a id="ae97010559eddf604f18c255d6de97d60" name="ae97010559eddf604f18c255d6de97d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97010559eddf604f18c255d6de97d60">◆ </a></span>setCompoundName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int setCompoundName </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>index</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Takes a name of the form foo.bar and an index &lt;n&gt; and sets the name of the log file to be foo-&lt;n&gt;.bar; if there is no period in the name, merely appends -&lt;n&gt;. </p>
+</div>
+</div>
+<a id="a6fc5fcbf00e5ab8bf8bee3688163f230" name="a6fc5fcbf00e5ab8bf8bee3688163f230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc5fcbf00e5ab8bf8bee3688163f230">◆ </a></span>setCookie()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int setCookie </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>cookieBuffer</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>The magic cookie is set to the default value of the version of VRPN compiled, but a more correct value to write in the logfile (if we're logging incoming messages) is that of the version of VRPN we're communicating with. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Log_8h_source.html">vrpn_Log.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

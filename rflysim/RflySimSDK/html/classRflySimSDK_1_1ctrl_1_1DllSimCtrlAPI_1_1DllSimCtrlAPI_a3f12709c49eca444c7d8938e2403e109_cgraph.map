@@ -1,0 +1,20 @@
+<map id="sendInCtrlExtAll" name="sendInCtrlExtAll">
+<area shape="rect" id="Node000001" title="将一个较长的浮点数向量分段并通过UDP发送到多个控制端口。" alt="" coords="5,133,122,160"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="419,5,474,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,131,116,98,141,80,169,66,231,44,295,30,403,18,404,23,296,35,232,49,171,70,144,85,119,102,80,135"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="356,56,538,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="86,130,124,110,169,93,256,78,340,72,340,78,256,83,170,99,126,115,88,135"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="350,123,543,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,144,302,144,334,144,334,149,302,149,122,150"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="351,189,542,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="123,154,336,190,335,195,122,159"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="351,256,542,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="96,158,171,189,353,249,352,254,169,195,94,163"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#ab34cbac603eee1efa316388f881539cb" title="通过UDP发送double型控制信号到指定无人机的模拟器端口。" alt="" coords="170,108,302,135"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="122,135,154,131,155,136,123,141"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="252,105,294,74,349,42,403,24,405,29,351,46,297,78,255,110"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="302,105,340,97,341,102,303,110"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="303,126,335,129,334,135,302,131"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="264,133,351,175,366,181,364,186,349,180,262,138"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="248,134,289,186,319,216,352,242,359,246,356,251,348,246,315,220,285,189,244,137"/>
+</map>

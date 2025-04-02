@@ -1,0 +1,5 @@
+<map id="sendImgUDPNew" name="sendImgUDPNew">
+<area shape="rect" id="Node000001" title="用于图像数据的UDP发送" alt="" coords="5,5,133,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a8f69aeccc41b656e9aacee0a3b3dd5fc" title="用于将图像数据分割为固定大小的数据包，并添加头部信息后发送 &#45;" alt="" coords="181,5,286,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,16,165,16,165,21,133,21"/>
+</map>

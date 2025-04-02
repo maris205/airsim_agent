@@ -1,0 +1,11 @@
+<map id="vrpn_Tracker_Crossbow" name="vrpn_Tracker_Crossbow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,304,169,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker__Serial.html" title=" " alt="" coords="18,229,156,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,272,90,304,84,304,84,272"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Tracker.html" title=" " alt="" coords="38,155,136,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,197,90,229,84,229,84,197"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="28,80,146,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,122,90,154,84,154,84,122"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="8,5,166,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="90,48,90,80,84,80,84,48"/>
+</map>

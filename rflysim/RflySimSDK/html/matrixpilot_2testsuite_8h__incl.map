@@ -1,0 +1,5 @@
+<map id="simulink/mavlink/matrixpilot/testsuite.h" name="simulink/mavlink/matrixpilot/testsuite.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol testsuite generated from matrixpilot.xml" alt="" coords="5,5,188,48"/>
+<area shape="rect" id="Node000002" href="$common_2testsuite_8h.html" title="MAVLink comm protocol testsuite generated from common.xml" alt="" coords="22,96,171,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,49,99,80,94,80,94,49"/>
+</map>

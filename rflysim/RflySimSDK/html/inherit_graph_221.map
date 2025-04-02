@@ -1,0 +1,7 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classvrpn__Forwarder__Brain.html" title=" " alt="" coords="5,31,154,57"/>
+<area shape="rect" id="Node000001" href="$classvrpn__Forwarder__Controller.html" title=" " alt="" coords="202,5,376,32"/>
+<area shape="poly" id="edge338_Node000000_Node000001" title=" " alt="" coords="169,30,201,27,202,32,170,36"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Forwarder__Server.html" title=" " alt="" coords="211,56,367,83"/>
+<area shape="poly" id="edge339_Node000000_Node000002" title=" " alt="" coords="170,52,210,57,210,62,169,58"/>
+</map>

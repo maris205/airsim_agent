@@ -1,0 +1,19 @@
+<map id="open_wifi" name="open_wifi">
+<area shape="rect" id="Node000001" title="打开wifi" alt="" coords="5,205,82,232"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1adb__communication.html#ad608b65030825d6ea9fc37aec31e5256" title="发送命令。" alt="" coords="130,5,367,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,204,55,174,71,134,95,93,128,58,133,54,136,59,131,62,100,96,76,137,60,176,51,206"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication.html#a362d3adb78ef1477ce73e2f3088b2f83" title="发送命令。" alt="" coords="140,72,356,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,203,86,172,128,140,137,135,140,140,131,145,90,176,59,207"/>
+<area shape="rect" id="Node000005" href="$classvrpn__5dt.html#a105a7c1a8f8d66c8a2348c26030bc5c0" title=" " alt="" coords="163,155,334,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="82,204,129,191,163,183,164,188,130,196,83,209"/>
+<area shape="rect" id="Node000006" href="$classvrpn__IDEA.html#a7346e92dd665acfe683f7cceda30fdb1" title="Appends carriage&#45;return and then sends the command." alt="" coords="156,205,341,232"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="82,216,140,216,140,221,82,221"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Radamec__SPI.html#a105a7c1a8f8d66c8a2348c26030bc5c0" title=" " alt="" coords="161,256,336,299"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="83,227,130,241,156,249,154,254,129,247,81,232"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Zaber.html#ada8a15f87ee4512f7f12499b585b504f" title=" " alt="" coords="155,323,342,349"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="56,231,86,270,107,291,131,308,142,314,140,319,128,313,103,295,82,274,51,234"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Zaber.html#ab01bc63fac9876ad21263d38f62086f0" title=" " alt="" coords="155,373,342,400"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="51,232,61,259,78,294,101,330,131,359,142,366,140,371,128,363,97,333,73,297,57,261,46,234"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1SerialCommunication.html#ab91c209146a37f889e06a4746fae73ce" title="读取串口数据。" alt="" coords="415,72,631,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="357,99,399,99,399,104,357,104"/>
+</map>

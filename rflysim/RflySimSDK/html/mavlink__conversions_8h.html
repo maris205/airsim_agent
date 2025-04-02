@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/mavlink/mavlink_conversions.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_ad33f1dddab9e5eaec5103fc17ef0232.html">mavlink</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#define-members">宏定义</a> |
+<a href="#func-members">函数</a> </div>
+<div class="headertitle"><div class="title">mavlink_conversions.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> mavlink_conversions.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="128" scrolling="no" src="mavlink__conversions_8h__incl.svg" width="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="mavlink__conversions_8h__dep__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="mavlink__conversions_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a958e4508ed28ee5cc04249144312c15f" id="r_a958e4508ed28ee5cc04249144312c15f"><td align="right" class="memItemLeft" valign="top"><a id="a958e4508ed28ee5cc04249144312c15f" name="a958e4508ed28ee5cc04249144312c15f"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>M_PI_2</b>   ((float)asin(1))</td></tr>
+<tr class="separator:a958e4508ed28ee5cc04249144312c15f"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1acebd1df006ab806149f3bf9cc5544e" id="r_a1acebd1df006ab806149f3bf9cc5544e"><td align="right" class="memItemLeft" valign="top">MAVLINK_HELPER void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1acebd1df006ab806149f3bf9cc5544e">mavlink_quaternion_to_dcm</a> (const float quaternion[4], float dcm[3][3])</td></tr>
+<tr class="separator:a1acebd1df006ab806149f3bf9cc5544e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a034c8265f27e81fa17cf4cf483b7ad8c" id="r_a034c8265f27e81fa17cf4cf483b7ad8c"><td align="right" class="memItemLeft" valign="top">MAVLINK_HELPER void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a034c8265f27e81fa17cf4cf483b7ad8c">mavlink_dcm_to_euler</a> (const float dcm[3][3], float *roll, float *pitch, float *yaw)</td></tr>
+<tr class="separator:a034c8265f27e81fa17cf4cf483b7ad8c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a96913fc5846ae95f89c99423e4c0e6c1" id="r_a96913fc5846ae95f89c99423e4c0e6c1"><td align="right" class="memItemLeft" valign="top">MAVLINK_HELPER void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a96913fc5846ae95f89c99423e4c0e6c1">mavlink_quaternion_to_euler</a> (const float quaternion[4], float *roll, float *pitch, float *yaw)</td></tr>
+<tr class="separator:a96913fc5846ae95f89c99423e4c0e6c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a286e44d134e0722c8fbc595f9d25d767" id="r_a286e44d134e0722c8fbc595f9d25d767"><td align="right" class="memItemLeft" valign="top">MAVLINK_HELPER void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a286e44d134e0722c8fbc595f9d25d767">mavlink_euler_to_quaternion</a> (float roll, float pitch, float yaw, float quaternion[4])</td></tr>
+<tr class="separator:a286e44d134e0722c8fbc595f9d25d767"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e183fc5dc505bee17dfac58ab18d9f9" id="r_a4e183fc5dc505bee17dfac58ab18d9f9"><td align="right" class="memItemLeft" valign="top">MAVLINK_HELPER void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e183fc5dc505bee17dfac58ab18d9f9">mavlink_dcm_to_quaternion</a> (const float dcm[3][3], float quaternion[4])</td></tr>
+<tr class="separator:a4e183fc5dc505bee17dfac58ab18d9f9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5a662d9d3db2fb392c9466dab354b287" id="r_a5a662d9d3db2fb392c9466dab354b287"><td align="right" class="memItemLeft" valign="top">MAVLINK_HELPER void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a662d9d3db2fb392c9466dab354b287">mavlink_euler_to_dcm</a> (float roll, float pitch, float yaw, float dcm[3][3])</td></tr>
+<tr class="separator:a5a662d9d3db2fb392c9466dab354b287"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>These conversion functions follow the NASA rotation standards definition file available online.</p>
+<p>Their intent is to lower the barrier for MAVLink adopters to use gimbal-lock free (both rotation matrices, sometimes called DCM, and quaternions are gimbal-lock free) rotation representations. Euler angles (roll, pitch, yaw) will be phased out of the protocol as widely as possible.</p>
+<dl class="section author"><dt>作者</dt><dd>James Goppert </dd>
+<dd>
+Thomas Gubler <a href="#" onclick="location.href='mai'+'lto:'+'tho'+'ma'+'sgu'+'bl'+'er@'+'gm'+'ail'+'.c'+'om'; return false;">thoma<span class="obfuscator">.nosp@m.</span>sgub<span class="obfuscator">.nosp@m.</span>ler@g<span class="obfuscator">.nosp@m.</span>mail<span class="obfuscator">.nosp@m.</span>.com</a> </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a034c8265f27e81fa17cf4cf483b7ad8c" name="a034c8265f27e81fa17cf4cf483b7ad8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034c8265f27e81fa17cf4cf483b7ad8c">◆ </a></span>mavlink_dcm_to_euler()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MAVLINK_HELPER void mavlink_dcm_to_euler </td>
+<td>(</td>
+<td class="paramtype">const float</td> <td class="paramname"><span class="paramname"><em>dcm</em></span>[3][3], </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float *</td> <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float *</td> <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float *</td> <td class="paramname"><span class="paramname"><em>yaw</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Converts a rotation matrix to euler angles</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">dcm</td><td>a 3x3 rotation matrix </td></tr>
+<tr><td class="paramname">roll</td><td>the roll angle in radians </td></tr>
+<tr><td class="paramname">pitch</td><td>the pitch angle in radians </td></tr>
+<tr><td class="paramname">yaw</td><td>the yaw angle in radians </td></tr>
+</table>
+</dd>
+</dl>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="mavlink__conversions_8h_a034c8265f27e81fa17cf4cf483b7ad8c_icgraph.svg" width="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a4e183fc5dc505bee17dfac58ab18d9f9" name="a4e183fc5dc505bee17dfac58ab18d9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e183fc5dc505bee17dfac58ab18d9f9">◆ </a></span>mavlink_dcm_to_quaternion()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MAVLINK_HELPER void mavlink_dcm_to_quaternion </td>
+<td>(</td>
+<td class="paramtype">const float</td> <td class="paramname"><span class="paramname"><em>dcm</em></span>[3][3], </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>quaternion</em></span>[4] )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Converts a rotation matrix to a quaternion Reference:</p><ul>
+<li>Shoemake, Quaternions, <a href="http://www.cs.ucr.edu/~vbz/resources/quatut.pdf">http://www.cs.ucr.edu/~vbz/resources/quatut.pdf</a></li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">dcm</td><td>a 3x3 rotation matrix </td></tr>
+<tr><td class="paramname">quaternion</td><td>a [w, x, y, z] ordered quaternion (null-rotation being 1 0 0 0) </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a5a662d9d3db2fb392c9466dab354b287" name="a5a662d9d3db2fb392c9466dab354b287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a662d9d3db2fb392c9466dab354b287">◆ </a></span>mavlink_euler_to_dcm()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MAVLINK_HELPER void mavlink_euler_to_dcm </td>
+<td>(</td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>dcm</em></span>[3][3] )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Converts euler angles to a rotation matrix</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">roll</td><td>the roll angle in radians </td></tr>
+<tr><td class="paramname">pitch</td><td>the pitch angle in radians </td></tr>
+<tr><td class="paramname">yaw</td><td>the yaw angle in radians </td></tr>
+<tr><td class="paramname">dcm</td><td>a 3x3 rotation matrix </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a286e44d134e0722c8fbc595f9d25d767" name="a286e44d134e0722c8fbc595f9d25d767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286e44d134e0722c8fbc595f9d25d767">◆ </a></span>mavlink_euler_to_quaternion()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MAVLINK_HELPER void mavlink_euler_to_quaternion </td>
+<td>(</td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>quaternion</em></span>[4] )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Converts euler angles to a quaternion</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">roll</td><td>the roll angle in radians </td></tr>
+<tr><td class="paramname">pitch</td><td>the pitch angle in radians </td></tr>
+<tr><td class="paramname">yaw</td><td>the yaw angle in radians </td></tr>
+<tr><td class="paramname">quaternion</td><td>a [w, x, y, z] ordered quaternion (null-rotation being 1 0 0 0) </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a1acebd1df006ab806149f3bf9cc5544e" name="a1acebd1df006ab806149f3bf9cc5544e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acebd1df006ab806149f3bf9cc5544e">◆ </a></span>mavlink_quaternion_to_dcm()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MAVLINK_HELPER void mavlink_quaternion_to_dcm </td>
+<td>(</td>
+<td class="paramtype">const float</td> <td class="paramname"><span class="paramname"><em>quaternion</em></span>[4], </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>dcm</em></span>[3][3] )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Converts a quaternion to a rotation matrix</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">quaternion</td><td>a [w, x, y, z] ordered quaternion (null-rotation being 1 0 0 0) </td></tr>
+<tr><td class="paramname">dcm</td><td>a 3x3 rotation matrix </td></tr>
+</table>
+</dd>
+</dl>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="mavlink__conversions_8h_a1acebd1df006ab806149f3bf9cc5544e_icgraph.svg" width="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a96913fc5846ae95f89c99423e4c0e6c1" name="a96913fc5846ae95f89c99423e4c0e6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96913fc5846ae95f89c99423e4c0e6c1">◆ </a></span>mavlink_quaternion_to_euler()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">MAVLINK_HELPER void mavlink_quaternion_to_euler </td>
+<td>(</td>
+<td class="paramtype">const float</td> <td class="paramname"><span class="paramname"><em>quaternion</em></span>[4], </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float *</td> <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float *</td> <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float *</td> <td class="paramname"><span class="paramname"><em>yaw</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Converts a quaternion to euler angles</p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">quaternion</td><td>a [w, x, y, z] ordered quaternion (null-rotation being 1 0 0 0) </td></tr>
+<tr><td class="paramname">roll</td><td>the roll angle in radians </td></tr>
+<tr><td class="paramname">pitch</td><td>the pitch angle in radians </td></tr>
+<tr><td class="paramname">yaw</td><td>the yaw angle in radians </td></tr>
+</table>
+</dd>
+</dl>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="mavlink__conversions_8h_a96913fc5846ae95f89c99423e4c0e6c1_cgraph.svg" width="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

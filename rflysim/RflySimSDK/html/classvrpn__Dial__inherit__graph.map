@@ -1,0 +1,57 @@
+<map id="vrpn_Dial" name="vrpn_Dial">
+<area shape="rect" id="Node000001" title=" " alt="" coords="377,569,453,596"/>
+<area shape="rect" id="Node000004" href="$classvrpn__CHProducts__Fighterstick__USB.html" title=" " alt="" coords="501,5,737,32"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="414,554,418,442,431,289,442,211,456,140,475,82,487,60,499,42,514,30,517,35,503,46,491,62,480,84,461,142,447,212,436,290,424,443,420,554"/>
+<area shape="rect" id="Node000005" href="$classvrpn__CerealBox.html" title=" " alt="" coords="562,56,676,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="415,554,420,451,434,313,445,244,459,180,477,128,499,93,528,74,561,66,562,71,530,79,503,97,482,131,464,182,450,245,439,314,426,452,420,554"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Contour__ShuttlePROv2.html" title=" " alt="" coords="524,107,714,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="415,554,423,461,438,338,449,277,462,221,479,175,499,143,522,128,525,132,503,147,484,177,467,222,454,278,443,339,428,462,421,554"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Contour__ShuttleXpress.html" title=" " alt="" coords="525,157,713,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="416,554,425,471,441,363,465,261,481,221,499,194,523,178,526,183,503,198,486,224,470,263,446,364,430,472,421,554"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Dial__Example__Server.html" title=" " alt="" coords="529,208,709,235"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="417,554,428,481,445,389,469,302,483,268,500,245,528,227,530,232,503,249,488,271,474,303,450,390,433,482,422,554"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Dial__Remote.html" title=" " alt="" coords="554,259,684,285"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="413,554,417,499,429,429,440,392,455,357,474,324,500,295,525,279,553,271,555,276,527,284,503,299,479,327,459,359,445,394,434,430,422,499,419,554"/>
+<area shape="rect" id="Node000010" href="$classvrpn__Futaba__InterLink__Elite.html" title=" " alt="" coords="544,309,694,352"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="417,554,425,511,439,460,464,407,480,383,500,362,520,348,542,339,545,343,522,353,503,366,484,387,468,410,444,462,430,513,422,555"/>
+<area shape="rect" id="Node000011" href="$classvrpn__GlobalHapticsOrb.html" title=" " alt="" coords="541,376,697,403"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="420,553,430,520,446,482,469,444,500,413,519,401,539,394,541,399,521,406,503,417,473,448,451,485,435,522,425,555"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Griffin__PowerMate.html" title=" " alt="" coords="539,427,699,453"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="427,554,455,507,476,483,500,463,537,447,539,452,503,468,480,487,460,510,431,557"/>
+<area shape="rect" id="Node000013" href="$classvrpn__ImmersionBox.html" title=" " alt="" coords="550,477,688,504"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="439,557,467,534,500,514,549,497,551,503,502,518,470,538,442,561"/>
+<area shape="rect" id="Node000014" href="$classvrpn__Logitech__Extreme__3D__Pro.html" title=" " alt="" coords="540,528,698,571"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="468,571,539,560,540,565,469,577"/>
+<area shape="rect" id="Node000015" href="$classvrpn__Microsoft__Controller__Raw__Xbox__360__base.html" title=" " alt="" coords="534,595,704,637"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="469,589,534,599,533,605,468,594"/>
+<area shape="rect" id="Node000019" href="$classvrpn__Microsoft__Controller__Raw__Xbox__S.html" title=" " alt="" coords="534,661,704,704"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="443,604,471,627,503,647,535,660,533,665,500,652,468,631,440,608"/>
+<area shape="rect" id="Node000020" href="$classvrpn__Microsoft__SideWinder.html" title=" " alt="" coords="528,728,710,755"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="429,610,457,664,478,691,503,714,529,727,527,732,500,718,474,695,453,667,424,612"/>
+<area shape="rect" id="Node000021" href="$classvrpn__Microsoft__SideWinder__Precision__2.html" title=" " alt="" coords="528,779,710,821"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="424,611,434,646,450,688,472,729,503,765,529,781,526,785,500,769,468,732,445,690,429,648,419,612"/>
+<area shape="rect" id="Node000022" href="$classvrpn__Saitek__ST290__Pro.html" title=" " alt="" coords="538,845,700,872"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="420,611,425,660,439,720,463,780,481,808,503,831,519,842,538,850,536,855,517,847,500,835,477,811,459,783,434,721,420,661,415,612"/>
+<area shape="rect" id="Node000023" href="$classvrpn__Xkeys__Jog__And__Shuttle.html" title=" " alt="" coords="545,896,693,939"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="419,611,421,668,433,741,444,779,459,817,478,851,503,882,523,896,546,906,543,911,520,901,499,886,474,854,454,819,439,781,428,742,416,669,413,612"/>
+<area shape="rect" id="Node000024" href="$classvrpn__Xkeys__Jog__And__Shuttle12.html" title=" " alt="" coords="545,963,693,1005"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="422,611,432,690,449,791,472,887,487,924,503,949,523,964,546,973,544,978,520,968,499,952,482,926,467,889,443,792,427,691,417,612"/>
+<area shape="rect" id="Node000025" href="$classvrpn__Xkeys__Jog__And__Shuttle68.html" title=" " alt="" coords="545,1029,693,1072"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="421,611,429,703,444,824,469,940,485,985,503,1016,522,1030,545,1040,543,1045,520,1035,499,1019,480,987,463,942,439,825,423,704,416,612"/>
+<area shape="rect" id="Node000026" href="$classvrpn__Xkeys__Joystick.html" title=" " alt="" coords="546,1096,692,1123"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="420,611,425,715,439,857,449,929,464,994,481,1047,503,1082,523,1096,547,1105,545,1110,520,1101,499,1086,477,1049,458,995,444,930,433,858,420,716,415,611"/>
+<area shape="rect" id="Node000027" href="$classvrpn__Xkeys__Joystick12.html" title=" " alt="" coords="539,1147,699,1173"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="419,611,423,725,435,882,446,962,460,1034,480,1093,491,1116,503,1133,520,1145,539,1154,537,1158,517,1150,499,1137,486,1119,475,1095,455,1036,441,963,430,883,418,726,414,611"/>
+<area shape="rect" id="Node000028" href="$classvrpn__raw__SGIBox.html" title=" " alt="" coords="555,1197,683,1224"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="419,611,421,735,432,907,443,995,457,1074,478,1140,490,1165,503,1183,527,1200,556,1208,554,1213,525,1205,499,1187,485,1167,473,1142,452,1076,437,995,427,907,416,735,414,611"/>
+<area shape="rect" id="Node000002" href="$classvrpn__BaseClass.html" title=" " alt="" coords="212,569,329,596"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,580,376,580,376,585,345,585"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,569,164,596"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,580,212,580,212,585,179,585"/>
+<area shape="rect" id="Node000016" href="$classvrpn__Afterglow__Ax1__For__Xbox__360.html" title=" " alt="" coords="805,528,943,571"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="717,588,804,565,805,570,719,593"/>
+<area shape="rect" id="Node000017" href="$classvrpn__Microsoft__Controller__Raw__Xbox__360.html" title=" " alt="" coords="789,595,959,637"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="719,613,788,613,788,619,719,619"/>
+<area shape="rect" id="Node000018" href="$classvrpn__Microsoft__Controller__Raw__Xbox__360__Wireless.html" title=" " alt="" coords="785,661,963,704"/>
+<area shape="poly" id="edge17_Node000015_Node000018" title=" " alt="" coords="718,639,790,658,789,663,717,644"/>
+</map>

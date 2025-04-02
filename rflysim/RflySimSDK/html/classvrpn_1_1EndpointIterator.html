@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: EndpointIterator类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>vrpn</b></li><li class="navelem"><a class="el" href="classvrpn_1_1EndpointIterator.html">EndpointIterator</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn_1_1EndpointIterator-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">EndpointIterator类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>An iterator that goes forward in an <a class="el" href="classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer.">EndpointContainer</a> skipping the NULLs, that also acts a bit like a pointer/smart pointer (can treat it as a <a class="el" href="classvrpn__Endpoint.html" title="Encapsulation of the data and methods for a single generic connection to take care of one part of man...">vrpn_Endpoint</a> *)  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__EndpointContainer_8h_source.html">vrpn_EndpointContainer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a0454bb37fb9d5469585b6478c5c89626" id="r_a0454bb37fb9d5469585b6478c5c89626"><td align="right" class="memItemLeft" valign="top"><a id="a0454bb37fb9d5469585b6478c5c89626" name="a0454bb37fb9d5469585b6478c5c89626"></a>
+typedef <a class="el" href="classvrpn_1_1EndpointIterator.html">EndpointIterator</a> </td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a0454bb37fb9d5469585b6478c5c89626"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a313b1ef15afa2b5d5bc50b7446bae223" id="r_a313b1ef15afa2b5d5bc50b7446bae223"><td align="right" class="memItemLeft" valign="top"><a id="a313b1ef15afa2b5d5bc50b7446bae223" name="a313b1ef15afa2b5d5bc50b7446bae223"></a>
+typedef <a class="el" href="classvrpn_1_1EndpointContainer.html">EndpointContainer</a> const </td><td class="memItemRight" valign="bottom"><b>container_type</b></td></tr>
+<tr class="separator:a313b1ef15afa2b5d5bc50b7446bae223"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae128820ab68116c0e538535af9bec2aa" id="r_ae128820ab68116c0e538535af9bec2aa"><td align="right" class="memItemLeft" valign="top"><a id="ae128820ab68116c0e538535af9bec2aa" name="ae128820ab68116c0e538535af9bec2aa"></a>
+typedef container_type::pointer </td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
+<tr class="separator:ae128820ab68116c0e538535af9bec2aa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a20737f965208fb4ccc95e33f56874c19" id="r_a20737f965208fb4ccc95e33f56874c19"><td align="right" class="memItemLeft" valign="top"><a id="a20737f965208fb4ccc95e33f56874c19" name="a20737f965208fb4ccc95e33f56874c19"></a>
+typedef container_type::reference </td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+<tr class="separator:a20737f965208fb4ccc95e33f56874c19"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a11aca4f44fbd260a2d5307af7e951338" id="r_a11aca4f44fbd260a2d5307af7e951338"><td align="right" class="memItemLeft" valign="top"><a id="a11aca4f44fbd260a2d5307af7e951338" name="a11aca4f44fbd260a2d5307af7e951338"></a>
+typedef container_type::size_type </td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
+<tr class="separator:a11aca4f44fbd260a2d5307af7e951338"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abb7b3daeed108a39a7eff5c68a0c8001" id="r_abb7b3daeed108a39a7eff5c68a0c8001"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abb7b3daeed108a39a7eff5c68a0c8001">EndpointIterator</a> ()</td></tr>
+<tr class="memdesc:abb7b3daeed108a39a7eff5c68a0c8001"><td class="mdescLeft"> </td><td class="mdescRight">Default constructor, equal to all other default-constructed instances and all end()  <br/></td></tr>
+<tr class="separator:abb7b3daeed108a39a7eff5c68a0c8001"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a786d41c3cec7dec511dc628d256de67c" id="r_a786d41c3cec7dec511dc628d256de67c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a786d41c3cec7dec511dc628d256de67c">EndpointIterator</a> (container_type &amp;container)</td></tr>
+<tr class="memdesc:a786d41c3cec7dec511dc628d256de67c"><td class="mdescLeft"> </td><td class="mdescRight">Constructor with container, points to beginning of container.  <br/></td></tr>
+<tr class="separator:a786d41c3cec7dec511dc628d256de67c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab298da4f242884926f1899ada7d154ec" id="r_ab298da4f242884926f1899ada7d154ec"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab298da4f242884926f1899ada7d154ec">EndpointIterator</a> (container_type &amp;container, size_type index)</td></tr>
+<tr class="memdesc:ab298da4f242884926f1899ada7d154ec"><td class="mdescLeft"> </td><td class="mdescRight">Constructor with container and raw index into container.  <br/></td></tr>
+<tr class="separator:ab298da4f242884926f1899ada7d154ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a315419f26d3c59fa143b49b90a019049" id="r_a315419f26d3c59fa143b49b90a019049"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a315419f26d3c59fa143b49b90a019049">valid</a> () const</td></tr>
+<tr class="memdesc:a315419f26d3c59fa143b49b90a019049"><td class="mdescLeft"> </td><td class="mdescRight">Does this iterator refer to a valid element?  <br/></td></tr>
+<tr class="separator:a315419f26d3c59fa143b49b90a019049"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2bafd5e3a8e3815a30c5c54e6f9bbd4" id="r_ad2bafd5e3a8e3815a30c5c54e6f9bbd4"><td align="right" class="memItemLeft" valign="top">pointer </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2bafd5e3a8e3815a30c5c54e6f9bbd4">get_pointer</a> () const</td></tr>
+<tr class="memdesc:ad2bafd5e3a8e3815a30c5c54e6f9bbd4"><td class="mdescLeft"> </td><td class="mdescRight">Extract the pointer (NULL if iterator is invalid)  <br/></td></tr>
+<tr class="separator:ad2bafd5e3a8e3815a30c5c54e6f9bbd4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1fd087cd6febe2b305542fa57075ac35" id="r_a1fd087cd6febe2b305542fa57075ac35"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fd087cd6febe2b305542fa57075ac35">operator pointer</a> () const</td></tr>
+<tr class="memdesc:a1fd087cd6febe2b305542fa57075ac35"><td class="mdescLeft"> </td><td class="mdescRight">Implicit conversion operator to pointer.  <br/></td></tr>
+<tr class="separator:a1fd087cd6febe2b305542fa57075ac35"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afa41a0d9d910c3bcb8bd98d8bcc01023" id="r_afa41a0d9d910c3bcb8bd98d8bcc01023"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn_1_1EndpointIterator.html">type</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="#afa41a0d9d910c3bcb8bd98d8bcc01023">operator++</a> ()</td></tr>
+<tr class="memdesc:afa41a0d9d910c3bcb8bd98d8bcc01023"><td class="mdescLeft"> </td><td class="mdescRight">prefix ++ operator, increments (and skips any nulls)  <br/></td></tr>
+<tr class="separator:afa41a0d9d910c3bcb8bd98d8bcc01023"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Smart pointer idiom operators</div></td></tr>
+<tr class="memitem:aef4e7d4e0fa56e9f7509c555f73d24d2" id="r_aef4e7d4e0fa56e9f7509c555f73d24d2"><td align="right" class="memItemLeft" valign="top"><a id="aef4e7d4e0fa56e9f7509c555f73d24d2" name="aef4e7d4e0fa56e9f7509c555f73d24d2"></a>
+pointer </td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="separator:aef4e7d4e0fa56e9f7509c555f73d24d2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab086ec1916db61d1ab56a801abca8d91" id="r_ab086ec1916db61d1ab56a801abca8d91"><td align="right" class="memItemLeft" valign="top"><a id="ab086ec1916db61d1ab56a801abca8d91" name="ab086ec1916db61d1ab56a801abca8d91"></a>
+reference </td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:ab086ec1916db61d1ab56a801abca8d91"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Comparison operators, primarily for loop use</div></td></tr>
+<tr class="memitem:a245401db422dd80929963e9b5e37a7ea" id="r_a245401db422dd80929963e9b5e37a7ea"><td align="right" class="memItemLeft" valign="top"><a id="a245401db422dd80929963e9b5e37a7ea" name="a245401db422dd80929963e9b5e37a7ea"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classvrpn_1_1EndpointIterator.html">type</a> const &amp;other) const</td></tr>
+<tr class="separator:a245401db422dd80929963e9b5e37a7ea"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5baaef02f8fa1cff91f8be3771969c8c" id="r_a5baaef02f8fa1cff91f8be3771969c8c"><td align="right" class="memItemLeft" valign="top"><a id="a5baaef02f8fa1cff91f8be3771969c8c" name="a5baaef02f8fa1cff91f8be3771969c8c"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="classvrpn_1_1EndpointIterator.html">type</a> const &amp;other) const</td></tr>
+<tr class="separator:a5baaef02f8fa1cff91f8be3771969c8c"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>An iterator that goes forward in an <a class="el" href="classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer.">EndpointContainer</a> skipping the NULLs, that also acts a bit like a pointer/smart pointer (can treat it as a <a class="el" href="classvrpn__Endpoint.html" title="Encapsulation of the data and methods for a single generic connection to take care of one part of man...">vrpn_Endpoint</a> *) </p>
+<p>Because we know at design time that it iterates through pointers, we have pointer-related operator overloads that mean there's no need to double-dereference.</p>
+<p>Fulfills the InputIterator concept: <a href="http://en.cppreference.com/w/cpp/concept/InputIterator">http://en.cppreference.com/w/cpp/concept/InputIterator</a></p>
+<p>All end() iterators compare equal to each other and to the default-constructed iterator. They are the only invalid iterators: incrementing an iterator past the end makes it the same as the default-constructed iterator.</p>
+<p>That is, for all EndpointIterators it, we enforce the class invariant <code>it.valid() || (it == <a class="el" href="#abb7b3daeed108a39a7eff5c68a0c8001" title="Default constructor, equal to all other default-constructed instances and all end()">EndpointIterator()</a>)</code> (and that's actually an XOR) </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abb7b3daeed108a39a7eff5c68a0c8001" name="abb7b3daeed108a39a7eff5c68a0c8001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7b3daeed108a39a7eff5c68a0c8001">◆ </a></span>EndpointIterator() <span class="overload">[1/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1EndpointIterator.html">EndpointIterator</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Default constructor, equal to all other default-constructed instances and all end() </p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1EndpointIterator_abb7b3daeed108a39a7eff5c68a0c8001_cgraph.svg" width="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a786d41c3cec7dec511dc628d256de67c" name="a786d41c3cec7dec511dc628d256de67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786d41c3cec7dec511dc628d256de67c">◆ </a></span>EndpointIterator() <span class="overload">[2/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1EndpointIterator.html">EndpointIterator</a> </td>
+<td>(</td>
+<td class="paramtype">container_type &amp;</td> <td class="paramname"><span class="paramname"><em>container</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor with container, points to beginning of container. </p>
+</div>
+</div>
+<a id="ab298da4f242884926f1899ada7d154ec" name="ab298da4f242884926f1899ada7d154ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab298da4f242884926f1899ada7d154ec">◆ </a></span>EndpointIterator() <span class="overload">[3/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1EndpointIterator.html">EndpointIterator</a> </td>
+<td>(</td>
+<td class="paramtype">container_type &amp;</td> <td class="paramname"><span class="paramname"><em>container</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">size_type</td> <td class="paramname"><span class="paramname"><em>index</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor with container and raw index into container. </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad2bafd5e3a8e3815a30c5c54e6f9bbd4" name="ad2bafd5e3a8e3815a30c5c54e6f9bbd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2bafd5e3a8e3815a30c5c54e6f9bbd4">◆ </a></span>get_pointer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">pointer get_pointer </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Extract the pointer (NULL if iterator is invalid) </p>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1EndpointIterator_ad2bafd5e3a8e3815a30c5c54e6f9bbd4_icgraph.svg" width="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a1fd087cd6febe2b305542fa57075ac35" name="a1fd087cd6febe2b305542fa57075ac35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd087cd6febe2b305542fa57075ac35">◆ </a></span>operator pointer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">operator pointer </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Implicit conversion operator to pointer. </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1EndpointIterator_a1fd087cd6febe2b305542fa57075ac35_cgraph.svg" width="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="afa41a0d9d910c3bcb8bd98d8bcc01023" name="afa41a0d9d910c3bcb8bd98d8bcc01023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa41a0d9d910c3bcb8bd98d8bcc01023">◆ </a></span>operator++()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1EndpointIterator.html">type</a> &amp; operator++ </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>prefix ++ operator, increments (and skips any nulls) </p>
+<p>Invariant might be invalid here, since the user might have just deleted something.</p>
+</div>
+</div>
+<a id="a315419f26d3c59fa143b49b90a019049" name="a315419f26d3c59fa143b49b90a019049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315419f26d3c59fa143b49b90a019049">◆ </a></span>valid()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool valid </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Does this iterator refer to a valid element? </p>
+<p>Class invariant: <a class="el" href="#a315419f26d3c59fa143b49b90a019049" title="Does this iterator refer to a valid element?">valid()</a> || (*this == type()) That is, there is only one invalid value. </p>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn_1_1EndpointIterator_a315419f26d3c59fa143b49b90a019049_icgraph.svg" width="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__EndpointContainer_8h_source.html">vrpn_EndpointContainer.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

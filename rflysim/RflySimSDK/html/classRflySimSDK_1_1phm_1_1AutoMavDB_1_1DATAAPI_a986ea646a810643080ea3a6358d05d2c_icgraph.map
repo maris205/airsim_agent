@@ -1,0 +1,14 @@
+<map id="generate_test_result_html_with_style" name="generate_test_result_html_with_style">
+<area shape="rect" id="Node000001" title="生成带有特定样式的测试结果HTML表格。" alt="" coords="758,35,897,77"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a0eadcb441950cc1c874b8ae525df4ad4" title="生成测试结果HTML文件的头部，包含测试结果表格的列标题。" alt="" coords="571,5,710,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="742,45,710,40,711,35,743,40"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#ac354199c66c8f0a1feed9997c0a2b6a4" title="将测试结果转换为HTML格式并写入文件。" alt="" coords="390,43,523,69"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="742,62,710,63,571,63,523,61,523,56,571,57,710,57,742,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="556,43,523,48,522,43,555,38"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a265fdb639ec6227b9fe5b8aaa71b191b" title="记录测试结果。该方法将测试结果记录到CSV文件中，包括案例ID、故障ID、案例描述、故障模式、控制序列和测试结果等。" alt="" coords="208,43,342,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,59,343,59,343,53,375,53"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a2013ae7d27179446e088f64bcb17bae3" title="处理数据并准备存储。该方法进行数据处理，包括创建必要的目录、处理数据，并准备存储到文件或数据库。" alt="" coords="120,43,160,69"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="192,59,160,59,160,53,192,53"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a16fc170c516701a1aaf697be9bc4422c" title="构造函数，初始化DATAAPI类的实例。" alt="" coords="5,43,72,69"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="104,59,72,59,72,53,104,53"/>
+</map>

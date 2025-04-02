@@ -1,0 +1,11 @@
+<map id="getSimIpID" name="getSimIpID">
+<area shape="rect" id="Node000001" title="根据CopterID获取其IP地址。" alt="" coords="5,31,93,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a022e8f000f8bfc1a75627bb87bded56e" title="检查给定的IP地址是否有效。" alt="" coords="160,5,230,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,34,144,25,145,30,94,39"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a44f42a7b3d36ea204a341ec7a73ee01f" title="更新模拟消息。" alt="" coords="141,56,249,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,49,126,55,125,60,93,54"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="363,23,436,49"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="249,58,347,42,348,47,250,63"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="297,73,502,132"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="250,75,282,81,281,86,249,81"/>
+</map>

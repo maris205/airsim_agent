@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Serial.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#enum-members">枚举</a> |
+<a href="#func-members">函数</a> </div>
+<div class="headertitle"><div class="title">vrpn_Serial.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating systems easier.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include "vrpn_Configure.h"</code><br/>
+<code>#include &lt;stddef.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> vrpn_Serial.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="128" scrolling="no" src="vrpn__Serial_8h__incl.svg" width="224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="544" scrolling="no" src="vrpn__Serial_8h__dep__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="vrpn__Serial_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a0d30e515a37e50b9baf1697a0a9d8716" id="r_a0d30e515a37e50b9baf1697a0a9d8716"><td align="right" class="memItemLeft" valign="top"><a id="a0d30e515a37e50b9baf1697a0a9d8716" name="a0d30e515a37e50b9baf1697a0a9d8716"></a>enum  </td><td class="memItemRight" valign="bottom"><b>vrpn_SER_PARITY</b> { <br/>
+  <b>vrpn_SER_PARITY_NONE</b>
+, <b>vrpn_SER_PARITY_ODD</b>
+, <b>vrpn_SER_PARITY_EVEN</b>
+, <b>vrpn_SER_PARITY_MARK</b>
+, <br/>
+  <b>vrpn_SER_PARITY_SPACE</b>
+<br/>
+ }</td></tr>
+<tr class="separator:a0d30e515a37e50b9baf1697a0a9d8716"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a99e9df68f985355f0cbc05f5a63347b9" id="r_a99e9df68f985355f0cbc05f5a63347b9"><td align="right" class="memItemLeft" valign="top">VRPN_API int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a99e9df68f985355f0cbc05f5a63347b9">vrpn_open_commport</a> (const char *portname, long baud, int charsize=8, vrpn_SER_PARITY parity=vrpn_SER_PARITY_NONE, bool rts_flow=false)</td></tr>
+<tr class="memdesc:a99e9df68f985355f0cbc05f5a63347b9"><td class="mdescLeft"> </td><td class="mdescRight">Open a serial port, given its name and baud rate.  <br/></td></tr>
+<tr class="separator:a99e9df68f985355f0cbc05f5a63347b9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a713f3b38f2c4e77928623b3ccbf8cbba" id="r_a713f3b38f2c4e77928623b3ccbf8cbba"><td align="right" class="memItemLeft" valign="top"><a id="a713f3b38f2c4e77928623b3ccbf8cbba" name="a713f3b38f2c4e77928623b3ccbf8cbba"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_close_commport</b> (int comm)</td></tr>
+<tr class="separator:a713f3b38f2c4e77928623b3ccbf8cbba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a749b814a2aa2ffd367bb55e828e74ca1" id="r_a749b814a2aa2ffd367bb55e828e74ca1"><td align="right" class="memItemLeft" valign="top">VRPN_API int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a749b814a2aa2ffd367bb55e828e74ca1">vrpn_flush_input_buffer</a> (int comm)</td></tr>
+<tr class="memdesc:a749b814a2aa2ffd367bb55e828e74ca1"><td class="mdescLeft"> </td><td class="mdescRight">Throw out any characters within the input buffer.  <br/></td></tr>
+<tr class="separator:a749b814a2aa2ffd367bb55e828e74ca1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa871997e75e3aead2f6e4accadc9d499" id="r_aa871997e75e3aead2f6e4accadc9d499"><td align="right" class="memItemLeft" valign="top">VRPN_API int </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa871997e75e3aead2f6e4accadc9d499">vrpn_flush_output_buffer</a> (int comm)</td></tr>
+<tr class="memdesc:aa871997e75e3aead2f6e4accadc9d499"><td class="mdescLeft"> </td><td class="mdescRight">Throw out any characters (do not send) within the output buffer  <br/></td></tr>
+<tr class="separator:aa871997e75e3aead2f6e4accadc9d499"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae29ecc5d98473ddb09eefb5e9b9fd069" id="r_ae29ecc5d98473ddb09eefb5e9b9fd069"><td align="right" class="memItemLeft" valign="top">VRPN_API int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29ecc5d98473ddb09eefb5e9b9fd069">vrpn_drain_output_buffer</a> (int comm)</td></tr>
+<tr class="memdesc:ae29ecc5d98473ddb09eefb5e9b9fd069"><td class="mdescLeft"> </td><td class="mdescRight">Wait until all of the characters in the output buffer are sent, then return.  <br/></td></tr>
+<tr class="separator:ae29ecc5d98473ddb09eefb5e9b9fd069"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abce64cf486958c94694dbb9eda782566" id="r_abce64cf486958c94694dbb9eda782566"><td align="right" class="memItemLeft" valign="top"><a id="abce64cf486958c94694dbb9eda782566" name="abce64cf486958c94694dbb9eda782566"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_write_characters</b> (int comm, const unsigned char *buffer, size_t bytes)</td></tr>
+<tr class="separator:abce64cf486958c94694dbb9eda782566"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac7c556cf66569456ca7816db2daf4041" id="r_ac7c556cf66569456ca7816db2daf4041"><td align="right" class="memItemLeft" valign="top"><a id="ac7c556cf66569456ca7816db2daf4041" name="ac7c556cf66569456ca7816db2daf4041"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_write_slowly</b> (int comm, const unsigned char *buffer, size_t bytes, int millisec_delay)</td></tr>
+<tr class="separator:ac7c556cf66569456ca7816db2daf4041"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">RTS Hardware Flow Control</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Set and clear functions for the RTS ("ready to send") hardware flow- control bit. These are used on a port that is already open. Some devices (like the Ascension Flock of Birds) use this to reset the device. Return 0 on success, nonzero on error. </p>
+</div></td></tr>
+<tr class="memitem:a658377c265d01616220055d292b20d0d" id="r_a658377c265d01616220055d292b20d0d"><td align="right" class="memItemLeft" valign="top"><a id="a658377c265d01616220055d292b20d0d" name="a658377c265d01616220055d292b20d0d"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_set_rts</b> (int comm)</td></tr>
+<tr class="separator:a658377c265d01616220055d292b20d0d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1efcd5999722797c8d2a9e2ff6b59fdb" id="r_a1efcd5999722797c8d2a9e2ff6b59fdb"><td align="right" class="memItemLeft" valign="top"><a id="a1efcd5999722797c8d2a9e2ff6b59fdb" name="a1efcd5999722797c8d2a9e2ff6b59fdb"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_clear_rts</b> (int comm)</td></tr>
+<tr class="separator:a1efcd5999722797c8d2a9e2ff6b59fdb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Read routines</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Read up the the requested count of characters from the input buffer, return with less if less (or none) are there. Return the number of characters read, or -1 if there is an error. The second of these will keep looking until the timeout period expires before returning (NULL pointer will cause it to block indefinitely). </p>
+</div></td></tr>
+<tr class="memitem:a3a42fb4047b049c0fdb9a8825c86e729" id="r_a3a42fb4047b049c0fdb9a8825c86e729"><td align="right" class="memItemLeft" valign="top"><a id="a3a42fb4047b049c0fdb9a8825c86e729" name="a3a42fb4047b049c0fdb9a8825c86e729"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_read_available_characters</b> (int comm, unsigned char *buffer, size_t count)</td></tr>
+<tr class="separator:a3a42fb4047b049c0fdb9a8825c86e729"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a38ff555b206ad9ab512ae5645b4849d7" id="r_a38ff555b206ad9ab512ae5645b4849d7"><td align="right" class="memItemLeft" valign="top"><a id="a38ff555b206ad9ab512ae5645b4849d7" name="a38ff555b206ad9ab512ae5645b4849d7"></a>
+VRPN_API int </td><td class="memItemRight" valign="bottom"><b>vrpn_read_available_characters</b> (int comm, unsigned char *buffer, size_t count, struct timeval *timeout)</td></tr>
+<tr class="separator:a38ff555b206ad9ab512ae5645b4849d7"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating systems easier. </p>
+<dl class="section author"><dt>作者</dt><dd>Russ Taylor, 1998 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ae29ecc5d98473ddb09eefb5e9b9fd069" name="ae29ecc5d98473ddb09eefb5e9b9fd069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29ecc5d98473ddb09eefb5e9b9fd069">◆ </a></span>vrpn_drain_output_buffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">VRPN_API int vrpn_drain_output_buffer </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>comm</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Wait until all of the characters in the output buffer are sent, then return. </p>
+<dl class="section return"><dt>返回</dt><dd>0 on success, -1 on error. </dd></dl>
+</div>
+</div>
+<a id="a749b814a2aa2ffd367bb55e828e74ca1" name="a749b814a2aa2ffd367bb55e828e74ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749b814a2aa2ffd367bb55e828e74ca1">◆ </a></span>vrpn_flush_input_buffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">VRPN_API int vrpn_flush_input_buffer </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>comm</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Throw out any characters within the input buffer. </p>
+<dl class="section return"><dt>返回</dt><dd>0 on success, -1 on error. </dd></dl>
+</div>
+</div>
+<a id="aa871997e75e3aead2f6e4accadc9d499" name="aa871997e75e3aead2f6e4accadc9d499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa871997e75e3aead2f6e4accadc9d499">◆ </a></span>vrpn_flush_output_buffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">VRPN_API int vrpn_flush_output_buffer </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>comm</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Throw out any characters (do not send) within the output buffer </p>
+<dl class="section return"><dt>返回</dt><dd>0 on success, tc err codes (whatever those are) on error. </dd></dl>
+</div>
+</div>
+<a id="a99e9df68f985355f0cbc05f5a63347b9" name="a99e9df68f985355f0cbc05f5a63347b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e9df68f985355f0cbc05f5a63347b9">◆ </a></span>vrpn_open_commport()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">VRPN_API int vrpn_open_commport </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>portname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">long</td> <td class="paramname"><span class="paramname"><em>baud</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>charsize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">8</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_SER_PARITY</td> <td class="paramname"><span class="paramname"><em>parity</em></span><span class="paramdefsep"> = </span><span class="paramdefval">vrpn_SER_PARITY_NONE</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool</td> <td class="paramname"><span class="paramname"><em>rts_flow</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Open a serial port, given its name and baud rate. </p>
+<p>Default Settings are 8 bits, no parity, 1 start and stop bits with no RTS (hardware) flow control. Also, set the port so that it will return immediately if there are no characters or less than the number of characters requested.</p>
+<dl class="section return"><dt>返回</dt><dd>the file descriptor on success,-1 on failure. </dd></dl>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

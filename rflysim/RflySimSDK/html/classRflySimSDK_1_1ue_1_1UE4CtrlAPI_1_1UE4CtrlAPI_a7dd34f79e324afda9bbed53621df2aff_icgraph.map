@@ -1,0 +1,27 @@
+<map id="sendUE4Cmd" name="sendUE4Cmd">
+<area shape="rect" id="Node000001" title="发送RflySim3D控制台命令的方法" alt="" coords="412,296,515,323"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad84459ccd1f8f92397d1f4625c69f1dc" title="构造函数，初始化飞行器的ID、类型、地图场景、更新频率以及其他控制参数。" alt="" coords="150,5,335,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="457,281,448,233,431,174,403,114,385,86,362,62,334,44,337,40,366,58,389,83,408,111,436,172,453,232,462,280"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a08bbc02f2e508a22db16214c353bd491" title="请求场景内指定物体数据回传" alt="" coords="185,72,300,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="454,282,443,243,425,197,398,151,382,130,362,113,333,97,300,89,301,84,334,92,366,108,386,127,403,148,430,195,448,241,459,280"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#add972b32243d4f6b1f966a6825d2599e" title="用于将视觉传感器列表发送到 RflySim3D 以请求图像" alt="" coords="131,123,354,181"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="444,284,410,239,387,216,362,196,343,184,346,179,366,191,391,212,414,235,448,281"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#a709be0ce4fad73b4eb6e320989d6cdef" title="由Actor名向UE发送辐射设置模板值的命令" alt="" coords="129,205,356,264"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="406,293,330,267,332,262,408,288"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a709be0ce4fad73b4eb6e320989d6cdef" title="将物体的模板值发送给UE（由Actor）" alt="" coords="151,288,334,331"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="396,312,334,312,334,307,396,307"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#ac1c09b7cd28d2245aa4ee2bfb29a2e7e" title="由CopterID向UE发送设置辐射模板值的命令" alt="" coords="129,355,356,413"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="408,331,332,357,330,352,406,326"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#ac1c09b7cd28d2245aa4ee2bfb29a2e7e" title="将物体的模板值发送给UE（由CopterID）" alt="" coords="151,437,334,480"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="449,338,414,384,391,407,365,428,335,442,333,438,363,423,388,403,410,380,444,334"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#a40f1c4c22c562315f98a985aa1b7d9a7" title="由Actor的Mesh组件名向UE发送设置辐射模板值的命令" alt="" coords="121,504,364,563"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="457,338,444,374,425,415,399,457,366,494,349,506,346,501,362,490,395,454,421,413,439,372,452,337"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a40f1c4c22c562315f98a985aa1b7d9a7" title="将物体的模板值发送给UE（由mesh）" alt="" coords="151,587,334,629"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="463,339,455,390,438,454,410,520,390,550,366,577,336,596,333,591,362,573,386,547,405,517,433,452,450,389,457,338"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a8100a9848217d349c54e431c52fbc430" title=" " alt="" coords="5,21,73,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,74,120,63,72,48,74,43,121,57,170,69"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a4ed913dbcf51afc1c50dbb1df83f0fa6" title=" " alt="" coords="5,72,73,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="169,88,73,88,73,83,169,83"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a480bdd34fbe6d77df9898259b6e64de7" title=" " alt="" coords="9,123,69,149"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="170,102,121,113,70,129,68,124,120,108,169,97"/>
+</map>

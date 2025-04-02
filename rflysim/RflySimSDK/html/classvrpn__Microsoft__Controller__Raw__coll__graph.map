@@ -1,0 +1,23 @@
+<map id="vrpn_Microsoft_Controller_Raw" name="vrpn_Microsoft_Controller_Raw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="146,353,350,380"/>
+<area shape="rect" id="Node000002" href="$classvrpn__BaseClass.html" title=" " alt="" coords="109,277,227,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,313,236,351,233,355,191,317"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="101,187,259,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,229,172,277,167,276,174,229"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="232,96,352,123"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="266,135,198,188,194,184,263,130"/>
+<area shape="rect" id="Node000005" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="118,5,279,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,47,192,59,197,71,212,86,233,96,231,101,209,90,192,73,187,60,187,47"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="320,5,448,32"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="375,48,357,74,323,98,320,93,353,70,371,45"/>
+<area shape="rect" id="Node000007" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="43,96,208,123"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="144,135,174,185,170,187,139,138"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="38,5,92,32"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="41,45,18,73,11,90,8,108,8,292,11,302,20,311,52,328,96,341,146,350,145,356,95,346,50,333,16,315,6,304,3,292,3,108,6,89,14,71,36,41"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="85,44,119,94,115,97,80,47"/>
+<area shape="rect" id="Node000009" href="$classvrpn__HidInterface.html" title=" " alt="" coords="335,277,460,304"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="359,314,275,355,272,350,357,309"/>
+<area shape="rect" id="Node000010" href="$classvrpn__HidAcceptor.html" title=" " alt="" coords="315,187,440,213"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="347,224,317,249,289,279,267,319,254,354,249,352,262,316,285,276,313,245,344,220"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="386,228,397,276,392,277,381,229"/>
+</map>

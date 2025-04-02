@@ -1,0 +1,9 @@
+<map id="InitTrueDataLoop" name="InitTrueDataLoop">
+<area shape="rect" id="Node000001" title="初始化真实数据接收机制" alt="" coords="5,35,127,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#ac055bb2906da02fee8b58cf19eebaed1" title="从30100串口监听真是数据，更新Pixhawk状态" alt="" coords="228,5,346,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,37,212,26,212,31,127,43"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac055bb2906da02fee8b58cf19eebaed1" title="从30100串口监听真是数据，更新Pixhawk状态" alt="" coords="175,56,399,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,53,160,58,159,63,127,59"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a630e159c1669cf72f802f12e534d1cf8" title="从套接字或 Redis 订阅中获取数据" alt="" coords="447,56,678,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,75,432,75,432,80,399,80"/>
+</map>

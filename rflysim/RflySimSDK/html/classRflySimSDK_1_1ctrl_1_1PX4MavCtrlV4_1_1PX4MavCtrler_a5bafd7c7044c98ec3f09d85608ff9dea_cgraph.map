@@ -1,0 +1,7 @@
+<map id="SendPosNED" name="SendPosNED">
+<area shape="rect" id="Node000001" title="地球北东地坐标系下控制飞机到指定位置" alt="" coords="5,35,109,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="209,5,290,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,38,193,24,194,30,110,43"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="157,56,342,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,53,141,58,141,63,109,58"/>
+</map>

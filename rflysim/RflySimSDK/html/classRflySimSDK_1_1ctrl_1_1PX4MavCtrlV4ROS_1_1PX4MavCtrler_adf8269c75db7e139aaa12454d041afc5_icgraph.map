@@ -1,0 +1,44 @@
+<map id="yawSat" name="yawSat">
+<area shape="rect" id="Node000001" title="对偏航角进行饱和处理，此函数接收一个偏航角值，并确保其在 &#45;π/2 到 π/2 弧度（或等效的 &#45;90 到 90 度）的范围内。如果输入的偏航角超出这个范围，函数会相应地调整它，使其不超过阈值。" alt="" coords="1544,271,1610,298"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ae53498db1e10bff529310768847f0405" title="处理ROS中订阅的本地位置话题的消息，更新无人机的位置和姿态信息" alt="" coords="826,15,965,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1569,256,1561,221,1547,181,1525,141,1495,108,1432,69,1363,41,1290,22,1217,12,1144,8,1077,9,965,20,965,14,1076,4,1145,3,1217,7,1291,17,1365,36,1434,64,1498,104,1529,138,1551,178,1566,220,1574,255"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ae53498db1e10bff529310768847f0405" title="处理本地位姿消息" alt="" coords="802,89,989,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1564,258,1539,205,1519,179,1495,159,1434,128,1368,106,1300,93,1231,86,1163,85,1099,88,989,101,989,96,1099,83,1163,80,1231,81,1300,88,1369,101,1436,123,1498,154,1523,176,1543,202,1569,255"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a58910926ae0abb02a8414ae62a6ab7db" title="控制无人机在点质量模型下循环运行" alt="" coords="769,293,1022,335"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1530,302,1497,311,1379,338,1285,353,1190,358,1069,350,993,339,994,333,1070,345,1190,352,1284,348,1378,333,1496,306,1529,297"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ab2bb5d240dd23a40c0cd49b4692ef942" title="根据当前模式和控制指令对输入进行处理的函数。" alt="" coords="803,366,988,409"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1557,311,1531,336,1497,356,1432,379,1363,395,1294,405,1225,410,1095,411,988,403,989,397,1096,405,1225,405,1293,400,1362,389,1430,374,1495,352,1527,332,1553,308"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ac64a1088c753d9121c095feb3841aa55" title="使用龙格&#45;库塔法以及内部定义的动力学方程，进行状态更新（位置、速度、高度、航向等）。" alt="" coords="803,446,988,489"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1568,314,1542,364,1522,388,1498,408,1435,440,1369,463,1300,478,1230,487,1163,491,1098,491,989,484,989,478,1099,486,1162,486,1230,482,1299,473,1367,458,1433,435,1495,404,1518,385,1537,361,1563,311"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5" title="调整偏航角在&#45;π到π之间" alt="" coords="1303,234,1496,277"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1529,279,1496,274,1497,269,1530,274"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#adf8269c75db7e139aaa12454d041afc5" title="对输入的偏航角进行角度约束，将偏航角限制在[&#45;pi, pi]区间内。" alt="" coords="1070,293,1255,335"/>
+<area shape="poly" id="edge28_Node000001_Node000012" title=" " alt="" coords="1529,291,1256,310,1255,305,1528,285"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ae033f0d06143d84dc69c7d7122afb880" title="对偏航角进行幅度限制，将偏航角限制在[&#45;pi, pi]附近的范围内。" alt="" coords="803,171,988,214"/>
+<area shape="poly" id="edge29_Node000001_Node000013" title=" " alt="" coords="1558,260,1532,227,1515,212,1495,200,1431,177,1363,162,1294,154,1226,151,1096,158,989,174,988,169,1095,153,1226,146,1295,148,1364,157,1432,172,1497,196,1518,208,1536,223,1562,257"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a57e299a4e222b92dd2413ce3d0e75644" title="初始化并启动用于无人机控制" alt="" coords="480,293,721,335"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="754,317,722,317,722,311,754,311"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a627393ae77146a2274349d34232b3981" title="模型单步更新函数。" alt="" coords="508,393,693,435"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="788,400,694,408,694,403,787,394"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#af7c3ee1bad28329314a5f489f1a6adff" title="点质量模型的主循环函数，以固定频率更新模型状态、发送UAV状态和输出数据到RflySim3D。" alt="" coords="239,393,432,435"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="492,417,432,417,432,411,492,411"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,393,191,435"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="223,417,191,417,191,411,223,411"/>
+<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="787,450,693,433,694,428,788,445"/>
+<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="1356,227,1308,194,1254,163,1171,125,1086,92,944,45,946,40,1088,87,1173,120,1256,158,1311,190,1359,222"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="1327,231,1254,206,1115,169,989,140,990,134,1117,163,1256,201,1329,226"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="1287,250,1182,249,1070,259,1007,274,950,294,948,289,1005,269,1069,254,1181,244,1287,244"/>
+<area shape="poly" id="edge15_Node000011_Node000006" title=" " alt="" coords="1363,288,1314,322,1256,350,1188,369,1117,381,1050,388,989,391,989,386,1049,383,1117,376,1187,364,1254,345,1311,317,1360,284"/>
+<area shape="poly" id="edge16_Node000011_Node000010" title=" " alt="" coords="1374,290,1323,343,1291,369,1256,391,1189,420,1119,440,1051,455,989,463,988,458,1050,449,1118,435,1188,415,1254,386,1288,365,1319,339,1370,287"/>
+<area shape="poly" id="edge17_Node000011_Node000011" title=" " alt="" coords="1428,221,1417,215,1400,213,1383,214,1373,219,1369,225,1371,233,1365,234,1364,224,1370,215,1382,209,1400,207,1419,210,1431,216"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="1328,284,1256,302,1255,297,1327,279"/>
+<area shape="poly" id="edge27_Node000011_Node000013" title=" " alt="" coords="1287,240,1255,235,988,204,989,199,1255,230,1288,235"/>
+<area shape="poly" id="edge19_Node000012_Node000002" title=" " alt="" coords="1146,279,1127,234,1100,180,1064,126,1020,79,989,59,955,45,957,40,992,54,1023,75,1069,123,1105,178,1132,232,1151,277"/>
+<area shape="poly" id="edge20_Node000012_Node000003" title=" " alt="" coords="1136,281,1087,220,1055,189,1020,162,987,145,990,140,1023,157,1059,185,1091,217,1140,278"/>
+<area shape="poly" id="edge21_Node000012_Node000004" title=" " alt="" coords="1054,317,1022,317,1022,311,1054,311"/>
+<area shape="poly" id="edge22_Node000012_Node000006" title=" " alt="" coords="1068,342,976,368,975,363,1067,337"/>
+<area shape="poly" id="edge23_Node000012_Node000010" title=" " alt="" coords="1128,348,1079,386,1023,423,968,448,965,443,1020,418,1076,382,1124,343"/>
+<area shape="poly" id="edge24_Node000012_Node000011" title=" " alt="" coords="1234,285,1302,268,1303,273,1235,290"/>
+<area shape="poly" id="edge25_Node000012_Node000012" title=" " alt="" coords="1201,279,1186,274,1162,271,1140,273,1126,278,1121,284,1123,291,1117,293,1116,283,1123,274,1139,268,1162,266,1188,268,1203,275"/>
+<area shape="poly" id="edge26_Node000012_Node000013" title=" " alt="" coords="1099,288,943,217,945,212,1101,283"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="stopRun" name="stopRun">
+<area shape="rect" id="Node000001" title="停止 MAVLink 的监听循环" alt="" coords="5,101,76,128"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a4713173eafcc9af7aaa4f6cbcb7961fd" title="退出offboard模式，停止消息发送" alt="" coords="192,101,283,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,112,176,112,176,117,76,117"/>
+<area shape="rect" id="Node000003" href="$classRflyMavlink.html#ab1205d651a5b3851758de62e94690be3" title=" " alt="" coords="400,5,610,32"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="57,99,86,77,123,59,189,40,257,27,385,15,385,21,258,32,190,45,125,64,89,82,60,103"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551" title="将 MAVLink 的长指令消息发送到 Pixhawk 系统" alt="" coords="439,60,571,87"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="75,99,123,87,203,76,283,70,423,68,424,73,283,76,203,81,124,92,77,105"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3b674c6bf3ce93f9a964070e6fd21551" title="发送长命令到飞行控制器" alt="" coords="399,119,611,177"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="77,125,124,137,190,146,258,150,383,151,383,157,258,156,190,151,123,143,75,130"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a4713173eafcc9af7aaa4f6cbcb7961fd" title="结束Offboard模式，停止相关线程，并关闭ROS2节点" alt="" coords="124,203,351,245"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="57,127,87,154,125,182,150,194,148,199,122,186,83,158,53,131"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="268,98,398,45,434,34,435,39,400,51,270,103"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="283,105,423,83,424,88,284,110"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="284,118,384,130,383,136,283,123"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="659,60,731,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="572,71,644,71,644,76,572,76"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="779,60,892,87"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="731,71,763,71,763,76,731,76"/>
+</map>

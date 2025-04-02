@@ -1,0 +1,13 @@
+<map id="endOffboard" name="endOffboard">
+<area shape="rect" id="Node000001" title="退出offboard模式，停止消息发送" alt="" coords="5,56,97,83"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html#ab1205d651a5b3851758de62e94690be3" title=" " alt="" coords="146,5,356,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,54,144,41,175,34,177,39,145,47,98,59"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551" title="将 MAVLink 的长指令消息发送到 Pixhawk 系统" alt="" coords="185,56,317,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,67,169,67,169,72,97,72"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3b674c6bf3ce93f9a964070e6fd21551" title="发送长命令到飞行控制器" alt="" coords="145,107,357,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="95,81,148,99,146,104,93,86"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="405,56,476,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="318,67,389,67,389,72,318,72"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="524,56,638,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="477,67,509,67,509,72,477,72"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="InitMavComm" name="InitMavComm">
+<area shape="rect" id="Node000001" title="控制无人机通信的方法。该方法初始化和结束无人机的通信。" alt="" coords="141,5,244,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#af6641694b3857fefc4633fca9181a5cd" title="初始化无人机环境的方法。该方法根据传入的配置信息初始化无人机的仿真环境。" alt="" coords="5,5,93,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,21,93,21,93,16,125,16"/>
+</map>

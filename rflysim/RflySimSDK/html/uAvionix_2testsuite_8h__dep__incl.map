@@ -1,0 +1,5 @@
+<map id="simulink/mavlink/uAvionix/testsuite.h" name="simulink/mavlink/uAvionix/testsuite.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol testsuite generated from uAvionix.xml" alt="" coords="21,5,193,48"/>
+<area shape="rect" id="Node000002" href="$ardupilotmega_2testsuite_8h.html" title="MAVLink comm protocol testsuite generated from ardupilotmega.xml" alt="" coords="5,96,209,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,64,110,96,104,96,104,64"/>
+</map>

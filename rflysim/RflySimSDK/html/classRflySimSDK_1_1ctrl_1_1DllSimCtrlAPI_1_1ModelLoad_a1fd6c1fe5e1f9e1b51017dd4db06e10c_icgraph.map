@@ -1,0 +1,8 @@
+<map id="DllInitPosAngState" name="DllInitPosAngState">
+<area shape="rect" id="Node000001" title="初始化位置和姿态状态，用于设置仿真对象的初始位置信息和朝向，参见 sendReSimXyzRPYaw" alt="" coords="270,29,402,56"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="364,16,354,10,336,8,319,10,310,15,308,20,312,28,308,30,303,21,306,11,318,5,336,3,356,5,367,12"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#af988b1ebd5bd032166adebe23944ff0d" title="初始化并配置载具模型。参数的详细含义参考 Bat脚本使用参考" alt="" coords="120,29,222,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,45,222,45,222,40,254,40"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#acd4dae14df46a8213f9e9331fbce7549" title="这是类的构造函数，用于初始化 ModelLoad 类的实例。参数的详细含义参考 Bat脚本使用参考" alt="" coords="5,29,72,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,45,72,45,72,40,104,40"/>
+</map>

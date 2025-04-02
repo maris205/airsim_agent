@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: BatteryFaultModel模块（外层）</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">BatteryFaultModel模块（外层）</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md187"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240723165035979.png"><img alt="" class="thumbnail" height="auto" src="image-20240723165035979.png" width="100"/></a>
+<div class="caption">
+image-20240723165035979</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">该模块包含LiPo电池函数，BatteryFault电池故障模块。BatteryFault电池故障模块 用于表示电池故障类型以及对应的故障参数（如：PowOff电池失效故障、LowVoltage低电压故障、lowCapacity低电量故障）；LiPo电池函数 模拟了锂聚合物（LiPo）电池在不同操作条件下的电压和剩余容量，并计算了电池的效率比。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>参数</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">load（PWMIn）   </td><td class="markdownTableBodyNone">外部输入给模型的电机转速    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">time   </td><td class="markdownTableBodyNone">当前时间，用于计算时间差（例如用于自定义续航时间）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">hover_time   </td><td class="markdownTableBodyNone">标准悬停时间。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">hover_thr   </td><td class="markdownTableBodyNone">悬停油门值。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">motorNumbs   </td><td class="markdownTableBodyNone">电机数量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isUseCustomHovTime   </td><td class="markdownTableBodyNone">布尔值，指示是否使用自定义悬停时间。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">CustomHovTime   </td><td class="markdownTableBodyNone">自定义的悬停时间。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isPowOff   </td><td class="markdownTableBodyNone">布尔值，指示是否发生电池失效故障。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">isLowVoltage   </td><td class="markdownTableBodyNone">布尔值，指示是否发生低电压故障。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">remainVoltageRatio   </td><td class="markdownTableBodyNone">数组，表示剩余电压比例。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">islowCapacity   </td><td class="markdownTableBodyNone">布尔值，指示是否发生低电量故障。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">remainCapacityRatio   </td><td class="markdownTableBodyNone">数组，表示剩余电量比例。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">EffRatio   </td><td class="markdownTableBodyNone">电池效率比，等于当前电压与满电电压的比值。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cell_voltage   </td><td class="markdownTableBodyNone">电池单元的电压。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">remCapacity   </td><td class="markdownTableBodyNone">剩余电量，等于 1 减去放电容量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">PWMIn   </td><td class="markdownTableBodyNone">外部输入给模型的电机转速    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">BattHoverMinutes   </td><td class="markdownTableBodyNone">悬停时间。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">BattHoverThr   </td><td class="markdownTableBodyNone">悬停油门值。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">uavMotNumbs   </td><td class="markdownTableBodyNone">电机数量。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">FaultIn   </td><td class="markdownTableBodyNone">故障输入，包括故障类型和故障参数。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Battery Model Bus1   </td><td class="markdownTableBodyNone">将PWMOut，cellVol电池单元的电压，remCapa剩余电量封装在总线中。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md188"></a>
+BatteryFault模块（内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240723172218805.png"><img alt="" class="thumbnail" height="auto" src="image-20240723172218805.png" width="100"/></a>
+<div class="caption">
+image-20240723172218805</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">BatteryFault电池故障模块 用于表示电池故障类型以及对应的故障参数（如：PowOff电池失效故障、LowVoltage低电压故障、lowCapacity低电量故障）    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">123452为电池失效故障ID(0个故障参数)；123453为低电压故障ID(1个故障参数，剩余电压因子)；123454为低电量故障ID(1个故障参数，剩余电量因子)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FaultIn   </td><td class="markdownTableBodyNone">故障输入，包括故障类型和故障参数。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">PowOffFaultID   </td><td class="markdownTableBodyNone">电池失效故障的唯一标识密钥    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LowVoltageFaultID   </td><td class="markdownTableBodyNone">低电压故障的唯一标识密钥    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LowCapacityFaultID   </td><td class="markdownTableBodyNone">低电量故障的唯一标识密钥    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">BatteryFaultParam   </td><td class="markdownTableBodyNone">将电池失效故障，低电压故障，低电量故障参数（hasFault，FaultParam ）封装在总线中。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md189"></a>
+FaultParamsExtract模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240724165452905.png"><img alt="" class="thumbnail" height="auto" src="image-20240724165452905.png" width="100"/></a>
+<div class="caption">
+image-20240724165452905</div></div>
+<p>具体参考**同目录下的FaultParamsExtract说明文档** </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

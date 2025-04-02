@@ -1,0 +1,14 @@
+<map id="DllInputColls" name="DllInputColls">
+<area shape="rect" id="Node000001" title="将碰撞数据传递给 DLL，用于仿真中处理碰撞情况，参见 sendColl20d" alt="" coords="5,131,102,157"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="21,132,15,122,19,112,32,106,54,104,77,107,89,113,86,118,75,112,53,109,33,111,23,116,20,121,25,129"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="155,5,338,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="65,128,100,94,148,58,158,52,160,57,151,62,104,98,69,132"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="219,72,274,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="92,127,149,108,203,93,204,98,150,113,93,133"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="150,123,343,165"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="102,141,134,141,134,147,102,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="151,189,342,232"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="95,155,151,175,169,181,167,186,149,180,94,160"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="151,256,342,299"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="67,156,101,198,125,222,151,242,159,246,156,251,148,246,121,226,97,202,63,160"/>
+</map>

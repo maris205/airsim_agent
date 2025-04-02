@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Imager_Region类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="#friends">友元</a> |
+<a href="classvrpn__Imager__Region-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Imager_Region类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Helper function to convert data for a sub-region of one channel of  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Imager_8h_source.html">vrpn_Imager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a74a6038ad973fe983719e434b4ebc97b" id="r_a74a6038ad973fe983719e434b4ebc97b"><td align="right" class="memItemLeft" valign="top">vrpn_uint32 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a74a6038ad973fe983719e434b4ebc97b">getNumVals</a> () const</td></tr>
+<tr class="memdesc:a74a6038ad973fe983719e434b4ebc97b"><td class="mdescLeft"> </td><td class="mdescRight">Returns the number of values in the region.  <br/></td></tr>
+<tr class="separator:a74a6038ad973fe983719e434b4ebc97b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a03cd514a5e6ee3d416050fbff5a86776" id="r_a03cd514a5e6ee3d416050fbff5a86776"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a03cd514a5e6ee3d416050fbff5a86776">read_unscaled_pixel</a> (vrpn_uint16 c, vrpn_uint16 r, vrpn_uint8 &amp;val, vrpn_uint16 d=0) const</td></tr>
+<tr class="separator:a03cd514a5e6ee3d416050fbff5a86776"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4b7021560ebb0defc6bd29657c9fa9e" id="r_ad4b7021560ebb0defc6bd29657c9fa9e"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b7021560ebb0defc6bd29657c9fa9e">read_unscaled_pixel</a> (vrpn_uint16 c, vrpn_uint16 r, vrpn_uint16 &amp;val, vrpn_uint16 d=0) const</td></tr>
+<tr class="separator:ad4b7021560ebb0defc6bd29657c9fa9e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a68c8943dbad628f6da97193ccfe753f0" id="r_a68c8943dbad628f6da97193ccfe753f0"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a68c8943dbad628f6da97193ccfe753f0">read_unscaled_pixel</a> (vrpn_uint16 c, vrpn_uint16 r, vrpn_float32 &amp;val, vrpn_uint16 d=0) const</td></tr>
+<tr class="separator:a68c8943dbad628f6da97193ccfe753f0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac7cc99dbde07684aa696e53ee708685" id="r_aac7cc99dbde07684aa696e53ee708685"><td align="right" class="memItemLeft" valign="top"><a id="aac7cc99dbde07684aa696e53ee708685" name="aac7cc99dbde07684aa696e53ee708685"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>decode_unscaled_region_using_base_pointer</b> (vrpn_uint8 *data, vrpn_uint32 colStride, vrpn_uint32 rowStride, vrpn_uint32 depthStride=0, vrpn_uint16 nRows=0, bool invert_rows=false, unsigned repeat=1) const</td></tr>
+<tr class="separator:aac7cc99dbde07684aa696e53ee708685"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a52ae2f92c299b5ebf7ede4eadde4060b" id="r_a52ae2f92c299b5ebf7ede4eadde4060b"><td align="right" class="memItemLeft" valign="top"><a id="a52ae2f92c299b5ebf7ede4eadde4060b" name="a52ae2f92c299b5ebf7ede4eadde4060b"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>decode_unscaled_region_using_base_pointer</b> (vrpn_uint16 *data, vrpn_uint32 colStride, vrpn_uint32 rowStride, vrpn_uint32 depthStride=0, vrpn_uint16 nRows=0, bool invert_rows=false, unsigned repeat=1) const</td></tr>
+<tr class="separator:a52ae2f92c299b5ebf7ede4eadde4060b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a17fa3815f4c0db247c21c374081bf5aa" id="r_a17fa3815f4c0db247c21c374081bf5aa"><td align="right" class="memItemLeft" valign="top"><a id="a17fa3815f4c0db247c21c374081bf5aa" name="a17fa3815f4c0db247c21c374081bf5aa"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>decode_unscaled_region_using_base_pointer</b> (vrpn_float32 *data, vrpn_uint32 colStride, vrpn_uint32 rowStride, vrpn_uint32 depthStride=0, vrpn_uint16 nRows=0, bool invert_rows=false, unsigned repeat=1) const</td></tr>
+<tr class="separator:a17fa3815f4c0db247c21c374081bf5aa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afff6b2e2366d7abd351ca1e0a0b88d14" id="r_afff6b2e2366d7abd351ca1e0a0b88d14"><td align="right" class="memItemLeft" valign="top"><a id="afff6b2e2366d7abd351ca1e0a0b88d14" name="afff6b2e2366d7abd351ca1e0a0b88d14"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>get_val_type</b> (void) const</td></tr>
+<tr class="separator:afff6b2e2366d7abd351ca1e0a0b88d14"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a7e33273cf71e5a008af97d8e6b8c542b" id="r_a7e33273cf71e5a008af97d8e6b8c542b"><td align="right" class="memItemLeft" valign="top"><a id="a7e33273cf71e5a008af97d8e6b8c542b" name="a7e33273cf71e5a008af97d8e6b8c542b"></a>
+vrpn_int16 </td><td class="memItemRight" valign="bottom"><b>d_chanIndex</b></td></tr>
+<tr class="separator:a7e33273cf71e5a008af97d8e6b8c542b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaacac8807e1ca9119de18f0544d3bbce" id="r_aaacac8807e1ca9119de18f0544d3bbce"><td align="right" class="memItemLeft" valign="top"><a id="aaacac8807e1ca9119de18f0544d3bbce" name="aaacac8807e1ca9119de18f0544d3bbce"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_rMin</b></td></tr>
+<tr class="separator:aaacac8807e1ca9119de18f0544d3bbce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acff021a13f50085b95b3fa5ef07b0d64" id="r_acff021a13f50085b95b3fa5ef07b0d64"><td align="right" class="memItemLeft" valign="top"><a id="acff021a13f50085b95b3fa5ef07b0d64" name="acff021a13f50085b95b3fa5ef07b0d64"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_rMax</b></td></tr>
+<tr class="separator:acff021a13f50085b95b3fa5ef07b0d64"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aff117141ad43240afa95b16421ae9375" id="r_aff117141ad43240afa95b16421ae9375"><td align="right" class="memItemLeft" valign="top"><a id="aff117141ad43240afa95b16421ae9375" name="aff117141ad43240afa95b16421ae9375"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_cMin</b></td></tr>
+<tr class="separator:aff117141ad43240afa95b16421ae9375"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afbfcfc8def5970e57b2451ef842053fa" id="r_afbfcfc8def5970e57b2451ef842053fa"><td align="right" class="memItemLeft" valign="top"><a id="afbfcfc8def5970e57b2451ef842053fa" name="afbfcfc8def5970e57b2451ef842053fa"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_cMax</b></td></tr>
+<tr class="separator:afbfcfc8def5970e57b2451ef842053fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa060b6b68412392d7ac181f8137474ca" id="r_aa060b6b68412392d7ac181f8137474ca"><td align="right" class="memItemLeft" valign="top"><a id="aa060b6b68412392d7ac181f8137474ca" name="aa060b6b68412392d7ac181f8137474ca"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_dMin</b></td></tr>
+<tr class="separator:aa060b6b68412392d7ac181f8137474ca"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab56be40d149e548f407eec671b491547" id="r_ab56be40d149e548f407eec671b491547"><td align="right" class="memItemLeft" valign="top"><a id="ab56be40d149e548f407eec671b491547" name="ab56be40d149e548f407eec671b491547"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_dMax</b></td></tr>
+<tr class="separator:ab56be40d149e548f407eec671b491547"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ae9f43b78fea4ae79aa88734e49c2e28a" id="r_ae9f43b78fea4ae79aa88734e49c2e28a"><td align="right" class="memItemLeft" valign="top"><a id="ae9f43b78fea4ae79aa88734e49c2e28a" name="ae9f43b78fea4ae79aa88734e49c2e28a"></a>
+const void * </td><td class="memItemRight" valign="bottom"><b>d_valBuf</b></td></tr>
+<tr class="separator:ae9f43b78fea4ae79aa88734e49c2e28a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51c008ac6201a38bed16e5ac5b35c804" id="r_a51c008ac6201a38bed16e5ac5b35c804"><td align="right" class="memItemLeft" valign="top"><a id="a51c008ac6201a38bed16e5ac5b35c804" name="a51c008ac6201a38bed16e5ac5b35c804"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>d_valType</b></td></tr>
+<tr class="separator:a51c008ac6201a38bed16e5ac5b35c804"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4135138cdad7d454a02748ba4eb37ca7" id="r_a4135138cdad7d454a02748ba4eb37ca7"><td align="right" class="memItemLeft" valign="top"><a id="a4135138cdad7d454a02748ba4eb37ca7" name="a4135138cdad7d454a02748ba4eb37ca7"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>d_valid</b></td></tr>
+<tr class="separator:a4135138cdad7d454a02748ba4eb37ca7"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aa734f0671b268b5ddf28499f71de81ec" id="r_aa734f0671b268b5ddf28499f71de81ec"><td align="right" class="memItemLeft" valign="top"><a id="aa734f0671b268b5ddf28499f71de81ec" name="aa734f0671b268b5ddf28499f71de81ec"></a>
+class VRPN_API </td><td class="memItemRight" valign="bottom"><b>vrpn_Imager_Remote</b></td></tr>
+<tr class="separator:aa734f0671b268b5ddf28499f71de81ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad9f5fac933c4d181748c42e2d8473032" id="r_ad9f5fac933c4d181748c42e2d8473032"><td align="right" class="memItemLeft" valign="top"><a id="ad9f5fac933c4d181748c42e2d8473032" name="ad9f5fac933c4d181748c42e2d8473032"></a>
+void VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>java_vrpn_handle_region_change</b> (void *userdata, const <a class="el" href="struct__vrpn__IMAGERREGIONCB.html">vrpn_IMAGERREGIONCB</a> info)</td></tr>
+<tr class="separator:ad9f5fac933c4d181748c42e2d8473032"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Helper function to convert data for a sub-region of one channel of </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a74a6038ad973fe983719e434b4ebc97b" name="a74a6038ad973fe983719e434b4ebc97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a6038ad973fe983719e434b4ebc97b">◆ </a></span>getNumVals()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_uint32 getNumVals </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of values in the region. </p>
+</div>
+</div>
+<a id="a68c8943dbad628f6da97193ccfe753f0" name="a68c8943dbad628f6da97193ccfe753f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c8943dbad628f6da97193ccfe753f0">◆ </a></span>read_unscaled_pixel() <span class="overload">[1/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool read_unscaled_pixel </td>
+<td>(</td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_float32 &amp;</td> <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> ) const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Reads pixel from the region with no scale and offset applied to the value. Not </p>
+</div>
+</div>
+<a id="ad4b7021560ebb0defc6bd29657c9fa9e" name="ad4b7021560ebb0defc6bd29657c9fa9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b7021560ebb0defc6bd29657c9fa9e">◆ </a></span>read_unscaled_pixel() <span class="overload">[2/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool read_unscaled_pixel </td>
+<td>(</td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16 &amp;</td> <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> ) const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Reads pixel from the region with no scale and offset applied to the value. Not </p>
+</div>
+</div>
+<a id="a03cd514a5e6ee3d416050fbff5a86776" name="a03cd514a5e6ee3d416050fbff5a86776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cd514a5e6ee3d416050fbff5a86776">◆ </a></span>read_unscaled_pixel() <span class="overload">[3/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool read_unscaled_pixel </td>
+<td>(</td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint8 &amp;</td> <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> ) const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Reads pixel from the region with no scale and offset applied to the value. Not the most efficient way to read the pixels out – use the block read routines. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Imager_8h_source.html">vrpn_Imager.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

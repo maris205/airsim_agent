@@ -1,0 +1,9 @@
+<map id="SExecute" name="SExecute">
+<area shape="rect" id="Node000001" title="执行数据后处理。" alt="" coords="322,5,401,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#aa6602c16742d5855073bcc5dac5a9854" title="重命名目录。该方法根据测试结果重命名目录，以便于后续的数据分析和归档。" alt="" coords="208,5,274,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,21,275,21,275,16,307,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a2013ae7d27179446e088f64bcb17bae3" title="处理数据并准备存储。该方法进行数据处理，包括创建必要的目录、处理数据，并准备存储到文件或数据库。" alt="" coords="120,5,160,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,21,161,21,161,16,192,16"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavDB_1_1DATAAPI.html#a16fc170c516701a1aaf697be9bc4422c" title="构造函数，初始化DATAAPI类的实例。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

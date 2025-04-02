@@ -1,0 +1,5 @@
+<map id="reset" name="reset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="144,5,194,32"/>
+<area shape="rect" id="Node000002" href="$classvrpn_1_1OwningPtr.html#a04f450238284e99625030cea8ab32ca4" title="Destructor: deletes owned object, if any." alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,21,96,21,96,16,129,16"/>
+</map>

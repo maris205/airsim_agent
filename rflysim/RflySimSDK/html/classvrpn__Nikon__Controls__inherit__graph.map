@@ -1,0 +1,14 @@
+<map id="vrpn_Nikon_Controls" name="vrpn_Nikon_Controls">
+<area shape="rect" id="Node000001" title=" " alt="" coords="80,304,224,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Serial__Analog.html" title=" " alt="" coords="5,229,139,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,265,140,302,136,306,95,268"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="63,155,156,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,196,81,230,76,228,94,194"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="92,80,209,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,122,119,156,114,153,134,119"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog__Output.html" title=" " alt="" coords="162,229,302,256"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="167,119,227,228,223,230,163,122"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="72,5,230,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="153,48,153,80,148,80,148,48"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="209,268,168,306,164,302,205,265"/>
+</map>

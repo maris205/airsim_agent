@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: WgsConversions类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classWgsConversions-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">WgsConversions类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p><code>#include &lt;<a class="el" href="rfly__wgs84_8h_source.html">rfly_wgs84.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0d48dedb0b005de62d1b7023c5d0febf" id="r_a0d48dedb0b005de62d1b7023c5d0febf"><td align="right" class="memItemLeft" valign="top"><a id="a0d48dedb0b005de62d1b7023c5d0febf" name="a0d48dedb0b005de62d1b7023c5d0febf"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>enu2lla</b> (double lla[3], const double enu[3], const double ref_lla[3])</td></tr>
+<tr class="separator:a0d48dedb0b005de62d1b7023c5d0febf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b7f02b768e1c61da8dcbe53f4b9f6cb" id="r_a7b7f02b768e1c61da8dcbe53f4b9f6cb"><td align="right" class="memItemLeft" valign="top"><a id="a7b7f02b768e1c61da8dcbe53f4b9f6cb" name="a7b7f02b768e1c61da8dcbe53f4b9f6cb"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>lla2enu</b> (double enu[3], const double lla[3], const double ref_lla[3])</td></tr>
+<tr class="separator:a7b7f02b768e1c61da8dcbe53f4b9f6cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a628850125d4ae5daea94a45cfb6d32fa" id="r_a628850125d4ae5daea94a45cfb6d32fa"><td align="right" class="memItemLeft" valign="top"><a id="a628850125d4ae5daea94a45cfb6d32fa" name="a628850125d4ae5daea94a45cfb6d32fa"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>xyz2lla</b> (double lla[3], const double xyz[3])</td></tr>
+<tr class="separator:a628850125d4ae5daea94a45cfb6d32fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a628500e0d23515a2556eb4f6a6da5892" id="r_a628500e0d23515a2556eb4f6a6da5892"><td align="right" class="memItemLeft" valign="top"><a id="a628500e0d23515a2556eb4f6a6da5892" name="a628500e0d23515a2556eb4f6a6da5892"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>lla2xyz</b> (double xyz[3], const double lla[3])</td></tr>
+<tr class="separator:a628500e0d23515a2556eb4f6a6da5892"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae4774d31a649fe767157d0b3878c29be" id="r_ae4774d31a649fe767157d0b3878c29be"><td align="right" class="memItemLeft" valign="top"><a id="ae4774d31a649fe767157d0b3878c29be" name="ae4774d31a649fe767157d0b3878c29be"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>enu2xyz</b> (double xyz[3], const double enu[3], const double ref_lla[3])</td></tr>
+<tr class="separator:ae4774d31a649fe767157d0b3878c29be"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab5ba71d8bf958e5233c8a8197371a61b" id="r_ab5ba71d8bf958e5233c8a8197371a61b"><td align="right" class="memItemLeft" valign="top"><a id="ab5ba71d8bf958e5233c8a8197371a61b" name="ab5ba71d8bf958e5233c8a8197371a61b"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>xyz2enu</b> (double enu[3], const double xyz[3], const double ref_lla[3])</td></tr>
+<tr class="separator:ab5ba71d8bf958e5233c8a8197371a61b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a22d02dac72fb784fd5005f5996979c95" id="r_a22d02dac72fb784fd5005f5996979c95"><td align="right" class="memItemLeft" valign="top"><a id="a22d02dac72fb784fd5005f5996979c95" name="a22d02dac72fb784fd5005f5996979c95"></a>
+void </td><td class="memItemRight" valign="bottom"><b>xyz2enu_vel</b> (double enu_vel[3], const double xyz_vel[3], const double ref_lla[3])</td></tr>
+<tr class="separator:a22d02dac72fb784fd5005f5996979c95"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8edef1de7792fe2445e09bef78f57897" id="r_a8edef1de7792fe2445e09bef78f57897"><td align="right" class="memItemLeft" valign="top"><a id="a8edef1de7792fe2445e09bef78f57897" name="a8edef1de7792fe2445e09bef78f57897"></a>
+void </td><td class="memItemRight" valign="bottom"><b>enu2xyz_vel</b> (double xyz_vel[3], const double enu_vel[3], const double ref_lla[3])</td></tr>
+<tr class="separator:a8edef1de7792fe2445e09bef78f57897"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8ad22c10061f580040380f69e0dab0b8" id="r_a8ad22c10061f580040380f69e0dab0b8"><td align="right" class="memItemLeft" valign="top"><a id="a8ad22c10061f580040380f69e0dab0b8" name="a8ad22c10061f580040380f69e0dab0b8"></a>
+void </td><td class="memItemRight" valign="bottom"><b>xyz2enu_cov</b> (double enu_Cov[3][3], const double xyz_Cov[3][3], const double ref_lla[3])</td></tr>
+<tr class="separator:a8ad22c10061f580040380f69e0dab0b8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60c65733c06fdd5f1d6663f3e40e3134" id="r_a60c65733c06fdd5f1d6663f3e40e3134"><td align="right" class="memItemLeft" valign="top"><a id="a60c65733c06fdd5f1d6663f3e40e3134" name="a60c65733c06fdd5f1d6663f3e40e3134"></a>
+void </td><td class="memItemRight" valign="bottom"><b>xyz2enu_cov</b> (double enu_cov[9], const double xyz_cov[9], const double ref_lla[3])</td></tr>
+<tr class="separator:a60c65733c06fdd5f1d6663f3e40e3134"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b464f9ddb1cee4e5bc0f91b2147f085" id="r_a7b464f9ddb1cee4e5bc0f91b2147f085"><td align="right" class="memItemLeft" valign="top"><a id="a7b464f9ddb1cee4e5bc0f91b2147f085" name="a7b464f9ddb1cee4e5bc0f91b2147f085"></a>
+void </td><td class="memItemRight" valign="bottom"><b>enu2xyz_cov</b> (double xyz_Cov[3][3], const double enu_Cov[3][3], const double ref_lla[3])</td></tr>
+<tr class="separator:a7b464f9ddb1cee4e5bc0f91b2147f085"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abecac4bd42d83dad5c841eb83ced5590" id="r_abecac4bd42d83dad5c841eb83ced5590"><td align="right" class="memItemLeft" valign="top"><a id="abecac4bd42d83dad5c841eb83ced5590" name="abecac4bd42d83dad5c841eb83ced5590"></a>
+void </td><td class="memItemRight" valign="bottom"><b>enu2xyz_cov</b> (double xyz_cov[9], const double enu_cov[9], const double ref_lla[3])</td></tr>
+<tr class="separator:abecac4bd42d83dad5c841eb83ced5590"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Primary class for wgs_conversions </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/<a class="el" href="rfly__wgs84_8h_source.html">rfly_wgs84.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

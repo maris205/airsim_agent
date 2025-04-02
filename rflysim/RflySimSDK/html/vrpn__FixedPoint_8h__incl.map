@@ -1,0 +1,9 @@
+<map id="simulink/vrpn/vrpn_FixedPoint.h" name="simulink/vrpn/vrpn_FixedPoint.h">
+<area shape="rect" id="Node000001" title="Header" alt="" coords="54,5,181,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Types_8h_source.html" title=" " alt="" coords="16,96,115,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,50,84,84,80,81,102,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="139,96,203,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,47,156,81,152,84,129,50"/>
+<area shape="rect" id="Node000003" href="$vrpn__Configure_8h_source.html" title=" " alt="" coords="5,171,126,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,123,68,155,63,155,63,123"/>
+</map>

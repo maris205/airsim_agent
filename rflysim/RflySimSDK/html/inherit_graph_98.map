@@ -1,0 +1,15 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,132,62,159"/>
+<area shape="rect" id="Node000001" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1AttTypeMask.html" title="AttTypeMask结构体类" alt="" coords="113,5,211,32"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="48,117,73,79,108,42,125,30,128,35,111,46,77,83,52,120"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PosTypeMask.html" title="PosTypeMask结构体类" alt="" coords="110,56,214,83"/>
+<area shape="poly" id="edge10_Node000000_Node000002" title=" " alt="" coords="64,121,108,92,130,81,132,85,111,97,67,125"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1fifo.html" title="fifo结构体类" alt="" coords="142,107,182,133"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="76,134,141,121,142,126,77,140"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1fifo.html" title="MAVLink初始化类" alt="" coords="142,157,182,184"/>
+<area shape="poly" id="edge12_Node000000_Node000004" title=" " alt="" coords="77,151,142,164,141,170,76,156"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1fifo.html" title="用于MAVLink消息处理的先进先出(FIFO)缓冲区类。 define a class for MAVLink initialization" alt="" coords="142,208,182,235"/>
+<area shape="poly" id="edge13_Node000000_Node000005" title=" " alt="" coords="67,165,111,194,143,210,141,215,108,198,64,170"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1fifo.html" title="fifo结构体类。用于MAVLink初始化" alt="" coords="142,259,182,285"/>
+<area shape="poly" id="edge14_Node000000_Node000006" title=" " alt="" coords="52,171,77,208,111,245,143,263,141,268,108,249,73,211,48,174"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Recv30100Loop" name="Recv30100Loop">
+<area shape="rect" id="Node000001" title="线程的主循环，用于接收30100端口的数据并根据不同的数据类型执行相应处理。" alt="" coords="144,5,259,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5" title="用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。" alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,21,96,21,96,16,128,16"/>
+</map>

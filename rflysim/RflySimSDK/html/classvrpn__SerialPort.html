@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_SerialPort类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn__SerialPort-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_SerialPort类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>A simple class wrapping the functionality of <a class="el" href="vrpn__Serial_8h.html" title="vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system...">vrpn_Serial.h</a> with RAII, object-orientation, and optional STL types  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__SerialPort_8h_source.html">vrpn_SerialPort.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1AlreadyOpen.html">AlreadyOpen</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1CloseFailure.html">CloseFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1DrainFailure.html">DrainFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1FlushFailure.html">FlushFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1OpenFailure.html">OpenFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1ReadFailure.html">ReadFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1RTSFailure.html">RTSFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__SerialPort_1_1WriteFailure.html">WriteFailure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a709e4152836fea582f337a8e40ea69db" id="r_a709e4152836fea582f337a8e40ea69db"><td align="right" class="memItemLeft" valign="top"><a id="a709e4152836fea582f337a8e40ea69db" name="a709e4152836fea582f337a8e40ea69db"></a>
+typedef int </td><td class="memItemRight" valign="bottom"><b>file_handle_type</b></td></tr>
+<tr class="separator:a709e4152836fea582f337a8e40ea69db"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af2ba886aa91ff42b725db9ced9eb1404" id="r_af2ba886aa91ff42b725db9ced9eb1404"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af2ba886aa91ff42b725db9ced9eb1404">vrpn_SerialPort</a> (const char *portname, long baud, int charsize=8, vrpn_SER_PARITY parity=vrpn_SER_PARITY_NONE)</td></tr>
+<tr class="memdesc:af2ba886aa91ff42b725db9ced9eb1404"><td class="mdescLeft"> </td><td class="mdescRight">Construct and open port  <br/></td></tr>
+<tr class="separator:af2ba886aa91ff42b725db9ced9eb1404"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af983c8844f2ed2adadadfc42b031b0ba" id="r_af983c8844f2ed2adadadfc42b031b0ba"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af983c8844f2ed2adadadfc42b031b0ba">vrpn_SerialPort</a> ()</td></tr>
+<tr class="memdesc:af983c8844f2ed2adadadfc42b031b0ba"><td class="mdescLeft"> </td><td class="mdescRight">Construct without opening  <br/></td></tr>
+<tr class="separator:af983c8844f2ed2adadadfc42b031b0ba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5239b726196382d0646b0d54c507d6fb" id="r_a5239b726196382d0646b0d54c507d6fb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5239b726196382d0646b0d54c507d6fb">~vrpn_SerialPort</a> ()</td></tr>
+<tr class="memdesc:a5239b726196382d0646b0d54c507d6fb"><td class="mdescLeft"> </td><td class="mdescRight">Destructor - closes port if open.  <br/></td></tr>
+<tr class="separator:a5239b726196382d0646b0d54c507d6fb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Open/Close Methods</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Open serial port</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="vrpn__Serial_8h.html#a99e9df68f985355f0cbc05f5a63347b9" title="Open a serial port, given its name and baud rate.">vrpn_open_commport</a> </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1OpenFailure.html">OpenFailure</a>,<a class="el" href="structvrpn__SerialPort_1_1AlreadyOpen.html">AlreadyOpen</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div></td></tr>
+<tr class="memitem:a4577feb1f712f60aaaf8cbd860767941" id="r_a4577feb1f712f60aaaf8cbd860767941"><td align="right" class="memItemLeft" valign="top"><a id="a4577feb1f712f60aaaf8cbd860767941" name="a4577feb1f712f60aaaf8cbd860767941"></a>
+void </td><td class="memItemRight" valign="bottom"><b>open</b> (const char *portname, long baud, int charsize=8, vrpn_SER_PARITY parity=vrpn_SER_PARITY_NONE)</td></tr>
+<tr class="separator:a4577feb1f712f60aaaf8cbd860767941"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36b8d0c967908dd6ee99056925b94b47" id="r_a36b8d0c967908dd6ee99056925b94b47"><td align="right" class="memItemLeft" valign="top"><a id="a36b8d0c967908dd6ee99056925b94b47" name="a36b8d0c967908dd6ee99056925b94b47"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>is_open</b> () const</td></tr>
+<tr class="separator:a36b8d0c967908dd6ee99056925b94b47"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5ae591df94fc66ccb85cbb6565368bca" id="r_a5ae591df94fc66ccb85cbb6565368bca"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ae591df94fc66ccb85cbb6565368bca">close</a> ()</td></tr>
+<tr class="memdesc:a5ae591df94fc66ccb85cbb6565368bca"><td class="mdescLeft"> </td><td class="mdescRight">Close the serial port.  <br/></td></tr>
+<tr class="separator:a5ae591df94fc66ccb85cbb6565368bca"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Write</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section return"><dt>返回</dt><dd>number of bytes written </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1WriteFailure.html">WriteFailure</a>,<a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div></td></tr>
+<tr class="memitem:a7b180f3f18e509016e8509104dffcc64" id="r_a7b180f3f18e509016e8509104dffcc64"><td align="right" class="memItemLeft" valign="top"><a id="a7b180f3f18e509016e8509104dffcc64" name="a7b180f3f18e509016e8509104dffcc64"></a>
+int </td><td class="memItemRight" valign="bottom"><b>write</b> (std::string const &amp;buffer)</td></tr>
+<tr class="separator:a7b180f3f18e509016e8509104dffcc64"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7ba937bab8aa1c13037f98ecb84b4a40" id="r_a7ba937bab8aa1c13037f98ecb84b4a40"><td align="right" class="memItemLeft" valign="top"><a id="a7ba937bab8aa1c13037f98ecb84b4a40" name="a7ba937bab8aa1c13037f98ecb84b4a40"></a>
+int </td><td class="memItemRight" valign="bottom"><b>write</b> (const unsigned char *buffer, int bytes)</td></tr>
+<tr class="separator:a7ba937bab8aa1c13037f98ecb84b4a40"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Read</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Read available characters from input buffer, up to indicated count.</p>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1ReadFailure.html">ReadFailure</a>,<a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div></td></tr>
+<tr class="memitem:a51e99ff0cb6b7a03c979ccf2fc15f709" id="r_a51e99ff0cb6b7a03c979ccf2fc15f709"><td align="right" class="memItemLeft" valign="top"><a id="a51e99ff0cb6b7a03c979ccf2fc15f709" name="a51e99ff0cb6b7a03c979ccf2fc15f709"></a>
+int </td><td class="memItemRight" valign="bottom"><b>read_available_characters</b> (unsigned char *buffer, int count)</td></tr>
+<tr class="separator:a51e99ff0cb6b7a03c979ccf2fc15f709"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adebc52575ccfceb357c33b5e3a088492" id="r_adebc52575ccfceb357c33b5e3a088492"><td align="right" class="memItemLeft" valign="top">std::string </td><td class="memItemRight" valign="bottom"><a class="el" href="#adebc52575ccfceb357c33b5e3a088492">read_available_characters</a> (int count=-1)</td></tr>
+<tr class="memdesc:adebc52575ccfceb357c33b5e3a088492"><td class="mdescLeft"> </td><td class="mdescRight">Read available characters from input buffer, up to indicated count (or -1 for no limit)  <br/></td></tr>
+<tr class="separator:adebc52575ccfceb357c33b5e3a088492"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a092f1ce7c87d6e706f37a49583eb56f2" id="r_a092f1ce7c87d6e706f37a49583eb56f2"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a092f1ce7c87d6e706f37a49583eb56f2">read_available_characters</a> (unsigned char *buffer, int count, struct timeval &amp;timeout)</td></tr>
+<tr class="memdesc:a092f1ce7c87d6e706f37a49583eb56f2"><td class="mdescLeft"> </td><td class="mdescRight">Read available characters from input buffer, and wait up to the indicated timeout for those remaining, up to indicated count.  <br/></td></tr>
+<tr class="separator:a092f1ce7c87d6e706f37a49583eb56f2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad9ac73915f3d61d24f06a4924396e08e" id="r_ad9ac73915f3d61d24f06a4924396e08e"><td align="right" class="memItemLeft" valign="top">std::string </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ac73915f3d61d24f06a4924396e08e">read_available_characters</a> (int count, struct timeval &amp;timeout)</td></tr>
+<tr class="memdesc:ad9ac73915f3d61d24f06a4924396e08e"><td class="mdescLeft"> </td><td class="mdescRight">Read available characters from input buffer, and wait up to the indicated timeout for those remaining, up to indicated count.  <br/></td></tr>
+<tr class="separator:ad9ac73915f3d61d24f06a4924396e08e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Buffer manipulation</div></td></tr>
+<tr class="memitem:acb4a29259a5e0ebfdd9ccc8428a54570" id="r_acb4a29259a5e0ebfdd9ccc8428a54570"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#acb4a29259a5e0ebfdd9ccc8428a54570">flush_input_buffer</a> ()</td></tr>
+<tr class="memdesc:acb4a29259a5e0ebfdd9ccc8428a54570"><td class="mdescLeft"> </td><td class="mdescRight">Throw out any characters within the input buffer.  <br/></td></tr>
+<tr class="separator:acb4a29259a5e0ebfdd9ccc8428a54570"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a142fcb0c2ad0d8122ce801a2331886f3" id="r_a142fcb0c2ad0d8122ce801a2331886f3"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a142fcb0c2ad0d8122ce801a2331886f3">flush_output_buffer</a> ()</td></tr>
+<tr class="memdesc:a142fcb0c2ad0d8122ce801a2331886f3"><td class="mdescLeft"> </td><td class="mdescRight">Throw out any characters (do not send) within the output buffer.  <br/></td></tr>
+<tr class="separator:a142fcb0c2ad0d8122ce801a2331886f3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a28db6e8ad5b91cf71ade8929d5c4df9d" id="r_a28db6e8ad5b91cf71ade8929d5c4df9d"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a28db6e8ad5b91cf71ade8929d5c4df9d">drain_output_buffer</a> ()</td></tr>
+<tr class="memdesc:a28db6e8ad5b91cf71ade8929d5c4df9d"><td class="mdescLeft"> </td><td class="mdescRight">Wait until all of the characters in the output buffer are sent, then return.  <br/></td></tr>
+<tr class="separator:a28db6e8ad5b91cf71ade8929d5c4df9d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">RTS</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Set and clear functions for the RTS ("ready to send") hardware flow- control bit.</p>
+<p>These are used on a port that is already open. Some devices (like the Ascension Flock of Birds) use this to reset the device. </p><dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1RTSFailure.html">RTSFailure</a>,<a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div></td></tr>
+<tr class="memitem:ae4b113e955c9d7360d440a7f2c5894b8" id="r_ae4b113e955c9d7360d440a7f2c5894b8"><td align="right" class="memItemLeft" valign="top"><a id="ae4b113e955c9d7360d440a7f2c5894b8" name="ae4b113e955c9d7360d440a7f2c5894b8"></a>
+void </td><td class="memItemRight" valign="bottom"><b>set_rts</b> ()</td></tr>
+<tr class="separator:ae4b113e955c9d7360d440a7f2c5894b8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a01738931863c8498edcab855ff6f0110" id="r_a01738931863c8498edcab855ff6f0110"><td align="right" class="memItemLeft" valign="top"><a id="a01738931863c8498edcab855ff6f0110" name="a01738931863c8498edcab855ff6f0110"></a>
+void </td><td class="memItemRight" valign="bottom"><b>clear_rts</b> ()</td></tr>
+<tr class="separator:a01738931863c8498edcab855ff6f0110"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac4808d4828fa8951259049dfb0a40389" id="r_ac4808d4828fa8951259049dfb0a40389"><td align="right" class="memItemLeft" valign="top"><a id="ac4808d4828fa8951259049dfb0a40389" name="ac4808d4828fa8951259049dfb0a40389"></a>
+void </td><td class="memItemRight" valign="bottom"><b>assign_rts</b> (bool set)</td></tr>
+<tr class="separator:ac4808d4828fa8951259049dfb0a40389"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A simple class wrapping the functionality of <a class="el" href="vrpn__Serial_8h.html" title="vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system...">vrpn_Serial.h</a> with RAII, object-orientation, and optional STL types </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af2ba886aa91ff42b725db9ced9eb1404" name="af2ba886aa91ff42b725db9ced9eb1404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ba886aa91ff42b725db9ced9eb1404">◆ </a></span>vrpn_SerialPort() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__SerialPort.html">vrpn_SerialPort</a> </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>portname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">long</td> <td class="paramname"><span class="paramname"><em>baud</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>charsize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">8</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_SER_PARITY</td> <td class="paramname"><span class="paramname"><em>parity</em></span><span class="paramdefsep"> = </span><span class="paramdefval">vrpn_SER_PARITY_NONE</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Construct and open port </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="vrpn__Serial_8h.html#a99e9df68f985355f0cbc05f5a63347b9" title="Open a serial port, given its name and baud rate.">vrpn_open_commport</a> </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1OpenFailure.html">OpenFailure</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="af983c8844f2ed2adadadfc42b031b0ba" name="af983c8844f2ed2adadadfc42b031b0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af983c8844f2ed2adadadfc42b031b0ba">◆ </a></span>vrpn_SerialPort() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__SerialPort.html">vrpn_SerialPort</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Construct without opening </p>
+</div>
+</div>
+<a id="a5239b726196382d0646b0d54c507d6fb" name="a5239b726196382d0646b0d54c507d6fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5239b726196382d0646b0d54c507d6fb">◆ </a></span>~vrpn_SerialPort()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">~<a class="el" href="classvrpn__SerialPort.html">vrpn_SerialPort</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor - closes port if open. </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5ae591df94fc66ccb85cbb6565368bca" name="a5ae591df94fc66ccb85cbb6565368bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae591df94fc66ccb85cbb6565368bca">◆ </a></span>close()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void close </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Close the serial port. </p>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a>,<a class="el" href="structvrpn__SerialPort_1_1CloseFailure.html">CloseFailure</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a28db6e8ad5b91cf71ade8929d5c4df9d" name="a28db6e8ad5b91cf71ade8929d5c4df9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28db6e8ad5b91cf71ade8929d5c4df9d">◆ </a></span>drain_output_buffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void drain_output_buffer </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Wait until all of the characters in the output buffer are sent, then return. </p>
+</div>
+</div>
+<a id="acb4a29259a5e0ebfdd9ccc8428a54570" name="acb4a29259a5e0ebfdd9ccc8428a54570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4a29259a5e0ebfdd9ccc8428a54570">◆ </a></span>flush_input_buffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void flush_input_buffer </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Throw out any characters within the input buffer. </p>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1FlushFailure.html">FlushFailure</a>,<a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a142fcb0c2ad0d8122ce801a2331886f3" name="a142fcb0c2ad0d8122ce801a2331886f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142fcb0c2ad0d8122ce801a2331886f3">◆ </a></span>flush_output_buffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void flush_output_buffer </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Throw out any characters (do not send) within the output buffer. </p>
+<dl class="exception"><dt>异常</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="structvrpn__SerialPort_1_1FlushFailure.html">FlushFailure</a>,<a class="el" href="structvrpn__SerialPort_1_1NotOpen.html">NotOpen</a></td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="ad9ac73915f3d61d24f06a4924396e08e" name="ad9ac73915f3d61d24f06a4924396e08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ac73915f3d61d24f06a4924396e08e">◆ </a></span>read_available_characters() <span class="overload">[1/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">std::string read_available_characters </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">struct timeval &amp;</td> <td class="paramname"><span class="paramname"><em>timeout</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Read available characters from input buffer, and wait up to the indicated timeout for those remaining, up to indicated count. </p>
+</div>
+</div>
+<a id="adebc52575ccfceb357c33b5e3a088492" name="adebc52575ccfceb357c33b5e3a088492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebc52575ccfceb357c33b5e3a088492">◆ </a></span>read_available_characters() <span class="overload">[2/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">std::string read_available_characters </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>count</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Read available characters from input buffer, up to indicated count (or -1 for no limit) </p>
+</div>
+</div>
+<a id="a092f1ce7c87d6e706f37a49583eb56f2" name="a092f1ce7c87d6e706f37a49583eb56f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092f1ce7c87d6e706f37a49583eb56f2">◆ </a></span>read_available_characters() <span class="overload">[3/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int read_available_characters </td>
+<td>(</td>
+<td class="paramtype">unsigned char *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">struct timeval &amp;</td> <td class="paramname"><span class="paramname"><em>timeout</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Read available characters from input buffer, and wait up to the indicated timeout for those remaining, up to indicated count. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__SerialPort_8h_source.html">vrpn_SerialPort.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: TCPServer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>RJ45_px6x</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer.html">TCPServer</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="#pub-static-attribs">静态 Public 属性</a> |
+<a href="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">TCPServer类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>TCPServer类用于本机作为TCP服务端，与继电器端建立连接，对其进行连接模式的查询和修改  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化TCP服务端模式相关信息，并尝试绑定指定的IP和端口。  <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d0dff85feb292a87063fd942a2f4e59" id="r_a5d0dff85feb292a87063fd942a2f4e59"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d0dff85feb292a87063fd942a2f4e59">get_local_ip</a> (self)</td></tr>
+<tr class="memdesc:a5d0dff85feb292a87063fd942a2f4e59"><td class="mdescLeft"> </td><td class="mdescRight">获取本机IP地址  <br/></td></tr>
+<tr class="separator:a5d0dff85feb292a87063fd942a2f4e59"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9795987b82344381da43099564d2503c" id="r_a9795987b82344381da43099564d2503c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9795987b82344381da43099564d2503c">setup_server</a> (self)</td></tr>
+<tr class="memdesc:a9795987b82344381da43099564d2503c"><td class="mdescLeft"> </td><td class="mdescRight">设置TCP服务器，绑定地址和端口，并等待客户端连接。  <br/></td></tr>
+<tr class="separator:a9795987b82344381da43099564d2503c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad249892ece8b04194191f882a6209158" id="r_ad249892ece8b04194191f882a6209158"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad249892ece8b04194191f882a6209158">print_current_mode</a> (self)</td></tr>
+<tr class="memdesc:ad249892ece8b04194191f882a6209158"><td class="mdescLeft"> </td><td class="mdescRight">打印当前连接模式  <br/></td></tr>
+<tr class="separator:ad249892ece8b04194191f882a6209158"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaae43ff3a5ffab1005078904083a9faf" id="r_aaae43ff3a5ffab1005078904083a9faf"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaae43ff3a5ffab1005078904083a9faf">change_connection_mode</a> (self)</td></tr>
+<tr class="memdesc:aaae43ff3a5ffab1005078904083a9faf"><td class="mdescLeft"> </td><td class="mdescRight">修改连接模式，允许用户通过输入选择新的模式，并发送指令给设备。  <br/></td></tr>
+<tr class="separator:aaae43ff3a5ffab1005078904083a9faf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4cb7c8d7edb1d418c7a78c6a818f8cb8" id="r_a4cb7c8d7edb1d418c7a78c6a818f8cb8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cb7c8d7edb1d418c7a78c6a818f8cb8">set_default_cleanup</a> (self)</td></tr>
+<tr class="memdesc:a4cb7c8d7edb1d418c7a78c6a818f8cb8"><td class="mdescLeft"> </td><td class="mdescRight">释放资源，关闭套接字连接。  <br/></td></tr>
+<tr class="separator:a4cb7c8d7edb1d418c7a78c6a818f8cb8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afa34073c0d15fad8ab199203abb7f530" id="r_afa34073c0d15fad8ab199203abb7f530"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afa34073c0d15fad8ab199203abb7f530">set_default_mode</a> (self)</td></tr>
+<tr class="memdesc:afa34073c0d15fad8ab199203abb7f530"><td class="mdescLeft"> </td><td class="mdescRight">将网络连接方式设置为默认的UDP_SERVER_MODE。  <br/></td></tr>
+<tr class="separator:afa34073c0d15fad8ab199203abb7f530"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa450621a8a5ebeb049fd891838880eb9" id="r_aa450621a8a5ebeb049fd891838880eb9"><td align="right" class="memItemLeft" valign="top"><a id="aa450621a8a5ebeb049fd891838880eb9" name="aa450621a8a5ebeb049fd891838880eb9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>current_mode</b></td></tr>
+<tr class="separator:aa450621a8a5ebeb049fd891838880eb9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec8b6ac2beac788d09fb09b047ac8cec" id="r_aec8b6ac2beac788d09fb09b047ac8cec"><td align="right" class="memItemLeft" valign="top"><a id="aec8b6ac2beac788d09fb09b047ac8cec" name="aec8b6ac2beac788d09fb09b047ac8cec"></a>
+ </td><td class="memItemRight" valign="bottom"><b>local_ip</b></td></tr>
+<tr class="separator:aec8b6ac2beac788d09fb09b047ac8cec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a59664d862066a97cfb4d0333453c53f9" id="r_a59664d862066a97cfb4d0333453c53f9"><td align="right" class="memItemLeft" valign="top"><a id="a59664d862066a97cfb4d0333453c53f9" name="a59664d862066a97cfb4d0333453c53f9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>HOST</b></td></tr>
+<tr class="separator:a59664d862066a97cfb4d0333453c53f9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6dde884e19bdc8f342ffec8fc17e7c91" id="r_a6dde884e19bdc8f342ffec8fc17e7c91"><td align="right" class="memItemLeft" valign="top"><a id="a6dde884e19bdc8f342ffec8fc17e7c91" name="a6dde884e19bdc8f342ffec8fc17e7c91"></a>
+ </td><td class="memItemRight" valign="bottom"><b>PORT</b></td></tr>
+<tr class="separator:a6dde884e19bdc8f342ffec8fc17e7c91"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad57a297a70abef19777c1472f3a8f2d3" id="r_ad57a297a70abef19777c1472f3a8f2d3"><td align="right" class="memItemLeft" valign="top"><a id="ad57a297a70abef19777c1472f3a8f2d3" name="ad57a297a70abef19777c1472f3a8f2d3"></a>
+ </td><td class="memItemRight" valign="bottom"><b>BUFSIZ</b></td></tr>
+<tr class="separator:ad57a297a70abef19777c1472f3a8f2d3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace33c47b79be058c9070ccab641d41df" id="r_ace33c47b79be058c9070ccab641d41df"><td align="right" class="memItemLeft" valign="top"><a id="ace33c47b79be058c9070ccab641d41df" name="ace33c47b79be058c9070ccab641d41df"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ADDR</b></td></tr>
+<tr class="separator:ace33c47b79be058c9070ccab641d41df"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f566247781387ee74ad0608236a5b38" id="r_a5f566247781387ee74ad0608236a5b38"><td align="right" class="memItemLeft" valign="top"><a id="a5f566247781387ee74ad0608236a5b38" name="a5f566247781387ee74ad0608236a5b38"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tcpSerSock</b></td></tr>
+<tr class="separator:a5f566247781387ee74ad0608236a5b38"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a61ce85d94ac44d5d61482cbf5d3c89ee" id="r_a61ce85d94ac44d5d61482cbf5d3c89ee"><td align="right" class="memItemLeft" valign="top"><a id="a61ce85d94ac44d5d61482cbf5d3c89ee" name="a61ce85d94ac44d5d61482cbf5d3c89ee"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tcpCliSock</b></td></tr>
+<tr class="separator:a61ce85d94ac44d5d61482cbf5d3c89ee"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a3ae1ddd5d8549322f162b5a2fb6c5d64" id="r_a3ae1ddd5d8549322f162b5a2fb6c5d64"><td align="right" class="memItemLeft" valign="top"><a id="a3ae1ddd5d8549322f162b5a2fb6c5d64" name="a3ae1ddd5d8549322f162b5a2fb6c5d64"></a>
+int </td><td class="memItemRight" valign="bottom"><b>TCP_SERVER_MODE</b> = 0</td></tr>
+<tr class="separator:a3ae1ddd5d8549322f162b5a2fb6c5d64"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0478c5b39308667f7519be3f27b68242" id="r_a0478c5b39308667f7519be3f27b68242"><td align="right" class="memItemLeft" valign="top"><a id="a0478c5b39308667f7519be3f27b68242" name="a0478c5b39308667f7519be3f27b68242"></a>
+int </td><td class="memItemRight" valign="bottom"><b>TCP_CLIENT_MODE</b> = 1</td></tr>
+<tr class="separator:a0478c5b39308667f7519be3f27b68242"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac66c0ecace64bbbf08b6b6df755f0e08" id="r_ac66c0ecace64bbbf08b6b6df755f0e08"><td align="right" class="memItemLeft" valign="top"><a id="ac66c0ecace64bbbf08b6b6df755f0e08" name="ac66c0ecace64bbbf08b6b6df755f0e08"></a>
+int </td><td class="memItemRight" valign="bottom"><b>UDP_CLIENT_MODE</b> = 2</td></tr>
+<tr class="separator:ac66c0ecace64bbbf08b6b6df755f0e08"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afbdc7c9253798e3b80dff6da4bca3ed1" id="r_afbdc7c9253798e3b80dff6da4bca3ed1"><td align="right" class="memItemLeft" valign="top"><a id="afbdc7c9253798e3b80dff6da4bca3ed1" name="afbdc7c9253798e3b80dff6da4bca3ed1"></a>
+int </td><td class="memItemRight" valign="bottom"><b>UDP_SERVER_MODE</b> = 3</td></tr>
+<tr class="separator:afbdc7c9253798e3b80dff6da4bca3ed1"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>TCPServer类用于本机作为TCP服务端，与继电器端建立连接，对其进行连接模式的查询和修改 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化TCP服务端模式相关信息，并尝试绑定指定的IP和端口。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer_abdd362d5f799ad16b5d6700efe590290_cgraph.svg" width="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aaae43ff3a5ffab1005078904083a9faf" name="aaae43ff3a5ffab1005078904083a9faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae43ff3a5ffab1005078904083a9faf">◆ </a></span>change_connection_mode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">change_connection_mode </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>修改连接模式，允许用户通过输入选择新的模式，并发送指令给设备。 </p>
+<ul>
+<li><a class="anchor" id="change_connection_mode"></a></li>
+</ul>
+<pre class="fragment">修改连接模式，允许用户选择模式</pre> <div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer_aaae43ff3a5ffab1005078904083a9faf_cgraph.svg" width="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a5d0dff85feb292a87063fd942a2f4e59" name="a5d0dff85feb292a87063fd942a2f4e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0dff85feb292a87063fd942a2f4e59">◆ </a></span>get_local_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_local_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取本机IP地址 </p>
+<ul>
+<li><a class="anchor" id="get_local_ip"></a> <dl class="section return"><dt>返回</dt><dd>返回本机的局域网IP地址 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer_a5d0dff85feb292a87063fd942a2f4e59_icgraph.svg" width="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad249892ece8b04194191f882a6209158" name="ad249892ece8b04194191f882a6209158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad249892ece8b04194191f882a6209158">◆ </a></span>print_current_mode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">print_current_mode </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>打印当前连接模式 </p>
+<ul>
+<li><a class="anchor" id="print_current_mode"></a></li>
+</ul>
+<pre class="fragment">打印当前连接模式</pre> <div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer_ad249892ece8b04194191f882a6209158_icgraph.svg" width="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a4cb7c8d7edb1d418c7a78c6a818f8cb8" name="a4cb7c8d7edb1d418c7a78c6a818f8cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb7c8d7edb1d418c7a78c6a818f8cb8">◆ </a></span>set_default_cleanup()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">set_default_cleanup </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>释放资源，关闭套接字连接。 </p>
+<ul>
+<li><a class="anchor" id="set_default_cleanup"></a></li>
+</ul>
+<pre class="fragment">释放资源，关闭套接字</pre>
+</div>
+</div>
+<a id="afa34073c0d15fad8ab199203abb7f530" name="afa34073c0d15fad8ab199203abb7f530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa34073c0d15fad8ab199203abb7f530">◆ </a></span>set_default_mode()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">set_default_mode </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将网络连接方式设置为默认的UDP_SERVER_MODE。 </p>
+<ul>
+<li><a class="anchor" id="set_default_mode"></a></li>
+</ul>
+<pre class="fragment">默认修改网络连接方式为UDP_SERVER_MODE</pre>
+</div>
+</div>
+<a id="a9795987b82344381da43099564d2503c" name="a9795987b82344381da43099564d2503c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9795987b82344381da43099564d2503c">◆ </a></span>setup_server()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setup_server </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置TCP服务器，绑定地址和端口，并等待客户端连接。 </p>
+<ul>
+<li><a class="anchor" id="setup_server"></a></li>
+</ul>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer_a9795987b82344381da43099564d2503c_icgraph.svg" width="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="RJ45__px6x_8py.html">RJ45_px6x.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

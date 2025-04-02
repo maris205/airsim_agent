@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Tracker_Filter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Tracker_Filter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vrpn__Tracker__Filter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Internal Includes</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include "quat.h"</span> <span class="comment">// for q_vec_type</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include "vrpn_Tracker.h"</span> <span class="comment">// for vrpn_Tracker</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include "<a class="code" href="vrpn__OneEuroFilter_8h.html">vrpn_OneEuroFilter.h</a>"</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00030">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__FilterOneEuro.html">   30</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Tracker__FilterOneEuro.html">vrpn_Tracker_FilterOneEuro</a>: <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Tracker.html">vrpn_Tracker</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="comment">// name is the name that the filtered reports go out under</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> <span class="comment">// trackercon is the server connection to use to send filtered reports on</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> <span class="comment">// listen_tracker_name is the name of the tracker we listen to to filter</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> <span class="comment">//    If the tracker should use the server connection, then put * in</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> <span class="comment">//    front of the name.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> <span class="comment">// channels tells how many channels from the listening tracker to</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> <span class="comment">//    filter (reports on other channels are ignored by this tracker)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> <span class="comment">// The other parameters are passed to each One-Euro filter.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> <a class="code hl_class" href="classvrpn__Tracker__FilterOneEuro.html">vrpn_Tracker_FilterOneEuro</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> * trackercon,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *listen_tracker_name,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keywordtype">unsigned</span> channels, vrpn_float64 vecMinCutoff = 1.15,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      vrpn_float64 vecBeta = 0.5, vrpn_float64 vecDerivativeCutoff = 1.2,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      vrpn_float64 quatMinCutoff = 1.5, vrpn_float64 quatBeta = 0.5,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      vrpn_float64 quatDerivativeCutoff = 1.2);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> <a class="code hl_class" href="classvrpn__Tracker__FilterOneEuro.html">~vrpn_Tracker_FilterOneEuro</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__FilterOneEuro.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">   48</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Tracker__FilterOneEuro.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> <span class="keywordtype">int</span>  d_channels;                    <span class="comment">// How many channels on our tracker?</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> <a class="code hl_class" href="classvrpn__OneEuroFilter.html">vrpn_OneEuroFilterVec</a> *d_filters;   <span class="comment">// Set of position filters, one/channel</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> <a class="code hl_class" href="classvrpn__OneEuroFilter.html">vrpn_OneEuroFilterQuat</a> *d_qfilters; <span class="comment">// Set of orientation filters, one/channel</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> <span class="keyword">struct </span>timeval  *d_last_report_times;     <span class="comment">// Last time of report for each tracker.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> <a class="code hl_class" href="classvrpn__Tracker__Remote.html">vrpn_Tracker_Remote</a>   *d_listen_tracker;  <span class="comment">// Tracker we get our reports from</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="comment">// Callback handler to deal with getting messages from the tracker we're</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> <span class="comment">// listening to.  It filters them and then sends them on.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> <span class="keyword">static</span> <span class="keywordtype">void</span> VRPN_CALLBACK handle_tracker_update(<span class="keywordtype">void</span> *userdata, <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__TRACKERCB.html">vrpn_TRACKERCB</a> info);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// of the specified sensors from the specified tracker.  If there are no orientation</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// velocity reports, use the two most-recent poses to estimate angular velocity and</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// use that to predict.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//  Note: This class does not try to listen for angular acceleration.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//  Note: This class does not try to forward-predict position, it leaves that</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// part of the tracker message alone.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00071">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__DeadReckoning__Rotation.html">   71</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Tracker__DeadReckoning__Rotation.html">vrpn_Tracker_DeadReckoning_Rotation</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Tracker__Server.html">vrpn_Tracker_Server</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <a class="code hl_class" href="classvrpn__Tracker__DeadReckoning__Rotation.html">vrpn_Tracker_DeadReckoning_Rotation</a>(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        std::string myName      <span class="comment">//&lt; Name of the tracking device we're exposing</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        , <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c    <span class="comment">//&lt; Connection to use to send reports on</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        , std::string origTrackerName  <span class="comment">//&lt; Name of tracker to predict (*Name for one using our connection, Name@URL for one we should connect to)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        , vrpn_int32 numSensors = 1    <span class="comment">//&lt; How many sensors to predict for?</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        , vrpn_float64 predictionTime = 1.0 / 60.0   <span class="comment">//&lt; How far to predict into the future?</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        , <span class="keywordtype">bool</span> estimateVelocity = <span class="keyword">true</span> <span class="comment">//&lt; Should we estimate angular velocity if we don't get it?</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> <span class="comment">//&lt; If false, this is basically just a pass-through filter, but estimating velocity can be choppy.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        );</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> <a class="code hl_class" href="classvrpn__Tracker__DeadReckoning__Rotation.html">~vrpn_Tracker_DeadReckoning_Rotation</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> <span class="comment">// Handle ping/pong requests.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__DeadReckoning__Rotation.html#a896df4ffe3f986ad843e4d191cd712b3">   88</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Tracker__DeadReckoning__Rotation.html#a896df4ffe3f986ad843e4d191cd712b3">mainloop</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> <span class="comment">// prints an error message and returns an integer indicating what happened on failure.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__DeadReckoning__Rotation.html#a40180e42e1cf6c3fbbb74f44cb78ca67">   92</a></span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Tracker__DeadReckoning__Rotation.html#a40180e42e1cf6c3fbbb74f44cb78ca67">test</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    vrpn_float64    d_predictionTime;   <span class="comment">//&lt; How far ahead to predict rotation</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    vrpn_int32      d_numSensors;       <span class="comment">//&lt; How many sensors to predict for?</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> <a class="code hl_class" href="classvrpn__Tracker__Remote.html">vrpn_Tracker_Remote</a> *d_origTracker; <span class="comment">//&lt; Original tracker we're predicting for</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00100">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structvrpn__Tracker__DeadReckoning__Rotation_1_1RotationState.html">  100</a></span> <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> <span class="keywordtype">bool</span> d_receivedAngularVelocityReport;   <span class="comment">//&lt; If we get these, we don't estimate them</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        vrpn_float64 d_rotationAmount[4];       <span class="comment">//&lt; How far did we rotate in the specified interval</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> <span class="keywordtype">double</span> d_rotationInterval;              <span class="comment">//&lt; Interval over which we rotated</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        vrpn_float64 d_lastPosition[3];         <span class="comment">//&lt; What was our last reported position?</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        vrpn_float64 d_lastOrientation[4];      <span class="comment">//&lt; What was our last orientation?</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> <span class="keyword">struct </span>timeval d_lastReportTime;        <span class="comment">//&lt; When did we receive it?</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    } <a class="code hl_struct" href="structvrpn__Tracker__DeadReckoning__Rotation_1_1RotationState.html">RotationState</a>;</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <a class="code hl_class" href="classvrpn__vector.html">vrpn_vector&lt;RotationState&gt;</a>  d_rotationStates;   <span class="comment">//&lt; State of rotation of each sensor.</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__DeadReckoning__Rotation.html#aa6ea20f9af395e97f547d6c4ca6fa93f">  111</a></span> <span class="keyword">static</span> <span class="keywordtype">void</span> VRPN_CALLBACK <a class="code hl_function" href="classvrpn__Tracker__DeadReckoning__Rotation.html#aa6ea20f9af395e97f547d6c4ca6fa93f">handle_tracker_report</a>(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__TRACKERCB.html">vrpn_TRACKERCB</a> info);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> <span class="keyword">static</span> <span class="keywordtype">void</span> VRPN_CALLBACK handle_tracker_velocity_report(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__TRACKERVELCB.html">vrpn_TRACKERVELCB</a> info);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> <span class="comment">// prediction in the future from the original message by the prediction</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> <span class="comment">// interval.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__DeadReckoning__Rotation.html#adc8bd2f458040c1417798735b2acb526">  119</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Tracker__DeadReckoning__Rotation.html#adc8bd2f458040c1417798735b2acb526">sendNewPrediction</a>(vrpn_int32 sensor);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> <span class="keywordtype">bool</span> d_estimateVelocity;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="aclassvrpn__OneEuroFilter_html"><div class="ttname"><a href="classvrpn__OneEuroFilter.html">vrpn_OneEuroFilter</a></div><div class="ttdef"><b>定义</b> vrpn_OneEuroFilter.h:102</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__DeadReckoning__Rotation_html"><div class="ttname"><a href="classvrpn__Tracker__DeadReckoning__Rotation.html">vrpn_Tracker_DeadReckoning_Rotation</a></div><div class="ttdoc">Use angular velocity reports, if available, to predict the future orientation</div><div class="ttdef"><b>定义</b> vrpn_Tracker_Filter.h:72</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__DeadReckoning__Rotation_html_a40180e42e1cf6c3fbbb74f44cb78ca67"><div class="ttname"><a href="classvrpn__Tracker__DeadReckoning__Rotation.html#a40180e42e1cf6c3fbbb74f44cb78ca67">vrpn_Tracker_DeadReckoning_Rotation::test</a></div><div class="ttdeci">static int test(void)</div><div class="ttdoc">Test the class to make sure it functions as it should. Returns 0 on success,</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__DeadReckoning__Rotation_html_a896df4ffe3f986ad843e4d191cd712b3"><div class="ttname"><a href="classvrpn__Tracker__DeadReckoning__Rotation.html#a896df4ffe3f986ad843e4d191cd712b3">vrpn_Tracker_DeadReckoning_Rotation::mainloop</a></div><div class="ttdeci">void mainloop()</div><div class="ttdoc">This function should be called each time through app mainloop.</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__DeadReckoning__Rotation_html_aa6ea20f9af395e97f547d6c4ca6fa93f"><div class="ttname"><a href="classvrpn__Tracker__DeadReckoning__Rotation.html#aa6ea20f9af395e97f547d6c4ca6fa93f">vrpn_Tracker_DeadReckoning_Rotation::handle_tracker_report</a></div><div class="ttdeci">static void VRPN_CALLBACK handle_tracker_report(void *userdata, const vrpn_TRACKERCB info)</div><div class="ttdoc">Static callback handler for tracker reports and tracker velocity reports</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__DeadReckoning__Rotation_html_adc8bd2f458040c1417798735b2acb526"><div class="ttname"><a href="classvrpn__Tracker__DeadReckoning__Rotation.html#adc8bd2f458040c1417798735b2acb526">vrpn_Tracker_DeadReckoning_Rotation::sendNewPrediction</a></div><div class="ttdeci">void sendNewPrediction(vrpn_int32 sensor)</div><div class="ttdoc">Send a prediction based on the time of the new information; date the</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__FilterOneEuro_html"><div class="ttname"><a href="classvrpn__Tracker__FilterOneEuro.html">vrpn_Tracker_FilterOneEuro</a></div><div class="ttdoc">Tracker filter based on the one-Euro filter by Jan Ciger jan.ciger@reviatech.com</div><div class="ttdef"><b>定义</b> vrpn_Tracker_Filter.h:30</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__FilterOneEuro_html_a5299ecc517aeaf6e61dc5d2c5316b4cb"><div class="ttname"><a href="classvrpn__Tracker__FilterOneEuro.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">vrpn_Tracker_FilterOneEuro::mainloop</a></div><div class="ttdeci">virtual void mainloop()</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__Remote_html"><div class="ttname"><a href="classvrpn__Tracker__Remote.html">vrpn_Tracker_Remote</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker.h:387</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__Server_html"><div class="ttname"><a href="classvrpn__Tracker__Server.html">vrpn_Tracker_Server</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker.h:273</div></div>
+<div class="ttc" id="aclassvrpn__Tracker_html"><div class="ttname"><a href="classvrpn__Tracker.html">vrpn_Tracker</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker.h:49</div></div>
+<div class="ttc" id="aclassvrpn__vector_html"><div class="ttname"><a href="classvrpn__vector.html">vrpn_vector</a></div><div class="ttdef"><b>定义</b> vrpn_Shared.h:552</div></div>
+<div class="ttc" id="astruct__vrpn__TRACKERCB_html"><div class="ttname"><a href="struct__vrpn__TRACKERCB.html">_vrpn_TRACKERCB</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker.h:306</div></div>
+<div class="ttc" id="astruct__vrpn__TRACKERVELCB_html"><div class="ttname"><a href="struct__vrpn__TRACKERVELCB.html">_vrpn_TRACKERVELCB</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker.h:319</div></div>
+<div class="ttc" id="astructvrpn__Tracker__DeadReckoning__Rotation_1_1RotationState_html"><div class="ttname"><a href="structvrpn__Tracker__DeadReckoning__Rotation_1_1RotationState.html">vrpn_Tracker_DeadReckoning_Rotation::RotationState</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker_Filter.h:100</div></div>
+<div class="ttc" id="avrpn__OneEuroFilter_8h_html"><div class="ttname"><a href="vrpn__OneEuroFilter_8h.html">vrpn_OneEuroFilter.h</a></div><div class="ttdoc">Header file that completely implements a direction and orientation filter on tracking reports; it doe...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

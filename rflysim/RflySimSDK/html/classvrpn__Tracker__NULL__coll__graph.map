@@ -1,0 +1,27 @@
+<map id="vrpn_Tracker_NULL" name="vrpn_Tracker_NULL">
+<area shape="rect" id="Node000001" title=" " alt="" coords="240,435,378,461"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker.html" title=" " alt="" coords="171,359,269,385"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,393,296,432,293,436,245,397"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="161,283,279,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,324,223,358,217,358,217,324"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="153,189,311,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="231,232,224,283,219,282,226,231"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="391,96,510,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="412,132,340,165,270,191,268,186,338,160,410,127"/>
+<area shape="rect" id="Node000010" href="$classvrpn__RedundantTransmission.html" title=" " alt="" coords="303,283,497,309"/>
+<area shape="poly" id="edge11_Node000010_Node000005" title=" " alt="" coords="480,132,502,156,518,186,522,202,519,219,512,242,496,261,476,275,454,285,452,280,474,270,493,257,507,240,513,218,516,202,514,188,497,159,476,135"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="240,5,400,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="314,47,313,60,318,70,328,78,346,86,391,97,390,102,344,91,326,83,314,74,308,61,308,47"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="441,5,570,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="494,47,478,73,462,97,458,94,474,71,489,44"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="149,96,315,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="235,138,235,189,229,189,229,138"/>
+<area shape="rect" id="Node000011" href="$structvrpn__RedundantTransmission_1_1queuedMessage.html" title=" " alt="" coords="335,189,452,216"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="269,128,372,187,370,191,266,133"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="97,5,151,32"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="83,35,57,46,33,62,15,83,8,108,8,297,12,308,24,319,65,337,119,352,171,361,170,367,118,357,63,342,21,323,8,311,3,298,3,108,10,80,29,58,54,42,81,30"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="153,40,218,93,215,97,150,44"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="387,324,319,436,315,433,382,321"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="398,232,402,282,396,282,393,232"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="469,194,478,203,470,211,452,214,452,209,468,206,473,203,466,198"/>
+</map>

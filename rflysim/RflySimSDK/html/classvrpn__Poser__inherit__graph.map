@@ -1,0 +1,15 @@
+<map id="vrpn_Poser" name="vrpn_Poser">
+<area shape="rect" id="Node000001" title=" " alt="" coords="270,155,358,181"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Poser__Analog.html" title=" " alt="" coords="5,229,140,256"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,189,116,231,114,226,256,184"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Poser__Remote.html" title=" " alt="" coords="164,229,304,256"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="291,194,249,231,246,227,287,190"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Poser__Server.html" title=" " alt="" coords="328,229,460,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="341,190,382,227,378,231,337,194"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Poser__Tek4662.html" title=" " alt="" coords="484,229,627,256"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="371,184,514,226,512,231,370,189"/>
+<area shape="rect" id="Node000002" href="$classvrpn__BaseClass.html" title=" " alt="" coords="255,80,372,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,122,316,154,311,154,311,122"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="235,5,393,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,48,316,80,311,80,311,48"/>
+</map>

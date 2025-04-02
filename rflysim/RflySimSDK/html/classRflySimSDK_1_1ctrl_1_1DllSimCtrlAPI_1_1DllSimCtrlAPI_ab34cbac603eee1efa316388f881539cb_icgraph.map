@@ -1,0 +1,5 @@
+<map id="sendInCtrlExtDoub" name="sendInCtrlExtDoub">
+<area shape="rect" id="Node000001" title="通过UDP发送double型控制信号到指定无人机的模拟器端口。" alt="" coords="170,5,302,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a3f12709c49eca444c7d8938e2403e109" title="将一个较长的浮点数向量分段并通过UDP发送到多个控制端口。" alt="" coords="5,5,122,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,21,122,21,122,16,154,16"/>
+</map>

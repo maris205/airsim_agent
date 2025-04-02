@@ -1,0 +1,17 @@
+<map id="vrpn_Xkeys_v2" name="vrpn_Xkeys_v2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="196,229,307,256"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Xkeys__Jog__And__Shuttle12.html" title=" " alt="" coords="5,304,154,347"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="212,265,125,306,123,301,210,260"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Xkeys__Jog__And__Shuttle68.html" title=" " alt="" coords="177,304,326,347"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="254,272,254,304,249,304,249,272"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Xkeys__Joystick12.html" title=" " alt="" coords="350,312,510,339"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="295,260,404,309,401,314,292,265"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Xkeys.html" title=" " alt="" coords="206,155,297,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,197,254,229,249,229,249,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="121,80,238,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,116,241,152,237,156,201,120"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="100,5,259,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,48,182,80,177,80,177,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="263,80,387,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="303,120,266,156,262,152,299,116"/>
+</map>

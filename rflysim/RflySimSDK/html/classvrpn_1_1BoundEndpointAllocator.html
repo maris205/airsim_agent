@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: BoundEndpointAllocator类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>vrpn</b></li><li class="navelem"><a class="el" href="classvrpn_1_1BoundEndpointAllocator.html">BoundEndpointAllocator</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn_1_1BoundEndpointAllocator-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">BoundEndpointAllocator类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable object, with the ability to override the last parameter at call time.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa72885b1fe839209e2a83276882117b1" id="r_aa72885b1fe839209e2a83276882117b1"><td align="right" class="memItemLeft" valign="top"><a id="aa72885b1fe839209e2a83276882117b1" name="aa72885b1fe839209e2a83276882117b1"></a>
+typedef <a class="el" href="classvrpn__Endpoint__IP.html">vrpn_Endpoint_IP</a> * </td><td class="memItemRight" valign="bottom"><b>return_type</b></td></tr>
+<tr class="separator:aa72885b1fe839209e2a83276882117b1"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a51daba69299942bb2d3634ebb3e88d8d" id="r_a51daba69299942bb2d3634ebb3e88d8d"><td align="right" class="memItemLeft" valign="top"><a id="a51daba69299942bb2d3634ebb3e88d8d" name="a51daba69299942bb2d3634ebb3e88d8d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>BoundEndpointAllocator</b> (vrpn_EndpointAllocator epa, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *conn, vrpn_int32 *numActiveEndpoints=NULL)</td></tr>
+<tr class="separator:a51daba69299942bb2d3634ebb3e88d8d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a343447ac855be67ee0d9f63dce9526fc" id="r_a343447ac855be67ee0d9f63dce9526fc"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Endpoint__IP.html">return_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a343447ac855be67ee0d9f63dce9526fc">operator()</a> () const</td></tr>
+<tr class="memdesc:a343447ac855be67ee0d9f63dce9526fc"><td class="mdescLeft"> </td><td class="mdescRight">Default, fully pre-bound  <br/></td></tr>
+<tr class="separator:a343447ac855be67ee0d9f63dce9526fc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a282a6c517b8f8774bbb1841c2d30c9f7" id="r_a282a6c517b8f8774bbb1841c2d30c9f7"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Endpoint__IP.html">return_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a282a6c517b8f8774bbb1841c2d30c9f7">operator()</a> (vrpn_int32 *alternateNumActiveEndpoints) const</td></tr>
+<tr class="memdesc:a282a6c517b8f8774bbb1841c2d30c9f7"><td class="mdescLeft"> </td><td class="mdescRight">Overload, with alternate num active connnection pointer.  <br/></td></tr>
+<tr class="separator:a282a6c517b8f8774bbb1841c2d30c9f7"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable object, with the ability to override the last parameter at call time. </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a343447ac855be67ee0d9f63dce9526fc" name="a343447ac855be67ee0d9f63dce9526fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343447ac855be67ee0d9f63dce9526fc">◆ </a></span>operator()() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Endpoint__IP.html">return_type</a> operator() </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Default, fully pre-bound </p>
+</div>
+</div>
+<a id="a282a6c517b8f8774bbb1841c2d30c9f7" name="a282a6c517b8f8774bbb1841c2d30c9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282a6c517b8f8774bbb1841c2d30c9f7">◆ </a></span>operator()() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Endpoint__IP.html">return_type</a> operator() </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32 *</td> <td class="paramname"><span class="paramname"><em>alternateNumActiveEndpoints</em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Overload, with alternate num active connnection pointer. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

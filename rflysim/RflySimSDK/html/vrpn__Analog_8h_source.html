@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Analog.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Analog.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VRPN_ANALOG_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VRPN_ANALOG_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stddef.h&gt;</span> <span class="comment">// for NULL</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include "<a class="code" href="vrpn__BaseClass_8h.html">vrpn_BaseClass.h</a>"</span> <span class="comment">// for vrpn_Callback_List, etc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_API, VRPN_CALLBACK</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include "vrpn_Connection.h"</span> <span class="comment">// for vrpn_CONNECTION_LOW_LATENCY, etc</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include "vrpn_Shared.h"</span> <span class="comment">// for timeval</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include "vrpn_Types.h"</span> <span class="comment">// for vrpn_int32, vrpn_float64, etc</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef VRPN_CLIENT_ONLY</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include "<a class="code" href="vrpn__Serial_8h.html">vrpn_Serial.h</a>"</span> <span class="comment">// for ::vrpn_SER_PARITY_NONE, etc</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define vrpn_CHANNEL_MAX 128</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// analog status flags</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">const</span> <span class="keywordtype">int</span> vrpn_ANALOG_SYNCING = (2);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">const</span> <span class="keywordtype">int</span> vrpn_ANALOG_REPORT_READY = (1);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">const</span> <span class="keywordtype">int</span> vrpn_ANALOG_PARTIAL = (0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">const</span> <span class="keywordtype">int</span> vrpn_ANALOG_RESETTING = (-1);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">const</span> <span class="keywordtype">int</span> vrpn_ANALOG_FAIL = (-2);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Analog time value meaning "go find out what time it is right now"</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">const</span> <span class="keyword">struct </span>timeval vrpn_ANALOG_NOW = {0, 0};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00028">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classvrpn__Analog.html">   28</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Analog.html">vrpn_Analog</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__BaseClass.html">vrpn_BaseClass</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> <a class="code hl_class" href="classvrpn__Analog.html">vrpn_Analog</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c = NULL);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="comment">// Print the status of the analog device</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> <span class="keywordtype">void</span> print(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    vrpn_int32 getNumChannels(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    vrpn_float64 channel[vrpn_CHANNEL_MAX];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    vrpn_float64 last[vrpn_CHANNEL_MAX];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    vrpn_int32 num_channel;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="keyword">struct </span>timeval timestamp;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    vrpn_int32 channel_m_id; <span class="comment">//&lt; channel message id (message from server)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> <span class="keywordtype">int</span> status;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classvrpn__Analog.html#ad323fbb3a0d01ece28df8432733664fb">   45</a></span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Analog.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> <span class="comment">//------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> <span class="comment">// Routines used to send data from the server</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="keyword">virtual</span> vrpn_int32 encode_to(<span class="keywordtype">char</span> *buf);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classvrpn__Analog.html#a2f1609e75b150bfa9804bd2148e15b92">   53</a></span> <a class="code hl_function" href="classvrpn__Analog.html#a2f1609e75b150bfa9804bd2148e15b92">report_changes</a>(vrpn_uint32 class_of_service = vrpn_CONNECTION_LOW_LATENCY,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> <span class="keyword">const</span> <span class="keyword">struct</span> timeval time = vrpn_ANALOG_NOW);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classvrpn__Analog.html#a112c9d99bc3c51eb33557d1b9f40c8ed">   58</a></span> <a class="code hl_function" href="classvrpn__Analog.html#a112c9d99bc3c51eb33557d1b9f40c8ed">report</a>(vrpn_uint32 class_of_service = vrpn_CONNECTION_LOW_LATENCY,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> <span class="keyword">const</span> <span class="keyword">struct</span> timeval time = vrpn_ANALOG_NOW);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#ifndef VRPN_CLIENT_ONLY</span></div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00063">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classvrpn__Serial__Analog.html">   63</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Serial__Analog.html">vrpn_Serial_Analog</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Analog.html">vrpn_Analog</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> <a class="code hl_class" href="classvrpn__Serial__Analog.html">vrpn_Serial_Analog</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *connection,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *port, <span class="keywordtype">int</span> baud = 9600, <span class="keywordtype">int</span> bits = 8,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                       vrpn_SER_PARITY parity = vrpn_SER_PARITY_NONE,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> <span class="keywordtype">bool</span> rts_flow = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> <a class="code hl_class" href="classvrpn__Serial__Analog.html">~vrpn_Serial_Analog</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> <span class="keywordtype">int</span> serial_fd;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> <span class="keywordtype">char</span> portname[1024];</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keywordtype">int</span> baudrate;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[1024];</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> <span class="keywordtype">int</span> bufcounter;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> <span class="keywordtype">int</span> read_available_characters(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">int</span> bytes);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// vrpn_Analog_Server</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// Tom Hudson, March 1999</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// A *Sample* Analog server.  Use this or derive your own from vrpn_Analog with</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// this as a guide.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">//</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// Write whatever values you want into channels(), then call report()</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// or report_changes().  (Original spec only called for report_changes(),</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// but vrpn_Analog's assumption that "no new data = same data" doesn't</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// match the BLT stripchart assumption  of "no intervening data = ramp".</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// For a sample application, see server_src/sample_analog.C</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00095">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Server.html">   95</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Analog__Server.html">vrpn_Analog_Server</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Analog.html">vrpn_Analog</a> {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> <a class="code hl_class" href="classvrpn__Analog__Server.html">vrpn_Analog_Server</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                       vrpn_int32 numChannels = vrpn_CHANNEL_MAX);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Server.html#a2f1609e75b150bfa9804bd2148e15b92">  103</a></span> <a class="code hl_function" href="classvrpn__Analog__Server.html#a2f1609e75b150bfa9804bd2148e15b92">report_changes</a>(vrpn_uint32 class_of_service = vrpn_CONNECTION_LOW_LATENCY,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> <span class="keyword">const</span> <span class="keyword">struct</span> timeval time = vrpn_ANALOG_NOW);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Server.html#a112c9d99bc3c51eb33557d1b9f40c8ed">  108</a></span> <a class="code hl_function" href="classvrpn__Analog__Server.html#a112c9d99bc3c51eb33557d1b9f40c8ed">report</a>(vrpn_uint32 class_of_service = vrpn_CONNECTION_LOW_LATENCY,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> <span class="keyword">const</span> <span class="keyword">struct</span> timeval time = vrpn_ANALOG_NOW);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Server.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">  114</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Analog__Server.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a>() { <a class="code hl_function" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop</a>(); };</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Server.html#a2c85b934fe8c709dc00957cb4c274e47">  117</a></span>    vrpn_float64 *<a class="code hl_function" href="classvrpn__Analog__Server.html#a2c85b934fe8c709dc00957cb4c274e47">channels</a>(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> channel; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Server.html#ad6ac42090247ab0c404f682a0f5888d3">  122</a></span>    vrpn_int32 <a class="code hl_function" href="classvrpn__Analog__Server.html#ad6ac42090247ab0c404f682a0f5888d3">setNumChannels</a>(vrpn_int32 sizeRequested);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// This is useful for joysticks, to allow them to be centered and</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// scaled to cover the whole range.  Rather than writing directly</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// into the channels array, call the setChannel() method.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00130">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classvrpn__Clipping__Analog__Server.html">  130</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Clipping__Analog__Server.html">vrpn_Clipping_Analog_Server</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Analog__Server.html">vrpn_Analog_Server</a> {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> <a class="code hl_class" href="classvrpn__Clipping__Analog__Server.html">vrpn_Clipping_Analog_Server</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                                vrpn_int32 numChannels = vrpn_CHANNEL_MAX);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classvrpn__Clipping__Analog__Server.html#a6573dc190f960530645f7d9abd8b7230">  142</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Clipping__Analog__Server.html#a6573dc190f960530645f7d9abd8b7230">setClipValues</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">double</span> min, <span class="keywordtype">double</span> lowzero, <span class="keywordtype">double</span> highzero,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> <span class="keywordtype">double</span> max);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classvrpn__Clipping__Analog__Server.html#a1eae59b69ec8481668f157a6b73a5c9b">  148</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Clipping__Analog__Server.html#a1eae59b69ec8481668f157a6b73a5c9b">setChannelValue</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">protected</span>:</div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00151">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="structvrpn__Clipping__Analog__Server_1_1clipvals__struct.html">  151</a></span> <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> <span class="keywordtype">double</span> minimum_val; <span class="comment">// Value mapped to -1</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> <span class="keywordtype">double</span> lower_zero;  <span class="comment">// Minimum value mapped to 0</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> <span class="keywordtype">double</span> upper_zero;  <span class="comment">// Maximum value mapped to 0</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> <span class="keywordtype">double</span> maximum_val; <span class="comment">// Value mapped to 1</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    } <a class="code hl_struct" href="structvrpn__Clipping__Analog__Server_1_1clipvals__struct.html">clipvals_struct</a>;</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> <a class="code hl_struct" href="structvrpn__Clipping__Analog__Server_1_1clipvals__struct.html">clipvals_struct</a> clipvals[vrpn_CHANNEL_MAX];</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>};</div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">//************** Users deal with the following *************</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// User routine to handle a change in analog values.  This is called when</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// the analog callback is called (when a message from its counterpart</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">// across the connection arrives).</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00168">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="struct__vrpn__ANALOGCB.html">  168</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__vrpn__ANALOGCB.html">_vrpn_ANALOGCB</a> {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> <span class="keyword">struct </span>timeval msg_time;                <span class="comment">// Timestamp of analog data</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    vrpn_int32 num_channel;                 <span class="comment">// how many channels</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    vrpn_float64 channel[vrpn_CHANNEL_MAX]; <span class="comment">// analog values</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>} <a class="code hl_struct" href="struct__vrpn__ANALOGCB.html">vrpn_ANALOGCB</a>;</div>
+</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">typedef</span> void(VRPN_CALLBACK *vrpn_ANALOGCHANGEHANDLER)(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__ANALOGCB.html">vrpn_ANALOGCB</a> info);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">// Open an analog device that is on the other end of a connection</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// and handle updates from it.  This is the type of analog device</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// that user code will deal with.</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00181">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Remote.html">  181</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Analog.html">vrpn_Analog</a> {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> <span class="comment">// The name of the analog device to connect to</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> <span class="comment">// Optional argument to be used when the Remote should listen on</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> <span class="comment">// a connection that is already open.</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> <a class="code hl_class" href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c = NULL);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> <span class="comment">// This routine calls the mainloop of the connection it's on</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="classvrpn__Analog__Remote.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">  189</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Analog__Remote.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a>();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> <span class="comment">// (un)Register a callback handler to handle analog value change</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> register_change_handler(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                                        vrpn_ANALOGCHANGEHANDLER handler)</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> <span class="keywordflow">return</span> d_callback_list.register_handler(userdata, handler);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    };</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> unregister_change_handler(<span class="keywordtype">void</span> *userdata,</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                                          vrpn_ANALOGCHANGEHANDLER handler)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> <span class="keywordflow">return</span> d_callback_list.unregister_handler(userdata, handler);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> <a class="code hl_class" href="classvrpn__Callback__List.html">vrpn_Callback_List&lt;vrpn_ANALOGCB&gt;</a> d_callback_list;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    handle_change_message(<span class="keywordtype">void</span> *userdata, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>};</div>
+</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassvrpn__Analog__Remote_html"><div class="ttname"><a href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:181</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Remote_html_a5299ecc517aeaf6e61dc5d2c5316b4cb"><div class="ttname"><a href="classvrpn__Analog__Remote.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">vrpn_Analog_Remote::mainloop</a></div><div class="ttdeci">virtual void mainloop()</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Server_html"><div class="ttname"><a href="classvrpn__Analog__Server.html">vrpn_Analog_Server</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:95</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Server_html_a112c9d99bc3c51eb33557d1b9f40c8ed"><div class="ttname"><a href="classvrpn__Analog__Server.html#a112c9d99bc3c51eb33557d1b9f40c8ed">vrpn_Analog_Server::report</a></div><div class="ttdeci">virtual void report(vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY, const struct timeval time=vrpn_ANALOG_NOW)</div><div class="ttdoc">Makes public the protected base class function</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Server_html_a2c85b934fe8c709dc00957cb4c274e47"><div class="ttname"><a href="classvrpn__Analog__Server.html#a2c85b934fe8c709dc00957cb4c274e47">vrpn_Analog_Server::channels</a></div><div class="ttdeci">vrpn_float64 * channels(void)</div><div class="ttdoc">Exposes an array of values for the user to write into.</div><div class="ttdef"><b>定义</b> vrpn_Analog.h:117</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Server_html_a2f1609e75b150bfa9804bd2148e15b92"><div class="ttname"><a href="classvrpn__Analog__Server.html#a2f1609e75b150bfa9804bd2148e15b92">vrpn_Analog_Server::report_changes</a></div><div class="ttdeci">virtual void report_changes(vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY, const struct timeval time=vrpn_ANALOG_NOW)</div><div class="ttdoc">Makes public the protected base class function</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Server_html_a5299ecc517aeaf6e61dc5d2c5316b4cb"><div class="ttname"><a href="classvrpn__Analog__Server.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">vrpn_Analog_Server::mainloop</a></div><div class="ttdeci">virtual void mainloop()</div><div class="ttdef"><b>定义</b> vrpn_Analog.h:114</div></div>
+<div class="ttc" id="aclassvrpn__Analog__Server_html_ad6ac42090247ab0c404f682a0f5888d3"><div class="ttname"><a href="classvrpn__Analog__Server.html#ad6ac42090247ab0c404f682a0f5888d3">vrpn_Analog_Server::setNumChannels</a></div><div class="ttdeci">vrpn_int32 setNumChannels(vrpn_int32 sizeRequested)</div></div>
+<div class="ttc" id="aclassvrpn__Analog_html"><div class="ttname"><a href="classvrpn__Analog.html">vrpn_Analog</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:28</div></div>
+<div class="ttc" id="aclassvrpn__Analog_html_a112c9d99bc3c51eb33557d1b9f40c8ed"><div class="ttname"><a href="classvrpn__Analog.html#a112c9d99bc3c51eb33557d1b9f40c8ed">vrpn_Analog::report</a></div><div class="ttdeci">virtual void report(vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY, const struct timeval time=vrpn_ANALOG_NOW)</div></div>
+<div class="ttc" id="aclassvrpn__Analog_html_a2f1609e75b150bfa9804bd2148e15b92"><div class="ttname"><a href="classvrpn__Analog.html#a2f1609e75b150bfa9804bd2148e15b92">vrpn_Analog::report_changes</a></div><div class="ttdeci">virtual void report_changes(vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY, const struct timeval time=vrpn_ANALOG_NOW)</div></div>
+<div class="ttc" id="aclassvrpn__Analog_html_ad323fbb3a0d01ece28df8432733664fb"><div class="ttname"><a href="classvrpn__Analog.html#ad323fbb3a0d01ece28df8432733664fb">vrpn_Analog::register_types</a></div><div class="ttdeci">virtual int register_types(void)</div></div>
+<div class="ttc" id="aclassvrpn__BaseClassUnique_html_a5f63dfe395699defbadb9a7cd1ee9e29"><div class="ttname"><a href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">vrpn_BaseClassUnique::server_mainloop</a></div><div class="ttdeci">void server_mainloop(void)</div></div>
+<div class="ttc" id="aclassvrpn__BaseClass_html"><div class="ttname"><a href="classvrpn__BaseClass.html">vrpn_BaseClass</a></div><div class="ttdef"><b>定义</b> vrpn_BaseClass.h:310</div></div>
+<div class="ttc" id="aclassvrpn__Callback__List_html"><div class="ttname"><a href="classvrpn__Callback__List.html">vrpn_Callback_List</a></div><div class="ttdef"><b>定义</b> vrpn_BaseClass.h:361</div></div>
+<div class="ttc" id="aclassvrpn__Clipping__Analog__Server_html"><div class="ttname"><a href="classvrpn__Clipping__Analog__Server.html">vrpn_Clipping_Analog_Server</a></div><div class="ttdoc">Analog server that can scale and clip its range to -1..1.</div><div class="ttdef"><b>定义</b> vrpn_Analog.h:130</div></div>
+<div class="ttc" id="aclassvrpn__Clipping__Analog__Server_html_a1eae59b69ec8481668f157a6b73a5c9b"><div class="ttname"><a href="classvrpn__Clipping__Analog__Server.html#a1eae59b69ec8481668f157a6b73a5c9b">vrpn_Clipping_Analog_Server::setChannelValue</a></div><div class="ttdeci">int setChannelValue(int channel, double value)</div></div>
+<div class="ttc" id="aclassvrpn__Clipping__Analog__Server_html_a6573dc190f960530645f7d9abd8b7230"><div class="ttname"><a href="classvrpn__Clipping__Analog__Server.html#a6573dc190f960530645f7d9abd8b7230">vrpn_Clipping_Analog_Server::setClipValues</a></div><div class="ttdeci">int setClipValues(int channel, double min, double lowzero, double highzero, double max)</div></div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="aclassvrpn__Serial__Analog_html"><div class="ttname"><a href="classvrpn__Serial__Analog.html">vrpn_Serial_Analog</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:63</div></div>
+<div class="ttc" id="astruct__vrpn__ANALOGCB_html"><div class="ttname"><a href="struct__vrpn__ANALOGCB.html">_vrpn_ANALOGCB</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:168</div></div>
+<div class="ttc" id="astructvrpn__Clipping__Analog__Server_1_1clipvals__struct_html"><div class="ttname"><a href="structvrpn__Clipping__Analog__Server_1_1clipvals__struct.html">vrpn_Clipping_Analog_Server::clipvals_struct</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:151</div></div>
+<div class="ttc" id="astructvrpn__HANDLERPARAM_html"><div class="ttname"><a href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></div><div class="ttdoc">This structure is what is passed to a vrpn_Connection message callback.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:41</div></div>
+<div class="ttc" id="avrpn__BaseClass_8h_html"><div class="ttname"><a href="vrpn__BaseClass_8h.html">vrpn_BaseClass.h</a></div></div>
+<div class="ttc" id="avrpn__Serial_8h_html"><div class="ttname"><a href="vrpn__Serial_8h.html">vrpn_Serial.h</a></div><div class="ttdoc">vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

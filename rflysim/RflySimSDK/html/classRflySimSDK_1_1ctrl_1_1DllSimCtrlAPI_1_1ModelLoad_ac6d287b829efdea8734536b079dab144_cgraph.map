@@ -1,0 +1,4 @@
+<map id="DlloutVehileInfo60d" name="DlloutVehileInfo60d">
+<area shape="rect" id="Node000001" title="从 DLL 获取 60 维的载具三维信息数据。包括各种飞行器或车辆的状态数据。" alt="" coords="5,29,139,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="48,30,44,21,47,11,57,5,72,3,88,5,97,12,94,16,86,10,72,8,59,10,51,14,50,20,53,28"/>
+</map>

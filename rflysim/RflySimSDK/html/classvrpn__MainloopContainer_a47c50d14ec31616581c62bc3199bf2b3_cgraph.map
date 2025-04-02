@@ -1,0 +1,9 @@
+<map id="add" name="add">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,48,69"/>
+<area shape="rect" id="Node000002" href="$classvrpn__MainloopContainer.html#ab92be4e8806f1f27faca5bc57bfe4274" title=" " alt="" coords="146,13,188,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,49,130,32,131,37,49,54"/>
+<area shape="rect" id="Node000004" href="$classvrpn__MainloopObject.html#a696606b8e180f583cae6c4dd08c306f0" title="Templated wrapping function" alt="" coords="96,64,239,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="49,58,81,65,80,70,48,63"/>
+<area shape="rect" id="Node000003" href="$classvrpn__MainloopObject.html#af5980672ee120f8bfd681e24d069b027" title=" " alt="" coords="287,5,430,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,24,272,24,272,29,189,29"/>
+</map>

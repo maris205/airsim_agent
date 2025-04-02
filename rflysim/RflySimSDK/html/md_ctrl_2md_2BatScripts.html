@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Bat脚本使用参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">Bat脚本使用参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md7"></a> RflySim基于批处理技术开发了众多批处理脚本，让用户可以快速一键启动部署多架、多种、多样无人系统组合式仿真。提高了无人系统开发和仿真速度。平台较常用的批处理脚本：① SITLRun.bat：是开启多机软件在环仿真的批处理文件，其本质上是通过脚本方式启动并配置RflySim工具链的部分软件和选项，② HITLRun.bat：是开启多机硬件在环仿真的批处理文件，插入多个飞控之后，再双击该批处理文件，根据提示输入想要参与仿真的Pixhawk串口号，即可开启多机的硬件在环仿真（以输入串口顺序进行飞机ID排序）。除此之外RflySim工具链还提供众多批处理脚本文件，如：SITLRunPos.bat、SITLRunLowGPU.bat、SITLRunMAVLink.bat、HITLRunPos.bat、HITLPosSysID.bat、HITLPosStr.bat等等，部分脚本文件见*\PX4PSP\RflySimAPIs\BatScripts。用户可通过编辑器打开这些文件，根据个人需求修改其中的参数，实现自定义开发，快速开始仿真或算法的验证。</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+仿真参数设置</h1>
+<h2><a class="anchor" id="autotoc_md9"></a>
+CopterSim仿真功能区参数设置</h2>
+<div class="image">
+<a data_lightbox="image" href="绘图1-1722255093474-2.png"><img alt="" class="thumbnail" height="auto" src="绘图1-1722255093474-2.png" width="100"/></a>
+<div class="caption">
+绘图1</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数编号   </th><th class="markdownTableHeadNone">CopterSim参数名称   </th><th class="markdownTableHeadNone">BAT脚本参数名称   </th><th class="markdownTableHeadNone">参数值   </th><th class="markdownTableHeadNone">对应CopterSim参数值及含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">参数1   </td><td class="markdownTableBodyNone"><b>CopterID</b> </td><td class="markdownTableBodyNone"><b>START_INDEX</b> </td><td class="markdownTableBodyNone">自定义，应该设置为大于0的整数   </td><td class="markdownTableBodyNone">设置飞机ID。这个选项在启用多机仿真时用于指定起始飞机的ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数2   </td><td class="markdownTableBodyNone"><b>3DClassID</b> </td><td class="markdownTableBodyNone"><b>CLASS_3D_ID</b> </td><td class="markdownTableBodyNone">数字索引   </td><td class="markdownTableBodyNone">设置在RflySim3D中显示的载具3D模型的类型或指定样式ID。三维样式参数可参考<a href="md_ue_2md_2FreeVersion3DModel.html">平台三维模型资源索引</a>，如需使用自定义的三维样式，参考<a href="../../3.RflySim3DUE/1.BasicExps/e1_CusLoadDroneyeeX680/Readme.pdf">例程</a> </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">-1   </td><td class="markdownTableBodyNone">表示使用默认的3D模型。（通常由dll文件指定）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ClassID   </td><td class="markdownTableBodyNone">指定载具构型（如四旋翼、固定翼），使用构型类下排在最前面的载具三维样式    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Unique3DClassID   </td><td class="markdownTableBodyNone">指定特定载具构型类下的特定排序三维载具样式    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数3   </td><td class="markdownTableBodyNone"><b>使用DLL模型文件</b> </td><td class="markdownTableBodyNone"><b>DLLModel</b> </td><td class="markdownTableBodyNone">数字索引或名称字符串匹配   </td><td class="markdownTableBodyNone">该参数用于选择不同的DLL文件，选项对应的文件夹地址为：*PX4PSP\CopterSim\external\model，dll模型序号按照命名排序    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">不使用dll文件，此时的动力学模型是在CopterSim的模型配置界面上搭建好的模型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">从1开始的dll模型序号或名称   </td><td class="markdownTableBodyNone">使用指定的dll模型    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">参数4   </td><td class="markdownTableBodyNone"><b>仿真模式</b> </td><td class="markdownTableBodyNone"><b>SimMode</b> </td><td class="markdownTableBodyNone">数字索引或名称字符串匹配   </td><td class="markdownTableBodyNone">用于选择不同的仿真模式    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">**PX4_HITL**：此模式为PX4官方硬件在环仿真模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">**PX4_SITL**：此模式为PX4官方软在环仿真模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">**PX4_SITL_RFLY**：此模式为RflySim工具链自定义的软件在环仿真模式，由于PX4_SITL仅支持10架无人机集群仿真，在本模式下可支持上百架无人机进行SITL仿真。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">**Simulink&amp;DLL_SIL**：Simulink中生成的DLL文件仿真模式。(对应综合模型)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">**PX4_HITL_NET**（限完整版以上）：对于Pixhawk 6x等带网口的飞控，支持通过局域网连接飞控实现硬件在环仿真。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">**EXT_HITL_COM**（限完整版以上）：串口方式连接第三方飞控。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">**EXT_SIM_NET**（限完整版以上）： 网络方式连接第三方飞控。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone">**APM_SITL_COM**（限完整版以上）：支持连接APM飞控（Ardupilot）进行SITL软件在环仿真，NET表示CopterSim与飞控通过网络连接。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">**PX4_SIH_COM**（限完整版以上）：支持飞控SIH模式（模型运行在飞控中，降低电脑运算量提升稳定性），COM表示通过USB线连接飞控。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">**PX4_SIH_NET**（限完整版以上）：支持飞控SIH模式（模型运行在飞控中，降低电脑运算量提升稳定性），NET表示通过局域网连接飞控。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">**PX4_SIH_SITL**（限完整版以上）：PX4_SIH仿真模式软件在环仿真    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone">**PX4_SIH_FLY**（限完整版以上）：PX4_SIH仿真模式，硬件在环仿真    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数5   </td><td class="markdownTableBodyNone"><b>三维显示地图</b> </td><td class="markdownTableBodyNone"><b>UE4_MAP</b> </td><td class="markdownTableBodyNone">数字索引或名称字符串匹配   </td><td class="markdownTableBodyNone">该参数用于选择不同的三维场景，选项对应的文件夹地址为：*PX4PSP\CopterSim\external\map，三维场景序号按照命名排序，若需使用自定的三维地图，参考<a href="../../3.RflySim3DUE/1.BasicExps/e0_StarterContent/1.UE4StarterContent/Readme.pdf">例程</a> </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">从0开始的三维地图序号或名称   </td><td class="markdownTableBodyNone">使用指定的三维地图    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数6   </td><td class="markdownTableBodyNone"><b>联机</b> </td><td class="markdownTableBodyNone"><b>IS_BROADCAST</b> </td><td class="markdownTableBodyNone">数字标识或IP地址   </td><td class="markdownTableBodyNone">开启局域网内联机仿真。注：启用联机模式，同时在RflySim3D/RflySimUE5中按下I键（限完整版），就能开启局域网联机仿真，支持多台电脑组网显示所有飞机。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">仅本机    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">广播    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">IP地址   </td><td class="markdownTableBodyNone">指定发送到特定IP地址，在IP模式下，<code>0</code> 等同于 <code>127.0.0.1</code>，<code>1</code> 等同于 <code>255.255.255.255</code>。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">使用逗号分隔的IP地址列表   </td><td class="markdownTableBodyNone">指定发送到多个IP    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">参数7   </td><td class="markdownTableBodyNone"><b>GPS坐标(限完整版)</b> </td><td class="markdownTableBodyNone"><b>isPosGps</b> </td><td class="markdownTableBodyNone">数字标识   </td><td class="markdownTableBodyNone">用于选择不同的坐标初始化模式    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">默认模式，选择直角坐标系    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">启用GPS模式，选择LLA坐标系    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数8   </td><td class="markdownTableBodyNone"><b>起点位置</b> </td><td class="markdownTableBodyNone"><b>ORIGIN_POS_X</b> </td><td class="markdownTableBodyNone">自定义整数   </td><td class="markdownTableBodyNone">地图初始X位置，单位m    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><b>ORIGIN_POS_Y</b> </td><td class="markdownTableBodyNone">自定义整数   </td><td class="markdownTableBodyNone">地图初始Y位置，单位m    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><b>起点位置（LLA坐标系，限完整版）</b> </td><td class="markdownTableBodyNone"><b>LatLongAlt</b> </td><td class="markdownTableBodyNone">自定义三维浮点数列，用逗号分隔   </td><td class="markdownTableBodyNone">三维数列依次为经度、纬度、海拔高度    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数9   </td><td class="markdownTableBodyNone"><b>偏航</b> </td><td class="markdownTableBodyNone"><b>ORIGIN_YAW</b> </td><td class="markdownTableBodyNone">自定义整数   </td><td class="markdownTableBodyNone">地图初始yaw角度，设置地图中的初始航向角，单位是度数（degree）。航向角是指在水平面上，相对于北方的方向角。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">参数10   </td><td class="markdownTableBodyNone"><b>飞控选择</b> </td><td class="markdownTableBodyNone">启动bat脚本后命令行输入   </td><td class="markdownTableBodyNone">输入推荐的端口号   </td><td class="markdownTableBodyNone">选择飞控连接的电脑COM口    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">参数11   </td><td class="markdownTableBodyNone"><b>波特率</b> </td><td class="markdownTableBodyNone"><b>BaudRate</b> </td><td class="markdownTableBodyNone">标准波特率取值，默认为921600   </td><td class="markdownTableBodyNone">波特率是指每秒钟传输的位数（bits per second, bps），通常用于串行通信中。在选择波特率时，需要确保所有通信设备支持相同的波特率，以确保数据传输的可靠性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">参数12   </td><td class="markdownTableBodyNone"><b>通信模式</b> </td><td class="markdownTableBodyNone"><a href="md_ctrl_2md_2UDPSIMMODE.html"><b>UDPSIMMODE</b></a> </td><td class="markdownTableBodyNone">数字索引   </td><td class="markdownTableBodyNone">选择不同的MavLink消息通信模式    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">**UDP_Full**：数据最全，Python传输完整的UDP数据给CopterSim，传输数据量较大；CopterSim收到数据后，再转换为Mavlink后传输给PX4飞控；适合中小规模集群（数量小于10）仿真。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">**UDP_Simple**：数据包大小与发送频率比UDP_Full模式小；适合大规模集群仿真，无人机数量小于100。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">**Mavlink_Full**：Python直接发送MAVLink消息给CopterSim，再转发给PX4，数据量较大适合单机控制；适合单机或少量飞机仿真，无人机数量小于4；    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">**Mavlink_Simple**：屏蔽部分MAVLink消息包，并降低数据频率，发送数据量比MAVLink_Full小很多，适合多机集群控制；适合小规模集群仿真，无人机数量小于8。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">**Mavlink_NoSend**：模式下CopterSim不会向外发送MAVLink数据，此模式需要配合硬件在环仿真+数传串口通信，通过有线方式传输MAVLink，此模式局域网内数据量最小，适合分布式视觉硬件在环仿真，无人机数量不限制    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">**Mavlink_NoGPS**：模式下CopterSim不会向外发送MAVLink数据和GPS数据。可以外部发送HIL_GPS数据去提供定位，或者修改EKF2_AID_MASK等参数修改 并配合视觉定位mavlink数据来进行室内定位。注：这种模式适合飞控SLAM仿真时，视觉感知算法需要视觉定位的mavlink消息发给飞控，形成无GPS环境下的视觉控制算法验证。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">**Mavlink_Vision**：在Mavlink_NoGPS基础上，增加自动发送EKF2_AID_MASK等参数功能（匹配SLAM仿真需求），适合无GPS情况下的SLAM仿真。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone">**Redis_Full**（限完整版）：传输完整的Redis数据给CopterSim    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">**Redis_Simple（限完整版）**：数据包大小与发送频率比Redis_Full模式小   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md10"></a>
+其它关键参数</h2>
+<h3><a class="anchor" id="autotoc_md11"></a>
+机架设置</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数名称   </th><th class="markdownTableHeadNone">参数值   </th><th class="markdownTableHeadNone">解释    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">PX4SitlFrame   </td><td class="markdownTableBodyNone">机架名称   </td><td class="markdownTableBodyNone">设置PX4飞控的机架模式，对应了相应的混控器，<code>Firmware\ROMFS\px4fmu_common\init.d-posix</code> 中查看支持的机架文件，也可以在该文件夹中创建自己的机架文件。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md12"></a>
+集群设置</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数名称   </th><th class="markdownTableHeadNone">参数值   </th><th class="markdownTableHeadNone">解释    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TOTOAL_COPTER   </td><td class="markdownTableBodyNone">自定义整数   </td><td class="markdownTableBodyNone">设置载具总数    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">IsSysID   </td><td class="markdownTableBodyNone">数字标识   </td><td class="markdownTableBodyNone">是否自动根据 Pixhawk飞控的系统 ID（SysID）来确定载具的 ID（CopterID）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">未根据飞控系统 ID 确定CopterID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">根据飞控系统 ID 确定CopterID。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">VEHICLE_INTERVAL   </td><td class="markdownTableBodyNone">自定义整数   </td><td class="markdownTableBodyNone">设置两个载具之间的间隔距离，单位为米 (m)   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md13"></a>
+GPS原点模式设置</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数名称   </th><th class="markdownTableHeadNone">参数值   </th><th class="markdownTableHeadNone">解释    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isBatLLAOrin   </td><td class="markdownTableBodyNone">数字标识   </td><td class="markdownTableBodyNone">是否通过BAT脚本设置地图GPS原点    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">使用dll模型或地形校准文件默认的GPS原点    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">使用bat脚本设置地图GPS原点   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md14"></a>
+载具初始位姿设置</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数名称   </th><th class="markdownTableHeadNone">参数值   </th><th class="markdownTableHeadNone">解释    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">PosXStr   </td><td class="markdownTableBodyNone">命令行输入或自定义浮点数列   </td><td class="markdownTableBodyNone">isPosGps=0时：载具x 位置列表；isPosGps=1时：载具lat位置列表    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">PosYStr   </td><td class="markdownTableBodyNone">命令行输入或自定义浮点数列   </td><td class="markdownTableBodyNone">isPosGps=0时：载具y位置列表；isPosGps=1时：载具lon位置列表    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">YawStr   </td><td class="markdownTableBodyNone">命令行输入或自定义浮点数列   </td><td class="markdownTableBodyNone">载具偏航角列表，单位deg   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md15"></a>
+RflySim3D初始化启动配置</h3>
+<p>BAT脚本配置快捷键</p>
+<p><em>-key=S（快捷键1）,N1（快捷键2）</em></p>
+<p><code>cd PSP PATH% RflySimUE5tasklist|find /i "RflySim3D.exe" start PSPPATH%\RflySimUE5\RflySim3D.exe -key=S,N1</code></p>
+<p>BAT脚本配置<a href="md_ue_2md_2UE4Command.html">控制台命令</a></p>
+<p><em>-cmd=RflyChangeMapbyName（命令1）-LowGPU（参数）,RflyChangeMapbyID（命令2）-15（参数）</em></p>
+<p><code>tasklist|find /i "RflySim3D.exe" || start PSP_PATH%\RflySim3D\RflySim3D.exe -cmd=RflyChangeMapbyID-15</code></p>
+<h1><a class="anchor" id="autotoc_md16"></a>
+主程序及启动参数配置</h1>
+<h2><a class="anchor" id="autotoc_md17"></a>
+设置仿真数量</h2>
+<div class="fragment"><div class="line">REM Max vehicle number 50</div>
+<div class="line"> </div>
+<div class="line">SET /a MAX_VEHICLE=50</div>
+<div class="line"> </div>
+<div class="line">SET /P VehicleNum=Please input UAV swarm number:</div>
+<div class="line"> </div>
+<div class="line">SET /A Evaluated=VehicleNum</div>
+<div class="line"> </div>
+<div class="line">if %Evaluated% EQU %VehicleNum% (</div>
+<div class="line"> </div>
+<div class="line">  IF %VehicleNum% GTR 0 (</div>
+<div class="line"> </div>
+<div class="line">​    IF %VehicleNum% GTR %MAX_VEHICLE% (</div>
+<div class="line"> </div>
+<div class="line">​      ECHO The vehicle number is too large, which may cause a crash</div>
+<div class="line"> </div>
+<div class="line">​      pause</div>
+<div class="line"> </div>
+<div class="line">​    )</div>
+<div class="line"> </div>
+<div class="line">​    GOTO StartSim</div>
+<div class="line"> </div>
+<div class="line">  )</div>
+<div class="line"> </div>
+<div class="line">  ECHO Not a positive integer</div>
+<div class="line"> </div>
+<div class="line">  GOTO Top</div>
+<div class="line"> </div>
+<div class="line">) ELSE (</div>
+<div class="line"> </div>
+<div class="line">  ECHO Not a integer</div>
+<div class="line"> </div>
+<div class="line">  GOTO Top</div>
+<div class="line"> </div>
+<div class="line">)</div>
+</div><!-- fragment --><p>首先限制最大仿真数量（这里默认限制为50台，可根据电脑硬件配置调整，也可修改UDP通信模式以支持更大数量的仿真）；/P后输入集群的载具数量（根据这个数量会在之后启动对应的软件）；然后根据最大仿真数量和输入的载具数量作出判断，判断通过则进行下一步，否则返回重新输入。</p>
+<h2><a class="anchor" id="autotoc_md18"></a>
+开始仿真</h2>
+<div class="fragment"><div class="line">:StartSim</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">SET /A VehicleTotalNum=%VehicleNum% + %START_INDEX% - 1</div>
+<div class="line"> </div>
+<div class="line">if not defined TOTOAL_COPTER (</div>
+<div class="line"> </div>
+<div class="line">  SET /A TOTOAL_COPTER=%VehicleTotalNum%</div>
+<div class="line"> </div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">set /a sqrtNum=1</div>
+<div class="line"> </div>
+<div class="line">set /a squareNum=1</div>
+<div class="line"> </div>
+<div class="line">:loopSqrt</div>
+<div class="line"> </div>
+<div class="line">set /a squareNum=%sqrtNum% * %sqrtNum%</div>
+<div class="line"> </div>
+<div class="line">if %squareNum% EQU %TOTOAL_COPTER% (</div>
+<div class="line"> </div>
+<div class="line">  goto loopSqrtEnd</div>
+<div class="line"> </div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">if %squareNum% GTR %TOTOAL_COPTER% (</div>
+<div class="line"> </div>
+<div class="line">  goto loopSqrtEnd</div>
+<div class="line"> </div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">set /a sqrtNum=%sqrtNum%+1</div>
+<div class="line"> </div>
+<div class="line">goto loopSqrt</div>
+<div class="line"> </div>
+<div class="line">:loopSqrtEnd</div>
+</div><!-- fragment --><p>先计算集群的载具总数（为了更好的分配每个载具的ID）；然后根据输入的载具数量，利用递归算法每生成一个载具就分配一个编号，并将结果存储在sqrtNum 变量中（便于之后定义每个载具的ID）。</p>
+<div class="fragment"><div class="line">REM QGCPath</div>
+<div class="line"> </div>
+<div class="line">tasklist|find /i "QGroundControl.exe" || start %PSP_PATH%\QGroundControl\QGroundControl.exe</div>
+<div class="line"> </div>
+<div class="line">ECHO Start QGroundControl</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">REM UE4Path</div>
+<div class="line"> </div>
+<div class="line">cd %PSP_PATH%\RflySim3D</div>
+<div class="line"> </div>
+<div class="line">tasklist|find /i "RflySim3D.exe" || start %PSP_PATH%\RflySim3D\RflySim3D.exe</div>
+<div class="line"> </div>
+<div class="line">choice /t 5 /d y /n &gt;nul</div>
+<div class="line"> </div>
+<div class="line">tasklist|find /i "CopterSim.exe" &amp;&amp; taskkill /im "CopterSim.exe"</div>
+<div class="line"> </div>
+<div class="line">ECHO Kill all CopterSims</div>
+<div class="line"> </div>
+<div class="line">REM CptSmPath</div>
+<div class="line"> </div>
+<div class="line">cd %PSP_PATH%\CopterSim</div>
+</div><!-- fragment --><p>启动/关闭一些软件应用程序，并且进行路径的设置。先分别设置路径，找到并启动QGC和RflySim3D应用程序，然后关闭正在运行的CopterSim（因为之后要对CopterSim进行参数配置），再设置CopterSim应用程序的路径</p>
+<div class="fragment"><div class="line">set /a cntr=%START_INDEX%</div>
+<div class="line"> </div>
+<div class="line">set /a endNum=%VehicleTotalNum%+1</div>
+<div class="line"> </div>
+<div class="line">set /a portNum=%UDP_START_PORT%+((%START_INDEX%-1)*2)</div>
+<div class="line"> </div>
+<div class="line">:loopBegin</div>
+<div class="line"> </div>
+<div class="line">set /a PosXX=((%cntr%-1) / %sqrtNum%)*%VEHICLE_INTERVAL% + %ORIGIN_POS_X%</div>
+<div class="line"> </div>
+<div class="line">set /a PosYY=((%cntr%-1) %% %sqrtNum%)*%VEHICLE_INTERVAL% + %ORIGIN_POS_Y%</div>
+<div class="line"> </div>
+<div class="line">start /realtime CopterSim.exe 1 %cntr% %portNum% %DLLModel% %SimMode% %UE4_MAP% %IS_BROADCAST% %PosXX% %PosYY% %ORIGIN_YAW% 1 %UDPSIMMODE%</div>
+<div class="line"> </div>
+<div class="line">choice /t 1 /d y /n &gt;nul</div>
+<div class="line"> </div>
+<div class="line">set /a cntr=%cntr%+1</div>
+<div class="line"> </div>
+<div class="line">set /a portNum=%portNum%+2</div>
+<div class="line"> </div>
+<div class="line">if %cntr% EQU %endNum% goto loopEnd</div>
+<div class="line"> </div>
+<div class="line">goto loopBegin</div>
+<div class="line"> </div>
+<div class="line">:loopEnd</div>
+</div><!-- fragment --><p>打开CopterSim模拟器并设置一些参数。先根据之前的初始ID、集群总数及UDP发送端口设置变量（计数器、循环终止条件），随后进入循环，计算每个载具所在的初始位置坐标（PosXX和PosYY），并使用start命令打开CopterSim程序，传递相应的参数（DLL文件、三维场景等）。choice命令会等待1秒钟，然后返回结果（确保启动前参数及时设置）。之后进行载具ID、端口的递归，满足终止条件后结束循环。</p>
+<div class="fragment"><div class="line">REM Set ToolChainType 1:Win10WSL 3:Cygwin</div>
+<div class="line"> </div>
+<div class="line">SET /a ToolChainType=1</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">if "%IS_BROADCAST%" == "0" (</div>
+<div class="line"> </div>
+<div class="line">  SET IS_BROADCAST=0</div>
+<div class="line"> </div>
+<div class="line">) else (</div>
+<div class="line"> </div>
+<div class="line">  SET IS_BROADCAST=1</div>
+<div class="line"> </div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">SET WINDOWSPATH=%PATH%</div>
+<div class="line"> </div>
+<div class="line">if %ToolChainType% EQU 1 (</div>
+<div class="line"> </div>
+<div class="line">  wsl echo Starting PX4 Build; cd %PSP_PATH_LINUX%/Firmware; ./BkFile/EnvOri.sh; export PATH=$HOME/ninja:$HOME/gcc-arm-none-eabi-7-2017-q4-major/bin:$PATH;make px4_sitl_default; ./Tools/sitl_multiple_run_rfly.sh %VehicleNum% %START_INDEX% %PX4SitlFrame%;echo Press any key to exit; read -n 1</div>
+<div class="line"> </div>
+<div class="line">) else (</div>
+<div class="line"> </div>
+<div class="line">  REM CYGPath</div>
+<div class="line"> </div>
+<div class="line">  cd %PSP_PATH%\CygwinToolchain</div>
+<div class="line"> </div>
+<div class="line">  CALL setPX4Env.bat</div>
+<div class="line"> </div>
+<div class="line">  bash -l -i -c 'echo Starting SITL SIMULATION; cd %PSP_PATH_LINUX%/Firmware; ./BkFile/EnvOri.sh; pwd; make px4_sitl_default; ./Tools/sitl_multiple_run_rfly.sh %VehicleNum% %START_INDEX% %PX4SitlFrame%;echo Press any key to exit; read -n 1; pkill -x px4 || true;'</div>
+<div class="line"> </div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">SET PATH=%WINDOWSPATH%</div>
+</div><!-- fragment --><p>构建PX4飞控的固件并启动模拟器。先选择编译环境（默认为平台安装时选择的编译环境），随后进行广播的辨别（如果IS_BROADCAST未定义，则将其设为0），然后根据不同的编译环境设置路径并进行编译（包括传入载具数量，ID，记录飞行状态等）。</p>
+<h2><a class="anchor" id="autotoc_md19"></a>
+结束仿真</h2>
+<div class="fragment"><div class="line">REM kill all applications when press a key</div>
+<div class="line"> </div>
+<div class="line">tasklist|find /i "CopterSim.exe" &amp;&amp; taskkill /im "CopterSim.exe"</div>
+<div class="line"> </div>
+<div class="line">tasklist|find /i "QGroundControl.exe" &amp;&amp; taskkill /f /im "QGroundControl.exe"</div>
+<div class="line"> </div>
+<div class="line">tasklist|find /i "RflySim3D.exe" &amp;&amp; taskkill /f /im "RflySim3D.exe"</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">ECHO Start End.</div>
+</div><!-- fragment --><p>首先使用任务列表命令（tasklist）查找是否有名为“CopterSim.exe”、“QGroundControl.exe”和“RflySim3D.exe”的进程正在运行。如果找到了这些进程，则使用任务终止命令（taskkill）终止它们。最后在终端输出“Start End.”的文本。</p>
+<h2><a class="anchor" id="autotoc_md20"></a>
+HITLRun与SITLRun脚本的区别</h2>
+<p>HITLRun.bat一键脚本中的大部分与SITLRun.bat脚本相同，仅在端口设置（CopterSim中的对应参数设置也会改变）、软件启动顺序（QGC最后启动）和固件编译（硬件在环脚本中没有编译过程）上有所区别：</p>
+<h3><a class="anchor" id="autotoc_md21"></a>
+端口设置</h3>
+<p>主要用于获取与 Pixhawk 控制器连接的串口信息，并提示用户输入 Pixhawk 的 COM 端口列表,其中，"%" 符号表示环境变量，在脚本运行时会根据实际情况替换成对应的值：</p>
+<h4><a class="anchor" id="autotoc_md22"></a>
+1. 获取 COM 端口信息字符串</h4>
+<div class="fragment"><div class="line">REM Get the Com port number</div>
+<div class="line">for /f "delims=" %%t in ('%PSP_PATH%\CopterSim\GetComList.exe 3 %BaudRate%') do set ComInfoStr=%%t</div>
+</div><!-- fragment --><ul>
+<li><b>目的</b>: 运行 <code>GetComList.exe</code> 工具，使用参数 <code>3</code> 和 <code>BaudRate%</code> 获取所有 COM 端口的信息，并将其存储在 <code>ComInfoStr</code> 变量中。</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md23"></a>
+2. 解析 COM 端口信息字符串</h4>
+<div class="fragment"><div class="line">for /f "tokens=1,2,3 delims=#" %%a in ("%ComInfoStr%") do (</div>
+<div class="line">    set ComNumExe=%%a</div>
+<div class="line">    set ComNameList=%%b</div>
+<div class="line">    set ComInfoList=%%c</div>
+<div class="line">)</div>
+</div><!-- fragment --><ul>
+<li><b>目的</b>: 将 <code>ComInfoStr</code> 变量中的信息解析成三个部分，分别存储在 <code>ComNumExe</code>, <code>ComNameList</code> 和 <code>ComInfoList</code> 变量中。</li>
+<li><b>工作原理</b>: 使用 <code>#</code> 作为分隔符，<code>for /f</code> 循环将 <code>ComInfoStr</code> 拆分为三部分并赋值给相应的变量。</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md24"></a>
+3. 显示所有可用的 COM 端口</h4>
+<div class="fragment"><div class="line">bat复制代码set remain=%ComInfoList%</div>
+<div class="line">echo All COM ports on this computer are:</div>
+<div class="line">echo.</div>
+<div class="line">:loopInfo</div>
+<div class="line">for /f "tokens=1* delims=;" %%a in ("%remain%") do (</div>
+<div class="line">    echo %%a</div>
+<div class="line">    set remain=%%b</div>
+<div class="line">)</div>
+<div class="line">if defined remain goto :loopInfo</div>
+<div class="line">echo.</div>
+<div class="line">ECHO ---------------------------------------</div>
+</div><!-- fragment --><ul>
+<li><b>目的</b>: 显示当前计算机上的所有 COM 端口。</li>
+<li><b>工作原理</b>:<ul>
+<li><code>set remain=ComInfoList%</code>: 初始化 <code>remain</code> 变量，将所有 COM 端口信息存入其中。</li>
+<li><code>:loopInfo</code> 标签和 <code>for /f</code> 循环用于逐个提取 <code>remain</code> 中的端口信息并显示出来。</li>
+<li><code>delims=;</code> 指定 <code>;</code> 作为分隔符，将每次提取的端口信息存入 <code>%a</code>，剩余部分继续存入 <code>remain</code>。</li>
+<li><code>if defined remain goto :loopInfo</code>: 如果 <code>remain</code> 变量中还有剩余内容，继续循环显示。</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md25"></a>
+4. 检查 COM 端口数量并输出推荐的端口列表</h4>
+<div class="fragment"><div class="line">bat复制代码if %ComNumExe% EQU 0 (</div>
+<div class="line">    echo Warning: there is no available COM port</div>
+<div class="line">) else (</div>
+<div class="line">    echo Recommended COM list input is: %ComNameList%</div>
+<div class="line">)</div>
+</div><!-- fragment --><ul>
+<li><p class="startli">目的:</p>
+<p class="startli">根据 <code>ComNumExe</code>变量的值判断是否存在可用的 COM 端口。</p><ul>
+<li>如果 <code>ComNumExe</code> 等于 0，则表示没有可用的 COM 端口，输出警告信息。</li>
+<li>否则，输出推荐的 COM 端口列表（<code>ComNameList</code> 变量中的内容）。</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md26"></a>
+5. 提示用户输入用于 HITL 仿真的 COM 端口列表</h4>
+<div class="fragment"><div class="line">bat复制代码ECHO.</div>
+<div class="line">ECHO ---------------------------------------</div>
+<div class="line">SET /P ComNum=My COM list for HITL simulation is:</div>
+</div><!-- fragment --><ul>
+<li><b>目的</b>: 提示用户输入用于硬件在环 (HITL) 仿真的 COM 端口列表(如果有多个 Pixhawk，用户需要使用逗号 <code>,</code> 分隔每个端口号)，并将其保存到 <code>ComNum</code> 变量中。</li>
+</ul>
+<div class="image">
+<a data_lightbox="image" href="image-20240812101009313.png"><img alt="" class="thumbnail" height="auto" src="image-20240812101009313.png" width="100"/></a>
+<div class="caption">
+image-20240812101009313</div></div>
+<h4><a class="anchor" id="autotoc_md27"></a>
+6. 解析并验证用户输入的 COM 端口列表</h4>
+<div class="fragment"><div class="line">bat复制代码SET string=%ComNum%</div>
+<div class="line">set subStr = ""</div>
+<div class="line">set /a VehicleNum=0</div>
+<div class="line">:split</div>
+<div class="line">    for /f "tokens=1,* delims=," %%i in ("%string%") do (</div>
+<div class="line">    set subStr=%%i</div>
+<div class="line">    set string=%%j</div>
+<div class="line">    )</div>
+<div class="line">    set /a eValue=subStr</div>
+<div class="line">    if not %eValue% EQU %subStr% (</div>
+<div class="line">        echo Error: Input '%subStr%' is not a integer!</div>
+<div class="line">        goto EOF</div>
+<div class="line">    )</div>
+<div class="line">    set /a VehicleNum = VehicleNum +1</div>
+<div class="line">if not "%string%"=="" goto split</div>
+<div class="line">REM echo total com number is %VehicleNum%</div>
+</div><!-- fragment --><ul>
+<li><p class="startli">目的</p>
+<p class="startli">: 将用户输入的 COM 端口列表解析为单个端口，并逐个验证输入是否为整数。</p><ul>
+<li><code>SET string=ComNum%</code>: 将用户输入的 COM 端口列表存入 <code>string</code> 变量中。</li>
+<li><code>for /f</code> 循环使用 <code>,</code> 作为分隔符，从 <code>string</code> 中提取第一个端口并存入 <code>subStr</code>。</li>
+<li>验证 <code>subStr</code> 是否为整数。如果不是整数，输出错误信息并跳转到脚本末尾。</li>
+<li>如果有多个端口，继续循环解析，直到处理完所有端口。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md28"></a>
+QGC启动顺序</h3>
+<div class="fragment"><div class="line">REM CptSmPath</div>
+<div class="line">cd /d %PSP_PATH%\CopterSim</div>
+<div class="line"> </div>
+<div class="line">set /a cntr = %START_INDEX%</div>
+<div class="line">set /a endNum = %VehicleTotalNum% +1</div>
+<div class="line"> </div>
+<div class="line">SET string=%ComNum%</div>
+<div class="line">:split1</div>
+<div class="line">    for /f "tokens=1,* delims=," %%i in ("%string%") do (</div>
+<div class="line">    set subStr=%%i</div>
+<div class="line">    set string=%%j</div>
+<div class="line">    )</div>
+<div class="line">    set /a PosXX=((%cntr%-1) / %sqrtNum%)*%VEHICLE_INTERVAL% + %ORIGIN_POS_X%</div>
+<div class="line">    set /a PosYY=((%cntr%-1) %% %sqrtNum%)*%VEHICLE_INTERVAL% + %ORIGIN_POS_Y%</div>
+<div class="line">    REM echo start CopterSim</div>
+<div class="line">    start /realtime CopterSim.exe 1 %cntr% %CLASS_3D_ID% %DLLModel% %SimMode% %UE4_MAP% %IS_BROADCAST% %PosXX% %PosYY% %ORIGIN_YAW% %subStr%:%BaudRate% %UDPSIMMODE% %IsSysID%</div>
+<div class="line">    choice /t 2 /d y /n &gt;nul</div>
+<div class="line">    set /a cntr=%cntr%+1</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    REM TIMEOUT /T 1</div>
+<div class="line"> </div>
+<div class="line">if not "%string%"=="" goto split1</div>
+<div class="line"> </div>
+<div class="line">REM QGCPath</div>
+<div class="line">tasklist|find /i "QGroundControl.exe" || start %PSP_PATH%\QGroundControl\QGroundControl.exe -noComPix</div>
+<div class="line">ECHO Start QGroundControl</div>
+</div><!-- fragment --><p>会在CopterSim参数设置完成之后再打开QGC, 因为如果QGC 先打开，可能会占用硬件的端口号导致CopterSim 不能开始仿真。</p>
+<h1><a class="anchor" id="autotoc_md29"></a>
+BAT脚本示例</h1>
+<h2><a class="anchor" id="autotoc_md30"></a>
+HITLRun.bat</h2>
+<p>常规硬件在环仿真脚本，支持输入串口序列（英文逗号","分隔），来启动多机的硬件在环仿真 注：REM打头的行是注释语句，不会被执行。其他的bat脚本语法规则可自行搜索学习。 注：本脚本的飞机位置是由脚本按矩形队列自动生成的，控制变量包括：</p>
+<div class="fragment"><div class="line">REM Run script as administrator（管理员方式运行，能够确保CopterSim以实时优先级运行，跑起来更可靠。）</div>
+<div class="line">SET /a START_INDEX=1（初始飞机序号，本脚本生成的飞机的CopterID，以此START_INDEX为初始值，依次递增1）</div>
+<div class="line">SET /a TOTOAL_COPTER=8 （总飞机数量，仅在多机联机仿真才需要幅值，告诉本脚本实际的飞机总数，以此来确定矩形队列的边长）</div>
+<div class="line">SET UE4_MAP=Grasslands （设置地图名字）</div>
+<div class="line">SET /a ORIGIN_POS_X=0 （矩形编队的原点X位置，单位米，只支持整数输入）</div>
+<div class="line">SET /a ORIGIN_POS_Y=0 （矩形编队的原点Y位置，单位米，只支持整数输入）</div>
+<div class="line">SET /a ORIGIN_YAW=0 （矩形编队的原点yaw角度，单位度，只支持整数输入）</div>
+<div class="line">SET /a VEHICLE_INTERVAL=2 （矩形编队的飞机间隔，单位米，只支持整数输入）SET /a CLASS_3D_ID=-1（重定义飞机的样式ID，默认-1将使用DLL模型或内置三维样式，如果&gt;0，则重定义为设定样式）</div>
+<div class="line">SET /A DLLModelVal=DLLModel （是否使用DLL模型，DLL模型的名字。这里支持将Simulink的飞行器模型生成DLL来导入平台，此模式支持固定翼、无人车等模型）</div>
+<div class="line">SimMode （仿真模式，这里设置为0或PX4_HITL，表示硬件在环仿真）</div>
+<div class="line">SET IS_BROADCAST=0 （是否联机仿真，这里可输入目标IP地址序列）</div>
+<div class="line">SET UDPSIMMODE=0 （UDP模式传输的是平台私有结构体，支持Simulink控制；MAVLink模式传输的是MAVLink协议，支持Python和mavros等控制模式）</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
+SITLRun.bat</h2>
+<p>常规软件在环脚本，支持输入飞机数量，自动开启多机软件在环仿真 与HITLRun.bat相比，关键代码如下</p>
+<div class="fragment"><div class="line">set SimMode=2 （这里设置为软件在环模式，对应CopterSimUI的值）</div>
+<div class="line">set PX4SitlFrame=iris （这里对应了PX4飞控的机架模式，这里是一个四旋翼）</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md32"></a>
+HITLPos.bat</h2>
+<p>开启硬件在环仿真，支持输入PosX、PosY和Yaw的值来初始化飞机位置偏航角 注：输入的位置字符串，以英文逗号“,”分隔 关键代码如下:</p>
+<div class="fragment"><div class="line">SET /P PosXStr=Please enter the PosX (m) list: （输入X的初始位置序列，单位米，可以为浮点数）</div>
+<div class="line">SET /P PosYStr=Please enter the PosY (m) list: （输入Y的初始位置序列，单位米，可以为浮点数）</div>
+<div class="line">SET /P YawStr=Please enter the Yaw (degree) list:（输入偏航的初始值序列，单位度，可以为浮点数）</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md33"></a>
+SITLPos.bat</h2>
+<p>开启软件在环仿真，支持输入PosX、PosY和Yaw的值来初始化飞机位置偏航角 注：其余注意事项同上</p>
+<h2><a class="anchor" id="autotoc_md34"></a>
+HITLPosAlt.bat</h2>
+<p>开启硬件在环仿真，支持输入PosX、PosY和Yaw的值来初始化飞机位置偏航角（可初始化空中或水下） 注：其余注意事项同上</p>
+<h2><a class="anchor" id="autotoc_md35"></a>
+SITLPosAlt.bat</h2>
+<p>开启软件在环仿真，支持输入PosX、PosY和Yaw的值来初始化飞机位置偏航角（可初始化空中或水下） 注：其余注意事项同上</p>
+<h2><a class="anchor" id="autotoc_md36"></a>
+HITLPosAltStr.bat</h2>
+<p>开启硬件在环仿真，自动输入PosX、PosY和Yaw的值来初始化飞机位置偏航角（可初始化空中或水下） 注：其余注意事项同上</p>
+<h2><a class="anchor" id="autotoc_md37"></a>
+SITLPosAltStr.bat</h2>
+<p>开启软件在环仿真，自动输入PosX、PosY和Yaw的值来初始化飞机位置偏航角（可初始化空中或水下） 注：其余注意事项同上</p>
+<h2><a class="anchor" id="autotoc_md38"></a>
+HITLPosStr.bat</h2>
+<p>开启硬件在环仿真，PosX、PosY和Yaw的值以字符串的形式写在bat文件的PosXStr、PosYStr、YawStr变量中，不需要手动输入 注：使用时，需要手动去修改PosXStr、PosYStr、YawStr字符串的值，来设置生成飞机的位置和偏航 注：输入的位置字符串，以英文逗号“,”分隔 注：位置序列的数量可以大于插入飞控数量，会依次取前面的位置进行幅值，例如本例子位置字符串包含10组飞机初始位姿，因此支持仿真1到10个飞机的硬件在环仿真 关键代码如下：</p>
+<div class="fragment"><div class="line">SET PosXStr=1,2,3,4,5,6,7,8,9,10 （X的初始位置序列，单位米，可以为浮点数）</div>
+<div class="line">SET PosYStr=0,0,0,0,0,0,0,0,0,0（Y的初始位置序列，单位米，可以为浮点数）</div>
+<div class="line">SET YawStr=0,0,0,0,0,0,0,0,0,0（偏航的初始值序列，单位度，可以为浮点数）</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md39"></a>
+SITLPosStr.bat</h2>
+<p>开启软件在环仿真，PosX、PosY和Yaw的值以字符串的形式写在bat文件的PosXStr、PosYStr、YawStr变量中，不需要手动输入 注：其余注意事项同上</p>
+<h2><a class="anchor" id="autotoc_md40"></a>
+HITLRunSysID.bat</h2>
+<p>开启硬件在环仿真，但是CopterID不是自动增1排序，而是根据SysID的值（在QGroundControl中可配置）来自动确定 注：如果使用常规模式，CopterID是和电脑串口序列先后顺序绑定的，每次插拔飞控后串口号会变化，因此无法通过CopterID定位到确定的飞控硬件 注：使用本方法，CopterID可以直接和飞控硬件绑定，便于故障时快速确定飞控序号。 注：如果要再使用常规模式的HITLRun.bat脚本，建议将SysID改回默认值1 关键代码如下：</p>
+<div class="fragment"><div class="line">SET /a IsSysID=1 （开启通过SysID自动计算CopterID的功能）</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md41"></a>
+HITLPosSysIDStr.bat</h2>
+<p>开启硬件在环仿真，通过SysID自动确定CopterID取值，且支持配置初始位置序列 注：本脚本会以SysID - START_INDEX的值，去索引PosXStr、PosYStr、YawStr列表来确定最终位置 注：例如SysID为15，START_INDEX为11，PosXStr=1,2,3,4,5,6,7,8,9,10，则飞机最终的x取值应该是PosXStr的第4位（从0开始数），也就是PosX=5 关键代码如下：</p>
+<div class="fragment"><div class="line">SET /a IsSysID=1 （开启通过SysID自动计算CopterID的功能）</div>
+<div class="line">SET /a START_INDEX=1 (位置列表的初始飞机的值)</div>
+<div class="line">SET PosXStr=1,2,3,4,5,6,7,8,9,10 （X的初始位置序列，单位米，可以为浮点数）</div>
+<div class="line">SET PosYStr=0,0,0,0,0,0,0,0,0,0（Y的初始位置序列，单位米，可以为浮点数）</div>
+<div class="line">SET YawStr=0,0,0,0,0,0,0,0,0,0（偏航的初始值序列，单位度，可以为浮点数）</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+HITLPosSysID.bat</h2>
+<p>开启硬件在环仿真，通过SysID自动确定CopterID取值（同HITLPosSysIDStr.bat），但初始位置序列是手动输入的</p>
+<h2><a class="anchor" id="autotoc_md43"></a>
+HITLPosStrGPS.bat</h2>
+<p>开启硬件在环仿真，使用全球GPS坐标初始化飞机位置 关键代码如下：</p>
+<div class="fragment"><div class="line">SET isPosGps=1（如果isPosGps设为1，则PosXStr和PosYStr可使用纬度和精度格式（单位度）输入；如果无isPosGps或设为0，则使用xy的北东地（单位米）的格式输入初始位置。）</div>
+<div class="line">SET isBatLLAOrin=1（如果isBatLLAOrin设置为1，且LatLongAlt设定了经纬高的值，则会使用LatLongAlt的经纬高作为北东地坐标系下，GPS坐标原点。反之，使用模型内部GPS设定值，或者png+txt地形文件中指定的值。）</div>
+<div class="line">注：本功能仅支持完整版及以上，免费版无法配置GPS初始位置。</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md44"></a>
+SITLPosStrGPS.bat</h2>
+<p>开启软件在环仿真，使用全球GPS坐标初始化飞机位置 关键代码如下：</p>
+<div class="fragment"><div class="line">SET isPosGps=1（如果isPosGps设为1，则PosXStr和PosYStr可使用纬度和精度格式（单位度）输入；如果无isPosGps或设为0，则使用xy的北东地（单位米）的格式输入初始位置。）</div>
+<div class="line">SET isBatLLAOrin=1（如果isBatLLAOrin设置为1，且LatLongAlt设定了经纬高的值，则会使用LatLongAlt的经纬高作为北东地坐标系下，GPS坐标原点。反之，使用模型内部GPS设定值，或者png+txt地形文件中指定的值。）</div>
+<div class="line">注：本功能仅支持完整版及以上，免费版无法配置GPS初始位置。</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md45"></a>
+HITLRunExtNet.bat</h2>
+<p>使用第三方飞控开启硬件在环仿真</p>
+<p>关键代码如下：</p>
+<div class="fragment"><div class="line">set SimMode=EXT_SIM_NET</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md46"></a>
+HITLRunMAVLinkNoGPS.bat</h2>
+<div class="fragment"><div class="line">SET UDPSIMMODE=Mavlink_NoGPS</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md47"></a>
+SITLRunMAVLinkNoGPS.bat</h2>
+<h2><a class="anchor" id="autotoc_md48"></a>
+HITLRunPX4Net.bat</h2>
+<div class="fragment"><div class="line">set SimMode=PX4_HITL_NET</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md49"></a>
+SITLPosStrSel.bat</h2>
+<h2><a class="anchor" id="autotoc_md50"></a>
+StartCFclient.bat</h2>
+<p>在 Windows 系统中运行 <code>cfclient.exe</code> 程序</p>
+<div class="fragment"><div class="line">if not defined PSP_PATH (</div>
+<div class="line">    SET PSP_PATH=C:\PX4PSP</div>
+<div class="line">    SET PSP_PATH_LINUX=/mnt/c/PX4PSP</div>
+<div class="line">)</div>
+</div><!-- fragment --><p>这部分代码检查是否已经定义了环境变量 <code>PSP_PATH</code>。如果没有定义，则设置两个环境变量：</p>
+<ul>
+<li><code>PSP_PATH</code> 设置为 <code>C:\PX4PSP</code>，这是在 Windows 系统中的路径。</li>
+<li><code>PSP_PATH_LINUX</code> 设置为 <code>/mnt/c/PX4PSP</code>，这是在 WSL（Windows Subsystem for Linux）中的路径。</li>
+</ul>
+<div class="fragment"><div class="line">%1(start /min cmd.exe /c %0 :&amp; exit )</div>
+</div><!-- fragment --><p>这行代码有点复杂，实际上它是用来确保脚本在一个最小化的命令提示符窗口中运行。具体来说：</p>
+<ul>
+<li><code>%1</code> 代表批处理文件的第一个命令行参数。如果没有参数，这部分会被忽略。</li>
+<li><code>start /min cmd.exe /c %0</code> 启动一个新的最小化命令提示符窗口，并执行当前批处理文件（<code>%0</code> 代表批处理文件自身）。</li>
+<li><code>:&amp; exit</code> 确保当前窗口在启动新窗口后立即退出。</li>
+</ul>
+<div class="fragment"><div class="line">cd /d %PSP_PATH%\RflySimAPIs\Python38Scripts</div>
+</div><!-- fragment --><p>这行代码将当前目录切换到 <code>RflySimAPIs\Python38Scripts</code> 目录，该目录位于之前定义的 <code>PSP_PATH</code> 路径下。</p>
+<ul>
+<li><code>/d</code> 参数允许切换到一个不同的驱动器上的目录。</li>
+</ul>
+<div class="fragment"><div class="line">SET PATH=%PSP_PATH%\Python38;%PSP_PATH%\Python38\Scripts</div>
+</div><!-- fragment --><p>这行代码将 Python 3.8 和其脚本目录添加到系统环境变量 <code>PATH</code> 中，这样在运行 Python 脚本时可以找到相应的可执行文件。</p>
+<div class="fragment"><div class="line">cfclient.exe</div>
+</div><!-- fragment --><p>最后，这行代码运行名为 <code>cfclient.exe</code> 的可执行文件，假设它位于当前目录或已添加到 <code>PATH</code> 中的某个目录。</p>
+<h2><a class="anchor" id="autotoc_md51"></a>
+StopBuild.bat</h2>
+<p>在 Windows 系统中检查并终止与 Windows Subsystem for Linux (WSL) 相关的进程。</p>
+<div class="fragment"><div class="line">tasklist|find /i "wsl.exe" &amp;&amp; taskkill /f /im "wsl.exe"</div>
+</div><!-- fragment --><p>这行代码执行以下操作：</p>
+<ol type="1">
+<li><code>tasklist</code> 列出当前正在运行的所有进程。</li>
+<li>通过管道符号 (<code>|</code>)，将 <code>tasklist</code> 的输出传递给 <code>find</code> 命令。</li>
+<li><code>find /i "wsl.exe"</code> 在进程列表中查找不区分大小写的字符串 "wsl.exe"。</li>
+<li>如果找到了 "wsl.exe" 进程，<code>&amp;&amp;</code> 后的命令 <code>taskkill /f /im "wsl.exe"</code> 将被执行。<code>taskkill</code> 命令强制（<code>/f</code>）终止（杀掉）进程名为 "wsl.exe" 的所有实例。</li>
+</ol>
+<div class="fragment"><div class="line">tasklist|find /i "wslhost.exe" &amp;&amp; taskkill /f /im "wslhost.exe"</div>
+</div><!-- fragment --><p>这行代码与上一行类似，但它检查并终止 "wslhost.exe" 进程。如果找到 "wslhost.exe" 进程，使用 <code>taskkill /f /im "wslhost.exe"</code> 强制终止它。</p>
+<div class="fragment"><div class="line">tasklist|find /i "bash.exe" &amp;&amp; taskkill /f /im "bash.exe"</div>
+</div><!-- fragment --><p>这行代码同样类似，但它检查并终止 "bash.exe" 进程。如果找到 "bash.exe" 进程，使用 <code>taskkill /f /im "bash.exe"</code> 强制终止它。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

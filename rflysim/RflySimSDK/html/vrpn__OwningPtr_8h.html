@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_OwningPtr.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#func-members">函数</a> </div>
+<div class="headertitle"><div class="title">vrpn_OwningPtr.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Header  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include "<a class="el" href="vrpn__Assert_8h_source.html">vrpn_Assert.h</a>"</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> vrpn_OwningPtr.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="203" scrolling="no" src="vrpn__OwningPtr_8h__incl.svg" width="284"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="476" scrolling="no" src="vrpn__OwningPtr_8h__dep__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="vrpn__OwningPtr_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn_1_1DefaultDeleter.html">DefaultDeleter&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">default deleter  <a href="structvrpn_1_1DefaultDeleter.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn_1_1DefaultDeleter_3_01T_0f_0e_4.html">DefaultDeleter&lt; T[]&gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">handle arrays with delete []  <a href="structvrpn_1_1DefaultDeleter_3_01T_0f_0e_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">OwningPtrPointerType&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">Default trait.  <a href="structvrpn_1_1traits_1_1OwningPtrPointerType.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType_3_01T_0f_0e_4.html">OwningPtrPointerType&lt; T[]&gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">Specialization for arrays  <a href="structvrpn_1_1traits_1_1OwningPtrPointerType_3_01T_0f_0e_4.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr&lt; T, D &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6e0dbbc57df31a1a4d55638443bb178f" id="r_a6e0dbbc57df31a1a4d55638443bb178f"><td class="memTemplParams" colspan="2"><a id="a6e0dbbc57df31a1a4d55638443bb178f" name="a6e0dbbc57df31a1a4d55638443bb178f"></a>
+template&lt;typename T , typename D &gt; </td></tr>
+<tr class="memitem:a6e0dbbc57df31a1a4d55638443bb178f"><td align="right" class="memTemplItemLeft" valign="top">void </td><td class="memTemplItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; &amp;lhs, <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; &amp;rhs)</td></tr>
+<tr class="separator:a6e0dbbc57df31a1a4d55638443bb178f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9719c55c04d0aaa4ba749fc99e882649" id="r_a9719c55c04d0aaa4ba749fc99e882649"><td class="memTemplParams" colspan="2"><a id="a9719c55c04d0aaa4ba749fc99e882649" name="a9719c55c04d0aaa4ba749fc99e882649"></a>
+template&lt;typename T , typename D &gt; </td></tr>
+<tr class="memitem:a9719c55c04d0aaa4ba749fc99e882649"><td align="right" class="memTemplItemLeft" valign="top"><a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">traits::OwningPtrPointerType</a>&lt; T &gt;::type </td><td class="memTemplItemRight" valign="bottom"><b>get_pointer</b> (<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; const &amp;ptr)</td></tr>
+<tr class="separator:a9719c55c04d0aaa4ba749fc99e882649"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a698fa6f12e91e57e986b29f1fed2a8c1" id="r_a698fa6f12e91e57e986b29f1fed2a8c1"><td class="memTemplParams" colspan="2"><a id="a698fa6f12e91e57e986b29f1fed2a8c1" name="a698fa6f12e91e57e986b29f1fed2a8c1"></a>
+template&lt;typename T , typename D1 , typename D2 &gt; </td></tr>
+<tr class="memitem:a698fa6f12e91e57e986b29f1fed2a8c1"><td align="right" class="memTemplItemLeft" valign="top">bool </td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D1 &gt; const &amp;lhs, <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D2 &gt; const &amp;rhs)</td></tr>
+<tr class="separator:a698fa6f12e91e57e986b29f1fed2a8c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3902ff2a8075dbab006862a8ce49a2b7" id="r_a3902ff2a8075dbab006862a8ce49a2b7"><td class="memTemplParams" colspan="2"><a id="a3902ff2a8075dbab006862a8ce49a2b7" name="a3902ff2a8075dbab006862a8ce49a2b7"></a>
+template&lt;typename T , typename D &gt; </td></tr>
+<tr class="memitem:a3902ff2a8075dbab006862a8ce49a2b7"><td align="right" class="memTemplItemLeft" valign="top">bool </td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; const &amp;lhs, typename <a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">traits::OwningPtrPointerType</a>&lt; T &gt;::type rhs)</td></tr>
+<tr class="separator:a3902ff2a8075dbab006862a8ce49a2b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac23e5ec939c7b56bb8589b1fd2d6bf9e" id="r_ac23e5ec939c7b56bb8589b1fd2d6bf9e"><td class="memTemplParams" colspan="2"><a id="ac23e5ec939c7b56bb8589b1fd2d6bf9e" name="ac23e5ec939c7b56bb8589b1fd2d6bf9e"></a>
+template&lt;typename T , typename D &gt; </td></tr>
+<tr class="memitem:ac23e5ec939c7b56bb8589b1fd2d6bf9e"><td align="right" class="memTemplItemLeft" valign="top">bool </td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (typename <a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">traits::OwningPtrPointerType</a>&lt; T &gt;::type lhs, <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; const &amp;rhs)</td></tr>
+<tr class="separator:ac23e5ec939c7b56bb8589b1fd2d6bf9e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40f87830eed9d8060ba271ae48f3e80d" id="r_a40f87830eed9d8060ba271ae48f3e80d"><td class="memTemplParams" colspan="2"><a id="a40f87830eed9d8060ba271ae48f3e80d" name="a40f87830eed9d8060ba271ae48f3e80d"></a>
+template&lt;typename T , typename D1 , typename D2 &gt; </td></tr>
+<tr class="memitem:a40f87830eed9d8060ba271ae48f3e80d"><td align="right" class="memTemplItemLeft" valign="top">bool </td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D1 &gt; const &amp;lhs, <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D2 &gt; const &amp;rhs)</td></tr>
+<tr class="separator:a40f87830eed9d8060ba271ae48f3e80d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a89327acce0463054008bcb4971e71942" id="r_a89327acce0463054008bcb4971e71942"><td class="memTemplParams" colspan="2"><a id="a89327acce0463054008bcb4971e71942" name="a89327acce0463054008bcb4971e71942"></a>
+template&lt;typename T , typename D &gt; </td></tr>
+<tr class="memitem:a89327acce0463054008bcb4971e71942"><td align="right" class="memTemplItemLeft" valign="top">bool </td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; const &amp;lhs, typename <a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">traits::OwningPtrPointerType</a>&lt; T &gt;::type rhs)</td></tr>
+<tr class="separator:a89327acce0463054008bcb4971e71942"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2ae20d5f6ce33592bad80877764a9711" id="r_a2ae20d5f6ce33592bad80877764a9711"><td class="memTemplParams" colspan="2"><a id="a2ae20d5f6ce33592bad80877764a9711" name="a2ae20d5f6ce33592bad80877764a9711"></a>
+template&lt;typename T , typename D &gt; </td></tr>
+<tr class="memitem:a2ae20d5f6ce33592bad80877764a9711"><td align="right" class="memTemplItemLeft" valign="top">bool </td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (typename <a class="el" href="structvrpn_1_1traits_1_1OwningPtrPointerType.html">traits::OwningPtrPointerType</a>&lt; T &gt;::type lhs, <a class="el" href="classvrpn_1_1OwningPtr.html">OwningPtr</a>&lt; T, D &gt; const &amp;rhs)</td></tr>
+<tr class="separator:a2ae20d5f6ce33592bad80877764a9711"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Header </p>
+<dl class="section date"><dt>日期</dt><dd>2016</dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Ryan Pavlik <a href="#" onclick="location.href='mai'+'lto:'+'rya'+'n@'+'sen'+'si'+'cs.'+'co'+'m'; return false;">ryan@<span class="obfuscator">.nosp@m.</span>sens<span class="obfuscator">.nosp@m.</span>ics.c<span class="obfuscator">.nosp@m.</span>om</a> <a href="http://sensics.com">http://sensics.com</a> </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

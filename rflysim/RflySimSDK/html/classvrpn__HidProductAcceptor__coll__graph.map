@@ -1,0 +1,5 @@
+<map id="vrpn_HidProductAcceptor" name="vrpn_HidProductAcceptor">
+<area shape="rect" id="Node000001" title="Accepts any device with the given vendor and product IDs." alt="" coords="5,80,176,107"/>
+<area shape="rect" id="Node000002" href="$classvrpn__HidAcceptor.html" title=" " alt="" coords="28,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,48,93,80,88,80,88,48"/>
+</map>

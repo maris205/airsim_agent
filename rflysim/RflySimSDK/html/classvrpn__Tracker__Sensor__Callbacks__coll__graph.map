@@ -1,0 +1,18 @@
+<map id="vrpn_Tracker_Sensor_Callbacks" name="vrpn_Tracker_Sensor_Callbacks">
+<area shape="rect" id="Node000001" title=" " alt="" coords="789,107,935,149"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Callback__List.html" title=" " alt="" coords="398,5,566,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="582,40,672,59,766,84,816,104,814,109,764,89,671,64,581,45"/>
+<area shape="rect" id="Node000003" href="$structvrpn__Callback__List_1_1vrpn__CBS.html" title=" " alt="" coords="137,115,218,141"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,104,241,88,320,60,397,40,398,45,322,65,243,93,213,109"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Callback__List.html" title=" " alt="" coords="386,72,578,115"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="233,119,385,102,386,107,233,124"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Callback__List.html" title=" " alt="" coords="384,139,581,181"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="234,140,242,141,314,150,384,155,383,160,313,155,242,147,233,145"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Callback__List.html" title=" " alt="" coords="350,205,614,248"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="207,149,243,172,296,192,350,206,349,211,294,197,241,177,204,154"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,115,60,141"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,125,136,125,136,131,75,131"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="594,101,789,119,788,124,594,106"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="596,154,765,141,789,138,789,144,766,147,596,159"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="629,206,697,192,764,173,822,148,824,152,766,179,699,197,630,211"/>
+</map>

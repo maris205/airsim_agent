@@ -1,0 +1,7 @@
+<map id="SendVelNED" name="SendVelNED">
+<area shape="rect" id="Node000001" title="发送北东地坐标系下的速度指令。" alt="" coords="5,35,104,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据提供的布尔列表 EnList 计算一个类型掩码（type mask）。" alt="" coords="220,5,325,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,39,204,25,205,30,104,44"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据输入的启用列表计算Type Mask" alt="" coords="152,56,393,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,52,137,56,136,62,104,57"/>
+</map>

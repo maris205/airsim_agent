@@ -1,0 +1,19 @@
+<map id="local_pose_callback" name="local_pose_callback">
+<area shape="rect" id="Node000001" title="处理本地位姿消息" alt="" coords="5,123,144,149"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a658a7a30dcb55cec7686077cfe55aa77" title="从输入的四元数（q）来计算欧拉角" alt="" coords="192,5,392,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,120,136,89,190,58,203,52,205,57,193,62,139,94,95,124"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a658a7a30dcb55cec7686077cfe55aa77" title="从四元数计算欧拉角" alt="" coords="259,72,324,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,119,243,94,245,99,136,125"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5" title="调整偏航角在&#45;π到π之间" alt="" coords="195,197,388,240"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="113,147,220,189,218,194,111,152"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#adf8269c75db7e139aaa12454d041afc5" title="对输入的偏航角进行角度约束，将偏航角限制在[&#45;pi, pi]区间内。" alt="" coords="440,147,625,189"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="144,138,424,158,424,163,144,143"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#adf8269c75db7e139aaa12454d041afc5" title="对偏航角进行限制，使其保持在[&#45;π/2, π/2]范围内" alt="" coords="673,213,739,240"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="86,148,127,201,157,229,193,250,255,269,320,280,386,283,450,279,569,262,658,239,659,244,570,267,451,285,386,288,319,285,253,274,191,254,154,233,123,205,82,151"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="250,197,249,187,256,178,270,173,292,171,315,173,329,179,327,184,314,178,292,176,271,178,259,183,254,189,256,196"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="388,205,451,191,453,196,390,210"/>
+<area shape="poly" id="edge9_Node000004_Node000006" title=" " alt="" coords="389,218,658,223,658,228,389,223"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="440,181,373,196,372,191,439,176"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="499,146,498,137,503,128,515,122,533,120,552,122,563,129,560,133,550,128,533,125,517,127,507,132,503,138,504,146"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="598,187,660,208,658,213,597,192"/>
+</map>

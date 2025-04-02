@@ -1,0 +1,104 @@
+<map id="simulink/mavlink/autoquad/autoquad.h" name="simulink/mavlink/autoquad/autoquad.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol generated from autoquad.xml" alt="" coords="2723,5,2898,48"/>
+<area shape="rect" id="Node000002" href="$protocol_8h_source.html" title=" " alt="" coords="50,195,140,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2723,33,2223,47,1478,76,1083,98,712,123,393,154,261,171,153,189,141,192,140,187,152,184,260,166,392,148,712,118,1083,92,1478,71,2223,42,2723,27"/>
+<area shape="rect" id="Node000013" href="$mavlink__msg__aq__telemetry__f_8h_source.html" title=" " alt="" coords="2603,104,2813,131"/>
+<area shape="poly" id="edge7_Node000001_Node000013" title=" " alt="" coords="2789,50,2736,96,2732,92,2785,46"/>
+<area shape="rect" id="Node000014" href="$mavlink__msg__aq__esc__telemetry_8h_source.html" title=" " alt="" coords="2837,96,2992,139"/>
+<area shape="poly" id="edge8_Node000001_Node000014" title=" " alt="" coords="2837,46,2881,84,2877,88,2833,50"/>
+<area shape="rect" id="Node000015" href="$common_8h.html" title="MAVLink comm protocol generated from common.xml" alt="" coords="3811,104,3960,131"/>
+<area shape="poly" id="edge9_Node000001_Node000015" title=" " alt="" coords="2899,33,3796,106,3795,111,2899,38"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,352,70,379"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,224,46,247,33,262,23,278,19,293,19,308,27,337,22,339,14,309,14,292,18,276,28,258,42,243,72,220"/>
+<area shape="rect" id="Node000004" href="$mavlink__types_8h_source.html" title=" " alt="" coords="115,352,232,379"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="118,220,147,243,161,259,172,276,180,307,180,336,175,337,175,308,167,278,157,262,143,247,115,224"/>
+<area shape="rect" id="Node000007" href="$mavlink__helpers_8h_source.html" title=" " alt="" coords="32,277,158,304"/>
+<area shape="poly" id="edge4_Node000002_Node000007" title=" " alt="" coords="98,222,98,262,92,262,92,222"/>
+<area shape="poly" id="edge5_Node000007_Node000003" title=" " alt="" coords="87,306,59,341,55,338,83,303"/>
+<area shape="poly" id="edge6_Node000007_Node000004" title=" " alt="" coords="110,303,151,339,147,343,107,307"/>
+<area shape="poly" id="edge10_Node000015_Node000002" title=" " alt="" coords="3811,123,3004,141,1576,147,1108,151,685,159,351,172,232,180,153,189,140,192,139,187,152,184,232,174,351,166,685,154,1108,146,1576,142,3004,136,3811,118"/>
+<area shape="rect" id="Node000016" href="$common_2mavlink__msg__heartbeat_8h_source.html" title=" " alt="" coords="164,195,343,221"/>
+<area shape="poly" id="edge11_Node000015_Node000016" title=" " alt="" coords="3811,123,3004,141,2424,145,1678,146,1295,150,933,157,613,170,355,189,323,194,322,189,355,184,612,164,933,152,1295,144,1678,141,2424,140,3004,136,3811,118"/>
+<area shape="rect" id="Node000017" href="$mavlink__msg__sys__status_8h_source.html" title=" " alt="" coords="367,195,556,221"/>
+<area shape="poly" id="edge12_Node000015_Node000017" title=" " alt="" coords="3811,123,3004,141,2471,146,1784,149,1432,153,1099,160,804,172,567,189,534,194,533,189,567,184,804,166,1099,154,1432,147,1784,143,2471,140,3004,136,3811,118"/>
+<area shape="rect" id="Node000018" href="$mavlink__msg__system__time_8h_source.html" title=" " alt="" coords="579,187,736,229"/>
+<area shape="poly" id="edge13_Node000015_Node000018" title=" " alt="" coords="3811,123,3004,141,2515,145,1886,147,1561,151,1252,158,977,170,752,189,751,184,976,165,1252,153,1561,145,1886,142,2515,140,3004,136,3811,118"/>
+<area shape="rect" id="Node000019" href="$mavlink__msg__ping_8h_source.html" title=" " alt="" coords="759,195,908,221"/>
+<area shape="poly" id="edge14_Node000015_Node000019" title=" " alt="" coords="3811,123,920,189,896,193,895,188,920,184,3811,118"/>
+<area shape="rect" id="Node000020" href="$mavlink__msg__change__operator__control_8h_source.html" title=" " alt="" coords="932,187,1087,229"/>
+<area shape="poly" id="edge15_Node000015_Node000020" title=" " alt="" coords="3811,123,2374,157,1103,190,1103,185,2374,152,3811,118"/>
+<area shape="rect" id="Node000021" href="$mavlink__msg__change__operator__control__ack_8h_source.html" title=" " alt="" coords="1111,187,1271,229"/>
+<area shape="poly" id="edge16_Node000015_Node000021" title=" " alt="" coords="3811,123,2473,156,1710,176,1287,190,1287,184,1709,170,2473,150,3811,118"/>
+<area shape="rect" id="Node000022" href="$mavlink__msg__auth__key_8h_source.html" title=" " alt="" coords="1295,187,1433,229"/>
+<area shape="poly" id="edge17_Node000015_Node000022" title=" " alt="" coords="3811,123,2568,152,1857,172,1449,190,1449,184,1857,167,2568,147,3811,118"/>
+<area shape="rect" id="Node000023" href="$mavlink__msg__set__mode_8h_source.html" title=" " alt="" coords="1458,195,1639,221"/>
+<area shape="poly" id="edge18_Node000015_Node000023" title=" " alt="" coords="3811,123,2676,150,2029,170,1792,180,1651,189,1620,194,1619,189,1651,184,1791,174,2029,164,2676,144,3811,118"/>
+<area shape="rect" id="Node000024" href="$mavlink__msg__param__request__read_8h_source.html" title=" " alt="" coords="1663,187,1812,229"/>
+<area shape="poly" id="edge19_Node000015_Node000024" title=" " alt="" coords="3811,123,2788,149,2198,168,1973,179,1828,189,1827,184,1972,174,2198,163,2788,143,3811,118"/>
+<area shape="rect" id="Node000025" href="$mavlink__msg__param__request__list_8h_source.html" title=" " alt="" coords="1836,187,1986,229"/>
+<area shape="poly" id="edge20_Node000015_Node000025" title=" " alt="" coords="3811,123,2875,150,2339,169,2134,179,2001,189,2001,184,2134,174,2339,164,2875,144,3811,118"/>
+<area shape="rect" id="Node000026" href="$mavlink__msg__param__value_8h_source.html" title=" " alt="" coords="2010,187,2159,229"/>
+<area shape="poly" id="edge21_Node000015_Node000026" title=" " alt="" coords="3811,123,2961,151,2479,170,2174,189,2174,184,2479,165,2961,145,3811,118"/>
+<area shape="rect" id="Node000027" href="$mavlink__msg__param__set_8h_source.html" title=" " alt="" coords="2183,187,2332,229"/>
+<area shape="poly" id="edge22_Node000015_Node000027" title=" " alt="" coords="3811,123,3099,143,2672,163,2490,175,2348,189,2347,184,2490,170,2672,157,3098,138,3811,117"/>
+<area shape="rect" id="Node000028" href="$mavlink__msg__gps__raw__int_8h_source.html" title=" " alt="" coords="2356,187,2519,229"/>
+<area shape="poly" id="edge23_Node000015_Node000028" title=" " alt="" coords="3811,121,3595,122,3282,131,2914,152,2723,168,2535,189,2534,184,2722,163,2913,146,3281,126,3595,117,3811,116"/>
+<area shape="rect" id="Node000029" href="$mavlink__msg__gps__status_8h_source.html" title=" " alt="" coords="2543,195,2732,221"/>
+<area shape="poly" id="edge24_Node000015_Node000029" title=" " alt="" coords="3811,122,3623,127,3359,139,3053,158,2743,189,2712,194,2711,189,2743,184,3053,153,3359,133,3623,122,3811,117"/>
+<area shape="rect" id="Node000030" href="$mavlink__msg__scaled__imu_8h_source.html" title=" " alt="" coords="2755,187,2906,229"/>
+<area shape="poly" id="edge25_Node000015_Node000030" title=" " alt="" coords="3811,123,3652,128,3434,139,3182,159,2922,189,2922,184,3181,153,3433,134,3652,122,3811,117"/>
+<area shape="rect" id="Node000031" href="$mavlink__msg__raw__imu_8h_source.html" title=" " alt="" coords="2931,195,3104,221"/>
+<area shape="poly" id="edge26_Node000015_Node000031" title=" " alt="" coords="3811,125,3507,146,3313,165,3117,189,3090,194,3089,189,3116,184,3312,160,3507,141,3811,120"/>
+<area shape="rect" id="Node000032" href="$mavlink__msg__raw__pressure_8h_source.html" title=" " alt="" coords="3128,195,3331,221"/>
+<area shape="poly" id="edge27_Node000015_Node000032" title=" " alt="" coords="3811,129,3600,154,3343,189,3313,194,3312,189,3342,184,3600,149,3810,124"/>
+<area shape="rect" id="Node000033" href="$mavlink__msg__scaled__pressure_8h_source.html" title=" " alt="" coords="3355,187,3506,229"/>
+<area shape="poly" id="edge28_Node000015_Node000033" title=" " alt="" coords="3813,134,3522,189,3521,184,3812,129"/>
+<area shape="rect" id="Node000034" href="$mavlink__msg__attitude_8h_source.html" title=" " alt="" coords="3531,195,3698,221"/>
+<area shape="poly" id="edge29_Node000015_Node000034" title=" " alt="" coords="3848,134,3669,192,3667,187,3846,129"/>
+<area shape="rect" id="Node000035" href="$mavlink__msg__attitude__quaternion_8h_source.html" title=" " alt="" coords="3722,187,3878,229"/>
+<area shape="poly" id="edge30_Node000015_Node000035" title=" " alt="" coords="3875,133,3832,178,3828,174,3871,129"/>
+<area shape="rect" id="Node000036" href="$mavlink__msg__local__position__ned_8h_source.html" title=" " alt="" coords="3902,187,4042,229"/>
+<area shape="poly" id="edge31_Node000015_Node000036" title=" " alt="" coords="3900,129,3944,174,3940,178,3896,133"/>
+<area shape="rect" id="Node000037" href="$mavlink__msg__global__position__int_8h_source.html" title=" " alt="" coords="4066,187,4214,229"/>
+<area shape="poly" id="edge32_Node000015_Node000037" title=" " alt="" coords="3923,129,4067,179,4065,184,3921,134"/>
+<area shape="rect" id="Node000038" href="$mavlink__msg__rc__channels__scaled_8h_source.html" title=" " alt="" coords="4238,187,4421,229"/>
+<area shape="poly" id="edge33_Node000015_Node000038" title=" " alt="" coords="3950,129,4223,183,4222,188,3949,134"/>
+<area shape="rect" id="Node000039" href="$mavlink__msg__rc__channels__raw_8h_source.html" title=" " alt="" coords="4446,187,4629,229"/>
+<area shape="poly" id="edge34_Node000015_Node000039" title=" " alt="" coords="3960,124,4168,147,4431,184,4430,189,4167,153,3960,129"/>
+<area shape="rect" id="Node000040" href="$mavlink__msg__servo__output__raw_8h_source.html" title=" " alt="" coords="4653,187,4798,229"/>
+<area shape="poly" id="edge35_Node000015_Node000040" title=" " alt="" coords="3960,119,4253,139,4443,157,4638,184,4637,189,4443,163,4253,144,3960,124"/>
+<area shape="rect" id="Node000041" href="$mavlink__msg__mission__request__partial__list_8h_source.html" title=" " alt="" coords="4822,187,4981,229"/>
+<area shape="poly" id="edge36_Node000015_Node000041" title=" " alt="" coords="3960,118,4113,124,4322,135,4561,155,4808,184,4807,189,4561,160,4321,141,4113,129,3960,123"/>
+<area shape="rect" id="Node000042" href="$mavlink__msg__mission__write__partial__list_8h_source.html" title=" " alt="" coords="5005,187,5163,229"/>
+<area shape="poly" id="edge37_Node000015_Node000042" title=" " alt="" coords="3960,117,4140,121,4393,131,4687,151,4839,166,4990,184,4989,189,4839,171,4686,156,4392,136,4139,126,3960,122"/>
+<area shape="rect" id="Node000043" href="$mavlink__msg__mission__item_8h_source.html" title=" " alt="" coords="5188,187,5346,229"/>
+<area shape="poly" id="edge38_Node000015_Node000043" title=" " alt="" coords="3960,116,4166,118,4464,127,4813,147,4994,163,5172,184,5172,189,4993,169,4813,153,4464,132,4166,123,3960,121"/>
+<area shape="rect" id="Node000044" href="$mavlink__msg__mission__request_8h_source.html" title=" " alt="" coords="5370,187,5529,229"/>
+<area shape="poly" id="edge39_Node000015_Node000044" title=" " alt="" coords="3960,118,4640,139,5046,159,5219,171,5355,184,5354,189,5219,176,5046,164,4640,145,3960,123"/>
+<area shape="rect" id="Node000045" href="$mavlink__msg__mission__set__current_8h_source.html" title=" " alt="" coords="5553,187,5711,229"/>
+<area shape="poly" id="edge40_Node000015_Node000045" title=" " alt="" coords="3960,117,4725,137,5187,157,5384,170,5538,184,5537,189,5383,175,5187,162,4725,143,3960,123"/>
+<area shape="rect" id="Node000046" href="$mavlink__msg__mission__current_8h_source.html" title=" " alt="" coords="5736,187,5894,229"/>
+<area shape="poly" id="edge41_Node000015_Node000046" title=" " alt="" coords="3960,117,4307,123,4810,135,5328,155,5549,168,5721,184,5720,189,5549,174,5328,161,4810,141,4307,128,3960,122"/>
+<area shape="rect" id="Node000047" href="$mavlink__msg__mission__request__list_8h_source.html" title=" " alt="" coords="5918,187,6077,229"/>
+<area shape="poly" id="edge42_Node000015_Node000047" title=" " alt="" coords="3960,117,4338,122,4894,133,5469,153,5713,167,5903,184,5903,189,5713,173,5468,159,4894,139,4338,127,3960,122"/>
+<area shape="rect" id="Node000048" href="$mavlink__msg__mission__count_8h_source.html" title=" " alt="" coords="6101,187,6259,229"/>
+<area shape="poly" id="edge43_Node000015_Node000048" title=" " alt="" coords="3960,116,4368,121,4977,131,5609,152,5878,166,6086,184,6085,189,5877,171,5609,157,4977,137,4368,126,3960,122"/>
+<area shape="rect" id="Node000049" href="$mavlink__msg__mission__clear__all_8h_source.html" title=" " alt="" coords="6284,187,6442,229"/>
+<area shape="poly" id="edge44_Node000015_Node000049" title=" " alt="" coords="3960,116,4398,120,5060,129,5749,150,6042,165,6268,184,6268,189,6042,170,5749,155,5060,135,4398,125,3960,122"/>
+<area shape="rect" id="Node000050" href="$mavlink__msg__mission__item__reached_8h_source.html" title=" " alt="" coords="6466,187,6625,229"/>
+<area shape="poly" id="edge45_Node000015_Node000050" title=" " alt="" coords="3960,116,4428,118,5143,128,5526,136,5890,148,6207,164,6451,184,6451,189,6207,169,5889,153,5526,141,5143,133,4428,124,3960,121"/>
+<area shape="rect" id="Node000051" href="$mavlink__msg__mission__ack_8h_source.html" title=" " alt="" coords="6649,187,6807,229"/>
+<area shape="poly" id="edge46_Node000015_Node000051" title=" " alt="" coords="3960,116,4458,117,5227,126,5639,134,6030,146,6372,162,6634,184,6633,189,6371,168,6030,151,5638,139,5227,131,4458,123,3960,121"/>
+<area shape="rect" id="Node000052" href="$mavlink__msg__set__gps__global__origin_8h_source.html" title=" " alt="" coords="6831,187,6990,229"/>
+<area shape="poly" id="edge47_Node000015_Node000052" title=" " alt="" coords="3960,116,4487,116,5309,124,5750,132,6169,144,6535,161,6816,184,6816,189,6535,167,6169,149,5750,137,5308,129,4487,122,3960,121"/>
+<area shape="rect" id="Node000053" href="$mavlink__msg__gps__global__origin_8h_source.html" title=" " alt="" coords="7015,187,7190,229"/>
+<area shape="poly" id="edge48_Node000015_Node000053" title=" " alt="" coords="3960,116,4518,117,5392,124,5863,132,6310,145,6701,161,7000,184,6999,189,6701,167,6310,150,5863,138,5392,130,4518,122,3960,121"/>
+<area shape="rect" id="Node000054" href="$mavlink__msg__param__map__rc_8h_source.html" title=" " alt="" coords="7215,187,7364,229"/>
+<area shape="poly" id="edge49_Node000015_Node000054" title=" " alt="" coords="3960,117,4603,123,5603,136,6591,156,6966,169,7199,184,7199,189,6965,175,6591,162,5602,141,4603,128,3960,122"/>
+<area shape="rect" id="Node000055" href="$mavlink__msg__mission__request__int_8h_source.html" title=" " alt="" coords="7388,187,7546,229"/>
+<area shape="poly" id="edge50_Node000015_Node000055" title=" " alt="" coords="3960,117,4634,123,5688,136,6732,156,7127,169,7373,184,7372,189,7127,174,6732,162,5688,141,4633,128,3960,122"/>
+<area shape="rect" id="Node000056" href="$mavlink__msg__safety__set__allowed__area_8h_source.html" title=" " alt="" coords="7570,187,7719,229"/>
+<area shape="poly" id="edge51_Node000015_Node000056" title=" " alt="" coords="3960,116,4665,122,5777,134,6878,154,7296,168,7554,184,7554,189,7295,173,6878,160,5776,139,4665,127,3960,122"/>
+<area shape="rect" id="Node000057" href="$mavlink__msg__safety__allowed__area_8h_source.html" title=" " alt="" coords="7743,187,7892,229"/>
+<area shape="poly" id="edge52_Node000015_Node000057" title=" " alt="" coords="3960,116,4695,121,5861,133,7018,154,7457,167,7728,184,7727,189,7456,173,7018,159,5861,139,4695,127,3960,122"/>
+</map>

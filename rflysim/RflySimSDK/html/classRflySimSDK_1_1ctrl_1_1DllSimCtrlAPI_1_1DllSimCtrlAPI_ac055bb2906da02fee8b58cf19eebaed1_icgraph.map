@@ -1,0 +1,7 @@
+<map id="getTrueDataMsg" name="getTrueDataMsg">
+<area shape="rect" id="Node000001" title="从30100串口监听真是数据，更新Pixhawk状态" alt="" coords="281,35,399,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#af26a96b08c3b6aae40f04c3d8a9ac773" title="初始化真实数据接收机制" alt="" coords="58,5,180,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,41,180,29,180,24,265,35"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a40a811a202c96d57a4f6aaa8c70837d7" title="初始化真实数据接收机制" alt="" coords="5,56,233,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,61,234,65,233,60,265,55"/>
+</map>

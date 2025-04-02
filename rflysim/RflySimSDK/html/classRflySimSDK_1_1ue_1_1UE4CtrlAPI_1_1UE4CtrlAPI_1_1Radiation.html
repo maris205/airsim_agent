@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: UE4CtrlAPI.Radiation类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ue</b></li><li class="navelem"><b>UE4CtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html">UE4CtrlAPI</a></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html">Radiation</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">UE4CtrlAPI.Radiation类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>此类用于定义和处理给定场景中各种对象的辐射属性。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a41e89276bab8fe90880b6c5faf43ae6d" id="r_a41e89276bab8fe90880b6c5faf43ae6d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a41e89276bab8fe90880b6c5faf43ae6d">__init__</a> (self, any ue)</td></tr>
+<tr class="memdesc:a41e89276bab8fe90880b6c5faf43ae6d"><td class="mdescLeft"> </td><td class="mdescRight">辐射类的构造函数。  <br/></td></tr>
+<tr class="separator:a41e89276bab8fe90880b6c5faf43ae6d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a709be0ce4fad73b4eb6e320989d6cdef" id="r_a709be0ce4fad73b4eb6e320989d6cdef"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a709be0ce4fad73b4eb6e320989d6cdef">sendUE4SetStencilValueByActorName</a> (self, Actorname, StencilValue, is_name_regex=False, windowID=-1)</td></tr>
+<tr class="memdesc:a709be0ce4fad73b4eb6e320989d6cdef"><td class="mdescLeft"> </td><td class="mdescRight">由Actor名向UE发送辐射设置模板值的命令  <br/></td></tr>
+<tr class="separator:a709be0ce4fad73b4eb6e320989d6cdef"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40f1c4c22c562315f98a985aa1b7d9a7" id="r_a40f1c4c22c562315f98a985aa1b7d9a7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f1c4c22c562315f98a985aa1b7d9a7">sendUE4SetStencilValueByMeshComponentName</a> (self, Meshname, StencilValue, is_name_regex=False, windowID=-1)</td></tr>
+<tr class="memdesc:a40f1c4c22c562315f98a985aa1b7d9a7"><td class="mdescLeft"> </td><td class="mdescRight">由Actor的Mesh组件名向UE发送设置辐射模板值的命令  <br/></td></tr>
+<tr class="separator:a40f1c4c22c562315f98a985aa1b7d9a7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac1c09b7cd28d2245aa4ee2bfb29a2e7e" id="r_ac1c09b7cd28d2245aa4ee2bfb29a2e7e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1c09b7cd28d2245aa4ee2bfb29a2e7e">sendUE4SetStencilValueByCopterID</a> (self, CopterID, StencilValue, windowID=-1)</td></tr>
+<tr class="memdesc:ac1c09b7cd28d2245aa4ee2bfb29a2e7e"><td class="mdescLeft"> </td><td class="mdescRight">由CopterID向UE发送设置辐射模板值的命令  <br/></td></tr>
+<tr class="separator:ac1c09b7cd28d2245aa4ee2bfb29a2e7e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a43d8d620d12898ed28d3b3d0863665e2" id="r_a43d8d620d12898ed28d3b3d0863665e2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a43d8d620d12898ed28d3b3d0863665e2">radiance</a> (self, absoluteTemperature, emissivity, dx=0.01, response=None)</td></tr>
+<tr class="memdesc:a43d8d620d12898ed28d3b3d0863665e2"><td class="mdescLeft"> </td><td class="mdescRight">物体辐射的计算  <br/></td></tr>
+<tr class="separator:a43d8d620d12898ed28d3b3d0863665e2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a33dc442e6cab962aac1d822750d58256" id="r_a33dc442e6cab962aac1d822750d58256"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a33dc442e6cab962aac1d822750d58256">get_new_temp_emiss_from_radiance</a> (self, tempEmissivity, response)</td></tr>
+<tr class="memdesc:a33dc442e6cab962aac1d822750d58256"><td class="mdescLeft"> </td><td class="mdescRight">由辐射强度计算模板值  <br/></td></tr>
+<tr class="separator:a33dc442e6cab962aac1d822750d58256"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af1c4b55811a3f344abda826ee32b8286" id="r_af1c4b55811a3f344abda826ee32b8286"><td align="right" class="memItemLeft" valign="top"><a id="af1c4b55811a3f344abda826ee32b8286" name="af1c4b55811a3f344abda826ee32b8286"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ue</b></td></tr>
+<tr class="separator:af1c4b55811a3f344abda826ee32b8286"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab3225b2b8869c623e867b3cb4fc11ebe" id="r_ab3225b2b8869c623e867b3cb4fc11ebe"><td align="right" class="memItemLeft" valign="top"><a id="ab3225b2b8869c623e867b3cb4fc11ebe" name="ab3225b2b8869c623e867b3cb4fc11ebe"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tempEmissivity</b></td></tr>
+<tr class="separator:ab3225b2b8869c623e867b3cb4fc11ebe"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>此类用于定义和处理给定场景中各种对象的辐射属性。 </p>
+<p>辐射类初始化时带有预定义的对象集，每个对象都有特定的温度（以开尔文为单位）， 发射率（与理想黑体相比），以及一个标志表示名称是否引用角色Actor。</p>
+<p>根据预设的二维列表，计算普朗克公式的积分，得到一个辐射值，并 归一到0~255范围内，发送给UE，然后UE将这个辐射值直接设置为 物体的模板值，然后由 CameraCapture 上写的材质规则去渲染纹理图片，然后用原来的图像传感器的接口返回到python。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a41e89276bab8fe90880b6c5faf43ae6d" name="a41e89276bab8fe90880b6c5faf43ae6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e89276bab8fe90880b6c5faf43ae6d">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">any</td> <td class="paramname"><span class="paramname"><em>ue</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>辐射类的构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ue</td><td>与辐射属性关联的Unreal Engine对象。</td></tr>
+</table>
+</dd>
+</dl>
+<p>使用预定义的值（包括对象名称、温度、发射率和是否为角色Actor的标志）初始化tempEmissivity数组。</p>
+<p>tempEmissivity数组示例如下 <a class="anchor" id="tempEmissivity"></a> <br/>
+</p>
+<pre class="fragment">self.tempEmissivity = np.array(
+    [
+            ["Floor", 276, 0.96, True],
+            ["SK_Man_Arms", 309, 0.98, False],
+            ["SK_Man_Head", 309, 0.98, False],
+    ]
+)                
+这里需要预先给定场景中1：所有物体的名字（或名字中的某一段）、2：温度(开尔文)、
+3：发射率（与理想黑体）、4：是否是Actor的名字（如果是Actor的名字，那么它所有的Mesh的辐射值都会被设置，否则会设置一个Mesh）
+每个地图都会不一样，所以需要预先给定。
+
+摄氏度与开尔文的转换关系为：
+K = C + 273.15
+</pre>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a33dc442e6cab962aac1d822750d58256" name="a33dc442e6cab962aac1d822750d58256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33dc442e6cab962aac1d822750d58256">◆ </a></span>get_new_temp_emiss_from_radiance()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_new_temp_emiss_from_radiance </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>tempEmissivity</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>response</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>由辐射强度计算模板值 </p>
+<ul>
+<li><p class="startli"><a class="anchor" id="get_new_temp_emiss_from_radiance"></a></p><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">tempEmissivity</td><td>包含物体温度和发射率的二维数组。数组的第一列是物体的ID，第二列是温度，第三列是发射率。 </td></tr>
+<tr><td class="paramname">response</td><td>响应函数，用于调整辐射强度的计算。默认为None，即不调整。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>tempEmissivityNew 新的二维数组，包含物体的ID和计算得到的辐射强度ID值。 调用 <a class="el" href="#radiance">radiance</a> 函数，获得辐射强度 <br/>
+ 然后用这个辐射强度归一化后乘以255（0~255）作为ID，这个ID传给UE后会作为物体的stencil值，UE根据这个值来显示物体的辐射强度 这个值越大，物体越亮，反之越小越暗</dd></dl>
+<p><a data_lightbox="image" href="IR.png"><img align="left" alt="" class="inline thumbnail" height="auto" src="IR.png" width="100"/></a> </p><div style="clear: both"></div><p class="startli">这个值越大，物体越亮，反之越小越暗</p>
+</li>
+</ul>
+<pre class="fragment">详细实现
+    1. 获取物体的数量 numObjects。
+    2. 调用 radiance 函数计算每个物体的辐射强度：
+       - 提取 tempEmissivity 数组中的温度和发射率，并转换为浮点数。
+       - 使用提取的温度和发射率调用 radiance 函数，得到每个物体的辐射强度数组 L。
+    3. 对辐射强度数组 L 进行归一化处理，并将其缩放到0到255的范围内，转换为8位无符号整数类型。
+    4. 构建新的二维数组 tempEmissivityNew，包含物体的ID和归一化后的辐射强度ID值。
+    5. 返回新的二维数组 tempEmissivityNew。
+</pre> <div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation_a33dc442e6cab962aac1d822750d58256_cgraph.svg" width="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a43d8d620d12898ed28d3b3d0863665e2" name="a43d8d620d12898ed28d3b3d0863665e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d8d620d12898ed28d3b3d0863665e2">◆ </a></span>radiance()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">radiance </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>absoluteTemperature</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>emissivity</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>dx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.01</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>response</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>物体辐射的计算 </p>
+<ul>
+<li><a class="anchor" id="radiance"></a> <p class="formulaDsp">
+\begin{eqnarray*}
+       L\left(T, \epsilon_{\text {avg }}, R_{\lambda}\right)=\epsilon_{\text {avg }} \int_{\lambda=8 \mu m}^{\lambda=14 \mu m} R_{\lambda}\left(\frac{2 h c^{2}}{\lambda^{5}} \frac{1}{\exp \left(\frac{h c}{k T \lambda}\right)-1}\right) d \lambda 
+   \end{eqnarray*}
+</p>
+<center><b>Fomula 1:</b> 对普朗克函数在8~14μm波长上积分得到物体的辐射强度。<br/>
+其中 \(R_\lambda \)是相机的接受率（程序中默认为1），<br/>
+ \(\varepsilon_{avg} \)是物体的红外发射率（它和温度T都是 <a class="el" href="#tempEmissivity">tempEmissivity</a> 预先给定的值），<br/>
+它们俩乘以积分得到的辐射功率密度就是相机接收到的该物体的辐射功率密度。</center></li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">absoluteTemperature</td><td>温度 </td></tr>
+<tr><td class="paramname">emissivity</td><td>发射率 </td></tr>
+<tr><td class="paramname">dx</td><td>用于积分的步长 </td></tr>
+<tr><td class="paramname">response</td><td>响应函数（默认为None）,实际是相机的接受率 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>radiance 积分得到的物体辐射强度</dd></dl>
+<p>用物体的温度和发射率（提前给定的），由普朗克公式的积分计算出物体的辐射强度。</p>
+<p>普朗克函数可以计算一个黑体在某个温度下某个波长的光谱辐射度（W/m²/μm），然后光源发出的总功率密度（单位是W/m²）可以通过光谱辐照度在所有波长（或能量）上积分来计算</p>
+<pre class="fragment">详细实现
+    1. 定义积分步长和边界 
+    定义波长范围 wavelength 为8到14微米之间，以 dx 为步长。
+    2. 定义普朗克公式中的常数
+    定义常数 c1 和 c2：
+    - c1 = 1.19104e8，是一个与普朗克常数和光速相关的常数。
+    - c2 = 1.43879e4，是另一个与普朗克常数、光速和波尔兹曼常数相关的常数。
+    3. 定义相机接受率
+    根据是否提供了响应函数 response，计算辐射强度 radiance：
+    - 如果提供了 response，则计算时会考虑响应函数的影响。
+    - 否则默认response=1，直接根据普朗克公式和发射率计算辐射强度。
+    4.  计算积分
+    对辐射强度数组进行积分，计算总辐射强度：
+    - 如果 absoluteTemperature 是多维数组，则在每个维度上分别进行积分。
+    - 否则，对整个数组进行积分。
+    5. 返回总辐射强度。
+</pre> <div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation_a43d8d620d12898ed28d3b3d0863665e2_icgraph.svg" width="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a709be0ce4fad73b4eb6e320989d6cdef" name="a709be0ce4fad73b4eb6e320989d6cdef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709be0ce4fad73b4eb6e320989d6cdef">◆ </a></span>sendUE4SetStencilValueByActorName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendUE4SetStencilValueByActorName </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Actorname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>StencilValue</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>is_name_regex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>由Actor名向UE发送辐射设置模板值的命令 </p>
+<ul>
+<li><a class="anchor" id="sendUE4SetStencilValueByActorName"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">Actorname</td><td>Mesh组件名 </td></tr>
+<tr><td class="paramname">StencilValue</td><td>物体辐射模板值 </td></tr>
+<tr><td class="paramname">is_name_regex</td><td>是否为Actor名 </td></tr>
+<tr><td class="paramname">windowID</td><td>RflySim3D窗口ID </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation_a709be0ce4fad73b4eb6e320989d6cdef_cgraph.svg" width="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ac1c09b7cd28d2245aa4ee2bfb29a2e7e" name="ac1c09b7cd28d2245aa4ee2bfb29a2e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c09b7cd28d2245aa4ee2bfb29a2e7e">◆ </a></span>sendUE4SetStencilValueByCopterID()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendUE4SetStencilValueByCopterID </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>StencilValue</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>由CopterID向UE发送设置辐射模板值的命令 </p>
+<ul>
+<li><a class="anchor" id="sendUE4SetStencilValueByCopterID"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CopterID</td><td>物体的序号 </td></tr>
+<tr><td class="paramname">StencilValue</td><td>辐射模板值 </td></tr>
+<tr><td class="paramname">windowID</td><td>RflySim3D窗口ID </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation_ac1c09b7cd28d2245aa4ee2bfb29a2e7e_cgraph.svg" width="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a40f1c4c22c562315f98a985aa1b7d9a7" name="a40f1c4c22c562315f98a985aa1b7d9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f1c4c22c562315f98a985aa1b7d9a7">◆ </a></span>sendUE4SetStencilValueByMeshComponentName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendUE4SetStencilValueByMeshComponentName </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Meshname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>StencilValue</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>is_name_regex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>由Actor的Mesh组件名向UE发送设置辐射模板值的命令 </p>
+<ul>
+<li><a class="anchor" id="sendUE4SetStencilValueByMeshComponentName"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">Meshname</td><td>Mesh组件名 </td></tr>
+<tr><td class="paramname">StencilValue</td><td>物体辐射模板值 </td></tr>
+<tr><td class="paramname">is_name_regex</td><td>是否为Actor名 </td></tr>
+<tr><td class="paramname">windowID</td><td>RflySim3D窗口ID </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation_a40f1c4c22c562315f98a985aa1b7d9a7_cgraph.svg" width="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ue/<a class="el" href="UE4CtrlAPI_8py.html">UE4CtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="vrpn_FunctionGenerator_Remote" name="vrpn_FunctionGenerator_Remote">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,229,166,272"/>
+<area shape="rect" id="Node000002" href="$classvrpn__FunctionGenerator.html" title=" " alt="" coords="5,155,166,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,197,88,229,83,229,83,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="27,80,144,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,122,88,154,83,154,83,122"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="6,5,165,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,48,88,80,83,80,83,48"/>
+</map>

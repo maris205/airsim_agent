@@ -1,0 +1,7 @@
+<map id="offboard" name="offboard">
+<area shape="rect" id="Node000001" title="设置PX4无人机进入Offboard控制模式，尝试将无人机切换到Offboard模式，这是一种允许外部控制命令覆盖无人机内部控制的模式。" alt="" coords="277,35,344,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式" alt="" coords="73,5,161,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,43,161,28,161,23,262,38"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式并发送初始命令" alt="" coords="5,56,229,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,58,229,63,229,58,261,53"/>
+</map>

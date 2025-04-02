@@ -1,0 +1,10 @@
+<map id="vrpn_RedundantReceiver::RRRecord" name="vrpn_RedundantReceiver::RRRecord">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,277,174,320"/>
+<area shape="rect" id="Node000002" href="$structvrpnMsgCallbackEntry.html" title="Description of a callback entry for a user type." alt="" coords="13,187,166,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,229,92,277,87,277,87,229"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="183,192,193,200,185,208,167,211,166,205,183,203,188,200,180,196"/>
+<area shape="rect" id="Node000003" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="7,96,172,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,138,92,186,87,186,87,138"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="62,5,117,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,48,92,95,87,95,87,48"/>
+</map>

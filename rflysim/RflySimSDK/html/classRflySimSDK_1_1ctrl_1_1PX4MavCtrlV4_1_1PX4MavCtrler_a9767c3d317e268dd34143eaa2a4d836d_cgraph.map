@@ -1,0 +1,9 @@
+<map id="getMavMsg" name="getMavMsg">
+<area shape="rect" id="Node000001" title="开始循环监听来自20100系列端口或COM端口的MAVLink数据，更新Pixhawk状态" alt="" coords="5,56,95,83"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a630e159c1669cf72f802f12e534d1cf8" title="从套接字或 Redis 订阅中获取数据" alt="" coords="143,5,268,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,53,147,35,148,40,94,58"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad2ee32b965155be2e2d7b43489cf9929" title="用于网络通信的事件信号" alt="" coords="148,56,262,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,67,132,67,132,72,95,72"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a88c56e58b9ff4b473eac5e5e18e54876" title="设置消息字典的状态" alt="" coords="161,107,250,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="94,81,148,99,147,104,93,86"/>
+</map>

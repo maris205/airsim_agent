@@ -1,0 +1,999 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: wifi_command类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>RflyADBLib</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command.html">wifi_command</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">wifi_command类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>     
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0c9e3fbac54cf7221de22367cbc88e66" id="r_a0c9e3fbac54cf7221de22367cbc88e66"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c9e3fbac54cf7221de22367cbc88e66">__init__</a> (self, send_command_function)</td></tr>
+<tr class="memdesc:a0c9e3fbac54cf7221de22367cbc88e66"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，设置脚本相关函数。  <br/></td></tr>
+<tr class="separator:a0c9e3fbac54cf7221de22367cbc88e66"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a471407bc7e2469b022b37e6f160ed901" id="r_a471407bc7e2469b022b37e6f160ed901"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a471407bc7e2469b022b37e6f160ed901">open_wifi</a> (self)</td></tr>
+<tr class="memdesc:a471407bc7e2469b022b37e6f160ed901"><td class="mdescLeft"> </td><td class="mdescRight">打开wifi  <br/></td></tr>
+<tr class="separator:a471407bc7e2469b022b37e6f160ed901"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abab9006541239c6410c1978046abc1f7" id="r_abab9006541239c6410c1978046abc1f7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abab9006541239c6410c1978046abc1f7">current_wifi</a> (self)</td></tr>
+<tr class="memdesc:abab9006541239c6410c1978046abc1f7"><td class="mdescLeft"> </td><td class="mdescRight">检查无线网络接口(wlan0)的连接状态  <br/></td></tr>
+<tr class="separator:abab9006541239c6410c1978046abc1f7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a08cb6ad136845f7170056c69added368" id="r_a08cb6ad136845f7170056c69added368"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a08cb6ad136845f7170056c69added368">statu_wifi</a> (self)</td></tr>
+<tr class="memdesc:a08cb6ad136845f7170056c69added368"><td class="mdescLeft"> </td><td class="mdescRight">获取当前wifi的状态  <br/></td></tr>
+<tr class="separator:a08cb6ad136845f7170056c69added368"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb4190d51be45e3481f1b1648cf30989" id="r_acb4190d51be45e3481f1b1648cf30989"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acb4190d51be45e3481f1b1648cf30989">close_wifi</a> (self)</td></tr>
+<tr class="memdesc:acb4190d51be45e3481f1b1648cf30989"><td class="mdescLeft"> </td><td class="mdescRight">关闭wifi  <br/></td></tr>
+<tr class="separator:acb4190d51be45e3481f1b1648cf30989"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adbde2c76bee9fc634f4d0c5670f59ae2" id="r_adbde2c76bee9fc634f4d0c5670f59ae2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adbde2c76bee9fc634f4d0c5670f59ae2">get_ip</a> (self)</td></tr>
+<tr class="memdesc:adbde2c76bee9fc634f4d0c5670f59ae2"><td class="mdescLeft"> </td><td class="mdescRight">获取wifi的Ip  <br/></td></tr>
+<tr class="separator:adbde2c76bee9fc634f4d0c5670f59ae2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af5cbb8a06d267d023cf34c9182924973" id="r_af5cbb8a06d267d023cf34c9182924973"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af5cbb8a06d267d023cf34c9182924973">create_wifihot</a> (self, SSID='AP_150_HOT', PASSWD="droneyee", CHANNEL=11)</td></tr>
+<tr class="memdesc:af5cbb8a06d267d023cf34c9182924973"><td class="mdescLeft"> </td><td class="mdescRight">创建热点  <br/></td></tr>
+<tr class="separator:af5cbb8a06d267d023cf34c9182924973"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7ffe5a480b64e545999255f68737ae11" id="r_a7ffe5a480b64e545999255f68737ae11"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ffe5a480b64e545999255f68737ae11">modify_wifihot_ip</a> (self, IPADDRESS)</td></tr>
+<tr class="memdesc:a7ffe5a480b64e545999255f68737ae11"><td class="mdescLeft"> </td><td class="mdescRight">修改热点IP  <br/></td></tr>
+<tr class="separator:a7ffe5a480b64e545999255f68737ae11"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad377220026e2861ffb3aa55315feb7bd" id="r_ad377220026e2861ffb3aa55315feb7bd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad377220026e2861ffb3aa55315feb7bd">get_wifihot_passwd</a> (self)</td></tr>
+<tr class="memdesc:ad377220026e2861ffb3aa55315feb7bd"><td class="mdescLeft"> </td><td class="mdescRight">获取热点的密码  <br/></td></tr>
+<tr class="separator:ad377220026e2861ffb3aa55315feb7bd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95016dc8fe1efbc6ff0b43d4dbd4e42a" id="r_a95016dc8fe1efbc6ff0b43d4dbd4e42a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a95016dc8fe1efbc6ff0b43d4dbd4e42a">connect_wifi</a> (self, WIFI_SSID, WIFI_PASSWD)</td></tr>
+<tr class="memdesc:a95016dc8fe1efbc6ff0b43d4dbd4e42a"><td class="mdescLeft"> </td><td class="mdescRight">连接wifi  <br/></td></tr>
+<tr class="separator:a95016dc8fe1efbc6ff0b43d4dbd4e42a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f70fe783a30a42da9613403ef05a2e8" id="r_a3f70fe783a30a42da9613403ef05a2e8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f70fe783a30a42da9613403ef05a2e8">echo_cmd</a> (self, cmd, mode=0)</td></tr>
+<tr class="memdesc:a3f70fe783a30a42da9613403ef05a2e8"><td class="mdescLeft"> </td><td class="mdescRight">设置相机命令到配置文件  <br/></td></tr>
+<tr class="separator:a3f70fe783a30a42da9613403ef05a2e8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a18f278fc81d860012c32dac12982350d" id="r_a18f278fc81d860012c32dac12982350d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a18f278fc81d860012c32dac12982350d">replace_cmd</a> (self, cmd, place, path)</td></tr>
+<tr class="memdesc:a18f278fc81d860012c32dac12982350d"><td class="mdescLeft"> </td><td class="mdescRight">对给定路径的文件内容进行替换  <br/></td></tr>
+<tr class="separator:a18f278fc81d860012c32dac12982350d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af97bd9d88d7dbe9a2ad300aae0f1b438" id="r_af97bd9d88d7dbe9a2ad300aae0f1b438"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af97bd9d88d7dbe9a2ad300aae0f1b438">replace_cam_ip</a> (self, ip, cam)</td></tr>
+<tr class="memdesc:af97bd9d88d7dbe9a2ad300aae0f1b438"><td class="mdescLeft"> </td><td class="mdescRight">对相机图像回传IP进行修改  <br/></td></tr>
+<tr class="separator:af97bd9d88d7dbe9a2ad300aae0f1b438"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa2b8651aad725d0c6fc445a924ba414b" id="r_aa2b8651aad725d0c6fc445a924ba414b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2b8651aad725d0c6fc445a924ba414b">replace_cam_compress</a> (self, rate, cam)</td></tr>
+<tr class="memdesc:aa2b8651aad725d0c6fc445a924ba414b"><td class="mdescLeft"> </td><td class="mdescRight">对相机图像压缩率进行修改  <br/></td></tr>
+<tr class="separator:aa2b8651aad725d0c6fc445a924ba414b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed3ca7c86333647b360d1d29a2c3c939" id="r_aed3ca7c86333647b360d1d29a2c3c939"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aed3ca7c86333647b360d1d29a2c3c939">replace_cam_ehable</a> (self, enable, cam)</td></tr>
+<tr class="memdesc:aed3ca7c86333647b360d1d29a2c3c939"><td class="mdescLeft"> </td><td class="mdescRight">对相机图像使能端设置进行修改  <br/></td></tr>
+<tr class="separator:aed3ca7c86333647b360d1d29a2c3c939"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abc73448a33a90a3411853b494b8e9dec" id="r_abc73448a33a90a3411853b494b8e9dec"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abc73448a33a90a3411853b494b8e9dec">replace_mav_link</a> (self, ip, port=15502)</td></tr>
+<tr class="memdesc:abc73448a33a90a3411853b494b8e9dec"><td class="mdescLeft"> </td><td class="mdescRight">对mavlink回传IP进行修改  <br/></td></tr>
+<tr class="separator:abc73448a33a90a3411853b494b8e9dec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f69e4101ca6bafd9911330c107cba4e" id="r_a2f69e4101ca6bafd9911330c107cba4e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f69e4101ca6bafd9911330c107cba4e">aotuStartWIFI</a> (self, SSID='AP_150_HOT', PASSWD="droneyee", CHANNEL=11, enable=1)</td></tr>
+<tr class="memdesc:a2f69e4101ca6bafd9911330c107cba4e"><td class="mdescLeft"> </td><td class="mdescRight">设置是否自启动热点  <br/></td></tr>
+<tr class="separator:a2f69e4101ca6bafd9911330c107cba4e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae71533ca24cf17dd0321215fcf9ddbe9" id="r_ae71533ca24cf17dd0321215fcf9ddbe9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae71533ca24cf17dd0321215fcf9ddbe9">openCam</a> (self)</td></tr>
+<tr class="memdesc:ae71533ca24cf17dd0321215fcf9ddbe9"><td class="mdescLeft"> </td><td class="mdescRight">开启相机  <br/></td></tr>
+<tr class="separator:ae71533ca24cf17dd0321215fcf9ddbe9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2f4d212f49d16906343ae04be608958" id="r_ad2f4d212f49d16906343ae04be608958"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2f4d212f49d16906343ae04be608958">getMac</a> (self)</td></tr>
+<tr class="memdesc:ad2f4d212f49d16906343ae04be608958"><td class="mdescLeft"> </td><td class="mdescRight">获取设备MAC地址  <br/></td></tr>
+<tr class="separator:ad2f4d212f49d16906343ae04be608958"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeeee1a1f410a432644e4c7e04a180a07" id="r_aeeee1a1f410a432644e4c7e04a180a07"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeee1a1f410a432644e4c7e04a180a07">setStaticIp</a> (self, SSID, ip)</td></tr>
+<tr class="memdesc:aeeee1a1f410a432644e4c7e04a180a07"><td class="mdescLeft"> </td><td class="mdescRight">设置连接WIFI的静态IP  <br/></td></tr>
+<tr class="separator:aeeee1a1f410a432644e4c7e04a180a07"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8087a958d940e2552941e650d0a0b4d2" id="r_a8087a958d940e2552941e650d0a0b4d2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8087a958d940e2552941e650d0a0b4d2">pingIp</a> (self, ip)</td></tr>
+<tr class="memdesc:a8087a958d940e2552941e650d0a0b4d2"><td class="mdescLeft"> </td><td class="mdescRight">对指定IP进行ping操作  <br/></td></tr>
+<tr class="separator:a8087a958d940e2552941e650d0a0b4d2"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4d920b12b71b772592c906904cf8efcb" id="r_a4d920b12b71b772592c906904cf8efcb"><td align="right" class="memItemLeft" valign="top"><a id="a4d920b12b71b772592c906904cf8efcb" name="a4d920b12b71b772592c906904cf8efcb"></a>
+ </td><td class="memItemRight" valign="bottom"><b>send_command</b></td></tr>
+<tr class="separator:a4d920b12b71b772592c906904cf8efcb"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>    </p>
+<p>类集成了所有的设置方法，通过调用不同方法进行设置。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a0c9e3fbac54cf7221de22367cbc88e66" name="a0c9e3fbac54cf7221de22367cbc88e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9e3fbac54cf7221de22367cbc88e66">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>send_command_function</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，设置脚本相关函数。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">send_command_function</td><td>发送命令的函数。 <br/>
+</td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a0c9e3fbac54cf7221de22367cbc88e66_cgraph.svg" width="627"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a2f69e4101ca6bafd9911330c107cba4e" name="a2f69e4101ca6bafd9911330c107cba4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f69e4101ca6bafd9911330c107cba4e">◆ </a></span>aotuStartWIFI()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">aotuStartWIFI </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>SSID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'AP_150_HOT'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>PASSWD</em></span><span class="paramdefsep"> = </span><span class="paramdefval">"droneyee"</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CHANNEL</em></span><span class="paramdefsep"> = </span><span class="paramdefval">11</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>enable</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置是否自启动热点 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">SSID(str)</td><td>自启动热点的名称, 默认为AP_150_HOT </td></tr>
+<tr><td class="paramname">PASSWD(str)</td><td>自启动热点的密码, 默认为droneyee </td></tr>
+<tr><td class="paramname">CHANNEL(int)</td><td>自启动热点的通道，默认为11 </td></tr>
+<tr><td class="paramname">enable(int)</td><td>是否设置自启动热点，默认为1即启动<ul>
+<li><a class="anchor" id="aotuStartWIFI"></a></li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">用于设置自动启动WIFI热点或关闭</pre> <div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a2f69e4101ca6bafd9911330c107cba4e_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="acb4190d51be45e3481f1b1648cf30989" name="acb4190d51be45e3481f1b1648cf30989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4190d51be45e3481f1b1648cf30989">◆ </a></span>close_wifi()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">close_wifi </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>关闭wifi </p>
+<ul>
+<li><a class="anchor" id="close_wifi"></a> <dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">关闭wifi</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_acb4190d51be45e3481f1b1648cf30989_cgraph.svg" width="640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a95016dc8fe1efbc6ff0b43d4dbd4e42a" name="a95016dc8fe1efbc6ff0b43d4dbd4e42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95016dc8fe1efbc6ff0b43d4dbd4e42a">◆ </a></span>connect_wifi()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">connect_wifi </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>WIFI_SSID</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>WIFI_PASSWD</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>连接wifi </p>
+<ul>
+<li><a class="anchor" id="connect_wifi"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">WIFI_SSID(str)</td><td>所要连接WIFI的SSID(一般是名称) </td></tr>
+<tr><td class="paramname">WIFI_PASSWD(str)</td><td>所要连接WIFI的密码 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回是否创建成功的布尔值</dd></dl>
+<pre class="fragment">连接wifi</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a95016dc8fe1efbc6ff0b43d4dbd4e42a_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="af5cbb8a06d267d023cf34c9182924973" name="af5cbb8a06d267d023cf34c9182924973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cbb8a06d267d023cf34c9182924973">◆ </a></span>create_wifihot()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">create_wifihot </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>SSID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'AP_150_HOT'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>PASSWD</em></span><span class="paramdefsep"> = </span><span class="paramdefval">"droneyee"</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CHANNEL</em></span><span class="paramdefsep"> = </span><span class="paramdefval">11</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>创建热点 </p>
+<ul>
+<li><a class="anchor" id="create_wifihot"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">SSID(str)</td><td>创建热点的名称。 </td></tr>
+<tr><td class="paramname">PASSWD(str)</td><td>创建热点的密码。 </td></tr>
+<tr><td class="paramname">PASSWD(int)</td><td>创建热点的通道。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回是否创建成功的布尔值</dd></dl>
+<pre class="fragment">创建热点</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_af5cbb8a06d267d023cf34c9182924973_cgraph.svg" width="663"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="abab9006541239c6410c1978046abc1f7" name="abab9006541239c6410c1978046abc1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab9006541239c6410c1978046abc1f7">◆ </a></span>current_wifi()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">current_wifi </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检查无线网络接口(wlan0)的连接状态 </p>
+<ul>
+<li><a class="anchor" id="current_wifi"></a> <dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">检查无线网络接口(wlan0)的连接状态，并打印出当前连接的无线网络名称(SSID)</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_abab9006541239c6410c1978046abc1f7_cgraph.svg" width="650"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a3f70fe783a30a42da9613403ef05a2e8" name="a3f70fe783a30a42da9613403ef05a2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f70fe783a30a42da9613403ef05a2e8">◆ </a></span>echo_cmd()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">echo_cmd </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置相机命令到配置文件 </p>
+<ul>
+<li><a class="anchor" id="echo_cmd"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">cmd(str)</td><td>要设置的命令 </td></tr>
+<tr><td class="paramname">mode(int)</td><td>选择命令的添加模式,默认为0 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">进行相机参数设置，cmd为追加的命令,mode=0为追加,1为覆盖</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a3f70fe783a30a42da9613403ef05a2e8_cgraph.svg" width="642"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="adbde2c76bee9fc634f4d0c5670f59ae2" name="adbde2c76bee9fc634f4d0c5670f59ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbde2c76bee9fc634f4d0c5670f59ae2">◆ </a></span>get_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取wifi的Ip </p>
+<ul>
+<li><a class="anchor" id="get_ip"></a> <dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">获取连接wifi的IP</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_adbde2c76bee9fc634f4d0c5670f59ae2_cgraph.svg" width="618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad377220026e2861ffb3aa55315feb7bd" name="ad377220026e2861ffb3aa55315feb7bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad377220026e2861ffb3aa55315feb7bd">◆ </a></span>get_wifihot_passwd()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_wifihot_passwd </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取热点的密码 </p>
+<ul>
+<li><a class="anchor" id="get_wifihot_passwd"></a> <dl class="section return"><dt>返回</dt><dd>返回wifi密码</dd></dl>
+<pre class="fragment">获取热点的密码</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_ad377220026e2861ffb3aa55315feb7bd_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ad2f4d212f49d16906343ae04be608958" name="ad2f4d212f49d16906343ae04be608958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f4d212f49d16906343ae04be608958">◆ </a></span>getMac()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getMac </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取设备MAC地址 </p>
+<ul>
+<li><a class="anchor" id="getMac"></a> <dl class="section return"><dt>返回</dt><dd>返回设备MAC地址 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_ad2f4d212f49d16906343ae04be608958_cgraph.svg" width="626"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a7ffe5a480b64e545999255f68737ae11" name="a7ffe5a480b64e545999255f68737ae11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ffe5a480b64e545999255f68737ae11">◆ </a></span>modify_wifihot_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">modify_wifihot_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IPADDRESS</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>修改热点IP </p>
+<ul>
+<li><a class="anchor" id="modify_wifihot_ip"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">IPADDRESS(str)</td><td>期望的热点IP </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">修改热点IP，不建议使用</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a7ffe5a480b64e545999255f68737ae11_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a471407bc7e2469b022b37e6f160ed901" name="a471407bc7e2469b022b37e6f160ed901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a471407bc7e2469b022b37e6f160ed901">◆ </a></span>open_wifi()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">open_wifi </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>打开wifi </p>
+<ul>
+<li><a class="anchor" id="open_wifi"></a> <dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">打开wifi</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a471407bc7e2469b022b37e6f160ed901_cgraph.svg" width="638"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a471407bc7e2469b022b37e6f160ed901_icgraph.svg" width="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ae71533ca24cf17dd0321215fcf9ddbe9" name="ae71533ca24cf17dd0321215fcf9ddbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71533ca24cf17dd0321215fcf9ddbe9">◆ </a></span>openCam()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">openCam </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>开启相机 </p>
+<ul>
+<li><a class="anchor" id="openCam"></a> <dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_ae71533ca24cf17dd0321215fcf9ddbe9_cgraph.svg" width="638"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a8087a958d940e2552941e650d0a0b4d2" name="a8087a958d940e2552941e650d0a0b4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8087a958d940e2552941e650d0a0b4d2">◆ </a></span>pingIp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">pingIp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对指定IP进行ping操作 </p>
+<ul>
+<li><a class="anchor" id="pingIp"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ip(str)</td><td>指定的IP </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>网络是否ping通的布尔值 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a8087a958d940e2552941e650d0a0b4d2_cgraph.svg" width="618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aa2b8651aad725d0c6fc445a924ba414b" name="aa2b8651aad725d0c6fc445a924ba414b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b8651aad725d0c6fc445a924ba414b">◆ </a></span>replace_cam_compress()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">replace_cam_compress </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>rate</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cam</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对相机图像压缩率进行修改 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">rate(int)</td><td>相机回传图像的压缩率 </td></tr>
+<tr><td class="paramname">cam(int)</td><td>要设置的相机标号(0或1)<ul>
+<li><a class="anchor" id="replace_cam_compress"></a></li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">其中rate是期望的图片压缩率,cam是修改哪个相机(0或1)</pre> <div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_aa2b8651aad725d0c6fc445a924ba414b_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="aed3ca7c86333647b360d1d29a2c3c939" name="aed3ca7c86333647b360d1d29a2c3c939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3ca7c86333647b360d1d29a2c3c939">◆ </a></span>replace_cam_ehable()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">replace_cam_ehable </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>enable</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cam</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对相机图像使能端设置进行修改 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">enable(int)</td><td>要使能的相机标号(0或1) </td></tr>
+<tr><td class="paramname">cam(int)</td><td>要设置的相机标号(0或1)<ul>
+<li><a class="anchor" id="replace_cam_ehable"></a></li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">其中rate是期望的图片压缩率,cam是修改哪个相机(0或1)</pre> <div class="dynheader closed" id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-16-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-16-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-16-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_aed3ca7c86333647b360d1d29a2c3c939_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="af97bd9d88d7dbe9a2ad300aae0f1b438" name="af97bd9d88d7dbe9a2ad300aae0f1b438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97bd9d88d7dbe9a2ad300aae0f1b438">◆ </a></span>replace_cam_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">replace_cam_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cam</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对相机图像回传IP进行修改 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ip(str)</td><td>相机回传图像的IP </td></tr>
+<tr><td class="paramname">cam(int)</td><td>要设置的相机标号(0或1)<ul>
+<li><a class="anchor" id="replace_cam_ip"></a></li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">修改相机IP
+其中IP是期望的IP(给字符串),cam是修改哪个相机(0或1)</pre> <div class="dynheader closed" id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-17-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-17-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-17-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_af97bd9d88d7dbe9a2ad300aae0f1b438_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a18f278fc81d860012c32dac12982350d" name="a18f278fc81d860012c32dac12982350d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f278fc81d860012c32dac12982350d">◆ </a></span>replace_cmd()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">replace_cmd </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>place</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>path</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对给定路径的文件内容进行替换 </p>
+<ul>
+<li><a class="anchor" id="replace_cmd"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">cmd(str)</td><td>要替换的命令 </td></tr>
+<tr><td class="paramname">place(str)</td><td>要替换的行数 </td></tr>
+<tr><td class="paramname">path(str)</td><td>要替换的路径 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息</dd></dl>
+<pre class="fragment">cmd为期望替换的命令,place代表替换内容的行数,path为修改文件的路径
+注：对camera_upd/config.yaml修改时,对应位置为:
+enable:5/13 
+ip:9/17 
+compress_rate:8/16
+相机路径：/home/marvsmart/camera_udp/config.yaml
+自启动路径：/etc/./rc.local
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-18-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-18-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-18-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a18f278fc81d860012c32dac12982350d_cgraph.svg" width="656"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-19-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-19-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-19-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="240" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a18f278fc81d860012c32dac12982350d_icgraph.svg" width="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="abc73448a33a90a3411853b494b8e9dec" name="abc73448a33a90a3411853b494b8e9dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc73448a33a90a3411853b494b8e9dec">◆ </a></span>replace_mav_link()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">replace_mav_link </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">15502</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对mavlink回传IP进行修改 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ip(str)</td><td>回传的IP </td></tr>
+<tr><td class="paramname">port(int)</td><td>回传IP的端口<ul>
+<li><a class="anchor" id="replace_mav_link"></a></li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">设置mavlink回传的ip地址和端口</pre> <div class="dynheader closed" id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-20-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-20-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-20-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_abc73448a33a90a3411853b494b8e9dec_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="aeeee1a1f410a432644e4c7e04a180a07" name="aeeee1a1f410a432644e4c7e04a180a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeee1a1f410a432644e4c7e04a180a07">◆ </a></span>setStaticIp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setStaticIp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>SSID</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置连接WIFI的静态IP </p>
+<ul>
+<li><a class="anchor" id="setStaticIp"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">SSID(str)</td><td>需要设置静态IP的WIFI的名称 </td></tr>
+<tr><td class="paramname">ip(str)</td><td>期望的静态IP </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回命令执行后的消息 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-21-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-21-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-21-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_aeeee1a1f410a432644e4c7e04a180a07_cgraph.svg" width="646"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a08cb6ad136845f7170056c69added368" name="a08cb6ad136845f7170056c69added368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08cb6ad136845f7170056c69added368">◆ </a></span>statu_wifi()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">statu_wifi </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前wifi的状态 </p>
+<ul>
+<li><a class="anchor" id="statu_wifi"></a> <dl class="section return"><dt>返回</dt><dd>连接wifi的状态</dd></dl>
+<pre class="fragment">获取当前wifi的状态</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-22-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-22-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-22-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="406" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a08cb6ad136845f7170056c69added368_cgraph.svg" width="638"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-23-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-23-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-23-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1RflyADBLib_1_1wifi__command_a08cb6ad136845f7170056c69added368_icgraph.svg" width="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="RflyADBLib_8py.html">RflyADBLib.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

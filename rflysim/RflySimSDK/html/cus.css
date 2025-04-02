@@ -1,0 +1,31 @@
+/* Custom style to left-align math formulas */
+div.math, div.inline-math {
+    text-align: left;
+}
+.left-img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.figure {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* custom.css */
+@import "SourceCode/lightbox2-2.11.4/src/css/lightbox.css";
+
+/* 缩略图样式 */
+img.thumbnail {
+    width: 100px; /* 缩略图宽度 */
+    height: auto; /* 维持纵横比 */
+}

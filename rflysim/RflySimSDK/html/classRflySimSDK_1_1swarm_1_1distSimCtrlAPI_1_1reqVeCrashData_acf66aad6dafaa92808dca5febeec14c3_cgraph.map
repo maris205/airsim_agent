@@ -1,0 +1,13 @@
+<map id="__init__" name="__init__">
+<area shape="rect" id="Node000001" title="构造函数，初始化reqVeCrashData类成员" alt="" coords="5,131,72,157"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1distSimCtrlAPI_1_1reqVeCrashData.html#a2b98e16b827b3cb18906f4a2e8e9ca4a" title="从解包的数据元组iv中拷贝数据并赋给当前对象的成员变量" alt="" coords="185,5,266,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,129,73,86,93,62,118,42,143,30,170,22,171,27,145,35,121,46,97,66,77,89,49,132"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1CameraData.html#a2b98e16b827b3cb18906f4a2e8e9ca4a" title=" " alt="" coords="130,56,321,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="70,128,119,108,137,102,139,107,121,113,72,133"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1CoptReqData.html#a2b98e16b827b3cb18906f4a2e8e9ca4a" title=" " alt="" coords="130,123,321,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="72,141,114,141,114,147,72,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1ObjReqData.html#a2b98e16b827b3cb18906f4a2e8e9ca4a" title=" " alt="" coords="130,189,321,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="72,155,121,175,139,181,137,186,119,180,70,160"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1VisionSensorReqNew.html#a2b98e16b827b3cb18906f4a2e8e9ca4a" title=" " alt="" coords="120,256,331,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="49,156,78,199,98,222,121,242,128,246,125,251,118,246,94,226,73,202,45,159"/>
+</map>

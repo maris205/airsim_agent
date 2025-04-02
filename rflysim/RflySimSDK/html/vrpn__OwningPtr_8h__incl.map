@@ -1,0 +1,11 @@
+<map id="simulink/vrpn/vrpn_OwningPtr.h" name="simulink/vrpn/vrpn_OwningPtr.h">
+<area shape="rect" id="Node000001" title="Header" alt="" coords="94,5,222,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Assert_8h.html" title="Header for assert macros." alt="" coords="5,96,108,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,51,86,88,83,84,130,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="132,96,184,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,49,160,80,155,80,155,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="208,96,279,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,47,221,83,217,87,178,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="22,171,91,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="59,123,59,155,54,155,54,123"/>
+</map>

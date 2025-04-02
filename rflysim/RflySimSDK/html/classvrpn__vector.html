@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_vector&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-types">Public 类型</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn__vector-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_vector&lt; T &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a49b489a408a211a90e766329c0732d7b" id="r_a49b489a408a211a90e766329c0732d7b"><td align="right" class="memItemLeft" valign="top"><a id="a49b489a408a211a90e766329c0732d7b" name="a49b489a408a211a90e766329c0732d7b"></a>
+typedef size_t </td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
+<tr class="separator:a49b489a408a211a90e766329c0732d7b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a35c955cacac6aacaa1e82874b1628865" id="r_a35c955cacac6aacaa1e82874b1628865"><td align="right" class="memItemLeft" valign="top"><a id="a35c955cacac6aacaa1e82874b1628865" name="a35c955cacac6aacaa1e82874b1628865"></a>
+typedef T * </td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:a35c955cacac6aacaa1e82874b1628865"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2fc97dce62b7053449cc868607540dba" id="r_a2fc97dce62b7053449cc868607540dba"><td align="right" class="memItemLeft" valign="top"><a id="a2fc97dce62b7053449cc868607540dba" name="a2fc97dce62b7053449cc868607540dba"></a>
+typedef const T * </td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:a2fc97dce62b7053449cc868607540dba"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae5213b4e1aa99ed98a2db48ab9261624" id="r_ae5213b4e1aa99ed98a2db48ab9261624"><td align="right" class="memItemLeft" valign="top"><a id="ae5213b4e1aa99ed98a2db48ab9261624" name="ae5213b4e1aa99ed98a2db48ab9261624"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_vector</b> (size_type s)</td></tr>
+<tr class="separator:ae5213b4e1aa99ed98a2db48ab9261624"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6a6455aab8255ecf6f57d6a1707f2413" id="r_a6a6455aab8255ecf6f57d6a1707f2413"><td align="right" class="memItemLeft" valign="top"><a id="a6a6455aab8255ecf6f57d6a1707f2413" name="a6a6455aab8255ecf6f57d6a1707f2413"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_vector</b> (const <a class="el" href="classvrpn__vector.html">vrpn_vector</a> &amp;from)</td></tr>
+<tr class="separator:a6a6455aab8255ecf6f57d6a1707f2413"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6042750e08998cca6e22f3eed362364a" id="r_a6042750e08998cca6e22f3eed362364a"><td class="memTemplParams" colspan="2"><a id="a6042750e08998cca6e22f3eed362364a" name="a6042750e08998cca6e22f3eed362364a"></a>
+template&lt;class InputIt &gt; </td></tr>
+<tr class="memitem:a6042750e08998cca6e22f3eed362364a"><td align="right" class="memTemplItemLeft" valign="top"> </td><td class="memTemplItemRight" valign="bottom"><b>vrpn_vector</b> (InputIt first, InputIt last)</td></tr>
+<tr class="separator:a6042750e08998cca6e22f3eed362364a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ade33aab11b065ffd4f0e132cc9a51afd" id="r_ade33aab11b065ffd4f0e132cc9a51afd"><td align="right" class="memItemLeft" valign="top"><a id="ade33aab11b065ffd4f0e132cc9a51afd" name="ade33aab11b065ffd4f0e132cc9a51afd"></a>
+<a class="el" href="classvrpn__vector.html">vrpn_vector</a> &amp; </td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classvrpn__vector.html">vrpn_vector</a> &amp;from)</td></tr>
+<tr class="separator:ade33aab11b065ffd4f0e132cc9a51afd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adc1e16b293a89a9ccc9541058b5ca560" id="r_adc1e16b293a89a9ccc9541058b5ca560"><td align="right" class="memItemLeft" valign="top"><a id="adc1e16b293a89a9ccc9541058b5ca560" name="adc1e16b293a89a9ccc9541058b5ca560"></a>
+T * </td><td class="memItemRight" valign="bottom"><b>data</b> ()</td></tr>
+<tr class="separator:adc1e16b293a89a9ccc9541058b5ca560"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60304b65bf89363bcc3165d3cde67f86" id="r_a60304b65bf89363bcc3165d3cde67f86"><td align="right" class="memItemLeft" valign="top"><a id="a60304b65bf89363bcc3165d3cde67f86" name="a60304b65bf89363bcc3165d3cde67f86"></a>
+size_type </td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a60304b65bf89363bcc3165d3cde67f86"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a644718bb2fb240de962dc3c9a1fdf0dc" id="r_a644718bb2fb240de962dc3c9a1fdf0dc"><td align="right" class="memItemLeft" valign="top"><a id="a644718bb2fb240de962dc3c9a1fdf0dc" name="a644718bb2fb240de962dc3c9a1fdf0dc"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:a644718bb2fb240de962dc3c9a1fdf0dc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a4d488bd8fd526f47562d55f179660e" id="r_a1a4d488bd8fd526f47562d55f179660e"><td align="right" class="memItemLeft" valign="top"><a id="a1a4d488bd8fd526f47562d55f179660e" name="a1a4d488bd8fd526f47562d55f179660e"></a>
+void </td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type s)</td></tr>
+<tr class="separator:a1a4d488bd8fd526f47562d55f179660e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa212f884f1d546a284420c4b752933a7" id="r_aa212f884f1d546a284420c4b752933a7"><td align="right" class="memItemLeft" valign="top"><a id="aa212f884f1d546a284420c4b752933a7" name="aa212f884f1d546a284420c4b752933a7"></a>
+void </td><td class="memItemRight" valign="bottom"><b>push_back</b> (const T &amp;val)</td></tr>
+<tr class="separator:aa212f884f1d546a284420c4b752933a7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa67f6e1a9bbaab0d994aecdc06835f6b" id="r_aa67f6e1a9bbaab0d994aecdc06835f6b"><td align="right" class="memItemLeft" valign="top"><a id="aa67f6e1a9bbaab0d994aecdc06835f6b" name="aa67f6e1a9bbaab0d994aecdc06835f6b"></a>
+T &amp; </td><td class="memItemRight" valign="bottom"><b>front</b> ()</td></tr>
+<tr class="separator:aa67f6e1a9bbaab0d994aecdc06835f6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a557503c0b752dd1bd74295f499129f" id="r_a4a557503c0b752dd1bd74295f499129f"><td align="right" class="memItemLeft" valign="top"><a id="a4a557503c0b752dd1bd74295f499129f" name="a4a557503c0b752dd1bd74295f499129f"></a>
+T &amp; </td><td class="memItemRight" valign="bottom"><b>back</b> ()</td></tr>
+<tr class="separator:a4a557503c0b752dd1bd74295f499129f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4b1f5e429e34838c3ccfee4260adef5f" id="r_a4b1f5e429e34838c3ccfee4260adef5f"><td align="right" class="memItemLeft" valign="top"><a id="a4b1f5e429e34838c3ccfee4260adef5f" name="a4b1f5e429e34838c3ccfee4260adef5f"></a>
+T &amp; </td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type pos)</td></tr>
+<tr class="separator:a4b1f5e429e34838c3ccfee4260adef5f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a980a2f2ee0dbf1775c9379f204ab8789" id="r_a980a2f2ee0dbf1775c9379f204ab8789"><td align="right" class="memItemLeft" valign="top"><a id="a980a2f2ee0dbf1775c9379f204ab8789" name="a980a2f2ee0dbf1775c9379f204ab8789"></a>
+const T &amp; </td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_type pos) const</td></tr>
+<tr class="separator:a980a2f2ee0dbf1775c9379f204ab8789"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab049acf3384fdd37f87ac7d574600da3" id="r_ab049acf3384fdd37f87ac7d574600da3"><td align="right" class="memItemLeft" valign="top"><a id="ab049acf3384fdd37f87ac7d574600da3" name="ab049acf3384fdd37f87ac7d574600da3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>assign</b> (size_type count, const T &amp;value)</td></tr>
+<tr class="separator:ab049acf3384fdd37f87ac7d574600da3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204" id="r_ac8bb3912a3ce86b15842e79d0b421204"><td align="right" class="memItemLeft" valign="top"><a id="ac8bb3912a3ce86b15842e79d0b421204" name="ac8bb3912a3ce86b15842e79d0b421204"></a>
+void </td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abda4b85b02853d118bed9e1e9c4d3db4" id="r_abda4b85b02853d118bed9e1e9c4d3db4"><td class="memTemplParams" colspan="2"><a id="abda4b85b02853d118bed9e1e9c4d3db4" name="abda4b85b02853d118bed9e1e9c4d3db4"></a>
+template&lt;class InputIt &gt; </td></tr>
+<tr class="memitem:abda4b85b02853d118bed9e1e9c4d3db4"><td align="right" class="memTemplItemLeft" valign="top">void </td><td class="memTemplItemRight" valign="bottom"><b>assign</b> (InputIt first, InputIt last)</td></tr>
+<tr class="separator:abda4b85b02853d118bed9e1e9c4d3db4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad69bd11391be1a1dba5c8202259664f8" id="r_ad69bd11391be1a1dba5c8202259664f8"><td align="right" class="memItemLeft" valign="top"><a id="ad69bd11391be1a1dba5c8202259664f8" name="ad69bd11391be1a1dba5c8202259664f8"></a>
+iterator </td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:ad69bd11391be1a1dba5c8202259664f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a29305669b60ca1680752e2fc3592ba99" id="r_a29305669b60ca1680752e2fc3592ba99"><td align="right" class="memItemLeft" valign="top"><a id="a29305669b60ca1680752e2fc3592ba99" name="a29305669b60ca1680752e2fc3592ba99"></a>
+const_iterator </td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:a29305669b60ca1680752e2fc3592ba99"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acad38d52497a975bfb6f2f6acd76631f" id="r_acad38d52497a975bfb6f2f6acd76631f"><td align="right" class="memItemLeft" valign="top"><a id="acad38d52497a975bfb6f2f6acd76631f" name="acad38d52497a975bfb6f2f6acd76631f"></a>
+iterator </td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:acad38d52497a975bfb6f2f6acd76631f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:accf9a4bd0c34d4a5f6a7dab66ea10cdc" id="r_accf9a4bd0c34d4a5f6a7dab66ea10cdc"><td align="right" class="memItemLeft" valign="top"><a id="accf9a4bd0c34d4a5f6a7dab66ea10cdc" name="accf9a4bd0c34d4a5f6a7dab66ea10cdc"></a>
+const_iterator </td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:accf9a4bd0c34d4a5f6a7dab66ea10cdc"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Shared_8h_source.html">vrpn_Shared.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

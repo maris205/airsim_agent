@@ -1,0 +1,1118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Connection类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-static-methods">静态 Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__Connection-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Connection类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<p>Generic connection class not specific to the transport mechanism.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a>&gt;</code></p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_Connection 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classvrpn__Connection__inherit__graph.svg" width="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_Connection 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="128" scrolling="no" src="classvrpn__Connection__coll__graph.svg" width="340"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4595d6e2793856ce48642e92f52be73d" id="r_a4595d6e2793856ce48642e92f52be73d"><td align="right" class="memItemLeft" valign="top">virtual vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4595d6e2793856ce48642e92f52be73d">doing_okay</a> (void) const</td></tr>
+<tr class="memdesc:a4595d6e2793856ce48642e92f52be73d"><td class="mdescLeft"> </td><td class="mdescRight">Returns vrpn_true if the connection is okay, vrpn_false if not  <br/></td></tr>
+<tr class="separator:a4595d6e2793856ce48642e92f52be73d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8dbd565b9dedd9023c04bef8b3f4a13d" id="r_a8dbd565b9dedd9023c04bef8b3f4a13d"><td align="right" class="memItemLeft" valign="top">virtual vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dbd565b9dedd9023c04bef8b3f4a13d">connected</a> (void) const</td></tr>
+<tr class="separator:a8dbd565b9dedd9023c04bef8b3f4a13d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9b82253535b06f01f0832e506aad0e49" id="r_a9b82253535b06f01f0832e506aad0e49"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b82253535b06f01f0832e506aad0e49">get_log_names</a> (char **local_in_logname, char **local_out_logname, char **remote_in_logname, char **remote_out_logname)</td></tr>
+<tr class="separator:a9b82253535b06f01f0832e506aad0e49"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:add62ff231bf8dde9e70f1a985ed7b2ce" id="r_add62ff231bf8dde9e70f1a985ed7b2ce"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop</a> (const struct timeval *timeout=NULL)=0</td></tr>
+<tr class="separator:add62ff231bf8dde9e70f1a985ed7b2ce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e1192ff990aed3d551c28996e5d2c31" id="r_a4e1192ff990aed3d551c28996e5d2c31"><td align="right" class="memItemLeft" valign="top">virtual vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1192ff990aed3d551c28996e5d2c31">register_sender</a> (const char *name)</td></tr>
+<tr class="separator:a4e1192ff990aed3d551c28996e5d2c31"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f7b15b3d0e5a91562161fd0245545ff" id="r_a5f7b15b3d0e5a91562161fd0245545ff"><td align="right" class="memItemLeft" valign="top"><a id="a5f7b15b3d0e5a91562161fd0245545ff" name="a5f7b15b3d0e5a91562161fd0245545ff"></a>
+virtual vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>register_message_type</b> (const char *name)</td></tr>
+<tr class="separator:a5f7b15b3d0e5a91562161fd0245545ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8424183c662e1ca99a173674f2481b12" id="r_a8424183c662e1ca99a173674f2481b12"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8424183c662e1ca99a173674f2481b12">register_handler</a> (vrpn_int32 type, vrpn_MESSAGEHANDLER handler, void *userdata, vrpn_int32 sender=vrpn_ANY_SENDER)</td></tr>
+<tr class="separator:a8424183c662e1ca99a173674f2481b12"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af27eb65b7a0e902613aaed0caa039a6d" id="r_af27eb65b7a0e902613aaed0caa039a6d"><td align="right" class="memItemLeft" valign="top"><a id="af27eb65b7a0e902613aaed0caa039a6d" name="af27eb65b7a0e902613aaed0caa039a6d"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>unregister_handler</b> (vrpn_int32 type, vrpn_MESSAGEHANDLER handler, void *userdata, vrpn_int32 sender=vrpn_ANY_SENDER)</td></tr>
+<tr class="separator:af27eb65b7a0e902613aaed0caa039a6d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac6f3d227f128f1411f24384113839291" id="r_ac6f3d227f128f1411f24384113839291"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f3d227f128f1411f24384113839291">pack_message</a> (vrpn_uint32 len, struct timeval time, vrpn_int32 type, vrpn_int32 sender, const char *buffer, vrpn_uint32 class_of_service)</td></tr>
+<tr class="separator:ac6f3d227f128f1411f24384113839291"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9695f65f0e8c446eb0a915130b9744c0" id="r_a9695f65f0e8c446eb0a915130b9744c0"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9695f65f0e8c446eb0a915130b9744c0">send_pending_reports</a> (void)=0</td></tr>
+<tr class="separator:a9695f65f0e8c446eb0a915130b9744c0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a178509a595f6b52f66e517cd79dc9745" id="r_a178509a595f6b52f66e517cd79dc9745"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a178509a595f6b52f66e517cd79dc9745">time_since_connection_open</a> (struct timeval *elapsed_time)</td></tr>
+<tr class="separator:a178509a595f6b52f66e517cd79dc9745"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2858e0282a9446358385882b5542f779" id="r_a2858e0282a9446358385882b5542f779"><td align="right" class="memItemLeft" valign="top">virtual timeval </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2858e0282a9446358385882b5542f779">get_time</a> ()</td></tr>
+<tr class="separator:a2858e0282a9446358385882b5542f779"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adbc181e8b9aec710b89cc72760892f74" id="r_adbc181e8b9aec710b89cc72760892f74"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="#adbc181e8b9aec710b89cc72760892f74">sender_name</a> (vrpn_int32 sender)</td></tr>
+<tr class="separator:adbc181e8b9aec710b89cc72760892f74"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2ecf92e1fdf131a60115ab118a358e1f" id="r_a2ecf92e1fdf131a60115ab118a358e1f"><td align="right" class="memItemLeft" valign="top"><a id="a2ecf92e1fdf131a60115ab118a358e1f" name="a2ecf92e1fdf131a60115ab118a358e1f"></a>
+virtual const char * </td><td class="memItemRight" valign="bottom"><b>message_type_name</b> (vrpn_int32 type)</td></tr>
+<tr class="separator:a2ecf92e1fdf131a60115ab118a358e1f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a668b120ed13b3979661363a2e579197d" id="r_a668b120ed13b3979661363a2e579197d"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a668b120ed13b3979661363a2e579197d">register_log_filter</a> (vrpn_LOGFILTER filter, void *userdata)</td></tr>
+<tr class="memdesc:a668b120ed13b3979661363a2e579197d"><td class="mdescLeft"> </td><td class="mdescRight">Sets up a filter function for logging. Any user message to be logged is first passed to this function, and will only be logged if the function returns zero (XXX). NOTE: this only affects local logging - remote logging is unfiltered! Only user messages are filtered; all system messages are logged. Returns nonzero on failure.  <br/></td></tr>
+<tr class="separator:a668b120ed13b3979661363a2e579197d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab64d8d27a23969eee7e7929d22b7d696" id="r_ab64d8d27a23969eee7e7929d22b7d696"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab64d8d27a23969eee7e7929d22b7d696">save_log_so_far</a> ()</td></tr>
+<tr class="memdesc:ab64d8d27a23969eee7e7929d22b7d696"><td class="mdescLeft"> </td><td class="mdescRight">Save any messages on any endpoints which have been logged so far.  <br/></td></tr>
+<tr class="separator:ab64d8d27a23969eee7e7929d22b7d696"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a59a592fd382bdc95d27f30997de086a4" id="r_a59a592fd382bdc95d27f30997de086a4"><td align="right" class="memItemLeft" valign="top">virtual <a class="el" href="classvrpn__File__Connection.html">vrpn_File_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a59a592fd382bdc95d27f30997de086a4">get_File_Connection</a> (void)</td></tr>
+<tr class="separator:a59a592fd382bdc95d27f30997de086a4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac636c835f58cf05fe633e19bd1802c3e" id="r_ac636c835f58cf05fe633e19bd1802c3e"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac636c835f58cf05fe633e19bd1802c3e">Jane_stop_this_crazy_thing</a> (vrpn_uint32 stop_looking_after)</td></tr>
+<tr class="separator:ac636c835f58cf05fe633e19bd1802c3e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf7961e9d1343e43061d6860bdbae0a8" id="r_adf7961e9d1343e43061d6860bdbae0a8"><td align="right" class="memItemLeft" valign="top"><a id="adf7961e9d1343e43061d6860bdbae0a8" name="adf7961e9d1343e43061d6860bdbae0a8"></a>
+vrpn_uint32 </td><td class="memItemRight" valign="bottom"><b>get_Jane_value</b> (void)</td></tr>
+<tr class="separator:adf7961e9d1343e43061d6860bdbae0a8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3bec6f13a84a014fca7183a8eaebd5d9" id="r_a3bec6f13a84a014fca7183a8eaebd5d9"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bec6f13a84a014fca7183a8eaebd5d9">addReference</a> ()</td></tr>
+<tr class="memdesc:a3bec6f13a84a014fca7183a8eaebd5d9"><td class="mdescLeft"> </td><td class="mdescRight">Counting references to this connection.  <br/></td></tr>
+<tr class="separator:a3bec6f13a84a014fca7183a8eaebd5d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae2b791e01e15978d88c3dbba333faf8b" id="r_ae2b791e01e15978d88c3dbba333faf8b"><td align="right" class="memItemLeft" valign="top"><a id="ae2b791e01e15978d88c3dbba333faf8b" name="ae2b791e01e15978d88c3dbba333faf8b"></a>
+void </td><td class="memItemRight" valign="bottom"><b>removeReference</b> ()</td></tr>
+<tr class="separator:ae2b791e01e15978d88c3dbba333faf8b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a555dd55338fe6e6f77b7bbc6c12a7d7a" id="r_a555dd55338fe6e6f77b7bbc6c12a7d7a"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a555dd55338fe6e6f77b7bbc6c12a7d7a">setAutoDeleteStatus</a> (bool setvalue)</td></tr>
+<tr class="separator:a555dd55338fe6e6f77b7bbc6c12a7d7a"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab056ed1ea182c9780f545775f4edfd73" id="r_ab056ed1ea182c9780f545775f4edfd73"><td align="right" class="memItemLeft" valign="top">vrpn_TypeDispatcher * </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab056ed1ea182c9780f545775f4edfd73">d_dispatcher</a></td></tr>
+<tr class="separator:ab056ed1ea182c9780f545775f4edfd73"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a6dffa302c349b924f512809c4c037a18" id="r_a6dffa302c349b924f512809c4c037a18"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dffa302c349b924f512809c4c037a18">vrpn_Connection</a> (const char *local_in_logfile_name, const char *local_out_logfile_name, vrpn_EndpointAllocator epa=<a class="el" href="#a4f415125ccc95d3f77707064c424e39f">allocateEndpoint</a>)</td></tr>
+<tr class="separator:a6dffa302c349b924f512809c4c037a18"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a30fc41711ca130e7ab1997f6aade70c7" id="r_a30fc41711ca130e7ab1997f6aade70c7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a30fc41711ca130e7ab1997f6aade70c7">vrpn_Connection</a> (const char *local_in_logfile_name, const char *local_out_logfile_name, const char *remote_in_logfile_name, const char *remote_out_logfile_name, vrpn_EndpointAllocator epa=<a class="el" href="#a4f415125ccc95d3f77707064c424e39f">allocateEndpoint</a>)</td></tr>
+<tr class="separator:a30fc41711ca130e7ab1997f6aade70c7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac3451a568d22ac6a0b6349da6269b088" id="r_ac3451a568d22ac6a0b6349da6269b088"><td align="right" class="memItemLeft" valign="top"><a id="ac3451a568d22ac6a0b6349da6269b088" name="ac3451a568d22ac6a0b6349da6269b088"></a>
+int </td><td class="memItemRight" valign="bottom"><b>delete_endpoint</b> (<a class="el" href="classvrpn__Endpoint.html">vrpn_Endpoint</a> *endpoint)</td></tr>
+<tr class="separator:ac3451a568d22ac6a0b6349da6269b088"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa5e17006905eb5e7e5090ceb51f7fcc8" id="r_aa5e17006905eb5e7e5090ceb51f7fcc8"><td align="right" class="memItemLeft" valign="top"><a id="aa5e17006905eb5e7e5090ceb51f7fcc8" name="aa5e17006905eb5e7e5090ceb51f7fcc8"></a>
+int </td><td class="memItemRight" valign="bottom"><b>compact_endpoints</b> (void)</td></tr>
+<tr class="separator:aa5e17006905eb5e7e5090ceb51f7fcc8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a650f4b7243a4b93790c9301c74cc7039" id="r_a650f4b7243a4b93790c9301c74cc7039"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a650f4b7243a4b93790c9301c74cc7039">pack_sender_description</a> (vrpn_int32 which)</td></tr>
+<tr class="memdesc:a650f4b7243a4b93790c9301c74cc7039"><td class="mdescLeft"> </td><td class="mdescRight">Send the sender description to ALL endpoints.  <br/></td></tr>
+<tr class="separator:a650f4b7243a4b93790c9301c74cc7039"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acea9f81fef898597232f476523ddc6ed" id="r_acea9f81fef898597232f476523ddc6ed"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="#acea9f81fef898597232f476523ddc6ed">pack_type_description</a> (vrpn_int32 which)</td></tr>
+<tr class="memdesc:acea9f81fef898597232f476523ddc6ed"><td class="mdescLeft"> </td><td class="mdescRight">Send the type description to ALL endpoints.  <br/></td></tr>
+<tr class="separator:acea9f81fef898597232f476523ddc6ed"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6f2fcdd691b9a5834be51ec081bf6411" id="r_a6f2fcdd691b9a5834be51ec081bf6411"><td align="right" class="memItemLeft" valign="top"><a id="a6f2fcdd691b9a5834be51ec081bf6411" name="a6f2fcdd691b9a5834be51ec081bf6411"></a>
+virtual int </td><td class="memItemRight" valign="bottom"><b>do_callbacks_for</b> (vrpn_int32 type, vrpn_int32 sender, struct timeval time, vrpn_uint32 len, const char *buffer)</td></tr>
+<tr class="separator:a6f2fcdd691b9a5834be51ec081bf6411"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae315a220ed4496bf5f50e7d65f24896e" id="r_ae315a220ed4496bf5f50e7d65f24896e"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae315a220ed4496bf5f50e7d65f24896e">message_type_is_registered</a> (const char *) const</td></tr>
+<tr class="memdesc:ae315a220ed4496bf5f50e7d65f24896e"><td class="mdescLeft"> </td><td class="mdescRight">Returns message type ID, or -1 if unregistered  <br/></td></tr>
+<tr class="separator:ae315a220ed4496bf5f50e7d65f24896e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af43dbdfc462d28dcea4c34051af4ed05" id="r_af43dbdfc462d28dcea4c34051af4ed05"><td align="right" class="memItemLeft" valign="top"><a id="af43dbdfc462d28dcea4c34051af4ed05" name="af43dbdfc462d28dcea4c34051af4ed05"></a>
+int </td><td class="memItemRight" valign="bottom"><b>doSystemCallbacksFor</b> (<a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>, void *)</td></tr>
+<tr class="separator:af43dbdfc462d28dcea4c34051af4ed05"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a66702bb0769a423e1054d5326ac616ac" id="r_a66702bb0769a423e1054d5326ac616ac"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a66702bb0769a423e1054d5326ac616ac">updateEndpoints</a> (void)</td></tr>
+<tr class="separator:a66702bb0769a423e1054d5326ac616ac"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4f415125ccc95d3f77707064c424e39f" id="r_a4f415125ccc95d3f77707064c424e39f"><td align="right" class="memItemLeft" valign="top">static <a class="el" href="classvrpn__Endpoint__IP.html">vrpn_Endpoint_IP</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f415125ccc95d3f77707064c424e39f">allocateEndpoint</a> (<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *, vrpn_int32 *connectedEC)</td></tr>
+<tr class="separator:a4f415125ccc95d3f77707064c424e39f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ad7d03c64b94f7ce21c42218063813787" id="r_ad7d03c64b94f7ce21c42218063813787"><td align="right" class="memItemLeft" valign="top">static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7d03c64b94f7ce21c42218063813787">handle_log_message</a> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="memdesc:ad7d03c64b94f7ce21c42218063813787"><td class="mdescLeft"> </td><td class="mdescRight">Routines that handle system messages  <br/></td></tr>
+<tr class="separator:ad7d03c64b94f7ce21c42218063813787"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6478d7ee42241bb87431c130abc64212" id="r_a6478d7ee42241bb87431c130abc64212"><td align="right" class="memItemLeft" valign="top"><a id="a6478d7ee42241bb87431c130abc64212" name="a6478d7ee42241bb87431c130abc64212"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_disconnect_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a6478d7ee42241bb87431c130abc64212"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a8d4177cd8b789405139bfb85edd4d708" id="r_a8d4177cd8b789405139bfb85edd4d708"><td align="right" class="memItemLeft" valign="top">vrpn_uint32 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d4177cd8b789405139bfb85edd4d708">d_stop_processing_messages_after</a></td></tr>
+<tr class="separator:a8d4177cd8b789405139bfb85edd4d708"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae193417a1d02bddcff8848f8a9221072" id="r_ae193417a1d02bddcff8848f8a9221072"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae193417a1d02bddcff8848f8a9221072">connectionStatus</a></td></tr>
+<tr class="memdesc:ae193417a1d02bddcff8848f8a9221072"><td class="mdescLeft"> </td><td class="mdescRight">Status of the connection  <br/></td></tr>
+<tr class="separator:ae193417a1d02bddcff8848f8a9221072"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3a65354182bd69843b3ec1f96eb8d29d" id="r_a3a65354182bd69843b3ec1f96eb8d29d"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn_1_1BoundEndpointAllocator.html">vrpn::BoundEndpointAllocator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a65354182bd69843b3ec1f96eb8d29d">d_boundEndpointAllocator</a></td></tr>
+<tr class="separator:a3a65354182bd69843b3ec1f96eb8d29d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a433f3881481137e165622fc6697497bf" id="r_a433f3881481137e165622fc6697497bf"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn_1_1EndpointContainer.html">vrpn::EndpointContainer</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a433f3881481137e165622fc6697497bf">d_endpoints</a></td></tr>
+<tr class="separator:a433f3881481137e165622fc6697497bf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02c33c88cd041c530190a028a7816673" id="r_a02c33c88cd041c530190a028a7816673"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a02c33c88cd041c530190a028a7816673">d_numConnectedEndpoints</a></td></tr>
+<tr class="separator:a02c33c88cd041c530190a028a7816673"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad0b9d8b7a7ffe582db1ff04ce942ef6b" id="r_ad0b9d8b7a7ffe582db1ff04ce942ef6b"><td align="right" class="memItemLeft" valign="top">timeval </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0b9d8b7a7ffe582db1ff04ce942ef6b">start_time</a></td></tr>
+<tr class="memdesc:ad0b9d8b7a7ffe582db1ff04ce942ef6b"><td class="mdescLeft"> </td><td class="mdescRight">Timekeeping - TCH 30 June 98  <br/></td></tr>
+<tr class="separator:ad0b9d8b7a7ffe582db1ff04ce942ef6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad095e384c39865c9c14eb1ee08ce6cac" id="r_ad095e384c39865c9c14eb1ee08ce6cac"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad095e384c39865c9c14eb1ee08ce6cac">d_serverLogCount</a></td></tr>
+<tr class="separator:ad095e384c39865c9c14eb1ee08ce6cac"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa6d1fd1c12b565f4f4e8da1d69e95dd" id="r_aaa6d1fd1c12b565f4f4e8da1d69e95dd"><td align="right" class="memItemLeft" valign="top"><a id="aaa6d1fd1c12b565f4f4e8da1d69e95dd" name="aaa6d1fd1c12b565f4f4e8da1d69e95dd"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_serverLogMode</b></td></tr>
+<tr class="separator:aaa6d1fd1c12b565f4f4e8da1d69e95dd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab3686fc4304d4e4758d109c793be4afb" id="r_ab3686fc4304d4e4758d109c793be4afb"><td align="right" class="memItemLeft" valign="top"><a id="ab3686fc4304d4e4758d109c793be4afb" name="ab3686fc4304d4e4758d109c793be4afb"></a>
+char * </td><td class="memItemRight" valign="bottom"><b>d_serverLogName</b></td></tr>
+<tr class="separator:ab3686fc4304d4e4758d109c793be4afb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31d74e0b93bde842a566d9ec9b272b77" id="r_a31d74e0b93bde842a566d9ec9b272b77"><td align="right" class="memItemLeft" valign="top"><a id="a31d74e0b93bde842a566d9ec9b272b77" name="a31d74e0b93bde842a566d9ec9b272b77"></a>
+vrpn_bool </td><td class="memItemRight" valign="bottom"><b>d_updateEndpoint</b></td></tr>
+<tr class="separator:a31d74e0b93bde842a566d9ec9b272b77"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Generic connection class not specific to the transport mechanism. </p>
+<p>It abstracts all of the common functions. Specific implementations for IP, MPI, and other transport mechanisms follow. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a6dffa302c349b924f512809c4c037a18" name="a6dffa302c349b924f512809c4c037a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dffa302c349b924f512809c4c037a18">◆ </a></span>vrpn_Connection() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>local_in_logfile_name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>local_out_logfile_name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_EndpointAllocator</td> <td class="paramname"><span class="paramname"><em>epa</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a4f415125ccc95d3f77707064c424e39f">allocateEndpoint</a></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor for server connection. This cannot be called directly any more because <a class="el" href="classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism.">vrpn_Connection</a> is an abstract base class. Call vrpn_create_server_connection() to make a server of arbitrary type based on a name. </p>
+</div>
+</div>
+<a id="a30fc41711ca130e7ab1997f6aade70c7" name="a30fc41711ca130e7ab1997f6aade70c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30fc41711ca130e7ab1997f6aade70c7">◆ </a></span>vrpn_Connection() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>local_in_logfile_name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>local_out_logfile_name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>remote_in_logfile_name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>remote_out_logfile_name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_EndpointAllocator</td> <td class="paramname"><span class="paramname"><em>epa</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a4f415125ccc95d3f77707064c424e39f">allocateEndpoint</a></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor for client connection. This cannot be called directly because <a class="el" href="classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism.">vrpn_Connection</a> is an abstract base class. Call vrpn_get_connection_by_name() to create a client connection. </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a3bec6f13a84a014fca7183a8eaebd5d9" name="a3bec6f13a84a014fca7183a8eaebd5d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bec6f13a84a014fca7183a8eaebd5d9">◆ </a></span>addReference()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void addReference </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Counting references to this connection. </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="254" scrolling="no" src="classvrpn__Connection_a3bec6f13a84a014fca7183a8eaebd5d9_icgraph.svg" width="306"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a4f415125ccc95d3f77707064c424e39f" name="a4f415125ccc95d3f77707064c424e39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f415125ccc95d3f77707064c424e39f">◆ </a></span>allocateEndpoint()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static <a class="el" href="classvrpn__Endpoint__IP.html">vrpn_Endpoint_IP</a> * allocateEndpoint </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *</td> <td class="paramname"><span class="paramname"><em></em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32 *</td> <td class="paramname"><span class="paramname"><em>connectedEC</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Redefining this and passing it to constructors allows a subclass to use a different subclass of Endpoint. It should do NOTHING but return an endpoint of the appropriate class; it may not access subclass data, since it'll be called from a constructor </p>
+</div>
+</div>
+<a id="a8dbd565b9dedd9023c04bef8b3f4a13d" name="a8dbd565b9dedd9023c04bef8b3f4a13d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dbd565b9dedd9023c04bef8b3f4a13d">◆ </a></span>connected()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual vrpn_bool connected </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns vrpn_true if the connection has been established, vrpn_false if not (For a networkless connection, this is equivalent to <a class="el" href="#a4595d6e2793856ce48642e92f52be73d" title="Returns vrpn_true if the connection is okay, vrpn_false if not">doing_okay()</a>). </p>
+<p>被 <a class="el" href="classvrpn__Connection__Loopback.html#a8dbd565b9dedd9023c04bef8b3f4a13d">vrpn_Connection_Loopback</a> 重载.</p>
+</div>
+</div>
+<a id="a4595d6e2793856ce48642e92f52be73d" name="a4595d6e2793856ce48642e92f52be73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4595d6e2793856ce48642e92f52be73d">◆ </a></span>doing_okay()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual vrpn_bool doing_okay </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns vrpn_true if the connection is okay, vrpn_false if not </p>
+<p>被 <a class="el" href="classvrpn__Connection__Loopback.html#a4595d6e2793856ce48642e92f52be73d">vrpn_Connection_Loopback</a> 重载.</p>
+</div>
+</div>
+<a id="a59a592fd382bdc95d27f30997de086a4" name="a59a592fd382bdc95d27f30997de086a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a592fd382bdc95d27f30997de086a4">◆ </a></span>get_File_Connection()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual <a class="el" href="classvrpn__File__Connection.html">vrpn_File_Connection</a> * get_File_Connection </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classvrpn__File__Connection.html">vrpn_File_Connection</a> implements this as "return this" so it can be used to detect a File_Connection and get the pointer for it </p>
+<p>被 <a class="el" href="classvrpn__File__Connection.html#a59a592fd382bdc95d27f30997de086a4">vrpn_File_Connection</a> 重载.</p>
+</div>
+</div>
+<a id="a9b82253535b06f01f0832e506aad0e49" name="a9b82253535b06f01f0832e506aad0e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b82253535b06f01f0832e506aad0e49">◆ </a></span>get_log_names()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void get_log_names </td>
+<td>(</td>
+<td class="paramtype">char **</td> <td class="paramname"><span class="paramname"><em>local_in_logname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">char **</td> <td class="paramname"><span class="paramname"><em>local_out_logname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">char **</td> <td class="paramname"><span class="paramname"><em>remote_in_logname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">char **</td> <td class="paramname"><span class="paramname"><em>remote_out_logname</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>This function returns the logfile names of this connection in the parameters. It will allocate memory for the name of each log file in use. If no logging of a particular type is happening, then *(X_Y_logname) will be set to NULL. IMPORTANT: code calling this function is responsible for freeing the memory allocated for these strings. </p>
+</div>
+</div>
+<a id="a2858e0282a9446358385882b5542f779" name="a2858e0282a9446358385882b5542f779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2858e0282a9446358385882b5542f779">◆ </a></span>get_time()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual timeval get_time </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>returns the current time in the connection (since the epoch – UTC time). </p>
+<p>被 <a class="el" href="classvrpn__File__Connection.html#a2858e0282a9446358385882b5542f779">vrpn_File_Connection</a> 重载.</p>
+</div>
+</div>
+<a id="ad7d03c64b94f7ce21c42218063813787" name="ad7d03c64b94f7ce21c42218063813787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d03c64b94f7ce21c42218063813787">◆ </a></span>handle_log_message()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static int VRPN_CALLBACK handle_log_message </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></td> <td class="paramname"><span class="paramname"><em>p</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Routines that handle system messages </p>
+</div>
+</div>
+<a id="ac636c835f58cf05fe633e19bd1802c3e" name="ac636c835f58cf05fe633e19bd1802c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac636c835f58cf05fe633e19bd1802c3e">◆ </a></span>Jane_stop_this_crazy_thing()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void Jane_stop_this_crazy_thing </td>
+<td>(</td>
+<td class="paramtype">vrpn_uint32</td> <td class="paramname"><span class="paramname"><em>stop_looking_after</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>This function should be seldom used. It is here for the case of the <a class="el" href="classvrpn__Imager.html" title="Base class for Imager class">vrpn_Imager</a>, whose servers do not follow "The VRPN Way" because they try to jam more data into the network than there is bandwidth to support it. As a result, a client may call <a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop()</a> on the connection and have it never return – there is always more data in the network to read, so we never hand control back to the main program. The reason for the name comes from an old U.S. cartoon called "The Jetsons". In it, George Jetson is running on a treadmill when it goes out of control and starts spinning so fast that he can't even run fast enough to reach the controls and turn it off. He cries out to his wife, "Jane!  Stop this crazy thing!" The parameter specifies a trigger: if more than the specified number of messages come in on a given input channel during one <a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop()</a> call, the connection should stop looking for more messages. NOTE: this does not guarantee that only this many messages will be received, only that the connection will stop looking for new ones on a given channel once that many have been received (for example, UDP channels will parse all the rest of the messages in a packet before stopping). A value of 0 turns off the limit, and will cause all incoming messages to be handled before returning. </p>
+</div>
+</div>
+<a id="add62ff231bf8dde9e70f1a985ed7b2ce" name="add62ff231bf8dde9e70f1a985ed7b2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add62ff231bf8dde9e70f1a985ed7b2ce">◆ </a></span>mainloop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int mainloop </td>
+<td>(</td>
+<td class="paramtype">const struct timeval *</td> <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call each time through program main loop to handle receiving any incoming messages and sending any packed messages. Returns -1 when connection dropped due to error, 0 otherwise. (only returns -1 once per connection drop). Optional argument is TOTAL time to block on select() calls; there may be multiple calls to select() per call to <a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop()</a>, and this timeout will be divided evenly between them. </p>
+<p>在 <a class="el" href="classvrpn__Connection__IP.html#a0c771b53f8a5fbf0bc48e2186ea06214">vrpn_Connection_IP</a> , 以及 <a class="el" href="classvrpn__Connection__Loopback.html#a0c771b53f8a5fbf0bc48e2186ea06214">vrpn_Connection_Loopback</a> 内被实现.</p>
+</div>
+</div>
+<a id="ae315a220ed4496bf5f50e7d65f24896e" name="ae315a220ed4496bf5f50e7d65f24896e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae315a220ed4496bf5f50e7d65f24896e">◆ </a></span>message_type_is_registered()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int message_type_is_registered </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns message type ID, or -1 if unregistered </p>
+</div>
+</div>
+<a id="ac6f3d227f128f1411f24384113839291" name="ac6f3d227f128f1411f24384113839291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f3d227f128f1411f24384113839291">◆ </a></span>pack_message()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int pack_message </td>
+<td>(</td>
+<td class="paramtype">vrpn_uint32</td> <td class="paramname"><span class="paramname"><em>len</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">struct timeval</td> <td class="paramname"><span class="paramname"><em>time</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>sender</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint32</td> <td class="paramname"><span class="paramname"><em>class_of_service</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Pack a message that will be sent the next time <a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop()</a> is called. Turn off the RELIABLE flag if you want low-latency (UDP) send. </p>
+</div>
+</div>
+<a id="a650f4b7243a4b93790c9301c74cc7039" name="a650f4b7243a4b93790c9301c74cc7039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650f4b7243a4b93790c9301c74cc7039">◆ </a></span>pack_sender_description()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int pack_sender_description </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>which</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Send the sender description to ALL endpoints. </p>
+</div>
+</div>
+<a id="acea9f81fef898597232f476523ddc6ed" name="acea9f81fef898597232f476523ddc6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea9f81fef898597232f476523ddc6ed">◆ </a></span>pack_type_description()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int pack_type_description </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>which</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Send the type description to ALL endpoints. </p>
+</div>
+</div>
+<a id="a8424183c662e1ca99a173674f2481b12" name="a8424183c662e1ca99a173674f2481b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8424183c662e1ca99a173674f2481b12">◆ </a></span>register_handler()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int register_handler </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_MESSAGEHANDLER</td> <td class="paramname"><span class="paramname"><em>handler</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>sender</em></span><span class="paramdefsep"> = </span><span class="paramdefval">vrpn_ANY_SENDER</span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Set up (or remove) a handler for a message of a given type. Optionally, specify which sender to handle messages from. Handlers will be called during <a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop()</a>. Your handler should return 0 or a communication error is assumed and the connection will be shut down. </p>
+</div>
+</div>
+<a id="a668b120ed13b3979661363a2e579197d" name="a668b120ed13b3979661363a2e579197d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668b120ed13b3979661363a2e579197d">◆ </a></span>register_log_filter()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int register_log_filter </td>
+<td>(</td>
+<td class="paramtype">vrpn_LOGFILTER</td> <td class="paramname"><span class="paramname"><em>filter</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Sets up a filter function for logging. Any user message to be logged is first passed to this function, and will only be logged if the function returns zero (XXX). NOTE: this only affects local logging - remote logging is unfiltered! Only user messages are filtered; all system messages are logged. Returns nonzero on failure. </p>
+</div>
+</div>
+<a id="a4e1192ff990aed3d551c28996e5d2c31" name="a4e1192ff990aed3d551c28996e5d2c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1192ff990aed3d551c28996e5d2c31">◆ </a></span>register_sender()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual vrpn_int32 register_sender </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Get a token to use for the string name of the sender or type. Remember to check for -1 meaning failure. </p>
+</div>
+</div>
+<a id="ab64d8d27a23969eee7e7929d22b7d696" name="ab64d8d27a23969eee7e7929d22b7d696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64d8d27a23969eee7e7929d22b7d696">◆ </a></span>save_log_so_far()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int save_log_so_far </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Save any messages on any endpoints which have been logged so far. </p>
+</div>
+</div>
+<a id="a9695f65f0e8c446eb0a915130b9744c0" name="a9695f65f0e8c446eb0a915130b9744c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9695f65f0e8c446eb0a915130b9744c0">◆ </a></span>send_pending_reports()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int send_pending_reports </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>send pending report, clear the buffer. This function was protected, now is public, so we can use it to send out intermediate results without calling mainloop </p>
+<p>在 <a class="el" href="classvrpn__Connection__IP.html#aa0d15a45d4d53c276eeacff2dace0dce">vrpn_Connection_IP</a>, <a class="el" href="classvrpn__Connection__Loopback.html#aa0d15a45d4d53c276eeacff2dace0dce">vrpn_Connection_Loopback</a> , 以及 <a class="el" href="classvrpn__File__Connection.html#aa0d15a45d4d53c276eeacff2dace0dce">vrpn_File_Connection</a> 内被实现.</p>
+</div>
+</div>
+<a id="adbc181e8b9aec710b89cc72760892f74" name="adbc181e8b9aec710b89cc72760892f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc181e8b9aec710b89cc72760892f74">◆ </a></span>sender_name()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual const char * sender_name </td>
+<td>(</td>
+<td class="paramtype">vrpn_int32</td> <td class="paramname"><span class="paramname"><em>sender</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the name of the specified sender/type, or NULL if the parameter is invalid. Only works for user messages (type &gt;= 0). </p>
+</div>
+</div>
+<a id="a555dd55338fe6e6f77b7bbc6c12a7d7a" name="a555dd55338fe6e6f77b7bbc6c12a7d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555dd55338fe6e6f77b7bbc6c12a7d7a">◆ </a></span>setAutoDeleteStatus()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void setAutoDeleteStatus </td>
+<td>(</td>
+<td class="paramtype">bool</td> <td class="paramname"><span class="paramname"><em>setvalue</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Specify whether this connection should be deleted automatically when it is no longer need (reference count reaches zero). For connections created by the VRPN code (as is done in get_connection_by_name) these should be auto-deleted. Connections created by user code should not be auto-deleted; that is up to the user to decide when finished. By default, the constructor sets this to FALSE. VRPN code (or user code) can set this to TRUE if it wants the connection to be deleted automatically when the last service on it is deleted </p>
+</div>
+</div>
+<a id="a178509a595f6b52f66e517cd79dc9745" name="a178509a595f6b52f66e517cd79dc9745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178509a595f6b52f66e517cd79dc9745">◆ </a></span>time_since_connection_open()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int time_since_connection_open </td>
+<td>(</td>
+<td class="paramtype">struct timeval *</td> <td class="paramname"><span class="paramname"><em>elapsed_time</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the time since the connection opened. Some subclasses may redefine time. </p>
+<p>被 <a class="el" href="classvrpn__File__Connection.html#aa969e2ff009f176af48c9555464552fb">vrpn_File_Connection</a> 重载.</p>
+</div>
+</div>
+<a id="a66702bb0769a423e1054d5326ac616ac" name="a66702bb0769a423e1054d5326ac616ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66702bb0769a423e1054d5326ac616ac">◆ </a></span>updateEndpoints()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void updateEndpoints </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>This function will be called on the <a class="el" href="#add62ff231bf8dde9e70f1a985ed7b2ce">mainloop()</a> iteration after *d_endpointAllocator is called, which lets subclasses do initialization. (They can't do so during allocateEndpoint because it's called during the Connection constructor when their constructors haven't executed yet.) </p>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ae193417a1d02bddcff8848f8a9221072" name="ae193417a1d02bddcff8848f8a9221072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae193417a1d02bddcff8848f8a9221072">◆ </a></span>connectionStatus</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int connectionStatus</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Status of the connection </p>
+</div>
+</div>
+<a id="a3a65354182bd69843b3ec1f96eb8d29d" name="a3a65354182bd69843b3ec1f96eb8d29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a65354182bd69843b3ec1f96eb8d29d">◆ </a></span>d_boundEndpointAllocator</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1BoundEndpointAllocator.html">vrpn::BoundEndpointAllocator</a> d_boundEndpointAllocator</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Function object wrapping an endpoint allocator and binding its arguments. </p>
+</div>
+</div>
+<a id="ab056ed1ea182c9780f545775f4edfd73" name="ab056ed1ea182c9780f545775f4edfd73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab056ed1ea182c9780f545775f4edfd73">◆ </a></span>d_dispatcher</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_TypeDispatcher* d_dispatcher</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Derived classes need access to d_dispatcher in their <a class="el" href="#a4f415125ccc95d3f77707064c424e39f">allocateEndpoint()</a> routine. Several compilers won't give it to them, even if they do inherit publicly. Until we figure that out, d_dispatcher needs to be public. </p>
+</div>
+</div>
+<a id="a433f3881481137e165622fc6697497bf" name="a433f3881481137e165622fc6697497bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433f3881481137e165622fc6697497bf">◆ </a></span>d_endpoints</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1EndpointContainer.html">vrpn::EndpointContainer</a> d_endpoints</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Sockets used to talk to remote Connection(s) and other information needed on a per-connection basis </p>
+</div>
+</div>
+<a id="a02c33c88cd041c530190a028a7816673" name="a02c33c88cd041c530190a028a7816673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c33c88cd041c530190a028a7816673">◆ </a></span>d_numConnectedEndpoints</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_int32 d_numConnectedEndpoints</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>We need to track the number of connected endpoints separately to properly send out got-first-connection/dropped-last-connection messages. This value is <em>managed</em> by the Endpoints, but we need exactly one copy per Connection, so it's on the Connection. </p>
+</div>
+</div>
+<a id="ad095e384c39865c9c14eb1ee08ce6cac" name="ad095e384c39865c9c14eb1ee08ce6cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad095e384c39865c9c14eb1ee08ce6cac">◆ </a></span>d_serverLogCount</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int d_serverLogCount</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Server logging w. multiconnection - TCH July 00 Use one "hidden" endpoint for outgoing logs (?), standard per-endpoint logs with augmented names for incoming. To make a hidden endpoint we create d_endpoints[0] and increment the d_numEndpoints, but DON'T pass it d_numConnectedEndpoints (although it should be safe to do so, since it should never truly become connected, but we might have to "fake" it to get it to log correctly). </p>
+</div>
+</div>
+<a id="a8d4177cd8b789405139bfb85edd4d708" name="a8d4177cd8b789405139bfb85edd4d708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4177cd8b789405139bfb85edd4d708">◆ </a></span>d_stop_processing_messages_after</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_uint32 d_stop_processing_messages_after</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>If this value is greater than zero, the connection should stop looking for new messages on a given endpoint after this many are found. </p>
+</div>
+</div>
+<a id="ad0b9d8b7a7ffe582db1ff04ce942ef6b" name="ad0b9d8b7a7ffe582db1ff04ce942ef6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b9d8b7a7ffe582db1ff04ce942ef6b">◆ </a></span>start_time</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">timeval start_time</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Timekeeping - TCH 30 June 98 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Connection_8h_source.html">vrpn_Connection.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

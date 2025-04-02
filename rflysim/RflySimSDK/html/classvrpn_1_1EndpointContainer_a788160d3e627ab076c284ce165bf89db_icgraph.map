@@ -1,0 +1,5 @@
+<map id="get_full_container_size" name="get_full_container_size">
+<area shape="rect" id="Node000001" title="Get size of container including NULL elements that haven&#39;t been compacted yet." alt="" coords="119,5,273,32"/>
+<area shape="rect" id="Node000002" href="$classvrpn_1_1EndpointContainer.html#a62669e925f14227880d0b0a52d9d463b" title="Checks to see if an index is both in&#45;range and pointing to a still&#45;extant object" alt="" coords="5,5,71,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,21,71,21,71,16,103,16"/>
+</map>

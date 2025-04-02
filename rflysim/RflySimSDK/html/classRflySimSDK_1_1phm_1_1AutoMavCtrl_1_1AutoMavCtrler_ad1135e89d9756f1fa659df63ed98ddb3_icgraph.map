@@ -1,0 +1,5 @@
+<map id="ShowWin" name="ShowWin">
+<area shape="rect" id="Node000001" title="显示测试结果窗口的方法。 该方法在测试完成后弹出一个窗口，显示测试结果和相关信息，供用户查阅和确认。" alt="" coords="159,5,236,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a26a3903c3b36743a2e22f22778478936" title="显示测试结果的方法。该方法在测试结束后显示测试结果。" alt="" coords="5,5,111,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,21,111,21,111,16,143,16"/>
+</map>

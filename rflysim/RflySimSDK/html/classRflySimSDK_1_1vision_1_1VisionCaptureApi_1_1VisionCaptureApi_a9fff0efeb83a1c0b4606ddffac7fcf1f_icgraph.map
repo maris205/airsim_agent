@@ -1,0 +1,5 @@
+<map id="endTimeStmplisten" name="endTimeStmplisten">
+<area shape="rect" id="Node000001" title="停止时间戳监听功能" alt="" coords="127,5,260,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#ac439398f97749ea48dfd91fb18c100ae" title="用来从配置文件 Config.json 中加载相机配置信息，并根据配置信息创建相机列表 @ChangeMode（默认为&#45;1） 转化模式" alt="" coords="5,5,79,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,21,79,21,79,16,111,16"/>
+</map>

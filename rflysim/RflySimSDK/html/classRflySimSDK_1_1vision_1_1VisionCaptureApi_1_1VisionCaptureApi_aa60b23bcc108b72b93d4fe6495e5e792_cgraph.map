@@ -1,0 +1,9 @@
+<map id="StartTimeStmplisten" name="StartTimeStmplisten">
+<area shape="rect" id="Node000001" title="通过UDP套接字监听特定端口（20005端口），以获取CopterID的时间戳信息" alt="" coords="5,43,146,69"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a3d6b42d0ece15f674e35d507b49db37b" title="用于监听来自特定UDP端口的时间戳消息，并根据接收到的消息更新时间戳信息" alt="" coords="194,43,299,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,53,178,53,178,59,146,59"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="347,5,537,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,46,331,41,332,46,300,51"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="406,72,479,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="300,61,391,75,390,80,299,66"/>
+</map>

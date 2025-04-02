@@ -1,0 +1,7 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classBaseSocket.html" title=" " alt="" coords="5,5,98,32"/>
+<area shape="rect" id="Node000001" href="$classUDPSocket.html" title=" " alt="" coords="146,5,237,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="113,16,145,16,145,21,113,21"/>
+<area shape="rect" id="Node000002" href="$classUDPServer.html" title=" " alt="" coords="285,5,373,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="252,16,285,16,285,21,252,21"/>
+</map>

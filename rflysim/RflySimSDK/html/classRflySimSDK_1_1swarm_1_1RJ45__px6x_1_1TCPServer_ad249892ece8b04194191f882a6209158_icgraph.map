@@ -1,0 +1,5 @@
+<map id="print_current_mode" name="print_current_mode">
+<area shape="rect" id="Node000001" title="打印当前连接模式" alt="" coords="226,5,358,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer.html#aaae43ff3a5ffab1005078904083a9faf" title="修改连接模式，允许用户通过输入选择新的模式，并发送指令给设备。" alt="" coords="5,5,178,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,178,21,178,16,210,16"/>
+</map>

@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_YEI_3Space_Sensor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__YEI__3Space__Sensor-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_YEI_3Space_Sensor类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Class to support reading data from a wired YEI 3Space unit.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__YEI__3Space_8h_source.html">vrpn_YEI_3Space.h</a>&gt;</code></p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_YEI_3Space_Sensor 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="411" scrolling="no" src="classvrpn__YEI__3Space__Sensor__inherit__graph.svg" width="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_YEI_3Space_Sensor 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classvrpn__YEI__3Space__Sensor__coll__graph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aeed36145511ef52d697210d86f6e3249" id="r_aeed36145511ef52d697210d86f6e3249"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aeed36145511ef52d697210d86f6e3249">vrpn_YEI_3Space_Sensor</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c, const char *port, int baud=115200, bool calibrate_gyros_on_setup=false, bool tare_on_setup=false, double frames_per_second=50, double red_LED_color=0, double green_LED_color=0, double blue_LED_color=0, int LED_mode=1, const char *reset_commands[]=NULL)</td></tr>
+<tr class="memdesc:aeed36145511ef52d697210d86f6e3249"><td class="mdescLeft"> </td><td class="mdescRight">Constructor.  <br/></td></tr>
+<tr class="separator:aeed36145511ef52d697210d86f6e3249"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae096df103a3f24640925af15e60a2c4a" id="r_ae096df103a3f24640925af15e60a2c4a"><td align="right" class="memItemLeft" valign="top">virtual </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae096df103a3f24640925af15e60a2c4a">~vrpn_YEI_3Space_Sensor</a> ()</td></tr>
+<tr class="memdesc:ae096df103a3f24640925af15e60a2c4a"><td class="mdescLeft"> </td><td class="mdescRight">Destructor.  <br/></td></tr>
+<tr class="separator:ae096df103a3f24640925af15e60a2c4a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__YEI__3Space"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__YEI__3Space')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__YEI__3Space.html">vrpn_YEI_3Space</a></td></tr>
+<tr class="memitem:a62e494fbad7f2819aa87886a67d0c889 inherit pub_methods_classvrpn__YEI__3Space" id="r_a62e494fbad7f2819aa87886a67d0c889"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__YEI__3Space.html#a62e494fbad7f2819aa87886a67d0c889">vrpn_YEI_3Space</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c, double frames_per_second=50, const char *reset_commands[]=NULL)</td></tr>
+<tr class="memdesc:a62e494fbad7f2819aa87886a67d0c889 inherit pub_methods_classvrpn__YEI__3Space"><td class="mdescLeft"> </td><td class="mdescRight">Constructor.  <br/></td></tr>
+<tr class="separator:a62e494fbad7f2819aa87886a67d0c889 inherit pub_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a45d1380a4ac89258bcf806d181b3725a inherit pub_methods_classvrpn__YEI__3Space" id="r_a45d1380a4ac89258bcf806d181b3725a"><td align="right" class="memItemLeft" valign="top">virtual </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__YEI__3Space.html#a45d1380a4ac89258bcf806d181b3725a">~vrpn_YEI_3Space</a> ()</td></tr>
+<tr class="memdesc:a45d1380a4ac89258bcf806d181b3725a inherit pub_methods_classvrpn__YEI__3Space"><td class="mdescLeft"> </td><td class="mdescRight">Destructor.  <br/></td></tr>
+<tr class="separator:a45d1380a4ac89258bcf806d181b3725a inherit pub_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5299ecc517aeaf6e61dc5d2c5316b4cb inherit pub_methods_classvrpn__YEI__3Space" id="r_a5299ecc517aeaf6e61dc5d2c5316b4cb"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__YEI__3Space.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a> ()</td></tr>
+<tr class="memdesc:a5299ecc517aeaf6e61dc5d2c5316b4cb inherit pub_methods_classvrpn__YEI__3Space"><td class="mdescLeft"> </td><td class="mdescRight">Called once through each main loop iteration to handle updates.  <br/></td></tr>
+<tr class="separator:a5299ecc517aeaf6e61dc5d2c5316b4cb inherit pub_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Tracker__Server"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Tracker__Server')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Tracker__Server.html">vrpn_Tracker_Server</a></td></tr>
+<tr class="memitem:aeea6a5d46b28d6e2813ed856c3206531 inherit pub_methods_classvrpn__Tracker__Server" id="r_aeea6a5d46b28d6e2813ed856c3206531"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Tracker_Server</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c, vrpn_int32 sensors=1)</td></tr>
+<tr class="separator:aeea6a5d46b28d6e2813ed856c3206531 inherit pub_methods_classvrpn__Tracker__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa7f04bbf628286ec47265430c44db7d3 inherit pub_methods_classvrpn__Tracker__Server" id="r_aa7f04bbf628286ec47265430c44db7d3"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Tracker__Server.html#aa7f04bbf628286ec47265430c44db7d3">report_pose</a> (const int sensor, const struct timeval t, const vrpn_float64 position[3], const vrpn_float64 quaternion[4], const vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY)</td></tr>
+<tr class="separator:aa7f04bbf628286ec47265430c44db7d3 inherit pub_methods_classvrpn__Tracker__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51ab30f8a45200abbaa4478e9cefe6a2 inherit pub_methods_classvrpn__Tracker__Server" id="r_a51ab30f8a45200abbaa4478e9cefe6a2"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>report_pose_velocity</b> (const int sensor, const struct timeval t, const vrpn_float64 position[3], const vrpn_float64 quaternion[4], const vrpn_float64 interval, const vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY)</td></tr>
+<tr class="separator:a51ab30f8a45200abbaa4478e9cefe6a2 inherit pub_methods_classvrpn__Tracker__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a86243f2abd5b07034a02b523701993d4 inherit pub_methods_classvrpn__Tracker__Server" id="r_a86243f2abd5b07034a02b523701993d4"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>report_pose_acceleration</b> (const int sensor, const struct timeval t, const vrpn_float64 position[3], const vrpn_float64 quaternion[4], const vrpn_float64 interval, const vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY)</td></tr>
+<tr class="separator:a86243f2abd5b07034a02b523701993d4 inherit pub_methods_classvrpn__Tracker__Server"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Tracker')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:acb8dd6a29a0155ce16a89c681525cde1 inherit pub_methods_classvrpn__Tracker" id="r_acb8dd6a29a0155ce16a89c681525cde1"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Tracker</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL, const char *tracker_cfg_file_name=NULL)</td></tr>
+<tr class="separator:acb8dd6a29a0155ce16a89c681525cde1 inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab1e27b0a45047f5eb17be69fa332a91f inherit pub_methods_classvrpn__Tracker" id="r_ab1e27b0a45047f5eb17be69fa332a91f"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>read_config_file</b> (FILE *config_file, const char *tracker_name)</td></tr>
+<tr class="separator:ab1e27b0a45047f5eb17be69fa332a91f inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8f309c39a3f47f52cd609a01ee17da2a inherit pub_methods_classvrpn__Tracker" id="r_a8f309c39a3f47f52cd609a01ee17da2a"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>print_latest_report</b> (void)</td></tr>
+<tr class="separator:a8f309c39a3f47f52cd609a01ee17da2a inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2db6cfe71246aedde8396904b96753aa inherit pub_methods_classvrpn__Tracker" id="r_a2db6cfe71246aedde8396904b96753aa"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>register_server_handlers</b> (void)</td></tr>
+<tr class="separator:a2db6cfe71246aedde8396904b96753aa inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a45ec6ee050ca4b1cc56502d5d12a11e5 inherit pub_methods_classvrpn__Tracker" id="r_a45ec6ee050ca4b1cc56502d5d12a11e5"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>get_local_t2r</b> (vrpn_float64 *vec, vrpn_float64 *quat)</td></tr>
+<tr class="separator:a45ec6ee050ca4b1cc56502d5d12a11e5 inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3163e95afd809068952b9642780ae038 inherit pub_methods_classvrpn__Tracker" id="r_a3163e95afd809068952b9642780ae038"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>get_local_u2s</b> (vrpn_int32 sensor, vrpn_float64 *vec, vrpn_float64 *quat)</td></tr>
+<tr class="separator:a3163e95afd809068952b9642780ae038 inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass" id="r_a7a074af17ba19d3b0287e2add608e70b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a7a074af17ba19d3b0287e2add608e70b">vrpn_BaseClass</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique" id="r_af9949f7f3f722612c34f56c8351c54f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af9949f7f3f722612c34f56c8351c54f2">connectionPtr</a> ()</td></tr>
+<tr class="memdesc:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Returns a pointer to the connection this object is using  <br/></td></tr>
+<tr class="separator:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Analog"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Analog')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Analog.html">vrpn_Analog</a></td></tr>
+<tr class="memitem:ad5d9a2d5d8ddea9298f263c53eca9b2e inherit pub_methods_classvrpn__Analog" id="r_ad5d9a2d5d8ddea9298f263c53eca9b2e"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Analog</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:ad5d9a2d5d8ddea9298f263c53eca9b2e inherit pub_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7e8442e7139d840c15bdee83789f7ae8 inherit pub_methods_classvrpn__Analog" id="r_a7e8442e7139d840c15bdee83789f7ae8"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>print</b> (void)</td></tr>
+<tr class="separator:a7e8442e7139d840c15bdee83789f7ae8 inherit pub_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abd437f9480ca760fef0ec49a3fa98133 inherit pub_methods_classvrpn__Analog" id="r_abd437f9480ca760fef0ec49a3fa98133"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>getNumChannels</b> (void) const</td></tr>
+<tr class="separator:abd437f9480ca760fef0ec49a3fa98133 inherit pub_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Button__Filter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Button__Filter')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Button__Filter.html">vrpn_Button_Filter</a></td></tr>
+<tr class="memitem:ad915a8e82778048c36aaf083b5ec6f95 inherit pub_methods_classvrpn__Button__Filter" id="r_ad915a8e82778048c36aaf083b5ec6f95"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button__Filter.html#ad915a8e82778048c36aaf083b5ec6f95">set_momentary</a> (vrpn_int32 which_button)</td></tr>
+<tr class="separator:ad915a8e82778048c36aaf083b5ec6f95 inherit pub_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad3868258128161c77e81473871ac1189 inherit pub_methods_classvrpn__Button__Filter" id="r_ad3868258128161c77e81473871ac1189"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button__Filter.html#ad3868258128161c77e81473871ac1189">set_toggle</a> (vrpn_int32 which_button, vrpn_int32 current_state)</td></tr>
+<tr class="separator:ad3868258128161c77e81473871ac1189 inherit pub_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02fd6622ece107e7520733261d7d05b7 inherit pub_methods_classvrpn__Button__Filter" id="r_a02fd6622ece107e7520733261d7d05b7"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button__Filter.html#a02fd6622ece107e7520733261d7d05b7">set_all_momentary</a> (void)</td></tr>
+<tr class="separator:a02fd6622ece107e7520733261d7d05b7 inherit pub_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9f5379678b50fe3620bc2de21a0b6006 inherit pub_methods_classvrpn__Button__Filter" id="r_a9f5379678b50fe3620bc2de21a0b6006"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button__Filter.html#a9f5379678b50fe3620bc2de21a0b6006">set_all_toggle</a> (vrpn_int32 default_state)</td></tr>
+<tr class="separator:a9f5379678b50fe3620bc2de21a0b6006 inherit pub_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adc3237597bb1424d1243272efa2a7873 inherit pub_methods_classvrpn__Button__Filter" id="r_adc3237597bb1424d1243272efa2a7873"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>set_alerts</b> (vrpn_int32)</td></tr>
+<tr class="separator:adc3237597bb1424d1243272efa2a7873 inherit pub_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Button"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Button')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Button.html">vrpn_Button</a></td></tr>
+<tr class="memitem:aab74f2f3a411bbf470efb7f2f29029b0 inherit pub_methods_classvrpn__Button" id="r_aab74f2f3a411bbf470efb7f2f29029b0"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Button</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:aab74f2f3a411bbf470efb7f2f29029b0 inherit pub_methods_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7e8442e7139d840c15bdee83789f7ae8 inherit pub_methods_classvrpn__Button" id="r_a7e8442e7139d840c15bdee83789f7ae8"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>print</b> (void)</td></tr>
+<tr class="separator:a7e8442e7139d840c15bdee83789f7ae8 inherit pub_methods_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a1dd7bf92fb7db093496c38b6fde0acd7" id="r_a1dd7bf92fb7db093496c38b6fde0acd7"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dd7bf92fb7db093496c38b6fde0acd7">flush_input</a> (void)</td></tr>
+<tr class="memdesc:a1dd7bf92fb7db093496c38b6fde0acd7"><td class="mdescLeft"> </td><td class="mdescRight">Flush any incoming characters in the communications channel.  <br/></td></tr>
+<tr class="separator:a1dd7bf92fb7db093496c38b6fde0acd7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a43ee13d91ec1ebb4f2b99c6b5b1a1138" id="r_a43ee13d91ec1ebb4f2b99c6b5b1a1138"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a43ee13d91ec1ebb4f2b99c6b5b1a1138">get_report</a> (void)</td></tr>
+<tr class="separator:a43ee13d91ec1ebb4f2b99c6b5b1a1138"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a966e0a056318a7f065261d00785e3e9d" id="r_a966e0a056318a7f065261d00785e3e9d"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a966e0a056318a7f065261d00785e3e9d">send_binary_command</a> (const unsigned char *cmd, int len)</td></tr>
+<tr class="separator:a966e0a056318a7f065261d00785e3e9d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6e11815f9ed70041a6f33dd9e848ad55" id="r_a6e11815f9ed70041a6f33dd9e848ad55"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e11815f9ed70041a6f33dd9e848ad55">send_ascii_command</a> (const char *cmd)</td></tr>
+<tr class="separator:a6e11815f9ed70041a6f33dd9e848ad55"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb1ae972397151752ae2910d427eb799" id="r_aeb1ae972397151752ae2910d427eb799"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb1ae972397151752ae2910d427eb799">receive_LED_mode_response</a> (struct timeval *timeout=NULL)</td></tr>
+<tr class="separator:aeb1ae972397151752ae2910d427eb799"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae064b466ebc1efd4c7130138205c6ce4" id="r_ae064b466ebc1efd4c7130138205c6ce4"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae064b466ebc1efd4c7130138205c6ce4">receive_LED_values_response</a> (struct timeval *timeout=NULL)</td></tr>
+<tr class="separator:ae064b466ebc1efd4c7130138205c6ce4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__YEI__3Space"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__YEI__3Space')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__YEI__3Space.html">vrpn_YEI_3Space</a></td></tr>
+<tr class="memitem:a9f023e7210f5b3daa6edd4f2f741751a inherit pro_methods_classvrpn__YEI__3Space" id="r_a9f023e7210f5b3daa6edd4f2f741751a"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__YEI__3Space.html#a9f023e7210f5b3daa6edd4f2f741751a">init</a> (bool calibrate_gyros_on_setup, bool tare_on_setup, double red_LED_color, double green_LED_color, double blue_LED_color, int LED_mode)</td></tr>
+<tr class="separator:a9f023e7210f5b3daa6edd4f2f741751a inherit pro_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a712c3960c84afe03b428f9c2878d8262 inherit pro_methods_classvrpn__YEI__3Space" id="r_a712c3960c84afe03b428f9c2878d8262"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>reset</b> (void)</td></tr>
+<tr class="separator:a712c3960c84afe03b428f9c2878d8262 inherit pro_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0c20f0929e66d8e8c4c8e64843e562f2 inherit pro_methods_classvrpn__YEI__3Space" id="r_a0c20f0929e66d8e8c4c8e64843e562f2"><td align="right" class="memItemLeft" valign="top">
+virtual void </td><td class="memItemRight" valign="bottom"><b>handle_report</b> (unsigned char *<a class="el" href="classvrpn__YEI__3Space.html#abd262d763121c9f4b064c4951bf3cb64">report</a>)</td></tr>
+<tr class="separator:a0c20f0929e66d8e8c4c8e64843e562f2 inherit pro_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afda96e82925ba9414ce5584fa5f2876a inherit pro_methods_classvrpn__YEI__3Space" id="r_afda96e82925ba9414ce5584fa5f2876a"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__YEI__3Space.html#afda96e82925ba9414ce5584fa5f2876a">report_changes</a> (vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY)</td></tr>
+<tr class="memdesc:afda96e82925ba9414ce5584fa5f2876a inherit pro_methods_classvrpn__YEI__3Space"><td class="mdescLeft"> </td><td class="mdescRight">send report iff changed  <br/></td></tr>
+<tr class="separator:afda96e82925ba9414ce5584fa5f2876a inherit pro_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abd262d763121c9f4b064c4951bf3cb64 inherit pro_methods_classvrpn__YEI__3Space" id="r_abd262d763121c9f4b064c4951bf3cb64"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__YEI__3Space.html#abd262d763121c9f4b064c4951bf3cb64">report</a> (vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY)</td></tr>
+<tr class="memdesc:abd262d763121c9f4b064c4951bf3cb64 inherit pro_methods_classvrpn__YEI__3Space"><td class="mdescLeft"> </td><td class="mdescRight">send report whether or not changed  <br/></td></tr>
+<tr class="separator:abd262d763121c9f4b064c4951bf3cb64 inherit pro_methods_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Tracker')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:aa8b11ddaae0ca07c7b13f251794b289a inherit pro_methods_classvrpn__Tracker" id="r_aa8b11ddaae0ca07c7b13f251794b289a"><td align="right" class="memItemLeft" valign="top">
+bool </td><td class="memItemRight" valign="bottom"><b>ensure_enough_unit2sensors</b> (unsigned num)</td></tr>
+<tr class="separator:aa8b11ddaae0ca07c7b13f251794b289a inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Tracker" id="r_ad323fbb3a0d01ece28df8432733664fb"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Tracker.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a> (void)</td></tr>
+<tr class="separator:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac58bb6bf07ba5397075e07beff9e370 inherit pro_methods_classvrpn__Tracker" id="r_aac58bb6bf07ba5397075e07beff9e370"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_to</b> (char *buf)</td></tr>
+<tr class="separator:aac58bb6bf07ba5397075e07beff9e370 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4cc6f2456a43d9f799269156b3c2516 inherit pro_methods_classvrpn__Tracker" id="r_ad4cc6f2456a43d9f799269156b3c2516"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_vel_to</b> (char *buf)</td></tr>
+<tr class="separator:ad4cc6f2456a43d9f799269156b3c2516 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af555c97acc81aa3e68d66443877a5f59 inherit pro_methods_classvrpn__Tracker" id="r_af555c97acc81aa3e68d66443877a5f59"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_acc_to</b> (char *buf)</td></tr>
+<tr class="separator:af555c97acc81aa3e68d66443877a5f59 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bbd768dee6fb6d4d2169bdae00b950d inherit pro_methods_classvrpn__Tracker" id="r_a5bbd768dee6fb6d4d2169bdae00b950d"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_tracker2room_to</b> (char *buf)</td></tr>
+<tr class="separator:a5bbd768dee6fb6d4d2169bdae00b950d inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea8e4cc4449f394282504ee5cb6875f2 inherit pro_methods_classvrpn__Tracker" id="r_aea8e4cc4449f394282504ee5cb6875f2"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_unit2sensor_to</b> (char *buf)</td></tr>
+<tr class="separator:aea8e4cc4449f394282504ee5cb6875f2 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a79fe8570899d8f0094431637d847adb0 inherit pro_methods_classvrpn__Tracker" id="r_a79fe8570899d8f0094431637d847adb0"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_workspace_to</b> (char *buf)</td></tr>
+<tr class="separator:a79fe8570899d8f0094431637d847adb0 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass" id="r_a39894293265380f47e12dc38773b1f69"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a39894293265380f47e12dc38773b1f69">init</a> (void)</td></tr>
+<tr class="separator:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass" id="r_a3c7c050ad9bb970957dfa6c2f4c833c3"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a3c7c050ad9bb970957dfa6c2f4c833c3">register_senders</a> (void)</td></tr>
+<tr class="separator:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique" id="r_ac27f3c80c7edd28bb1b955358d221d58"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ac27f3c80c7edd28bb1b955358d221d58">register_autodeleted_handler</a> (vrpn_int32 type, vrpn_MESSAGEHANDLER handler, void *userdata, vrpn_int32 sender=vrpn_ANY_SENDER)</td></tr>
+<tr class="separator:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a1a4e9d1d8858036f3ac8c37eb8f67aa3"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a1a4e9d1d8858036f3ac8c37eb8f67aa3">send_text_message</a> (const char *msg, struct timeval timestamp, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL, vrpn_uint32 level=0)</td></tr>
+<tr class="memdesc:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Sends a NULL-terminated text message from the device d_sender_id  <br/></td></tr>
+<tr class="separator:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique" id="r_aa818797ad32c8be380cb3f9962048088"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">SendTextMessageBoundCall</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa818797ad32c8be380cb3f9962048088">send_text_message</a> (<a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL)</td></tr>
+<tr class="separator:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a5f63dfe395699defbadb9a7cd1ee9e29"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop</a> (void)</td></tr>
+<tr class="separator:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique" id="r_afec33d974c2286b9b2cefdcfbfa2430b"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#afec33d974c2286b9b2cefdcfbfa2430b">client_mainloop</a> (void)</td></tr>
+<tr class="separator:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Analog"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Analog')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Analog.html">vrpn_Analog</a></td></tr>
+<tr class="memitem:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Analog" id="r_ad323fbb3a0d01ece28df8432733664fb"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a> (void)</td></tr>
+<tr class="separator:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a174f9292069a3a7e7b5b7959229c18b7 inherit pro_methods_classvrpn__Analog" id="r_a174f9292069a3a7e7b5b7959229c18b7"><td align="right" class="memItemLeft" valign="top">
+virtual vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>encode_to</b> (char *buf)</td></tr>
+<tr class="separator:a174f9292069a3a7e7b5b7959229c18b7 inherit pro_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f1609e75b150bfa9804bd2148e15b92 inherit pro_methods_classvrpn__Analog" id="r_a2f1609e75b150bfa9804bd2148e15b92"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog.html#a2f1609e75b150bfa9804bd2148e15b92">report_changes</a> (vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY, const struct timeval time=vrpn_ANALOG_NOW)</td></tr>
+<tr class="separator:a2f1609e75b150bfa9804bd2148e15b92 inherit pro_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a112c9d99bc3c51eb33557d1b9f40c8ed inherit pro_methods_classvrpn__Analog" id="r_a112c9d99bc3c51eb33557d1b9f40c8ed"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Analog.html#a112c9d99bc3c51eb33557d1b9f40c8ed">report</a> (vrpn_uint32 class_of_service=vrpn_CONNECTION_LOW_LATENCY, const struct timeval time=vrpn_ANALOG_NOW)</td></tr>
+<tr class="separator:a112c9d99bc3c51eb33557d1b9f40c8ed inherit pro_methods_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Button__Filter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Button__Filter')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Button__Filter.html">vrpn_Button_Filter</a></td></tr>
+<tr class="memitem:abb5a01ccb158b0b7adab94638ddf4ed7 inherit pro_methods_classvrpn__Button__Filter" id="r_abb5a01ccb158b0b7adab94638ddf4ed7"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Button_Filter</b> (const char *, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:abb5a01ccb158b0b7adab94638ddf4ed7 inherit pro_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3a1d7900b3aa77c0971604ebb1782e9a inherit pro_methods_classvrpn__Button__Filter" id="r_a3a1d7900b3aa77c0971604ebb1782e9a"><td align="right" class="memItemLeft" valign="top">virtual vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button__Filter.html#a3a1d7900b3aa77c0971604ebb1782e9a">encode_states_to</a> (char *buf)</td></tr>
+<tr class="separator:a3a1d7900b3aa77c0971604ebb1782e9a inherit pro_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d504a3942ace0717a487555b9ba4585 inherit pro_methods_classvrpn__Button__Filter" id="r_a5d504a3942ace0717a487555b9ba4585"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button__Filter.html#a5d504a3942ace0717a487555b9ba4585">report_changes</a> (void)</td></tr>
+<tr class="separator:a5d504a3942ace0717a487555b9ba4585 inherit pro_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Button"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Button')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Button.html">vrpn_Button</a></td></tr>
+<tr class="memitem:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Button" id="r_ad323fbb3a0d01ece28df8432733664fb"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Button.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a> (void)</td></tr>
+<tr class="separator:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bf1e5e41cf3e6583f5089b3c5557111 inherit pro_methods_classvrpn__Button" id="r_a5bf1e5e41cf3e6583f5089b3c5557111"><td align="right" class="memItemLeft" valign="top">
+virtual void </td><td class="memItemRight" valign="bottom"><b>report_states</b> (void)</td></tr>
+<tr class="separator:a5bf1e5e41cf3e6583f5089b3c5557111 inherit pro_methods_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76b1fb61eb195662c76961200a689e67 inherit pro_methods_classvrpn__Button" id="r_a76b1fb61eb195662c76961200a689e67"><td align="right" class="memItemLeft" valign="top">
+virtual vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>encode_to</b> (char *buf, vrpn_int32 button, vrpn_int32 state)</td></tr>
+<tr class="separator:a76b1fb61eb195662c76961200a689e67 inherit pro_methods_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a6c9b3237cea180ce71cfe2444332f00c" id="r_a6c9b3237cea180ce71cfe2444332f00c"><td align="right" class="memItemLeft" valign="top"><a id="a6c9b3237cea180ce71cfe2444332f00c" name="a6c9b3237cea180ce71cfe2444332f00c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>d_serial_fd</b></td></tr>
+<tr class="separator:a6c9b3237cea180ce71cfe2444332f00c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__YEI__3Space"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__YEI__3Space')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__YEI__3Space.html">vrpn_YEI_3Space</a></td></tr>
+<tr class="memitem:ab630f7428b630f867781eead00798e18 inherit pro_attribs_classvrpn__YEI__3Space" id="r_ab630f7428b630f867781eead00798e18"><td align="right" class="memItemLeft" valign="top">
+char ** </td><td class="memItemRight" valign="bottom"><b>d_reset_commands</b></td></tr>
+<tr class="separator:ab630f7428b630f867781eead00798e18 inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa399c2f381ecbe23b001ab805b48c8b8 inherit pro_attribs_classvrpn__YEI__3Space" id="r_aa399c2f381ecbe23b001ab805b48c8b8"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>d_reset_command_count</b></td></tr>
+<tr class="separator:aa399c2f381ecbe23b001ab805b48c8b8 inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a988635f7ff60ea7d8a068621ca0abbb9 inherit pro_attribs_classvrpn__YEI__3Space" id="r_a988635f7ff60ea7d8a068621ca0abbb9"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>d_status</b></td></tr>
+<tr class="separator:a988635f7ff60ea7d8a068621ca0abbb9 inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae929ad6a9525098301d546ed0ecf8374 inherit pro_attribs_classvrpn__YEI__3Space" id="r_ae929ad6a9525098301d546ed0ecf8374"><td align="right" class="memItemLeft" valign="top">
+double </td><td class="memItemRight" valign="bottom"><b>d_frames_per_second</b></td></tr>
+<tr class="separator:ae929ad6a9525098301d546ed0ecf8374 inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02ba624c4a8562dedf2ce5691987d64f inherit pro_attribs_classvrpn__YEI__3Space" id="r_a02ba624c4a8562dedf2ce5691987d64f"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>d_LED_mode</b></td></tr>
+<tr class="separator:a02ba624c4a8562dedf2ce5691987d64f inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31ea91d8dd75dbf8564f1dd2e9d38eed inherit pro_attribs_classvrpn__YEI__3Space" id="r_a31ea91d8dd75dbf8564f1dd2e9d38eed"><td align="right" class="memItemLeft" valign="top">
+vrpn_float32 </td><td class="memItemRight" valign="bottom"><b>d_LED_color</b> [3]</td></tr>
+<tr class="separator:a31ea91d8dd75dbf8564f1dd2e9d38eed inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf2d4e7710512fcc10c8c7e3c7156f0d inherit pro_attribs_classvrpn__YEI__3Space" id="r_adf2d4e7710512fcc10c8c7e3c7156f0d"><td align="right" class="memItemLeft" valign="top">
+unsigned char </td><td class="memItemRight" valign="bottom"><b>d_buffer</b> [128]</td></tr>
+<tr class="separator:adf2d4e7710512fcc10c8c7e3c7156f0d inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a70b4601748cbbb1bf503a77249eef302 inherit pro_attribs_classvrpn__YEI__3Space" id="r_a70b4601748cbbb1bf503a77249eef302"><td align="right" class="memItemLeft" valign="top">
+unsigned </td><td class="memItemRight" valign="bottom"><b>d_expected_characters</b></td></tr>
+<tr class="separator:a70b4601748cbbb1bf503a77249eef302 inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8a56d18b4ba116f21bce0c095202a5f3 inherit pro_attribs_classvrpn__YEI__3Space" id="r_a8a56d18b4ba116f21bce0c095202a5f3"><td align="right" class="memItemLeft" valign="top">
+unsigned </td><td class="memItemRight" valign="bottom"><b>d_characters_read</b></td></tr>
+<tr class="separator:a8a56d18b4ba116f21bce0c095202a5f3 inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__YEI__3Space" id="r_a175ebf16736553ad076aefe3f02d180c"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>timestamp</b></td></tr>
+<tr class="separator:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__YEI__3Space"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Tracker')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:a0638acf5d605fe468dead0ebe032efb2 inherit pro_attribs_classvrpn__Tracker" id="r_a0638acf5d605fe468dead0ebe032efb2"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>position_m_id</b></td></tr>
+<tr class="separator:a0638acf5d605fe468dead0ebe032efb2 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae842e495b2f22ea9c013b5b1fa164cca inherit pro_attribs_classvrpn__Tracker" id="r_ae842e495b2f22ea9c013b5b1fa164cca"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>velocity_m_id</b></td></tr>
+<tr class="separator:ae842e495b2f22ea9c013b5b1fa164cca inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a90c5fa6f561e0edee81726af888dc0c0 inherit pro_attribs_classvrpn__Tracker" id="r_a90c5fa6f561e0edee81726af888dc0c0"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>accel_m_id</b></td></tr>
+<tr class="separator:a90c5fa6f561e0edee81726af888dc0c0 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a306a2bbc04c90c7f421d571e22f244 inherit pro_attribs_classvrpn__Tracker" id="r_a1a306a2bbc04c90c7f421d571e22f244"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>tracker2room_m_id</b></td></tr>
+<tr class="separator:a1a306a2bbc04c90c7f421d571e22f244 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abfea5127379c7e7e5b5380663f6b655b inherit pro_attribs_classvrpn__Tracker" id="r_abfea5127379c7e7e5b5380663f6b655b"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>unit2sensor_m_id</b></td></tr>
+<tr class="separator:abfea5127379c7e7e5b5380663f6b655b inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a80a2d93a36383a2c18e7150ddc736690 inherit pro_attribs_classvrpn__Tracker" id="r_a80a2d93a36383a2c18e7150ddc736690"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_t2r_m_id</b></td></tr>
+<tr class="separator:a80a2d93a36383a2c18e7150ddc736690 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67c971cf3c781da265b33057694c06b2 inherit pro_attribs_classvrpn__Tracker" id="r_a67c971cf3c781da265b33057694c06b2"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_u2s_m_id</b></td></tr>
+<tr class="separator:a67c971cf3c781da265b33057694c06b2 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46d3034e4c1ef3e092094fe16007b5f7 inherit pro_attribs_classvrpn__Tracker" id="r_a46d3034e4c1ef3e092094fe16007b5f7"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_workspace_m_id</b></td></tr>
+<tr class="separator:a46d3034e4c1ef3e092094fe16007b5f7 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae384579b35d31e69dcf705e4fdc3cfa9 inherit pro_attribs_classvrpn__Tracker" id="r_ae384579b35d31e69dcf705e4fdc3cfa9"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>workspace_m_id</b></td></tr>
+<tr class="separator:ae384579b35d31e69dcf705e4fdc3cfa9 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02d5dff944cb6016be804348bac940c5 inherit pro_attribs_classvrpn__Tracker" id="r_a02d5dff944cb6016be804348bac940c5"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>update_rate_id</b></td></tr>
+<tr class="separator:a02d5dff944cb6016be804348bac940c5 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a85cbfcbfdad26c4a751dd50b18e3bf0d inherit pro_attribs_classvrpn__Tracker" id="r_a85cbfcbfdad26c4a751dd50b18e3bf0d"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>connection_dropped_m_id</b></td></tr>
+<tr class="separator:a85cbfcbfdad26c4a751dd50b18e3bf0d inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a408af94cc4b8dcb9344f0c95ac605f2c inherit pro_attribs_classvrpn__Tracker" id="r_a408af94cc4b8dcb9344f0c95ac605f2c"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>reset_origin_m_id</b></td></tr>
+<tr class="separator:a408af94cc4b8dcb9344f0c95ac605f2c inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac07017b0a065e2e78bfdc0ec69c147b4 inherit pro_attribs_classvrpn__Tracker" id="r_ac07017b0a065e2e78bfdc0ec69c147b4"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_sensor</b></td></tr>
+<tr class="separator:ac07017b0a065e2e78bfdc0ec69c147b4 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3932aa09b838f07ff5dce48ba2f75f1f inherit pro_attribs_classvrpn__Tracker" id="r_a3932aa09b838f07ff5dce48ba2f75f1f"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>pos</b> [3]</td></tr>
+<tr class="separator:a3932aa09b838f07ff5dce48ba2f75f1f inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5856d2b65e3e498643b64f978c69c9a6 inherit pro_attribs_classvrpn__Tracker" id="r_a5856d2b65e3e498643b64f978c69c9a6"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>d_quat</b> [4]</td></tr>
+<tr class="separator:a5856d2b65e3e498643b64f978c69c9a6 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad7c0bcde28665ad6147084216485a9d6 inherit pro_attribs_classvrpn__Tracker" id="r_ad7c0bcde28665ad6147084216485a9d6"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>vel</b> [3]</td></tr>
+<tr class="separator:ad7c0bcde28665ad6147084216485a9d6 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0097cee5eb68abf8b80e91a3de1a19a0 inherit pro_attribs_classvrpn__Tracker" id="r_a0097cee5eb68abf8b80e91a3de1a19a0"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>vel_quat</b> [4]</td></tr>
+<tr class="separator:a0097cee5eb68abf8b80e91a3de1a19a0 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace0f165b5b5f24db533db13d7f53a9ff inherit pro_attribs_classvrpn__Tracker" id="r_ace0f165b5b5f24db533db13d7f53a9ff"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>vel_quat_dt</b></td></tr>
+<tr class="separator:ace0f165b5b5f24db533db13d7f53a9ff inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a05cf1d1fd375ff12e48d451a238318ab inherit pro_attribs_classvrpn__Tracker" id="r_a05cf1d1fd375ff12e48d451a238318ab"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>acc</b> [3]</td></tr>
+<tr class="separator:a05cf1d1fd375ff12e48d451a238318ab inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ea22508ee0e282e1f7651d99661be95 inherit pro_attribs_classvrpn__Tracker" id="r_a9ea22508ee0e282e1f7651d99661be95"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>acc_quat</b> [4]</td></tr>
+<tr class="separator:a9ea22508ee0e282e1f7651d99661be95 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa47527346a7be72ae8c25f94735ba520 inherit pro_attribs_classvrpn__Tracker" id="r_aa47527346a7be72ae8c25f94735ba520"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>acc_quat_dt</b></td></tr>
+<tr class="separator:aa47527346a7be72ae8c25f94735ba520 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Tracker" id="r_a175ebf16736553ad076aefe3f02d180c"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>timestamp</b></td></tr>
+<tr class="separator:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4dc830cd88eab13621641be928cbfe4a inherit pro_attribs_classvrpn__Tracker" id="r_a4dc830cd88eab13621641be928cbfe4a"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>frame_count</b></td></tr>
+<tr class="separator:a4dc830cd88eab13621641be928cbfe4a inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aae293d942162f1bf74f96d59eebdd3a2 inherit pro_attribs_classvrpn__Tracker" id="r_aae293d942162f1bf74f96d59eebdd3a2"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>watchdog_timestamp</b></td></tr>
+<tr class="separator:aae293d942162f1bf74f96d59eebdd3a2 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8cb7a0deeec7d73d40c0f7b92c0b18fe inherit pro_attribs_classvrpn__Tracker" id="r_a8cb7a0deeec7d73d40c0f7b92c0b18fe"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>tracker2room</b> [3]</td></tr>
+<tr class="separator:a8cb7a0deeec7d73d40c0f7b92c0b18fe inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae98646f29590dd401f3c9d3417a9b075 inherit pro_attribs_classvrpn__Tracker" id="r_ae98646f29590dd401f3c9d3417a9b075"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>tracker2room_quat</b> [4]</td></tr>
+<tr class="separator:ae98646f29590dd401f3c9d3417a9b075 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a519e7500c6d56ba4b904844e3ae14dae inherit pro_attribs_classvrpn__Tracker" id="r_a519e7500c6d56ba4b904844e3ae14dae"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>num_sensors</b></td></tr>
+<tr class="separator:a519e7500c6d56ba4b904844e3ae14dae inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae2649c583bc81d00eba90c8d22c3dd0f inherit pro_attribs_classvrpn__Tracker" id="r_ae2649c583bc81d00eba90c8d22c3dd0f"><td align="right" class="memItemLeft" valign="top">
+vrpn_Tracker_Pos * </td><td class="memItemRight" valign="bottom"><b>unit2sensor</b></td></tr>
+<tr class="separator:ae2649c583bc81d00eba90c8d22c3dd0f inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8b050c842eb0c8d51cc8a4fa6a8eac0 inherit pro_attribs_classvrpn__Tracker" id="r_af8b050c842eb0c8d51cc8a4fa6a8eac0"><td align="right" class="memItemLeft" valign="top">
+vrpn_Tracker_Quat * </td><td class="memItemRight" valign="bottom"><b>unit2sensor_quat</b></td></tr>
+<tr class="separator:af8b050c842eb0c8d51cc8a4fa6a8eac0 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a23272e6fe26f089b501af5d2bb49dc3e inherit pro_attribs_classvrpn__Tracker" id="r_a23272e6fe26f089b501af5d2bb49dc3e"><td align="right" class="memItemLeft" valign="top">
+unsigned </td><td class="memItemRight" valign="bottom"><b>num_unit2sensors</b></td></tr>
+<tr class="separator:a23272e6fe26f089b501af5d2bb49dc3e inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c65d3ae567d2a2ef806323986cdadfe inherit pro_attribs_classvrpn__Tracker" id="r_a4c65d3ae567d2a2ef806323986cdadfe"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>workspace_min</b> [3]</td></tr>
+<tr class="separator:a4c65d3ae567d2a2ef806323986cdadfe inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3009f0964340ad094603bd71226b01d8 inherit pro_attribs_classvrpn__Tracker" id="r_a3009f0964340ad094603bd71226b01d8"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>workspace_max</b> [3]</td></tr>
+<tr class="separator:a3009f0964340ad094603bd71226b01d8 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6e27f49150e9a14580fb313cc2777e00 inherit pro_attribs_classvrpn__Tracker" id="r_a6e27f49150e9a14580fb313cc2777e00"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a6e27f49150e9a14580fb313cc2777e00 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_aa15df0bbfd40028dc70ad9da0c3749f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa15df0bbfd40028dc70ad9da0c3749f2">d_connection</a></td></tr>
+<tr class="memdesc:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Connection that this object talks to  <br/></td></tr>
+<tr class="separator:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_ad217413237b5fb9103f13faca74b9178"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ad217413237b5fb9103f13faca74b9178">d_servicename</a></td></tr>
+<tr class="separator:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af225875d2b9d3451084358b49ac19d93"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af225875d2b9d3451084358b49ac19d93">d_sender_id</a></td></tr>
+<tr class="memdesc:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">part  <br/></td></tr>
+<tr class="separator:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af010bf4b3b573708eec88ab965b55db6"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af010bf4b3b573708eec88ab965b55db6">d_text_message_id</a></td></tr>
+<tr class="memdesc:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">ID for text messages  <br/></td></tr>
+<tr class="separator:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a9bd51620536e883c3fd68f10e7991f32"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a9bd51620536e883c3fd68f10e7991f32">d_ping_message_id</a></td></tr>
+<tr class="memdesc:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Ask the server if they are there  <br/></td></tr>
+<tr class="separator:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a15d130460086a15b944b5c5388ead25f"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a15d130460086a15b944b5c5388ead25f">d_pong_message_id</a></td></tr>
+<tr class="memdesc:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Server telling that it is there  <br/></td></tr>
+<tr class="separator:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Analog"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Analog')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Analog.html">vrpn_Analog</a></td></tr>
+<tr class="memitem:a440fe5c86753a9c9ea2ae3a7b9ef1d57 inherit pro_attribs_classvrpn__Analog" id="r_a440fe5c86753a9c9ea2ae3a7b9ef1d57"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>channel</b> [vrpn_CHANNEL_MAX]</td></tr>
+<tr class="separator:a440fe5c86753a9c9ea2ae3a7b9ef1d57 inherit pro_attribs_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a861d1d9613bd1ebfbf378acff8be613a inherit pro_attribs_classvrpn__Analog" id="r_a861d1d9613bd1ebfbf378acff8be613a"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>last</b> [vrpn_CHANNEL_MAX]</td></tr>
+<tr class="separator:a861d1d9613bd1ebfbf378acff8be613a inherit pro_attribs_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad0d6e46f8e4ac60b3245e941467559ca inherit pro_attribs_classvrpn__Analog" id="r_ad0d6e46f8e4ac60b3245e941467559ca"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>num_channel</b></td></tr>
+<tr class="separator:ad0d6e46f8e4ac60b3245e941467559ca inherit pro_attribs_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Analog" id="r_a175ebf16736553ad076aefe3f02d180c"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>timestamp</b></td></tr>
+<tr class="separator:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae3d454d3fe47d10d497213013aa43929 inherit pro_attribs_classvrpn__Analog" id="r_ae3d454d3fe47d10d497213013aa43929"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>channel_m_id</b></td></tr>
+<tr class="separator:ae3d454d3fe47d10d497213013aa43929 inherit pro_attribs_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6e27f49150e9a14580fb313cc2777e00 inherit pro_attribs_classvrpn__Analog" id="r_a6e27f49150e9a14580fb313cc2777e00"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a6e27f49150e9a14580fb313cc2777e00 inherit pro_attribs_classvrpn__Analog"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Button__Filter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Button__Filter')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Button__Filter.html">vrpn_Button_Filter</a></td></tr>
+<tr class="memitem:a70cf23408c8e6a4565439acd365c8c53 inherit pro_attribs_classvrpn__Button__Filter" id="r_a70cf23408c8e6a4565439acd365c8c53"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>send_alerts</b></td></tr>
+<tr class="separator:a70cf23408c8e6a4565439acd365c8c53 inherit pro_attribs_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a501f2f68d73456a86b2a7c5ac226adf5 inherit pro_attribs_classvrpn__Button__Filter" id="r_a501f2f68d73456a86b2a7c5ac226adf5"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>alert_message_id</b></td></tr>
+<tr class="separator:a501f2f68d73456a86b2a7c5ac226adf5 inherit pro_attribs_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Button"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Button')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Button.html">vrpn_Button</a></td></tr>
+<tr class="memitem:acd8eb529066bc9835cec0ccf76e5a895 inherit pro_attribs_classvrpn__Button" id="r_acd8eb529066bc9835cec0ccf76e5a895"><td align="right" class="memItemLeft" valign="top">
+unsigned char </td><td class="memItemRight" valign="bottom"><b>buttons</b> [vrpn_BUTTON_MAX_BUTTONS]</td></tr>
+<tr class="separator:acd8eb529066bc9835cec0ccf76e5a895 inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad531be7a961fa5cbce80a417a6dc0f0e inherit pro_attribs_classvrpn__Button" id="r_ad531be7a961fa5cbce80a417a6dc0f0e"><td align="right" class="memItemLeft" valign="top">
+unsigned char </td><td class="memItemRight" valign="bottom"><b>lastbuttons</b> [vrpn_BUTTON_MAX_BUTTONS]</td></tr>
+<tr class="separator:ad531be7a961fa5cbce80a417a6dc0f0e inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2c978180a3a8c50eee8bc57855b7e1cc inherit pro_attribs_classvrpn__Button" id="r_a2c978180a3a8c50eee8bc57855b7e1cc"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>minrate</b> [vrpn_BUTTON_MAX_BUTTONS]</td></tr>
+<tr class="separator:a2c978180a3a8c50eee8bc57855b7e1cc inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a70190a4d42887f415cbcd62620b596f6 inherit pro_attribs_classvrpn__Button" id="r_a70190a4d42887f415cbcd62620b596f6"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>num_buttons</b></td></tr>
+<tr class="separator:a70190a4d42887f415cbcd62620b596f6 inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Button" id="r_a175ebf16736553ad076aefe3f02d180c"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>timestamp</b></td></tr>
+<tr class="separator:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f6a4b2ac86979a088197d1d5f1a3959 inherit pro_attribs_classvrpn__Button" id="r_a3f6a4b2ac86979a088197d1d5f1a3959"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>change_message_id</b></td></tr>
+<tr class="separator:a3f6a4b2ac86979a088197d1d5f1a3959 inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9b15aeeeb99c90d50b1fe0b2313399bc inherit pro_attribs_classvrpn__Button" id="r_a9b15aeeeb99c90d50b1fe0b2313399bc"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>states_message_id</b></td></tr>
+<tr class="separator:a9b15aeeeb99c90d50b1fe0b2313399bc inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6d18e8312034fab8f3e14563e8eb90d1 inherit pro_attribs_classvrpn__Button" id="r_a6d18e8312034fab8f3e14563e8eb90d1"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>admin_message_id</b></td></tr>
+<tr class="separator:a6d18e8312034fab8f3e14563e8eb90d1 inherit pro_attribs_classvrpn__Button"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classvrpn__Tracker')"><img alt="-" src="closed.png"/> 静态 Public 成员函数 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:adf39b266ac90602bebbecba3aa3ec8cf inherit pub_static_methods_classvrpn__Tracker" id="r_adf39b266ac90602bebbecba3aa3ec8cf"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_t2r_request</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:adf39b266ac90602bebbecba3aa3ec8cf inherit pub_static_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a22b9c766ddd851950e3b203b33f4241b inherit pub_static_methods_classvrpn__Tracker" id="r_a22b9c766ddd851950e3b203b33f4241b"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_u2s_request</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a22b9c766ddd851950e3b203b33f4241b inherit pub_static_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a000f8c164fc6b7806a68fcd097909109 inherit pub_static_methods_classvrpn__Tracker" id="r_a000f8c164fc6b7806a68fcd097909109"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_workspace_request</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a000f8c164fc6b7806a68fcd097909109 inherit pub_static_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique" id="r_a6757110b074584b237001f720ba94259"><td align="right" class="memItemLeft" valign="top">
+bool </td><td class="memItemRight" valign="bottom"><b>shutup</b></td></tr>
+<tr class="separator:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_attribs_classvrpn__Button__Filter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classvrpn__Button__Filter')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classvrpn__Button__Filter.html">vrpn_Button_Filter</a></td></tr>
+<tr class="memitem:a5fdef00ea181e0f064b254881d11be90 inherit pub_attribs_classvrpn__Button__Filter" id="r_a5fdef00ea181e0f064b254881d11be90"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>buttonstate</b> [vrpn_BUTTON_MAX_BUTTONS]</td></tr>
+<tr class="separator:a5fdef00ea181e0f064b254881d11be90 inherit pub_attribs_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_ab920cd5e2843534727cf36ac30172dac"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ab920cd5e2843534727cf36ac30172dac">encode_text_message_to_buffer</a> (char *buf, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> severity, vrpn_uint32 level, const char *msg)</td></tr>
+<tr class="separator:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_af956afd27aaf4689728a9df78fa5de0d"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af956afd27aaf4689728a9df78fa5de0d">decode_text_message_from_buffer</a> (char *msg, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> *severity, vrpn_uint32 *level, const char *buf)</td></tr>
+<tr class="memdesc:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Decodes the body of the text message from a buffer from the connection  <br/></td></tr>
+<tr class="separator:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__Button__Filter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__Button__Filter')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__Button__Filter.html">vrpn_Button_Filter</a></td></tr>
+<tr class="memitem:a65e9d4eea153ce31c89959d7924f5590 inherit pro_static_methods_classvrpn__Button__Filter" id="r_a65e9d4eea153ce31c89959d7924f5590"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_ping_message</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a65e9d4eea153ce31c89959d7924f5590 inherit pro_static_methods_classvrpn__Button__Filter"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Class to support reading data from a wired YEI 3Space unit. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aeed36145511ef52d697210d86f6e3249" name="aeed36145511ef52d697210d86f6e3249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed36145511ef52d697210d86f6e3249">◆ </a></span>vrpn_YEI_3Space_Sensor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__YEI__3Space__Sensor.html">vrpn_YEI_3Space_Sensor</a> </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *</td> <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>baud</em></span><span class="paramdefsep"> = </span><span class="paramdefval">115200</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool</td> <td class="paramname"><span class="paramname"><em>calibrate_gyros_on_setup</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool</td> <td class="paramname"><span class="paramname"><em>tare_on_setup</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">double</td> <td class="paramname"><span class="paramname"><em>frames_per_second</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">double</td> <td class="paramname"><span class="paramname"><em>red_LED_color</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">double</td> <td class="paramname"><span class="paramname"><em>green_LED_color</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">double</td> <td class="paramname"><span class="paramname"><em>blue_LED_color</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>LED_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>reset_commands</em></span>[]<span class="paramdefsep"> = </span><span class="paramdefval">NULL</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">name</td><td>Name for the device </td></tr>
+<tr><td class="paramname">c</td><td>Connection to use. </td></tr>
+<tr><td class="paramname">port</td><td>serial port to connect to </td></tr>
+<tr><td class="paramname">baud</td><td>Baud rate - 115200 is default. </td></tr>
+<tr><td class="paramname">calibrate_gyros_on_setup</td><td>- true to cause this to happen </td></tr>
+<tr><td class="paramname">tare_on_setup</td><td>- true to cause this to happen (usually manufacturing-time operation!) </td></tr>
+<tr><td class="paramname">frames_per_second</td><td>- How many frames/second to read </td></tr>
+<tr><td class="paramname">red_LED_color</td><td>- brightness of LED (0-1) </td></tr>
+<tr><td class="paramname">green_LED_color</td><td>- brightness of LED (0-1) </td></tr>
+<tr><td class="paramname">blue_LED_color</td><td>- brightness of LED (0-1) </td></tr>
+<tr><td class="paramname">LED_state</td><td>- 0 = standard, 1 = static </td></tr>
+<tr><td class="paramname">reset_commands</td><td>- Array of pointers to commands, NULL for end. These will be sent after other commands whenever the tracker is reset. This will be copied; the caller is responsible for freeing any storage after calling the constructor. </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="ae096df103a3f24640925af15e60a2c4a" name="ae096df103a3f24640925af15e60a2c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae096df103a3f24640925af15e60a2c4a">◆ </a></span>~vrpn_YEI_3Space_Sensor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual ~<a class="el" href="classvrpn__YEI__3Space__Sensor.html">vrpn_YEI_3Space_Sensor</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1dd7bf92fb7db093496c38b6fde0acd7" name="a1dd7bf92fb7db093496c38b6fde0acd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd7bf92fb7db093496c38b6fde0acd7">◆ </a></span>flush_input()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void flush_input </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flush any incoming characters in the communications channel. </p>
+<p>实现了 <a class="el" href="classvrpn__YEI__3Space.html#a7f4a1c2ed194d7e03e27025c2a73cb35">vrpn_YEI_3Space</a>.</p>
+</div>
+</div>
+<a id="a43ee13d91ec1ebb4f2b99c6b5b1a1138" name="a43ee13d91ec1ebb4f2b99c6b5b1a1138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ee13d91ec1ebb4f2b99c6b5b1a1138">◆ </a></span>get_report()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual bool get_report </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>实现了 <a class="el" href="classvrpn__YEI__3Space.html">vrpn_YEI_3Space</a>.</p>
+</div>
+</div>
+<a id="aeb1ae972397151752ae2910d427eb799" name="aeb1ae972397151752ae2910d427eb799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1ae972397151752ae2910d427eb799">◆ </a></span>receive_LED_mode_response()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool receive_LED_mode_response </td>
+<td>(</td>
+<td class="paramtype">struct timeval *</td> <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Read and parse the response to an LED-state request command. NULL timeout pointer means wait forever. Returns true on success and false on failure. </p>
+<p>实现了 <a class="el" href="classvrpn__YEI__3Space.html#a0c684b53e06fb1acc3c1b0164cc87364">vrpn_YEI_3Space</a>.</p>
+</div>
+</div>
+<a id="ae064b466ebc1efd4c7130138205c6ce4" name="ae064b466ebc1efd4c7130138205c6ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae064b466ebc1efd4c7130138205c6ce4">◆ </a></span>receive_LED_values_response()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool receive_LED_values_response </td>
+<td>(</td>
+<td class="paramtype">struct timeval *</td> <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Read and parse the response to an LED-values request command. NULL timeout pointer means wait forever. Returns true on success and false on failure. </p>
+<p>实现了 <a class="el" href="classvrpn__YEI__3Space.html#a41f4e2043339858ce41939b78d20ba46">vrpn_YEI_3Space</a>.</p>
+</div>
+</div>
+<a id="a6e11815f9ed70041a6f33dd9e848ad55" name="a6e11815f9ed70041a6f33dd9e848ad55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e11815f9ed70041a6f33dd9e848ad55">◆ </a></span>send_ascii_command()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool send_ascii_command </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>cmd</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Put a ':' character at the front and '<br/>
+' at the end and then send the resulting command as an ASCII command. Returns true on success, false on failure. </p>
+<p>实现了 <a class="el" href="classvrpn__YEI__3Space.html#a5ea1fe9b2a592ae3b9911bcd2ad59816">vrpn_YEI_3Space</a>.</p>
+</div>
+</div>
+<a id="a966e0a056318a7f065261d00785e3e9d" name="a966e0a056318a7f065261d00785e3e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a966e0a056318a7f065261d00785e3e9d">◆ </a></span>send_binary_command()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool send_binary_command </td>
+<td>(</td>
+<td class="paramtype">const unsigned char *</td> <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>len</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the CRC for the message, append it, and send message. Returns true on success, false on failure. </p>
+<p>实现了 <a class="el" href="classvrpn__YEI__3Space.html#a1577c1b94325cb392bbc7a89767abbba">vrpn_YEI_3Space</a>.</p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__YEI__3Space_8h_source.html">vrpn_YEI_3Space.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

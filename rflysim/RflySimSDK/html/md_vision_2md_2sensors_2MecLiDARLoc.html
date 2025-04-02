@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: 传统机械式激光雷达（输出点云为激光雷达坐标系）</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">传统机械式激光雷达（输出点云为激光雷达坐标系）</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md452"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20250108132733780.png"><img alt="" class="thumbnail" height="auto" src="image-20250108132733780.png" width="100"/></a>
+<div class="caption">
+激光雷达坐标系点云输出</div></div>
+<h2><a class="anchor" id="autotoc_md453"></a>
+<b>1. 功能概述</b></h2>
+<h3><a class="anchor" id="autotoc_md454"></a>
+<b>1.1 支持的功能操作</b></h3>
+<p><b>传感器输出</b></p>
+<ul>
+<li>输出点云数据，默认采用激光雷达坐标系。点云中每个点由三维空间坐标 (x, y, z) 表示。</li>
+<li>支持高精度深度信息采集，分辨率和刷新频率可配置。</li>
+<li>点云数据通过共享内存或 UDP 方式传输，便于集成到外部应用。</li>
+</ul>
+<p><b>应用场景</b></p>
+<ul>
+<li>**自主导航与避障**：通过实时点云数据生成环境模型，用于无人机或机器人导航。</li>
+<li>**环境建模**：生成三维环境地图，用于地形测绘或仿真训练。</li>
+<li>**目标检测与跟踪**：结合点云和图像数据识别场景中的特定目标。</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md455"></a>
+<b>1.2 使用示例</b></h3>
+<p><b>配置文件添加传感器</b> 以下是配置文件 <code>Config.json</code> 的示例代码，用于添加激光雷达传感器：</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    "VisionSensors":[</div>
+<div class="line">        {</div>
+<div class="line">            "SeqID":0, //视觉传感器序号0 1 2 3 ...排序。如果填0，则自动递增排序。</div>
+<div class="line">            "TypeID":20, //输出点云为激光雷达坐标系</div>
+<div class="line">            "TargetCopter":1, //传感器绑定的CopterID号</div>
+<div class="line">            "TargetMountType":0,</div>
+<div class="line">            "DataWidth":900, //激光雷达一个ring内的点云个数</div>
+<div class="line">            "DataHeight":32,//激光雷达线束数量</div>
+<div class="line">            "DataCheckFreq":10,//点云发布频率(hz)</div>
+<div class="line">            "SendProtocol":[1,0,0,0,0,0,0,0],</div>
+<div class="line">            "CameraFOV":90, //在激光雷达传感器上无作用</div>
+<div class="line">            "EularOrQuat":0,</div>
+<div class="line">            "SensorPosXYZ":[0,0,-0.3], </div>
+<div class="line">            "SensorAngQuat":[0,0,0,0], </div>
+<div class="line">            "SensorAngEular":[0,0,0],</div>
+<div class="line">            "otherParams":[200,0.05,-45,45,-20,20,0,0,0,0,0,0,0,0,0,0] //[激光最远距离(m),精度(m),水平扫描角度 下限值(度),水平扫描角度上限值(度),垂直扫描角度下限值(度),垂直扫描角度上限值(度),预留,预留];</div>
+<div class="line">        }</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>激光雷达水平分辨通过DataWidth和水平扫描角度范围体现，垂直分辨率通过处置扫描角度体现(如上配置的传感器水平角分辨率=90/900,垂直角分辨率=40/32)，以上角度值都是用degree表示。</p>
+<p><b>Python 调用传感器接口</b> 取图显示相关代码：</p>
+<div class="fragment"><div class="line">vis = VisionCaptureApi.VisionCaptureApi() # 创建一个视觉传感器实例</div>
+<div class="line">vis.jsonLoad() # 加载Config.json中的传感器配置文件</div>
+<div class="line">isSuss = vis.sendReqToUE4() # 向RflySim3D发送取图请求</div>
+<div class="line">vis.startImgCap() # 开启取图</div>
+<div class="line">vis.hasData[i] # 图片i数据是否更新</div>
+<div class="line">vis.Img[i] # 图片i数据</div>
+<div class="line">show3d=Open3DShow.Open3DShow() # 创建3D点云显示实例</div>
+<div class="line">show3d.CreatShow(0) # 创建点云显示窗口</div>
+<div class="line">show3d.UpdateShow(vis.Img[0]) # 更新点云</div>
+</div><!-- fragment --><p><b>例程链接</b></p>
+<ul>
+<li>示例工程：<a href="../../8.RflySimVision/0.ApiExps/8.LidarAPIDemo/2.UDPDirectClientServer">8.RflySimVision\0.ApiExps\8.LidarAPIDemo\2.UDPDirectClientServer</a></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md456"></a>
+<b>1.3 现实中的机械式激光雷达传感器</b></h3>
+<ul>
+<li>硬件示例<ul>
+<li>Velodyne VLP-16：高性能机械式激光雷达，16线，360°水平视角，最大测距100米。</li>
+<li><a href="https://www.hesaitech.com/">Global Leader in LiDAR Sensor Solutions | Hesai Technology</a></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2><a class="anchor" id="autotoc_md458"></a>
+<b>2. 传感器配置</b></h2>
+<h3><a class="anchor" id="autotoc_md459"></a>
+<b>2.1 传感器安装</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">TargetMountType</a></b> </td><td class="markdownTableBodyNone">0: 固定载具上（相对几何中心）；1: 固定载具上 （相对底部中心）；2: 固定地面上（监控）；3：相对地面坐标系的吊舱相机，固定飞机上，但相机姿态不随飞机变化（地面坐标系）；4：将传感器附加到另外一个传感器上   </td><td class="markdownTableBodyNone">决定传感器的所属载体对象及安装方式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">TargetCopter</a></b> </td><td class="markdownTableBodyNone">目标传感器ID（默认为0）或目标实体对象 ID (默认 1）   </td><td class="markdownTableBodyNone">决定传感器安装方式后，选择目标测量对象ID。传感器固定在载具或地面上时，该值对应目标载具或其它实体对象的CopterID；传感器固定在其它传感器上时，该值对应目标传感器**SeqID**。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SensorPosXYZ</a></b> </td><td class="markdownTableBodyNone">[x, y, z] (单位：米)   </td><td class="markdownTableBodyNone">相对于传感器所属载体对象的安装位置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">EulerOrQuat</a></b> </td><td class="markdownTableBodyNone">0: 欧拉角；1: 四元数   </td><td class="markdownTableBodyNone">选择安装姿态的表示方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SensorAngEular</a></b> </td><td class="markdownTableBodyNone">[roll, pitch, yaw] (弧度)   </td><td class="markdownTableBodyNone">安装姿态，欧拉角方式表示。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SensorAngQuat</a></b> </td><td class="markdownTableBodyNone">[q0, q1, q2, q3]   </td><td class="markdownTableBodyNone">安装姿态，四元数方式表示。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md460"></a>
+<b>2.2 网络通信配置</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SendProtocol</a></b> </td><td class="markdownTableBodyNone">[mode, IP, port, …]   </td><td class="markdownTableBodyNone">配置数据传输协议，支持共享内存和 UDP。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SendProtocol[0]</a></b> </td><td class="markdownTableBodyNone">0: 共享内存；1: UDP 压缩传输   </td><td class="markdownTableBodyNone">选择传输方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b><a href="md_vision_2md_2VisionConfig.html">SendProtocol[5]</a></b> </td><td class="markdownTableBodyNone">端口号   </td><td class="markdownTableBodyNone">数据传输的目标端口号。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md461"></a>
+<b>2.3 传感器技术规格</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>技术参数</b> </th><th class="markdownTableHeadNone"><b>配置值</b> </th><th class="markdownTableHeadNone"><b>说明</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SeqID</b> </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">每个传感器在 RflySim3D 内的唯一编号。若设为0，将自动确认序号并递增排序    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TypeID</b> </td><td class="markdownTableBodyNone">20   </td><td class="markdownTableBodyNone">传感器类型，激光雷达传感器（机械式扫描，激光雷达本体坐标系输出）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataHeight</b> </td><td class="markdownTableBodyNone">32   </td><td class="markdownTableBodyNone">激光雷达线束数量。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>DataWidth</b> </td><td class="markdownTableBodyNone">900   </td><td class="markdownTableBodyNone">每圈点数（相当于每帧点数）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataCheckFreq</b> </td><td class="markdownTableBodyNone">10 Hz   </td><td class="markdownTableBodyNone">数据刷新频率，默认 10Hz，最大支持取决于<a href="md_ue_2md_2command_2t_8Maxfps.html">RflySim3D刷新率</a>。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>otherParams[0]</b> </td><td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">激光雷达的最大测量范围（米）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>otherParams[1]</b> </td><td class="markdownTableBodyNone">0.05   </td><td class="markdownTableBodyNone">点云数据精度（米）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>otherParams[2-3]</b> </td><td class="markdownTableBodyNone">[-45, 45]   </td><td class="markdownTableBodyNone">水平扫描角度范围（度）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>otherParams[2-3]</b> </td><td class="markdownTableBodyNone">[ -20, 20]   </td><td class="markdownTableBodyNone">垂直扫描角度范围（度）。   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

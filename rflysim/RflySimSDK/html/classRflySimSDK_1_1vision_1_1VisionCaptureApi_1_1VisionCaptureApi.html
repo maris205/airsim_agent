@@ -1,0 +1,1597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: VisionCaptureApi类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>VisionCaptureApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html">VisionCaptureApi</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">VisionCaptureApi类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>VisionCaptureApi结构体类，用于从 UE4 请求图像数据，并可以选择使用 ROS 进行传感器数据的发布和接收  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab3c211d2b7f3c35d46e368b2202f9477" id="r_ab3c211d2b7f3c35d46e368b2202f9477"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3c211d2b7f3c35d46e368b2202f9477">__del__</a> (self)</td></tr>
+<tr class="memdesc:ab3c211d2b7f3c35d46e368b2202f9477"><td class="mdescLeft"> </td><td class="mdescRight">VisionCaptureApi的析构函数  <br/></td></tr>
+<tr class="separator:ab3c211d2b7f3c35d46e368b2202f9477"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa52e85152f087b7eac26ece4366c2999" id="r_aa52e85152f087b7eac26ece4366c2999"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52e85152f087b7eac26ece4366c2999">__init__</a> (self, <a class="el" href="#afd65cf072a93c93ad52b9f25b341e10b">ip</a>="127.0.0.1")</td></tr>
+<tr class="memdesc:aa52e85152f087b7eac26ece4366c2999"><td class="mdescLeft"> </td><td class="mdescRight">VisionCaptureApi的构造函数  <br/></td></tr>
+<tr class="separator:aa52e85152f087b7eac26ece4366c2999"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa8ab127f81ae73025b17fdb40330f9b7" id="r_aa8ab127f81ae73025b17fdb40330f9b7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8ab127f81ae73025b17fdb40330f9b7">addVisSensor</a> (self, vsr=<a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReq.html">VisionSensorReq</a>())</td></tr>
+<tr class="memdesc:aa8ab127f81ae73025b17fdb40330f9b7"><td class="mdescLeft"> </td><td class="mdescRight">添加一个新的 <a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReq.html" title="VisionSensorReq结构体类，用于初始化各种与摄像机和传感器相关的参数">VisionSensorReq</a> 结构体到 VisSensor 列表中  <br/></td></tr>
+<tr class="separator:aa8ab127f81ae73025b17fdb40330f9b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a077b224998eb3e6c5f29bef0772c3a" id="r_a4a077b224998eb3e6c5f29bef0772c3a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a077b224998eb3e6c5f29bef0772c3a">addVisSensor</a> (self, vsr=<a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReqNew.html">VisionSensorReqNew</a>())</td></tr>
+<tr class="memdesc:a4a077b224998eb3e6c5f29bef0772c3a"><td class="mdescLeft"> </td><td class="mdescRight">添加一个新的 <a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReqNew.html" title="VisionSensorReqNew结构体类，用于初始化各种与摄像机和传感器相关的参数 在SensorType = 9的情况下">VisionSensorReqNew</a> 结构体到 VisSensorNew 列表中  <br/></td></tr>
+<tr class="separator:a4a077b224998eb3e6c5f29bef0772c3a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4bf952ee144164cb264d3250b206edc" id="r_aa4bf952ee144164cb264d3250b206edc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4bf952ee144164cb264d3250b206edc">sendReqToCopterSim</a> (self, srcs=<a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1SensorReqCopterSim.html">SensorReqCopterSim</a>(), copterID=1, IP='127.0.0.1')</td></tr>
+<tr class="memdesc:aa4bf952ee144164cb264d3250b206edc"><td class="mdescLeft"> </td><td class="mdescRight">发送一个 <a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1SensorReqCopterSim.html" title="SensorReqCopterSim结构体类，用于向UE4请求传感器数据的">SensorReqCopterSim</a> 类的 UDP 消息给 CopterSim 以请求传感器数据  <br/></td></tr>
+<tr class="separator:aa4bf952ee144164cb264d3250b206edc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4e46526719d42015eb47dcd276693d2" id="r_ad4e46526719d42015eb47dcd276693d2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4e46526719d42015eb47dcd276693d2">sendImuReqCopterSim</a> (self, copterID=1, IP="127.0.0.1", freq=200)</td></tr>
+<tr class="memdesc:ad4e46526719d42015eb47dcd276693d2"><td class="mdescLeft"> </td><td class="mdescRight">发送请求给 CopterSim 以获取 IMU 数据，并初始化一个线程监听 IMU 数据  <br/></td></tr>
+<tr class="separator:ad4e46526719d42015eb47dcd276693d2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2462a6cb4978e34c953d1b49735804f" id="r_ab2462a6cb4978e34c953d1b49735804f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2462a6cb4978e34c953d1b49735804f">sendImuReqClient</a> (self, copterID=1, IP="127.0.0.1", freq=200)</td></tr>
+<tr class="memdesc:ab2462a6cb4978e34c953d1b49735804f"><td class="mdescLeft"> </td><td class="mdescRight">发送命令到 CopterSim 请求IMU数据  <br/></td></tr>
+<tr class="separator:ab2462a6cb4978e34c953d1b49735804f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abc5b593be1dbe4128363457b6aad2678" id="r_abc5b593be1dbe4128363457b6aad2678"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abc5b593be1dbe4128363457b6aad2678">sendImuReqServe</a> (self, copterID=1)</td></tr>
+<tr class="memdesc:abc5b593be1dbe4128363457b6aad2678"><td class="mdescLeft"> </td><td class="mdescRight">发送命令到 CopterSim 请求IMU数据，并初始化一个线程监听IMU数据  <br/></td></tr>
+<tr class="separator:abc5b593be1dbe4128363457b6aad2678"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0b77c6e8bbf8d702ece0355fa1833060" id="r_a0b77c6e8bbf8d702ece0355fa1833060"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b77c6e8bbf8d702ece0355fa1833060">getIMUDataLoop</a> (self, copterID)</td></tr>
+<tr class="memdesc:a0b77c6e8bbf8d702ece0355fa1833060"><td class="mdescLeft"> </td><td class="mdescRight">接收来自CopterSim（模拟飞行器）的IMU（惯性测量单元）数据，  <br/></td></tr>
+<tr class="separator:a0b77c6e8bbf8d702ece0355fa1833060"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bdf524c13fb972e4dfab08b68ae9b20" id="r_a9bdf524c13fb972e4dfab08b68ae9b20"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bdf524c13fb972e4dfab08b68ae9b20">get_all_ip</a> (self)</td></tr>
+<tr class="memdesc:a9bdf524c13fb972e4dfab08b68ae9b20"><td class="mdescLeft"> </td><td class="mdescRight">获取本机所有 IP 地址  <br/></td></tr>
+<tr class="separator:a9bdf524c13fb972e4dfab08b68ae9b20"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acd00c8d0488929bc3e87dc9204a56042" id="r_acd00c8d0488929bc3e87dc9204a56042"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acd00c8d0488929bc3e87dc9204a56042">isIpLocal</a> (self, IP)</td></tr>
+<tr class="memdesc:acd00c8d0488929bc3e87dc9204a56042"><td class="mdescLeft"> </td><td class="mdescRight">判断IP地址是否为本地IP  <br/></td></tr>
+<tr class="separator:acd00c8d0488929bc3e87dc9204a56042"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa60b23bcc108b72b93d4fe6495e5e792" id="r_aa60b23bcc108b72b93d4fe6495e5e792"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa60b23bcc108b72b93d4fe6495e5e792">StartTimeStmplisten</a> (self)</td></tr>
+<tr class="memdesc:aa60b23bcc108b72b93d4fe6495e5e792"><td class="mdescLeft"> </td><td class="mdescRight">通过UDP套接字监听特定端口（20005端口），以获取CopterID的时间戳信息  <br/></td></tr>
+<tr class="separator:aa60b23bcc108b72b93d4fe6495e5e792"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c977ec04dbbf96665827637355a6f7e" id="r_a9c977ec04dbbf96665827637355a6f7e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c977ec04dbbf96665827637355a6f7e">getTimeStmp</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:a9c977ec04dbbf96665827637355a6f7e"><td class="mdescLeft"> </td><td class="mdescRight">获取指定飞机的时间戳指针，  <br/></td></tr>
+<tr class="separator:a9c977ec04dbbf96665827637355a6f7e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9fff0efeb83a1c0b4606ddffac7fcf1f" id="r_a9fff0efeb83a1c0b4606ddffac7fcf1f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fff0efeb83a1c0b4606ddffac7fcf1f">endTimeStmplisten</a> (self)</td></tr>
+<tr class="memdesc:a9fff0efeb83a1c0b4606ddffac7fcf1f"><td class="mdescLeft"> </td><td class="mdescRight">停止时间戳监听功能  <br/></td></tr>
+<tr class="separator:a9fff0efeb83a1c0b4606ddffac7fcf1f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3d6b42d0ece15f674e35d507b49db37b" id="r_a3d6b42d0ece15f674e35d507b49db37b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d6b42d0ece15f674e35d507b49db37b">TimeStmploop</a> (self)</td></tr>
+<tr class="memdesc:a3d6b42d0ece15f674e35d507b49db37b"><td class="mdescLeft"> </td><td class="mdescRight">用于监听来自特定UDP端口的时间戳消息，并根据接收到的消息更新时间戳信息  <br/></td></tr>
+<tr class="separator:a3d6b42d0ece15f674e35d507b49db37b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4ee74aa567bc33785c1875f10cae15d" id="r_ad4ee74aa567bc33785c1875f10cae15d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4ee74aa567bc33785c1875f10cae15d">sendUpdateUEImage</a> (self, vs=<a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReq.html">VisionSensorReq</a>(), windID=0, IP="")</td></tr>
+<tr class="memdesc:ad4ee74aa567bc33785c1875f10cae15d"><td class="mdescLeft"> </td><td class="mdescRight">向指定IP地址和端口发送图像更新请求  <br/></td></tr>
+<tr class="separator:ad4ee74aa567bc33785c1875f10cae15d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ce25fc5b3c7a695922016b0f7997835" id="r_a9ce25fc5b3c7a695922016b0f7997835"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce25fc5b3c7a695922016b0f7997835">sendUpdateUEImaged</a> (self, vs=<a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReqNew.html">VisionSensorReqNew</a>(), windID=0, IP="")</td></tr>
+<tr class="memdesc:a9ce25fc5b3c7a695922016b0f7997835"><td class="mdescLeft"> </td><td class="mdescRight">向指定IP地址和端口发送图像更新请求  <br/></td></tr>
+<tr class="separator:a9ce25fc5b3c7a695922016b0f7997835"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7dd34f79e324afda9bbed53621df2aff" id="r_a7dd34f79e324afda9bbed53621df2aff"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd34f79e324afda9bbed53621df2aff">sendUE4Cmd</a> (self, cmd, windowID=-1)</td></tr>
+<tr class="memdesc:a7dd34f79e324afda9bbed53621df2aff"><td class="mdescLeft"> </td><td class="mdescRight">用于发送命令到UE4应用程序的一个或多个窗口。 它将命令转换成合适的格式，并通过UDP协议发送到指定的IP地址和端口  <br/></td></tr>
+<tr class="separator:a7dd34f79e324afda9bbed53621df2aff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:add972b32243d4f6b1f966a6825d2599e" id="r_add972b32243d4f6b1f966a6825d2599e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#add972b32243d4f6b1f966a6825d2599e">sendReqToUE4</a> (self, windID=0, IP="")</td></tr>
+<tr class="memdesc:add972b32243d4f6b1f966a6825d2599e"><td class="mdescLeft"> </td><td class="mdescRight">用于将视觉传感器列表发送到 RflySim3D 以请求图像  <br/></td></tr>
+<tr class="separator:add972b32243d4f6b1f966a6825d2599e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af5b9ff08c785903546f906925d994d27" id="r_af5b9ff08c785903546f906925d994d27"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b9ff08c785903546f906925d994d27">img_udp_thrdNew</a> (self, udpSok, idx, typeID)</td></tr>
+<tr class="memdesc:af5b9ff08c785903546f906925d994d27"><td class="mdescLeft"> </td><td class="mdescRight">定义了一个线程，用于通过 UDP 接收图像数据包，并根据特定协议解析和处理这些数据包  <br/></td></tr>
+<tr class="separator:af5b9ff08c785903546f906925d994d27"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d8ed55a7d7e2bd75f5200d1b0d20898" id="r_a1d8ed55a7d7e2bd75f5200d1b0d20898"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d8ed55a7d7e2bd75f5200d1b0d20898">img_mem_thrd</a> (self, idxList)</td></tr>
+<tr class="memdesc:a1d8ed55a7d7e2bd75f5200d1b0d20898"><td class="mdescLeft"> </td><td class="mdescRight">从共享内存读取数据并进行处理，以不同的传感器类型来解析数据  <br/></td></tr>
+<tr class="separator:a1d8ed55a7d7e2bd75f5200d1b0d20898"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af1e50bb2020628758ed286f0876443be" id="r_af1e50bb2020628758ed286f0876443be"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af1e50bb2020628758ed286f0876443be">startImgCap</a> (self, <a class="el" href="#aca7a6d34ee5bc21f1082161dfeeeb63b">isRemoteSend</a>=False)</td></tr>
+<tr class="memdesc:af1e50bb2020628758ed286f0876443be"><td class="mdescLeft"> </td><td class="mdescRight">用于启动图像捕获的循环过程，先是一些初始化，然后根据SendProtocol[0]来判断是内存共享还是UDP传输，分别进行相应的处理函数  <br/></td></tr>
+<tr class="separator:af1e50bb2020628758ed286f0876443be"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a10eee193cf6fd47b0c23d5f8bf3ce023" id="r_a10eee193cf6fd47b0c23d5f8bf3ce023"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a10eee193cf6fd47b0c23d5f8bf3ce023">sendImgUDPNew</a> (self, idx)</td></tr>
+<tr class="memdesc:a10eee193cf6fd47b0c23d5f8bf3ce023"><td class="mdescLeft"> </td><td class="mdescRight">用于图像数据的UDP发送  <br/></td></tr>
+<tr class="separator:a10eee193cf6fd47b0c23d5f8bf3ce023"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8f69aeccc41b656e9aacee0a3b3dd5fc" id="r_a8f69aeccc41b656e9aacee0a3b3dd5fc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f69aeccc41b656e9aacee0a3b3dd5fc">sendImgBuffer</a> (self, idx, data)</td></tr>
+<tr class="memdesc:a8f69aeccc41b656e9aacee0a3b3dd5fc"><td class="mdescLeft"> </td><td class="mdescRight">用于将图像数据分割为固定大小的数据包，并添加头部信息后发送 -<a class="anchor" id="sendImgBuffer"></a> <br/></td></tr>
+<tr class="separator:a8f69aeccc41b656e9aacee0a3b3dd5fc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac439398f97749ea48dfd91fb18c100ae" id="r_ac439398f97749ea48dfd91fb18c100ae"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac439398f97749ea48dfd91fb18c100ae">jsonLoad</a> (self, ChangeMode=-1, jsonPath="")</td></tr>
+<tr class="memdesc:ac439398f97749ea48dfd91fb18c100ae"><td class="mdescLeft"> </td><td class="mdescRight">用来从配置文件 Config.json 中加载相机配置信息，并根据配置信息创建相机列表 @ChangeMode（默认为-1） 转化模式  <br/></td></tr>
+<tr class="separator:ac439398f97749ea48dfd91fb18c100ae"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a97ab4ed95b55a36a6a47b97838a2c4e9" id="r_a97ab4ed95b55a36a6a47b97838a2c4e9"><td align="right" class="memItemLeft" valign="top"><a id="a97ab4ed95b55a36a6a47b97838a2c4e9" name="a97ab4ed95b55a36a6a47b97838a2c4e9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ros_node</b></td></tr>
+<tr class="separator:a97ab4ed95b55a36a6a47b97838a2c4e9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae184159b6cbe759685a79a5ede0f603f" id="r_ae184159b6cbe759685a79a5ede0f603f"><td align="right" class="memItemLeft" valign="top"><a id="ae184159b6cbe759685a79a5ede0f603f" name="ae184159b6cbe759685a79a5ede0f603f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>time_record</b></td></tr>
+<tr class="separator:ae184159b6cbe759685a79a5ede0f603f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76a5a089bd055fa2962ee8657655287a" id="r_a76a5a089bd055fa2962ee8657655287a"><td align="right" class="memItemLeft" valign="top"><a id="a76a5a089bd055fa2962ee8657655287a" name="a76a5a089bd055fa2962ee8657655287a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rostime</b></td></tr>
+<tr class="separator:a76a5a089bd055fa2962ee8657655287a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae39156fb07ed42ab04b44381baa97ac7" id="r_ae39156fb07ed42ab04b44381baa97ac7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae39156fb07ed42ab04b44381baa97ac7">udp_socket</a></td></tr>
+<tr class="memdesc:ae39156fb07ed42ab04b44381baa97ac7"><td class="mdescLeft"> </td><td class="mdescRight">用于UDP通信的套接字  <br/></td></tr>
+<tr class="separator:ae39156fb07ed42ab04b44381baa97ac7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51884e81ac4f8299f37b288b28a22735" id="r_a51884e81ac4f8299f37b288b28a22735"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a51884e81ac4f8299f37b288b28a22735">udp_imu</a></td></tr>
+<tr class="memdesc:a51884e81ac4f8299f37b288b28a22735"><td class="mdescLeft"> </td><td class="mdescRight">用于IMU数据的UDP套接字  <br/></td></tr>
+<tr class="separator:a51884e81ac4f8299f37b288b28a22735"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aabe6aad5d00fba9b50e45b2daf7b065d" id="r_aabe6aad5d00fba9b50e45b2daf7b065d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe6aad5d00fba9b50e45b2daf7b065d">hostIp</a></td></tr>
+<tr class="memdesc:aabe6aad5d00fba9b50e45b2daf7b065d"><td class="mdescLeft"> </td><td class="mdescRight">用于获取并存储本机电脑的IP地址  <br/></td></tr>
+<tr class="separator:aabe6aad5d00fba9b50e45b2daf7b065d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af69b2f64afc2a99fbe70a92c9a6f807f" id="r_af69b2f64afc2a99fbe70a92c9a6f807f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af69b2f64afc2a99fbe70a92c9a6f807f">VisSensor</a></td></tr>
+<tr class="memdesc:af69b2f64afc2a99fbe70a92c9a6f807f"><td class="mdescLeft"> </td><td class="mdescRight">用于存储视觉传感器的列表  <br/></td></tr>
+<tr class="separator:af69b2f64afc2a99fbe70a92c9a6f807f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adfb852ccbb5a5a1946ffe0efab0e16f2" id="r_adfb852ccbb5a5a1946ffe0efab0e16f2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adfb852ccbb5a5a1946ffe0efab0e16f2">VisSensorNew</a></td></tr>
+<tr class="memdesc:adfb852ccbb5a5a1946ffe0efab0e16f2"><td class="mdescLeft"> </td><td class="mdescRight">用于存储新添加的视觉传感器的列表  <br/></td></tr>
+<tr class="separator:adfb852ccbb5a5a1946ffe0efab0e16f2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a86727dcea7603d773241ac4493aaa7e0" id="r_a86727dcea7603d773241ac4493aaa7e0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a86727dcea7603d773241ac4493aaa7e0">Img</a></td></tr>
+<tr class="memdesc:a86727dcea7603d773241ac4493aaa7e0"><td class="mdescLeft"> </td><td class="mdescRight">用于存储从视觉传感器获取的图像数据的列表  <br/></td></tr>
+<tr class="separator:a86727dcea7603d773241ac4493aaa7e0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae1c973dc618664b63bd04f5a52ad4a88" id="r_ae1c973dc618664b63bd04f5a52ad4a88"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1c973dc618664b63bd04f5a52ad4a88">Img_lock</a></td></tr>
+<tr class="memdesc:ae1c973dc618664b63bd04f5a52ad4a88"><td class="mdescLeft"> </td><td class="mdescRight">用于实现类似多线程的数据同步，防止多个线程同时访问图像数据  <br/></td></tr>
+<tr class="separator:ae1c973dc618664b63bd04f5a52ad4a88"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d6531e20f29c54f415090684e72be83" id="r_a5d6531e20f29c54f415090684e72be83"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d6531e20f29c54f415090684e72be83">ImgData</a></td></tr>
+<tr class="memdesc:a5d6531e20f29c54f415090684e72be83"><td class="mdescLeft"> </td><td class="mdescRight">用于存储图像数据的实际内容  <br/></td></tr>
+<tr class="separator:a5d6531e20f29c54f415090684e72be83"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aee3a3ecd0211ce72869d7223d21cdcd0" id="r_aee3a3ecd0211ce72869d7223d21cdcd0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aee3a3ecd0211ce72869d7223d21cdcd0">hasData</a></td></tr>
+<tr class="memdesc:aee3a3ecd0211ce72869d7223d21cdcd0"><td class="mdescLeft"> </td><td class="mdescRight">用于存储布尔值列表，表示是否有新数据  <br/></td></tr>
+<tr class="separator:aee3a3ecd0211ce72869d7223d21cdcd0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a35fb36917a64bcde5a64a2514479ff1f" id="r_a35fb36917a64bcde5a64a2514479ff1f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a35fb36917a64bcde5a64a2514479ff1f">timeStmp</a></td></tr>
+<tr class="memdesc:a35fb36917a64bcde5a64a2514479ff1f"><td class="mdescLeft"> </td><td class="mdescRight">用于存储时间戳的列表，用于记录每个传感器数据的时间  <br/></td></tr>
+<tr class="separator:a35fb36917a64bcde5a64a2514479ff1f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c9f2be56c8023058081bb9ea21b99e3" id="r_a9c9f2be56c8023058081bb9ea21b99e3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c9f2be56c8023058081bb9ea21b99e3">imgStmp</a></td></tr>
+<tr class="memdesc:a9c9f2be56c8023058081bb9ea21b99e3"><td class="mdescLeft"> </td><td class="mdescRight">用于存储图像数据的时间戳列表  <br/></td></tr>
+<tr class="separator:a9c9f2be56c8023058081bb9ea21b99e3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abc8fab73546f36368d342f7afc488895" id="r_abc8fab73546f36368d342f7afc488895"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abc8fab73546f36368d342f7afc488895">rflyStartStmp</a></td></tr>
+<tr class="memdesc:abc8fab73546f36368d342f7afc488895"><td class="mdescLeft"> </td><td class="mdescRight">用于存储 Rfly 仿真开始的时间戳列表  <br/></td></tr>
+<tr class="separator:abc8fab73546f36368d342f7afc488895"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a11021b0b83ef748f00d834899cc627ab" id="r_a11021b0b83ef748f00d834899cc627ab"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a11021b0b83ef748f00d834899cc627ab">IpList</a></td></tr>
+<tr class="memdesc:a11021b0b83ef748f00d834899cc627ab"><td class="mdescLeft"> </td><td class="mdescRight">用于存储需要通信的目标 IP 地址列表  <br/></td></tr>
+<tr class="separator:a11021b0b83ef748f00d834899cc627ab"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a005f93369f05101ed7d72a6bb346a931" id="r_a005f93369f05101ed7d72a6bb346a931"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a005f93369f05101ed7d72a6bb346a931">portList</a></td></tr>
+<tr class="memdesc:a005f93369f05101ed7d72a6bb346a931"><td class="mdescLeft"> </td><td class="mdescRight">用于存储需要通信的目标端口号列表  <br/></td></tr>
+<tr class="separator:a005f93369f05101ed7d72a6bb346a931"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4df11274ad9af8cbb16626dbff9551c" id="r_ad4df11274ad9af8cbb16626dbff9551c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4df11274ad9af8cbb16626dbff9551c">hasReqUE4</a></td></tr>
+<tr class="memdesc:ad4df11274ad9af8cbb16626dbff9551c"><td class="mdescLeft"> </td><td class="mdescRight">用于布尔值，表示是否已经向 UE4 请求了数据  <br/></td></tr>
+<tr class="separator:ad4df11274ad9af8cbb16626dbff9551c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab138904660c050edffe0b9384e5ed7ec" id="r_ab138904660c050edffe0b9384e5ed7ec"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab138904660c050edffe0b9384e5ed7ec">sleepCheck</a></td></tr>
+<tr class="memdesc:ab138904660c050edffe0b9384e5ed7ec"><td class="mdescLeft"> </td><td class="mdescRight">用于设定数据请求的时间间隔，单位为秒  <br/></td></tr>
+<tr class="separator:ab138904660c050edffe0b9384e5ed7ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afd65cf072a93c93ad52b9f25b341e10b">ip</a></td></tr>
+<tr class="memdesc:afd65cf072a93c93ad52b9f25b341e10b"><td class="mdescLeft"> </td><td class="mdescRight">用于存储传入的 IP 地址  <br/></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aca7a6d34ee5bc21f1082161dfeeeb63b" id="r_aca7a6d34ee5bc21f1082161dfeeeb63b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aca7a6d34ee5bc21f1082161dfeeeb63b">isRemoteSend</a></td></tr>
+<tr class="memdesc:aca7a6d34ee5bc21f1082161dfeeeb63b"><td class="mdescLeft"> </td><td class="mdescRight">布尔值，表示是否启用远程发送  <br/></td></tr>
+<tr class="separator:aca7a6d34ee5bc21f1082161dfeeeb63b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a27a3b67314ec209125bdc5993096db" id="r_a4a27a3b67314ec209125bdc5993096db"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a27a3b67314ec209125bdc5993096db">RemotSendIP</a></td></tr>
+<tr class="memdesc:a4a27a3b67314ec209125bdc5993096db"><td class="mdescLeft"> </td><td class="mdescRight">用于存储远程发送的目标 IP 地址  <br/></td></tr>
+<tr class="separator:a4a27a3b67314ec209125bdc5993096db"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acfd7a65601e955ec276aacabc9a904d4" id="r_acfd7a65601e955ec276aacabc9a904d4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#acfd7a65601e955ec276aacabc9a904d4">isUE4DirectUDP</a></td></tr>
+<tr class="memdesc:acfd7a65601e955ec276aacabc9a904d4"><td class="mdescLeft"> </td><td class="mdescRight">布尔值，表示是否直接通过 UDP 与 UE4 进行通信  <br/></td></tr>
+<tr class="separator:acfd7a65601e955ec276aacabc9a904d4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad32c3cd1c4558a0ed51c69e97b52c857" id="r_ad32c3cd1c4558a0ed51c69e97b52c857"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad32c3cd1c4558a0ed51c69e97b52c857">hasIMUData</a></td></tr>
+<tr class="memdesc:ad32c3cd1c4558a0ed51c69e97b52c857"><td class="mdescLeft"> </td><td class="mdescRight">用于布尔值，表示是否有新的 IMU 数据  <br/></td></tr>
+<tr class="separator:ad32c3cd1c4558a0ed51c69e97b52c857"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51c9c8ae3bfde53994362ed68af45813" id="r_a51c9c8ae3bfde53994362ed68af45813"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a51c9c8ae3bfde53994362ed68af45813">RflyTimeVect</a></td></tr>
+<tr class="memdesc:a51c9c8ae3bfde53994362ed68af45813"><td class="mdescLeft"> </td><td class="mdescRight">存储 Rfly 时间向量的列表，用于记录时间同步信息  <br/></td></tr>
+<tr class="separator:a51c9c8ae3bfde53994362ed68af45813"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7fe8b824e5d0f1cec8b76b251f7a88b2" id="r_a7fe8b824e5d0f1cec8b76b251f7a88b2"><td align="right" class="memItemLeft" valign="top"># 为本机 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fe8b824e5d0f1cec8b76b251f7a88b2">RflyLocalIPVect</a></td></tr>
+<tr class="memdesc:a7fe8b824e5d0f1cec8b76b251f7a88b2"><td class="mdescLeft"> </td><td class="mdescRight">存储本电脑的所有本地IP地址，用于判断数据是否来着本机  <br/></td></tr>
+<tr class="separator:a7fe8b824e5d0f1cec8b76b251f7a88b2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab6a372605f831a6e99d96c3e55e939f3" id="r_ab6a372605f831a6e99d96c3e55e939f3"><td align="right" class="memItemLeft" valign="top"># 使用新版协议发送 </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a372605f831a6e99d96c3e55e939f3">isNewJson</a></td></tr>
+<tr class="memdesc:ab6a372605f831a6e99d96c3e55e939f3"><td class="mdescLeft"> </td><td class="mdescRight">布尔值，表示是否使用新的 JSON 数据格式  <br/></td></tr>
+<tr class="separator:ab6a372605f831a6e99d96c3e55e939f3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ad6d481cc9c9ccfcd544efb2950bf35" id="r_a0ad6d481cc9c9ccfcd544efb2950bf35"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ad6d481cc9c9ccfcd544efb2950bf35">tTimeStmpFlag</a></td></tr>
+<tr class="memdesc:a0ad6d481cc9c9ccfcd544efb2950bf35"><td class="mdescLeft"> </td><td class="mdescRight">布尔值，表示时间戳标志位，用于时间同步的控制  <br/></td></tr>
+<tr class="separator:a0ad6d481cc9c9ccfcd544efb2950bf35"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9927793f1f69327ecd9ebf938e0deb92" id="r_a9927793f1f69327ecd9ebf938e0deb92"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9927793f1f69327ecd9ebf938e0deb92">startTime</a></td></tr>
+<tr class="memdesc:a9927793f1f69327ecd9ebf938e0deb92"><td class="mdescLeft"> </td><td class="mdescRight">用于记录类实例化时的起始时间，用于计算运行时间  <br/></td></tr>
+<tr class="separator:a9927793f1f69327ecd9ebf938e0deb92"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a258e6495f4d04b862a79e30554f5830b" id="r_a258e6495f4d04b862a79e30554f5830b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a258e6495f4d04b862a79e30554f5830b">isPrintTime</a></td></tr>
+<tr class="memdesc:a258e6495f4d04b862a79e30554f5830b"><td class="mdescLeft"> </td><td class="mdescRight">布尔值，表示是否打印时间信息  <br/></td></tr>
+<tr class="separator:a258e6495f4d04b862a79e30554f5830b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a623d0ddfdb24d5af52337c036ddb27b5" id="r_a623d0ddfdb24d5af52337c036ddb27b5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a623d0ddfdb24d5af52337c036ddb27b5">lastIMUTime</a></td></tr>
+<tr class="memdesc:a623d0ddfdb24d5af52337c036ddb27b5"><td class="mdescLeft"> </td><td class="mdescRight">记录最后一次接收到的 IMU 数据的时间  <br/></td></tr>
+<tr class="separator:a623d0ddfdb24d5af52337c036ddb27b5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6029ec4c0a1dba1d4fa1d6477b1f8d8" id="r_ad6029ec4c0a1dba1d4fa1d6477b1f8d8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6029ec4c0a1dba1d4fa1d6477b1f8d8">sensors_num</a></td></tr>
+<tr class="memdesc:ad6029ec4c0a1dba1d4fa1d6477b1f8d8"><td class="mdescLeft"> </td><td class="mdescRight">存储传感器的数量  <br/></td></tr>
+<tr class="separator:ad6029ec4c0a1dba1d4fa1d6477b1f8d8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b7fa98838d4e82a73ee468113f26116" id="r_a6b7fa98838d4e82a73ee468113f26116"><td align="right" class="memItemLeft" valign="top"><a id="a6b7fa98838d4e82a73ee468113f26116" name="a6b7fa98838d4e82a73ee468113f26116"></a>
+ </td><td class="memItemRight" valign="bottom"><b>sensors_frame_id</b></td></tr>
+<tr class="separator:a6b7fa98838d4e82a73ee468113f26116"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c0e42442d504941c17accb180930f8e" id="r_a4c0e42442d504941c17accb180930f8e"><td align="right" class="memItemLeft" valign="top"><a id="a4c0e42442d504941c17accb180930f8e" name="a4c0e42442d504941c17accb180930f8e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>imu_frame_id</b></td></tr>
+<tr class="separator:a4c0e42442d504941c17accb180930f8e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a48ec382a5c64a39fdc556b09e04a449d" id="r_a48ec382a5c64a39fdc556b09e04a449d"><td align="right" class="memItemLeft" valign="top"><a id="a48ec382a5c64a39fdc556b09e04a449d" name="a48ec382a5c64a39fdc556b09e04a449d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>imu_topic_name</b></td></tr>
+<tr class="separator:a48ec382a5c64a39fdc556b09e04a449d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b85166c2922dc60449e234f7ba41bcf" id="r_a7b85166c2922dc60449e234f7ba41bcf"><td align="right" class="memItemLeft" valign="top"><a id="a7b85166c2922dc60449e234f7ba41bcf" name="a7b85166c2922dc60449e234f7ba41bcf"></a>
+ </td><td class="memItemRight" valign="bottom"><b>sensor_pub</b></td></tr>
+<tr class="separator:a7b85166c2922dc60449e234f7ba41bcf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a07e469ef9b21d95dc59ca8b8213d53ad" id="r_a07e469ef9b21d95dc59ca8b8213d53ad"><td align="right" class="memItemLeft" valign="top"><a id="a07e469ef9b21d95dc59ca8b8213d53ad" name="a07e469ef9b21d95dc59ca8b8213d53ad"></a>
+ </td><td class="memItemRight" valign="bottom"><b>sensor_data</b></td></tr>
+<tr class="separator:a07e469ef9b21d95dc59ca8b8213d53ad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad891122446b3ab638326e359c8d3acba" id="r_ad891122446b3ab638326e359c8d3acba"><td align="right" class="memItemLeft" valign="top"><a id="ad891122446b3ab638326e359c8d3acba" name="ad891122446b3ab638326e359c8d3acba"></a>
+ </td><td class="memItemRight" valign="bottom"><b>cv_bridge</b></td></tr>
+<tr class="separator:ad891122446b3ab638326e359c8d3acba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a70c28890dbaa2362008d1da5c1012778" id="r_a70c28890dbaa2362008d1da5c1012778"><td align="right" class="memItemLeft" valign="top"><a id="a70c28890dbaa2362008d1da5c1012778" name="a70c28890dbaa2362008d1da5c1012778"></a>
+ </td><td class="memItemRight" valign="bottom"><b>topic_name</b></td></tr>
+<tr class="separator:a70c28890dbaa2362008d1da5c1012778"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1c63e66c94a8d22300990887e84ad6fc" id="r_a1c63e66c94a8d22300990887e84ad6fc"><td align="right" class="memItemLeft" valign="top"><a id="a1c63e66c94a8d22300990887e84ad6fc" name="a1c63e66c94a8d22300990887e84ad6fc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>imu</b></td></tr>
+<tr class="separator:a1c63e66c94a8d22300990887e84ad6fc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb892c4d0b646f6e66fe6a2d67d43583" id="r_aeb892c4d0b646f6e66fe6a2d67d43583"><td align="right" class="memItemLeft" valign="top"><a id="aeb892c4d0b646f6e66fe6a2d67d43583" name="aeb892c4d0b646f6e66fe6a2d67d43583"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tIMU</b></td></tr>
+<tr class="separator:aeb892c4d0b646f6e66fe6a2d67d43583"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a94828fba7af3db74d6b37a116f5e19fa" id="r_a94828fba7af3db74d6b37a116f5e19fa"><td align="right" class="memItemLeft" valign="top"><a id="a94828fba7af3db74d6b37a116f5e19fa" name="a94828fba7af3db74d6b37a116f5e19fa"></a>
+ </td><td class="memItemRight" valign="bottom"><b>udp_time</b></td></tr>
+<tr class="separator:a94828fba7af3db74d6b37a116f5e19fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0159b0870a42c3e6c508323eb7b54787" id="r_a0159b0870a42c3e6c508323eb7b54787"><td align="right" class="memItemLeft" valign="top"><a id="a0159b0870a42c3e6c508323eb7b54787" name="a0159b0870a42c3e6c508323eb7b54787"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tTimeStmp</b></td></tr>
+<tr class="separator:a0159b0870a42c3e6c508323eb7b54787"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a606d8958f5d440cf70cb09ce0061ab74" id="r_a606d8958f5d440cf70cb09ce0061ab74"><td align="right" class="memItemLeft" valign="top"><a id="a606d8958f5d440cf70cb09ce0061ab74" name="a606d8958f5d440cf70cb09ce0061ab74"></a>
+ </td><td class="memItemRight" valign="bottom"><b>t_menRec</b></td></tr>
+<tr class="separator:a606d8958f5d440cf70cb09ce0061ab74"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>VisionCaptureApi结构体类，用于从 UE4 请求图像数据，并可以选择使用 ROS 进行传感器数据的发布和接收 </p>
+<pre class="fragment">This is the API class for python to request image from UE4</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ab3c211d2b7f3c35d46e368b2202f9477" name="ab3c211d2b7f3c35d46e368b2202f9477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c211d2b7f3c35d46e368b2202f9477">◆ </a></span>__del__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__del__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>VisionCaptureApi的析构函数 </p>
+<p>用于清理ROS资源。在对象销毁时调用。如果启用了ROS且使用的是ROS2，则销毁ROS节点并关闭rclpy </p>
+</div>
+</div>
+<a id="aa52e85152f087b7eac26ece4366c2999" name="aa52e85152f087b7eac26ece4366c2999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52e85152f087b7eac26ece4366c2999">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">"127.0.0.1"</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>VisionCaptureApi的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化各种类属性和套接字，用于与UE4和ROS进行通信</td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa8ab127f81ae73025b17fdb40330f9b7" name="aa8ab127f81ae73025b17fdb40330f9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ab127f81ae73025b17fdb40330f9b7">◆ </a></span>addVisSensor() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">addVisSensor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vsr</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReq.html">VisionSensorReq</a>()</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>添加一个新的 <a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReq.html" title="VisionSensorReq结构体类，用于初始化各种与摄像机和传感器相关的参数">VisionSensorReq</a> 结构体到 VisSensor 列表中 </p>
+<pre class="fragment">Add a new VisionSensorReq struct to the list</pre>
+</div>
+</div>
+<a id="a4a077b224998eb3e6c5f29bef0772c3a" name="a4a077b224998eb3e6c5f29bef0772c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a077b224998eb3e6c5f29bef0772c3a">◆ </a></span>addVisSensor() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">addVisSensor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vsr</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReqNew.html">VisionSensorReqNew</a>()</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>添加一个新的 <a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReqNew.html" title="VisionSensorReqNew结构体类，用于初始化各种与摄像机和传感器相关的参数 在SensorType = 9的情况下">VisionSensorReqNew</a> 结构体到 VisSensorNew 列表中 </p>
+<p>和前一个析构函数名称一样，这个会替代掉上一个</p>
+<pre class="fragment">Add a new VisionSensorReq struct to the list</pre>
+</div>
+</div>
+<a id="a9fff0efeb83a1c0b4606ddffac7fcf1f" name="a9fff0efeb83a1c0b4606ddffac7fcf1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fff0efeb83a1c0b4606ddffac7fcf1f">◆ </a></span>endTimeStmplisten()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">endTimeStmplisten </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>停止时间戳监听功能 </p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a9fff0efeb83a1c0b4606ddffac7fcf1f_icgraph.svg" width="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a9bdf524c13fb972e4dfab08b68ae9b20" name="a9bdf524c13fb972e4dfab08b68ae9b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdf524c13fb972e4dfab08b68ae9b20">◆ </a></span>get_all_ip()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_all_ip </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取本机所有 IP 地址 </p>
+<ul>
+<li><a class="anchor" id="get_all_ip"></a> <dl class="section return"><dt>返回</dt><dd>返回本地IP地址列表。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a0b77c6e8bbf8d702ece0355fa1833060" name="a0b77c6e8bbf8d702ece0355fa1833060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b77c6e8bbf8d702ece0355fa1833060">◆ </a></span>getIMUDataLoop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getIMUDataLoop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copterID</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>接收来自CopterSim（模拟飞行器）的IMU（惯性测量单元）数据， </p>
+<p>并根据需要将其转换并发布到ROS（机器人操作系统） </p>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a0b77c6e8bbf8d702ece0355fa1833060_icgraph.svg" width="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a9c977ec04dbbf96665827637355a6f7e" name="a9c977ec04dbbf96665827637355a6f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c977ec04dbbf96665827637355a6f7e">◆ </a></span>getTimeStmp()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getTimeStmp </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取指定飞机的时间戳指针， </p>
+</div>
+</div>
+<a id="a1d8ed55a7d7e2bd75f5200d1b0d20898" name="a1d8ed55a7d7e2bd75f5200d1b0d20898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d8ed55a7d7e2bd75f5200d1b0d20898">◆ </a></span>img_mem_thrd()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">img_mem_thrd </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>idxList</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从共享内存读取数据并进行处理，以不同的传感器类型来解析数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">mmList</td><td>一个存储内存映射对象 (mmap) 的列表，用于管理多个传感器的共享内存映射 </td></tr>
+<tr><td class="paramname">dim</td><td>表示数据的维度 </td></tr>
+<tr><td class="paramname">dimSize</td><td>表示每个维度的数据大小 </td></tr>
+<tr><td class="paramname">otherSize</td><td>表示除主要数据外的额外数据大小（以字节为单位）</td></tr>
+</table>
+</dd>
+</dl>
+<p>与上面的img_udp_thrdNew析构函数主要区别就在与，这个析构函数是mm作为数据流，img_udp_thrdNew是data_total</p>
+<p>值得注意的是，mm的获取通过共享内存，通过mm = mmap.mmap()函数实现</p>
+<p>而data_total数据来源于buf, addr = udpSok.recvfrom()得到的buf（也就是通过UDP传输） <br/>
+</p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="63" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a1d8ed55a7d7e2bd75f5200d1b0d20898_cgraph.svg" width="447"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a1d8ed55a7d7e2bd75f5200d1b0d20898_icgraph.svg" width="260"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="af5b9ff08c785903546f906925d994d27" name="af5b9ff08c785903546f906925d994d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b9ff08c785903546f906925d994d27">◆ </a></span>img_udp_thrdNew()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">img_udp_thrdNew </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>udpSok</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>idx</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>typeID</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>定义了一个线程，用于通过 UDP 接收图像数据包，并根据特定协议解析和处理这些数据包 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CheckSum</td><td>用于存储校验和 </td></tr>
+<tr><td class="paramname">CheckSumSize</td><td>校验和的大小（字节数） </td></tr>
+<tr><td class="paramname">fhead_len</td><td>数据包头的长度 </td></tr>
+<tr><td class="paramname">imgPackUnit</td><td>图像数据包的单位大小 </td></tr>
+<tr><td class="paramname">Frameid</td><td>帧 ID，用于区分不同帧的数据包 </td></tr>
+<tr><td class="paramname">seqList</td><td>存储数据包的序号 </td></tr>
+<tr><td class="paramname">dataList</td><td>存储数据包的书局 </td></tr>
+<tr><td class="paramname">timeList</td><td>存储数据包的时间戳 </td></tr>
+<tr><td class="paramname">recPackNum</td><td>记录接收到的包数量 </td></tr>
+<tr><td class="paramname">timeStmpStore</td><td>存储时间戳 </td></tr>
+<tr><td class="paramname">no_fid_len</td><td>不包含帧 ID 的包头长度 </td></tr>
+<tr><td class="paramname">fid_len</td><td>包含帧 ID 的包头长度 </td></tr>
+<tr><td class="paramname">dd</td><td>临时存储解析后的数据</td></tr>
+</table>
+</dd>
+</dl>
+<p>整个函数处理的过程主要为一下部分：先是数据对齐，也就是会按照数据包的形式接收数据，需要对数据包进行校验， 对不符合的数据丢弃，对乱序的数据正确排序等等，也就是尽可能恢复成可用的有效的数据包</p>
+<p>其次，当数据包校验后，开始对齐数据的时间戳，主要分为两部分，一是图片类型的，二是点云类型的 特别说明的是，点云类型处理中，还对数据进行了归一化，然后乘上配置系数，从而得到正确的数值 （需要理解的是，传感器获得的数据并不是对应仿真或者现实世界的，需要转化为需要的坐标系下的数据）</p>
+<p>接着是测距传感器和深度转点云的传感器处理，都是从数据中提出相应的数值进行赋值，深度转点云后面还有上述点云归一化后的处理</p>
+<p>再到后面就是给话题名赋值，每一个typeid对应的话题名称是什么，进行赋值</p>
+<p>最后就是对点云数据进行赋值，设置了一个pointcloud2类型的msg，进行赋值。然后区分ros版本，把数据发布出去 </p>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_af5b9ff08c785903546f906925d994d27_icgraph.svg" width="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="acd00c8d0488929bc3e87dc9204a56042" name="acd00c8d0488929bc3e87dc9204a56042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd00c8d0488929bc3e87dc9204a56042">◆ </a></span>isIpLocal()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isIpLocal </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>判断IP地址是否为本地IP </p>
+<ul>
+<li><a class="anchor" id="isIpLocal"></a> <dl class="section return"><dt>返回</dt><dd>返回本地IP地址列表。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_acd00c8d0488929bc3e87dc9204a56042_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ac439398f97749ea48dfd91fb18c100ae" name="ac439398f97749ea48dfd91fb18c100ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac439398f97749ea48dfd91fb18c100ae">◆ </a></span>jsonLoad()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">jsonLoad </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ChangeMode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>jsonPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">""</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用来从配置文件 Config.json 中加载相机配置信息，并根据配置信息创建相机列表 @ChangeMode（默认为-1） 转化模式 </p>
+<ul>
+<li>-1表示默认不切换模式<ul>
+<li>&gt;=0表示将SendProtocol[0]设置为转化模式 <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">jsonPath（默认为空）</td><td>配置文件的路径 先选中json文件，然后读取文件内容，检查内容是否符合格式（是否为int类型等等），最后赋值</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">load config.json file to create camera list for image capture,
+if ChangeMode&gt;=0, then the SendProtocol[0] will be set to ChangeMode to change the transfer style
+</pre> </li>
+</ul>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="118" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_ac439398f97749ea48dfd91fb18c100ae_cgraph.svg" width="664"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a8f69aeccc41b656e9aacee0a3b3dd5fc" name="a8f69aeccc41b656e9aacee0a3b3dd5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f69aeccc41b656e9aacee0a3b3dd5fc">◆ </a></span>sendImgBuffer()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendImgBuffer </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>idx</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>data</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于将图像数据分割为固定大小的数据包，并添加头部信息后发送 -<a class="anchor" id="sendImgBuffer"></a></p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">idx</td><td>图像的索引 </td></tr>
+<tr><td class="paramname">data</td><td>图像数据<ul>
+<li>imgPackUnit 定义了每个数据包的最大大小</li>
+<li>imgLen 表示整个图像数据的长度，即数据流的总字节数</li>
+<li>imgpackNum 表示将图像数据分割成的数据包数量</li>
+<li>CheckSum 用作校验和，确保数据在传输过程中的完整性</li>
+<li>timeStmpSend 表示发送图像数据时的时间戳 </li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="63" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a8f69aeccc41b656e9aacee0a3b3dd5fc_icgraph.svg" width="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a10eee193cf6fd47b0c23d5f8bf3ce023" name="a10eee193cf6fd47b0c23d5f8bf3ce023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10eee193cf6fd47b0c23d5f8bf3ce023">◆ </a></span>sendImgUDPNew()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendImgUDPNew </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>idx</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于图像数据的UDP发送 </p>
+<ul>
+<li><a class="anchor" id="sendImgUDPNew"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">idx</td><td>图像的索引 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a10eee193cf6fd47b0c23d5f8bf3ce023_cgraph.svg" width="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a10eee193cf6fd47b0c23d5f8bf3ce023_icgraph.svg" width="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ab2462a6cb4978e34c953d1b49735804f" name="ab2462a6cb4978e34c953d1b49735804f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2462a6cb4978e34c953d1b49735804f">◆ </a></span>sendImuReqClient()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendImuReqClient </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">"127.0.0.1"</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>freq</em></span><span class="paramdefsep"> = </span><span class="paramdefval">200</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送命令到 CopterSim 请求IMU数据 </p>
+<pre class="fragment">send command to CopterSim to request IMU data
+copterID is the CopterID
+IP is the IP of the PC to send request to
+port is the base port that CopterSim send to
+(Actual port for a vehicle = baseport + copterID -1)
+freq is the frequency of the send data
+</pre> <div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_ab2462a6cb4978e34c953d1b49735804f_cgraph.svg" width="338"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_ab2462a6cb4978e34c953d1b49735804f_icgraph.svg" width="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad4e46526719d42015eb47dcd276693d2" name="ad4e46526719d42015eb47dcd276693d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e46526719d42015eb47dcd276693d2">◆ </a></span>sendImuReqCopterSim()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendImuReqCopterSim </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">"127.0.0.1"</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>freq</em></span><span class="paramdefsep"> = </span><span class="paramdefval">200</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送请求给 CopterSim 以获取 IMU 数据，并初始化一个线程监听 IMU 数据 </p>
+<pre class="fragment">send command to CopterSim to request IMU data
+copterID is the CopterID
+IP is the IP of the PC to send request to
+port is the base port that CopterSim send to
+(Actual port for a vehicle = baseport + copterID -1)
+freq is the frequency of the send data
+This function will init a thread to listen IMU data
+</pre> <div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_ad4e46526719d42015eb47dcd276693d2_cgraph.svg" width="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="abc5b593be1dbe4128363457b6aad2678" name="abc5b593be1dbe4128363457b6aad2678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5b593be1dbe4128363457b6aad2678">◆ </a></span>sendImuReqServe()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendImuReqServe </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送命令到 CopterSim 请求IMU数据，并初始化一个线程监听IMU数据 </p>
+<pre class="fragment">send command to CopterSim to request IMU data
+copterID is the CopterID
+port is the base port that CopterSim send to
+(Actual port for a vehicle = baseport + copterID -1)
+This function will init a thread to listen IMU data
+</pre> <div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_abc5b593be1dbe4128363457b6aad2678_cgraph.svg" width="308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_abc5b593be1dbe4128363457b6aad2678_icgraph.svg" width="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aa4bf952ee144164cb264d3250b206edc" name="aa4bf952ee144164cb264d3250b206edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4bf952ee144164cb264d3250b206edc">◆ </a></span>sendReqToCopterSim()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReqToCopterSim </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>srcs</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1SensorReqCopterSim.html">SensorReqCopterSim</a>()</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送一个 <a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1SensorReqCopterSim.html" title="SensorReqCopterSim结构体类，用于向UE4请求传感器数据的">SensorReqCopterSim</a> 类的 UDP 消息给 CopterSim 以请求传感器数据 </p>
+<pre class="fragment">send UDP message SensorReqCopterSim to CopterSim to request a sensor data
+the copterID specify the index of CopterSim to request
+</pre> <div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_aa4bf952ee144164cb264d3250b206edc_icgraph.svg" width="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="add972b32243d4f6b1f966a6825d2599e" name="add972b32243d4f6b1f966a6825d2599e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add972b32243d4f6b1f966a6825d2599e">◆ </a></span>sendReqToUE4()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendReqToUE4 </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">""</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于将视觉传感器列表发送到 RflySim3D 以请求图像 </p>
+<ul>
+<li><a class="anchor" id="sendReqToUE4"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">windID（默认为</td><td>0） 窗口号 </td></tr>
+<tr><td class="paramname">IP（默认为空）</td><td>目标IP地址 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空</dd></dl>
+<pre class="fragment">send VisSensor list to RflySim3D to request image
+windID specify the index of RflySim3D window to send image
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-16-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-16-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-16-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="171" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_add972b32243d4f6b1f966a6825d2599e_cgraph.svg" width="598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a7dd34f79e324afda9bbed53621df2aff" name="a7dd34f79e324afda9bbed53621df2aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd34f79e324afda9bbed53621df2aff">◆ </a></span>sendUE4Cmd()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendUE4Cmd </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于发送命令到UE4应用程序的一个或多个窗口。 它将命令转换成合适的格式，并通过UDP协议发送到指定的IP地址和端口 </p>
+<div class="dynheader closed" id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-17-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-17-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-17-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="419" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a7dd34f79e324afda9bbed53621df2aff_icgraph.svg" width="642"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad4ee74aa567bc33785c1875f10cae15d" name="ad4ee74aa567bc33785c1875f10cae15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ee74aa567bc33785c1875f10cae15d">◆ </a></span>sendUpdateUEImage()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendUpdateUEImage </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vs</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReq.html">VisionSensorReq</a>()</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">""</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>向指定IP地址和端口发送图像更新请求 </p>
+<ul>
+<li><a class="anchor" id="sendUpdateUEImage"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vs</td><td>视觉传感器请求对象,用于初始化各种与摄像机和传感器相关的参数 </td></tr>
+<tr><td class="paramname">windID（默认为</td><td>0） 视觉传感器ID </td></tr>
+<tr><td class="paramname">IP（默认为空）</td><td>目标IP地址 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a9ce25fc5b3c7a695922016b0f7997835" name="a9ce25fc5b3c7a695922016b0f7997835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce25fc5b3c7a695922016b0f7997835">◆ </a></span>sendUpdateUEImaged()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendUpdateUEImaged </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vs</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionSensorReqNew.html">VisionSensorReqNew</a>()</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>windID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">""</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>向指定IP地址和端口发送图像更新请求 </p>
+<ul>
+<li><a class="anchor" id="sendUpdateUEImage"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vs</td><td>视觉传感器请求对象,用于初始化各种与摄像机和传感器相关的参数 </td></tr>
+<tr><td class="paramname">windID（默认为</td><td>0） 视觉传感器ID </td></tr>
+<tr><td class="paramname">IP（默认为空）</td><td>目标IP地址 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="af1e50bb2020628758ed286f0876443be" name="af1e50bb2020628758ed286f0876443be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e50bb2020628758ed286f0876443be">◆ </a></span>startImgCap()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">startImgCap </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isRemoteSend</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于启动图像捕获的循环过程，先是一些初始化，然后根据SendProtocol[0]来判断是内存共享还是UDP传输，分别进行相应的处理函数 </p>
+<p>memList 存储需要从内存接收图像的传感器索引列表</p>
+<p>udpList 存储需要从UDP接收图像的传感器索引列表 </p><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">isRemoteSend（默认为False）</td><td>是否将图像从共享内存转发到UDP端口<ul>
+<li>False表示将将图像从共享内存转发到UDP端口</li>
+<li>True表示将将图像从共享内存转发到UDP端口</li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">start loop to receive image from UE4,
+isRemoteSend=true will forward image from memory to UDP port
+</pre> <div class="dynheader closed" id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-18-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-18-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-18-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_af1e50bb2020628758ed286f0876443be_cgraph.svg" width="607"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aa60b23bcc108b72b93d4fe6495e5e792" name="aa60b23bcc108b72b93d4fe6495e5e792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60b23bcc108b72b93d4fe6495e5e792">◆ </a></span>StartTimeStmplisten()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">StartTimeStmplisten </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>通过UDP套接字监听特定端口（20005端口），以获取CopterID的时间戳信息 </p>
+<pre class="fragment">Start to listen to 20005 port to get RflyTimeStmp of CopterID</pre> <div class="dynheader closed" id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-19-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-19-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-19-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_aa60b23bcc108b72b93d4fe6495e5e792_cgraph.svg" width="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-20-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-20-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-20-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_aa60b23bcc108b72b93d4fe6495e5e792_icgraph.svg" width="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a3d6b42d0ece15f674e35d507b49db37b" name="a3d6b42d0ece15f674e35d507b49db37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6b42d0ece15f674e35d507b49db37b">◆ </a></span>TimeStmploop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">TimeStmploop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于监听来自特定UDP端口的时间戳消息，并根据接收到的消息更新时间戳信息 </p>
+<div class="dynheader closed" id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-21-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-21-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-21-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a3d6b42d0ece15f674e35d507b49db37b_cgraph.svg" width="355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-22-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-22-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-22-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi_a3d6b42d0ece15f674e35d507b49db37b_icgraph.svg" width="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aee3a3ecd0211ce72869d7223d21cdcd0" name="aee3a3ecd0211ce72869d7223d21cdcd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3a3ecd0211ce72869d7223d21cdcd0">◆ </a></span>hasData</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">hasData</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储布尔值列表，表示是否有新数据 </p>
+</div>
+</div>
+<a id="ad32c3cd1c4558a0ed51c69e97b52c857" name="ad32c3cd1c4558a0ed51c69e97b52c857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32c3cd1c4558a0ed51c69e97b52c857">◆ </a></span>hasIMUData</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">hasIMUData</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于布尔值，表示是否有新的 IMU 数据 </p>
+</div>
+</div>
+<a id="ad4df11274ad9af8cbb16626dbff9551c" name="ad4df11274ad9af8cbb16626dbff9551c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4df11274ad9af8cbb16626dbff9551c">◆ </a></span>hasReqUE4</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">hasReqUE4</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于布尔值，表示是否已经向 UE4 请求了数据 </p>
+</div>
+</div>
+<a id="aabe6aad5d00fba9b50e45b2daf7b065d" name="aabe6aad5d00fba9b50e45b2daf7b065d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe6aad5d00fba9b50e45b2daf7b065d">◆ </a></span>hostIp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">hostIp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于获取并存储本机电脑的IP地址 </p>
+</div>
+</div>
+<a id="a86727dcea7603d773241ac4493aaa7e0" name="a86727dcea7603d773241ac4493aaa7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86727dcea7603d773241ac4493aaa7e0">◆ </a></span>Img</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Img</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储从视觉传感器获取的图像数据的列表 </p>
+</div>
+</div>
+<a id="ae1c973dc618664b63bd04f5a52ad4a88" name="ae1c973dc618664b63bd04f5a52ad4a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c973dc618664b63bd04f5a52ad4a88">◆ </a></span>Img_lock</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Img_lock</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于实现类似多线程的数据同步，防止多个线程同时访问图像数据 </p>
+</div>
+</div>
+<a id="a5d6531e20f29c54f415090684e72be83" name="a5d6531e20f29c54f415090684e72be83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6531e20f29c54f415090684e72be83">◆ </a></span>ImgData</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ImgData</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储图像数据的实际内容 </p>
+</div>
+</div>
+<a id="a9c9f2be56c8023058081bb9ea21b99e3" name="a9c9f2be56c8023058081bb9ea21b99e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9f2be56c8023058081bb9ea21b99e3">◆ </a></span>imgStmp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">imgStmp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储图像数据的时间戳列表 </p>
+</div>
+</div>
+<a id="afd65cf072a93c93ad52b9f25b341e10b" name="afd65cf072a93c93ad52b9f25b341e10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd65cf072a93c93ad52b9f25b341e10b">◆ </a></span>ip</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ip</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储传入的 IP 地址 </p>
+</div>
+</div>
+<a id="a11021b0b83ef748f00d834899cc627ab" name="a11021b0b83ef748f00d834899cc627ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11021b0b83ef748f00d834899cc627ab">◆ </a></span>IpList</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">IpList</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储需要通信的目标 IP 地址列表 </p>
+</div>
+</div>
+<a id="ab6a372605f831a6e99d96c3e55e939f3" name="ab6a372605f831a6e99d96c3e55e939f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a372605f831a6e99d96c3e55e939f3">◆ </a></span>isNewJson</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"># 使用新版协议发送 isNewJson</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>布尔值，表示是否使用新的 JSON 数据格式 </p>
+</div>
+</div>
+<a id="a258e6495f4d04b862a79e30554f5830b" name="a258e6495f4d04b862a79e30554f5830b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258e6495f4d04b862a79e30554f5830b">◆ </a></span>isPrintTime</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isPrintTime</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>布尔值，表示是否打印时间信息 </p>
+</div>
+</div>
+<a id="aca7a6d34ee5bc21f1082161dfeeeb63b" name="aca7a6d34ee5bc21f1082161dfeeeb63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7a6d34ee5bc21f1082161dfeeeb63b">◆ </a></span>isRemoteSend</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isRemoteSend</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>布尔值，表示是否启用远程发送 </p>
+</div>
+</div>
+<a id="acfd7a65601e955ec276aacabc9a904d4" name="acfd7a65601e955ec276aacabc9a904d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd7a65601e955ec276aacabc9a904d4">◆ </a></span>isUE4DirectUDP</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isUE4DirectUDP</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>布尔值，表示是否直接通过 UDP 与 UE4 进行通信 </p>
+</div>
+</div>
+<a id="a623d0ddfdb24d5af52337c036ddb27b5" name="a623d0ddfdb24d5af52337c036ddb27b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623d0ddfdb24d5af52337c036ddb27b5">◆ </a></span>lastIMUTime</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">lastIMUTime</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>记录最后一次接收到的 IMU 数据的时间 </p>
+</div>
+</div>
+<a id="a005f93369f05101ed7d72a6bb346a931" name="a005f93369f05101ed7d72a6bb346a931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005f93369f05101ed7d72a6bb346a931">◆ </a></span>portList</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">portList</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储需要通信的目标端口号列表 </p>
+</div>
+</div>
+<a id="a4a27a3b67314ec209125bdc5993096db" name="a4a27a3b67314ec209125bdc5993096db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a27a3b67314ec209125bdc5993096db">◆ </a></span>RemotSendIP</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">RemotSendIP</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储远程发送的目标 IP 地址 </p>
+</div>
+</div>
+<a id="a7fe8b824e5d0f1cec8b76b251f7a88b2" name="a7fe8b824e5d0f1cec8b76b251f7a88b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe8b824e5d0f1cec8b76b251f7a88b2">◆ </a></span>RflyLocalIPVect</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"># 为本机 RflyLocalIPVect</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储本电脑的所有本地IP地址，用于判断数据是否来着本机 </p>
+</div>
+</div>
+<a id="abc8fab73546f36368d342f7afc488895" name="abc8fab73546f36368d342f7afc488895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8fab73546f36368d342f7afc488895">◆ </a></span>rflyStartStmp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">rflyStartStmp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储 Rfly 仿真开始的时间戳列表 </p>
+</div>
+</div>
+<a id="a51c9c8ae3bfde53994362ed68af45813" name="a51c9c8ae3bfde53994362ed68af45813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c9c8ae3bfde53994362ed68af45813">◆ </a></span>RflyTimeVect</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">RflyTimeVect</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储 Rfly 时间向量的列表，用于记录时间同步信息 </p>
+</div>
+</div>
+<a id="ad6029ec4c0a1dba1d4fa1d6477b1f8d8" name="ad6029ec4c0a1dba1d4fa1d6477b1f8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6029ec4c0a1dba1d4fa1d6477b1f8d8">◆ </a></span>sensors_num</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sensors_num</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储传感器的数量 </p>
+</div>
+</div>
+<a id="ab138904660c050edffe0b9384e5ed7ec" name="ab138904660c050edffe0b9384e5ed7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab138904660c050edffe0b9384e5ed7ec">◆ </a></span>sleepCheck</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sleepCheck</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于设定数据请求的时间间隔，单位为秒 </p>
+</div>
+</div>
+<a id="a9927793f1f69327ecd9ebf938e0deb92" name="a9927793f1f69327ecd9ebf938e0deb92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9927793f1f69327ecd9ebf938e0deb92">◆ </a></span>startTime</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">startTime</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于记录类实例化时的起始时间，用于计算运行时间 </p>
+</div>
+</div>
+<a id="a35fb36917a64bcde5a64a2514479ff1f" name="a35fb36917a64bcde5a64a2514479ff1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fb36917a64bcde5a64a2514479ff1f">◆ </a></span>timeStmp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">timeStmp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储时间戳的列表，用于记录每个传感器数据的时间 </p>
+</div>
+</div>
+<a id="a0ad6d481cc9c9ccfcd544efb2950bf35" name="a0ad6d481cc9c9ccfcd544efb2950bf35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad6d481cc9c9ccfcd544efb2950bf35">◆ </a></span>tTimeStmpFlag</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">tTimeStmpFlag</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>布尔值，表示时间戳标志位，用于时间同步的控制 </p>
+</div>
+</div>
+<a id="a51884e81ac4f8299f37b288b28a22735" name="a51884e81ac4f8299f37b288b28a22735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51884e81ac4f8299f37b288b28a22735">◆ </a></span>udp_imu</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">udp_imu</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于IMU数据的UDP套接字 </p>
+</div>
+</div>
+<a id="ae39156fb07ed42ab04b44381baa97ac7" name="ae39156fb07ed42ab04b44381baa97ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae39156fb07ed42ab04b44381baa97ac7">◆ </a></span>udp_socket</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">udp_socket</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于UDP通信的套接字 </p>
+</div>
+</div>
+<a id="af69b2f64afc2a99fbe70a92c9a6f807f" name="af69b2f64afc2a99fbe70a92c9a6f807f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af69b2f64afc2a99fbe70a92c9a6f807f">◆ </a></span>VisSensor</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">VisSensor</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储视觉传感器的列表 </p>
+</div>
+</div>
+<a id="adfb852ccbb5a5a1946ffe0efab0e16f2" name="adfb852ccbb5a5a1946ffe0efab0e16f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb852ccbb5a5a1946ffe0efab0e16f2">◆ </a></span>VisSensorNew</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">VisSensorNew</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于存储新添加的视觉传感器的列表 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="VisionCaptureApi_8py.html">VisionCaptureApi.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

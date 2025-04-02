@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: phm/AutoREG.py 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_dc0e21c986d214dbf5864782b8c2b016.html">phm</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#var-members">变量</a> </div>
+<div class="headertitle"><div class="title">AutoREG.py 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>该文件定义了QGCCtrlAPI类，用于与QGroundControl进行通信。 QGCCtrlAPI类提供了发送MAVLink命令和处理QGroundControl日志的功能。 <a class="anchor" id="AutoREG接口库文件"></a>
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ac8f7e10204532eb5ddaf458dde08cb94" id="r_ac8f7e10204532eb5ddaf458dde08cb94"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8f7e10204532eb5ddaf458dde08cb94">RFLYSIM_FRAME</a></td></tr>
+<tr class="separator:ac8f7e10204532eb5ddaf458dde08cb94"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adb69f43bc44692647fbac0b6afd4ee0f" id="r_adb69f43bc44692647fbac0b6afd4ee0f"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#adb69f43bc44692647fbac0b6afd4ee0f">QUAD_CMD_CTRL_MAP_REG</a></td></tr>
+<tr class="separator:adb69f43bc44692647fbac0b6afd4ee0f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab7020c2ac036d4d672fdf4b3c35d37d2" id="r_ab7020c2ac036d4d672fdf4b3c35d37d2"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7020c2ac036d4d672fdf4b3c35d37d2">FIXED_CMD_CTRL_MAP_REG</a></td></tr>
+<tr class="separator:ab7020c2ac036d4d672fdf4b3c35d37d2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab334a831514ae5b5d5b8c1be57ae0564" id="r_ab334a831514ae5b5d5b8c1be57ae0564"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab334a831514ae5b5d5b8c1be57ae0564">RFLYSIM_CMD</a></td></tr>
+<tr class="separator:ab334a831514ae5b5d5b8c1be57ae0564"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c00713997191e67fbda3764373e1ef3" id="r_a4c00713997191e67fbda3764373e1ef3"><td align="right" class="memItemLeft" valign="top"><a id="a4c00713997191e67fbda3764373e1ef3" name="a4c00713997191e67fbda3764373e1ef3"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_NUM</b> = 0</td></tr>
+<tr class="separator:a4c00713997191e67fbda3764373e1ef3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a357ee03d31708d08d90695f4dd5e7f1c" id="r_a357ee03d31708d08d90695f4dd5e7f1c"><td align="right" class="memItemLeft" valign="top"><a id="a357ee03d31708d08d90695f4dd5e7f1c" name="a357ee03d31708d08d90695f4dd5e7f1c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_QUADCOPTER_NUM</b> = 0</td></tr>
+<tr class="separator:a357ee03d31708d08d90695f4dd5e7f1c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac377ad1f2738361f0eae903c45a373e" id="r_aac377ad1f2738361f0eae903c45a373e"><td align="right" class="memItemLeft" valign="top"><a id="aac377ad1f2738361f0eae903c45a373e" name="aac377ad1f2738361f0eae903c45a373e"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_FIXEXWING_NUM</b> = 0</td></tr>
+<tr class="separator:aac377ad1f2738361f0eae903c45a373e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a44e204ea89cccfc5d7bbccdc5f8b1040" id="r_a44e204ea89cccfc5d7bbccdc5f8b1040"><td align="right" class="memItemLeft" valign="top"><a id="a44e204ea89cccfc5d7bbccdc5f8b1040" name="a44e204ea89cccfc5d7bbccdc5f8b1040"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_VTOL_NUM</b> = 0</td></tr>
+<tr class="separator:a44e204ea89cccfc5d7bbccdc5f8b1040"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb6e1728bcd199067315635dee130f3a" id="r_acb6e1728bcd199067315635dee130f3a"><td align="right" class="memItemLeft" valign="top"><a id="acb6e1728bcd199067315635dee130f3a" name="acb6e1728bcd199067315635dee130f3a"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_CASE_DISTRIBUTION_QUADCOPTER</b> = 0</td></tr>
+<tr class="separator:acb6e1728bcd199067315635dee130f3a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a19efbacf82bd80cbe40f50c2e1ac688e" id="r_a19efbacf82bd80cbe40f50c2e1ac688e"><td align="right" class="memItemLeft" valign="top"><a id="a19efbacf82bd80cbe40f50c2e1ac688e" name="a19efbacf82bd80cbe40f50c2e1ac688e"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_CASE_DISTRIBUTION_FIXEXWING</b> = 0</td></tr>
+<tr class="separator:a19efbacf82bd80cbe40f50c2e1ac688e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a632eeb9ffb000788c7108d0e6a08097d" id="r_a632eeb9ffb000788c7108d0e6a08097d"><td align="right" class="memItemLeft" valign="top"><a id="a632eeb9ffb000788c7108d0e6a08097d" name="a632eeb9ffb000788c7108d0e6a08097d"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_CASE_DISTRIBUTION_VTOL</b> = 0</td></tr>
+<tr class="separator:a632eeb9ffb000788c7108d0e6a08097d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa41b9bc2681f80f126f61988eaf05b69" id="r_aa41b9bc2681f80f126f61988eaf05b69"><td align="right" class="memItemLeft" valign="top"><a id="aa41b9bc2681f80f126f61988eaf05b69" name="aa41b9bc2681f80f126f61988eaf05b69"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_CASE_LEN</b> = 0</td></tr>
+<tr class="separator:aa41b9bc2681f80f126f61988eaf05b69"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a6cc8a2263f48a04f5c8b1f30cbe5a2" id="r_a7a6cc8a2263f48a04f5c8b1f30cbe5a2"><td align="right" class="memItemLeft" valign="top"><a id="a7a6cc8a2263f48a04f5c8b1f30cbe5a2" name="a7a6cc8a2263f48a04f5c8b1f30cbe5a2"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_DATA_DISTRIBUTION_QUADCOPTER</b> = 0</td></tr>
+<tr class="separator:a7a6cc8a2263f48a04f5c8b1f30cbe5a2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aabfd05eb2a349290b0979eac4b68b030" id="r_aabfd05eb2a349290b0979eac4b68b030"><td align="right" class="memItemLeft" valign="top"><a id="aabfd05eb2a349290b0979eac4b68b030" name="aabfd05eb2a349290b0979eac4b68b030"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_DATA_DISTRIBUTION_FIXEXWING</b> = 0</td></tr>
+<tr class="separator:aabfd05eb2a349290b0979eac4b68b030"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4913e970d82ca6c0a01f97cfa2fd71b4" id="r_a4913e970d82ca6c0a01f97cfa2fd71b4"><td align="right" class="memItemLeft" valign="top"><a id="a4913e970d82ca6c0a01f97cfa2fd71b4" name="a4913e970d82ca6c0a01f97cfa2fd71b4"></a>
+int </td><td class="memItemRight" valign="bottom"><b>MAV_DATA_DISTRIBUTION_VTOL</b> = 0</td></tr>
+<tr class="separator:a4913e970d82ca6c0a01f97cfa2fd71b4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aae9266d97d838a375605b69000c60617" id="r_aae9266d97d838a375605b69000c60617"><td align="right" class="memItemLeft" valign="top"><a id="aae9266d97d838a375605b69000c60617" name="aae9266d97d838a375605b69000c60617"></a>
+ </td><td class="memItemRight" valign="bottom"><b>MAV_FRAME</b> = None</td></tr>
+<tr class="separator:aae9266d97d838a375605b69000c60617"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a93b0d6da5fdfd69440c86517ccaaa041" id="r_a93b0d6da5fdfd69440c86517ccaaa041"><td align="right" class="memItemLeft" valign="top"><a id="a93b0d6da5fdfd69440c86517ccaaa041" name="a93b0d6da5fdfd69440c86517ccaaa041"></a>
+ </td><td class="memItemRight" valign="bottom"><b>MAV_FRAME_NUM</b> = None</td></tr>
+<tr class="separator:a93b0d6da5fdfd69440c86517ccaaa041"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9afa2baf7596eb9dc2cddf2d8b01ea36" id="r_a9afa2baf7596eb9dc2cddf2d8b01ea36"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9afa2baf7596eb9dc2cddf2d8b01ea36">MAV_FRAME_DICT</a></td></tr>
+<tr class="separator:a9afa2baf7596eb9dc2cddf2d8b01ea36"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aad0d0760d1cd9f2c98c12aa3a45d752a" id="r_aad0d0760d1cd9f2c98c12aa3a45d752a"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#aad0d0760d1cd9f2c98c12aa3a45d752a">MAV_TEST_CASE_REG</a></td></tr>
+<tr class="separator:aad0d0760d1cd9f2c98c12aa3a45d752a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af2b26a0b46bcdbd44ada4c6afb9d7afa" id="r_af2b26a0b46bcdbd44ada4c6afb9d7afa"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#af2b26a0b46bcdbd44ada4c6afb9d7afa">MAV_CASE_INDEX</a></td></tr>
+<tr class="separator:af2b26a0b46bcdbd44ada4c6afb9d7afa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a661b5649dff8d90f564f6a787fb7ad22" id="r_a661b5649dff8d90f564f6a787fb7ad22"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#a661b5649dff8d90f564f6a787fb7ad22">MAV_DATA_FOLDER_REG</a></td></tr>
+<tr class="separator:a661b5649dff8d90f564f6a787fb7ad22"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1772ea89e01570c20252b0c0378cadd8" id="r_a1772ea89e01570c20252b0c0378cadd8"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1772ea89e01570c20252b0c0378cadd8">DIND_REG</a></td></tr>
+<tr class="separator:a1772ea89e01570c20252b0c0378cadd8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab806ce45c4bec015cc46078fd36a3f6b" id="r_ab806ce45c4bec015cc46078fd36a3f6b"><td align="right" class="memItemLeft" valign="top"><a id="ab806ce45c4bec015cc46078fd36a3f6b" name="ab806ce45c4bec015cc46078fd36a3f6b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>MAV_CONF</b> = None</td></tr>
+<tr class="separator:ab806ce45c4bec015cc46078fd36a3f6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2d7bda8001693720381ca306bad2a286" id="r_a2d7bda8001693720381ca306bad2a286"><td align="right" class="memItemLeft" valign="top"><a id="a2d7bda8001693720381ca306bad2a286" name="a2d7bda8001693720381ca306bad2a286"></a>
+ </td><td class="memItemRight" valign="bottom"><b>TEST_MODE</b> = None</td></tr>
+<tr class="separator:a2d7bda8001693720381ca306bad2a286"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae84498b632d9960ee725a41fe23cca18" id="r_ae84498b632d9960ee725a41fe23cca18"><td align="right" class="memItemLeft" valign="top"><a id="ae84498b632d9960ee725a41fe23cca18" name="ae84498b632d9960ee725a41fe23cca18"></a>
+int </td><td class="memItemRight" valign="bottom"><b>SIM_WAIT_TIME</b> = 25</td></tr>
+<tr class="separator:ae84498b632d9960ee725a41fe23cca18"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a26074841bf46755cc61b644286c6bba2" id="r_a26074841bf46755cc61b644286c6bba2"><td align="right" class="memItemLeft" valign="top"><a id="a26074841bf46755cc61b644286c6bba2" name="a26074841bf46755cc61b644286c6bba2"></a>
+int </td><td class="memItemRight" valign="bottom"><b>SIM_WAIT_TIME_REG</b> = SIM_WAIT_TIME</td></tr>
+<tr class="separator:a26074841bf46755cc61b644286c6bba2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa83aa86b5794a017d2eabb9ca253091e" id="r_aa83aa86b5794a017d2eabb9ca253091e"><td align="right" class="memItemLeft" valign="top"><a id="aa83aa86b5794a017d2eabb9ca253091e" name="aa83aa86b5794a017d2eabb9ca253091e"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>LOOP_KEY_DOWN</b> = False</td></tr>
+<tr class="separator:aa83aa86b5794a017d2eabb9ca253091e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa1a91f18b8c7e912ca1ab82baa711a33" id="r_aa1a91f18b8c7e912ca1ab82baa711a33"><td align="right" class="memItemLeft" valign="top"><a id="aa1a91f18b8c7e912ca1ab82baa711a33" name="aa1a91f18b8c7e912ca1ab82baa711a33"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>SIM_START_PRO_ALL_DOWM</b> = False</td></tr>
+<tr class="separator:aa1a91f18b8c7e912ca1ab82baa711a33"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3b2201eac7a2609c49f80329bf8d758e" id="r_a3b2201eac7a2609c49f80329bf8d758e"><td align="right" class="memItemLeft" valign="top"><a id="a3b2201eac7a2609c49f80329bf8d758e" name="a3b2201eac7a2609c49f80329bf8d758e"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>SIM_END_PRO_ALL_DOWM</b> = False</td></tr>
+<tr class="separator:a3b2201eac7a2609c49f80329bf8d758e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab70aff4435d69993d396b9b5cbcf15cd" id="r_ab70aff4435d69993d396b9b5cbcf15cd"><td align="right" class="memItemLeft" valign="top"><a id="ab70aff4435d69993d396b9b5cbcf15cd" name="ab70aff4435d69993d396b9b5cbcf15cd"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>SIM_END_PRO_ALL_DOWM_KEY</b> = False</td></tr>
+<tr class="separator:ab70aff4435d69993d396b9b5cbcf15cd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4aedf60a22ba9d62d5eb635c3bcf002a" id="r_a4aedf60a22ba9d62d5eb635c3bcf002a"><td align="right" class="memItemLeft" valign="top"><a id="a4aedf60a22ba9d62d5eb635c3bcf002a" name="a4aedf60a22ba9d62d5eb635c3bcf002a"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>DATA_ALL_DOWN</b> = False</td></tr>
+<tr class="separator:a4aedf60a22ba9d62d5eb635c3bcf002a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2185c4797557cebc8933d906e188951d" id="r_a2185c4797557cebc8933d906e188951d"><td align="right" class="memItemLeft" valign="top"><a id="a2185c4797557cebc8933d906e188951d" name="a2185c4797557cebc8933d906e188951d"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>ARMED_WARN</b> = False</td></tr>
+<tr class="separator:a2185c4797557cebc8933d906e188951d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3adc4846a8a991615d7404e387ecd952" id="r_a3adc4846a8a991615d7404e387ecd952"><td align="right" class="memItemLeft" valign="top"><a id="a3adc4846a8a991615d7404e387ecd952" name="a3adc4846a8a991615d7404e387ecd952"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>BREAK_DOWN</b> = False</td></tr>
+<tr class="separator:a3adc4846a8a991615d7404e387ecd952"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6cb1a832fe084b957ad173400acb6871" id="r_a6cb1a832fe084b957ad173400acb6871"><td align="right" class="memItemLeft" valign="top"><a id="a6cb1a832fe084b957ad173400acb6871" name="a6cb1a832fe084b957ad173400acb6871"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>WARN_FLAG</b> = False</td></tr>
+<tr class="separator:a6cb1a832fe084b957ad173400acb6871"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0ea71e68d8324918447b149f99be918c" id="r_a0ea71e68d8324918447b149f99be918c"><td align="right" class="memItemLeft" valign="top"><a id="a0ea71e68d8324918447b149f99be918c" name="a0ea71e68d8324918447b149f99be918c"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>ALL_FINISHED</b> = False</td></tr>
+<tr class="separator:a0ea71e68d8324918447b149f99be918c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6d6e40e8109a70c9073ef314ad268e18" id="r_a6d6e40e8109a70c9073ef314ad268e18"><td align="right" class="memItemLeft" valign="top">dict </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d6e40e8109a70c9073ef314ad268e18">TEST_RESULT</a></td></tr>
+<tr class="separator:a6d6e40e8109a70c9073ef314ad268e18"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67390c77d9ce229915313f33ddb2789c" id="r_a67390c77d9ce229915313f33ddb2789c"><td align="right" class="memItemLeft" valign="top"><a id="a67390c77d9ce229915313f33ddb2789c" name="a67390c77d9ce229915313f33ddb2789c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>LOG_TIMEOUT</b> = 180</td></tr>
+<tr class="separator:a67390c77d9ce229915313f33ddb2789c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab9bede7ccb6c18644ae78710d6a82bf1" id="r_ab9bede7ccb6c18644ae78710d6a82bf1"><td align="right" class="memItemLeft" valign="top"><a id="ab9bede7ccb6c18644ae78710d6a82bf1" name="ab9bede7ccb6c18644ae78710d6a82bf1"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>RFLY_SPVO_MODE</b> = False</td></tr>
+<tr class="separator:ab9bede7ccb6c18644ae78710d6a82bf1"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该文件定义了QGCCtrlAPI类，用于与QGroundControl进行通信。 QGCCtrlAPI类提供了发送MAVLink命令和处理QGroundControl日志的功能。 <a class="anchor" id="AutoREG接口库文件"></a></p>
+</div><h2 class="groupheader">变量说明</h2>
+<a id="a1772ea89e01570c20252b0c0378cadd8" name="a1772ea89e01570c20252b0c0378cadd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1772ea89e01570c20252b0c0378cadd8">◆ </a></span>DIND_REG</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict DIND_REG</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span> <span class="stringliteral">'Quadcopter'</span>: 0,</div>
+<div class="line"><span class="lineno">    3</span> <span class="stringliteral">'Fixedwing'</span>:  0,</div>
+<div class="line"><span class="lineno">    4</span> <span class="stringliteral">'Vtol'</span>:       0</div>
+<div class="line"><span class="lineno">    5</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab7020c2ac036d4d672fdf4b3c35d37d2" name="ab7020c2ac036d4d672fdf4b3c35d37d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7020c2ac036d4d672fdf4b3c35d37d2">◆ </a></span>FIXED_CMD_CTRL_MAP_REG</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict FIXED_CMD_CTRL_MAP_REG</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span> <span class="stringliteral">'1'</span>: <span class="stringliteral">'Armed!'</span>,</div>
+<div class="line"><span class="lineno">    3</span> <span class="stringliteral">'2'</span>: <span class="stringliteral">'Disarmed!'</span>,</div>
+<div class="line"><span class="lineno">    4</span> <span class="stringliteral">'3'</span>: <span class="stringliteral">'Send takeoff command, target takeoff location [{},{},{}]'</span>,</div>
+<div class="line"><span class="lineno">    5</span> <span class="stringliteral">'4'</span>: <span class="stringliteral">'fixed-point flight command, fly target position [{},{},{}]'</span>,</div>
+<div class="line"><span class="lineno">    6</span> <span class="stringliteral">'5'</span>: <span class="stringliteral">'Send fixed-point landing command, landing position [{},{},{}]'</span>,</div>
+<div class="line"><span class="lineno">    7</span> <span class="stringliteral">'6'</span>: <span class="stringliteral">'Send fault injection command \n Fault injection type: {} \n Fault injection parameters: {}'</span></div>
+<div class="line"><span class="lineno">    8</span> </div>
+<div class="line"><span class="lineno">    9</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af2b26a0b46bcdbd44ada4c6afb9d7afa" name="af2b26a0b46bcdbd44ada4c6afb9d7afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b26a0b46bcdbd44ada4c6afb9d7afa">◆ </a></span>MAV_CASE_INDEX</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict MAV_CASE_INDEX</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    RFLYSIM_FRAME[<span class="stringliteral">'Quadcopter'</span>]   : 0,</div>
+<div class="line"><span class="lineno">    3</span>    RFLYSIM_FRAME[<span class="stringliteral">'Fixedwing'</span>]    : 0,</div>
+<div class="line"><span class="lineno">    4</span>    RFLYSIM_FRAME[<span class="stringliteral">'Vtol'</span>]         : 0</div>
+<div class="line"><span class="lineno">    5</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a661b5649dff8d90f564f6a787fb7ad22" name="a661b5649dff8d90f564f6a787fb7ad22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a661b5649dff8d90f564f6a787fb7ad22">◆ </a></span>MAV_DATA_FOLDER_REG</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict MAV_DATA_FOLDER_REG</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    RFLYSIM_FRAME[<span class="stringliteral">'Quadcopter'</span>]   : MAV_DATA_DISTRIBUTION_QUADCOPTER,</div>
+<div class="line"><span class="lineno">    3</span>    RFLYSIM_FRAME[<span class="stringliteral">'Fixedwing'</span>]    : MAV_DATA_DISTRIBUTION_FIXEXWING,</div>
+<div class="line"><span class="lineno">    4</span>    RFLYSIM_FRAME[<span class="stringliteral">'Vtol'</span>]         : MAV_DATA_DISTRIBUTION_VTOL</div>
+<div class="line"><span class="lineno">    5</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9afa2baf7596eb9dc2cddf2d8b01ea36" name="a9afa2baf7596eb9dc2cddf2d8b01ea36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afa2baf7596eb9dc2cddf2d8b01ea36">◆ </a></span>MAV_FRAME_DICT</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict MAV_FRAME_DICT</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    RFLYSIM_FRAME[<span class="stringliteral">'Quadcopter'</span>]   : [<span class="stringliteral">'Quadcopter'</span>,  MAV_QUADCOPTER_NUM],</div>
+<div class="line"><span class="lineno">    3</span>    RFLYSIM_FRAME[<span class="stringliteral">'Fixedwing'</span>]    : [<span class="stringliteral">'Fixedwing'</span> ,   MAV_FIXEXWING_NUM],</div>
+<div class="line"><span class="lineno">    4</span>    RFLYSIM_FRAME[<span class="stringliteral">'Vtol'</span>]         : [<span class="stringliteral">'Vtol'</span>      ,        MAV_VTOL_NUM]</div>
+<div class="line"><span class="lineno">    5</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aad0d0760d1cd9f2c98c12aa3a45d752a" name="aad0d0760d1cd9f2c98c12aa3a45d752a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0d0760d1cd9f2c98c12aa3a45d752a">◆ </a></span>MAV_TEST_CASE_REG</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict MAV_TEST_CASE_REG</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    RFLYSIM_FRAME[<span class="stringliteral">'Quadcopter'</span>]   : MAV_CASE_DISTRIBUTION_QUADCOPTER,</div>
+<div class="line"><span class="lineno">    3</span>    RFLYSIM_FRAME[<span class="stringliteral">'Fixedwing'</span>]    : MAV_CASE_DISTRIBUTION_FIXEXWING,</div>
+<div class="line"><span class="lineno">    4</span>    RFLYSIM_FRAME[<span class="stringliteral">'Vtol'</span>]         : MAV_CASE_DISTRIBUTION_VTOL</div>
+<div class="line"><span class="lineno">    5</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adb69f43bc44692647fbac0b6afd4ee0f" name="adb69f43bc44692647fbac0b6afd4ee0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb69f43bc44692647fbac0b6afd4ee0f">◆ </a></span>QUAD_CMD_CTRL_MAP_REG</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict QUAD_CMD_CTRL_MAP_REG</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span> <span class="stringliteral">'1'</span>: <span class="stringliteral">'Armed!'</span>,</div>
+<div class="line"><span class="lineno">    3</span> <span class="stringliteral">'2'</span>: <span class="stringliteral">'Disarmed!'</span>,</div>
+<div class="line"><span class="lineno">    4</span> <span class="stringliteral">'3'</span>: <span class="stringliteral">'Send fixed-point flight command, fly target position [{},{},{}]'</span>,</div>
+<div class="line"><span class="lineno">    5</span> <span class="stringliteral">'4'</span>: <span class="stringliteral">'Send fixed-speed flight command, fly target speed [{},{},{}]'</span>,</div>
+<div class="line"><span class="lineno">    6</span> <span class="stringliteral">'5'</span>: <span class="stringliteral">'Send fixed-point landing command, landing position [{},{},{}]'</span>,</div>
+<div class="line"><span class="lineno">    7</span> <span class="stringliteral">'6'</span>: <span class="stringliteral">'Send fault injection command \n Fault injection type:{} \n Fault injection parameters:{}'</span></div>
+<div class="line"><span class="lineno">    8</span> </div>
+<div class="line"><span class="lineno">    9</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab334a831514ae5b5d5b8c1be57ae0564" name="ab334a831514ae5b5d5b8c1be57ae0564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab334a831514ae5b5d5b8c1be57ae0564">◆ </a></span>RFLYSIM_CMD</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict RFLYSIM_CMD</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span> <span class="stringliteral">'Quadcopter'</span> : QUAD_CMD_CTRL_MAP_REG,</div>
+<div class="line"><span class="lineno">    3</span> <span class="stringliteral">'Fixedwing'</span>  : FIXED_CMD_CTRL_MAP_REG,</div>
+<div class="line"><span class="lineno">    4</span> <span class="stringliteral">'Vtol'</span>       : <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">    5</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac8f7e10204532eb5ddaf458dde08cb94" name="ac8f7e10204532eb5ddaf458dde08cb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f7e10204532eb5ddaf458dde08cb94">◆ </a></span>RFLYSIM_FRAME</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict RFLYSIM_FRAME</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span> <span class="stringliteral">'Quadcopter'</span> : 1,</div>
+<div class="line"><span class="lineno">    3</span> <span class="stringliteral">'Fixedwing'</span>  : 2,</div>
+<div class="line"><span class="lineno">    4</span> <span class="stringliteral">'Vtol'</span>       : 3</div>
+<div class="line"><span class="lineno">    5</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d6e40e8109a70c9073ef314ad268e18" name="a6d6e40e8109a70c9073ef314ad268e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6e40e8109a70c9073ef314ad268e18">◆ </a></span>TEST_RESULT</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">dict TEST_RESULT</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span> <span class="stringliteral">'Is_Fall'</span>    : <span class="stringliteral">'No'</span>,</div>
+<div class="line"><span class="lineno">    3</span> <span class="stringliteral">'Fall Time'</span>  : <span class="stringliteral">'No'</span>,</div>
+<div class="line"><span class="lineno">    4</span> <span class="stringliteral">'Fall Vel'</span>:<span class="stringliteral">'No'</span>,</div>
+<div class="line"><span class="lineno">    5</span> <span class="stringliteral">'Fall Energy'</span>:<span class="stringliteral">'No'</span>,</div>
+<div class="line"><span class="lineno">    6</span> <span class="stringliteral">'Failsafe Trigger'</span> : <span class="stringliteral">'No'</span>,</div>
+<div class="line"><span class="lineno">    7</span> <span class="stringliteral">'Flight Status After Fault Injection'</span> : <span class="stringliteral">'None'</span>,</div>
+<div class="line"><span class="lineno">    8</span> <span class="stringliteral">'Deviation From Expected Speed After Fault Injection'</span> : <span class="stringliteral">'None'</span>,</div>
+<div class="line"><span class="lineno">    9</span> <span class="stringliteral">'Deviation From Expected Position After Fault Injection'</span> : <span class="stringliteral">'None'</span>,</div>
+<div class="line"><span class="lineno">   10</span> <span class="stringliteral">'Failure Safety Score'</span>:<span class="stringliteral">'None'</span>,</div>
+<div class="line"><span class="lineno">   11</span> <span class="stringliteral">'Failure Safety Level'</span>:<span class="stringliteral">'None'</span></div>
+<div class="line"><span class="lineno">   12</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

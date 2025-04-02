@@ -1,0 +1,5 @@
+<map id="_recv" name="_recv">
+<area shape="rect" id="Node000001" title="从 MAVLink 中读取字节数据，处理接收到的数据。" alt="" coords="100,5,153,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html#a1c99c8c17ec76ba49907903807435fd4" title="读取指定长度的字节数据。" alt="" coords="5,5,52,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,21,52,21,52,16,84,16"/>
+</map>

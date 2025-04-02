@@ -1,0 +1,34 @@
+<map id="simulink/mavlink/uAvionix/uAvionix.h" name="simulink/mavlink/uAvionix/uAvionix.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol generated from uAvionix.xml" alt="" coords="307,5,480,48"/>
+<area shape="rect" id="Node000002" href="$protocol_8h_source.html" title=" " alt="" coords="107,112,197,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,51,209,98,190,107,188,102,207,94,331,46"/>
+<area shape="rect" id="Node000013" href="$mavlink__msg__uavionix__adsb__out__cfg_8h_source.html" title=" " alt="" coords="221,104,382,147"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="376,50,333,94,330,91,372,47"/>
+<area shape="rect" id="Node000014" href="$mavlink__msg__uavionix__adsb__out__dynamic_8h_source.html" title=" " alt="" coords="406,104,568,147"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="415,47,459,91,455,95,411,50"/>
+<area shape="rect" id="Node000015" href="$mavlink__msg__uavionix__adsb__transceiver__health__report_8h_source.html" title=" " alt="" coords="592,96,761,155"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="455,46,579,88,577,93,453,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,277,70,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,140,57,266,53,263,141,137"/>
+<area shape="rect" id="Node000004" href="$mavlink__types_8h_source.html" title=" " alt="" coords="94,277,210,304"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="155,139,155,262,150,262,150,139"/>
+<area shape="rect" id="Node000007" href="$mavlink__helpers_8h_source.html" title=" " alt="" coords="201,203,327,229"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="170,137,238,191,235,195,167,141"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="115,352,189,379"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="155,305,155,336,150,336,150,305"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="348,352,412,379"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="193,302,334,347,332,352,191,307"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="225,232,85,277,84,272,224,227"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="246,232,186,271,183,266,243,228"/>
+<area shape="rect" id="Node000008" href="$checksum_8h_source.html" title=" " alt="" coords="469,277,561,304"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="309,227,457,270,455,275,307,232"/>
+<area shape="rect" id="Node000009" href="$mavlink__conversions_8h.html" title=" " alt="" coords="586,277,740,304"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="328,226,578,271,577,277,327,231"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="234,277,294,304"/>
+<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="267,230,267,262,262,262,262,230"/>
+<area shape="rect" id="Node000012" href="$mavlink__sha256_8h_source.html" title=" " alt="" coords="318,277,445,304"/>
+<area shape="poly" id="edge14_Node000007_Node000012" title=" " alt="" coords="286,228,350,267,347,271,283,232"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="493,307,419,347,416,342,490,302"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="632,352,694,379"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="666,305,666,336,660,336,660,305"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="convert_to_payload64" name="convert_to_payload64">
+<area shape="rect" id="Node000001" title="将传入的字节序列（payload_bytes）转换成MAVLink协议中的payload64格式。" alt="" coords="556,39,704,65"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#aecd51687631b45b14740da57f3c3d777" title="将 pymavlink 库中的一个MAVLink消息对象转换为ROS消息格式。" alt="" coords="342,5,474,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,41,474,31,475,26,541,36"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#aecd51687631b45b14740da57f3c3d777" title="将pymavlink消息转换为ROS的Mavlink消息" alt="" coords="308,56,508,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="541,68,509,73,508,68,540,63"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a84bc8fad3b6e3ee2d6531c1201b9df42" title="发送硬件在环仿真的hil_actuator_controls消息（消息定义可见：https://mavlink.io/en/messages/common.html#HIL_ACTUATOR_CONTR..." alt="" coords="73,8,192,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,22,192,23,192,18,326,17"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a84bc8fad3b6e3ee2d6531c1201b9df42" title="发送HIL（硬件在环）控制消息到Pixhawk，这些消息会转化为uORB消息rfly_ctrl" alt="" coords="5,60,260,103"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,39,230,62,229,57,330,33"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="292,58,259,51,192,36,193,31,260,45,293,53"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="292,86,260,86,260,81,292,81"/>
+</map>

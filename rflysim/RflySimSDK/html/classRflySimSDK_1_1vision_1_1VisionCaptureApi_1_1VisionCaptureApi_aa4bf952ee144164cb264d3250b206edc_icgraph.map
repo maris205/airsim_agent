@@ -1,0 +1,7 @@
+<map id="sendReqToCopterSim" name="sendReqToCopterSim">
+<area shape="rect" id="Node000001" title="发送一个 SensorReqCopterSim 类的 UDP 消息给 CopterSim 以请求传感器数据" alt="" coords="388,5,537,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#ab2462a6cb4978e34c953d1b49735804f" title="发送命令到 CopterSim 请求IMU数据" alt="" coords="211,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,21,340,21,340,16,373,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#ad4e46526719d42015eb47dcd276693d2" title="发送请求给 CopterSim 以获取 IMU 数据，并初始化一个线程监听 IMU 数据" alt="" coords="5,5,163,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,21,163,21,163,16,195,16"/>
+</map>

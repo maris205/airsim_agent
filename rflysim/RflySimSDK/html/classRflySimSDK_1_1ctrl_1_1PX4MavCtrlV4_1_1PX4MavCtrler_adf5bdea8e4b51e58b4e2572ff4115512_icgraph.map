@@ -1,0 +1,13 @@
+<map id="SendVelNED" name="SendVelNED">
+<area shape="rect" id="Node000001" title="北东地坐标系下操控飞机" alt="" coords="508,113,606,140"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式" alt="" coords="237,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="527,106,495,83,459,62,432,51,434,46,461,58,498,79,530,102"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式并发送初始命令" alt="" coords="237,72,460,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="492,119,460,114,461,109,493,114"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1cc273310408147338bde43eeb269c89" title="线程的主循环，用于接收20100端口的数据并根据控制模式执行相应的控制命令。" alt="" coords="244,139,452,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="493,140,453,146,453,141,492,134"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a4729213ebbccc9c0f8963b432483c70e" title=" " alt="" coords="250,205,446,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="530,151,498,174,461,196,434,207,432,202,459,191,495,170,527,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5" title="用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。" alt="" coords="5,139,189,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,163,189,163,189,157,229,157"/>
+</map>

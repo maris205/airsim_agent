@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: MavStateData结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-attribs">Public 属性</a> |
+<a href="structMavStateData-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">MavStateData结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af84bd3af1e5982c75237537d35a580d1" id="r_af84bd3af1e5982c75237537d35a580d1"><td align="right" class="memItemLeft" valign="top"><a id="af84bd3af1e5982c75237537d35a580d1" name="af84bd3af1e5982c75237537d35a580d1"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isHeartRec</b> =false</td></tr>
+<tr class="separator:af84bd3af1e5982c75237537d35a580d1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02eeff25028f3c93671ab2ac0bf309e2" id="r_a02eeff25028f3c93671ab2ac0bf309e2"><td align="right" class="memItemLeft" valign="top"><a id="a02eeff25028f3c93671ab2ac0bf309e2" name="a02eeff25028f3c93671ab2ac0bf309e2"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isLocalNed</b> =false</td></tr>
+<tr class="separator:a02eeff25028f3c93671ab2ac0bf309e2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a24bba1073566ce03a1e91d0305b71b33" id="r_a24bba1073566ce03a1e91d0305b71b33"><td align="right" class="memItemLeft" valign="top"><a id="a24bba1073566ce03a1e91d0305b71b33" name="a24bba1073566ce03a1e91d0305b71b33"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isGlobPos</b> =false</td></tr>
+<tr class="separator:a24bba1073566ce03a1e91d0305b71b33"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8cdf00bbbb778406edcff44187a8cb72" id="r_a8cdf00bbbb778406edcff44187a8cb72"><td align="right" class="memItemLeft" valign="top"><a id="a8cdf00bbbb778406edcff44187a8cb72" name="a8cdf00bbbb778406edcff44187a8cb72"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isGpsHome</b> =false</td></tr>
+<tr class="separator:a8cdf00bbbb778406edcff44187a8cb72"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a83d15c53411b1e61d32acb2d703fb0ff" id="r_a83d15c53411b1e61d32acb2d703fb0ff"><td align="right" class="memItemLeft" valign="top"><a id="a83d15c53411b1e61d32acb2d703fb0ff" name="a83d15c53411b1e61d32acb2d703fb0ff"></a>
+int </td><td class="memItemRight" valign="bottom"><b>selfCheckState</b> =0</td></tr>
+<tr class="separator:a83d15c53411b1e61d32acb2d703fb0ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af66726746b3286bb7a70b593ee091172" id="r_af66726746b3286bb7a70b593ee091172"><td align="right" class="memItemLeft" valign="top"><a id="af66726746b3286bb7a70b593ee091172" name="af66726746b3286bb7a70b593ee091172"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>sysID</b> =255</td></tr>
+<tr class="separator:af66726746b3286bb7a70b593ee091172"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a88c9a58e08df235307392228c93187c8" id="r_a88c9a58e08df235307392228c93187c8"><td align="right" class="memItemLeft" valign="top"><a id="a88c9a58e08df235307392228c93187c8" name="a88c9a58e08df235307392228c93187c8"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>compID</b> =1</td></tr>
+<tr class="separator:a88c9a58e08df235307392228c93187c8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab480a7e1f04402600ad0451dbcef2aff" id="r_ab480a7e1f04402600ad0451dbcef2aff"><td align="right" class="memItemLeft" valign="top"><a id="ab480a7e1f04402600ad0451dbcef2aff" name="ab480a7e1f04402600ad0451dbcef2aff"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>TargetSysID</b></td></tr>
+<tr class="separator:ab480a7e1f04402600ad0451dbcef2aff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b75b1307602b3b85efc7cf88238ac63" id="r_a6b75b1307602b3b85efc7cf88238ac63"><td align="right" class="memItemLeft" valign="top"><a id="a6b75b1307602b3b85efc7cf88238ac63" name="a6b75b1307602b3b85efc7cf88238ac63"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>TargetCompID</b></td></tr>
+<tr class="separator:a6b75b1307602b3b85efc7cf88238ac63"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e1694657d27d43cf6a43ee9f6fe7c42" id="r_a4e1694657d27d43cf6a43ee9f6fe7c42"><td align="right" class="memItemLeft" valign="top"><a id="a4e1694657d27d43cf6a43ee9f6fe7c42" name="a4e1694657d27d43cf6a43ee9f6fe7c42"></a>
+uint32_t </td><td class="memItemRight" valign="bottom"><b>custom_mode</b></td></tr>
+<tr class="separator:a4e1694657d27d43cf6a43ee9f6fe7c42"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a104988824a5f2c21b6b0eb5c53f007e2" id="r_a104988824a5f2c21b6b0eb5c53f007e2"><td align="right" class="memItemLeft" valign="top"><a id="a104988824a5f2c21b6b0eb5c53f007e2" name="a104988824a5f2c21b6b0eb5c53f007e2"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>base_mode</b></td></tr>
+<tr class="separator:a104988824a5f2c21b6b0eb5c53f007e2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a28ec2db1d5bdfcbc658d5f79822c9d72" id="r_a28ec2db1d5bdfcbc658d5f79822c9d72"><td align="right" class="memItemLeft" valign="top"><a id="a28ec2db1d5bdfcbc658d5f79822c9d72" name="a28ec2db1d5bdfcbc658d5f79822c9d72"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>system_status</b></td></tr>
+<tr class="separator:a28ec2db1d5bdfcbc658d5f79822c9d72"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4e96ee46e36270d1ab66060e46f8c79" id="r_ad4e96ee46e36270d1ab66060e46f8c79"><td align="right" class="memItemLeft" valign="top"><a id="ad4e96ee46e36270d1ab66060e46f8c79" name="ad4e96ee46e36270d1ab66060e46f8c79"></a>
+uint32_t </td><td class="memItemRight" valign="bottom"><b>time_boot_ms</b></td></tr>
+<tr class="separator:ad4e96ee46e36270d1ab66060e46f8c79"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a84dd0660f5ae02193dca4721ccffff" id="r_a4a84dd0660f5ae02193dca4721ccffff"><td align="right" class="memItemLeft" valign="top"><a id="a4a84dd0660f5ae02193dca4721ccffff" name="a4a84dd0660f5ae02193dca4721ccffff"></a>
+double </td><td class="memItemRight" valign="bottom"><b>batteryInfo</b> [6]</td></tr>
+<tr class="separator:a4a84dd0660f5ae02193dca4721ccffff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab7ba5686424eae5aacae06ab8c852c6a" id="r_ab7ba5686424eae5aacae06ab8c852c6a"><td align="right" class="memItemLeft" valign="top"><a id="ab7ba5686424eae5aacae06ab8c852c6a" name="ab7ba5686424eae5aacae06ab8c852c6a"></a>
+double </td><td class="memItemRight" valign="bottom"><b>healthInfo</b> [10]</td></tr>
+<tr class="separator:ab7ba5686424eae5aacae06ab8c852c6a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0f80ba49751c37f32a3652fb787b8833" id="r_a0f80ba49751c37f32a3652fb787b8833"><td align="right" class="memItemLeft" valign="top"><a id="a0f80ba49751c37f32a3652fb787b8833" name="a0f80ba49751c37f32a3652fb787b8833"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isFailSafeEn</b> =false</td></tr>
+<tr class="separator:a0f80ba49751c37f32a3652fb787b8833"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac9e20cb4456f244be8404e84edeedea1" id="r_ac9e20cb4456f244be8404e84edeedea1"><td align="right" class="memItemLeft" valign="top"><a id="ac9e20cb4456f244be8404e84edeedea1" name="ac9e20cb4456f244be8404e84edeedea1"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isArmed</b> =false</td></tr>
+<tr class="separator:ac9e20cb4456f244be8404e84edeedea1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a832c5a00d3491c4d20470e9eb0694e37" id="r_a832c5a00d3491c4d20470e9eb0694e37"><td align="right" class="memItemLeft" valign="top"><a id="a832c5a00d3491c4d20470e9eb0694e37" name="a832c5a00d3491c4d20470e9eb0694e37"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isStanby</b> =false</td></tr>
+<tr class="separator:a832c5a00d3491c4d20470e9eb0694e37"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a96eff8420fb9ee1b4c5d5f1bcace116d" id="r_a96eff8420fb9ee1b4c5d5f1bcace116d"><td align="right" class="memItemLeft" valign="top"><a id="a96eff8420fb9ee1b4c5d5f1bcace116d" name="a96eff8420fb9ee1b4c5d5f1bcace116d"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isActive</b> =false</td></tr>
+<tr class="separator:a96eff8420fb9ee1b4c5d5f1bcace116d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abdbc42f5b26b7710228c1686aaf03f63" id="r_abdbc42f5b26b7710228c1686aaf03f63"><td align="right" class="memItemLeft" valign="top"><a id="abdbc42f5b26b7710228c1686aaf03f63" name="abdbc42f5b26b7710228c1686aaf03f63"></a>
+mavlink_sys_status_t </td><td class="memItemRight" valign="bottom"><b>sysStatus</b></td></tr>
+<tr class="separator:abdbc42f5b26b7710228c1686aaf03f63"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac01a423289f4264c877bc50997740280" id="r_ac01a423289f4264c877bc50997740280"><td align="right" class="memItemLeft" valign="top"><a id="ac01a423289f4264c877bc50997740280" name="ac01a423289f4264c877bc50997740280"></a>
+uint8_t </td><td class="memItemRight" valign="bottom"><b>landed_state</b> =0</td></tr>
+<tr class="separator:ac01a423289f4264c877bc50997740280"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6d17a4d089e433aa995f9f81a66a7bc" id="r_ad6d17a4d089e433aa995f9f81a66a7bc"><td align="right" class="memItemLeft" valign="top"><a id="ad6d17a4d089e433aa995f9f81a66a7bc" name="ad6d17a4d089e433aa995f9f81a66a7bc"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isLowBatt</b> =false</td></tr>
+<tr class="separator:ad6d17a4d089e433aa995f9f81a66a7bc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2c63b910989bfc97a1bfd6a51695f73" id="r_ad2c63b910989bfc97a1bfd6a51695f73"><td align="right" class="memItemLeft" valign="top"><a id="ad2c63b910989bfc97a1bfd6a51695f73" name="ad2c63b910989bfc97a1bfd6a51695f73"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isHighLoad</b> =false</td></tr>
+<tr class="separator:ad2c63b910989bfc97a1bfd6a51695f73"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acccc213da170fcb1d28d71fae5c706d4" id="r_acccc213da170fcb1d28d71fae5c706d4"><td align="right" class="memItemLeft" valign="top"><a id="acccc213da170fcb1d28d71fae5c706d4" name="acccc213da170fcb1d28d71fae5c706d4"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isDropComm</b> =false</td></tr>
+<tr class="separator:acccc213da170fcb1d28d71fae5c706d4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad42eac20bf414326b84173b248ba92d4" id="r_ad42eac20bf414326b84173b248ba92d4"><td align="right" class="memItemLeft" valign="top"><a id="ad42eac20bf414326b84173b248ba92d4" name="ad42eac20bf414326b84173b248ba92d4"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isOffboard</b> =false</td></tr>
+<tr class="separator:ad42eac20bf414326b84173b248ba92d4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36c0459cf94bdb5e03c05c533ae63c71" id="r_a36c0459cf94bdb5e03c05c533ae63c71"><td align="right" class="memItemLeft" valign="top"><a id="a36c0459cf94bdb5e03c05c533ae63c71" name="a36c0459cf94bdb5e03c05c533ae63c71"></a>
+PX4_FLIGHTMODE </td><td class="memItemRight" valign="bottom"><b>flyMode</b> =PX4_FLIGHTMODE_MANUAL</td></tr>
+<tr class="separator:a36c0459cf94bdb5e03c05c533ae63c71"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>simulink/<a class="el" href="rfly__mavlink_8h_source.html">rfly_mavlink.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

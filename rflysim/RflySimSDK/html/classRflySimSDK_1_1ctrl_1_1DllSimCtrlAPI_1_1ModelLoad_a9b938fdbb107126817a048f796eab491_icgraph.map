@@ -1,0 +1,9 @@
+<map id="SendVelFRD" name="SendVelFRD">
+<area shape="rect" id="Node000001" title="发送FRD(前右下)机体参考系下的速度控制命令。" alt="" coords="388,35,485,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1cc273310408147338bde43eeb269c89" title="线程的主循环，用于接收20100端口的数据并根据控制模式执行相应的控制命令。" alt="" coords="184,5,300,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="372,41,300,30,301,25,373,36"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a4729213ebbccc9c0f8963b432483c70e" title=" " alt="" coords="144,56,340,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,60,341,65,340,60,372,55"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5" title="用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。" alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,21,96,21,96,16,169,16"/>
+</map>

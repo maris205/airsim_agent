@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Semaphore类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn__Semaphore-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Semaphore类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aae030ce8da83682b335ae5a953d1f185" id="r_aae030ce8da83682b335ae5a953d1f185"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aae030ce8da83682b335ae5a953d1f185">vrpn_Semaphore</a> (int cNumResources=1)</td></tr>
+<tr class="memdesc:aae030ce8da83682b335ae5a953d1f185"><td class="mdescLeft"> </td><td class="mdescRight">constructor - mutex by default (0 is a sync primitive)  <br/></td></tr>
+<tr class="separator:aae030ce8da83682b335ae5a953d1f185"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4f77c345e3e29937a34072c3d1cc487" id="r_ab4f77c345e3e29937a34072c3d1cc487"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4f77c345e3e29937a34072c3d1cc487">~vrpn_Semaphore</a> ()</td></tr>
+<tr class="memdesc:ab4f77c345e3e29937a34072c3d1cc487"><td class="mdescLeft"> </td><td class="mdescRight">destructor  <br/></td></tr>
+<tr class="separator:ab4f77c345e3e29937a34072c3d1cc487"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46bc838030f9cad1f187433a01ab1def" id="r_a46bc838030f9cad1f187433a01ab1def"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a46bc838030f9cad1f187433a01ab1def">reset</a> (int cNumResources=1)</td></tr>
+<tr class="memdesc:a46bc838030f9cad1f187433a01ab1def"><td class="mdescLeft"> </td><td class="mdescRight">routine to reset it (true on success, false on failure) (may create new semaphore)  <br/></td></tr>
+<tr class="separator:a46bc838030f9cad1f187433a01ab1def"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60d1a030252f73d00851e6d495b735d0" id="r_a60d1a030252f73d00851e6d495b735d0"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a60d1a030252f73d00851e6d495b735d0">p</a> ()</td></tr>
+<tr class="memdesc:a60d1a030252f73d00851e6d495b735d0"><td class="mdescLeft"> </td><td class="mdescRight">Blocking acquire of resource. ("down")  <br/></td></tr>
+<tr class="separator:a60d1a030252f73d00851e6d495b735d0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b77f36f768b45d77dd4e19cae81d240" id="r_a6b77f36f768b45d77dd4e19cae81d240"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b77f36f768b45d77dd4e19cae81d240">v</a> ()</td></tr>
+<tr class="memdesc:a6b77f36f768b45d77dd4e19cae81d240"><td class="mdescLeft"> </td><td class="mdescRight">Release of resource. ("up")  <br/></td></tr>
+<tr class="separator:a6b77f36f768b45d77dd4e19cae81d240"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40c791a284f3f0e9697512fd2f97fdda" id="r_a40c791a284f3f0e9697512fd2f97fdda"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a40c791a284f3f0e9697512fd2f97fdda">condP</a> ()</td></tr>
+<tr class="memdesc:a40c791a284f3f0e9697512fd2f97fdda"><td class="mdescLeft"> </td><td class="mdescRight">Non-blocking attempt to acquire resource ("down")  <br/></td></tr>
+<tr class="separator:a40c791a284f3f0e9697512fd2f97fdda"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6ac3a4a2d385ecc7c8831899d523b389" id="r_a6ac3a4a2d385ecc7c8831899d523b389"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac3a4a2d385ecc7c8831899d523b389">numResources</a> ()</td></tr>
+<tr class="memdesc:a6ac3a4a2d385ecc7c8831899d523b389"><td class="mdescLeft"> </td><td class="mdescRight">read values  <br/></td></tr>
+<tr class="separator:a6ac3a4a2d385ecc7c8831899d523b389"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aae030ce8da83682b335ae5a953d1f185" name="aae030ce8da83682b335ae5a953d1f185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae030ce8da83682b335ae5a953d1f185">◆ </a></span>vrpn_Semaphore()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>cNumResources</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>constructor - mutex by default (0 is a sync primitive) </p>
+</div>
+</div>
+<a id="ab4f77c345e3e29937a34072c3d1cc487" name="ab4f77c345e3e29937a34072c3d1cc487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f77c345e3e29937a34072c3d1cc487">◆ </a></span>~vrpn_Semaphore()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">~<a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>destructor </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a40c791a284f3f0e9697512fd2f97fdda" name="a40c791a284f3f0e9697512fd2f97fdda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c791a284f3f0e9697512fd2f97fdda">◆ </a></span>condP()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int condP </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Non-blocking attempt to acquire resource ("down") </p>
+<dl class="section return"><dt>返回</dt><dd>0 if it could not access the resource and 1 if it could (-1 on fail) </dd></dl>
+</div>
+</div>
+<a id="a6ac3a4a2d385ecc7c8831899d523b389" name="a6ac3a4a2d385ecc7c8831899d523b389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac3a4a2d385ecc7c8831899d523b389">◆ </a></span>numResources()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int numResources </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>read values </p>
+</div>
+</div>
+<a id="a60d1a030252f73d00851e6d495b735d0" name="a60d1a030252f73d00851e6d495b735d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d1a030252f73d00851e6d495b735d0">◆ </a></span>p()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int p </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Blocking acquire of resource. ("down") </p>
+<dl class="section return"><dt>返回</dt><dd>1 when it has acquired the resource, -1 on fail </dd></dl>
+</div>
+</div>
+<a id="a46bc838030f9cad1f187433a01ab1def" name="a46bc838030f9cad1f187433a01ab1def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bc838030f9cad1f187433a01ab1def">◆ </a></span>reset()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">bool reset </td>
+<td>(</td>
+<td class="paramtype">int</td> <td class="paramname"><span class="paramname"><em>cNumResources</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>routine to reset it (true on success, false on failure) (may create new semaphore) </p>
+</div>
+</div>
+<a id="a6b77f36f768b45d77dd4e19cae81d240" name="a6b77f36f768b45d77dd4e19cae81d240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b77f36f768b45d77dd4e19cae81d240">◆ </a></span>v()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int v </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Release of resource. ("up") </p>
+<dl class="section return"><dt>返回</dt><dd>0 when it has released the resource, -1 on fail </dd></dl>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Thread_8h_source.html">vrpn_Thread.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

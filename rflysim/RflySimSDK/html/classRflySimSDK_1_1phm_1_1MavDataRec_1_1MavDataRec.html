@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: MavDataRec类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>phm</b></li><li class="navelem"><b>MavDataRec</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1phm_1_1MavDataRec_1_1MavDataRec.html">MavDataRec</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1phm_1_1MavDataRec_1_1MavDataRec-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">MavDataRec类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>用于接收和记录无人机数据的类。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1ed2be1d21dd58ea50c14d7bc1f53c52" id="r_a1ed2be1d21dd58ea50c14d7bc1f53c52"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ed2be1d21dd58ea50c14d7bc1f53c52">__init__</a> (self, mav)</td></tr>
+<tr class="memdesc:a1ed2be1d21dd58ea50c14d7bc1f53c52"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化MavDataRec类的实例。  <br/></td></tr>
+<tr class="separator:a1ed2be1d21dd58ea50c14d7bc1f53c52"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32a8cf3129b10a446f54a4e95860ede0" id="r_a32a8cf3129b10a446f54a4e95860ede0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a32a8cf3129b10a446f54a4e95860ede0">startRecMsg</a> (self, NameList=['HIGHRES_IMU'], LenList=[10])</td></tr>
+<tr class="memdesc:a32a8cf3129b10a446f54a4e95860ede0"><td class="mdescLeft"> </td><td class="mdescRight">开始监听消息的函数。  <br/></td></tr>
+<tr class="separator:a32a8cf3129b10a446f54a4e95860ede0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a99961ee9d792718e6a3b2ee3e0fa7ba8" id="r_a99961ee9d792718e6a3b2ee3e0fa7ba8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a99961ee9d792718e6a3b2ee3e0fa7ba8">stopRecMsg</a> (self)</td></tr>
+<tr class="memdesc:a99961ee9d792718e6a3b2ee3e0fa7ba8"><td class="mdescLeft"> </td><td class="mdescRight">停止监听消息的函数。 开始监听消息的函数  <br/></td></tr>
+<tr class="separator:a99961ee9d792718e6a3b2ee3e0fa7ba8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9767c3d317e268dd34143eaa2a4d836d" id="r_a9767c3d317e268dd34143eaa2a4d836d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9767c3d317e268dd34143eaa2a4d836d">getMavMsg</a> (self)</td></tr>
+<tr class="memdesc:a9767c3d317e268dd34143eaa2a4d836d"><td class="mdescLeft"> </td><td class="mdescRight">在单独的线程中运行，用于获取无人机消息。  <br/></td></tr>
+<tr class="separator:a9767c3d317e268dd34143eaa2a4d836d"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aed334d1ece87bb95d7d39c89d83e7563" id="r_aed334d1ece87bb95d7d39c89d83e7563"><td align="right" class="memItemLeft" valign="top"><a id="aed334d1ece87bb95d7d39c89d83e7563" name="aed334d1ece87bb95d7d39c89d83e7563"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mav</b></td></tr>
+<tr class="separator:aed334d1ece87bb95d7d39c89d83e7563"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a092e0c7058948dd740d90aa32f262ba9" id="r_a092e0c7058948dd740d90aa32f262ba9"><td align="right" class="memItemLeft" valign="top"><a id="a092e0c7058948dd740d90aa32f262ba9" name="a092e0c7058948dd740d90aa32f262ba9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>msgDic</b></td></tr>
+<tr class="separator:a092e0c7058948dd740d90aa32f262ba9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad5b95290875dee00f0c4d5072a651715" id="r_ad5b95290875dee00f0c4d5072a651715"><td align="right" class="memItemLeft" valign="top"><a id="ad5b95290875dee00f0c4d5072a651715" name="ad5b95290875dee00f0c4d5072a651715"></a>
+ </td><td class="memItemRight" valign="bottom"><b>NameList</b></td></tr>
+<tr class="separator:ad5b95290875dee00f0c4d5072a651715"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1dc98301ae522ce7455142b20e33d094" id="r_a1dc98301ae522ce7455142b20e33d094"><td align="right" class="memItemLeft" valign="top"><a id="a1dc98301ae522ce7455142b20e33d094" name="a1dc98301ae522ce7455142b20e33d094"></a>
+ </td><td class="memItemRight" valign="bottom"><b>LenList</b></td></tr>
+<tr class="separator:a1dc98301ae522ce7455142b20e33d094"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a469994e78f66a44815c015b7f4b8b2f8" id="r_a469994e78f66a44815c015b7f4b8b2f8"><td align="right" class="memItemLeft" valign="top"><a id="a469994e78f66a44815c015b7f4b8b2f8" name="a469994e78f66a44815c015b7f4b8b2f8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>t1</b></td></tr>
+<tr class="separator:a469994e78f66a44815c015b7f4b8b2f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adddcf57916a5645a8187aa306aa91a6d" id="r_adddcf57916a5645a8187aa306aa91a6d"><td align="right" class="memItemLeft" valign="top"><a id="adddcf57916a5645a8187aa306aa91a6d" name="adddcf57916a5645a8187aa306aa91a6d"></a>
+# 如果停止标志位启用，就跳出循环 </td><td class="memItemRight" valign="bottom"><b>t1Stop</b></td></tr>
+<tr class="separator:adddcf57916a5645a8187aa306aa91a6d"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于接收和记录无人机数据的类。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a1ed2be1d21dd58ea50c14d7bc1f53c52" name="a1ed2be1d21dd58ea50c14d7bc1f53c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed2be1d21dd58ea50c14d7bc1f53c52">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>mav</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化MavDataRec类的实例。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">mav</td><td>无人机对象，用于接收无人机发送的消息。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9767c3d317e268dd34143eaa2a4d836d" name="a9767c3d317e268dd34143eaa2a4d836d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9767c3d317e268dd34143eaa2a4d836d">◆ </a></span>getMavMsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getMavMsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>在单独的线程中运行，用于获取无人机消息。 </p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1phm_1_1MavDataRec_1_1MavDataRec_a9767c3d317e268dd34143eaa2a4d836d_icgraph.svg" width="347"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a32a8cf3129b10a446f54a4e95860ede0" name="a32a8cf3129b10a446f54a4e95860ede0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a8cf3129b10a446f54a4e95860ede0">◆ </a></span>startRecMsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">startRecMsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>NameList</em></span><span class="paramdefsep"> = </span><span class="paramdefval">['HIGHRES_IMU']</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>LenList</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[10]</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>开始监听消息的函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">NameList</td><td>要监听的消息名称列表。 </td></tr>
+<tr><td class="paramname">LenList</td><td>每个消息名称对应的消息数量限制列表。 开始监听消息的函数 </td></tr>
+</table>
+</dd>
+</dl>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="187" scrolling="no" src="classRflySimSDK_1_1phm_1_1MavDataRec_1_1MavDataRec_a32a8cf3129b10a446f54a4e95860ede0_cgraph.svg" width="630"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a99961ee9d792718e6a3b2ee3e0fa7ba8" name="a99961ee9d792718e6a3b2ee3e0fa7ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99961ee9d792718e6a3b2ee3e0fa7ba8">◆ </a></span>stopRecMsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">stopRecMsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>停止监听消息的函数。 开始监听消息的函数 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>phm/<a class="el" href="MavDataRec_8py.html">MavDataRec.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

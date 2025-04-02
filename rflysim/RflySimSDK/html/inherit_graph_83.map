@@ -1,0 +1,7 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$structvrpn_1_1detail_1_1IntegerOfSize.html" title=" " alt="" coords="5,59,161,85"/>
+<area shape="rect" id="Node000001" href="$structvrpn_1_1detail_1_1IntegerOfSizeAndSignedness.html" title=" " alt="" coords="209,5,432,64"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="176,55,208,50,209,55,177,60"/>
+<area shape="rect" id="Node000002" href="$structvrpn_1_1detail_1_1IntegerOfSizeAndSignedness.html" title=" " alt="" coords="224,88,416,131"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="176,84,224,92,223,97,175,89"/>
+</map>

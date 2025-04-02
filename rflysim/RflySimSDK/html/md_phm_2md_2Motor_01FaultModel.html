@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Motor FaultModel模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">Motor FaultModel模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md205"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240724144220566.png"><img alt="" class="thumbnail" height="auto" src="image-20240724144220566.png" width="100"/></a>
+<div class="caption">
+image-20240724144220566</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">包含MotorFault模块，Motor_fun模块。MotorFault模块用于选择电机故障类型，并输出注入故障后电机的转速；Motor_fun模块用于表示电机原理的数学建模。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">FaultIn   </td><td class="markdownTableBodyNone">故障输入，包括故障类型和故障参数。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">PWMIn   </td><td class="markdownTableBodyNone">外部输入给模型的电机转速    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">MotorRads   </td><td class="markdownTableBodyNone">注入噪声后的电机转速   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md206"></a>
+MotorFault模块（内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240724144444269.png"><img alt="" class="thumbnail" height="auto" src="image-20240724144444269.png" width="100"/></a>
+<div class="caption">
+image-20240724144444269</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">包含FaultParamsExtract噪声参数提取模块， MotorFaultModel电机模型模块。本模块用于从 无噪声电机执行效率故障 和 有噪声电机执行效率故障 选择电机故障类型，并输出注入故障后电机转速。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">无噪声电机执行效率故障 和 有噪声电机执行效率故障 这两个故障模块的实现机制不同，但都同属于电机故障。通过用对应的故障ID可以触发对应的故障。123450为电机故障ID    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FaultIn   </td><td class="markdownTableBodyNone">故障输入，包括故障类型和故障参数。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">FaultID   </td><td class="markdownTableBodyNone">故障的唯一标识密钥    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">NoiseFaultID   </td><td class="markdownTableBodyNone">噪声故障的唯一标识密钥    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">MotorNum   </td><td class="markdownTableBodyNone">无人机的故障电机数量    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">PWMOut   </td><td class="markdownTableBodyNone">注入故障后电机输出的转速   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md207"></a>
+FaultParamsExtract模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240724152011646.png"><img alt="" class="thumbnail" height="auto" src="image-20240724152011646.png" width="100"/></a>
+<div class="caption">
+image-20240724152011646</div></div>
+<p>具体参考**同目录下的FaultParamsExtract说明文档**</p>
+<h1><a class="anchor" id="autotoc_md208"></a>
+MotorFaultModel模块（内内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240724152436882.png"><img alt="" class="thumbnail" height="auto" src="image-20240724152436882.png" width="100"/></a>
+<div class="caption">
+image-20240724152436882</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">本模块需要用到8维FaultParam的输入，因此故障ID的格式应该是：<br/>
+inSILInts=[FaultID FaultID FaultID FaultID ...]<br/>
+inSILInts=[param1 param2 param3 param4 param5 param6 param7 param8 ...] -&gt; FaultParam<br/>
+param的每一位表示本电机的健康系数（0到1），实际上就是pwm_out = pwm_in * param<br/>
+如果param1=0，则电机1直接坏掉，始终输出0    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">hasFault   </td><td class="markdownTableBodyNone">一个布尔值，如果检测到 <code>FaultID</code> 则为 <code>true</code>，否则为 <code>false</code>。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FaultParam   </td><td class="markdownTableBodyNone">一个长度为 20 的浮点数数组，存储故障参数。如果检测到故障，数组的前 16 个元素将包含与 <code>FaultID</code> 相关的参数，最后 4 个元素将包含 <code>inFloats</code> 数组的最后 4 个值。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">inPWMs   </td><td class="markdownTableBodyNone">外部输入给模型的电机转速    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">motNum   </td><td class="markdownTableBodyNone">无人机的故障电机数量    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">y   </td><td class="markdownTableBodyNone">注入故障后的 电机输出转速。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md209"></a>
+Motor_Fun模块（内层）</h1>
+<div class="image">
+<a data_lightbox="image" href="image-20240724144334922.png"><img alt="" class="thumbnail" height="auto" src="image-20240724144334922.png" width="100"/></a>
+<div class="caption">
+image-20240724144334922</div></div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">这个绿色的模块是对电机原理的数学建模。具体原理请参考《多旋翼飞行器设计与控制》第四章“动力系统建模和估算”的4.2小结，详细介绍了动力系统的数学模型。总的来说，该模块通过接受一个电池油门（即电池模块的输出，在此处指的是PWMIn），输出一个电机转速（在此处为PWMOut）    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输入</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">PWMIn   </td><td class="markdownTableBodyNone">注入故障后的 电机输出转速。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">motorWb   </td><td class="markdownTableBodyNone">Motor speed-throttle curve constant term(rad/s) 电机速度油门曲线常数项（rad/s）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">motorCr   </td><td class="markdownTableBodyNone">Motor throttle-speed curve slope(rad/s) 电机油门速度曲线斜率（rad/s）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">motorT   </td><td class="markdownTableBodyNone">Motor inertia time constant(s) 电机惯性时间常数（s）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ModelInit_RPM   </td><td class="markdownTableBodyNone">模型初始的电机转速    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>输出</b> </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">radW   </td><td class="markdownTableBodyNone">电机输出转速    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">PWMOut   </td><td class="markdownTableBodyNone">多电机输出转速集成   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

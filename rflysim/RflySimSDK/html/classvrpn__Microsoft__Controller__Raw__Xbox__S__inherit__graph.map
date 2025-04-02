@@ -1,0 +1,22 @@
+<map id="vrpn_Microsoft_Controller_Raw_Xbox_S" name="vrpn_Microsoft_Controller_Raw_Xbox_S">
+<area shape="rect" id="Node000001" title=" " alt="" coords="176,304,346,347"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Microsoft__Controller__Raw.html" title=" " alt="" coords="5,155,210,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,196,122,226,138,254,168,281,204,301,201,306,165,286,133,258,117,228,108,198"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="233,80,350,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="246,115,141,157,139,152,244,110"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="148,229,241,256"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="277,121,205,230,200,227,273,118"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="284,155,376,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="308,119,326,153,321,156,303,122"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Dial.html" title=" " alt="" coords="416,229,492,256"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="332,112,361,131,389,153,424,192,449,228,445,231,420,195,386,157,358,135,329,117"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="212,5,371,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,48,294,80,289,80,289,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="45,80,170,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="110,122,110,154,105,154,105,122"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="216,267,246,302,242,306,212,270"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="265,229,392,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="311,270,280,306,276,302,307,266"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="332,197,332,229,326,229,327,197"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="411,265,312,306,310,301,409,260"/>
+</map>

@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: ImageCtrl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>CameraCtrlApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1ImageCtrl.html">ImageCtrl</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1ImageCtrl-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">ImageCtrl类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>ImageCtrl结构体类。用于在图像上绘制各种元素  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a67093d85dcba79b7b966e657a52e96fe" id="r_a67093d85dcba79b7b966e657a52e96fe"><td align="right" class="memItemLeft" valign="top">None </td><td class="memItemRight" valign="bottom"><a class="el" href="#a67093d85dcba79b7b966e657a52e96fe">__init__</a> (self, screenWidth=640, screenHeight=480)</td></tr>
+<tr class="memdesc:a67093d85dcba79b7b966e657a52e96fe"><td class="mdescLeft"> </td><td class="mdescRight">ImageCtrl的构造函数  <br/></td></tr>
+<tr class="separator:a67093d85dcba79b7b966e657a52e96fe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae60c06bf422305352cf4e12ee1eb7352" id="r_ae60c06bf422305352cf4e12ee1eb7352"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae60c06bf422305352cf4e12ee1eb7352">setRect</a> (self, window_w, window_h)</td></tr>
+<tr class="memdesc:ae60c06bf422305352cf4e12ee1eb7352"><td class="mdescLeft"> </td><td class="mdescRight">设置图像的中心点  <br/></td></tr>
+<tr class="separator:ae60c06bf422305352cf4e12ee1eb7352"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae88f83f82a390e1d07f95282b7a13324" id="r_ae88f83f82a390e1d07f95282b7a13324"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae88f83f82a390e1d07f95282b7a13324">DisplayImg</a> (self, img)</td></tr>
+<tr class="memdesc:ae88f83f82a390e1d07f95282b7a13324"><td class="mdescLeft"> </td><td class="mdescRight">展示图像，将图像赋值给 self.image  <br/></td></tr>
+<tr class="separator:ae88f83f82a390e1d07f95282b7a13324"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9b3a66798584fc60700a26636edda0eb" id="r_a9b3a66798584fc60700a26636edda0eb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b3a66798584fc60700a26636edda0eb">drawCross</a> (self)</td></tr>
+<tr class="memdesc:a9b3a66798584fc60700a26636edda0eb"><td class="mdescLeft"> </td><td class="mdescRight">绘制十字星的中心点  <br/></td></tr>
+<tr class="separator:a9b3a66798584fc60700a26636edda0eb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a2b4f75662b6acac26f49c84cca10d3" id="r_a4a2b4f75662b6acac26f49c84cca10d3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a2b4f75662b6acac26f49c84cca10d3">drawCrossRect</a> (self)</td></tr>
+<tr class="memdesc:a4a2b4f75662b6acac26f49c84cca10d3"><td class="mdescLeft"> </td><td class="mdescRight">绘制十字星外围的矩形框  <br/></td></tr>
+<tr class="separator:a4a2b4f75662b6acac26f49c84cca10d3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a77fbf72b279415156c3b98ca79ff9a" id="r_a1a77fbf72b279415156c3b98ca79ff9a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a77fbf72b279415156c3b98ca79ff9a">drawPosture</a> (self, roll, pitch, yaw)</td></tr>
+<tr class="memdesc:a1a77fbf72b279415156c3b98ca79ff9a"><td class="mdescLeft"> </td><td class="mdescRight">绘制姿态信息，包括滚转角、俯仰角和偏航角  <br/></td></tr>
+<tr class="separator:a1a77fbf72b279415156c3b98ca79ff9a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa75f3ea6415e762bd9295b0220153ae0" id="r_aa75f3ea6415e762bd9295b0220153ae0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa75f3ea6415e762bd9295b0220153ae0">drawCoordinate</a> (self, CoordName, orientation, value, step=1, largeStep=4, minNum=0, maxNum=100, stepLength=2)</td></tr>
+<tr class="memdesc:aa75f3ea6415e762bd9295b0220153ae0"><td class="mdescLeft"> </td><td class="mdescRight">绘制指定方向的坐标轴  <br/></td></tr>
+<tr class="separator:aa75f3ea6415e762bd9295b0220153ae0"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a42cb5f5737262947250c709931232c69" id="r_a42cb5f5737262947250c709931232c69"><td align="right" class="memItemLeft" valign="top"><a id="a42cb5f5737262947250c709931232c69" name="a42cb5f5737262947250c709931232c69"></a>
+ </td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
+<tr class="separator:a42cb5f5737262947250c709931232c69"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abd5c1c4c41acd2f46f8f34266bbc1e02" id="r_abd5c1c4c41acd2f46f8f34266bbc1e02"><td align="right" class="memItemLeft" valign="top"><a id="abd5c1c4c41acd2f46f8f34266bbc1e02" name="abd5c1c4c41acd2f46f8f34266bbc1e02"></a>
+ </td><td class="memItemRight" valign="bottom"><b>centX</b></td></tr>
+<tr class="separator:abd5c1c4c41acd2f46f8f34266bbc1e02"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e8b062af51fa35cd00743f8277ea208" id="r_a1e8b062af51fa35cd00743f8277ea208"><td align="right" class="memItemLeft" valign="top"><a id="a1e8b062af51fa35cd00743f8277ea208" name="a1e8b062af51fa35cd00743f8277ea208"></a>
+ </td><td class="memItemRight" valign="bottom"><b>centY</b></td></tr>
+<tr class="separator:a1e8b062af51fa35cd00743f8277ea208"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3a7182841fc106accead18b330de7d53" id="r_a3a7182841fc106accead18b330de7d53"><td align="right" class="memItemLeft" valign="top"><a id="a3a7182841fc106accead18b330de7d53" name="a3a7182841fc106accead18b330de7d53"></a>
+ </td><td class="memItemRight" valign="bottom"><b>starMargin</b></td></tr>
+<tr class="separator:a3a7182841fc106accead18b330de7d53"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15f4c087cbbc78db4d5306b9dd624d7e" id="r_a15f4c087cbbc78db4d5306b9dd624d7e"><td align="right" class="memItemLeft" valign="top"><a id="a15f4c087cbbc78db4d5306b9dd624d7e" name="a15f4c087cbbc78db4d5306b9dd624d7e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>starWidth</b></td></tr>
+<tr class="separator:a15f4c087cbbc78db4d5306b9dd624d7e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5a74a6860cfd55545040d29e1709584a" id="r_a5a74a6860cfd55545040d29e1709584a"><td align="right" class="memItemLeft" valign="top"><a id="a5a74a6860cfd55545040d29e1709584a" name="a5a74a6860cfd55545040d29e1709584a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>lineWidth</b></td></tr>
+<tr class="separator:a5a74a6860cfd55545040d29e1709584a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7cc70778fe3546b8dc1adb86db54c2dd" id="r_a7cc70778fe3546b8dc1adb86db54c2dd"><td align="right" class="memItemLeft" valign="top"><a id="a7cc70778fe3546b8dc1adb86db54c2dd" name="a7cc70778fe3546b8dc1adb86db54c2dd"></a>
+ </td><td class="memItemRight" valign="bottom"><b>lineColor</b></td></tr>
+<tr class="separator:a7cc70778fe3546b8dc1adb86db54c2dd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae24cec9e91550e7f5e7b44f8d6f69e51" id="r_ae24cec9e91550e7f5e7b44f8d6f69e51"><td align="right" class="memItemLeft" valign="top"><a id="ae24cec9e91550e7f5e7b44f8d6f69e51" name="ae24cec9e91550e7f5e7b44f8d6f69e51"></a>
+ </td><td class="memItemRight" valign="bottom"><b>valueColor</b></td></tr>
+<tr class="separator:ae24cec9e91550e7f5e7b44f8d6f69e51"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a9180d2b6acb25ea386dae6e416e802" id="r_a7a9180d2b6acb25ea386dae6e416e802"><td align="right" class="memItemLeft" valign="top"><a id="a7a9180d2b6acb25ea386dae6e416e802" name="a7a9180d2b6acb25ea386dae6e416e802"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rectWidthMargin</b></td></tr>
+<tr class="separator:a7a9180d2b6acb25ea386dae6e416e802"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5ae7237124db405318b5cfcf9e8fc975" id="r_a5ae7237124db405318b5cfcf9e8fc975"><td align="right" class="memItemLeft" valign="top"><a id="a5ae7237124db405318b5cfcf9e8fc975" name="a5ae7237124db405318b5cfcf9e8fc975"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rectHeightMargin</b></td></tr>
+<tr class="separator:a5ae7237124db405318b5cfcf9e8fc975"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31d72899ab8952ab3eb5bd20b60749a5" id="r_a31d72899ab8952ab3eb5bd20b60749a5"><td align="right" class="memItemLeft" valign="top"><a id="a31d72899ab8952ab3eb5bd20b60749a5" name="a31d72899ab8952ab3eb5bd20b60749a5"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rectWidth</b></td></tr>
+<tr class="separator:a31d72899ab8952ab3eb5bd20b60749a5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1df94b9643a2fed92beb8b9efe634ca8" id="r_a1df94b9643a2fed92beb8b9efe634ca8"><td align="right" class="memItemLeft" valign="top"><a id="a1df94b9643a2fed92beb8b9efe634ca8" name="a1df94b9643a2fed92beb8b9efe634ca8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rectHeight</b></td></tr>
+<tr class="separator:a1df94b9643a2fed92beb8b9efe634ca8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acca9a612b50cb3c2e5eebfc041889a1f" id="r_acca9a612b50cb3c2e5eebfc041889a1f"><td align="right" class="memItemLeft" valign="top"><a id="acca9a612b50cb3c2e5eebfc041889a1f" name="acca9a612b50cb3c2e5eebfc041889a1f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CoordStepWidth</b></td></tr>
+<tr class="separator:acca9a612b50cb3c2e5eebfc041889a1f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7dd37c6e908f0418380864634d2e62fb" id="r_a7dd37c6e908f0418380864634d2e62fb"><td align="right" class="memItemLeft" valign="top"><a id="a7dd37c6e908f0418380864634d2e62fb" name="a7dd37c6e908f0418380864634d2e62fb"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CoordTopMargin</b></td></tr>
+<tr class="separator:a7dd37c6e908f0418380864634d2e62fb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a79cc64073703f0eeb4e25063121e81f0" id="r_a79cc64073703f0eeb4e25063121e81f0"><td align="right" class="memItemLeft" valign="top"><a id="a79cc64073703f0eeb4e25063121e81f0" name="a79cc64073703f0eeb4e25063121e81f0"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CoordButtomMargin</b></td></tr>
+<tr class="separator:a79cc64073703f0eeb4e25063121e81f0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab013ae5edac30fa3ce46b1cba62f1785" id="r_ab013ae5edac30fa3ce46b1cba62f1785"><td align="right" class="memItemLeft" valign="top"><a id="ab013ae5edac30fa3ce46b1cba62f1785" name="ab013ae5edac30fa3ce46b1cba62f1785"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CoordLeftMargin</b></td></tr>
+<tr class="separator:ab013ae5edac30fa3ce46b1cba62f1785"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab6930a58e2237c9d7e84da52fd11d9a8" id="r_ab6930a58e2237c9d7e84da52fd11d9a8"><td align="right" class="memItemLeft" valign="top"><a id="ab6930a58e2237c9d7e84da52fd11d9a8" name="ab6930a58e2237c9d7e84da52fd11d9a8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CoordRightMargin</b></td></tr>
+<tr class="separator:ab6930a58e2237c9d7e84da52fd11d9a8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f1d626cf2d63559edb22fe013a4d52a" id="r_a3f1d626cf2d63559edb22fe013a4d52a"><td align="right" class="memItemLeft" valign="top"><a id="a3f1d626cf2d63559edb22fe013a4d52a" name="a3f1d626cf2d63559edb22fe013a4d52a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>calibrationLength</b></td></tr>
+<tr class="separator:a3f1d626cf2d63559edb22fe013a4d52a"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>ImageCtrl结构体类。用于在图像上绘制各种元素 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a67093d85dcba79b7b966e657a52e96fe" name="a67093d85dcba79b7b966e657a52e96fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67093d85dcba79b7b966e657a52e96fe">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"> None __init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>screenWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">640</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>screenHeight</em></span><span class="paramdefsep"> = </span><span class="paramdefval">480</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>ImageCtrl的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化十字星、矩形框、坐标轴的信息</td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae88f83f82a390e1d07f95282b7a13324" name="ae88f83f82a390e1d07f95282b7a13324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88f83f82a390e1d07f95282b7a13324">◆ </a></span>DisplayImg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">DisplayImg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>img</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>展示图像，将图像赋值给 self.image </p>
+<h1><a class="anchor" id="autotoc_md339"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">img</td><td>图像 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</div>
+</div>
+<a id="aa75f3ea6415e762bd9295b0220153ae0" name="aa75f3ea6415e762bd9295b0220153ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75f3ea6415e762bd9295b0220153ae0">◆ </a></span>drawCoordinate()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">drawCoordinate </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CoordName</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>orientation</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>step</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>largeStep</em></span><span class="paramdefsep"> = </span><span class="paramdefval">4</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>minNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>maxNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>stepLength</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>绘制指定方向的坐标轴 </p>
+<h1><a class="anchor" id="autotoc_md343"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">CoordName</td><td>坐标轴名称 </td></tr>
+<tr><td class="paramname">orientation</td><td>方位 </td></tr>
+<tr><td class="paramname">value</td><td>坐标轴上的值 </td></tr>
+<tr><td class="paramname">step（默认值为1）</td><td>最小刻度 </td></tr>
+<tr><td class="paramname">largeStep（默认值为4）</td><td>大刻度 </td></tr>
+<tr><td class="paramname">minNum（默认值为0）</td><td>最小值 </td></tr>
+<tr><td class="paramname">maxNum（默认值为100）</td><td>最大值 </td></tr>
+<tr><td class="paramname">stepLength（默认值为2）</td><td>最小刻度长度 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空</dd></dl>
+<pre class="fragment">@description  :
+@param  :
+    CoordName:  坐标轴名称
+    screenWidth：  窗口宽度
+    screenHeight：  窗口高度
+    orientation：   方位
+    value：值
+    step：最小刻度
+    largeStep：大刻度
+    minNum：最小值
+    maxNum：最大值
+    stepLength：最小刻度长度
+@Returns  :
+</pre>
+</div>
+</div>
+<a id="a9b3a66798584fc60700a26636edda0eb" name="a9b3a66798584fc60700a26636edda0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3a66798584fc60700a26636edda0eb">◆ </a></span>drawCross()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">drawCross </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>绘制十字星的中心点 </p>
+<h1><a class="anchor" id="autotoc_md340"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">空</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</div>
+</div>
+<a id="a4a2b4f75662b6acac26f49c84cca10d3" name="a4a2b4f75662b6acac26f49c84cca10d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2b4f75662b6acac26f49c84cca10d3">◆ </a></span>drawCrossRect()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">drawCrossRect </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>绘制十字星外围的矩形框 </p>
+<h1><a class="anchor" id="autotoc_md341"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">空</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</div>
+</div>
+<a id="a1a77fbf72b279415156c3b98ca79ff9a" name="a1a77fbf72b279415156c3b98ca79ff9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a77fbf72b279415156c3b98ca79ff9a">◆ </a></span>drawPosture()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">drawPosture </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>绘制姿态信息，包括滚转角、俯仰角和偏航角 </p>
+<h1><a class="anchor" id="autotoc_md342"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">roll</td><td>滚转角 </td></tr>
+<tr><td class="paramname">pitch</td><td>俯仰角 </td></tr>
+<tr><td class="paramname">yaw</td><td>偏航角 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</div>
+</div>
+<a id="ae60c06bf422305352cf4e12ee1eb7352" name="ae60c06bf422305352cf4e12ee1eb7352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60c06bf422305352cf4e12ee1eb7352">◆ </a></span>setRect()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setRect </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>window_w</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>window_h</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置图像的中心点 </p>
+<h1><a class="anchor" id="autotoc_md338"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">window_w</td><td>窗口宽度 </td></tr>
+<tr><td class="paramname">window_h</td><td>窗口高度 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>空 </dd></dl>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="CameraCtrlApi_8py.html">CameraCtrlApi.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

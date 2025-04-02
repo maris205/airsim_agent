@@ -1,0 +1,5 @@
+<map id="getPX4DataMsg" name="getPX4DataMsg">
+<area shape="rect" id="Node000001" title="从40100串口监听真是数据，更新Pixhawk状态" alt="" coords="175,5,292,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a40a811a202c96d57a4f6aaa8c70837d7" title="初始化真实数据接收机制" alt="" coords="5,5,127,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,21,127,21,127,16,159,16"/>
+</map>

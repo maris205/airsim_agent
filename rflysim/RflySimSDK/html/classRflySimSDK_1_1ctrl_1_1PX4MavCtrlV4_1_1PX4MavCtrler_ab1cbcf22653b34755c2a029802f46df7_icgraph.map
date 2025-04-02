@@ -1,0 +1,7 @@
+<map id="SendBufTrue" name="SendBufTrue">
+<area shape="rect" id="Node000001" title="发送数据" alt="" coords="201,31,298,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a633042b601380e3beb82284ed6d8b2c8" title="发送UDP简单数据" alt="" coords="5,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,37,153,32,154,27,186,32"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a397232cb06ce676afe7f7feaa8c0a678" title="设置GPS的原点位置，并根据提供的GPS坐标计算位置偏差" alt="" coords="25,56,133,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,56,133,64,132,59,185,51"/>
+</map>

@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyRosStart类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>RflyRosStart</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1RflyRosStart_1_1RflyRosStart.html">RflyRosStart</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1RflyRosStart_1_1RflyRosStart-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">RflyRosStart类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>RflyRosStart结构体类.  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a08ee415a4819bbc44de300d1e9456d64" id="r_a08ee415a4819bbc44de300d1e9456d64"><td align="right" class="memItemLeft" valign="top"><a id="a08ee415a4819bbc44de300d1e9456d64" name="a08ee415a4819bbc44de300d1e9456d64"></a>
+ </td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, ID=1, ip='127.0.0.1', Com='udp', port=0, simulinkDLL=False)</td></tr>
+<tr class="separator:a08ee415a4819bbc44de300d1e9456d64"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abe23eeed2ad8070bbc9e6f59790d121c" id="r_abe23eeed2ad8070bbc9e6f59790d121c"><td align="right" class="memItemLeft" valign="top"><a id="abe23eeed2ad8070bbc9e6f59790d121c" name="abe23eeed2ad8070bbc9e6f59790d121c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>InitRosLoop</b> (self)</td></tr>
+<tr class="separator:abe23eeed2ad8070bbc9e6f59790d121c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf020fca4b60626832600b1f3eeb344c" id="r_adf020fca4b60626832600b1f3eeb344c"><td align="right" class="memItemLeft" valign="top"><a id="adf020fca4b60626832600b1f3eeb344c" name="adf020fca4b60626832600b1f3eeb344c"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>KillMavRos</b> (self)</td></tr>
+<tr class="separator:adf020fca4b60626832600b1f3eeb344c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa94dc51ef1556a597894413ac7e8c481" id="r_aa94dc51ef1556a597894413ac7e8c481"><td align="right" class="memItemLeft" valign="top"><a id="aa94dc51ef1556a597894413ac7e8c481" name="aa94dc51ef1556a597894413ac7e8c481"></a>
+ </td><td class="memItemRight" valign="bottom"><b>EndRosLoop</b> (self)</td></tr>
+<tr class="separator:aa94dc51ef1556a597894413ac7e8c481"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abab070b71afa0e95b9a1e13368a97f68" id="r_abab070b71afa0e95b9a1e13368a97f68"><td align="right" class="memItemLeft" valign="top"><a id="abab070b71afa0e95b9a1e13368a97f68" name="abab070b71afa0e95b9a1e13368a97f68"></a>
+ </td><td class="memItemRight" valign="bottom"><b>isCom</b></td></tr>
+<tr class="separator:abab070b71afa0e95b9a1e13368a97f68"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0294f2b7541099fa3b7ee8e680ea6f8" id="r_aa0294f2b7541099fa3b7ee8e680ea6f8"><td align="right" class="memItemLeft" valign="top"><a id="aa0294f2b7541099fa3b7ee8e680ea6f8" name="aa0294f2b7541099fa3b7ee8e680ea6f8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>Com</b></td></tr>
+<tr class="separator:aa0294f2b7541099fa3b7ee8e680ea6f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76432121357072730f76c1bf26df93ec" id="r_a76432121357072730f76c1bf26df93ec"><td align="right" class="memItemLeft" valign="top"><a id="a76432121357072730f76c1bf26df93ec" name="a76432121357072730f76c1bf26df93ec"></a>
+ </td><td class="memItemRight" valign="bottom"><b>baud</b></td></tr>
+<tr class="separator:a76432121357072730f76c1bf26df93ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a973a931bf688a934cceb6778d0eb8fdd" id="r_a973a931bf688a934cceb6778d0eb8fdd"><td align="right" class="memItemLeft" valign="top"><a id="a973a931bf688a934cceb6778d0eb8fdd" name="a973a931bf688a934cceb6778d0eb8fdd"></a>
+ </td><td class="memItemRight" valign="bottom"><b>isRealFly</b></td></tr>
+<tr class="separator:a973a931bf688a934cceb6778d0eb8fdd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td align="right" class="memItemLeft" valign="top"><a id="afd65cf072a93c93ad52b9f25b341e10b" name="afd65cf072a93c93ad52b9f25b341e10b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ip</b></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a81ab910f56813543665602eb682afeb1" id="r_a81ab910f56813543665602eb682afeb1"><td align="right" class="memItemLeft" valign="top"><a id="a81ab910f56813543665602eb682afeb1" name="a81ab910f56813543665602eb682afeb1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>isRedis</b></td></tr>
+<tr class="separator:a81ab910f56813543665602eb682afeb1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64ec3ecc21364d6cf9f67a6aab7a53d0" id="r_a64ec3ecc21364d6cf9f67a6aab7a53d0"><td align="right" class="memItemLeft" valign="top"><a id="a64ec3ecc21364d6cf9f67a6aab7a53d0" name="a64ec3ecc21364d6cf9f67a6aab7a53d0"></a>
+ </td><td class="memItemRight" valign="bottom"><b>simulinkDLL</b></td></tr>
+<tr class="separator:a64ec3ecc21364d6cf9f67a6aab7a53d0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td align="right" class="memItemLeft" valign="top"><a id="a4bc1de2c250838e7456f6b1991f9d9d9" name="a4bc1de2c250838e7456f6b1991f9d9d9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CopterID</b></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8fb0f45ee0195c7422a49e6a8d72369" id="r_af8fb0f45ee0195c7422a49e6a8d72369"><td align="right" class="memItemLeft" valign="top"><a id="af8fb0f45ee0195c7422a49e6a8d72369" name="af8fb0f45ee0195c7422a49e6a8d72369"></a>
+ </td><td class="memItemRight" valign="bottom"><b>port</b></td></tr>
+<tr class="separator:af8fb0f45ee0195c7422a49e6a8d72369"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abdd4ed730af9da2f879591bdf408e3ff" id="r_abdd4ed730af9da2f879591bdf408e3ff"><td align="right" class="memItemLeft" valign="top"><a id="abdd4ed730af9da2f879591bdf408e3ff" name="abdd4ed730af9da2f879591bdf408e3ff"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ComName</b></td></tr>
+<tr class="separator:abdd4ed730af9da2f879591bdf408e3ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8fad286067e886a023aa852e3cfb336c" id="r_a8fad286067e886a023aa852e3cfb336c"><td align="right" class="memItemLeft" valign="top"><a id="a8fad286067e886a023aa852e3cfb336c" name="a8fad286067e886a023aa852e3cfb336c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tgtSys</b></td></tr>
+<tr class="separator:a8fad286067e886a023aa852e3cfb336c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad00efb41ca386db28bacc7aefe79535c" id="r_ad00efb41ca386db28bacc7aefe79535c"><td align="right" class="memItemLeft" valign="top"><a id="ad00efb41ca386db28bacc7aefe79535c" name="ad00efb41ca386db28bacc7aefe79535c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>child</b></td></tr>
+<tr class="separator:ad00efb41ca386db28bacc7aefe79535c"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>RflyRosStart结构体类. </p>
+<pre class="fragment">创建一个通信实例
+ID: 如果ID&lt;=10000则表示飞机的CopterID号。如果ID&gt;10000，例如20100这种，则表示通信端口号port。按平台规则，port=20100+CopterID*2-2（为了兼容旧接口的过渡定义，将来ID只表示CopterID）。
+ip: 数据向外发送的IP地址。默认是发往本机的127.0.0.1的IP；在分布式仿真时，也可以指定192.168打头的局域网电脑IP；也可以使用255.255.255.255的广播地址（会干扰网络其他电脑）
+Com: 与Pixhawk的连接模式。
+    Com='udp'，表示使用默认的udp模式接收数据，这种模式下，是接收CopterSim转发的PX4的MAVLink消息（或UDP_full,simple）消息包
+             使用port+1端口收和port端口发（例如，1号飞机是20101端口收，20100端口发，与CopterSim对应）。
+    Com='COM3'（Widnows下）或 Com='/dev/ttyUSB0'（Linux系统，也可能是ttyS0、ttyAMA0等），表示通过USB线（或者数传）连接飞控，使用默认57600的波特率。注意：波特率使用port口设置，默认port=0，会重映射为57600
+    Com='Direct'，表示UDP直连模式（对应旧版接口的真机模式），这种模式下使用使用同一端口收发（端口号有port设置），例如Com='Direct'，port=15551，表示通过15551这一个端口来收发数据
+    注意：COM模式和Direct模式下，ID只表示飞机的ID号，而不表示端口号
+port: UDP模式下默认情况下设为0，会自动根据IP填充，按平台规则，port=20100+CopterID*2-2。如果这里赋值大于0，则会强制使用port定义的端口。
+      COM模式下，Port默认表示波特率self.baud=port。如果port=0，则会设置self.baud=57600
+      Direct模式下，Port默认表示收发端口号（使用相同端口）
+      redis模式下，Port对应服务器端口号self.redisPort = port。如果port=0，则self.redisPort=6379为平台默认值。
+
+接口示例：
+UDP模式
+PX4MavCtrler(1) # 默认IP
+PX4MavCtrler(1,'192.168.31.24') # 指定IP，用于远程控制
+
+串口模式
+PX4MavCtrler(1,'127.0.0.1','com1',57600) # 指定IP，用于远程控制</pre><p><br/>
+</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="RflyRosStart_8py.html">RflyRosStart.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

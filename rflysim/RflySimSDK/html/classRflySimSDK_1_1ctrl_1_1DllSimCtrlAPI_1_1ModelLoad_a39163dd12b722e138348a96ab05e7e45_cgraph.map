@@ -1,0 +1,4 @@
+<map id="DllDestroyModel" name="DllDestroyModel">
+<area shape="rect" id="Node000001" title="销毁当前加载的仿真模型" alt="" coords="5,29,124,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="43,30,40,20,42,11,51,5,65,3,79,5,87,12,84,16,77,10,64,8,53,10,47,14,45,20,48,28"/>
+</map>

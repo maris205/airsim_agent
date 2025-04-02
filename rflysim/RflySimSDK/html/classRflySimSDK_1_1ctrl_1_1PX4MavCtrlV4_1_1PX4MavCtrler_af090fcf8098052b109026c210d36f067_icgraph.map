@@ -1,0 +1,5 @@
+<map id="stopRun" name="stopRun">
+<area shape="rect" id="Node000001" title="停止 MAVLink 的监听循环" alt="" coords="149,5,219,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ae877b1ee5bd7f48bc0c48cf206648681" title="结束通信" alt="" coords="5,5,101,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,21,101,21,101,16,133,16"/>
+</map>

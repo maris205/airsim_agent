@@ -1,0 +1,9 @@
+<map id="reset" name="reset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="198,56,248,83"/>
+<area shape="rect" id="Node000002" href="$classvrpn__ConnectionPtr.html#a9af1d6b1ddc9c28eb7c7deb99b9d77df" title="Assignment operator from non&#45;smart pointer" alt="" coords="39,5,116,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,58,115,34,117,29,184,53"/>
+<area shape="rect" id="Node000003" href="$classvrpn__ConnectionPtr.html#adb76c2d77c292814b4b4277cde1ea869" title="Assignment operator from smart pointer" alt="" coords="39,56,116,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,72,116,72,116,67,183,67"/>
+<area shape="rect" id="Node000004" href="$classvrpn__ConnectionPtr.html#ae815193513cf956ad685c3b46ebea965" title="Destructor &#45; decrements the contained reference count, if applicable" alt="" coords="5,107,150,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,86,119,109,117,104,182,81"/>
+</map>

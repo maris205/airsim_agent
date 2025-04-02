@@ -1,0 +1,7 @@
+<map id="imu_callback" name="imu_callback">
+<area shape="rect" id="Node000001" title="处理IMU消息" alt="" coords="5,43,103,69"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ac570f2f51276de12b71bc307e4669b07" title="从输入的四元数（q）来计算偏航角" alt="" coords="151,5,345,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,46,135,41,136,46,103,51"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ac570f2f51276de12b71bc307e4669b07" title="从四元数计算偏航角" alt="" coords="218,72,278,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,61,203,76,202,81,103,66"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="vrpn_MainloopObject::CannotWrapNullPointerIntoMainloopObject" name="vrpn_MainloopObject::CannotWrapNullPointerIntoMainloopObject">
+<area shape="rect" id="Node000001" title="Exception thrown when trying to wrap a NULL pointer." alt="" coords="5,80,193,139"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="58,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,48,102,79,96,79,96,48"/>
+</map>

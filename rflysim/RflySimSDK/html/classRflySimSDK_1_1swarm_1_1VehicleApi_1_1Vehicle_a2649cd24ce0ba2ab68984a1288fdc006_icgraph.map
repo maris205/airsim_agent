@@ -1,0 +1,13 @@
+<map id="SendPosNED" name="SendPosNED">
+<area shape="rect" id="Node000001" title="发送目标位置与偏航指令给PX4（NED坐标系）。 设置CurFlag=2表示进入某种自定义模式(例如Offboard位置控制)，offMode=0表示SET_POSITION_TARGET_LOCAL_..." alt="" coords="493,64,596,91"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="292,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="490,61,444,47,390,32,391,27,446,41,491,56"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1cc273310408147338bde43eeb269c89" title="线程的主循环，用于接收20100端口的数据并根据控制模式执行相应的控制命令。" alt="" coords="237,56,445,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="477,80,446,80,446,75,477,75"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a0613cdee783308f1059a3c7d488cc4ff" title=" " alt="" coords="243,123,439,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="489,99,446,113,411,125,409,120,444,108,488,94"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="40,5,154,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,21,154,21,154,16,276,16"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5" title="用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。" alt="" coords="5,56,189,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,80,189,80,189,75,221,75"/>
+</map>

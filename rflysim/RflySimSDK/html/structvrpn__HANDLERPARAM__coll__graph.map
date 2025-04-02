@@ -1,0 +1,5 @@
+<map id="vrpn_HANDLERPARAM" name="vrpn_HANDLERPARAM">
+<area shape="rect" id="Node000001" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="5,96,171,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="61,5,115,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,48,91,95,85,95,85,48"/>
+</map>

@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: CmdCtrl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>phm</b></li><li class="navelem"><b>AutoMavCmd</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1phm_1_1AutoMavCmd_1_1CmdCtrl.html">CmdCtrl</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1phm_1_1AutoMavCmd_1_1CmdCtrl-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">CmdCtrl类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>用于控制命令序列的类。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8076b1393b30c66349a6e2be1a3fa390" id="r_a8076b1393b30c66349a6e2be1a3fa390"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8076b1393b30c66349a6e2be1a3fa390">__init__</a> (self, mav, frame)</td></tr>
+<tr class="memdesc:a8076b1393b30c66349a6e2be1a3fa390"><td class="mdescLeft"> </td><td class="mdescRight">初始化CmdCtrl类。  <br/></td></tr>
+<tr class="separator:a8076b1393b30c66349a6e2be1a3fa390"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab740404d55e5ce0a8e068f6e1e226456" id="r_ab740404d55e5ce0a8e068f6e1e226456"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab740404d55e5ce0a8e068f6e1e226456">GetWaitseq</a> (self)</td></tr>
+<tr class="memdesc:ab740404d55e5ce0a8e068f6e1e226456"><td class="mdescLeft"> </td><td class="mdescRight">获取等待序列的方法。  <br/></td></tr>
+<tr class="separator:ab740404d55e5ce0a8e068f6e1e226456"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a290d185bb152ef1714aa72f8bf85ad19" id="r_a290d185bb152ef1714aa72f8bf85ad19"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a290d185bb152ef1714aa72f8bf85ad19">GetCmdseq</a> (self)</td></tr>
+<tr class="memdesc:a290d185bb152ef1714aa72f8bf85ad19"><td class="mdescLeft"> </td><td class="mdescRight">根据不同框架获取命令序列的方法。  <br/></td></tr>
+<tr class="separator:a290d185bb152ef1714aa72f8bf85ad19"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad5e0b469232e570c150de0455e3601c4" id="r_ad5e0b469232e570c150de0455e3601c4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5e0b469232e570c150de0455e3601c4">FIDPro</a> (self, cmdCID)</td></tr>
+<tr class="memdesc:ad5e0b469232e570c150de0455e3601c4"><td class="mdescLeft"> </td><td class="mdescRight">根据命令CID获取命令序列或等待序列的方法。  <br/></td></tr>
+<tr class="separator:ad5e0b469232e570c150de0455e3601c4"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aed334d1ece87bb95d7d39c89d83e7563" id="r_aed334d1ece87bb95d7d39c89d83e7563"><td align="right" class="memItemLeft" valign="top"><a id="aed334d1ece87bb95d7d39c89d83e7563" name="aed334d1ece87bb95d7d39c89d83e7563"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mav</b></td></tr>
+<tr class="separator:aed334d1ece87bb95d7d39c89d83e7563"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a943f49763dd36e31fc7ea8604fcad789" id="r_a943f49763dd36e31fc7ea8604fcad789"><td align="right" class="memItemLeft" valign="top"><a id="a943f49763dd36e31fc7ea8604fcad789" name="a943f49763dd36e31fc7ea8604fcad789"></a>
+ </td><td class="memItemRight" valign="bottom"><b>frame</b></td></tr>
+<tr class="separator:a943f49763dd36e31fc7ea8604fcad789"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5a95f696191e6e81c14198ad0c7792f4" id="r_a5a95f696191e6e81c14198ad0c7792f4"><td align="right" class="memItemLeft" valign="top"><a id="a5a95f696191e6e81c14198ad0c7792f4" name="a5a95f696191e6e81c14198ad0c7792f4"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CID</b></td></tr>
+<tr class="separator:a5a95f696191e6e81c14198ad0c7792f4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af50ff83a41fd948ae0d4771283f1cbe1" id="r_af50ff83a41fd948ae0d4771283f1cbe1"><td align="right" class="memItemLeft" valign="top"><a id="af50ff83a41fd948ae0d4771283f1cbe1" name="af50ff83a41fd948ae0d4771283f1cbe1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CID1</b></td></tr>
+<tr class="separator:af50ff83a41fd948ae0d4771283f1cbe1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af10b09ffa14f363ba56ea15d6e04a9c9" id="r_af10b09ffa14f363ba56ea15d6e04a9c9"><td align="right" class="memItemLeft" valign="top"><a id="af10b09ffa14f363ba56ea15d6e04a9c9" name="af10b09ffa14f363ba56ea15d6e04a9c9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>CID2</b></td></tr>
+<tr class="separator:af10b09ffa14f363ba56ea15d6e04a9c9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e279f3c51aae6edb8730b739757cbf6" id="r_a1e279f3c51aae6edb8730b739757cbf6"><td align="right" class="memItemLeft" valign="top"><a id="a1e279f3c51aae6edb8730b739757cbf6" name="a1e279f3c51aae6edb8730b739757cbf6"></a>
+ </td><td class="memItemRight" valign="bottom"><b>FID</b></td></tr>
+<tr class="separator:a1e279f3c51aae6edb8730b739757cbf6"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于控制命令序列的类。 </p>
+<p>CmdCtrl类用于根据不同的框架获取对应的命令序列和等待序列。 </p><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">mav</td><td>无人机对象，用于发送控制命令。 </td></tr>
+<tr><td class="paramname">frame</td><td>指定当前的框架类型。 </td></tr>
+</table>
+</dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8076b1393b30c66349a6e2be1a3fa390" name="a8076b1393b30c66349a6e2be1a3fa390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8076b1393b30c66349a6e2be1a3fa390">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>mav</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>frame</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>初始化CmdCtrl类。 </p>
+<ul>
+<li><a class="anchor" id="CmdCtrl"></a>.__init__ <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">mav</td><td>无人机对象，用于发送控制命令。 </td></tr>
+<tr><td class="paramname">frame</td><td>指定当前的框架类型。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ad5e0b469232e570c150de0455e3601c4" name="ad5e0b469232e570c150de0455e3601c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e0b469232e570c150de0455e3601c4">◆ </a></span>FIDPro()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">FIDPro </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>cmdCID</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据命令CID获取命令序列或等待序列的方法。 </p>
+<ul>
+<li><a class="anchor" id="FIDPro"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">cmdCID</td><td>命令序列或等待序列的标识。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回对应的序列。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a290d185bb152ef1714aa72f8bf85ad19" name="a290d185bb152ef1714aa72f8bf85ad19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290d185bb152ef1714aa72f8bf85ad19">◆ </a></span>GetCmdseq()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">GetCmdseq </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据不同框架获取命令序列的方法。 </p>
+<ul>
+<li><a class="anchor" id="GetCmdseq"></a> <dl class="section return"><dt>返回</dt><dd>返回命令序列的字典。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="ab740404d55e5ce0a8e068f6e1e226456" name="ab740404d55e5ce0a8e068f6e1e226456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab740404d55e5ce0a8e068f6e1e226456">◆ </a></span>GetWaitseq()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">GetWaitseq </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取等待序列的方法。 </p>
+<ul>
+<li><a class="anchor" id="GetWaitseq"></a> <dl class="section return"><dt>返回</dt><dd>返回等待序列的字典。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>phm/<a class="el" href="AutoMavCmd_8py.html">AutoMavCmd.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

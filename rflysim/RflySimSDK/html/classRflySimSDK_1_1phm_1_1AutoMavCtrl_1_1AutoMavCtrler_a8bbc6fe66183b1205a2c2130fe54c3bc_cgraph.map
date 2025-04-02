@@ -1,0 +1,5 @@
+<map id="SimProcessLoopEnd" name="SimProcessLoopEnd">
+<area shape="rect" id="Node000001" title="结束仿真进程的方法。该方法结束无人机仿真所需的进程。" alt="" coords="5,5,149,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a656b56d2db07efb7af4e92ffe33d43ac" title="结束无人机仿真进程的方法。该方法用于安全地关闭无人机的仿真进程，确保所有仿真软件和相关资源被正确释放。" alt="" coords="197,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,16,181,16,181,21,149,21"/>
+</map>

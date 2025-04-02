@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: QGCCtrlAPI类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>phm</b></li><li class="navelem"><b>QGCCtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI.html">QGCCtrlAPI</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">QGCCtrlAPI类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>QGroundControl通信接口类。 PX4 MAVLink listen and control API and RflySim3D control API  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abcce34fbcdf14c3690ffafed164c718e" id="r_abcce34fbcdf14c3690ffafed164c718e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abcce34fbcdf14c3690ffafed164c718e">__init__</a> (self, ID=1)</td></tr>
+<tr class="memdesc:abcce34fbcdf14c3690ffafed164c718e"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化QGCCtrlAPI类的实例。  <br/></td></tr>
+<tr class="separator:abcce34fbcdf14c3690ffafed164c718e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a706caa6907194e69837c0797ccd31b12" id="r_a706caa6907194e69837c0797ccd31b12"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a706caa6907194e69837c0797ccd31b12">SendQgcCmdLong</a> (self, command, param1=0, param2=0, param3=0, param4=0, param5=0, param6=0, param7=0)</td></tr>
+<tr class="memdesc:a706caa6907194e69837c0797ccd31b12"><td class="mdescLeft"> </td><td class="mdescRight">发送长格式的MAVLink命令至QGroundControl。  <br/></td></tr>
+<tr class="separator:a706caa6907194e69837c0797ccd31b12"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5c32e1748566595651d93887eabc606f" id="r_a5c32e1748566595651d93887eabc606f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c32e1748566595651d93887eabc606f">getTxtContent</a> (self, flagFilePath)</td></tr>
+<tr class="memdesc:a5c32e1748566595651d93887eabc606f"><td class="mdescLeft"> </td><td class="mdescRight">从指定路径获取文本文件内容，并删除该文件。  <br/></td></tr>
+<tr class="separator:a5c32e1748566595651d93887eabc606f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9fcd768c809c021f002a25ea69f3f6a3" id="r_a9fcd768c809c021f002a25ea69f3f6a3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fcd768c809c021f002a25ea69f3f6a3">copyLogFile</a> (self, source, target)</td></tr>
+<tr class="memdesc:a9fcd768c809c021f002a25ea69f3f6a3"><td class="mdescLeft"> </td><td class="mdescRight">将日志文件从源路径复制到目标路径。  <br/></td></tr>
+<tr class="separator:a9fcd768c809c021f002a25ea69f3f6a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed647683ddf03488b4110b2388cdf269" id="r_aed647683ddf03488b4110b2388cdf269"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aed647683ddf03488b4110b2388cdf269">ReqQgcLog</a> (self, timeout=180, CopterID=1)</td></tr>
+<tr class="memdesc:aed647683ddf03488b4110b2388cdf269"><td class="mdescLeft"> </td><td class="mdescRight">请求QGroundControl的日志文件。  <br/></td></tr>
+<tr class="separator:aed647683ddf03488b4110b2388cdf269"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a633de4b0c14ca52ea2432a3c8a5c4c31" id="r_a633de4b0c14ca52ea2432a3c8a5c4c31"><td align="right" class="memItemLeft" valign="top"><a id="a633de4b0c14ca52ea2432a3c8a5c4c31" name="a633de4b0c14ca52ea2432a3c8a5c4c31"></a>
+ </td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
+<tr class="separator:a633de4b0c14ca52ea2432a3c8a5c4c31"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0969a6176518f77bdb143670c38581aa" id="r_a0969a6176518f77bdb143670c38581aa"><td align="right" class="memItemLeft" valign="top"><a id="a0969a6176518f77bdb143670c38581aa" name="a0969a6176518f77bdb143670c38581aa"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mav0</b></td></tr>
+<tr class="separator:a0969a6176518f77bdb143670c38581aa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac3c09454423a43865fb6dfd0f33861af" id="r_ac3c09454423a43865fb6dfd0f33861af"><td align="right" class="memItemLeft" valign="top"><a id="ac3c09454423a43865fb6dfd0f33861af" name="ac3c09454423a43865fb6dfd0f33861af"></a>
+ </td><td class="memItemRight" valign="bottom"><b>QGCPath</b></td></tr>
+<tr class="separator:ac3c09454423a43865fb6dfd0f33861af"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed67dc6add3e43d1296aa6f1b45a4b63" id="r_aed67dc6add3e43d1296aa6f1b45a4b63"><td align="right" class="memItemLeft" valign="top"><a id="aed67dc6add3e43d1296aa6f1b45a4b63" name="aed67dc6add3e43d1296aa6f1b45a4b63"></a>
+ </td><td class="memItemRight" valign="bottom"><b>udp_socketQGC</b></td></tr>
+<tr class="separator:aed67dc6add3e43d1296aa6f1b45a4b63"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>QGroundControl通信接口类。 PX4 MAVLink listen and control API and RflySim3D control API </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abcce34fbcdf14c3690ffafed164c718e" name="abcce34fbcdf14c3690ffafed164c718e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcce34fbcdf14c3690ffafed164c718e">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化QGCCtrlAPI类的实例。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ID</td><td>QGroundControl的实例ID，默认为1。 constructor function </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9fcd768c809c021f002a25ea69f3f6a3" name="a9fcd768c809c021f002a25ea69f3f6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fcd768c809c021f002a25ea69f3f6a3">◆ </a></span>copyLogFile()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">copyLogFile </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>target</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将日志文件从源路径复制到目标路径。 </p>
+<ul>
+<li><a class="anchor" id="copyLogFile"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">source</td><td>源文件路径。 </td></tr>
+<tr><td class="paramname">target</td><td>目标文件路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 将日志文件复制指定位置 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a5c32e1748566595651d93887eabc606f" name="a5c32e1748566595651d93887eabc606f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c32e1748566595651d93887eabc606f">◆ </a></span>getTxtContent()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getTxtContent </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>flagFilePath</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从指定路径获取文本文件内容，并删除该文件。 </p>
+<ul>
+<li><a class="anchor" id="getTxtContent"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">flagFilePath</td><td>标志文件的路径。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回文件内容，若文件不存在或读取失败，返回空字符串。 获取日志文件名 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI_a5c32e1748566595651d93887eabc606f_icgraph.svg" width="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aed647683ddf03488b4110b2388cdf269" name="aed647683ddf03488b4110b2388cdf269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed647683ddf03488b4110b2388cdf269">◆ </a></span>ReqQgcLog()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ReqQgcLog </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">180</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>请求QGroundControl的日志文件。 </p>
+<ul>
+<li><a class="anchor" id="ReqQgcLog"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">timeout</td><td>请求日志的超时时间，默认为180秒。 </td></tr>
+<tr><td class="paramname">CopterID</td><td>指定的无人机ID，默认为1。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回下载的日志文件名，如果请求失败或超时，返回空字符串。 请求QGC日志，设定请求日志的ID号（默认为1），并设置超时时间100s </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="155" scrolling="no" src="classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI_aed647683ddf03488b4110b2388cdf269_cgraph.svg" width="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a706caa6907194e69837c0797ccd31b12" name="a706caa6907194e69837c0797ccd31b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706caa6907194e69837c0797ccd31b12">◆ </a></span>SendQgcCmdLong()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendQgcCmdLong </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>command</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param1</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param2</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param3</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param4</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param5</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param6</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param7</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送长格式的MAVLink命令至QGroundControl。 </p>
+<ul>
+<li><a class="anchor" id="SendQgcCmdLong"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">command</td><td>MAVLink命令ID。 </td></tr>
+<tr><td class="paramname">param1</td><td>至param7 命令参数，默认值为0。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI_a706caa6907194e69837c0797ccd31b12_icgraph.svg" width="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>phm/<a class="el" href="QGCCtrlAPI_8py.html">QGCCtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

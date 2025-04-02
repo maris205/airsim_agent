@@ -1,0 +1,1193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Tracker_WiimoteHead类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-static-methods">静态 Public 成员函数</a> |
+<a href="#pro-types">Protected 类型</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__Tracker__WiimoteHead-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Tracker_WiimoteHead类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Provides a tracker device given data from a Wii Remote and LED glasses.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Tracker__WiimoteHead_8h_source.html">vrpn_Tracker_WiimoteHead.h</a>&gt;</code></p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_Tracker_WiimoteHead 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="262" scrolling="no" src="classvrpn__Tracker__WiimoteHead__inherit__graph.svg" width="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_Tracker_WiimoteHead 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classvrpn__Tracker__WiimoteHead__coll__graph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0a8ff3c215d0d032dc2fdc3ef3d87a4d" id="r_a0a8ff3c215d0d032dc2fdc3ef3d87a4d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a8ff3c215d0d032dc2fdc3ef3d87a4d">vrpn_Tracker_WiimoteHead</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *trackercon, const char *wiimote, float update_rate, float led_spacing=0.145)</td></tr>
+<tr class="memdesc:a0a8ff3c215d0d032dc2fdc3ef3d87a4d"><td class="mdescLeft"> </td><td class="mdescRight">constructor  <br/></td></tr>
+<tr class="separator:a0a8ff3c215d0d032dc2fdc3ef3d87a4d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae84b768d76b078560b451efd66d20d1e" id="r_ae84b768d76b078560b451efd66d20d1e"><td align="right" class="memItemLeft" valign="top">virtual </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae84b768d76b078560b451efd66d20d1e">~vrpn_Tracker_WiimoteHead</a> ()</td></tr>
+<tr class="memdesc:ae84b768d76b078560b451efd66d20d1e"><td class="mdescLeft"> </td><td class="mdescRight">destructor  <br/></td></tr>
+<tr class="separator:ae84b768d76b078560b451efd66d20d1e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b0e029102ad38f4b814c6523aedb53d" id="r_a7b0e029102ad38f4b814c6523aedb53d"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b0e029102ad38f4b814c6523aedb53d">reset</a> ()</td></tr>
+<tr class="memdesc:a7b0e029102ad38f4b814c6523aedb53d"><td class="mdescLeft"> </td><td class="mdescRight">reset pose, gravity transform, and cached points and gravity  <br/></td></tr>
+<tr class="separator:a7b0e029102ad38f4b814c6523aedb53d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae277013ed4163834067475b23f89ead5" id="r_ae277013ed4163834067475b23f89ead5"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae277013ed4163834067475b23f89ead5">setup_wiimote</a> ()</td></tr>
+<tr class="memdesc:ae277013ed4163834067475b23f89ead5"><td class="mdescLeft"> </td><td class="mdescRight">set up connection to wiimote-like analog device  <br/></td></tr>
+<tr class="separator:ae277013ed4163834067475b23f89ead5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5299ecc517aeaf6e61dc5d2c5316b4cb" id="r_a5299ecc517aeaf6e61dc5d2c5316b4cb"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a> ()</td></tr>
+<tr class="memdesc:a5299ecc517aeaf6e61dc5d2c5316b4cb"><td class="mdescLeft"> </td><td class="mdescRight">VRPN mainloop function  <br/></td></tr>
+<tr class="separator:a5299ecc517aeaf6e61dc5d2c5316b4cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4f97286fc512670b32b8e0c6e6d069b1" id="r_a4f97286fc512670b32b8e0c6e6d069b1"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f97286fc512670b32b8e0c6e6d069b1">update_pose</a> ()</td></tr>
+<tr class="memdesc:a4f97286fc512670b32b8e0c6e6d069b1"><td class="mdescLeft"> </td><td class="mdescRight">function to drive the full pose update process  <br/></td></tr>
+<tr class="separator:a4f97286fc512670b32b8e0c6e6d069b1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae4499ee0125936e10dde278b4a18c289" id="r_ae4499ee0125936e10dde278b4a18c289"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4499ee0125936e10dde278b4a18c289">report</a> ()</td></tr>
+<tr class="memdesc:ae4499ee0125936e10dde278b4a18c289"><td class="mdescLeft"> </td><td class="mdescRight">Pack and send tracker report  <br/></td></tr>
+<tr class="separator:ae4499ee0125936e10dde278b4a18c289"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Tracker')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:acb8dd6a29a0155ce16a89c681525cde1 inherit pub_methods_classvrpn__Tracker" id="r_acb8dd6a29a0155ce16a89c681525cde1"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Tracker</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL, const char *tracker_cfg_file_name=NULL)</td></tr>
+<tr class="separator:acb8dd6a29a0155ce16a89c681525cde1 inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab1e27b0a45047f5eb17be69fa332a91f inherit pub_methods_classvrpn__Tracker" id="r_ab1e27b0a45047f5eb17be69fa332a91f"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>read_config_file</b> (FILE *config_file, const char *tracker_name)</td></tr>
+<tr class="separator:ab1e27b0a45047f5eb17be69fa332a91f inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8f309c39a3f47f52cd609a01ee17da2a inherit pub_methods_classvrpn__Tracker" id="r_a8f309c39a3f47f52cd609a01ee17da2a"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>print_latest_report</b> (void)</td></tr>
+<tr class="separator:a8f309c39a3f47f52cd609a01ee17da2a inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2db6cfe71246aedde8396904b96753aa inherit pub_methods_classvrpn__Tracker" id="r_a2db6cfe71246aedde8396904b96753aa"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>register_server_handlers</b> (void)</td></tr>
+<tr class="separator:a2db6cfe71246aedde8396904b96753aa inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a45ec6ee050ca4b1cc56502d5d12a11e5 inherit pub_methods_classvrpn__Tracker" id="r_a45ec6ee050ca4b1cc56502d5d12a11e5"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>get_local_t2r</b> (vrpn_float64 *vec, vrpn_float64 *quat)</td></tr>
+<tr class="separator:a45ec6ee050ca4b1cc56502d5d12a11e5 inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3163e95afd809068952b9642780ae038 inherit pub_methods_classvrpn__Tracker" id="r_a3163e95afd809068952b9642780ae038"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>get_local_u2s</b> (vrpn_int32 sensor, vrpn_float64 *vec, vrpn_float64 *quat)</td></tr>
+<tr class="separator:a3163e95afd809068952b9642780ae038 inherit pub_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass" id="r_a7a074af17ba19d3b0287e2add608e70b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a7a074af17ba19d3b0287e2add608e70b">vrpn_BaseClass</a> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="separator:a7a074af17ba19d3b0287e2add608e70b inherit pub_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique" id="r_af9949f7f3f722612c34f56c8351c54f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af9949f7f3f722612c34f56c8351c54f2">connectionPtr</a> ()</td></tr>
+<tr class="memdesc:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Returns a pointer to the connection this object is using  <br/></td></tr>
+<tr class="separator:af9949f7f3f722612c34f56c8351c54f2 inherit pub_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1a4eb0130bb6ae5b0226b7cfbeca067a" id="r_a1a4eb0130bb6ae5b0226b7cfbeca067a"><td align="right" class="memItemLeft" valign="top">static int VRPN_CALLBACK VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a4eb0130bb6ae5b0226b7cfbeca067a">handle_connection</a> (void *, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>)</td></tr>
+<tr class="memdesc:a1a4eb0130bb6ae5b0226b7cfbeca067a"><td class="mdescLeft"> </td><td class="mdescRight">Callback triggered when a new client connects to the tracker  <br/></td></tr>
+<tr class="separator:a1a4eb0130bb6ae5b0226b7cfbeca067a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aecdbfd059381c1c132fef73884c93fb6" id="r_aecdbfd059381c1c132fef73884c93fb6"><td align="right" class="memItemLeft" valign="top">static void VRPN_CALLBACK VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><a class="el" href="#aecdbfd059381c1c132fef73884c93fb6">handle_analog_update</a> (void *userdata, const <a class="el" href="struct__vrpn__ANALOGCB.html">vrpn_ANALOGCB</a> info)</td></tr>
+<tr class="memdesc:aecdbfd059381c1c132fef73884c93fb6"><td class="mdescLeft"> </td><td class="mdescRight">Callback triggered when our data source issues an update  <br/></td></tr>
+<tr class="separator:aecdbfd059381c1c132fef73884c93fb6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_static_methods_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classvrpn__Tracker')"><img alt="-" src="closed.png"/> 静态 Public 成员函数 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:adf39b266ac90602bebbecba3aa3ec8cf inherit pub_static_methods_classvrpn__Tracker" id="r_adf39b266ac90602bebbecba3aa3ec8cf"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_t2r_request</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:adf39b266ac90602bebbecba3aa3ec8cf inherit pub_static_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a22b9c766ddd851950e3b203b33f4241b inherit pub_static_methods_classvrpn__Tracker" id="r_a22b9c766ddd851950e3b203b33f4241b"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_u2s_request</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a22b9c766ddd851950e3b203b33f4241b inherit pub_static_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a000f8c164fc6b7806a68fcd097909109 inherit pub_static_methods_classvrpn__Tracker" id="r_a000f8c164fc6b7806a68fcd097909109"><td align="right" class="memItemLeft" valign="top">
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_workspace_request</b> (void *userdata, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a> p)</td></tr>
+<tr class="separator:a000f8c164fc6b7806a68fcd097909109 inherit pub_static_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a819468c5bae8a1a74cd51ab43f8da2e1" id="r_a819468c5bae8a1a74cd51ab43f8da2e1"><td align="right" class="memItemLeft" valign="top"><a id="a819468c5bae8a1a74cd51ab43f8da2e1" name="a819468c5bae8a1a74cd51ab43f8da2e1"></a>enum  </td><td class="memItemRight" valign="bottom"><b>FlipState</b> { <b>FLIP_NORMAL</b>
+, <b>FLIP_180</b>
+, <b>FLIP_UNKNOWN</b>
+ }</td></tr>
+<tr class="separator:a819468c5bae8a1a74cd51ab43f8da2e1"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ae8e7ca5ddc62c396d0ddea9546f5ebbe" id="r_ae8e7ca5ddc62c396d0ddea9546f5ebbe"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8e7ca5ddc62c396d0ddea9546f5ebbe">_update_gravity_moving_avg</a> ()</td></tr>
+<tr class="memdesc:ae8e7ca5ddc62c396d0ddea9546f5ebbe"><td class="mdescLeft"> </td><td class="mdescRight">based on cached gravity data, use a moving average to update the tracker's stored gravity transform.  <br/></td></tr>
+<tr class="separator:ae8e7ca5ddc62c396d0ddea9546f5ebbe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7ad35c799b72e7467949764566b06a55" id="r_a7ad35c799b72e7467949764566b06a55"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ad35c799b72e7467949764566b06a55">_update_2_LED_pose</a> (<a class="el" href="structq__xyz__quat__struct.html">q_xyz_quat_type</a> &amp;newPose)</td></tr>
+<tr class="memdesc:a7ad35c799b72e7467949764566b06a55"><td class="mdescLeft"> </td><td class="mdescRight">Create tracker-relative pose estimate based on sensor location of 2 tracked points.  <br/></td></tr>
+<tr class="separator:a7ad35c799b72e7467949764566b06a55"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c2aa803d7347e3e137b309a70594035" id="r_a9c2aa803d7347e3e137b309a70594035"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c2aa803d7347e3e137b309a70594035">_update_flip_state</a> ()</td></tr>
+<tr class="memdesc:a9c2aa803d7347e3e137b309a70594035"><td class="mdescLeft"> </td><td class="mdescRight">If flip state is unknown, set flip state appropriately.  <br/></td></tr>
+<tr class="separator:a9c2aa803d7347e3e137b309a70594035"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8524e8f8728a49d850af4b61a3466353" id="r_a8524e8f8728a49d850af4b61a3466353"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8524e8f8728a49d850af4b61a3466353">_convert_pose_to_tracker</a> ()</td></tr>
+<tr class="memdesc:a8524e8f8728a49d850af4b61a3466353"><td class="mdescLeft"> </td><td class="mdescRight">Set the <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a> position and rotation to that indicated by our d_currentPose;  <br/></td></tr>
+<tr class="separator:a8524e8f8728a49d850af4b61a3466353"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a62ae2bb4b78f735cac0803e61b2eb998" id="r_a62ae2bb4b78f735cac0803e61b2eb998"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a62ae2bb4b78f735cac0803e61b2eb998">_reset_gravity</a> ()</td></tr>
+<tr class="memdesc:a62ae2bb4b78f735cac0803e61b2eb998"><td class="mdescLeft"> </td><td class="mdescRight">reset gravity transform and cached gravity vectors  <br/></td></tr>
+<tr class="separator:a62ae2bb4b78f735cac0803e61b2eb998"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac48361d8ab97a0529e2b3555c5e68ab6" id="r_ac48361d8ab97a0529e2b3555c5e68ab6"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac48361d8ab97a0529e2b3555c5e68ab6">_reset_points</a> ()</td></tr>
+<tr class="memdesc:ac48361d8ab97a0529e2b3555c5e68ab6"><td class="mdescLeft"> </td><td class="mdescRight">reset cached points, point count, and flip state,  <br/></td></tr>
+<tr class="separator:ac48361d8ab97a0529e2b3555c5e68ab6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af2a3ed98832f5ef1745cc0b25db038cb" id="r_af2a3ed98832f5ef1745cc0b25db038cb"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a3ed98832f5ef1745cc0b25db038cb">_reset_pose</a> ()</td></tr>
+<tr class="memdesc:af2a3ed98832f5ef1745cc0b25db038cb"><td class="mdescLeft"> </td><td class="mdescRight">reset current pose, last report time, and tracker pose  <br/></td></tr>
+<tr class="separator:af2a3ed98832f5ef1745cc0b25db038cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aefe7117fed4cff10182bc34af7ae7379" id="r_aefe7117fed4cff10182bc34af7ae7379"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe7117fed4cff10182bc34af7ae7379">_should_report</a> (double elapsedInterval) const</td></tr>
+<tr class="memdesc:aefe7117fed4cff10182bc34af7ae7379"><td class="mdescLeft"> </td><td class="mdescRight">return true if we have new data or max time elapsed  <br/></td></tr>
+<tr class="separator:aefe7117fed4cff10182bc34af7ae7379"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4ca0b40c58d830963bc03e55ab0329c0" id="r_a4ca0b40c58d830963bc03e55ab0329c0"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ca0b40c58d830963bc03e55ab0329c0">_have_gravity</a> () const</td></tr>
+<tr class="memdesc:a4ca0b40c58d830963bc03e55ab0329c0"><td class="mdescLeft"> </td><td class="mdescRight">return true if our gravity values look like real data  <br/></td></tr>
+<tr class="separator:a4ca0b40c58d830963bc03e55ab0329c0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Tracker')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:aa8b11ddaae0ca07c7b13f251794b289a inherit pro_methods_classvrpn__Tracker" id="r_aa8b11ddaae0ca07c7b13f251794b289a"><td align="right" class="memItemLeft" valign="top">
+bool </td><td class="memItemRight" valign="bottom"><b>ensure_enough_unit2sensors</b> (unsigned num)</td></tr>
+<tr class="separator:aa8b11ddaae0ca07c7b13f251794b289a inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Tracker" id="r_ad323fbb3a0d01ece28df8432733664fb"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__Tracker.html#ad323fbb3a0d01ece28df8432733664fb">register_types</a> (void)</td></tr>
+<tr class="separator:ad323fbb3a0d01ece28df8432733664fb inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac58bb6bf07ba5397075e07beff9e370 inherit pro_methods_classvrpn__Tracker" id="r_aac58bb6bf07ba5397075e07beff9e370"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_to</b> (char *buf)</td></tr>
+<tr class="separator:aac58bb6bf07ba5397075e07beff9e370 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad4cc6f2456a43d9f799269156b3c2516 inherit pro_methods_classvrpn__Tracker" id="r_ad4cc6f2456a43d9f799269156b3c2516"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_vel_to</b> (char *buf)</td></tr>
+<tr class="separator:ad4cc6f2456a43d9f799269156b3c2516 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af555c97acc81aa3e68d66443877a5f59 inherit pro_methods_classvrpn__Tracker" id="r_af555c97acc81aa3e68d66443877a5f59"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_acc_to</b> (char *buf)</td></tr>
+<tr class="separator:af555c97acc81aa3e68d66443877a5f59 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bbd768dee6fb6d4d2169bdae00b950d inherit pro_methods_classvrpn__Tracker" id="r_a5bbd768dee6fb6d4d2169bdae00b950d"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_tracker2room_to</b> (char *buf)</td></tr>
+<tr class="separator:a5bbd768dee6fb6d4d2169bdae00b950d inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea8e4cc4449f394282504ee5cb6875f2 inherit pro_methods_classvrpn__Tracker" id="r_aea8e4cc4449f394282504ee5cb6875f2"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_unit2sensor_to</b> (char *buf)</td></tr>
+<tr class="separator:aea8e4cc4449f394282504ee5cb6875f2 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a79fe8570899d8f0094431637d847adb0 inherit pro_methods_classvrpn__Tracker" id="r_a79fe8570899d8f0094431637d847adb0"><td align="right" class="memItemLeft" valign="top">
+virtual int </td><td class="memItemRight" valign="bottom"><b>encode_workspace_to</b> (char *buf)</td></tr>
+<tr class="separator:a79fe8570899d8f0094431637d847adb0 inherit pro_methods_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClass')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClass.html">vrpn_BaseClass</a></td></tr>
+<tr class="memitem:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass" id="r_a39894293265380f47e12dc38773b1f69"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a39894293265380f47e12dc38773b1f69">init</a> (void)</td></tr>
+<tr class="separator:a39894293265380f47e12dc38773b1f69 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass" id="r_a3c7c050ad9bb970957dfa6c2f4c833c3"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClass.html#a3c7c050ad9bb970957dfa6c2f4c833c3">register_senders</a> (void)</td></tr>
+<tr class="separator:a3c7c050ad9bb970957dfa6c2f4c833c3 inherit pro_methods_classvrpn__BaseClass"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique" id="r_ac27f3c80c7edd28bb1b955358d221d58"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ac27f3c80c7edd28bb1b955358d221d58">register_autodeleted_handler</a> (vrpn_int32 type, vrpn_MESSAGEHANDLER handler, void *userdata, vrpn_int32 sender=vrpn_ANY_SENDER)</td></tr>
+<tr class="separator:ac27f3c80c7edd28bb1b955358d221d58 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a1a4e9d1d8858036f3ac8c37eb8f67aa3"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a1a4e9d1d8858036f3ac8c37eb8f67aa3">send_text_message</a> (const char *msg, struct timeval timestamp, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL, vrpn_uint32 level=0)</td></tr>
+<tr class="memdesc:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Sends a NULL-terminated text message from the device d_sender_id  <br/></td></tr>
+<tr class="separator:a1a4e9d1d8858036f3ac8c37eb8f67aa3 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique" id="r_aa818797ad32c8be380cb3f9962048088"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__BaseClassUnique_1_1SendTextMessageBoundCall.html">SendTextMessageBoundCall</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa818797ad32c8be380cb3f9962048088">send_text_message</a> (<a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> type=vrpn_TEXT_NORMAL)</td></tr>
+<tr class="separator:aa818797ad32c8be380cb3f9962048088 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique" id="r_a5f63dfe395699defbadb9a7cd1ee9e29"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a5f63dfe395699defbadb9a7cd1ee9e29">server_mainloop</a> (void)</td></tr>
+<tr class="separator:a5f63dfe395699defbadb9a7cd1ee9e29 inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique" id="r_afec33d974c2286b9b2cefdcfbfa2430b"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#afec33d974c2286b9b2cefdcfbfa2430b">client_mainloop</a> (void)</td></tr>
+<tr class="separator:afec33d974c2286b9b2cefdcfbfa2430b inherit pro_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ae77c9a186563b0e00b46b7645a5636a6" id="r_ae77c9a186563b0e00b46b7645a5636a6"><td align="right" class="memItemLeft" valign="top">const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae77c9a186563b0e00b46b7645a5636a6">d_name</a></td></tr>
+<tr class="memdesc:ae77c9a186563b0e00b46b7645a5636a6"><td class="mdescLeft"> </td><td class="mdescRight">Tracker device name  <br/></td></tr>
+<tr class="separator:ae77c9a186563b0e00b46b7645a5636a6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a030992fe13e69742175f85c6a63bdf83" id="r_a030992fe13e69742175f85c6a63bdf83"><td align="right" class="memItemLeft" valign="top">const double </td><td class="memItemRight" valign="bottom"><a class="el" href="#a030992fe13e69742175f85c6a63bdf83">d_update_interval</a></td></tr>
+<tr class="memdesc:a030992fe13e69742175f85c6a63bdf83"><td class="mdescLeft"> </td><td class="mdescRight">maximum time between updates, in seconds  <br/></td></tr>
+<tr class="separator:a030992fe13e69742175f85c6a63bdf83"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af84c0e4e62df3ec501d9c24766421a22" id="r_af84c0e4e62df3ec501d9c24766421a22"><td align="right" class="memItemLeft" valign="top">const double </td><td class="memItemRight" valign="bottom"><a class="el" href="#af84c0e4e62df3ec501d9c24766421a22">d_blobDistance</a></td></tr>
+<tr class="memdesc:af84c0e4e62df3ec501d9c24766421a22"><td class="mdescLeft"> </td><td class="mdescRight">distance between LEDs on glasses, in meters  <br/></td></tr>
+<tr class="separator:af84c0e4e62df3ec501d9c24766421a22"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9f4b7f5fb707fea6075e34a182fb5cba" id="r_a9f4b7f5fb707fea6075e34a182fb5cba"><td align="right" class="memItemLeft" valign="top">FlipState </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f4b7f5fb707fea6075e34a182fb5cba">d_flipState</a></td></tr>
+<tr class="memdesc:a9f4b7f5fb707fea6075e34a182fb5cba"><td class="mdescLeft"> </td><td class="mdescRight">Whether we need to flip the order of the tracked points before calculating a pose.  <br/></td></tr>
+<tr class="separator:a9f4b7f5fb707fea6075e34a182fb5cba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9e4d4d10c443bdb04ca2aff01ec76e7" id="r_aa9e4d4d10c443bdb04ca2aff01ec76e7"><td align="right" class="memItemLeft" valign="top">struct timeval </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e4d4d10c443bdb04ca2aff01ec76e7">d_prevtime</a></td></tr>
+<tr class="memdesc:aa9e4d4d10c443bdb04ca2aff01ec76e7"><td class="mdescLeft"> </td><td class="mdescRight">Time of last tracker report issued  <br/></td></tr>
+<tr class="separator:aa9e4d4d10c443bdb04ca2aff01ec76e7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeabf51d817be72c46aee88f89fc047c7" id="r_aeabf51d817be72c46aee88f89fc047c7"><td align="right" class="memItemLeft" valign="top"><a id="aeabf51d817be72c46aee88f89fc047c7" name="aeabf51d817be72c46aee88f89fc047c7"></a>
+double </td><td class="memItemRight" valign="bottom"><b>d_vX</b> [4]</td></tr>
+<tr class="separator:aeabf51d817be72c46aee88f89fc047c7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51fe059eee0f765d44c7f9f7e0aa0d13" id="r_a51fe059eee0f765d44c7f9f7e0aa0d13"><td align="right" class="memItemLeft" valign="top"><a id="a51fe059eee0f765d44c7f9f7e0aa0d13" name="a51fe059eee0f765d44c7f9f7e0aa0d13"></a>
+double </td><td class="memItemRight" valign="bottom"><b>d_vY</b> [4]</td></tr>
+<tr class="separator:a51fe059eee0f765d44c7f9f7e0aa0d13"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0767098a8ad6d033f05678a000f09709" id="r_a0767098a8ad6d033f05678a000f09709"><td align="right" class="memItemLeft" valign="top"><a id="a0767098a8ad6d033f05678a000f09709" name="a0767098a8ad6d033f05678a000f09709"></a>
+double </td><td class="memItemRight" valign="bottom"><b>d_vSize</b> [4]</td></tr>
+<tr class="separator:a0767098a8ad6d033f05678a000f09709"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6788c6a432c5ec246c06c973cbed871a" id="r_a6788c6a432c5ec246c06c973cbed871a"><td align="right" class="memItemLeft" valign="top"><a id="a6788c6a432c5ec246c06c973cbed871a" name="a6788c6a432c5ec246c06c973cbed871a"></a>
+double </td><td class="memItemRight" valign="bottom"><b>d_points</b></td></tr>
+<tr class="separator:a6788c6a432c5ec246c06c973cbed871a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ade6478f775a35d088c60d636ff89e9e9" id="r_ade6478f775a35d088c60d636ff89e9e9"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#ade6478f775a35d088c60d636ff89e9e9">d_ana</a></td></tr>
+<tr class="memdesc:ade6478f775a35d088c60d636ff89e9e9"><td class="mdescLeft"> </td><td class="mdescRight">Source of analog data, traditionally vrpn_WiiMote Must present analog channels in this order:  <br/></td></tr>
+<tr class="separator:ade6478f775a35d088c60d636ff89e9e9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a389fae41eaadd9cf299e600404499c5a" id="r_a389fae41eaadd9cf299e600404499c5a"><td align="right" class="memItemLeft" valign="top"><a class="el" href="structq__xyz__quat__struct.html">q_xyz_quat_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a389fae41eaadd9cf299e600404499c5a">d_gravityXform</a></td></tr>
+<tr class="memdesc:a389fae41eaadd9cf299e600404499c5a"><td class="mdescLeft"> </td><td class="mdescRight">Gravity correction transformation  <br/></td></tr>
+<tr class="separator:a389fae41eaadd9cf299e600404499c5a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6fd029a03a94d8cd700703683d56096" id="r_ad6fd029a03a94d8cd700703683d56096"><td align="right" class="memItemLeft" valign="top"><a class="el" href="structq__xyz__quat__struct.html">q_xyz_quat_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6fd029a03a94d8cd700703683d56096">d_currentPose</a></td></tr>
+<tr class="memdesc:ad6fd029a03a94d8cd700703683d56096"><td class="mdescLeft"> </td><td class="mdescRight">Current pose estimate  <br/></td></tr>
+<tr class="separator:ad6fd029a03a94d8cd700703683d56096"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af2f19119dc56cce90a1a9c02ceab1760" id="r_af2f19119dc56cce90a1a9c02ceab1760"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#af2f19119dc56cce90a1a9c02ceab1760">d_contact</a></td></tr>
+<tr class="memdesc:af2f19119dc56cce90a1a9c02ceab1760"><td class="mdescLeft"> </td><td class="mdescRight">Flag: Have we received the first message from the Wiimote?  <br/></td></tr>
+<tr class="separator:af2f19119dc56cce90a1a9c02ceab1760"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a978346d1a3aedf0eeaf810560cfd020b" id="r_a978346d1a3aedf0eeaf810560cfd020b"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a978346d1a3aedf0eeaf810560cfd020b">d_lock</a></td></tr>
+<tr class="memdesc:a978346d1a3aedf0eeaf810560cfd020b"><td class="mdescLeft"> </td><td class="mdescRight">Flag: Does the tracking algorithm report a lock?  <br/></td></tr>
+<tr class="separator:a978346d1a3aedf0eeaf810560cfd020b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a331b7760296371b903717a7f64cae0f8" id="r_a331b7760296371b903717a7f64cae0f8"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a331b7760296371b903717a7f64cae0f8">d_updated</a></td></tr>
+<tr class="memdesc:a331b7760296371b903717a7f64cae0f8"><td class="mdescLeft"> </td><td class="mdescRight">Flag: Have we received updated Wiimote data since last report?  <br/></td></tr>
+<tr class="separator:a331b7760296371b903717a7f64cae0f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaabb1f66317698202c9dfa5bbeb91a26" id="r_aaabb1f66317698202c9dfa5bbeb91a26"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaabb1f66317698202c9dfa5bbeb91a26">d_gravDirty</a></td></tr>
+<tr class="memdesc:aaabb1f66317698202c9dfa5bbeb91a26"><td class="mdescLeft"> </td><td class="mdescRight">Flag: Have we received updated gravity data since last gravity update?  <br/></td></tr>
+<tr class="separator:aaabb1f66317698202c9dfa5bbeb91a26"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a44381eb710567dd4c0ada45645a1df30" id="r_a44381eb710567dd4c0ada45645a1df30"><td align="right" class="memItemLeft" valign="top"><a id="a44381eb710567dd4c0ada45645a1df30" name="a44381eb710567dd4c0ada45645a1df30"></a>
+q_vec_type </td><td class="memItemRight" valign="bottom"><b>d_vGravAntepenultimate</b></td></tr>
+<tr class="separator:a44381eb710567dd4c0ada45645a1df30"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af24ae87cb1742e30859d970af6c0b637" id="r_af24ae87cb1742e30859d970af6c0b637"><td align="right" class="memItemLeft" valign="top"><a id="af24ae87cb1742e30859d970af6c0b637" name="af24ae87cb1742e30859d970af6c0b637"></a>
+q_vec_type </td><td class="memItemRight" valign="bottom"><b>d_vGravPenultimate</b></td></tr>
+<tr class="separator:af24ae87cb1742e30859d970af6c0b637"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7c0e766f9ba85dc31645caf944525db8" id="r_a7c0e766f9ba85dc31645caf944525db8"><td align="right" class="memItemLeft" valign="top"><a id="a7c0e766f9ba85dc31645caf944525db8" name="a7c0e766f9ba85dc31645caf944525db8"></a>
+q_vec_type </td><td class="memItemRight" valign="bottom"><b>d_vGrav</b></td></tr>
+<tr class="separator:a7c0e766f9ba85dc31645caf944525db8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Tracker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Tracker')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a></td></tr>
+<tr class="memitem:a0638acf5d605fe468dead0ebe032efb2 inherit pro_attribs_classvrpn__Tracker" id="r_a0638acf5d605fe468dead0ebe032efb2"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>position_m_id</b></td></tr>
+<tr class="separator:a0638acf5d605fe468dead0ebe032efb2 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae842e495b2f22ea9c013b5b1fa164cca inherit pro_attribs_classvrpn__Tracker" id="r_ae842e495b2f22ea9c013b5b1fa164cca"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>velocity_m_id</b></td></tr>
+<tr class="separator:ae842e495b2f22ea9c013b5b1fa164cca inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a90c5fa6f561e0edee81726af888dc0c0 inherit pro_attribs_classvrpn__Tracker" id="r_a90c5fa6f561e0edee81726af888dc0c0"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>accel_m_id</b></td></tr>
+<tr class="separator:a90c5fa6f561e0edee81726af888dc0c0 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a306a2bbc04c90c7f421d571e22f244 inherit pro_attribs_classvrpn__Tracker" id="r_a1a306a2bbc04c90c7f421d571e22f244"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>tracker2room_m_id</b></td></tr>
+<tr class="separator:a1a306a2bbc04c90c7f421d571e22f244 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abfea5127379c7e7e5b5380663f6b655b inherit pro_attribs_classvrpn__Tracker" id="r_abfea5127379c7e7e5b5380663f6b655b"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>unit2sensor_m_id</b></td></tr>
+<tr class="separator:abfea5127379c7e7e5b5380663f6b655b inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a80a2d93a36383a2c18e7150ddc736690 inherit pro_attribs_classvrpn__Tracker" id="r_a80a2d93a36383a2c18e7150ddc736690"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_t2r_m_id</b></td></tr>
+<tr class="separator:a80a2d93a36383a2c18e7150ddc736690 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67c971cf3c781da265b33057694c06b2 inherit pro_attribs_classvrpn__Tracker" id="r_a67c971cf3c781da265b33057694c06b2"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_u2s_m_id</b></td></tr>
+<tr class="separator:a67c971cf3c781da265b33057694c06b2 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46d3034e4c1ef3e092094fe16007b5f7 inherit pro_attribs_classvrpn__Tracker" id="r_a46d3034e4c1ef3e092094fe16007b5f7"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>request_workspace_m_id</b></td></tr>
+<tr class="separator:a46d3034e4c1ef3e092094fe16007b5f7 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae384579b35d31e69dcf705e4fdc3cfa9 inherit pro_attribs_classvrpn__Tracker" id="r_ae384579b35d31e69dcf705e4fdc3cfa9"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>workspace_m_id</b></td></tr>
+<tr class="separator:ae384579b35d31e69dcf705e4fdc3cfa9 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02d5dff944cb6016be804348bac940c5 inherit pro_attribs_classvrpn__Tracker" id="r_a02d5dff944cb6016be804348bac940c5"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>update_rate_id</b></td></tr>
+<tr class="separator:a02d5dff944cb6016be804348bac940c5 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a85cbfcbfdad26c4a751dd50b18e3bf0d inherit pro_attribs_classvrpn__Tracker" id="r_a85cbfcbfdad26c4a751dd50b18e3bf0d"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>connection_dropped_m_id</b></td></tr>
+<tr class="separator:a85cbfcbfdad26c4a751dd50b18e3bf0d inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a408af94cc4b8dcb9344f0c95ac605f2c inherit pro_attribs_classvrpn__Tracker" id="r_a408af94cc4b8dcb9344f0c95ac605f2c"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>reset_origin_m_id</b></td></tr>
+<tr class="separator:a408af94cc4b8dcb9344f0c95ac605f2c inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac07017b0a065e2e78bfdc0ec69c147b4 inherit pro_attribs_classvrpn__Tracker" id="r_ac07017b0a065e2e78bfdc0ec69c147b4"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_sensor</b></td></tr>
+<tr class="separator:ac07017b0a065e2e78bfdc0ec69c147b4 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3932aa09b838f07ff5dce48ba2f75f1f inherit pro_attribs_classvrpn__Tracker" id="r_a3932aa09b838f07ff5dce48ba2f75f1f"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>pos</b> [3]</td></tr>
+<tr class="separator:a3932aa09b838f07ff5dce48ba2f75f1f inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5856d2b65e3e498643b64f978c69c9a6 inherit pro_attribs_classvrpn__Tracker" id="r_a5856d2b65e3e498643b64f978c69c9a6"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>d_quat</b> [4]</td></tr>
+<tr class="separator:a5856d2b65e3e498643b64f978c69c9a6 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad7c0bcde28665ad6147084216485a9d6 inherit pro_attribs_classvrpn__Tracker" id="r_ad7c0bcde28665ad6147084216485a9d6"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>vel</b> [3]</td></tr>
+<tr class="separator:ad7c0bcde28665ad6147084216485a9d6 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0097cee5eb68abf8b80e91a3de1a19a0 inherit pro_attribs_classvrpn__Tracker" id="r_a0097cee5eb68abf8b80e91a3de1a19a0"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>vel_quat</b> [4]</td></tr>
+<tr class="separator:a0097cee5eb68abf8b80e91a3de1a19a0 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace0f165b5b5f24db533db13d7f53a9ff inherit pro_attribs_classvrpn__Tracker" id="r_ace0f165b5b5f24db533db13d7f53a9ff"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>vel_quat_dt</b></td></tr>
+<tr class="separator:ace0f165b5b5f24db533db13d7f53a9ff inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a05cf1d1fd375ff12e48d451a238318ab inherit pro_attribs_classvrpn__Tracker" id="r_a05cf1d1fd375ff12e48d451a238318ab"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>acc</b> [3]</td></tr>
+<tr class="separator:a05cf1d1fd375ff12e48d451a238318ab inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ea22508ee0e282e1f7651d99661be95 inherit pro_attribs_classvrpn__Tracker" id="r_a9ea22508ee0e282e1f7651d99661be95"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>acc_quat</b> [4]</td></tr>
+<tr class="separator:a9ea22508ee0e282e1f7651d99661be95 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa47527346a7be72ae8c25f94735ba520 inherit pro_attribs_classvrpn__Tracker" id="r_aa47527346a7be72ae8c25f94735ba520"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>acc_quat_dt</b></td></tr>
+<tr class="separator:aa47527346a7be72ae8c25f94735ba520 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Tracker" id="r_a175ebf16736553ad076aefe3f02d180c"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>timestamp</b></td></tr>
+<tr class="separator:a175ebf16736553ad076aefe3f02d180c inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4dc830cd88eab13621641be928cbfe4a inherit pro_attribs_classvrpn__Tracker" id="r_a4dc830cd88eab13621641be928cbfe4a"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>frame_count</b></td></tr>
+<tr class="separator:a4dc830cd88eab13621641be928cbfe4a inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aae293d942162f1bf74f96d59eebdd3a2 inherit pro_attribs_classvrpn__Tracker" id="r_aae293d942162f1bf74f96d59eebdd3a2"><td align="right" class="memItemLeft" valign="top">
+struct timeval </td><td class="memItemRight" valign="bottom"><b>watchdog_timestamp</b></td></tr>
+<tr class="separator:aae293d942162f1bf74f96d59eebdd3a2 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8cb7a0deeec7d73d40c0f7b92c0b18fe inherit pro_attribs_classvrpn__Tracker" id="r_a8cb7a0deeec7d73d40c0f7b92c0b18fe"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>tracker2room</b> [3]</td></tr>
+<tr class="separator:a8cb7a0deeec7d73d40c0f7b92c0b18fe inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae98646f29590dd401f3c9d3417a9b075 inherit pro_attribs_classvrpn__Tracker" id="r_ae98646f29590dd401f3c9d3417a9b075"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>tracker2room_quat</b> [4]</td></tr>
+<tr class="separator:ae98646f29590dd401f3c9d3417a9b075 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a519e7500c6d56ba4b904844e3ae14dae inherit pro_attribs_classvrpn__Tracker" id="r_a519e7500c6d56ba4b904844e3ae14dae"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>num_sensors</b></td></tr>
+<tr class="separator:a519e7500c6d56ba4b904844e3ae14dae inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae2649c583bc81d00eba90c8d22c3dd0f inherit pro_attribs_classvrpn__Tracker" id="r_ae2649c583bc81d00eba90c8d22c3dd0f"><td align="right" class="memItemLeft" valign="top">
+vrpn_Tracker_Pos * </td><td class="memItemRight" valign="bottom"><b>unit2sensor</b></td></tr>
+<tr class="separator:ae2649c583bc81d00eba90c8d22c3dd0f inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8b050c842eb0c8d51cc8a4fa6a8eac0 inherit pro_attribs_classvrpn__Tracker" id="r_af8b050c842eb0c8d51cc8a4fa6a8eac0"><td align="right" class="memItemLeft" valign="top">
+vrpn_Tracker_Quat * </td><td class="memItemRight" valign="bottom"><b>unit2sensor_quat</b></td></tr>
+<tr class="separator:af8b050c842eb0c8d51cc8a4fa6a8eac0 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a23272e6fe26f089b501af5d2bb49dc3e inherit pro_attribs_classvrpn__Tracker" id="r_a23272e6fe26f089b501af5d2bb49dc3e"><td align="right" class="memItemLeft" valign="top">
+unsigned </td><td class="memItemRight" valign="bottom"><b>num_unit2sensors</b></td></tr>
+<tr class="separator:a23272e6fe26f089b501af5d2bb49dc3e inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c65d3ae567d2a2ef806323986cdadfe inherit pro_attribs_classvrpn__Tracker" id="r_a4c65d3ae567d2a2ef806323986cdadfe"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>workspace_min</b> [3]</td></tr>
+<tr class="separator:a4c65d3ae567d2a2ef806323986cdadfe inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3009f0964340ad094603bd71226b01d8 inherit pro_attribs_classvrpn__Tracker" id="r_a3009f0964340ad094603bd71226b01d8"><td align="right" class="memItemLeft" valign="top">
+vrpn_float64 </td><td class="memItemRight" valign="bottom"><b>workspace_max</b> [3]</td></tr>
+<tr class="separator:a3009f0964340ad094603bd71226b01d8 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6e27f49150e9a14580fb313cc2777e00 inherit pro_attribs_classvrpn__Tracker" id="r_a6e27f49150e9a14580fb313cc2777e00"><td align="right" class="memItemLeft" valign="top">
+int </td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a6e27f49150e9a14580fb313cc2777e00 inherit pro_attribs_classvrpn__Tracker"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_aa15df0bbfd40028dc70ad9da0c3749f2"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#aa15df0bbfd40028dc70ad9da0c3749f2">d_connection</a></td></tr>
+<tr class="memdesc:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Connection that this object talks to  <br/></td></tr>
+<tr class="separator:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_ad217413237b5fb9103f13faca74b9178"><td align="right" class="memItemLeft" valign="top">char * </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ad217413237b5fb9103f13faca74b9178">d_servicename</a></td></tr>
+<tr class="separator:ad217413237b5fb9103f13faca74b9178 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af225875d2b9d3451084358b49ac19d93"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af225875d2b9d3451084358b49ac19d93">d_sender_id</a></td></tr>
+<tr class="memdesc:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">part  <br/></td></tr>
+<tr class="separator:af225875d2b9d3451084358b49ac19d93 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_af010bf4b3b573708eec88ab965b55db6"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af010bf4b3b573708eec88ab965b55db6">d_text_message_id</a></td></tr>
+<tr class="memdesc:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">ID for text messages  <br/></td></tr>
+<tr class="separator:af010bf4b3b573708eec88ab965b55db6 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a9bd51620536e883c3fd68f10e7991f32"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a9bd51620536e883c3fd68f10e7991f32">d_ping_message_id</a></td></tr>
+<tr class="memdesc:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Ask the server if they are there  <br/></td></tr>
+<tr class="separator:a9bd51620536e883c3fd68f10e7991f32 inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique" id="r_a15d130460086a15b944b5c5388ead25f"><td align="right" class="memItemLeft" valign="top">vrpn_int32 </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#a15d130460086a15b944b5c5388ead25f">d_pong_message_id</a></td></tr>
+<tr class="memdesc:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Server telling that it is there  <br/></td></tr>
+<tr class="separator:a15d130460086a15b944b5c5388ead25f inherit pro_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique" id="r_a6757110b074584b237001f720ba94259"><td align="right" class="memItemLeft" valign="top">
+bool </td><td class="memItemRight" valign="bottom"><b>shutup</b></td></tr>
+<tr class="separator:a6757110b074584b237001f720ba94259 inherit pub_attribs_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_static_methods_classvrpn__BaseClassUnique"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classvrpn__BaseClassUnique')"><img alt="-" src="closed.png"/> 静态 Protected 成员函数 继承自 <a class="el" href="classvrpn__BaseClassUnique.html">vrpn_BaseClassUnique</a></td></tr>
+<tr class="memitem:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_ab920cd5e2843534727cf36ac30172dac"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#ab920cd5e2843534727cf36ac30172dac">encode_text_message_to_buffer</a> (char *buf, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> severity, vrpn_uint32 level, const char *msg)</td></tr>
+<tr class="separator:ab920cd5e2843534727cf36ac30172dac inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique" id="r_af956afd27aaf4689728a9df78fa5de0d"><td align="right" class="memItemLeft" valign="top">static int </td><td class="memItemRight" valign="bottom"><a class="el" href="classvrpn__BaseClassUnique.html#af956afd27aaf4689728a9df78fa5de0d">decode_text_message_from_buffer</a> (char *msg, <a class="el" href="vrpn__BaseClass_8h.html#a35dd37cc637ed317d75325ef8c43c162">vrpn_TEXT_SEVERITY</a> *severity, vrpn_uint32 *level, const char *buf)</td></tr>
+<tr class="memdesc:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="mdescLeft"> </td><td class="mdescRight">Decodes the body of the text message from a buffer from the connection  <br/></td></tr>
+<tr class="separator:af956afd27aaf4689728a9df78fa5de0d inherit pro_static_methods_classvrpn__BaseClassUnique"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Provides a tracker device given data from a Wii Remote and LED glasses. </p>
+<p>Assumes a reasonably-stationary Wii Remote (on a tripod, for example) and two LEDs on a pair of glasses, some fixed distance (default 0.145m) apart. You can use the "Johnny Lee" glasses with this.</p>
+<p>Reports poses in a right-hand coordinate system, y-up, that is always level with respect to gravity no matter how your Wii Remote is tilted. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a0a8ff3c215d0d032dc2fdc3ef3d87a4d" name="a0a8ff3c215d0d032dc2fdc3ef3d87a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8ff3c215d0d032dc2fdc3ef3d87a4d">◆ </a></span>vrpn_Tracker_WiimoteHead()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Tracker__WiimoteHead.html">vrpn_Tracker_WiimoteHead</a> </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *</td> <td class="paramname"><span class="paramname"><em>trackercon</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>wiimote</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>update_rate</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">float</td> <td class="paramname"><span class="paramname"><em>led_spacing</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.145</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>constructor </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">name</td><td>Name for the tracker device to expose </td></tr>
+<tr><td class="paramname">trackercon</td><td>Connection to provide tracker device over </td></tr>
+<tr><td class="paramname">wiimote</td><td>VRPN device name for existing vrpn_WiiMote device or device with a compatible interface - see <a class="el" href="#ade6478f775a35d088c60d636ff89e9e9" title="Source of analog data, traditionally vrpn_WiiMote Must present analog channels in this order:">vrpn_Tracker_WiimoteHead::d_ana</a> for more info. If it starts with *, the server connection will be used instead of creating a new connection. </td></tr>
+<tr><td class="paramname">update_rate</td><td>Minimum number of updates per second to issue </td></tr>
+<tr><td class="paramname">led_spacing</td><td>Distance between LEDs in meters (0.145 is default) </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="ae84b768d76b078560b451efd66d20d1e" name="ae84b768d76b078560b451efd66d20d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84b768d76b078560b451efd66d20d1e">◆ </a></span>~vrpn_Tracker_WiimoteHead()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual ~<a class="el" href="classvrpn__Tracker__WiimoteHead.html">vrpn_Tracker_WiimoteHead</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>destructor </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8524e8f8728a49d850af4b61a3466353" name="a8524e8f8728a49d850af4b61a3466353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8524e8f8728a49d850af4b61a3466353">◆ </a></span>_convert_pose_to_tracker()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _convert_pose_to_tracker </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Set the <a class="el" href="classvrpn__Tracker.html">vrpn_Tracker</a> position and rotation to that indicated by our d_currentPose; </p>
+</div>
+</div>
+<a id="a4ca0b40c58d830963bc03e55ab0329c0" name="a4ca0b40c58d830963bc03e55ab0329c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca0b40c58d830963bc03e55ab0329c0">◆ </a></span>_have_gravity()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool _have_gravity </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>return true if our gravity values look like real data </p>
+</div>
+</div>
+<a id="a62ae2bb4b78f735cac0803e61b2eb998" name="a62ae2bb4b78f735cac0803e61b2eb998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ae2bb4b78f735cac0803e61b2eb998">◆ </a></span>_reset_gravity()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _reset_gravity </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>reset gravity transform and cached gravity vectors </p>
+</div>
+</div>
+<a id="ac48361d8ab97a0529e2b3555c5e68ab6" name="ac48361d8ab97a0529e2b3555c5e68ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48361d8ab97a0529e2b3555c5e68ab6">◆ </a></span>_reset_points()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _reset_points </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>reset cached points, point count, and flip state, </p>
+</div>
+</div>
+<a id="af2a3ed98832f5ef1745cc0b25db038cb" name="af2a3ed98832f5ef1745cc0b25db038cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a3ed98832f5ef1745cc0b25db038cb">◆ </a></span>_reset_pose()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _reset_pose </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>reset current pose, last report time, and tracker pose </p>
+</div>
+</div>
+<a id="aefe7117fed4cff10182bc34af7ae7379" name="aefe7117fed4cff10182bc34af7ae7379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe7117fed4cff10182bc34af7ae7379">◆ </a></span>_should_report()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool _should_report </td>
+<td>(</td>
+<td class="paramtype">double</td> <td class="paramname"><span class="paramname"><em>elapsedInterval</em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>return true if we have new data or max time elapsed </p>
+</div>
+</div>
+<a id="a7ad35c799b72e7467949764566b06a55" name="a7ad35c799b72e7467949764566b06a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad35c799b72e7467949764566b06a55">◆ </a></span>_update_2_LED_pose()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _update_2_LED_pose </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="structq__xyz__quat__struct.html">q_xyz_quat_type</a> &amp;</td> <td class="paramname"><span class="paramname"><em>newPose</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Create tracker-relative pose estimate based on sensor location of 2 tracked points. </p>
+<p>If d_points == 2:</p><ul>
+<li><dl class="section post"><dt>后置条件</dt><dd>d_currentPose contains a tracker-relative pose estimate</dd></dl>
+</li>
+<li><dl class="section post"><dt>后置条件</dt><dd>d_lock == true Else:</dd></dl>
+</li>
+<li><dl class="section post"><dt>后置条件</dt><dd>d_lock == false</dd></dl>
+</li>
+<li><dl class="section post"><dt>后置条件</dt><dd>d_flipState = FLIP_UNKNOWN </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a9c2aa803d7347e3e137b309a70594035" name="a9c2aa803d7347e3e137b309a70594035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c2aa803d7347e3e137b309a70594035">◆ </a></span>_update_flip_state()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _update_flip_state </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>If flip state is unknown, set flip state appropriately. </p>
+<dl class="section post"><dt>后置条件</dt><dd>d_flipState=FLIP_NORMAL if the up vector created by d_currentPose has a positive y component (tracked object is right side up) </dd>
+<dd>
+d_flipState=FLIP_180 if the up vector created by d_currentPose does not have a positive y component (tracked object appears upside-down), which means that you should re-try the pose computation with the points in the opposite order. </dd></dl>
+</div>
+</div>
+<a id="ae8e7ca5ddc62c396d0ddea9546f5ebbe" name="ae8e7ca5ddc62c396d0ddea9546f5ebbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e7ca5ddc62c396d0ddea9546f5ebbe">◆ </a></span>_update_gravity_moving_avg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void _update_gravity_moving_avg </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>based on cached gravity data, use a moving average to update the tracker's stored gravity transform. </p>
+<p>The moving average is computed over the last 3 unique gravity reports. The transform is the rotation required to rotate the averaged gravity vector to (0, 1, 0). </p>
+</div>
+</div>
+<a id="aecdbfd059381c1c132fef73884c93fb6" name="aecdbfd059381c1c132fef73884c93fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecdbfd059381c1c132fef73884c93fb6">◆ </a></span>handle_analog_update()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static void VRPN_CALLBACK VRPN_CALLBACK handle_analog_update </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const <a class="el" href="struct__vrpn__ANALOGCB.html">vrpn_ANALOGCB</a></td> <td class="paramname"><span class="paramname"><em>info</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Callback triggered when our data source issues an update </p>
+</div>
+</div>
+<a id="a1a4eb0130bb6ae5b0226b7cfbeca067a" name="a1a4eb0130bb6ae5b0226b7cfbeca067a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4eb0130bb6ae5b0226b7cfbeca067a">◆ </a></span>handle_connection()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">static int VRPN_CALLBACK VRPN_CALLBACK handle_connection </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em></em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></td> <td class="paramname"><span class="paramname"><em></em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Callback triggered when a new client connects to the tracker </p>
+</div>
+</div>
+<a id="a5299ecc517aeaf6e61dc5d2c5316b4cb" name="a5299ecc517aeaf6e61dc5d2c5316b4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5299ecc517aeaf6e61dc5d2c5316b4cb">◆ </a></span>mainloop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void mainloop </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>VRPN mainloop function </p>
+<p>实现了 <a class="el" href="classvrpn__BaseClass.html#a3fff12fa6a7375d280cd6e3ee9db20cc">vrpn_BaseClass</a>.</p>
+</div>
+</div>
+<a id="ae4499ee0125936e10dde278b4a18c289" name="ae4499ee0125936e10dde278b4a18c289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4499ee0125936e10dde278b4a18c289">◆ </a></span>report()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void report </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Pack and send tracker report </p>
+</div>
+</div>
+<a id="a7b0e029102ad38f4b814c6523aedb53d" name="a7b0e029102ad38f4b814c6523aedb53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0e029102ad38f4b814c6523aedb53d">◆ </a></span>reset()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void reset </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>reset pose, gravity transform, and cached points and gravity </p>
+</div>
+</div>
+<a id="ae277013ed4163834067475b23f89ead5" name="ae277013ed4163834067475b23f89ead5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae277013ed4163834067475b23f89ead5">◆ </a></span>setup_wiimote()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void setup_wiimote </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>set up connection to wiimote-like analog device </p>
+</div>
+</div>
+<a id="a4f97286fc512670b32b8e0c6e6d069b1" name="a4f97286fc512670b32b8e0c6e6d069b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f97286fc512670b32b8e0c6e6d069b1">◆ </a></span>update_pose()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void update_pose </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>function to drive the full pose update process </p>
+<p>If we claim to have a tracker lock after updating, we will transform the current pose by the gravity transform before continuing. </p>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ade6478f775a35d088c60d636ff89e9e9" name="ade6478f775a35d088c60d636ff89e9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6478f775a35d088c60d636ff89e9e9">◆ </a></span>d_ana</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a>* d_ana</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Source of analog data, traditionally vrpn_WiiMote Must present analog channels in this order: </p>
+<ul>
+<li>x, y, z components of vector opposed to gravity<ul>
+<li>(0,0,1) is nominal Earth gravity</li>
+</ul>
+</li>
+<li>four 3-tuples containing either:<ul>
+<li>(x, y, size) for a tracked point (ranges [0, 1023], [0, 1023], [1,16])</li>
+<li>(-1, -1, -1) as a place holder - point not seen </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<a id="af84c0e4e62df3ec501d9c24766421a22" name="af84c0e4e62df3ec501d9c24766421a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84c0e4e62df3ec501d9c24766421a22">◆ </a></span>d_blobDistance</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">const double d_blobDistance</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>distance between LEDs on glasses, in meters </p>
+</div>
+</div>
+<a id="af2f19119dc56cce90a1a9c02ceab1760" name="af2f19119dc56cce90a1a9c02ceab1760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f19119dc56cce90a1a9c02ceab1760">◆ </a></span>d_contact</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool d_contact</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flag: Have we received the first message from the Wiimote? </p>
+</div>
+</div>
+<a id="ad6fd029a03a94d8cd700703683d56096" name="ad6fd029a03a94d8cd700703683d56096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fd029a03a94d8cd700703683d56096">◆ </a></span>d_currentPose</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="structq__xyz__quat__struct.html">q_xyz_quat_type</a> d_currentPose</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Current pose estimate </p>
+</div>
+</div>
+<a id="a9f4b7f5fb707fea6075e34a182fb5cba" name="a9f4b7f5fb707fea6075e34a182fb5cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4b7f5fb707fea6075e34a182fb5cba">◆ </a></span>d_flipState</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">FlipState d_flipState</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Whether we need to flip the order of the tracked points before calculating a pose. </p>
+</div>
+</div>
+<a id="aaabb1f66317698202c9dfa5bbeb91a26" name="aaabb1f66317698202c9dfa5bbeb91a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabb1f66317698202c9dfa5bbeb91a26">◆ </a></span>d_gravDirty</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool d_gravDirty</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flag: Have we received updated gravity data since last gravity update? </p>
+</div>
+</div>
+<a id="a389fae41eaadd9cf299e600404499c5a" name="a389fae41eaadd9cf299e600404499c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389fae41eaadd9cf299e600404499c5a">◆ </a></span>d_gravityXform</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="structq__xyz__quat__struct.html">q_xyz_quat_type</a> d_gravityXform</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Gravity correction transformation </p>
+</div>
+</div>
+<a id="a978346d1a3aedf0eeaf810560cfd020b" name="a978346d1a3aedf0eeaf810560cfd020b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978346d1a3aedf0eeaf810560cfd020b">◆ </a></span>d_lock</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool d_lock</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flag: Does the tracking algorithm report a lock? </p>
+</div>
+</div>
+<a id="ae77c9a186563b0e00b46b7645a5636a6" name="ae77c9a186563b0e00b46b7645a5636a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77c9a186563b0e00b46b7645a5636a6">◆ </a></span>d_name</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">const char* d_name</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Tracker device name </p>
+</div>
+</div>
+<a id="aa9e4d4d10c443bdb04ca2aff01ec76e7" name="aa9e4d4d10c443bdb04ca2aff01ec76e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e4d4d10c443bdb04ca2aff01ec76e7">◆ </a></span>d_prevtime</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">struct timeval d_prevtime</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Time of last tracker report issued </p>
+</div>
+</div>
+<a id="a030992fe13e69742175f85c6a63bdf83" name="a030992fe13e69742175f85c6a63bdf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030992fe13e69742175f85c6a63bdf83">◆ </a></span>d_update_interval</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">const double d_update_interval</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>maximum time between updates, in seconds </p>
+</div>
+</div>
+<a id="a331b7760296371b903717a7f64cae0f8" name="a331b7760296371b903717a7f64cae0f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331b7760296371b903717a7f64cae0f8">◆ </a></span>d_updated</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool d_updated</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flag: Have we received updated Wiimote data since last report? </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Tracker__WiimoteHead_8h_source.html">vrpn_Tracker_WiimoteHead.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

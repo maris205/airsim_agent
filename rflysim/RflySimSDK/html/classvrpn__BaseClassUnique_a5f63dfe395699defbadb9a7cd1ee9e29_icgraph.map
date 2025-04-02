@@ -1,0 +1,13 @@
+<map id="server_mainloop" name="server_mainloop">
+<area shape="rect" id="Node000001" title=" " alt="" coords="466,113,582,140"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog__Output__Server.html#a5299ecc517aeaf6e61dc5d2c5316b4cb" title=" " alt="" coords="255,5,394,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="490,107,417,62,391,51,393,46,419,58,493,102"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog__Server.html#a5299ecc517aeaf6e61dc5d2c5316b4cb" title=" " alt="" coords="256,72,394,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="450,117,394,108,395,102,451,112"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Auxiliary__Logger__Server.html#a5ffa64c53e73a3bd81ecbbf33edac527" title=" " alt="" coords="250,139,400,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="451,142,401,150,400,145,450,136"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Text__Sender.html#a5fe2749decbc9e4b882aa0aabb649fa4" title="Mainloop the connection to send the message." alt="" coords="232,205,418,232"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="494,151,459,174,419,196,388,207,386,202,417,191,456,170,491,147"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Auxiliary__Logger__Server__Generic.html#a5ffa64c53e73a3bd81ecbbf33edac527" title=" " alt="" coords="5,139,184,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="235,163,184,163,184,157,235,157"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="vrpn_ImagerPose" name="vrpn_ImagerPose">
+<area shape="rect" id="Node000001" title=" " alt="" coords="129,155,252,181"/>
+<area shape="rect" id="Node000004" href="$classvrpn__ImagerPose__Remote.html" title=" " alt="" coords="5,229,182,256"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,193,112,231,109,227,160,189"/>
+<area shape="rect" id="Node000005" href="$classvrpn__ImagerPose__Server.html" title=" " alt="" coords="205,229,374,256"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="222,189,274,227,271,231,219,193"/>
+<area shape="rect" id="Node000002" href="$classvrpn__BaseClass.html" title=" " alt="" coords="132,80,250,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,122,194,154,188,154,188,122"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="112,5,270,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,48,194,80,188,80,188,48"/>
+</map>

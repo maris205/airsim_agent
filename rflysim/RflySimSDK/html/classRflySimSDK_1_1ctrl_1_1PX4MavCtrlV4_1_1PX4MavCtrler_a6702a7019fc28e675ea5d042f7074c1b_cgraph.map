@@ -1,0 +1,13 @@
+<map id="sendUE4PosNew" name="sendUE4PosNew">
+<area shape="rect" id="Node000001" title="发送无人机位姿和状态到Rflysim3D" alt="" coords="5,139,131,165"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="183,5,366,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,136,121,98,177,58,187,53,190,57,180,62,125,102,84,140"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="183,72,366,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,136,182,117,183,122,118,141"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="247,139,302,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,149,231,149,231,155,131,155"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="179,189,370,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,163,183,182,182,187,117,168"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="179,256,370,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="84,164,125,202,180,242,190,247,187,251,177,246,121,206,80,168"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="vrpn_Imager_Stream_Buffer" name="vrpn_Imager_Stream_Buffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,320,235,363"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Auxiliary__Logger__Server.html" title=" " alt="" coords="5,229,155,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,282,147,318,143,322,108,285"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Auxiliary__Logger.html" title=" " alt="" coords="16,155,165,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,197,85,229,80,229,84,197"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="104,80,221,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,120,105,156,101,152,138,116"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Imager.html" title="Base class for Imager class" alt="" coords="195,155,288,181"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="189,116,230,152,226,156,186,120"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="84,5,242,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="165,48,165,80,160,80,160,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Imager__Server.html" title=" " alt="" coords="179,237,317,264"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="227,277,185,321,182,318,224,274"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="246,197,250,237,244,237,241,197"/>
+</map>

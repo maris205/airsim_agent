@@ -1,0 +1,7 @@
+<map id="simulink/vrpn/vrpn_Serial.h" name="simulink/vrpn/vrpn_Serial.h">
+<area shape="rect" id="Node000001" title="vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system..." alt="" coords="60,5,188,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Configure_8h_source.html" title=" " alt="" coords="5,96,126,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,50,86,85,82,82,107,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="150,96,218,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,47,168,82,164,85,137,50"/>
+</map>

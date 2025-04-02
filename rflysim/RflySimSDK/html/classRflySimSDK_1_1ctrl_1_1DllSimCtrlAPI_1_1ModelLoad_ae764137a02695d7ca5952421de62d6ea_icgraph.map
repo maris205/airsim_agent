@@ -1,0 +1,7 @@
+<map id="SendOutCopter" name="SendOutCopter">
+<area shape="rect" id="Node000001" title="发送仿真数据到30100端口，可用于日志记录" alt="" coords="324,5,435,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#aea9ac8705048bee7d45d790c5c62ee10" title="自动更新循环的核心逻辑，实现持续的仿真更新、数据发送等功能。" alt="" coords="165,5,276,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,21,276,21,276,16,308,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a82efff7d738f6b3ea1aca95b38625b05" title="用于启动自动更新循环，以指定的频率更新仿真状态。" alt="" coords="5,5,117,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,21,117,21,117,16,149,16"/>
+</map>

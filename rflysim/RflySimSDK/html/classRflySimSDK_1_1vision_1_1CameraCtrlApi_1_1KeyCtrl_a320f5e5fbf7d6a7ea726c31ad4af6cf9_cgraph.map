@@ -1,0 +1,5 @@
+<map id="CheckAngleWid" name="CheckAngleWid">
+<area shape="rect" id="Node000001" title="将相机的所有角度限制在[&#45;π, π]范围内" alt="" coords="5,5,121,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1CameraCtrlApi_1_1KeyCtrl.html#ab76f3943f2f5fbb42bf2cf361c220598" title="静态方法，将角度限制在[&#45;π, π]范围内" alt="" coords="169,5,208,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,16,153,16,153,21,121,21"/>
+</map>

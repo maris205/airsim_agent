@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyUdpFast——通信模块</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflyUdpFast——通信模块</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md226"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20240815162621106.png"><img alt="" class="thumbnail" height="auto" src="image-20240815162621106.png" width="100"/></a>
+<div class="caption">
+image-20240815162621106</div></div>
+<hr/>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>功能</b> </th><th class="markdownTableHeadLeft">RflyUdpFast 模块用于与多个CopterSim实例进行快速数据通信和控制。支持全数据（FullData）模式和精简数据（SimpleData）模式，适合控制大量无人机并获取它们的实时反馈。    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><b>参数</b> </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**IP Address**：设置CopterSim所在电脑的IP地址。默认值为“127.0.0.1”。当需要控制远程电脑上的CopterSim时，需填写目标电脑的IP地址。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**Vehicle Number**：指定需要连接的CopterSim实例数量。输入一个整数n，模块将生成n对输入和输出端口来控制相应数量的无人机。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**CopterID List**：设置仿真中的飞机ID列表。用一个向量表示本模块仿真的飞机数量及其对应的序号。例如，[1:5] 表示仿真前五个飞机，或[6:10] 表示仿真第6到10个飞机。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**UDP Mode**：选择通信模式，分为FullData（完整模式）和SimpleData（精简模式）。FullData模式适用于数据更全面、飞机数量较少的情况；SimpleData模式适用于数据更精简、飞机数量较多的场景。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**GPS Orin**：设定GPS坐标原点。用于解算每个飞机的GlobalPos（全局位置），该坐标与CopterSim软件中的PosE一致，通常用于大规模集群仿真时的全局位置计算。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">**Sample Time**：设定模块的采样时间，确保与Simulink仿真时间匹配。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输入</b> </td><td class="markdownTableBodyLeft">根据选定的UDP Mode，模块接收不同维度的输入向量，用于控制各个无人机的飞行行为。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">FullData模式输入   </td><td class="markdownTableBodyLeft">输入15维的double型向量，包含以下内容：    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第1维：time_boot_ms - 当前时间戳（通常填0）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第2维：copterID - 飞机ID（通常填1）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第3维：type_mask - 输入控制模式，对应MAVLink的Offboard定义。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第4维：coordinate_frame - 坐标系模式，对应MAVLink的Offboard定义。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第5~15维：ctrls[11] - 3维期望位置（pos），3维期望速度（vel），3维期望加速度（acc），1维期望偏航角（yaw），1维期望偏航角速度（yawRate）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">SimpleData模式输入   </td><td class="markdownTableBodyLeft">输入5维的double型向量，包含以下内容：    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第1维：ctrlMode - 控制模式标志位。0: 地球速度控制模式（Earth Vel）；1: 机体速度控制模式（Body Vel）；2: 地球位置控制模式（Earth Pos）；3: 机体位置控制模式（Body Pos）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第2~5维：控制信号，具体内容取决于ctrlMode的值。如果ctrlMode=0，表示地球坐标系下的vx, vy, vz速度+偏航速率yawRate；如果ctrlMode=1，表示机体坐标系下的vx, vy, vz速度+偏航速率yawRate；如果ctrlMode=2，表示地球坐标系下的x, y, z位置+偏航信号yaw；如果ctrlMode=3，表示机体坐标系下的x, y, z位置+偏航信号yaw。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><b>输出</b> </td><td class="markdownTableBodyLeft">模块根据UDP Mode输出不同维度的反馈数据，代表每个无人机的状态信息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">FullData模式输出   </td><td class="markdownTableBodyLeft">输出28维的double型向量，包含以下内容：    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第1~3维：gpsHome[3] - Home点的经纬高坐标。经纬度需除以1e7，高度需除以1e3以得到m为单位的值。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第4~6维：AngEular[3] - Pixhawk估计得到的姿态欧拉角（单位：弧度）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第7~9维：localPos[3] - 以gpsHome为原点的相对北东地位置向量（单位：m，z轴向下为正）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第10~12维：localVel[3] - 北东地的运动速度向量（单位：m/s）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第13~15维：GpsPos[3] - 实时的GPS位置，与gpsHome相同的单位。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第16~18维：GpsVel[3] - GPS速度，需除以100得到m/s为单位的速度。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第19维：time_boot_ms - 上电时间（单位：ms）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第20维：copterID - 飞机ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第21维：relative_alt - GPS相对高度，需除以1000得到m为单位的高度。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第22维：hdg - GPS航向角，需除以1000得到0~360度范围的角度。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第23维：satellites_visible - 可见卫星数量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第24维：fix_type - 定位精度类型。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第25维：reserveInit - 保留位，int类型。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第26维：pos_horiz_accuracy - 水平定位精度（单位：m）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第27维：pos_vert_accuracy - 垂直定位精度（单位：m）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第28维：reserveFloat - 保留位，float类型，未启用。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">SimpleData模式输出   </td><td class="markdownTableBodyLeft">输出12维的double型向量，包含以下内容：    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第1~3维：GlobalPos[3] - CopterSim全局位置（单位：m），根据飞机的GPS坐标解算得到，以UE地图的坐标中心为原点。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第4~6维：AngEular[3] - Pixhawk估计得到的姿态欧拉角（单位：弧度）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第7~9维：localPos[3] - 以gpsHome为原点的相对北东地位置向量（单位：m，z轴向下为正）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyLeft">第10~12维：localVel[3] - 北东地的运动速度向量（单位：m/s）。   </td></tr>
+</table>
+<hr/>
+<p>使用示例：<a href="../../10.RflySimSwarm/1.BasicExps/e1_RflyUdpSwarmExp/index.html">[安装目录]\RflySimAPIs\10.RflySimSwarm\1.BasicExps\e1_RflyUdpSwarmExp\index.html</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

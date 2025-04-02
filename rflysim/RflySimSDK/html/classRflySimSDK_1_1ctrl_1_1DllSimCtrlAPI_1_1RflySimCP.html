@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflySimCP类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>DllSimCtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1RflySimCP.html">RflySimCP</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> |
+<a href="#pub-static-attribs">静态 Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1RflySimCP-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">RflySimCP类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>RflySim 综合模型控制协议。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a8921b5a9003027d19313bb3bc8529c3f" id="r_a8921b5a9003027d19313bb3bc8529c3f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8921b5a9003027d19313bb3bc8529c3f">IsBitSet</a> (num, bit)</td></tr>
+<tr class="memdesc:a8921b5a9003027d19313bb3bc8529c3f"><td class="mdescLeft"> </td><td class="mdescRight">静态方法  <br/></td></tr>
+<tr class="separator:a8921b5a9003027d19313bb3bc8529c3f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6f57899dc3e79154f66ca387342b11b6" id="r_a6f57899dc3e79154f66ca387342b11b6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f57899dc3e79154f66ca387342b11b6">IsPosSet</a> (num)</td></tr>
+<tr class="separator:a6f57899dc3e79154f66ca387342b11b6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3cd538d2d393266e80cd1d91cac7da03" id="r_a3cd538d2d393266e80cd1d91cac7da03"><td align="right" class="memItemLeft" valign="top"><a id="a3cd538d2d393266e80cd1d91cac7da03" name="a3cd538d2d393266e80cd1d91cac7da03"></a>
+ </td><td class="memItemRight" valign="bottom"><b>getPosNED</b> (x=0, y=0, z=0, yaw=0)</td></tr>
+<tr class="separator:a3cd538d2d393266e80cd1d91cac7da03"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64112de843b89de6dcd11d5b7a241a47" id="r_a64112de843b89de6dcd11d5b7a241a47"><td align="right" class="memItemLeft" valign="top"><a id="a64112de843b89de6dcd11d5b7a241a47" name="a64112de843b89de6dcd11d5b7a241a47"></a>
+ </td><td class="memItemRight" valign="bottom"><b>getPosLocal</b> (x=0, y=0, z=0, yaw=0)</td></tr>
+<tr class="separator:a64112de843b89de6dcd11d5b7a241a47"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00ac386dfd0ae5f15e99fe1b90ca25b7" id="r_a00ac386dfd0ae5f15e99fe1b90ca25b7"><td align="right" class="memItemLeft" valign="top"><a id="a00ac386dfd0ae5f15e99fe1b90ca25b7" name="a00ac386dfd0ae5f15e99fe1b90ca25b7"></a>
+ </td><td class="memItemRight" valign="bottom"><b>getVelNedNoYaw</b> (northvel=0, eastvel=0, downvel=0)</td></tr>
+<tr class="separator:a00ac386dfd0ae5f15e99fe1b90ca25b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0c2931d76be4c69e65fbbde3df2da508" id="r_a0c2931d76be4c69e65fbbde3df2da508"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c2931d76be4c69e65fbbde3df2da508">getVelNED</a> (vx=0, vy=0, vz=0, yawRate=0)</td></tr>
+<tr class="memdesc:a0c2931d76be4c69e65fbbde3df2da508"><td class="mdescLeft"> </td><td class="mdescRight">向飞行控制系统发送一个包含速度和偏航速率的指令  <br/></td></tr>
+<tr class="separator:a0c2931d76be4c69e65fbbde3df2da508"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afe7e7310851c0119924bb24374a60ac7" id="r_afe7e7310851c0119924bb24374a60ac7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afe7e7310851c0119924bb24374a60ac7">getVelFRD</a> (vx=0, vy=0, vz=0, yawRate=0)</td></tr>
+<tr class="memdesc:afe7e7310851c0119924bb24374a60ac7"><td class="mdescLeft"> </td><td class="mdescRight">向飞行控制系统发送一个包含速度和偏航速率的指令，速度坐标系为机体前右下FRD坐标系  <br/></td></tr>
+<tr class="separator:afe7e7310851c0119924bb24374a60ac7"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a3445d8e87dbb9ed109772afc9fc98b58" id="r_a3445d8e87dbb9ed109772afc9fc98b58"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3445d8e87dbb9ed109772afc9fc98b58">ILen</a> = 8</td></tr>
+<tr class="memdesc:a3445d8e87dbb9ed109772afc9fc98b58"><td class="mdescLeft"> </td><td class="mdescRight">inSILInts数据对应的起始下标  <br/></td></tr>
+<tr class="separator:a3445d8e87dbb9ed109772afc9fc98b58"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6a6b2de4f05388363374f6041ebd4abd" id="r_a6a6b2de4f05388363374f6041ebd4abd"><td align="right" class="memItemLeft" valign="top"><a id="a6a6b2de4f05388363374f6041ebd4abd" name="a6a6b2de4f05388363374f6041ebd4abd"></a>
+int </td><td class="memItemRight" valign="bottom"><b>ICmd</b> = 0</td></tr>
+<tr class="separator:a6a6b2de4f05388363374f6041ebd4abd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae973074c339e374f6d9e1583242d68ef" id="r_ae973074c339e374f6d9e1583242d68ef"><td align="right" class="memItemLeft" valign="top"><a id="ae973074c339e374f6d9e1583242d68ef" name="ae973074c339e374f6d9e1583242d68ef"></a>
+int </td><td class="memItemRight" valign="bottom"><b>IOffboard</b> = 1</td></tr>
+<tr class="separator:ae973074c339e374f6d9e1583242d68ef"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a108ec84071a6bf3ccbb33142d78891e4" id="r_a108ec84071a6bf3ccbb33142d78891e4"><td align="right" class="memItemLeft" valign="top"><a id="a108ec84071a6bf3ccbb33142d78891e4" name="a108ec84071a6bf3ccbb33142d78891e4"></a>
+int </td><td class="memItemRight" valign="bottom"><b>ILat</b> = 6</td></tr>
+<tr class="separator:a108ec84071a6bf3ccbb33142d78891e4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95eaa026b18e060c70a87594a7528be6" id="r_a95eaa026b18e060c70a87594a7528be6"><td align="right" class="memItemLeft" valign="top"><a id="a95eaa026b18e060c70a87594a7528be6" name="a95eaa026b18e060c70a87594a7528be6"></a>
+int </td><td class="memItemRight" valign="bottom"><b>ILon</b> = 7</td></tr>
+<tr class="separator:a95eaa026b18e060c70a87594a7528be6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2c21d9e59a2a42751ca126c47af88a65" id="r_a2c21d9e59a2a42751ca126c47af88a65"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c21d9e59a2a42751ca126c47af88a65">CmdEn</a> = 1</td></tr>
+<tr class="memdesc:a2c21d9e59a2a42751ca126c47af88a65"><td class="mdescLeft"> </td><td class="mdescRight">inSILInts[0]指令标志  <br/></td></tr>
+<tr class="separator:a2c21d9e59a2a42751ca126c47af88a65"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6e864e3bbd981b18477b683f90d778f1" id="r_a6e864e3bbd981b18477b683f90d778f1"><td align="right" class="memItemLeft" valign="top"><a id="a6e864e3bbd981b18477b683f90d778f1" name="a6e864e3bbd981b18477b683f90d778f1"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdSIL</b> = 1 &lt;&lt; 1</td></tr>
+<tr class="separator:a6e864e3bbd981b18477b683f90d778f1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f8cd3197984ce06192debf05dfb45cf" id="r_a5f8cd3197984ce06192debf05dfb45cf"><td align="right" class="memItemLeft" valign="top"><a id="a5f8cd3197984ce06192debf05dfb45cf" name="a5f8cd3197984ce06192debf05dfb45cf"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdArmed</b> = 1 &lt;&lt; 2</td></tr>
+<tr class="separator:a5f8cd3197984ce06192debf05dfb45cf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adc52c765f8a31f6b69508286034bebed" id="r_adc52c765f8a31f6b69508286034bebed"><td align="right" class="memItemLeft" valign="top"><a id="adc52c765f8a31f6b69508286034bebed" name="adc52c765f8a31f6b69508286034bebed"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdTakeoff</b> = 1 &lt;&lt; 8</td></tr>
+<tr class="separator:adc52c765f8a31f6b69508286034bebed"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d45d57a970c34f0ac3c6035c558fd51" id="r_a5d45d57a970c34f0ac3c6035c558fd51"><td align="right" class="memItemLeft" valign="top"><a id="a5d45d57a970c34f0ac3c6035c558fd51" name="a5d45d57a970c34f0ac3c6035c558fd51"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdPosition</b> = 1 &lt;&lt; 9</td></tr>
+<tr class="separator:a5d45d57a970c34f0ac3c6035c558fd51"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab17367d390c5e0f034186a7a049c5ff5" id="r_ab17367d390c5e0f034186a7a049c5ff5"><td align="right" class="memItemLeft" valign="top"><a id="ab17367d390c5e0f034186a7a049c5ff5" name="ab17367d390c5e0f034186a7a049c5ff5"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdLand</b> = 1 &lt;&lt; 10</td></tr>
+<tr class="separator:ab17367d390c5e0f034186a7a049c5ff5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00d66c268d1fb507673dd35052b1a10c" id="r_a00d66c268d1fb507673dd35052b1a10c"><td align="right" class="memItemLeft" valign="top"><a id="a00d66c268d1fb507673dd35052b1a10c" name="a00d66c268d1fb507673dd35052b1a10c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdReturn</b> = 1 &lt;&lt; 11</td></tr>
+<tr class="separator:a00d66c268d1fb507673dd35052b1a10c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac336634a5bb58288e9b4011a27610858" id="r_ac336634a5bb58288e9b4011a27610858"><td align="right" class="memItemLeft" valign="top"><a id="ac336634a5bb58288e9b4011a27610858" name="ac336634a5bb58288e9b4011a27610858"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdOffboard_Pos</b> = 1 &lt;&lt; 16</td></tr>
+<tr class="separator:ac336634a5bb58288e9b4011a27610858"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7092cf29cf7883d6ce832c54394a56d1" id="r_a7092cf29cf7883d6ce832c54394a56d1"><td align="right" class="memItemLeft" valign="top"><a id="a7092cf29cf7883d6ce832c54394a56d1" name="a7092cf29cf7883d6ce832c54394a56d1"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdOffboard_Att</b> = 1 &lt;&lt; 17</td></tr>
+<tr class="separator:a7092cf29cf7883d6ce832c54394a56d1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad23cae20420ca9df7ad21a968a86f746" id="r_ad23cae20420ca9df7ad21a968a86f746"><td align="right" class="memItemLeft" valign="top"><a id="ad23cae20420ca9df7ad21a968a86f746" name="ad23cae20420ca9df7ad21a968a86f746"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdHor</b> = 1 &lt;&lt; 14</td></tr>
+<tr class="separator:ad23cae20420ca9df7ad21a968a86f746"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3c504b1a472c9916b0f6cc7fdeda194c" id="r_a3c504b1a472c9916b0f6cc7fdeda194c"><td align="right" class="memItemLeft" valign="top"><a id="a3c504b1a472c9916b0f6cc7fdeda194c" name="a3c504b1a472c9916b0f6cc7fdeda194c"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdOffboardPos</b> = 1 &lt;&lt; 16</td></tr>
+<tr class="separator:a3c504b1a472c9916b0f6cc7fdeda194c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f8cf7befbe430733293de1e7ca7957e" id="r_a2f8cf7befbe430733293de1e7ca7957e"><td align="right" class="memItemLeft" valign="top"><a id="a2f8cf7befbe430733293de1e7ca7957e" name="a2f8cf7befbe430733293de1e7ca7957e"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdOffboardAtt</b> = 1 &lt;&lt; 17</td></tr>
+<tr class="separator:a2f8cf7befbe430733293de1e7ca7957e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95a3cab58747b168d5989934d5e9fa09" id="r_a95a3cab58747b168d5989934d5e9fa09"><td align="right" class="memItemLeft" valign="top"><a id="a95a3cab58747b168d5989934d5e9fa09" name="a95a3cab58747b168d5989934d5e9fa09"></a>
+int </td><td class="memItemRight" valign="bottom"><b>CmdBase</b> = 3</td></tr>
+<tr class="separator:a95a3cab58747b168d5989934d5e9fa09"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a196c2244325f5ae15af927a6bfffd825" id="r_a196c2244325f5ae15af927a6bfffd825"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a196c2244325f5ae15af927a6bfffd825">HasPos</a> = 1</td></tr>
+<tr class="memdesc:a196c2244325f5ae15af927a6bfffd825"><td class="mdescLeft"> </td><td class="mdescRight">inSILInts[1] Offboard标志  <br/></td></tr>
+<tr class="separator:a196c2244325f5ae15af927a6bfffd825"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad29dce151176c35b4fc320cb5fe132d5" id="r_ad29dce151176c35b4fc320cb5fe132d5"><td align="right" class="memItemLeft" valign="top"><a id="ad29dce151176c35b4fc320cb5fe132d5" name="ad29dce151176c35b4fc320cb5fe132d5"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasVel</b> = 1 &lt;&lt; 1</td></tr>
+<tr class="separator:ad29dce151176c35b4fc320cb5fe132d5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a87989b0b165a0e3b45515bf230913dcb" id="r_a87989b0b165a0e3b45515bf230913dcb"><td align="right" class="memItemLeft" valign="top"><a id="a87989b0b165a0e3b45515bf230913dcb" name="a87989b0b165a0e3b45515bf230913dcb"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasAcc</b> = 1 &lt;&lt; 2</td></tr>
+<tr class="separator:a87989b0b165a0e3b45515bf230913dcb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae23d4ca57e18027fe48e7835a7bb6f56" id="r_ae23d4ca57e18027fe48e7835a7bb6f56"><td align="right" class="memItemLeft" valign="top"><a id="ae23d4ca57e18027fe48e7835a7bb6f56" name="ae23d4ca57e18027fe48e7835a7bb6f56"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasYaw</b> = 1 &lt;&lt; 3</td></tr>
+<tr class="separator:ae23d4ca57e18027fe48e7835a7bb6f56"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad24a337575c512075e6d37834eedfd3f" id="r_ad24a337575c512075e6d37834eedfd3f"><td align="right" class="memItemLeft" valign="top"><a id="ad24a337575c512075e6d37834eedfd3f" name="ad24a337575c512075e6d37834eedfd3f"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasYawRate</b> = 1 &lt;&lt; 4</td></tr>
+<tr class="separator:ad24a337575c512075e6d37834eedfd3f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec106ba4db9456aaef58fdcd9952f012" id="r_aec106ba4db9456aaef58fdcd9952f012"><td align="right" class="memItemLeft" valign="top"><a id="aec106ba4db9456aaef58fdcd9952f012" name="aec106ba4db9456aaef58fdcd9952f012"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasAtt</b> = 1 &lt;&lt; 8</td></tr>
+<tr class="separator:aec106ba4db9456aaef58fdcd9952f012"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60326d7a5404d0ba734b878bbb4e24ec" id="r_a60326d7a5404d0ba734b878bbb4e24ec"><td align="right" class="memItemLeft" valign="top"><a id="a60326d7a5404d0ba734b878bbb4e24ec" name="a60326d7a5404d0ba734b878bbb4e24ec"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasRollRate</b> = 1 &lt;&lt; 9</td></tr>
+<tr class="separator:a60326d7a5404d0ba734b878bbb4e24ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a03af5665890ff5e72dabe2283724fe5a" id="r_a03af5665890ff5e72dabe2283724fe5a"><td align="right" class="memItemLeft" valign="top"><a id="a03af5665890ff5e72dabe2283724fe5a" name="a03af5665890ff5e72dabe2283724fe5a"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasPitchRate</b> = 1 &lt;&lt; 10</td></tr>
+<tr class="separator:a03af5665890ff5e72dabe2283724fe5a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5976c573a6eadc5204d637548b2a57e5" id="r_a5976c573a6eadc5204d637548b2a57e5"><td align="right" class="memItemLeft" valign="top"><a id="a5976c573a6eadc5204d637548b2a57e5" name="a5976c573a6eadc5204d637548b2a57e5"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasThrust</b> = 1 &lt;&lt; 11</td></tr>
+<tr class="separator:a5976c573a6eadc5204d637548b2a57e5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae575628c2ea9951db5c75bd1c37b09d6" id="r_ae575628c2ea9951db5c75bd1c37b09d6"><td align="right" class="memItemLeft" valign="top"><a id="ae575628c2ea9951db5c75bd1c37b09d6" name="ae575628c2ea9951db5c75bd1c37b09d6"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FRD</b> = 1 &lt;&lt; 12</td></tr>
+<tr class="separator:ae575628c2ea9951db5c75bd1c37b09d6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2396d56997e1c361eb85425ee3a3f4f" id="r_ab2396d56997e1c361eb85425ee3a3f4f"><td align="right" class="memItemLeft" valign="top"><a id="ab2396d56997e1c361eb85425ee3a3f4f" name="ab2396d56997e1c361eb85425ee3a3f4f"></a>
+int </td><td class="memItemRight" valign="bottom"><b>Local</b> = 1 &lt;&lt; 13</td></tr>
+<tr class="separator:ab2396d56997e1c361eb85425ee3a3f4f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2b5515904a5885fae6f66bcc63523f23" id="r_a2b5515904a5885fae6f66bcc63523f23"><td align="right" class="memItemLeft" valign="top"><a id="a2b5515904a5885fae6f66bcc63523f23" name="a2b5515904a5885fae6f66bcc63523f23"></a>
+int </td><td class="memItemRight" valign="bottom"><b>HasFull</b> = 1 &lt;&lt; 15</td></tr>
+<tr class="separator:a2b5515904a5885fae6f66bcc63523f23"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a732b3e7b6fd31a721fb4f17a9be86648" id="r_a732b3e7b6fd31a721fb4f17a9be86648"><td align="right" class="memItemLeft" valign="top"><a id="a732b3e7b6fd31a721fb4f17a9be86648" name="a732b3e7b6fd31a721fb4f17a9be86648"></a>
+int </td><td class="memItemRight" valign="bottom"><b>NED</b> = 1 &lt;&lt; 16</td></tr>
+<tr class="separator:a732b3e7b6fd31a721fb4f17a9be86648"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1219bb8373f177542ddab28e8941de59" id="r_a1219bb8373f177542ddab28e8941de59"><td align="right" class="memItemLeft" valign="top"><a id="a1219bb8373f177542ddab28e8941de59" name="a1219bb8373f177542ddab28e8941de59"></a>
+int </td><td class="memItemRight" valign="bottom"><b>Global</b> = 1 &lt;&lt; 17</td></tr>
+<tr class="separator:a1219bb8373f177542ddab28e8941de59"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a80848679d4bb431b4d37c19f71541af2" id="r_a80848679d4bb431b4d37c19f71541af2"><td align="right" class="memItemLeft" valign="top"><a id="a80848679d4bb431b4d37c19f71541af2" name="a80848679d4bb431b4d37c19f71541af2"></a>
+int </td><td class="memItemRight" valign="bottom"><b>Quadrotor</b> = 1</td></tr>
+<tr class="separator:a80848679d4bb431b4d37c19f71541af2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a47c48923fb0709995b54c46e964c0fc1" id="r_a47c48923fb0709995b54c46e964c0fc1"><td align="right" class="memItemLeft" valign="top"><a id="a47c48923fb0709995b54c46e964c0fc1" name="a47c48923fb0709995b54c46e964c0fc1"></a>
+int </td><td class="memItemRight" valign="bottom"><b>Hexacopter</b> = 1 &lt;&lt; 1</td></tr>
+<tr class="separator:a47c48923fb0709995b54c46e964c0fc1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9408f39d7fba0e0f4312559253d42744" id="r_a9408f39d7fba0e0f4312559253d42744"><td align="right" class="memItemLeft" valign="top"><a id="a9408f39d7fba0e0f4312559253d42744" name="a9408f39d7fba0e0f4312559253d42744"></a>
+int </td><td class="memItemRight" valign="bottom"><b>Octocopter</b> = 1 &lt;&lt; 2</td></tr>
+<tr class="separator:a9408f39d7fba0e0f4312559253d42744"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7d79813b08f19c2f03843dec57b3c704" id="r_a7d79813b08f19c2f03843dec57b3c704"><td align="right" class="memItemLeft" valign="top"><a id="a7d79813b08f19c2f03843dec57b3c704" name="a7d79813b08f19c2f03843dec57b3c704"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FourAxOctocopter</b> = 1 &lt;&lt; 3</td></tr>
+<tr class="separator:a7d79813b08f19c2f03843dec57b3c704"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abd5a10acd82ac11a824b2fa2098c71c1" id="r_abd5a10acd82ac11a824b2fa2098c71c1"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#abd5a10acd82ac11a824b2fa2098c71c1">FLen</a> = 20</td></tr>
+<tr class="memdesc:abd5a10acd82ac11a824b2fa2098c71c1"><td class="mdescLeft"> </td><td class="mdescRight">inSILFloats位置、速度、加速度、姿态、角速率、油门数据对应的起始下标  <br/></td></tr>
+<tr class="separator:abd5a10acd82ac11a824b2fa2098c71c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9a8193eeaae693ccdfcac7d8014705fa" id="r_a9a8193eeaae693ccdfcac7d8014705fa"><td align="right" class="memItemLeft" valign="top"><a id="a9a8193eeaae693ccdfcac7d8014705fa" name="a9a8193eeaae693ccdfcac7d8014705fa"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FPos</b> = 0</td></tr>
+<tr class="separator:a9a8193eeaae693ccdfcac7d8014705fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a29a097d23767dc902362908fe8eeb94b" id="r_a29a097d23767dc902362908fe8eeb94b"><td align="right" class="memItemLeft" valign="top"><a id="a29a097d23767dc902362908fe8eeb94b" name="a29a097d23767dc902362908fe8eeb94b"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FVel</b> = 3</td></tr>
+<tr class="separator:a29a097d23767dc902362908fe8eeb94b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a358efc3d0f26cecd93022e7de24d1b03" id="r_a358efc3d0f26cecd93022e7de24d1b03"><td align="right" class="memItemLeft" valign="top"><a id="a358efc3d0f26cecd93022e7de24d1b03" name="a358efc3d0f26cecd93022e7de24d1b03"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FAcc</b> = 6</td></tr>
+<tr class="separator:a358efc3d0f26cecd93022e7de24d1b03"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a27044ab1ee9c729363b08b0b6a86013f" id="r_a27044ab1ee9c729363b08b0b6a86013f"><td align="right" class="memItemLeft" valign="top"><a id="a27044ab1ee9c729363b08b0b6a86013f" name="a27044ab1ee9c729363b08b0b6a86013f"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FAtt</b> = 9</td></tr>
+<tr class="separator:a27044ab1ee9c729363b08b0b6a86013f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a352e5b79eb3bc2042bafe0eea8250e3f" id="r_a352e5b79eb3bc2042bafe0eea8250e3f"><td align="right" class="memItemLeft" valign="top"><a id="a352e5b79eb3bc2042bafe0eea8250e3f" name="a352e5b79eb3bc2042bafe0eea8250e3f"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FAttRate</b> = 12</td></tr>
+<tr class="separator:a352e5b79eb3bc2042bafe0eea8250e3f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac534f18b44d939352b9b40b825e8d43a" id="r_ac534f18b44d939352b9b40b825e8d43a"><td align="right" class="memItemLeft" valign="top"><a id="ac534f18b44d939352b9b40b825e8d43a" name="ac534f18b44d939352b9b40b825e8d43a"></a>
+int </td><td class="memItemRight" valign="bottom"><b>FThrust</b> = 15</td></tr>
+<tr class="separator:ac534f18b44d939352b9b40b825e8d43a"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>RflySim 综合模型控制协议。 </p>
+<pre class="fragment">RflySim 综合模型控制协议
+</pre><p>此类通过UDP协议与无人机模拟器进行通信，控制模拟器的操作。 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="afe7e7310851c0119924bb24374a60ac7" name="afe7e7310851c0119924bb24374a60ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7e7310851c0119924bb24374a60ac7">◆ </a></span>getVelFRD()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">getVelFRD </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawRate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>向飞行控制系统发送一个包含速度和偏航速率的指令，速度坐标系为机体前右下FRD坐标系 </p>
+<ul>
+<li><a class="anchor" id="getVelFRD"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vx</td><td>x方向的速度 </td></tr>
+<tr><td class="paramname">vy</td><td>y方向的速度 </td></tr>
+<tr><td class="paramname">vz</td><td>z方向的速度 </td></tr>
+<tr><td class="paramname">yawRate</td><td>偏航速率 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a0c2931d76be4c69e65fbbde3df2da508" name="a0c2931d76be4c69e65fbbde3df2da508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2931d76be4c69e65fbbde3df2da508">◆ </a></span>getVelNED()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">getVelNED </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawRate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>向飞行控制系统发送一个包含速度和偏航速率的指令 </p>
+<ul>
+<li><a class="anchor" id="getVelNED"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vx</td><td>x方向的速度 </td></tr>
+<tr><td class="paramname">vy</td><td>y方向的速度 </td></tr>
+<tr><td class="paramname">vz</td><td>z方向的速度 </td></tr>
+<tr><td class="paramname">yawRate</td><td>偏航速率 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a8921b5a9003027d19313bb3bc8529c3f" name="a8921b5a9003027d19313bb3bc8529c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8921b5a9003027d19313bb3bc8529c3f">◆ </a></span>IsBitSet()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">IsBitSet </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>num</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>bit</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>静态方法 </p>
+<pre class="fragment">检查指定位是否被置位。
+参数:
+num (int): 需要检查的整数。
+bit (int): 指定的位。
+返回:
+bool: 如果指定位被置位，则返回True，否则返回False。
+</pre>
+</div>
+</div>
+<a id="a6f57899dc3e79154f66ca387342b11b6" name="a6f57899dc3e79154f66ca387342b11b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f57899dc3e79154f66ca387342b11b6">◆ </a></span>IsPosSet()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">IsPosSet </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">检查是否启用了位置控制。
+参数:
+num (int): 需要检查的整数。
+返回:
+bool: 如果启用了位置控制，则返回True，否则返回False。
+</pre>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a2c21d9e59a2a42751ca126c47af88a65" name="a2c21d9e59a2a42751ca126c47af88a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c21d9e59a2a42751ca126c47af88a65">◆ </a></span>CmdEn</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int CmdEn = 1</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>inSILInts[0]指令标志 </p>
+</div>
+</div>
+<a id="abd5a10acd82ac11a824b2fa2098c71c1" name="abd5a10acd82ac11a824b2fa2098c71c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5a10acd82ac11a824b2fa2098c71c1">◆ </a></span>FLen</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int FLen = 20</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>inSILFloats位置、速度、加速度、姿态、角速率、油门数据对应的起始下标 </p>
+</div>
+</div>
+<a id="a196c2244325f5ae15af927a6bfffd825" name="a196c2244325f5ae15af927a6bfffd825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196c2244325f5ae15af927a6bfffd825">◆ </a></span>HasPos</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int HasPos = 1</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>inSILInts[1] Offboard标志 </p>
+</div>
+</div>
+<a id="a3445d8e87dbb9ed109772afc9fc98b58" name="a3445d8e87dbb9ed109772afc9fc98b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3445d8e87dbb9ed109772afc9fc98b58">◆ </a></span>ILen</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int ILen = 8</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>inSILInts数据对应的起始下标 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="DllSimCtrlAPI_8py.html">DllSimCtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

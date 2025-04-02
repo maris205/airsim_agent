@@ -1,0 +1,43 @@
+<map id="arm_px4" name="arm_px4">
+<area shape="rect" id="Node000001" title="解锁或锁定PX4无人机" alt="" coords="1012,160,1083,187"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a1d246a3bb2d9f51155d83676a98c65a8" title="检查PX4的解锁状态" alt="" coords="769,181,963,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="997,184,963,190,963,184,996,179"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a1d246a3bb2d9f51155d83676a98c65a8" title="解锁无人机" alt="" coords="844,131,888,157"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="996,168,888,150,889,145,997,163"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a3f26ddcad2cd58eccffb4f05afb87094" title="检查PX4的上锁状态" alt="" coords="768,299,964,341"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="1035,202,1006,246,987,269,965,289,946,300,943,296,962,285,983,265,1002,243,1030,199"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3f26ddcad2cd58eccffb4f05afb87094" title="锁定无人机" alt="" coords="836,248,896,275"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="1022,199,995,220,965,238,930,251,897,259,896,254,929,246,963,234,992,216,1019,195"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a5e370977bb1e3c68bec43a4c3c974d1b" title="发送解锁指令" alt="" coords="485,5,720,48"/>
+<area shape="poly" id="edge22_Node000001_Node000013" title=" " alt="" coords="1028,149,1000,114,982,98,962,85,904,60,841,43,779,33,721,28,721,23,780,28,842,38,906,55,965,80,985,94,1004,111,1032,145"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a5e370977bb1e3c68bec43a4c3c974d1b" title="发送解锁或锁定命令到无人机" alt="" coords="552,72,653,99"/>
+<area shape="poly" id="edge25_Node000001_Node000014" title=" " alt="" coords="1017,152,992,135,963,121,880,100,795,88,717,84,653,85,653,80,717,79,796,83,881,94,965,116,994,130,1020,148"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式" alt="" coords="492,123,714,165"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="754,180,701,169,702,163,755,175"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式并发送初始命令" alt="" coords="559,189,646,216"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="754,205,647,205,647,200,754,200"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#aa4667a3b8769fa59836727ab4ecdffef" title="通过MAVLink发送解锁指令给PX4" alt="" coords="485,291,720,333"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="779,233,770,238,756,249,746,259,737,270,722,281,696,293,694,288,719,276,733,266,742,256,752,245,767,234,776,229"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a0a193a6e3a68a7e2d01772aec0faa3ee" title="发送解锁或锁定命令到无人机" alt="" coords="552,240,653,267"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="754,227,654,246,653,241,753,222"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="239,181,437,224"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="502,288,484,281,426,254,375,227,377,222,428,250,486,276,504,283"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="245,89,430,132"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="487,284,483,281,471,267,463,253,457,226,451,199,435,171,413,151,387,135,390,130,416,147,439,168,456,197,462,225,468,251,475,264,487,277,491,280"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,89,191,132"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="230,113,191,113,191,108,230,108"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="537,244,437,224,438,219,538,238"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="537,250,509,242,484,230,467,216,458,202,449,187,435,171,381,135,384,130,439,167,453,184,462,199,471,213,486,226,511,237,538,245"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="828,147,714,147,714,141,828,141"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="830,155,721,180,647,196,646,191,720,175,829,150"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="830,148,798,156,770,171,759,184,752,197,747,224,742,253,734,267,722,281,705,292,702,288,719,277,730,264,736,251,742,223,747,195,754,181,767,167,797,151,828,143"/>
+<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="830,151,799,158,770,172,755,185,747,200,738,216,722,230,688,245,654,253,653,247,687,240,719,226,734,212,742,198,751,182,767,167,797,153,828,145"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="753,319,721,318,721,313,753,314"/>
+<area shape="poly" id="edge18_Node000011_Node000009" title=" " alt="" coords="776,296,720,281,653,266,654,261,721,276,778,291"/>
+<area shape="poly" id="edge20_Node000012_Node000005" title=" " alt="" coords="821,273,718,293,717,287,820,267"/>
+<area shape="poly" id="edge21_Node000012_Node000009" title=" " alt="" coords="820,263,653,258,653,252,820,257"/>
+<area shape="poly" id="edge23_Node000013_Node000006" title=" " alt="" coords="492,58,487,62,470,81,462,101,455,123,439,146,414,166,388,183,385,178,411,162,435,142,450,120,457,100,465,79,483,58,489,54"/>
+<area shape="poly" id="edge24_Node000013_Node000007" title=" " alt="" coords="509,55,486,63,401,91,399,86,484,57,508,50"/>
+<area shape="poly" id="edge26_Node000014_Node000006" title=" " alt="" coords="538,97,486,113,462,128,439,146,379,183,376,178,435,142,459,124,484,108,536,92"/>
+<area shape="poly" id="edge27_Node000014_Node000007" title=" " alt="" coords="537,94,431,104,430,99,537,89"/>
+</map>

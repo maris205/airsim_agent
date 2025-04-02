@@ -1,0 +1,48 @@
+<map id="Recv30100Loop" name="Recv30100Loop">
+<area shape="rect" id="Node000001" title="线程的主循环，用于接收30100端口的数据并根据不同的数据类型执行相应处理。" alt="" coords="5,234,121,261"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#adce45b596770d35800308e9e051c464c" title="将碰撞数据传递给 DLL，用于仿真中处理碰撞情况，参见 sendColl20d" alt="" coords="328,153,424,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,231,312,180,313,185,118,236"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a566e7c2f4fccaea47fd98cc903d2c65f" title="传递 20 维float数组的碰撞数据的接口，用于处理仿真对象之间的碰撞检测。" alt="" coords="169,133,265,159"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="83,231,181,166,184,170,86,236"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a67ed5ac48428dfaf4ba36a2b8359e3f2" title="综合模型外部控制指令输入接口，用于传递 28 维的双精度控制指令数据，参见 sendInDoubCtrls" alt="" coords="313,302,438,329"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="122,257,298,296,297,301,121,262"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a9ae2d332680d368f16f43aefa2c82575" title="将综合模型系统仿真输入数据传递给 DLL，参见 sendSILIntFloat" alt="" coords="329,377,422,403"/>
+<area shape="poly" id="edge22_Node000001_Node000010" title=" " alt="" coords="96,259,331,367,329,372,94,264"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a21fefe0b9ef8e85b7970cf330efaeb3a" title="综合模型外部控制指令输入接口，用于传递 28 维的双精度控制指令数据，参见 sendInDoubCtrls" alt="" coords="332,227,420,254"/>
+<area shape="poly" id="edge29_Node000001_Node000011" title=" " alt="" coords="121,243,316,239,316,245,121,249"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="348,153,343,144,347,134,358,128,376,126,395,129,405,135,402,140,393,134,376,131,359,133,351,138,349,143,353,151"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="492,369,674,411"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="425,178,440,189,455,211,463,233,464,274,466,315,474,335,488,355,490,357,486,361,484,358,469,337,461,316,459,275,457,234,451,214,436,193,422,182"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="555,185,611,211"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="425,171,541,189,540,194,424,176"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="486,302,680,345"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="423,178,440,189,458,215,465,240,471,264,488,288,492,291,488,295,484,292,466,267,459,242,453,217,436,193,420,182"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="487,235,679,278"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="415,177,440,189,464,205,488,221,500,227,498,232,485,226,461,210,437,194,413,182"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="487,118,679,161"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="424,157,472,151,472,156,425,162"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="266,149,312,155,312,161,265,155"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="220,160,221,214,232,293,243,334,260,374,284,410,315,440,340,454,367,460,396,461,426,458,483,440,533,417,535,422,485,445,427,463,397,467,367,466,338,459,311,444,280,414,256,377,238,336,227,294,216,215,215,160"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="228,130,263,98,286,82,312,70,347,58,378,52,407,55,440,70,453,81,461,94,466,120,471,147,477,159,488,171,513,185,541,192,539,197,511,190,485,175,473,162,466,148,461,121,456,96,449,85,437,75,406,60,378,57,349,63,314,75,289,87,266,102,232,134"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="221,160,223,210,236,281,247,319,264,355,286,387,315,413,346,430,374,434,403,427,437,413,453,401,461,387,469,370,485,355,491,350,494,355,488,359,474,373,466,389,457,405,440,418,405,432,374,439,344,435,311,417,282,390,259,357,242,320,230,282,218,211,215,160"/>
+<area shape="poly" id="edge13_Node000008_Node000006" title=" " alt="" coords="244,130,284,113,335,99,362,96,389,97,415,103,440,114,453,126,461,139,467,167,471,195,477,208,488,221,492,224,488,229,484,225,473,211,466,197,462,168,456,141,449,130,437,119,414,108,388,102,362,101,336,104,286,118,246,135"/>
+<area shape="poly" id="edge14_Node000008_Node000007" title=" " alt="" coords="221,131,234,106,253,74,279,43,312,20,346,6,375,3,404,8,439,20,474,36,506,58,556,105,552,109,502,62,471,41,437,24,403,13,375,8,347,12,314,24,283,47,257,77,238,108,226,133"/>
+<area shape="poly" id="edge17_Node000009_Node000003" title=" " alt="" coords="414,327,487,354,505,361,503,366,485,359,412,332"/>
+<area shape="poly" id="edge18_Node000009_Node000004" title=" " alt="" coords="393,300,437,264,459,241,485,221,512,210,539,202,541,207,514,215,488,226,463,245,440,268,396,304"/>
+<area shape="poly" id="edge19_Node000009_Node000005" title=" " alt="" coords="439,315,471,316,471,322,439,320"/>
+<area shape="poly" id="edge20_Node000009_Node000006" title=" " alt="" coords="425,299,490,280,491,285,426,304"/>
+<area shape="poly" id="edge21_Node000009_Node000007" title=" " alt="" coords="397,300,417,284,436,264,451,239,458,216,466,194,484,171,489,167,492,172,488,175,470,196,463,218,456,242,440,268,421,288,400,304"/>
+<area shape="poly" id="edge16_Node000009_Node000009" title=" " alt="" coords="348,303,343,293,347,284,358,278,376,275,395,278,405,284,402,289,393,283,376,281,359,283,351,287,349,293,353,300"/>
+<area shape="poly" id="edge24_Node000010_Node000003" title=" " alt="" coords="423,387,476,387,476,393,423,393"/>
+<area shape="poly" id="edge25_Node000010_Node000004" title=" " alt="" coords="398,374,418,358,436,339,452,308,456,278,463,250,471,236,485,221,511,206,539,198,541,203,513,211,488,225,476,239,468,252,462,280,457,309,441,342,421,362,401,378"/>
+<area shape="poly" id="edge26_Node000010_Node000005" title=" " alt="" coords="419,373,499,347,501,353,421,379"/>
+<area shape="poly" id="edge27_Node000010_Node000006" title=" " alt="" coords="394,374,436,339,459,312,469,300,485,288,493,283,495,288,488,292,473,304,463,315,440,343,397,378"/>
+<area shape="poly" id="edge28_Node000010_Node000007" title=" " alt="" coords="399,374,419,359,436,339,448,316,454,295,456,253,460,213,468,192,484,171,486,169,490,173,488,174,473,195,465,214,461,254,459,295,453,318,441,342,422,363,402,378"/>
+<area shape="poly" id="edge23_Node000010_Node000010" title=" " alt="" coords="348,377,343,368,347,358,358,352,376,350,395,353,405,359,402,364,393,358,376,355,359,357,351,362,349,367,353,375"/>
+<area shape="poly" id="edge31_Node000011_Node000003" title=" " alt="" coords="422,252,440,264,458,288,465,311,471,333,488,355,492,358,489,362,484,359,467,335,459,312,453,290,436,268,419,256"/>
+<area shape="poly" id="edge32_Node000011_Node000004" title=" " alt="" coords="420,229,540,204,541,209,421,234"/>
+<area shape="poly" id="edge33_Node000011_Node000005" title=" " alt="" coords="413,252,439,264,487,288,503,294,501,299,485,292,437,268,411,257"/>
+<area shape="poly" id="edge34_Node000011_Node000006" title=" " alt="" coords="421,241,472,245,471,251,420,247"/>
+<area shape="poly" id="edge35_Node000011_Node000007" title=" " alt="" coords="395,225,436,198,485,170,498,164,500,169,488,175,438,202,398,229"/>
+<area shape="poly" id="edge30_Node000011_Node000011" title=" " alt="" coords="348,228,343,219,347,209,358,203,376,201,395,203,405,210,402,214,393,208,376,206,359,208,351,213,349,218,353,226"/>
+</map>

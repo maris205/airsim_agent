@@ -1,0 +1,7 @@
+<map id="vrpn_Shared_int32_Remote" name="vrpn_Shared_int32_Remote">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,188,181"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Shared__int32.html" title=" " alt="" coords="32,80,161,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,122,99,154,94,154,94,122"/>
+<area shape="rect" id="Node000003" href="$classvrpn__SharedObject.html" title=" " alt="" coords="30,5,163,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,48,99,80,94,80,94,48"/>
+</map>

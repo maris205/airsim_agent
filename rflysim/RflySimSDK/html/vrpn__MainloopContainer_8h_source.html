@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_MainloopContainer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_MainloopContainer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vrpn__MainloopContainer_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//          Copyright Iowa State University 2011.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Distributed under the Boost Software License, Version 1.0.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//    (See accompanying file LICENSE_1_0.txt or copy at</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//          http://www.boost.org/LICENSE_1_0.txt)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Internal Includes</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include "<a class="code" href="vrpn__MainloopObject_8h.html">vrpn_MainloopObject.h</a>"</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Library/third-party includes</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// - none</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00028">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classvrpn__MainloopContainer.html">vrpn_MainloopContainer</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html#a17abba7585741ba6e3fb242abc77ada0">   31</a></span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#a17abba7585741ba6e3fb242abc77ada0">vrpn_MainloopContainer</a>() {}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#a4345e52680df135ba7362ddcd24f9f82">~vrpn_MainloopContainer</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <a class="code hl_class" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> *<a class="code hl_function" href="classvrpn__MainloopContainer.html#ab92be4e8806f1f27faca5bc57bfe4274">add</a>(<a class="code hl_class" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> *o);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" data-end="}" data-start="{" id="foldopen00047">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html#a47c50d14ec31616581c62bc3199bf2b3">   47</a></span> <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; T <a class="code hl_function" href="classvrpn__MainloopContainer.html#a47c50d14ec31616581c62bc3199bf2b3">add</a>(T o)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="keywordflow">if</span> (!<a class="code hl_function" href="classvrpn__MainloopContainer.html#ab92be4e8806f1f27faca5bc57bfe4274">add</a>(<a class="code hl_function" href="classvrpn__MainloopObject.html#a696606b8e180f583cae6c4dd08c306f0">vrpn_MainloopObject::wrap</a>(o))) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> <span class="keywordflow">return</span> o;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#a896df4ffe3f986ad843e4d191cd712b3">mainloop</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> <a class="code hl_class" href="classvrpn__vector.html">vrpn_vector&lt;vrpn_MainloopObject *&gt;</a> _vrpn;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">/* -- inline implementations -- */</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html#a4345e52680df135ba7362ddcd24f9f82">   65</a></span><span class="keyword">inline</span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#a4345e52680df135ba7362ddcd24f9f82">vrpn_MainloopContainer::~vrpn_MainloopContainer</a>() { <a class="code hl_function" href="classvrpn__MainloopContainer.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>(); }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" data-end="}" data-start="{" id="foldopen00067">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html#ab92be4e8806f1f27faca5bc57bfe4274">   67</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> *<a class="code hl_function" href="classvrpn__MainloopContainer.html#ab92be4e8806f1f27faca5bc57bfe4274">vrpn_MainloopContainer::add</a>(<a class="code hl_class" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> *o)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> <span class="comment">// If the object is NULL, we have a problem and don't add it.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> <span class="keywordflow">if</span> (!o) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> <span class="keywordflow">return</span> o;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="comment">// If the object is broken(), this indicates a problem</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="comment">// with the device.  We also do not add it and we return NULL to show.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> <span class="comment">// that there is a problem.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> <span class="keywordflow">if</span> (o-&gt;<a class="code hl_function" href="classvrpn__MainloopObject.html#af5980672ee120f8bfd681e24d069b027">broken</a>()) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        fprintf(</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            stderr,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> <span class="stringliteral">"vrpn_MainloopContainer::add() Device is broken, not adding.\n"</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    _vrpn.push_back(o);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> <span class="keywordflow">return</span> o;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" data-end="}" data-start="{" id="foldopen00088">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html#ac8bb3912a3ce86b15842e79d0b421204">   88</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#ac8bb3912a3ce86b15842e79d0b421204">vrpn_MainloopContainer::clear</a>()</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> <span class="keywordflow">if</span> (_vrpn.empty()) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <span class="keywordtype">int</span>(_vrpn.size()) - 1; i &gt;= 0; --i) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> <span class="keyword">delete</span> _vrpn[i];</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>          fprintf(stderr, <span class="stringliteral">"vrpn_MainloopContainer::clear: delete failed\n"</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        _vrpn[i] = NULL;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    _vrpn.clear();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" data-end="}" data-start="{" id="foldopen00106">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classvrpn__MainloopContainer.html#a896df4ffe3f986ad843e4d191cd712b3">  106</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__MainloopContainer.html#a896df4ffe3f986ad843e4d191cd712b3">vrpn_MainloopContainer::mainloop</a>()</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = _vrpn.size();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        _vrpn[i]-&gt;mainloop();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
+</div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html"><div class="ttname"><a href="classvrpn__MainloopContainer.html">vrpn_MainloopContainer</a></div><div class="ttdoc">A container that holds and owns one or more VRPN objects,</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:28</div></div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html_a17abba7585741ba6e3fb242abc77ada0"><div class="ttname"><a href="classvrpn__MainloopContainer.html#a17abba7585741ba6e3fb242abc77ada0">vrpn_MainloopContainer::vrpn_MainloopContainer</a></div><div class="ttdeci">vrpn_MainloopContainer()</div><div class="ttdoc">Constructor</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:31</div></div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html_a4345e52680df135ba7362ddcd24f9f82"><div class="ttname"><a href="classvrpn__MainloopContainer.html#a4345e52680df135ba7362ddcd24f9f82">vrpn_MainloopContainer::~vrpn_MainloopContainer</a></div><div class="ttdeci">~vrpn_MainloopContainer()</div><div class="ttdoc">Destructor: invokes clear()</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:65</div></div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html_a47c50d14ec31616581c62bc3199bf2b3"><div class="ttname"><a href="classvrpn__MainloopContainer.html#a47c50d14ec31616581c62bc3199bf2b3">vrpn_MainloopContainer::add</a></div><div class="ttdeci">T add(T o)</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:47</div></div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html_a896df4ffe3f986ad843e4d191cd712b3"><div class="ttname"><a href="classvrpn__MainloopContainer.html#a896df4ffe3f986ad843e4d191cd712b3">vrpn_MainloopContainer::mainloop</a></div><div class="ttdeci">void mainloop()</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:106</div></div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html_ab92be4e8806f1f27faca5bc57bfe4274"><div class="ttname"><a href="classvrpn__MainloopContainer.html#ab92be4e8806f1f27faca5bc57bfe4274">vrpn_MainloopContainer::add</a></div><div class="ttdeci">vrpn_MainloopObject * add(vrpn_MainloopObject *o)</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:67</div></div>
+<div class="ttc" id="aclassvrpn__MainloopContainer_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="classvrpn__MainloopContainer.html#ac8bb3912a3ce86b15842e79d0b421204">vrpn_MainloopContainer::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>定义</b> vrpn_MainloopContainer.h:88</div></div>
+<div class="ttc" id="aclassvrpn__MainloopObject_html"><div class="ttname"><a href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a></div><div class="ttdef"><b>定义</b> vrpn_MainloopObject.h:43</div></div>
+<div class="ttc" id="aclassvrpn__MainloopObject_html_a696606b8e180f583cae6c4dd08c306f0"><div class="ttname"><a href="classvrpn__MainloopObject.html#a696606b8e180f583cae6c4dd08c306f0">vrpn_MainloopObject::wrap</a></div><div class="ttdeci">static vrpn_MainloopObject * wrap(T o)</div><div class="ttdoc">Templated wrapping function</div><div class="ttdef"><b>定义</b> vrpn_MainloopObject.h:176</div></div>
+<div class="ttc" id="aclassvrpn__MainloopObject_html_af5980672ee120f8bfd681e24d069b027"><div class="ttname"><a href="classvrpn__MainloopObject.html#af5980672ee120f8bfd681e24d069b027">vrpn_MainloopObject::broken</a></div><div class="ttdeci">virtual bool broken()=0</div></div>
+<div class="ttc" id="aclassvrpn__vector_html"><div class="ttname"><a href="classvrpn__vector.html">vrpn_vector</a></div><div class="ttdef"><b>定义</b> vrpn_Shared.h:552</div></div>
+<div class="ttc" id="avrpn__MainloopObject_8h_html"><div class="ttname"><a href="vrpn__MainloopObject_8h.html">vrpn_MainloopObject.h</a></div><div class="ttdoc">Header</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

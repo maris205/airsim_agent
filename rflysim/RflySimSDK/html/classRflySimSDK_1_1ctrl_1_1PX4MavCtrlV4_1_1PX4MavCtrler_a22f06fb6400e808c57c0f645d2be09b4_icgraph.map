@@ -1,0 +1,5 @@
+<map id="sendMavTakeOffLocal" name="sendMavTakeOffLocal">
+<area shape="rect" id="Node000001" title="发送指令使飞机从指定的本地位置起飞，并允许设置俯仰角、偏航角和上升速率" alt="" coords="261,5,411,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#aaa8243ff0f26e277da65de9ec0359766" title=" " alt="" coords="5,5,213,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,21,213,21,213,16,245,16"/>
+</map>

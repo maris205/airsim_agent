@@ -1,0 +1,5 @@
+<map id="sendUE4LabelMsg" name="sendUE4LabelMsg">
+<area shape="rect" id="Node000001" title="设置一个自行创建物体的头顶各行Message标签显示内容" alt="" coords="174,5,305,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a7c3acdd330037af106ba3cc9982b7773" title="设置一个自行创建物体的头顶ID位置的显示内容" alt="" coords="5,5,126,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,21,126,21,126,16,158,16"/>
+</map>

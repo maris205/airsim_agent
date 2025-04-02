@@ -1,0 +1,19 @@
+<map id="vrpn_HidAcceptor" name="vrpn_HidAcceptor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,131,209"/>
+<area shape="rect" id="Node000002" href="$classvrpn__HidAlwaysAcceptor.html" title=" " alt="" coords="206,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,167,117,103,144,70,177,42,204,29,207,33,180,46,148,74,121,106,84,170"/>
+<area shape="rect" id="Node000003" href="$classvrpn__HidBooleanAndAcceptor.html" title=" " alt="" coords="192,56,388,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,169,127,129,151,109,177,92,205,81,207,86,180,97,154,113,130,133,92,172"/>
+<area shape="rect" id="Node000004" href="$classvrpn__HidBooleanOrAcceptor.html" title=" " alt="" coords="197,107,383,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="107,173,178,143,217,131,219,136,180,148,110,178"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterfaceNumberAcceptor.html" title=" " alt="" coords="179,157,401,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="146,184,178,181,179,186,146,190"/>
+<area shape="rect" id="Node000006" href="$classvrpn__HidNthMatchAcceptor.html" title="Accepts the Nth device matching a given acceptor." alt="" coords="199,208,381,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="146,202,199,208,198,214,146,208"/>
+<area shape="rect" id="Node000007" href="$classvrpn__HidProductAcceptor.html" title="Accepts any device with the given vendor and product IDs." alt="" coords="205,259,375,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="110,214,180,244,219,256,217,261,178,249,107,219"/>
+<area shape="rect" id="Node000008" href="$classvrpn__HidProductMaskAcceptor.html" title=" " alt="" coords="189,309,391,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="92,220,130,259,154,279,180,295,207,306,205,311,177,300,151,283,127,263,88,223"/>
+<area shape="rect" id="Node000009" href="$classvrpn__HidSerialNumberAcceptor.html" title="Accepts any device with a particular serial number." alt="" coords="188,360,392,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="84,222,121,286,148,318,180,346,202,357,200,362,177,350,144,322,117,289,79,225"/>
+</map>

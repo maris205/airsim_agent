@@ -1,0 +1,7 @@
+<map id="SendPosNED" name="SendPosNED">
+<area shape="rect" id="Node000001" title="发送北东地坐标系下的位置指令。" alt="" coords="5,35,109,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据提供的布尔列表 EnList 计算一个类型掩码（type mask）。" alt="" coords="225,5,330,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,39,209,25,210,30,109,44"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ae8b2bbba58fd6f921fee46dae8be6abf" title="根据输入的启用列表计算Type Mask" alt="" coords="157,56,398,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,52,142,57,141,62,108,57"/>
+</map>

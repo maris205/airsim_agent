@@ -1,0 +1,49 @@
+<map id="simulink/vrpn/vrpn_MainloopObject.h" name="simulink/vrpn/vrpn_MainloopObject.h">
+<area shape="rect" id="Node000001" title="Header" alt="" coords="643,5,772,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Connection_8h_source.html" title=" " alt="" coords="578,96,709,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="693,50,665,85,661,82,689,47"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="732,96,811,123"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="726,47,754,82,750,85,722,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,320,66,347"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="600,126,450,173,242,251,80,316,78,311,240,246,448,168,599,121"/>
+<area shape="rect" id="Node000004" href="$vrpn__Configure_8h_source.html" title=" " alt="" coords="841,395,961,421"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="709,120,809,141,853,155,885,168,927,199,954,231,972,269,986,319,989,334,986,348,968,371,945,389,942,385,964,368,981,346,984,334,981,321,967,271,950,234,923,203,882,173,852,160,807,147,708,125"/>
+<area shape="rect" id="Node000005" href="$vrpn__Shared_8h_source.html" title=" " alt="" coords="524,245,630,272"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="640,124,591,232,586,230,635,122"/>
+<area shape="rect" id="Node000006" href="$vrpn__Types_8h_source.html" title=" " alt="" coords="851,320,950,347"/>
+<area shape="poly" id="edge19_Node000002_Node000006" title=" " alt="" coords="710,118,779,136,814,150,848,168,889,200,902,218,914,245,918,276,913,306,908,305,913,276,909,246,898,221,885,203,845,173,812,155,777,141,708,123"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="89,320,182,347"/>
+<area shape="poly" id="edge27_Node000002_Node000012" title=" " alt="" coords="616,126,179,316,177,311,614,121"/>
+<area shape="rect" id="Node000016" href="$vrpn__EndpointContainer_8h.html" title="Header" alt="" coords="663,171,834,197"/>
+<area shape="poly" id="edge20_Node000002_Node000016" title=" " alt="" coords="663,121,719,159,716,164,660,125"/>
+<area shape="poly" id="edge13_Node000005_Node000003" title=" " alt="" coords="524,266,332,284,209,300,81,322,80,317,208,295,332,279,524,261"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="603,270,697,318,747,344,852,387,850,392,745,349,694,322,601,275"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="631,269,837,315,836,320,629,274"/>
+<area shape="rect" id="Node000007" href="$vrpn__Thread_8h.html" title="Header containing vrpn_Thread, vrpn_Semaphore (formerly in vrpn_Shared.h), as well as a lock&#45;guard cl..." alt="" coords="422,320,526,347"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="560,275,506,313,503,308,557,270"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="550,320,614,347"/>
+<area shape="poly" id="edge12_Node000005_Node000010" title=" " alt="" coords="580,272,583,304,577,305,575,273"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="638,320,684,347"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="593,271,637,308,633,312,590,275"/>
+<area shape="poly" id="edge15_Node000005_Node000012" title=" " alt="" coords="525,270,197,322,197,317,524,265"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="206,320,292,347"/>
+<area shape="poly" id="edge16_Node000005_Node000013" title=" " alt="" coords="524,274,307,322,306,317,523,269"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="316,320,398,347"/>
+<area shape="poly" id="edge17_Node000005_Node000014" title=" " alt="" coords="539,275,411,317,409,312,538,270"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="759,320,827,347"/>
+<area shape="poly" id="edge18_Node000005_Node000015" title=" " alt="" coords="615,270,745,313,743,318,614,275"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="904,347,904,379,898,379,898,347"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="527,342,539,344,826,392,825,397,538,349,526,347"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="382,395,457,421"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="467,349,440,384,436,380,463,346"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="481,395,577,421"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="486,346,512,380,508,384,482,349"/>
+<area shape="poly" id="edge22_Node000016_Node000004" title=" " alt="" coords="810,195,862,214,913,243,941,266,961,289,971,315,965,348,951,369,934,387,930,383,947,366,960,346,965,316,957,292,937,270,910,248,860,219,808,200"/>
+<area shape="poly" id="edge23_Node000016_Node000005" title=" " alt="" coords="720,200,622,241,620,236,718,195"/>
+<area shape="poly" id="edge21_Node000016_Node000006" title=" " alt="" coords="759,196,785,231,820,270,870,309,867,313,816,274,781,234,755,200"/>
+<area shape="rect" id="Node000017" href="$vrpn__Assert_8h.html" title="Header for assert macros." alt="" coords="654,245,756,272"/>
+<area shape="poly" id="edge24_Node000016_Node000017" title=" " alt="" coords="743,199,723,233,718,231,739,196"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="831,245,899,272"/>
+<area shape="poly" id="edge26_Node000016_Node000018" title=" " alt="" coords="770,196,833,234,830,239,768,200"/>
+<area shape="poly" id="edge25_Node000017_Node000015" title=" " alt="" coords="722,270,768,308,764,312,718,275"/>
+</map>

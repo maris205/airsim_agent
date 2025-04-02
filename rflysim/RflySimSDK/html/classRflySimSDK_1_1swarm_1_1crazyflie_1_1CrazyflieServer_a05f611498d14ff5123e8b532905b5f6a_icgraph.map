@@ -1,0 +1,5 @@
+<map id="init_poses" name="init_poses">
+<area shape="rect" id="Node000001" title="初始化飞行器的起始位置列表。" alt="" coords="120,5,200,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1crazyflie_1_1CrazyflieServer.html#a77e733ce06196b7c64a413d3cc92be74" title="构造函数，初始化CrazyflieServer。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

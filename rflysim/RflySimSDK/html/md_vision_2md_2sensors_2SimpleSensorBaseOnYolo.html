@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: 简易视觉传感器（Yolo）</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">简易视觉传感器（Yolo）</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md499"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20241031111033690.png"><img alt="" class="thumbnail" height="auto" src="image-20241031111033690.png" width="100"/></a>
+<div class="caption">
+目标识别框</div></div>
+<div class="image">
+<a data_lightbox="image" href="image-20241031111144233.png"><img alt="" class="thumbnail" height="auto" src="image-20241031111144233.png" width="100"/></a>
+<div class="caption">
+传感器输出</div></div>
+<h2><a class="anchor" id="autotoc_md500"></a>
+<b>1. 功能概述</b></h2>
+<h3><a class="anchor" id="autotoc_md501"></a>
+<b>1.1 支持的功能操作</b></h3>
+<ul>
+<li><b>传感器输出</b><ul>
+<li><p class="startli">利用YOLO 算法对视场内的目标进行实时检测与定位，一般需要通过当前视场角形成图像，并将图像输出，上层视觉代码拿到图像后识别图像中是否存在带特征点的目标物，有的话返回该物体坐标。本传感器简化了这一过程，直接返回特定视场角内、一定距离的、带特征点物体的坐标</p>
+<p class="startli">具体地，本传感器输出识别目标的 CopterID、可信度（Credibility）、目标边界框坐标（MinX, MinY, MaxX, MaxY）等关键参数。</p>
+</li>
+</ul>
+</li>
+<li><b>应用场景</b><ul>
+<li>多无人机协同任务中的目标定位与跟踪。（本传感器的识别方式几乎没有性能消耗）</li>
+<li>模拟环境下的算法验证与训练。</li>
+<li>竞赛任务中的特定目标识别。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md502"></a>
+<b>1.2 使用示例</b></h3>
+<p><b>配置文件添加传感器</b> 以下是配置文件 <code>Config.json</code> 的示例代码，用于添加 分割图传感器：</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    "VisionSensors":[</div>
+<div class="line"> </div>
+<div class="line">        {</div>
+<div class="line">            "SeqID":0, //视觉传感器序号0 1 2 3 ...排序。如果填0，则自动递增排序。</div>
+<div class="line">            "TypeID":30, //简易视觉传感器</div>
+<div class="line">            "TargetCopter":1, //传感器绑定的CopterID号</div>
+<div class="line">            "TargetMountType":0, //绑定方式</div>
+<div class="line">            "DataWidth":640, //图像像素长度</div>
+<div class="line">            "DataHeight":480,//图像像素宽度</div>
+<div class="line">            "DataCheckFreq":10,//图像检查更新频率</div>
+<div class="line">            "SendProtocol":[1,127,0,0,1,10001,0,0],</div>
+<div class="line">            "CameraFOV":60, </div>
+<div class="line">            "EularOrQuat":0, </div>
+<div class="line">            "SensorPosXYZ":[0.50,0,0.5], //视觉传感器的安装位置，和TargetMountType对应偏移中心，单位米</div>
+<div class="line">            "SensorAngQuat":[0,0,0,0], // 视觉传感器的安装姿态，用四元数方式表示</div>
+<div class="line">            "SensorAngEular":[0,0,0],// 视觉传感器的安装姿态，用欧拉角方式表示，单位弧度</div>
+<div class="line">            "otherParams":[100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] //otherParams[0]为最大识别距离，其余为预留位</div>
+<div class="line">        }</div>
+</div><!-- fragment --><p>这里单独配置简易视觉传感器可以用于训练，仿真时可以在同一架载具上先配置一个可见光传感器（TypeID=1）以肉眼观测目标识别的过程</p>
+<p><b>Python 调用传感器接口</b></p>
+<p>以下代码展示了如何通过简易视觉传感器采集目标检测数据并绘制检测框：</p>
+<div class="fragment"><div class="line"># 主循环处理逻辑</div>
+<div class="line">while True:</div>
+<div class="line">    lastTime = time.time()</div>
+<div class="line"> </div>
+<div class="line">    for idx in range(len(vis.VisSensor)):</div>
+<div class="line">        # 判断传感器类型</div>
+<div class="line">        if vis.VisSensor[idx].TypeID == 30 and vis.Img[idx] != 0:</div>
+<div class="line">            image = vis.Img[idx].copy() if vis.Img[idx] else None</div>
+<div class="line"> </div>
+<div class="line">            # 遍历检测结果</div>
+<div class="line">            for detection in vis.Img[idx]:</div>
+<div class="line">                CopterID = detection[0]</div>
+<div class="line">                Credibility = detection[1]</div>
+<div class="line">                MinX, MinY, MaxX, MaxY = detection[2:6]</div>
+<div class="line"> </div>
+<div class="line">                # 绘制目标边界框</div>
+<div class="line">                if image is not None:</div>
+<div class="line">                    start_point = (MinX, MinY)</div>
+<div class="line">                    end_point = (MaxX, MaxY)</div>
+<div class="line">                    color = (0, 255, 0)  # 绿色</div>
+<div class="line">                    thickness = 2</div>
+<div class="line">                    cv2.rectangle(image, start_point, end_point, color, thickness)</div>
+<div class="line"> </div>
+<div class="line">                    # 绘制标签</div>
+<div class="line">                    label_point = (MinX, int(MinY - 10))</div>
+<div class="line">                    label_text = f"CopterID: {CopterID} ({Credibility:.2f})"</div>
+<div class="line">                    cv2.putText(image, label_text, label_point, cv2.FONT_HERSHEY_SIMPLEX, 0.4, color)</div>
+<div class="line"> </div>
+<div class="line">            # 显示结果</div>
+<div class="line">            if image is not None:</div>
+<div class="line">                cv2.imshow(f"CopterID: {vis.VisSensor[idx].TargetCopter}", image)</div>
+<div class="line">                cv2.waitKey(1)</div>
+</div><!-- fragment --><p><b>例程链接</b></p>
+<ul>
+<li>示例工程：<a href="../../8.RflySimVision/2.AdvExps/e7_ObjDetectYolo/SimpleSensorBaseOnYolo">8.RflySimVision\2.AdvExps\e7_ObjDetectYolo\SimpleSensorBaseOnYolo</a></li>
+</ul>
+<hr/>
+<h2><a class="anchor" id="autotoc_md504"></a>
+<b>2. 传感器配置</b></h2>
+<h3><a class="anchor" id="autotoc_md505"></a>
+<b>2.1 传感器安装</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>TargetMountType</b> </td><td class="markdownTableBodyNone">0: 固定载具几何中心；1: 固定底部；2: 固定地面   </td><td class="markdownTableBodyNone">决定传感器的安装方式及相对位置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TargetCopter</b> </td><td class="markdownTableBodyNone">Copter ID (默认 1)   </td><td class="markdownTableBodyNone">所属载具编号，默认支持 Copter 1。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SensorPosXYZ</b> </td><td class="markdownTableBodyNone">[x, y, z] (单位：米)   </td><td class="markdownTableBodyNone">相对于载具中心的安装位置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>EulerOrQuat</b> </td><td class="markdownTableBodyNone">0: 欧拉角；1: 四元数   </td><td class="markdownTableBodyNone">选择安装姿态的表示方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SensorAngEular</b> </td><td class="markdownTableBodyNone">[roll, pitch, yaw] (弧度)   </td><td class="markdownTableBodyNone">安装姿态，欧拉角方式表示。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SensorAngQuat</b> </td><td class="markdownTableBodyNone">[q0, q1, q2, q3]   </td><td class="markdownTableBodyNone">安装姿态，四元数方式表示。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md506"></a>
+<b>2.2 网络通信配置</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SendProtocol</b> </td><td class="markdownTableBodyNone">[mode, IP, port, …]   </td><td class="markdownTableBodyNone">配置数据传输协议，支持共享内存和 UDP。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SendProtocol[0]</b> </td><td class="markdownTableBodyNone">0: 共享内存；1: UDP 压缩传输   </td><td class="markdownTableBodyNone">选择传输方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SendProtocol[5]</b> </td><td class="markdownTableBodyNone">端口号   </td><td class="markdownTableBodyNone">数据传输的目标端口号。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md507"></a>
+<b>2.3 传感器技术规格</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>技术参数</b> </th><th class="markdownTableHeadNone"><b>配置值</b> </th><th class="markdownTableHeadNone"><b>说明</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SeqID</b> </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">唯一传感器序号。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TypeID</b> </td><td class="markdownTableBodyNone">30   </td><td class="markdownTableBodyNone">传感器类型，简易视觉传感器（基于YOLO目标识别）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataHeight</b> </td><td class="markdownTableBodyNone">480   </td><td class="markdownTableBodyNone">图像垂直分辨率，支持 720, 1080 等常见分辨率。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>DataWidth</b> </td><td class="markdownTableBodyNone">640   </td><td class="markdownTableBodyNone">图像水平分辨率，支持 1280, 1920 等常见分辨率。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataCheckFreq</b> </td><td class="markdownTableBodyNone">30 Hz   </td><td class="markdownTableBodyNone">数据刷新频率，默认 30Hz，最大支持取决于<a href="md_ue_2md_2command_2t_8Maxfps.html">RflySim3D刷新率</a>。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>CameraFOV</b> </td><td class="markdownTableBodyNone">90°   </td><td class="markdownTableBodyNone">图像视场角，单位：度。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>otherParams[0]</b> </td><td class="markdownTableBodyNone">100   </td><td class="markdownTableBodyNone">最大识别距离（米），其他参数预留。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md508"></a>
+<b>3. 注意事项</b></h2>
+<ol type="1">
+<li><b>实时性优化</b><ul>
+<li>确保传感器数据刷新频率与目标检测算法处理能力匹配，以避免延迟。</li>
+</ul>
+</li>
+<li><b>图像抖动防控</b><ul>
+<li>可在应用层对传感器的姿态角进行低通滤波处理，减小视觉数据的抖动。</li>
+</ul>
+</li>
+<li><b>多目标场景支持</b><ul>
+<li>当视场内多个目标重叠时，建议根据可信度（Credibility）进行优先级排序处理。 </li>
+</ul>
+</li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

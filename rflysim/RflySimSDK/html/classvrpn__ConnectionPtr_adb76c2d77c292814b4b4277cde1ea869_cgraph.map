@@ -1,0 +1,7 @@
+<map id="operator=" name="operator=">
+<area shape="rect" id="Node000001" title="Assignment operator from smart pointer" alt="" coords="5,31,82,57"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Connection.html#a3bec6f13a84a014fca7183a8eaebd5d9" title="Counting references to this connection." alt="" coords="130,5,338,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,36,114,32,115,37,82,42"/>
+<area shape="rect" id="Node000003" href="$classvrpn__ConnectionPtr.html#ad20897c5c8bd47f5d4005989bead0e55" title=" " alt="" coords="209,56,259,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,46,194,61,193,67,82,52"/>
+</map>

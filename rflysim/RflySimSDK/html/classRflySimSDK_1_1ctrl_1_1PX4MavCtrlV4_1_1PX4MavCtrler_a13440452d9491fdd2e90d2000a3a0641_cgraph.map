@@ -1,0 +1,7 @@
+<map id="SendPosNEDNoYaw" name="SendPosNEDNoYaw">
+<area shape="rect" id="Node000001" title="地球北东地坐标系下控制飞机到目标位置" alt="" coords="5,35,151,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="251,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,35,235,24,235,29,152,41"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="199,56,384,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,55,184,60,183,65,151,61"/>
+</map>

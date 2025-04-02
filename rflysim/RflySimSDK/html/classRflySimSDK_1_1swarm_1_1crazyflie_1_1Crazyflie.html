@@ -1,0 +1,1447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: Crazyflie类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>crazyflie</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie.html">Crazyflie</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">Crazyflie类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>表示单个机器人对象的类。 本类封装了控制单个Crazyflie飞行器的主要功能，包括起飞、降落、移动和悬停等操作。  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad2c5a2e8395769b5b40e0994673d684c" id="r_ad2c5a2e8395769b5b40e0994673d684c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2c5a2e8395769b5b40e0994673d684c">__init__</a> (self, id, initialPosition, tf, mode)</td></tr>
+<tr class="memdesc:ad2c5a2e8395769b5b40e0994673d684c"><td class="mdescLeft"> </td><td class="mdescRight">构造函数，初始化Crazyflie对象的相关参数和控制接口。  <br/></td></tr>
+<tr class="separator:ad2c5a2e8395769b5b40e0994673d684c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad85425a6a48afcdb82e3857451125d05" id="r_ad85425a6a48afcdb82e3857451125d05"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad85425a6a48afcdb82e3857451125d05">loop</a> (self)</td></tr>
+<tr class="memdesc:ad85425a6a48afcdb82e3857451125d05"><td class="mdescLeft"> </td><td class="mdescRight">循环线程函数，用于初始化控制循环环境。  <br/></td></tr>
+<tr class="separator:ad85425a6a48afcdb82e3857451125d05"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae5c6134822656abf5c674237505e2311" id="r_ae5c6134822656abf5c674237505e2311"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5c6134822656abf5c674237505e2311">setGroupMask</a> (self, groupMask)</td></tr>
+<tr class="memdesc:ae5c6134822656abf5c674237505e2311"><td class="mdescLeft"> </td><td class="mdescRight">设置此机器人的组掩码位，用于同步执行多机编排动作。  <br/></td></tr>
+<tr class="separator:ae5c6134822656abf5c674237505e2311"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6d7b4142ac3d5a7ebeecdb092b4e9d7" id="r_ad6d7b4142ac3d5a7ebeecdb092b4e9d7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6d7b4142ac3d5a7ebeecdb092b4e9d7">enableCollisionAvoidance</a> (self, others, ellipsoidRadii)</td></tr>
+<tr class="memdesc:ad6d7b4142ac3d5a7ebeecdb092b4e9d7"><td class="mdescLeft"> </td><td class="mdescRight">启用机载避碰功能，使用缓冲Voronoi单元方法避免与其他无人机碰撞。  <br/></td></tr>
+<tr class="separator:ad6d7b4142ac3d5a7ebeecdb092b4e9d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d0690f37908998baefac707c57ec8f3" id="r_a1d0690f37908998baefac707c57ec8f3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d0690f37908998baefac707c57ec8f3">disableCollisionAvoidance</a> (self)</td></tr>
+<tr class="memdesc:a1d0690f37908998baefac707c57ec8f3"><td class="mdescLeft"> </td><td class="mdescRight">禁用机载避碰功能。  <br/></td></tr>
+<tr class="separator:a1d0690f37908998baefac707c57ec8f3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a319d864f62c435011eb90f708b44b9b5" id="r_a319d864f62c435011eb90f708b44b9b5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a319d864f62c435011eb90f708b44b9b5">takeoff</a> (self, targetHeight, duration, groupMask=0)</td></tr>
+<tr class="memdesc:a319d864f62c435011eb90f708b44b9b5"><td class="mdescLeft"> </td><td class="mdescRight">执行起飞动作，以设定的速度飞到指定高度并保持悬停。  <br/></td></tr>
+<tr class="separator:a319d864f62c435011eb90f708b44b9b5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2fbb5cd8c4d2063559e7fa468433dcd" id="r_ab2fbb5cd8c4d2063559e7fa468433dcd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2fbb5cd8c4d2063559e7fa468433dcd">land</a> (self, targetHeight, duration, groupMask=0)</td></tr>
+<tr class="memdesc:ab2fbb5cd8c4d2063559e7fa468433dcd"><td class="mdescLeft"> </td><td class="mdescRight">执行降落动作，以设定的速度飞回指定高度。  <br/></td></tr>
+<tr class="separator:ab2fbb5cd8c4d2063559e7fa468433dcd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af08d1e6d1f541c17475b5b47f9269d0b" id="r_af08d1e6d1f541c17475b5b47f9269d0b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af08d1e6d1f541c17475b5b47f9269d0b">stop</a> (self, groupMask=0)</td></tr>
+<tr class="memdesc:af08d1e6d1f541c17475b5b47f9269d0b"><td class="mdescLeft"> </td><td class="mdescRight">停止飞行器（在低级命令模式下切断电机电源）。  <br/></td></tr>
+<tr class="separator:af08d1e6d1f541c17475b5b47f9269d0b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a09d44eb3b2de025f752b741d0f4efef6" id="r_a09d44eb3b2de025f752b741d0f4efef6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a09d44eb3b2de025f752b741d0f4efef6">goTo</a> (self, goal, yaw, duration, relative=False, groupMask=0)</td></tr>
+<tr class="memdesc:a09d44eb3b2de025f752b741d0f4efef6"><td class="mdescLeft"> </td><td class="mdescRight">平滑移动到指定目标位置（并悬停），支持绝对或相对坐标和偏航角设定。  <br/></td></tr>
+<tr class="separator:a09d44eb3b2de025f752b741d0f4efef6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0f16a390472d3ebf0a80231ae9cac7f8" id="r_a0f16a390472d3ebf0a80231ae9cac7f8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f16a390472d3ebf0a80231ae9cac7f8">uploadTrajectory</a> (self, trajectoryId, pieceOffset, trajectory)</td></tr>
+<tr class="memdesc:a0f16a390472d3ebf0a80231ae9cac7f8"><td class="mdescLeft"> </td><td class="mdescRight">上传分段多项式轨迹以供后续执行。  <br/></td></tr>
+<tr class="separator:a0f16a390472d3ebf0a80231ae9cac7f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a98c94a58e1ba285d5a8cc01024605342" id="r_a98c94a58e1ba285d5a8cc01024605342"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a98c94a58e1ba285d5a8cc01024605342">startTrajectory</a> (self, trajectoryId, timescale=1.0, reverse=False, relative=True, groupMask=0)</td></tr>
+<tr class="memdesc:a98c94a58e1ba285d5a8cc01024605342"><td class="mdescLeft"> </td><td class="mdescRight">开始执行预先上传的轨迹。  <br/></td></tr>
+<tr class="separator:a98c94a58e1ba285d5a8cc01024605342"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2d850ec107e3df7c9a1e5b7e9735bdfe" id="r_a2d850ec107e3df7c9a1e5b7e9735bdfe"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d850ec107e3df7c9a1e5b7e9735bdfe">notifySetpointsStop</a> (self, remainValidMillisecs=100, groupMask=0)</td></tr>
+<tr class="memdesc:a2d850ec107e3df7c9a1e5b7e9735bdfe"><td class="mdescLeft"> </td><td class="mdescRight">通知飞行器低级控制指令（如cmdVelocityWorld、cmdFullState）即将停止发送，随后返回上层行为。  <br/></td></tr>
+<tr class="separator:a2d850ec107e3df7c9a1e5b7e9735bdfe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a78d7a44c0f9fd4d0b9119a6d73149377" id="r_a78d7a44c0f9fd4d0b9119a6d73149377"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d7a44c0f9fd4d0b9119a6d73149377">position</a> (self)</td></tr>
+<tr class="memdesc:a78d7a44c0f9fd4d0b9119a6d73149377"><td class="mdescLeft"> </td><td class="mdescRight">返回最近一次由运动捕捉系统测量的飞行器真实位置。  <br/></td></tr>
+<tr class="separator:a78d7a44c0f9fd4d0b9119a6d73149377"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a58df4c84b1d5a731cfb6263ac8c0d72f" id="r_a58df4c84b1d5a731cfb6263ac8c0d72f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a58df4c84b1d5a731cfb6263ac8c0d72f">getParam</a> (self, name)</td></tr>
+<tr class="memdesc:a58df4c84b1d5a731cfb6263ac8c0d72f"><td class="mdescLeft"> </td><td class="mdescRight">获取指定名称的机载参数的当前值。  <br/></td></tr>
+<tr class="separator:a58df4c84b1d5a731cfb6263ac8c0d72f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a26a4357a7e62b0aa8c482c0177553f37" id="r_a26a4357a7e62b0aa8c482c0177553f37"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a4357a7e62b0aa8c482c0177553f37">setParam</a> (self, name, value)</td></tr>
+<tr class="memdesc:a26a4357a7e62b0aa8c482c0177553f37"><td class="mdescLeft"> </td><td class="mdescRight">设置指定名称参数的值。  <br/></td></tr>
+<tr class="separator:a26a4357a7e62b0aa8c482c0177553f37"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa65aa8f0d84be5ee0e9d538936d6f55f" id="r_aa65aa8f0d84be5ee0e9d538936d6f55f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa65aa8f0d84be5ee0e9d538936d6f55f">setParams</a> (self, params)</td></tr>
+<tr class="memdesc:aa65aa8f0d84be5ee0e9d538936d6f55f"><td class="mdescLeft"> </td><td class="mdescRight">批量设置多个参数的值。  <br/></td></tr>
+<tr class="separator:aa65aa8f0d84be5ee0e9d538936d6f55f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a08a515cfe72ce88790910f4af9c7932e" id="r_a08a515cfe72ce88790910f4af9c7932e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a08a515cfe72ce88790910f4af9c7932e">cmdFullState</a> (self, pos, vel, acc, yaw, omega)</td></tr>
+<tr class="memdesc:a08a515cfe72ce88790910f4af9c7932e"><td class="mdescLeft"> </td><td class="mdescRight">发送全状态(setFullState)控制指令，包括位置、速度、加速度、偏航角及角速度。  <br/></td></tr>
+<tr class="separator:a08a515cfe72ce88790910f4af9c7932e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a78abb92302ed4341277a8f3a0a29f845" id="r_a78abb92302ed4341277a8f3a0a29f845"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a78abb92302ed4341277a8f3a0a29f845">cmdVelocityWorld</a> (self, vel, yawRate)</td></tr>
+<tr class="memdesc:a78abb92302ed4341277a8f3a0a29f845"><td class="mdescLeft"> </td><td class="mdescRight">发送世界坐标系下的速度与偏航角速度控制指令。  <br/></td></tr>
+<tr class="separator:a78abb92302ed4341277a8f3a0a29f845"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a807413dfbf053023e50ec1b6e77ec457" id="r_a807413dfbf053023e50ec1b6e77ec457"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a807413dfbf053023e50ec1b6e77ec457">cmdStop</a> (self)</td></tr>
+<tr class="memdesc:a807413dfbf053023e50ec1b6e77ec457"><td class="mdescLeft"> </td><td class="mdescRight">停止飞行器，在高层命令模式下切断电机动力。  <br/></td></tr>
+<tr class="separator:a807413dfbf053023e50ec1b6e77ec457"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af98b1b3d7a58bed2982d9038786e9f17" id="r_af98b1b3d7a58bed2982d9038786e9f17"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af98b1b3d7a58bed2982d9038786e9f17">cmdVel</a> (self, roll, pitch, yawrate, thrust)</td></tr>
+<tr class="memdesc:af98b1b3d7a58bed2982d9038786e9f17"><td class="mdescLeft"> </td><td class="mdescRight">发送用于初学者模式（绝对滚转/俯仰角度、偏航角速度和推力）的流式指令。  <br/></td></tr>
+<tr class="separator:af98b1b3d7a58bed2982d9038786e9f17"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aceaa165ab4dc2672b446c7ecc304f2cc" id="r_aceaa165ab4dc2672b446c7ecc304f2cc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aceaa165ab4dc2672b446c7ecc304f2cc">cmdPosition</a> (self, pos, yaw=0)</td></tr>
+<tr class="memdesc:aceaa165ab4dc2672b446c7ecc304f2cc"><td class="mdescLeft"> </td><td class="mdescRight">发送绝对位置和偏航角的流式指令，飞行器将移动并保持在指定位置上空。  <br/></td></tr>
+<tr class="separator:aceaa165ab4dc2672b446c7ecc304f2cc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae4df63dab2b5ba4d9b371f1609ef9061" id="r_ae4df63dab2b5ba4d9b371f1609ef9061"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4df63dab2b5ba4d9b371f1609ef9061">setLEDColor</a> (self, r, g, b)</td></tr>
+<tr class="memdesc:ae4df63dab2b5ba4d9b371f1609ef9061"><td class="mdescLeft"> </td><td class="mdescRight">设置LED颜色（需要将param "ring/effect"设置为7才能生效）。  <br/></td></tr>
+<tr class="separator:ae4df63dab2b5ba4d9b371f1609ef9061"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a84ac8310574993d704ebd0c89f94f2e8" id="r_a84ac8310574993d704ebd0c89f94f2e8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a84ac8310574993d704ebd0c89f94f2e8">readmsg</a> (self)</td></tr>
+<tr class="memdesc:a84ac8310574993d704ebd0c89f94f2e8"><td class="mdescLeft"> </td><td class="mdescRight">读取消息（占位函数，尚未实现）。  <br/></td></tr>
+<tr class="separator:a84ac8310574993d704ebd0c89f94f2e8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5966fc0224defb2c90dd1e17cda1c366" id="r_a5966fc0224defb2c90dd1e17cda1c366"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5966fc0224defb2c90dd1e17cda1c366">getMotionPos</a> (self)</td></tr>
+<tr class="memdesc:a5966fc0224defb2c90dd1e17cda1c366"><td class="mdescLeft"> </td><td class="mdescRight">获取当前飞行器运动位置（通过底层接口获得NED坐标系下位置后转换）。  <br/></td></tr>
+<tr class="separator:a5966fc0224defb2c90dd1e17cda1c366"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abf6f12b054cb4861ef17b819d5b58517" id="r_abf6f12b054cb4861ef17b819d5b58517"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abf6f12b054cb4861ef17b819d5b58517">getMotionVel</a> (self)</td></tr>
+<tr class="memdesc:abf6f12b054cb4861ef17b819d5b58517"><td class="mdescLeft"> </td><td class="mdescRight">获取当前飞行器运动位置（通过底层接口获得NED坐标系下位置后转换）。  <br/></td></tr>
+<tr class="separator:abf6f12b054cb4861ef17b819d5b58517"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7f35e69079b2ab7372b346463c022a4e" id="r_a7f35e69079b2ab7372b346463c022a4e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f35e69079b2ab7372b346463c022a4e">getMotionAcc</a> (self)</td></tr>
+<tr class="memdesc:a7f35e69079b2ab7372b346463c022a4e"><td class="mdescLeft"> </td><td class="mdescRight">获取当前飞行器运动加速度（通过底层接口获得NED坐标系下加速度后转换）。  <br/></td></tr>
+<tr class="separator:a7f35e69079b2ab7372b346463c022a4e"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:acf2488b95c97e0378c9bf49de3b50f28" id="r_acf2488b95c97e0378c9bf49de3b50f28"><td align="right" class="memItemLeft" valign="top"><a id="acf2488b95c97e0378c9bf49de3b50f28" name="acf2488b95c97e0378c9bf49de3b50f28"></a>
+ </td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="separator:acf2488b95c97e0378c9bf49de3b50f28"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a6b6fb557d8d37d59700faf4e4c9167" id="r_a1a6b6fb557d8d37d59700faf4e4c9167"><td align="right" class="memItemLeft" valign="top"><a id="a1a6b6fb557d8d37d59700faf4e4c9167" name="a1a6b6fb557d8d37d59700faf4e4c9167"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="separator:a1a6b6fb557d8d37d59700faf4e4c9167"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace96d70a929a737bb705aa0f539decaa" id="r_ace96d70a929a737bb705aa0f539decaa"><td align="right" class="memItemLeft" valign="top"><a id="ace96d70a929a737bb705aa0f539decaa" name="ace96d70a929a737bb705aa0f539decaa"></a>
+ </td><td class="memItemRight" valign="bottom"><b>prefix</b></td></tr>
+<tr class="separator:ace96d70a929a737bb705aa0f539decaa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae79699f4cebda28663ed8be8f9d98fcb" id="r_ae79699f4cebda28663ed8be8f9d98fcb"><td align="right" class="memItemLeft" valign="top"><a id="ae79699f4cebda28663ed8be8f9d98fcb" name="ae79699f4cebda28663ed8be8f9d98fcb"></a>
+ </td><td class="memItemRight" valign="bottom"><b>initialPosition</b></td></tr>
+<tr class="separator:ae79699f4cebda28663ed8be8f9d98fcb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac181cb84026bf35e987ab931f6ed0d2e" id="r_ac181cb84026bf35e987ab931f6ed0d2e"><td align="right" class="memItemLeft" valign="top"><a id="ac181cb84026bf35e987ab931f6ed0d2e" name="ac181cb84026bf35e987ab931f6ed0d2e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tf</b></td></tr>
+<tr class="separator:ac181cb84026bf35e987ab931f6ed0d2e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2ccd086d97741fd5669700e420bed231" id="r_a2ccd086d97741fd5669700e420bed231"><td align="right" class="memItemLeft" valign="top"><a id="a2ccd086d97741fd5669700e420bed231" name="a2ccd086d97741fd5669700e420bed231"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ctrl</b></td></tr>
+<tr class="separator:a2ccd086d97741fd5669700e420bed231"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adcfbea44e52474808da11dcfe47c05eb" id="r_adcfbea44e52474808da11dcfe47c05eb"><td align="right" class="memItemLeft" valign="top"><a id="adcfbea44e52474808da11dcfe47c05eb" name="adcfbea44e52474808da11dcfe47c05eb"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mapini</b></td></tr>
+<tr class="separator:adcfbea44e52474808da11dcfe47c05eb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2d0543c2c2e88bbc3f71da08a149c73f" id="r_a2d0543c2c2e88bbc3f71da08a149c73f"><td align="right" class="memItemLeft" valign="top"><a id="a2d0543c2c2e88bbc3f71da08a149c73f" name="a2d0543c2c2e88bbc3f71da08a149c73f"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ini_success</b></td></tr>
+<tr class="separator:a2d0543c2c2e88bbc3f71da08a149c73f"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>表示单个机器人对象的类。 本类封装了控制单个Crazyflie飞行器的主要功能，包括起飞、降落、移动和悬停等操作。 </p>
+<pre class="fragment">Object representing a single robot.
+
+The bulk of the module's functionality is contained in this class.
+</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad2c5a2e8395769b5b40e0994673d684c" name="ad2c5a2e8395769b5b40e0994673d684c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c5a2e8395769b5b40e0994673d684c">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>initialPosition</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>tf</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>mode</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数，初始化Crazyflie对象的相关参数和控制接口。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">id</td><td>(int): 机器人ID，范围[0, 255]。该ID用作无线电地址的最后一个字节。 </td></tr>
+<tr><td class="paramname">initialPosition</td><td>(iterable of float): 初始位置[x, y, z]，通常在实验空间的地面上(z=0)。 </td></tr>
+<tr><td class="paramname">tf</td><td>(tf.TransformListener): ROS的TransformListener对象，用于查询机器人的当前状态。 </td></tr>
+<tr><td class="paramname">mode</td><td>(int): 工作模式选择参数，影响通信方式（redis或udp）。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Constructor.
+
+Args:
+    id (int): Integer ID in range [0, 255]. The last byte of the robot's
+        radio address.
+    initialPosition (iterable of float): Initial position of the robot:
+        [x, y, z]. Typically on the floor of the experiment space with
+        z == 0.0.
+    tf (tf.TransformListener): ROS TransformListener used to query the
+        robot's current state.
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie_ad2c5a2e8395769b5b40e0994673d684c_cgraph.svg" width="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a08a515cfe72ce88790910f4af9c7932e" name="a08a515cfe72ce88790910f4af9c7932e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a515cfe72ce88790910f4af9c7932e">◆ </a></span>cmdFullState()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">cmdFullState </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vel</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>acc</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>omega</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送全状态(setFullState)控制指令，包括位置、速度、加速度、偏航角及角速度。 </p>
+<ul>
+<li><a class="anchor" id="cmdFullState"></a> 发送此类型指令会使飞行器切换到低级控制模式，不再响应高层命令（如land、goTo）。 <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">pos</td><td>(array-like[3]): 位置（米）。 </td></tr>
+<tr><td class="paramname">vel</td><td>(array-like[3]): 速度（米/秒）。 </td></tr>
+<tr><td class="paramname">acc</td><td>(array-like[3]): 加速度（米/秒²）。 </td></tr>
+<tr><td class="paramname">yaw</td><td>(float): 偏航角（弧度）。 </td></tr>
+<tr><td class="paramname">omega</td><td>(array-like[3]): 机体坐标系下的角速度（弧度/秒）。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sends a streaming full-state controller setpoint command.
+
+The full-state setpoint is most useful for aggressive maneuvers where
+feedforward inputs for acceleration and angular velocity are critical
+to obtaining good tracking performance. Full-state setpoints can be
+obtained from any trajectory parameterization that is at least three
+times differentiable, e.g. piecewise polynomials.
+
+Sending a streaming setpoint of any type will force a change from
+high-level to low-level command mode. Currently, there is no mechanism
+to change back, but it is a high-priority feature to implement.
+This means it is not possible to use e.g. :meth:`land()` or
+:meth:`goTo()` after a streaming setpoint has been sent.
+
+Args:
+    pos (array-like of float[3]): Position. Meters.
+    vel (array-like of float[3]): Velocity. Meters / second.
+    acc (array-like of float[3]): Acceleration. Meters / second^2.
+    yaw (float): Yaw angle. Radians.
+    omega (array-like of float[3]): Angular velocity in body frame.
+        Radians / sec.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="aceaa165ab4dc2672b446c7ecc304f2cc" name="aceaa165ab4dc2672b446c7ecc304f2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceaa165ab4dc2672b446c7ecc304f2cc">◆ </a></span>cmdPosition()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">cmdPosition </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送绝对位置和偏航角的流式指令，飞行器将移动并保持在指定位置上空。 </p>
+<ul>
+<li><a class="anchor" id="cmdPosition"></a> 若缓慢改变位置目标，则此函数适用；若目标点变化较慢且距离较远，建议使用goTo()。 发送流式指令会切换到低级控制模式，不能再使用高层指令（如land、goTo）。</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">pos</td><td>(array-like of float[3]): 期望位置（米）。 </td></tr>
+<tr><td class="paramname">yaw</td><td>(float): 偏航角（弧度）。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sends a streaming command of absolute position and yaw setpoint.
+
+Useful for slow maneuvers where a high-level planner determines the
+desired position, and the rest is left to the onboard controller.
+
+For more information on streaming setpoint commands, see the
+:meth:`cmdFullState()` documentation.
+
+.. warning::
+    As a streaming setpoint, ``cmdPosition`` must be sent many times
+    per second (10Hz is a conservative minimum). For applications that
+    generate goal positions slowly, :meth:`goTo()` may be more
+    appropriate, especially if the goal positions are far apart.
+
+Args:
+    pos (array-like of float[3]): Position. Meters.
+    yaw (float): Yaw angle. Radians.
+</pre>
+</div>
+</div>
+<a id="a807413dfbf053023e50ec1b6e77ec457" name="a807413dfbf053023e50ec1b6e77ec457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807413dfbf053023e50ec1b6e77ec457">◆ </a></span>cmdStop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">cmdStop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>停止飞行器，在高层命令模式下切断电机动力。 </p>
+<ul>
+<li><a class="anchor" id="cmdStop"></a> 后续的低/高层命令可以重新启动电机。</li>
+</ul>
+<pre class="fragment">Interrupts any high-level command to stop and cut motor power.
+
+Intended for non-emergency scenarios, e.g. landing with the possibility
+of taking off again later. Future low- or high-level commands will
+restart the motors. Equivalent of :meth:`stop()` when in high-level mode.
+</pre>
+</div>
+</div>
+<a id="af98b1b3d7a58bed2982d9038786e9f17" name="af98b1b3d7a58bed2982d9038786e9f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98b1b3d7a58bed2982d9038786e9f17">◆ </a></span>cmdVel()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">cmdVel </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawrate</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>thrust</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送用于初学者模式（绝对滚转/俯仰角度、偏航角速度和推力）的流式指令。 </p>
+<ul>
+<li><a class="anchor" id="cmdVel"></a> 在此模式下，通过绝对角度而不是角速度来控制滚转和俯仰，适合初学者手动操作。 发送流式指令会切换到低级控制模式，不能再使用高层指令（如land、goTo）。</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">roll</td><td>(float): 滚转角度（度），正值表示向右滚转。 </td></tr>
+<tr><td class="paramname">pitch</td><td>(float): 俯仰角度（度），正值表示向前/向下俯仰。 </td></tr>
+<tr><td class="paramname">yawrate</td><td>(float): 偏航角速度（度/秒），正值表示逆时针旋转。 </td></tr>
+<tr><td class="paramname">thrust</td><td>(float): 推力大小，无单位标度，范围[0, 65535]。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sends a streaming command of the "easy mode" manual control inputs.
+
+The (absolute roll &amp; pitch, yaw rate, thrust) inputs are typically
+used for manual flying by beginners or causal pilots, as opposed to the
+"acrobatic mode" inputs where roll and pitch rates are controlled
+instead of absolute angles. This mode limits the possible maneuvers,
+e.g. it is not possible to do a flip because the controller joystick
+would need to rotate 360 degrees.
+
+For more information on streaming setpoint commands, see the
+:meth:`cmdFullState()` documentation.
+
+!NOTE!: The angles and angular velocities in this command are in
+degrees, whereas they are in radians for cmdFullState.
+
+TODO: should we change the name from cmdVel to something else?
+IMO (japreiss), cmdVel implies controlling linear velocity.
+
+Args:
+    roll (float): Roll angle. Degrees. Positive values == roll right.
+    pitch (float): Pitch angle. Degrees. Positive values == pitch
+        forward/down.
+    yawrate (float): Yaw angular velocity. Degrees / second. Positive
+        values == turn counterclockwise.
+    thrust (float): Thrust magnitude. Non-meaningful units in [0, 2^16),
+        where the maximum value corresponds to maximum thrust.
+</pre>
+</div>
+</div>
+<a id="a78abb92302ed4341277a8f3a0a29f845" name="a78abb92302ed4341277a8f3a0a29f845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78abb92302ed4341277a8f3a0a29f845">◆ </a></span>cmdVelocityWorld()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">cmdVelocityWorld </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vel</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawRate</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送世界坐标系下的速度与偏航角速度控制指令。 </p>
+<ul>
+<li><a class="anchor" id="cmdVelocityWorld"></a> 该指令以速度矢量和偏航角速度作为输入。 发送流式(setpoint)指令会使飞行器进入低级控制模式，不再响应高层指令（如land、goTo）。</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vel</td><td>(array-like of float[3]): 期望速度（米/秒）。 </td></tr>
+<tr><td class="paramname">yawRate</td><td>(float): 偏航角速度（度/秒）。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sends a streaming velocity-world controller setpoint command.
+
+In this mode, the PC specifies desired velocity vector and yaw rate.
+The onboard controller will try to achive this velocity.
+
+NOTE: the Mellinger controller is Crazyswarm's default controller, but
+it has not been tuned (or even tested) for velocity control mode.
+Switch to the PID controller by changing
+`firmwareParams.stabilizer.controller` to `1` in your launch file.
+
+Sending a streaming setpoint of any type will force a change from
+high-level to low-level command mode. Currently, there is no mechanism
+to change back, but it is a high-priority feature to implement.
+This means it is not possible to use e.g. :meth:`land()` or
+:meth:`goTo()` after a streaming setpoint has been sent.
+
+Args:
+    vel (array-like of float[3]): Velocity. Meters / second.
+    yawRate (float): Yaw angular velocity. Degrees / second.
+</pre>
+</div>
+</div>
+<a id="a1d0690f37908998baefac707c57ec8f3" name="a1d0690f37908998baefac707c57ec8f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0690f37908998baefac707c57ec8f3">◆ </a></span>disableCollisionAvoidance()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">disableCollisionAvoidance </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>禁用机载避碰功能。 </p>
+<ul>
+<li><a class="anchor" id="disableCollisionAvoidance"></a></li>
+</ul>
+<pre class="fragment">Disables onboard collision avoidance.</pre>
+</div>
+</div>
+<a id="ad6d7b4142ac3d5a7ebeecdb092b4e9d7" name="ad6d7b4142ac3d5a7ebeecdb092b4e9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d7b4142ac3d5a7ebeecdb092b4e9d7">◆ </a></span>enableCollisionAvoidance()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">enableCollisionAvoidance </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>others</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ellipsoidRadii</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>启用机载避碰功能，使用缓冲Voronoi单元方法避免与其他无人机碰撞。 </p>
+<ul>
+<li><a class="anchor" id="enableCollisionAvoidance"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">others</td><td>(List[<a class="el" href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie.html" title="表示单个机器人对象的类。 本类封装了控制单个Crazyflie飞行器的主要功能，包括起飞、降落、移动和悬停等操作。">Crazyflie</a>]): 在仿真中，与列表中的其他对象避碰。 在真实硬件中忽略该列表，并对同一信道上的所有Crazyflie进行避碰。 </td></tr>
+<tr><td class="paramname">ellipsoidRadii</td><td>(array-like of float[3]): 椭球碰撞体的半径，单位：米。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Enables onboard collision avoidance.
+
+When enabled, avoids colliding with other Crazyflies by using the
+Buffered Voronoi Cells method [1]. Computation is performed onboard.
+
+Args:
+    others (List[Crazyflie]): List of other :obj:`Crazyflie` objects.
+        In simulation, collision avoidance is checked only with members
+        of this list.  With real hardware, this list is **ignored**, and
+        collision avoidance is checked with all other Crazyflies on the
+        same radio channel.
+    ellipsoidRadii (array-like of float[3]): Radii of collision volume ellipsoid in meters.
+        The Crazyflie's boundary for collision checking is a tall
+        ellipsoid. This accounts for the downwash effect: Due to the
+        fast-moving stream of air produced by the rotors, the safe
+        distance to pass underneath another rotorcraft is much further
+        than the safe distance to pass to the side.
+
+[1] D. Zhou, Wang, Z., Bandyopadhyay, S., and Schwager, M.
+    Fast, On-line Collision Avoidance for Dynamic Vehicles using
+    Buffered Voronoi Cells.  IEEE Robotics and Automation Letters
+    (RA-L), vol. 2, no. 2, pp. 1047 - 1054, 2017.
+    https://msl.stanford.edu/fast-line-collision-avoidance-dynamic-vehicles-using-buffered-voronoi-cells
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a7f35e69079b2ab7372b346463c022a4e" name="a7f35e69079b2ab7372b346463c022a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f35e69079b2ab7372b346463c022a4e">◆ </a></span>getMotionAcc()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getMotionAcc </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前飞行器运动加速度（通过底层接口获得NED坐标系下加速度后转换）。 </p>
+<ul>
+<li><a class="anchor" id="getMotionAcc"></a> <dl class="section return"><dt>返回</dt><dd>np.array([ax, ay, az]): 当前加速度（米/秒²）。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a5966fc0224defb2c90dd1e17cda1c366" name="a5966fc0224defb2c90dd1e17cda1c366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5966fc0224defb2c90dd1e17cda1c366">◆ </a></span>getMotionPos()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getMotionPos </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前飞行器运动位置（通过底层接口获得NED坐标系下位置后转换）。 </p>
+<ul>
+<li><a class="anchor" id="getMotionPos"></a> <dl class="section return"><dt>返回</dt><dd>np.array([x, y, z]): 当前位置（米）。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="abf6f12b054cb4861ef17b819d5b58517" name="abf6f12b054cb4861ef17b819d5b58517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6f12b054cb4861ef17b819d5b58517">◆ </a></span>getMotionVel()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getMotionVel </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前飞行器运动位置（通过底层接口获得NED坐标系下位置后转换）。 </p>
+<ul>
+<li><a class="anchor" id="getMotionVel"></a> <dl class="section return"><dt>返回</dt><dd>np.array([x, y, z]): 当前位置（米）。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a58df4c84b1d5a731cfb6263ac8c0d72f" name="a58df4c84b1d5a731cfb6263ac8c0d72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58df4c84b1d5a731cfb6263ac8c0d72f">◆ </a></span>getParam()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getParam </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>name</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取指定名称的机载参数的当前值。 </p>
+<ul>
+<li><a class="anchor" id="getParam"></a> 参数由固件中的变量决定，可用于调节控制器或其他内部行为。 <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">name</td><td>(str): 参数名称。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Any: 参数值。</dd></dl>
+<pre class="fragment">Returns the current value of the onboard named parameter.
+
+Parameters are named values of various primitive C types that control
+the firmware's behavior. For more information, see
+https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/userguides/logparam/.
+
+Parameters are read at system startup over the radio and cached.
+The ROS launch file can also be used to set parameter values at startup.
+Subsequent calls to :meth:`setParam()` will update the cached value.
+However, if the parameter changes for any other reason, the cached value
+might become stale. This situation is not common.
+
+Args:
+    name (str): The parameter's name.
+
+Returns:
+    value (Any): The parameter's value.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a09d44eb3b2de025f752b741d0f4efef6" name="a09d44eb3b2de025f752b741d0f4efef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d44eb3b2de025f752b741d0f4efef6">◆ </a></span>goTo()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">goTo </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>goal</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>relative</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>平滑移动到指定目标位置（并悬停），支持绝对或相对坐标和偏航角设定。 </p>
+<ul>
+<li><a class="anchor" id="goTo"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">goal</td><td>(iterable of float): 目标位置 [x, y, z]，单位：米。 </td></tr>
+<tr><td class="paramname">yaw</td><td>(float): 目标偏航角（弧度）。 </td></tr>
+<tr><td class="paramname">duration</td><td>(float): 从当前状态到达目标点所需时间（秒）。 </td></tr>
+<tr><td class="paramname">relative</td><td>(bool): 若为True，则goal为相对当前位置的偏移量；否则为绝对坐标。 </td></tr>
+<tr><td class="paramname">groupMask</td><td>(int): 组掩码。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Move smoothly to the goal, then hover indefinitely.
+
+Asynchronous command; returns immediately.
+
+Plans a smooth trajectory from the current state to the goal position.
+Will stop smoothly at the goal with minimal overshoot. If the current
+state is at hover, the planned trajectory will be a straight line;
+however, if the current velocity is nonzero, the planned trajectory
+will be a smooth curve.
+
+Plans the trajectory by solving for the unique degree-7 polynomial that
+satisfies the initial conditions of the current position, velocity,
+and acceleration, and ends at the goal position with zero velocity and
+acceleration. The jerk (derivative of acceleration) is fixed at zero at
+both boundary conditions.
+
+.. warning::
+    Calling ``goTo`` rapidly and/or with short durations (&lt;&lt; 1 sec) can
+    cause instability. Consider using :meth:`cmdPosition()` instead.
+
+Args:
+    goal (iterable of 3 floats): The goal position. Meters.
+    yaw (float): The goal yaw angle (heading). Radians.
+    duration (float): How long until the goal is reached. Seconds.
+    relative (bool): If true, the goal position is interpreted as a
+        relative offset from the current position. Otherwise, the goal
+        position is interpreted as absolute coordintates in the global
+        reference frame.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="ab2fbb5cd8c4d2063559e7fa468433dcd" name="ab2fbb5cd8c4d2063559e7fa468433dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fbb5cd8c4d2063559e7fa468433dcd">◆ </a></span>land()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">land </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>targetHeight</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>执行降落动作，以设定的速度飞回指定高度。 </p>
+<ul>
+<li><a class="anchor" id="land"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">targetHeight</td><td>(float): 降落到的目标高度（z坐标，米）。 </td></tr>
+<tr><td class="paramname">duration</td><td>(float): 达到目标高度所需时间（秒）。 </td></tr>
+<tr><td class="paramname">groupMask</td><td>(int): 组掩码。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Execute a landing - fly straight down. User must cut power after.
+
+Asynchronous command; returns immediately.
+
+Args:
+    targetHeight (float): The z-coordinate at which to land. Meters.
+        Usually should be a few centimeters above the initial position
+        to ensure that the controller does not try to penetrate the
+        floor if the mocap coordinate origin is not perfect.
+    duration (float): How long until the height is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="62" scrolling="no" src="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie_ab2fbb5cd8c4d2063559e7fa468433dcd_cgraph.svg" width="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="62" scrolling="no" src="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie_ab2fbb5cd8c4d2063559e7fa468433dcd_icgraph.svg" width="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad85425a6a48afcdb82e3857451125d05" name="ad85425a6a48afcdb82e3857451125d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85425a6a48afcdb82e3857451125d05">◆ </a></span>loop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">loop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>循环线程函数，用于初始化控制循环环境。 </p>
+<ul>
+<li><a class="anchor" id="loop"></a> <br/>
+ 当offboard模式启用时，此函数在后台线程中执行初始设置。 </li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie_ad85425a6a48afcdb82e3857451125d05_icgraph.svg" width="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a2d850ec107e3df7c9a1e5b7e9735bdfe" name="a2d850ec107e3df7c9a1e5b7e9735bdfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d850ec107e3df7c9a1e5b7e9735bdfe">◆ </a></span>notifySetpointsStop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">notifySetpointsStop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>remainValidMillisecs</em></span><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>通知飞行器低级控制指令（如cmdVelocityWorld、cmdFullState）即将停止发送，随后返回上层行为。 </p>
+<ul>
+<li><a class="anchor" id="notifySetpointsStop"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">remainValidMillisecs</td><td>(int): 最后一次低级控制指令在无更新下保持有效的毫秒数。 </td></tr>
+<tr><td class="paramname">groupMask</td><td>(int): 组掩码。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Informs that streaming low-level setpoint packets are about to stop.
+
+Streaming setpoints are :meth:`cmdVelocityWorld`, :meth:`cmdFullState`,
+and so on. For safety purposes, they normally preempt onboard high-level
+commands such as :meth:`goTo`.
+
+Once preempted, the Crazyflie will not switch back to high-level
+commands (or other behaviors determined by onboard planning/logic) until
+a significant amount of time has elapsed where no low-level setpoint
+was received.
+
+This command short-circuits that waiting period to a user-chosen time.
+It should be called after sending the last low-level setpoint, and
+before sending any high-level command.
+
+A common use case is to execute the :meth:`land` command after using
+streaming setpoint modes.
+
+Args:
+    remainValidMillisecs (int): Number of milliseconds that the last
+        streaming setpoint should be followed before reverting to the
+        onboard-determined behavior. May be longer e.g. if one radio
+        is controlling many robots.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a78d7a44c0f9fd4d0b9119a6d73149377" name="a78d7a44c0f9fd4d0b9119a6d73149377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d7a44c0f9fd4d0b9119a6d73149377">◆ </a></span>position()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">position </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>返回最近一次由运动捕捉系统测量的飞行器真实位置。 </p>
+<ul>
+<li><a class="anchor" id="position"></a> 如无测量数据，本函数将阻塞直到接收到第一条位置测量数据。 <dl class="section return"><dt>返回</dt><dd>np.array[3]: 当前位置（米）。</dd></dl>
+<pre class="fragment">Returns the last true position measurement from motion capture.
+
+If at least one position measurement for this robot has been received
+from the motion capture system since startup, this function returns
+immediately with the most recent measurement. However, if **no**
+position measurements have been received, it blocks until the first
+one arrives.
+
+Returns:
+    position (np.array[3]): Current position. Meters.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a84ac8310574993d704ebd0c89f94f2e8" name="a84ac8310574993d704ebd0c89f94f2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ac8310574993d704ebd0c89f94f2e8">◆ </a></span>readmsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">readmsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>读取消息（占位函数，尚未实现）。 </p>
+<ul>
+<li><a class="anchor" id="readmsg"></a></li>
+</ul>
+</div>
+</div>
+<a id="ae5c6134822656abf5c674237505e2311" name="ae5c6134822656abf5c674237505e2311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c6134822656abf5c674237505e2311">◆ </a></span>setGroupMask()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setGroupMask </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置此机器人的组掩码位，用于同步执行多机编排动作。 </p>
+<ul>
+<li><a class="anchor" id="setGroupMask"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">groupMask</td><td>(int): 8位整数，每一位表示此机器人是否属于对应组。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sets the group mask bits for this robot.
+
+The purpose of groups is to make it possible to trigger an action
+(for example, executing a previously-uploaded trajectory) on a subset
+of all robots without needing to send more than one radio packet.
+This is important to achieve tight, synchronized "choreography".
+
+Up to 8 groups may exist, corresponding to bits in the groupMask byte.
+When a broadcast command is triggered on the :obj:`CrazyflieServer` object
+with a groupMask argument, the command only affects those robots whose
+groupMask has a nonzero bitwise-AND with the command's groupMask.
+A command with a groupMask of zero applies to all robots regardless of
+group membership.
+
+Some individual robot (not broadcast) commands also support groupMask,
+but it is not especially useful in that case.
+
+Args:
+    groupMask (int): An 8-bit integer representing this robot's
+        membership status in each of the &lt;= 8 possible groups.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="ae4df63dab2b5ba4d9b371f1609ef9061" name="ae4df63dab2b5ba4d9b371f1609ef9061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4df63dab2b5ba4d9b371f1609ef9061">◆ </a></span>setLEDColor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setLEDColor </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>b</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置LED颜色（需要将param "ring/effect"设置为7才能生效）。 </p>
+<ul>
+<li><a class="anchor" id="setLEDColor"></a> 此为阻塞命令，在大编队或高频率变化时可能引发稳定性问题。</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">r</td><td>(float): 红色分量，[0, 1]。 </td></tr>
+<tr><td class="paramname">g</td><td>(float): 绿色分量，[0, 1]。 </td></tr>
+<tr><td class="paramname">b</td><td>(float): 蓝色分量，[0, 1]。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Sets the color of the LED ring deck.
+
+While most params (such as PID gains) only need to be set once, it is
+common to change the LED ring color many times during a flight, e.g.
+as some kind of status indicator. This method makes it convenient.
+
+PRECONDITION: The param "ring/effect" must be set to 7 (solid color)
+for this command to have any effect. The default mode uses the ring
+color to indicate radio connection quality.
+
+This is a blocking command, so it may cause stability problems for
+large swarms and/or high-frequency changes.
+
+Args:
+    r (float): Red component of color, in range [0, 1].
+    g (float): Green component of color, in range [0, 1].
+    b (float): Blue component of color, in range [0, 1].
+</pre>
+</div>
+</div>
+<a id="a26a4357a7e62b0aa8c482c0177553f37" name="a26a4357a7e62b0aa8c482c0177553f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a4357a7e62b0aa8c482c0177553f37">◆ </a></span>setParam()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setParam </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>value</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置指定名称参数的值。 </p>
+<ul>
+<li><a class="anchor" id="setParam"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">name</td><td>(str): 参数名称。 </td></tr>
+<tr><td class="paramname">value</td><td>(Any): 参数新值。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Changes the value of the given parameter.
+
+See :meth:`getParam()` docs for overview of the parameter system.
+
+Args:
+    name (str): The parameter's name.
+    value (Any): The parameter's value.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="aa65aa8f0d84be5ee0e9d538936d6f55f" name="aa65aa8f0d84be5ee0e9d538936d6f55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65aa8f0d84be5ee0e9d538936d6f55f">◆ </a></span>setParams()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">setParams </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>params</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>批量设置多个参数的值。 </p>
+<ul>
+<li><a class="anchor" id="setParams"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">params</td><td>(Dict[str, Any]): 参数名-值对的字典。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Changes the value of several parameters at once.
+
+See :meth:`getParam()` docs for overview of the parameter system.
+
+Args:
+    params (Dict[str, Any]): Dict of parameter names/values.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a98c94a58e1ba285d5a8cc01024605342" name="a98c94a58e1ba285d5a8cc01024605342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c94a58e1ba285d5a8cc01024605342">◆ </a></span>startTrajectory()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">startTrajectory </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>trajectoryId</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>timescale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>relative</em></span><span class="paramdefsep"> = </span><span class="paramdefval">True</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>开始执行预先上传的轨迹。 </p>
+<ul>
+<li><a class="anchor" id="startTrajectory"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">trajectoryId</td><td>(int): 轨迹ID，对应uploadTrajectory上传的ID。 </td></tr>
+<tr><td class="paramname">timescale</td><td>(float): 时间缩放因子，大于1表示执行时间更长。 </td></tr>
+<tr><td class="paramname">reverse</td><td>(bool): 若为True，轨迹按时间反向执行。 </td></tr>
+<tr><td class="paramname">relative</td><td>(bool): 若为True，轨迹的起点位置为当前定位点，否则为绝对位置。 </td></tr>
+<tr><td class="paramname">groupMask</td><td>(int): 组掩码，用于多机同步控制</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Begins executing a previously uploaded trajectory.
+
+Asynchronous command; returns immediately.
+
+Args:
+    trajectoryId (int): ID number as given to :meth:`uploadTrajectory()`.
+    timescale (float): Scales the trajectory duration by this factor.
+        For example if timescale == 2.0, the trajectory will take twice
+        as long to execute as the nominal duration.
+    reverse (bool): If true, executes the trajectory backwards in time.
+    relative (bool): If true (default), the position of the trajectory
+        is shifted such that it begins at the current position setpoint.
+        This is usually the desired behavior.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="af08d1e6d1f541c17475b5b47f9269d0b" name="af08d1e6d1f541c17475b5b47f9269d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08d1e6d1f541c17475b5b47f9269d0b">◆ </a></span>stop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">stop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>停止飞行器（在低级命令模式下切断电机电源）。 </p>
+<ul>
+<li><a class="anchor" id="stop"></a> 将电机关闭，但后续低/高级命令能再次重启电机。 <dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">groupMask</td><td>(int): 组掩码。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Cuts power to the motors when operating in low-level command mode.
+
+Intended for non-emergency scenarios, e.g. landing with the possibility
+of taking off again later. Future low- or high-level commands will
+restart the motors.
+
+Args:
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> </li>
+</ul>
+</div>
+</div>
+<a id="a319d864f62c435011eb90f708b44b9b5" name="a319d864f62c435011eb90f708b44b9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319d864f62c435011eb90f708b44b9b5">◆ </a></span>takeoff()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">takeoff </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>targetHeight</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>执行起飞动作，以设定的速度飞到指定高度并保持悬停。 </p>
+<ul>
+<li><a class="anchor" id="takeoff"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">targetHeight</td><td>(float): 期望的悬停高度（z坐标，米）。 </td></tr>
+<tr><td class="paramname">duration</td><td>(float): 达到目标高度所需时间（秒）。 </td></tr>
+<tr><td class="paramname">groupMask</td><td>(int): 组掩码，用于同步多个飞行器动作。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Execute a takeoff - fly straight up, then hover indefinitely.
+
+Asynchronous command; returns immediately.
+
+Args:
+    targetHeight (float): The z-coordinate at which to hover.
+    duration (float): How long until the height is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="62" scrolling="no" src="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie_a319d864f62c435011eb90f708b44b9b5_cgraph.svg" width="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="62" scrolling="no" src="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie_a319d864f62c435011eb90f708b44b9b5_icgraph.svg" width="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a0f16a390472d3ebf0a80231ae9cac7f8" name="a0f16a390472d3ebf0a80231ae9cac7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f16a390472d3ebf0a80231ae9cac7f8">◆ </a></span>uploadTrajectory()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uploadTrajectory </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>trajectoryId</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>pieceOffset</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>trajectory</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>上传分段多项式轨迹以供后续执行。 </p>
+<ul>
+<li><a class="anchor" id="uploadTrajectory"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">trajectoryId</td><td>(int): 轨迹ID号，可上传多个轨迹，每条轨迹有唯一ID。 </td></tr>
+<tr><td class="paramname">pieceOffset</td><td>(int): 分段起始偏移量（具体含义待补充）。 </td></tr>
+<tr><td class="paramname">trajectory</td><td>(Trajectory): 分段多项式轨迹对象，详见uav_trajectory.py说明。</td></tr>
+</table>
+</dd>
+</dl>
+<pre class="fragment">Uploads a piecewise polynomial trajectory for later execution.
+
+See uav_trajectory.py for more information about piecewise polynomial
+trajectories.
+
+Args:
+    trajectoryId (int): ID number of this trajectory. Multiple
+        trajectories can be uploaded. TODO: what is the maximum ID?
+    pieceOffset (int): TODO(whoenig): explain this.
+    trajectory (:obj:`pycrazyswarm.uav_trajectory.Trajectory`): Trajectory object.
+</pre> </li>
+</ul>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="crazyflie_8py.html">crazyflie.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

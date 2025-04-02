@@ -1,0 +1,19 @@
+<map id="__init__" name="__init__">
+<area shape="rect" id="Node000001" title="构造函数，初始化飞行器的ID、类型、地图场景、更新频率以及其他控制参数。" alt="" coords="5,165,72,192"/>
+<area shape="rect" id="Node000002" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="126,5,336,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,164,67,104,89,70,118,42,126,37,129,41,121,46,93,74,71,107,46,166"/>
+<area shape="rect" id="Node000003" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="138,56,324,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="47,163,76,128,96,108,118,92,130,86,133,91,121,97,99,113,80,131,51,167"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7dd34f79e324afda9bbed53621df2aff" title=" " alt="" coords="180,107,283,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="69,162,119,143,164,130,166,136,121,148,71,167"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a7dd34f79e324afda9bbed53621df2aff" title="发送RflySim3D控制台命令的方法" alt="" coords="136,157,327,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="72,176,120,176,120,181,72,181"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a7dd34f79e324afda9bbed53621df2aff" title="用于发送命令到UE4应用程序的一个或多个窗口。 它将命令转换成合适的格式，并通过UDP协议发送到指定的IP地址和端口" alt="" coords="120,224,343,283"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="73,190,121,210,136,216,134,221,119,214,71,195"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="135,307,328,349"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="48,191,75,241,96,269,121,293,128,297,125,301,118,297,92,272,70,244,43,194"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="191,373,272,400"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="44,192,51,227,65,272,88,319,103,341,121,359,147,374,176,382,175,387,145,379,118,363,99,344,83,322,60,274,46,228,39,193"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a2fe80de8986dc01c293e3fb4a47b375c" title=" " alt="" coords="391,107,460,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="284,117,376,117,376,123,284,123"/>
+</map>

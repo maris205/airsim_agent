@@ -1,0 +1,5 @@
+<map id="SendQgcCmdLong" name="SendQgcCmdLong">
+<area shape="rect" id="Node000001" title="发送长格式的MAVLink命令至QGroundControl。" alt="" coords="144,5,275,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1QGCCtrlAPI_1_1QGCCtrlAPI.html#aed647683ddf03488b4110b2388cdf269" title="请求QGroundControl的日志文件。" alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,21,96,21,96,16,128,16"/>
+</map>

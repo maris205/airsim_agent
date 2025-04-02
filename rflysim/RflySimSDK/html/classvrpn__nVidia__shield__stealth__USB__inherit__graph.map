@@ -1,0 +1,19 @@
+<map id="vrpn_nVidia_shield_stealth_USB" name="vrpn_nVidia_shield_stealth_USB">
+<area shape="rect" id="Node000001" title=" " alt="" coords="108,304,238,347"/>
+<area shape="rect" id="Node000002" href="$classvrpn__nVidia__shield.html" title=" " alt="" coords="24,155,154,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,196,104,225,117,255,134,280,153,302,149,306,130,283,112,257,99,227,91,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="154,80,272,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,117,112,156,109,152,177,112"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="126,229,220,256"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="208,123,179,230,174,228,203,121"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="250,155,341,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="240,115,283,152,280,156,237,119"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="134,5,292,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,48,216,80,210,80,210,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="5,80,130,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="78,121,88,154,83,155,73,122"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="176,272,176,304,170,304,170,272"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="244,229,371,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="275,267,209,306,206,301,272,262"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="303,196,308,228,303,229,297,197"/>
+</map>

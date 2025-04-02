@@ -1,0 +1,21 @@
+<map id="UavInfo" name="UavInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="266,385,333,412"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html" title=" " alt="" coords="192,295,282,321"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,332,293,383,288,386,252,336"/>
+<area shape="rect" id="Node000003" href="$structRflySimData.html" title=" " alt="" coords="18,172,114,199"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,208,123,238,162,268,206,292,204,296,160,273,120,243,87,212"/>
+<area shape="rect" id="Node000004" href="$classWgsConversions.html" title=" " alt="" coords="5,81,127,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="69,124,69,171,63,171,63,124"/>
+<area shape="rect" id="Node000005" href="$structMavStateData.html" title=" " alt="" coords="139,172,244,199"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,214,202,241,211,269,227,293,223,296,206,272,196,243,191,215"/>
+<area shape="rect" id="Node000006" href="$classUDPServer.html" title=" " alt="" coords="268,172,357,199"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="303,214,271,272,251,296,247,293,266,269,299,212"/>
+<area shape="rect" id="Node000007" href="$classUDPSocket.html" title=" " alt="" coords="267,81,358,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="315,124,315,171,310,171,310,124"/>
+<area shape="rect" id="Node000008" href="$classBaseSocket.html" title=" " alt="" coords="266,5,359,32"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="315,47,315,81,310,81,310,47"/>
+<area shape="rect" id="Node000009" href="$classVrpnTrackerRfly.html" title=" " alt="" coords="328,295,444,321"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="365,334,314,387,310,383,361,331"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="382,172,436,199"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="406,215,391,295,386,294,401,214"/>
+</map>

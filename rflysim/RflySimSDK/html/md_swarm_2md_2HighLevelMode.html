@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: HighLevelMode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">HighLevelMode</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>模式控制模块在仿真与实飞下使用完全相同，如图 2所示。“模式控制”模块是为初学者进行基本的飞行控制提供一些安全保障，例如在没有切换到Flying模式前，飞机不会接收用户设置的位置和偏航等值，这样即便用户没有按正确操作复原位置也不会在起飞时就发生异常。设计该模块时，同时考虑了兼容一些用户未来可能增长的需求。如初学者用户可能只需要进行位置控制，但随着学习的不断加深，需要进行速度和加速度控制，该模块也支持速度和加速度控制。“模式控制”模块包含5个输入和一个总线输出。</p>
+<p>（1） **指令输入cmd**。指令输入必须通过“模式切换”模块生成。该模块会对输入的指令进行进一步加工，以使得系统更加稳定可靠。如发送Offboard指令、解锁指令、上锁指令，理论上只需要发送一次。但实际发送过程中可能出现丢包等现象，当指令需要发送多次。但如果指令发送的频率过高，可能导致网络拥塞或者触发飞控故障。该模块默认情况下会按1s的时间间隔发送指令，这样既可以保证指令发送的可靠性，又不会造成网络拥塞。结合“模式切换”模块，当旋钮放置在某个模式时，意味着用户想发送该指令。首次将旋钮切换到相应模式时，会立即发送一次指令，下一次发送指令会在1s之后。另一方面，该模块会根据指令的情况决定控制量的值。例如在非Flying模式下，不会接收外部输入的期望位置或速度等。</p>
+<p>（2） **控制模式mode**。当前仅支持三种控制模式，当mode=1时，处于位置模式，输出总线中xd、yd、zd和yawd有效。当mode=2时，处于速度控制模式，输出总线中vxd、vyd、vzd和yawrated有效。当mode=3时，处于加速度控制模式，accxd、accyd、acczd和yawrated有效。</p>
+<p>（3） **控制输入ctrls**。在集群控制中一般期望控制指令尽可能的简短，所以一般情况使用前四位作为输入。但考虑到后期的可扩展性，ctrls总共预留了16维，可支持复杂的控制。用户使用时只需指定前4维的值，后面12维指定为0即可。至于前面四维数据如何解析，有mode的值进行控制。如mode=1时，处于位置模式，前四维数据分别解析为xd、yd、zd和yawd。</p>
+<p>（4） **起飞高度takeoff_height。**起飞高度是指当用户将“模式切换”模块旋转到起飞时，飞机将自动起飞到的高度。该高度以向下为正，与无人机的NED坐标系兼容。在室内场景下，建议默认高度为1m，即在MATLAB中设置数值为-1。</p>
+<p>（5） **飞机状态校验是否通过check_pass。**在后文即将介绍的RflyUdpMavlink模块中，会自动对无人机的状态进行校验，最终通过一个标志传递给MATLAB程序。check_pass的设计正是为了使用该标志，当无人机没有校验通过时不应该执行任何控制指令。如果check_pass为未通过，该模块的所有输出都将为0。在多机场景下，有一架飞机未校验通过，那么就不会执行任何控制指令。</p>
+<div class="image">
+<a data_lightbox="image" href="image-20241209173741749.png"><img alt="" class="thumbnail" height="auto" src="image-20241209173741749.png" width="100"/></a>
+<div class="caption">
+模式控制模块</div></div>
+<p>“模式控制”模块的输出是一个总线，MATLAB在从总线中提取数据时会显示总线中有哪些类型的数据，这样可以便于用户选择所需要的数据。总线中具体包含的数据，如下表所示。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">名称   </th><th class="markdownTableHeadNone">符号   </th><th class="markdownTableHeadNone">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">指令   </td><td class="markdownTableBodyNone">ctrlCmd   </td><td class="markdownTableBodyNone">输出经过加工过后的指令，例如每个1s才会有一个底层飞控指令    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">使能控制   </td><td class="markdownTableBodyNone">enableControl   </td><td class="markdownTableBodyNone">使用该标志控制积分重置，未使能控制时整个MATLAB的输出为0等。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">期望X位置   </td><td class="markdownTableBodyNone">xd   </td><td class="markdownTableBodyNone">mode=1有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">期望Y位置   </td><td class="markdownTableBodyNone">yd   </td><td class="markdownTableBodyNone">mode=1有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">期望Z位置   </td><td class="markdownTableBodyNone">zd   </td><td class="markdownTableBodyNone">mode=1有效，takeoff模式时为起飞高度，Flying模式时为用户指定高度。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">期望X速度   </td><td class="markdownTableBodyNone">vxd   </td><td class="markdownTableBodyNone">mode=2有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">期望Y速度   </td><td class="markdownTableBodyNone">vyd   </td><td class="markdownTableBodyNone">mode=2有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">期望Z速度   </td><td class="markdownTableBodyNone">vzd   </td><td class="markdownTableBodyNone">mode=2有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">期望X加速度   </td><td class="markdownTableBodyNone">accxd   </td><td class="markdownTableBodyNone">mode=3有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">期望Y加速度   </td><td class="markdownTableBodyNone">accyd   </td><td class="markdownTableBodyNone">mode=3有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">期望Z加速度   </td><td class="markdownTableBodyNone">acczd   </td><td class="markdownTableBodyNone">mode=3有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">期望偏航角   </td><td class="markdownTableBodyNone">yawd   </td><td class="markdownTableBodyNone">mode=1时有效，非Flying模式时为0    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">期望偏航角速率   </td><td class="markdownTableBodyNone">yawd_rate   </td><td class="markdownTableBodyNone">mode=2或3时有效，非Flying模式时为0   </td></tr>
+</table>
+<p>最后总结一下该模块的使用要点1）接收的指令必须来自“模式切换”模块。2）控制量模式mode只有等于1时是相对安全的，直接控制速度需要使用者有较好的操控技术，控制加速度则需要进行程控。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

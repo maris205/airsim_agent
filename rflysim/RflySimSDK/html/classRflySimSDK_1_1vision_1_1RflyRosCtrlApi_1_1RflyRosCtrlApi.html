@@ -1,0 +1,2031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyRosCtrlApi类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>RflyRosCtrlApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html">RflyRosCtrlApi</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">RflyRosCtrlApi类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>RflyRosCtrlApi结构体类。提供了与无人机进行通信和控制的完整接口，支持多种通信模式，并集成了ROS系统  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a70d6a81ad95d709aa7b4b8689d3b4e34" id="r_a70d6a81ad95d709aa7b4b8689d3b4e34"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a70d6a81ad95d709aa7b4b8689d3b4e34">__init__</a> (self, <a class="el" href="#a4bc1de2c250838e7456f6b1991f9d9d9">CopterID</a>=1, <a class="el" href="#afd65cf072a93c93ad52b9f25b341e10b">ip</a>='127.0.0.1', <a class="el" href="#aa0294f2b7541099fa3b7ee8e680ea6f8">Com</a>='udp', <a class="el" href="#af8fb0f45ee0195c7422a49e6a8d72369">port</a>=0)</td></tr>
+<tr class="memdesc:a70d6a81ad95d709aa7b4b8689d3b4e34"><td class="mdescLeft"> </td><td class="mdescRight">RflyRosCtrlApi的构造函数  <br/></td></tr>
+<tr class="separator:a70d6a81ad95d709aa7b4b8689d3b4e34"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac191e5f90f81a3609656cdd0213c50c5" id="r_ac191e5f90f81a3609656cdd0213c50c5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac191e5f90f81a3609656cdd0213c50c5">convert_to_payload64</a> (self, payload_bytes)</td></tr>
+<tr class="memdesc:ac191e5f90f81a3609656cdd0213c50c5"><td class="mdescLeft"> </td><td class="mdescRight">将payload字节转换为Mavlink的payload64格式  <br/></td></tr>
+<tr class="separator:ac191e5f90f81a3609656cdd0213c50c5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aecd51687631b45b14740da57f3c3d777" id="r_aecd51687631b45b14740da57f3c3d777"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aecd51687631b45b14740da57f3c3d777">convert_to_rosmsg</a> (self, mavmsg, header)</td></tr>
+<tr class="memdesc:aecd51687631b45b14740da57f3c3d777"><td class="mdescLeft"> </td><td class="mdescRight">将pymavlink消息转换为ROS的Mavlink消息  <br/></td></tr>
+<tr class="separator:aecd51687631b45b14740da57f3c3d777"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a97b2df387a387f14d9ecb9ec9c327f68" id="r_a97b2df387a387f14d9ecb9ec9c327f68"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a97b2df387a387f14d9ecb9ec9c327f68">arm_px4</a> (self, isArm)</td></tr>
+<tr class="memdesc:a97b2df387a387f14d9ecb9ec9c327f68"><td class="mdescLeft"> </td><td class="mdescRight">解锁或锁定PX4无人机  <br/></td></tr>
+<tr class="separator:a97b2df387a387f14d9ecb9ec9c327f68"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8a2b734fe58ba395639b61d4cf7e0800" id="r_a8a2b734fe58ba395639b61d4cf7e0800"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a2b734fe58ba395639b61d4cf7e0800">fillList</a> (self, data, inLen, fill=0)</td></tr>
+<tr class="memdesc:a8a2b734fe58ba395639b61d4cf7e0800"><td class="mdescLeft"> </td><td class="mdescRight">填充或截断列表，使其长度达到指定值 <br/>
+<br/></td></tr>
+<tr class="separator:a8a2b734fe58ba395639b61d4cf7e0800"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5ec6f10ec3fc8785459ce8991c118d4f" id="r_a5ec6f10ec3fc8785459ce8991c118d4f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ec6f10ec3fc8785459ce8991c118d4f">InitMavLoop</a> (self)</td></tr>
+<tr class="memdesc:a5ec6f10ec3fc8785459ce8991c118d4f"><td class="mdescLeft"> </td><td class="mdescRight">初始化Mavlink连接，并启动Mavros  <br/></td></tr>
+<tr class="separator:a5ec6f10ec3fc8785459ce8991c118d4f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5e370977bb1e3c68bec43a4c3c974d1b" id="r_a5e370977bb1e3c68bec43a4c3c974d1b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e370977bb1e3c68bec43a4c3c974d1b">SendMavArm</a> (self, isArm)</td></tr>
+<tr class="memdesc:a5e370977bb1e3c68bec43a4c3c974d1b"><td class="mdescLeft"> </td><td class="mdescRight">发送解锁或锁定命令到无人机  <br/></td></tr>
+<tr class="separator:a5e370977bb1e3c68bec43a4c3c974d1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c1cc012ad8e1158a31b05c16fc7e16f" id="r_a6c1cc012ad8e1158a31b05c16fc7e16f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c1cc012ad8e1158a31b05c16fc7e16f">initOffboard</a> (self)</td></tr>
+<tr class="memdesc:a6c1cc012ad8e1158a31b05c16fc7e16f"><td class="mdescLeft"> </td><td class="mdescRight">初始化Offboard模式并发送初始命令  <br/></td></tr>
+<tr class="separator:a6c1cc012ad8e1158a31b05c16fc7e16f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b6a472dd78ba00d47fe9e0e5fb57d8d" id="r_a6b6a472dd78ba00d47fe9e0e5fb57d8d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b6a472dd78ba00d47fe9e0e5fb57d8d">OffboardLoop</a> (self)</td></tr>
+<tr class="memdesc:a6b6a472dd78ba00d47fe9e0e5fb57d8d"><td class="mdescLeft"> </td><td class="mdescRight">持续发送Offboard命令以维持Offboard模式  <br/></td></tr>
+<tr class="separator:a6b6a472dd78ba00d47fe9e0e5fb57d8d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4713173eafcc9af7aaa4f6cbcb7961fd" id="r_a4713173eafcc9af7aaa4f6cbcb7961fd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4713173eafcc9af7aaa4f6cbcb7961fd">endOffboard</a> (self)</td></tr>
+<tr class="memdesc:a4713173eafcc9af7aaa4f6cbcb7961fd"><td class="mdescLeft"> </td><td class="mdescRight">结束Offboard模式，停止相关线程，并关闭ROS2节点  <br/></td></tr>
+<tr class="separator:a4713173eafcc9af7aaa4f6cbcb7961fd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af090fcf8098052b109026c210d36f067" id="r_af090fcf8098052b109026c210d36f067"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af090fcf8098052b109026c210d36f067">stopRun</a> (self)</td></tr>
+<tr class="memdesc:af090fcf8098052b109026c210d36f067"><td class="mdescLeft"> </td><td class="mdescRight">停止运行，杀死子进程并提醒用户关闭所有终端窗口  <br/></td></tr>
+<tr class="separator:af090fcf8098052b109026c210d36f067"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae8b2bbba58fd6f921fee46dae8be6abf" id="r_ae8b2bbba58fd6f921fee46dae8be6abf"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8b2bbba58fd6f921fee46dae8be6abf">calcTypeMask</a> (self, EnList)</td></tr>
+<tr class="memdesc:ae8b2bbba58fd6f921fee46dae8be6abf"><td class="mdescLeft"> </td><td class="mdescRight">根据输入的启用列表计算Type Mask  <br/></td></tr>
+<tr class="separator:ae8b2bbba58fd6f921fee46dae8be6abf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf5bdea8e4b51e58b4e2572ff4115512" id="r_adf5bdea8e4b51e58b4e2572ff4115512"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adf5bdea8e4b51e58b4e2572ff4115512">SendVelNED</a> (self, vx=math.nan, vy=math.nan, vz=math.nan, yawrate=math.nan)</td></tr>
+<tr class="memdesc:adf5bdea8e4b51e58b4e2572ff4115512"><td class="mdescLeft"> </td><td class="mdescRight">发送NED（北、东、下）坐标系下的速度命令  <br/></td></tr>
+<tr class="separator:adf5bdea8e4b51e58b4e2572ff4115512"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4e385d03553bd32945810388ef3003dc" id="r_a4e385d03553bd32945810388ef3003dc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e385d03553bd32945810388ef3003dc">SendVelFRD</a> (self, vx=math.nan, vy=math.nan, vz=math.nan, yawrate=math.nan)</td></tr>
+<tr class="memdesc:a4e385d03553bd32945810388ef3003dc"><td class="mdescLeft"> </td><td class="mdescRight">发送FRD（前、右、下）坐标系下的速度命令  <br/></td></tr>
+<tr class="separator:a4e385d03553bd32945810388ef3003dc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5bafd7c7044c98ec3f09d85608ff9dea" id="r_a5bafd7c7044c98ec3f09d85608ff9dea"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bafd7c7044c98ec3f09d85608ff9dea">SendPosNED</a> (self, x=math.nan, y=math.nan, z=math.nan, yaw=math.nan)</td></tr>
+<tr class="memdesc:a5bafd7c7044c98ec3f09d85608ff9dea"><td class="mdescLeft"> </td><td class="mdescRight">发送NED坐标系下的位置命令  <br/></td></tr>
+<tr class="separator:a5bafd7c7044c98ec3f09d85608ff9dea"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae64f1d96bc1ed9cb3a87150e3d345310" id="r_ae64f1d96bc1ed9cb3a87150e3d345310"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae64f1d96bc1ed9cb3a87150e3d345310">SendPosVelNED</a> (self, PosE=[math.nan] *3, VelE=[math.nan] *3, yaw=math.nan, yawrate=math.nan)</td></tr>
+<tr class="memdesc:ae64f1d96bc1ed9cb3a87150e3d345310"><td class="mdescLeft"> </td><td class="mdescRight">发送NED坐标系下的位置和速度命令  <br/></td></tr>
+<tr class="separator:ae64f1d96bc1ed9cb3a87150e3d345310"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae53498db1e10bff529310768847f0405" id="r_ae53498db1e10bff529310768847f0405"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae53498db1e10bff529310768847f0405">local_pose_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:ae53498db1e10bff529310768847f0405"><td class="mdescLeft"> </td><td class="mdescRight">处理本地位姿消息  <br/></td></tr>
+<tr class="separator:ae53498db1e10bff529310768847f0405"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a46bb24820a185a03b8120deaf841067a" id="r_a46bb24820a185a03b8120deaf841067a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a46bb24820a185a03b8120deaf841067a">local_vel_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:a46bb24820a185a03b8120deaf841067a"><td class="mdescLeft"> </td><td class="mdescRight">处理本地速度消息  <br/></td></tr>
+<tr class="separator:a46bb24820a185a03b8120deaf841067a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1ef044685be8017fd4d3076090217ac8" id="r_a1ef044685be8017fd4d3076090217ac8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ef044685be8017fd4d3076090217ac8">mavros_state_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:a1ef044685be8017fd4d3076090217ac8"><td class="mdescLeft"> </td><td class="mdescRight">处理Mavros状态消息  <br/></td></tr>
+<tr class="separator:a1ef044685be8017fd4d3076090217ac8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8bc1df903ced1c58d4ea7bbdd768c10" id="r_af8bc1df903ced1c58d4ea7bbdd768c10"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af8bc1df903ced1c58d4ea7bbdd768c10">imu_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:af8bc1df903ced1c58d4ea7bbdd768c10"><td class="mdescLeft"> </td><td class="mdescRight">处理IMU消息  <br/></td></tr>
+<tr class="separator:af8bc1df903ced1c58d4ea7bbdd768c10"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a189c43205620574f8c6fe072c50e0147" id="r_a189c43205620574f8c6fe072c50e0147"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a189c43205620574f8c6fe072c50e0147">gps_callback</a> (self, msg)</td></tr>
+<tr class="memdesc:a189c43205620574f8c6fe072c50e0147"><td class="mdescLeft"> </td><td class="mdescRight">处理GPS消息  <br/></td></tr>
+<tr class="separator:a189c43205620574f8c6fe072c50e0147"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac570f2f51276de12b71bc307e4669b07" id="r_ac570f2f51276de12b71bc307e4669b07"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac570f2f51276de12b71bc307e4669b07">q2yaw</a> (self, q)</td></tr>
+<tr class="memdesc:ac570f2f51276de12b71bc307e4669b07"><td class="mdescLeft"> </td><td class="mdescRight">从四元数计算偏航角  <br/></td></tr>
+<tr class="separator:ac570f2f51276de12b71bc307e4669b07"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a658a7a30dcb55cec7686077cfe55aa77" id="r_a658a7a30dcb55cec7686077cfe55aa77"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a658a7a30dcb55cec7686077cfe55aa77">q2Euler</a> (self, q)</td></tr>
+<tr class="memdesc:a658a7a30dcb55cec7686077cfe55aa77"><td class="mdescLeft"> </td><td class="mdescRight">从四元数计算欧拉角  <br/></td></tr>
+<tr class="separator:a658a7a30dcb55cec7686077cfe55aa77"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a193a6e3a68a7e2d01772aec0faa3ee" id="r_a0a193a6e3a68a7e2d01772aec0faa3ee"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a193a6e3a68a7e2d01772aec0faa3ee">SendMavArm</a> (self, isArm=0)</td></tr>
+<tr class="memdesc:a0a193a6e3a68a7e2d01772aec0faa3ee"><td class="mdescLeft"> </td><td class="mdescRight">发送解锁或锁定命令到无人机  <br/></td></tr>
+<tr class="separator:a0a193a6e3a68a7e2d01772aec0faa3ee"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d246a3bb2d9f51155d83676a98c65a8" id="r_a1d246a3bb2d9f51155d83676a98c65a8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d246a3bb2d9f51155d83676a98c65a8">arm</a> (self)</td></tr>
+<tr class="memdesc:a1d246a3bb2d9f51155d83676a98c65a8"><td class="mdescLeft"> </td><td class="mdescRight">解锁无人机  <br/></td></tr>
+<tr class="separator:a1d246a3bb2d9f51155d83676a98c65a8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f26ddcad2cd58eccffb4f05afb87094" id="r_a3f26ddcad2cd58eccffb4f05afb87094"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f26ddcad2cd58eccffb4f05afb87094">disarm</a> (self)</td></tr>
+<tr class="memdesc:a3f26ddcad2cd58eccffb4f05afb87094"><td class="mdescLeft"> </td><td class="mdescRight">锁定无人机  <br/></td></tr>
+<tr class="separator:a3f26ddcad2cd58eccffb4f05afb87094"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3fc55963f2adebd421fde391e6fca094" id="r_a3fc55963f2adebd421fde391e6fca094"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fc55963f2adebd421fde391e6fca094">offboard</a> (self)</td></tr>
+<tr class="memdesc:a3fc55963f2adebd421fde391e6fca094"><td class="mdescLeft"> </td><td class="mdescRight">切换飞行模式到Offboard模式  <br/></td></tr>
+<tr class="separator:a3fc55963f2adebd421fde391e6fca094"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adf8269c75db7e139aaa12454d041afc5" id="r_adf8269c75db7e139aaa12454d041afc5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adf8269c75db7e139aaa12454d041afc5">yawSat</a> (self, yaw)</td></tr>
+<tr class="memdesc:adf8269c75db7e139aaa12454d041afc5"><td class="mdescLeft"> </td><td class="mdescRight">对偏航角进行限制，使其保持在[-π/2, π/2]范围内  <br/></td></tr>
+<tr class="separator:adf8269c75db7e139aaa12454d041afc5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a162081480a066efd9dc4aa4b2fdb95d9" id="r_a162081480a066efd9dc4aa4b2fdb95d9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a162081480a066efd9dc4aa4b2fdb95d9">sendMavSetParam</a> (self, param_id_str, param_value, param_type)</td></tr>
+<tr class="memdesc:a162081480a066efd9dc4aa4b2fdb95d9"><td class="mdescLeft"> </td><td class="mdescRight">设置MAVLink参数 <a class="anchor" id="sendMavSetParam"></a> <br/></td></tr>
+<tr class="separator:a162081480a066efd9dc4aa4b2fdb95d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3b674c6bf3ce93f9a964070e6fd21551" id="r_a3b674c6bf3ce93f9a964070e6fd21551"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b674c6bf3ce93f9a964070e6fd21551">SendMavCmdLong</a> (self, <a class="el" href="#a9e0992eae3950adccaf4847fbff4231d">command</a>, param1=0, param2=0, param3=0, param4=0, param5=0, param6=0, param7=0)</td></tr>
+<tr class="memdesc:a3b674c6bf3ce93f9a964070e6fd21551"><td class="mdescLeft"> </td><td class="mdescRight">发送长命令到飞行控制器 <a class="anchor" id="sendMavCmdLong"></a> <br/></td></tr>
+<tr class="separator:a3b674c6bf3ce93f9a964070e6fd21551"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a84bc8fad3b6e3ee2d6531c1201b9df42" id="r_a84bc8fad3b6e3ee2d6531c1201b9df42"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a84bc8fad3b6e3ee2d6531c1201b9df42">SendHILCtrlMsg</a> (self, ctrls=[0] *16, idx=0)</td></tr>
+<tr class="memdesc:a84bc8fad3b6e3ee2d6531c1201b9df42"><td class="mdescLeft"> </td><td class="mdescRight">发送HIL（硬件在环）控制消息到Pixhawk，这些消息会转化为uORB消息rfly_ctrl <a class="anchor" id="SendHILCtrlMsg"></a> <br/></td></tr>
+<tr class="separator:a84bc8fad3b6e3ee2d6531c1201b9df42"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abab070b71afa0e95b9a1e13368a97f68" id="r_abab070b71afa0e95b9a1e13368a97f68"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abab070b71afa0e95b9a1e13368a97f68">isCom</a></td></tr>
+<tr class="memdesc:abab070b71afa0e95b9a1e13368a97f68"><td class="mdescLeft"> </td><td class="mdescRight">用于标识当前通信模式是否为串口模式  <br/></td></tr>
+<tr class="separator:abab070b71afa0e95b9a1e13368a97f68"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0294f2b7541099fa3b7ee8e680ea6f8" id="r_aa0294f2b7541099fa3b7ee8e680ea6f8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0294f2b7541099fa3b7ee8e680ea6f8">Com</a></td></tr>
+<tr class="memdesc:aa0294f2b7541099fa3b7ee8e680ea6f8"><td class="mdescLeft"> </td><td class="mdescRight">存储传入的通信模式参数  <br/></td></tr>
+<tr class="separator:aa0294f2b7541099fa3b7ee8e680ea6f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76432121357072730f76c1bf26df93ec" id="r_a76432121357072730f76c1bf26df93ec"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a76432121357072730f76c1bf26df93ec">baud</a></td></tr>
+<tr class="memdesc:a76432121357072730f76c1bf26df93ec"><td class="mdescLeft"> </td><td class="mdescRight">波特率，默认设置为115200  <br/></td></tr>
+<tr class="separator:a76432121357072730f76c1bf26df93ec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afd65cf072a93c93ad52b9f25b341e10b">ip</a></td></tr>
+<tr class="memdesc:afd65cf072a93c93ad52b9f25b341e10b"><td class="mdescLeft"> </td><td class="mdescRight">存储数据发送的IP地址  <br/></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bc1de2c250838e7456f6b1991f9d9d9">CopterID</a></td></tr>
+<tr class="memdesc:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="mdescLeft"> </td><td class="mdescRight">无人机的ID号，用于区分不同的无人机  <br/></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8fb0f45ee0195c7422a49e6a8d72369" id="r_af8fb0f45ee0195c7422a49e6a8d72369"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af8fb0f45ee0195c7422a49e6a8d72369">port</a></td></tr>
+<tr class="memdesc:af8fb0f45ee0195c7422a49e6a8d72369"><td class="mdescLeft"> </td><td class="mdescRight">端口号，默认根据CopterID计算而得  <br/></td></tr>
+<tr class="separator:af8fb0f45ee0195c7422a49e6a8d72369"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8d3f711706d46f51710d0929e171a97e" id="r_a8d3f711706d46f51710d0929e171a97e"><td align="right" class="memItemLeft" valign="top"><a id="a8d3f711706d46f51710d0929e171a97e" name="a8d3f711706d46f51710d0929e171a97e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rosName</b></td></tr>
+<tr class="separator:a8d3f711706d46f51710d0929e171a97e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abdd4ed730af9da2f879591bdf408e3ff" id="r_abdd4ed730af9da2f879591bdf408e3ff"><td align="right" class="memItemLeft" valign="top"><a id="abdd4ed730af9da2f879591bdf408e3ff" name="abdd4ed730af9da2f879591bdf408e3ff"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ComName</b></td></tr>
+<tr class="separator:abdd4ed730af9da2f879591bdf408e3ff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1c63e66c94a8d22300990887e84ad6fc" id="r_a1c63e66c94a8d22300990887e84ad6fc"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c63e66c94a8d22300990887e84ad6fc">imu</a></td></tr>
+<tr class="memdesc:a1c63e66c94a8d22300990887e84ad6fc"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的IMU数据  <br/></td></tr>
+<tr class="separator:a1c63e66c94a8d22300990887e84ad6fc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae60203a581cc7376c4ff719262432a28" id="r_ae60203a581cc7376c4ff719262432a28"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae60203a581cc7376c4ff719262432a28">gps</a></td></tr>
+<tr class="memdesc:ae60203a581cc7376c4ff719262432a28"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的GPS数据  <br/></td></tr>
+<tr class="separator:ae60203a581cc7376c4ff719262432a28"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9409e8e3a60825de21387a982e92cef4" id="r_a9409e8e3a60825de21387a982e92cef4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9409e8e3a60825de21387a982e92cef4">local_pose</a></td></tr>
+<tr class="memdesc:a9409e8e3a60825de21387a982e92cef4"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的本地位姿数据  <br/></td></tr>
+<tr class="separator:a9409e8e3a60825de21387a982e92cef4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a00453487e08f52c65d394aa780c33354" id="r_a00453487e08f52c65d394aa780c33354"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a00453487e08f52c65d394aa780c33354">mavros_state</a></td></tr>
+<tr class="memdesc:a00453487e08f52c65d394aa780c33354"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的当前状态信息  <br/></td></tr>
+<tr class="separator:a00453487e08f52c65d394aa780c33354"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a22e4ec6ebc6b387fc6f7de5a6bd20faa" id="r_a22e4ec6ebc6b387fc6f7de5a6bd20faa"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a22e4ec6ebc6b387fc6f7de5a6bd20faa">current_heading</a></td></tr>
+<tr class="memdesc:a22e4ec6ebc6b387fc6f7de5a6bd20faa"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机当前的航向角信息  <br/></td></tr>
+<tr class="separator:a22e4ec6ebc6b387fc6f7de5a6bd20faa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a61c4ce198000730bbbab302aef10f4ce" id="r_a61c4ce198000730bbbab302aef10f4ce"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a61c4ce198000730bbbab302aef10f4ce">local_vel</a></td></tr>
+<tr class="memdesc:a61c4ce198000730bbbab302aef10f4ce"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的本地速度数据  <br/></td></tr>
+<tr class="separator:a61c4ce198000730bbbab302aef10f4ce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abc93537d93556a29eb5f2bcaaeaddb34" id="r_abc93537d93556a29eb5f2bcaaeaddb34"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abc93537d93556a29eb5f2bcaaeaddb34">arm_state</a></td></tr>
+<tr class="memdesc:abc93537d93556a29eb5f2bcaaeaddb34"><td class="mdescLeft"> </td><td class="mdescRight">表示无人机的解锁/上锁状态  <br/></td></tr>
+<tr class="separator:abc93537d93556a29eb5f2bcaaeaddb34"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4245fd18e22b7bc8981b61bf4faefb1" id="r_aa4245fd18e22b7bc8981b61bf4faefb1"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4245fd18e22b7bc8981b61bf4faefb1">offboard_state</a></td></tr>
+<tr class="memdesc:aa4245fd18e22b7bc8981b61bf4faefb1"><td class="mdescLeft"> </td><td class="mdescRight">表示无人机是否处于Offboard模式  <br/></td></tr>
+<tr class="separator:aa4245fd18e22b7bc8981b61bf4faefb1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac5d5eb7584ab5adf9067d4917109c478" id="r_ac5d5eb7584ab5adf9067d4917109c478"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5d5eb7584ab5adf9067d4917109c478">received_imu</a></td></tr>
+<tr class="memdesc:ac5d5eb7584ab5adf9067d4917109c478"><td class="mdescLeft"> </td><td class="mdescRight">表示是否接收到IMU数据  <br/></td></tr>
+<tr class="separator:ac5d5eb7584ab5adf9067d4917109c478"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a943f49763dd36e31fc7ea8604fcad789" id="r_a943f49763dd36e31fc7ea8604fcad789"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a943f49763dd36e31fc7ea8604fcad789">frame</a></td></tr>
+<tr class="memdesc:a943f49763dd36e31fc7ea8604fcad789"><td class="mdescLeft"> </td><td class="mdescRight">定义数据坐标系的参考框架  <br/></td></tr>
+<tr class="separator:a943f49763dd36e31fc7ea8604fcad789"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adc6e5733fc3c22f0a7b2914188c49c90" id="r_adc6e5733fc3c22f0a7b2914188c49c90"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#adc6e5733fc3c22f0a7b2914188c49c90">state</a></td></tr>
+<tr class="memdesc:adc6e5733fc3c22f0a7b2914188c49c90"><td class="mdescLeft"> </td><td class="mdescRight">存储自定义状态信息  <br/></td></tr>
+<tr class="separator:adc6e5733fc3c22f0a7b2914188c49c90"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9e0992eae3950adccaf4847fbff4231d" id="r_a9e0992eae3950adccaf4847fbff4231d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e0992eae3950adccaf4847fbff4231d">command</a></td></tr>
+<tr class="memdesc:a9e0992eae3950adccaf4847fbff4231d"><td class="mdescLeft"> </td><td class="mdescRight">存储速度控制命令  <br/></td></tr>
+<tr class="separator:a9e0992eae3950adccaf4847fbff4231d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7e288f7fac9275bb567c7e1cc2ce19ae" id="r_a7e288f7fac9275bb567c7e1cc2ce19ae"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e288f7fac9275bb567c7e1cc2ce19ae">offCmd</a></td></tr>
+<tr class="memdesc:a7e288f7fac9275bb567c7e1cc2ce19ae"><td class="mdescLeft"> </td><td class="mdescRight">存储位置控制命令  <br/></td></tr>
+<tr class="separator:a7e288f7fac9275bb567c7e1cc2ce19ae"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae51a721ce7bee177aaa20b0323940d8e" id="r_ae51a721ce7bee177aaa20b0323940d8e"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51a721ce7bee177aaa20b0323940d8e">isInOffboard</a></td></tr>
+<tr class="memdesc:ae51a721ce7bee177aaa20b0323940d8e"><td class="mdescLeft"> </td><td class="mdescRight">表示是否处于Offboard模式中  <br/></td></tr>
+<tr class="separator:ae51a721ce7bee177aaa20b0323940d8e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8b72134a11b47cc026de2c90c44d0f15" id="r_a8b72134a11b47cc026de2c90c44d0f15"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b72134a11b47cc026de2c90c44d0f15">uavAngEular</a></td></tr>
+<tr class="memdesc:a8b72134a11b47cc026de2c90c44d0f15"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的欧拉角信息  <br/></td></tr>
+<tr class="separator:a8b72134a11b47cc026de2c90c44d0f15"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a161e363079707437fef42cbad8c9c5d8" id="r_a161e363079707437fef42cbad8c9c5d8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a161e363079707437fef42cbad8c9c5d8">uavAngRate</a></td></tr>
+<tr class="memdesc:a161e363079707437fef42cbad8c9c5d8"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的角速度信息  <br/></td></tr>
+<tr class="separator:a161e363079707437fef42cbad8c9c5d8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6710280b239d465b717aaf810fc3a6a2" id="r_a6710280b239d465b717aaf810fc3a6a2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6710280b239d465b717aaf810fc3a6a2">uavPosNED</a></td></tr>
+<tr class="memdesc:a6710280b239d465b717aaf810fc3a6a2"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的本地NED坐标系位置信息  <br/></td></tr>
+<tr class="separator:a6710280b239d465b717aaf810fc3a6a2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a236bd5ab2dfc4c11e6a26011d7184427" id="r_a236bd5ab2dfc4c11e6a26011d7184427"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a236bd5ab2dfc4c11e6a26011d7184427">uavVelNED</a></td></tr>
+<tr class="memdesc:a236bd5ab2dfc4c11e6a26011d7184427"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的本地NED坐标系速度信息  <br/></td></tr>
+<tr class="separator:a236bd5ab2dfc4c11e6a26011d7184427"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa9655942ee48a5b0ee7ae6fc59cb7335" id="r_aa9655942ee48a5b0ee7ae6fc59cb7335"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9655942ee48a5b0ee7ae6fc59cb7335">uavAngQuatern</a></td></tr>
+<tr class="memdesc:aa9655942ee48a5b0ee7ae6fc59cb7335"><td class="mdescLeft"> </td><td class="mdescRight">存储无人机的四元数姿态信息  <br/></td></tr>
+<tr class="separator:aa9655942ee48a5b0ee7ae6fc59cb7335"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae11b3deb3de3df7dc48e439074023e35" id="r_ae11b3deb3de3df7dc48e439074023e35"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11b3deb3de3df7dc48e439074023e35">count</a></td></tr>
+<tr class="memdesc:ae11b3deb3de3df7dc48e439074023e35"><td class="mdescLeft"> </td><td class="mdescRight">计数器，初始化为0  <br/></td></tr>
+<tr class="separator:ae11b3deb3de3df7dc48e439074023e35"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a28ccd506877becafed6eaf134bed2a75" id="r_a28ccd506877becafed6eaf134bed2a75"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ccd506877becafed6eaf134bed2a75">countHil</a></td></tr>
+<tr class="memdesc:a28ccd506877becafed6eaf134bed2a75"><td class="mdescLeft"> </td><td class="mdescRight">HIL（硬件在环）模式的计数器，初始化为0  <br/></td></tr>
+<tr class="separator:a28ccd506877becafed6eaf134bed2a75"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a820c76652e96b18e6431467762c1f34e" id="r_a820c76652e96b18e6431467762c1f34e"><td align="right" class="memItemLeft" valign="top"><a id="a820c76652e96b18e6431467762c1f34e" name="a820c76652e96b18e6431467762c1f34e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>local_pose_sub</b></td></tr>
+<tr class="separator:a820c76652e96b18e6431467762c1f34e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a28b146ca1cedbea58c4d7d261b1e8342" id="r_a28b146ca1cedbea58c4d7d261b1e8342"><td align="right" class="memItemLeft" valign="top"><a id="a28b146ca1cedbea58c4d7d261b1e8342" name="a28b146ca1cedbea58c4d7d261b1e8342"></a>
+ </td><td class="memItemRight" valign="bottom"><b>local_vel_sub</b></td></tr>
+<tr class="separator:a28b146ca1cedbea58c4d7d261b1e8342"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f3894106da4a3f5a45bbb6f407efd34" id="r_a2f3894106da4a3f5a45bbb6f407efd34"><td align="right" class="memItemLeft" valign="top"><a id="a2f3894106da4a3f5a45bbb6f407efd34" name="a2f3894106da4a3f5a45bbb6f407efd34"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mavros_sub</b></td></tr>
+<tr class="separator:a2f3894106da4a3f5a45bbb6f407efd34"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac8d73df23ef0cdfe9c9ef31781d191fa" id="r_ac8d73df23ef0cdfe9c9ef31781d191fa"><td align="right" class="memItemLeft" valign="top"><a id="ac8d73df23ef0cdfe9c9ef31781d191fa" name="ac8d73df23ef0cdfe9c9ef31781d191fa"></a>
+ </td><td class="memItemRight" valign="bottom"><b>gps_sub</b></td></tr>
+<tr class="separator:ac8d73df23ef0cdfe9c9ef31781d191fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abb5c915124ea6eb5903c031441f4ab5a" id="r_abb5c915124ea6eb5903c031441f4ab5a"><td align="right" class="memItemLeft" valign="top"><a id="abb5c915124ea6eb5903c031441f4ab5a" name="abb5c915124ea6eb5903c031441f4ab5a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>imu_sub</b></td></tr>
+<tr class="separator:abb5c915124ea6eb5903c031441f4ab5a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0e30be4dc94bd2990451298a66455a3" id="r_aa0e30be4dc94bd2990451298a66455a3"><td align="right" class="memItemLeft" valign="top"><a id="aa0e30be4dc94bd2990451298a66455a3" name="aa0e30be4dc94bd2990451298a66455a3"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vel_pub</b></td></tr>
+<tr class="separator:aa0e30be4dc94bd2990451298a66455a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae1f942de13ee720b9e8b0b6fba8c2141" id="r_ae1f942de13ee720b9e8b0b6fba8c2141"><td align="right" class="memItemLeft" valign="top"><a id="ae1f942de13ee720b9e8b0b6fba8c2141" name="ae1f942de13ee720b9e8b0b6fba8c2141"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vel_raw_pub</b></td></tr>
+<tr class="separator:ae1f942de13ee720b9e8b0b6fba8c2141"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace9570281be9b3dde61a545f0568103e" id="r_ace9570281be9b3dde61a545f0568103e"><td align="right" class="memItemLeft" valign="top"><a id="ace9570281be9b3dde61a545f0568103e" name="ace9570281be9b3dde61a545f0568103e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mav_raw_pub</b></td></tr>
+<tr class="separator:ace9570281be9b3dde61a545f0568103e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2640ca580634757838fb4b476ad4d72" id="r_ab2640ca580634757838fb4b476ad4d72"><td align="right" class="memItemLeft" valign="top"><a id="ab2640ca580634757838fb4b476ad4d72" name="ab2640ca580634757838fb4b476ad4d72"></a>
+ </td><td class="memItemRight" valign="bottom"><b>armService</b></td></tr>
+<tr class="separator:ab2640ca580634757838fb4b476ad4d72"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a715fb69469983b20fff141f4fc321b18" id="r_a715fb69469983b20fff141f4fc321b18"><td align="right" class="memItemLeft" valign="top"><a id="a715fb69469983b20fff141f4fc321b18" name="a715fb69469983b20fff141f4fc321b18"></a>
+ </td><td class="memItemRight" valign="bottom"><b>flightModeService</b></td></tr>
+<tr class="separator:a715fb69469983b20fff141f4fc321b18"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a71cb083398d3c4f0aeaec22c2bb1e682" id="r_a71cb083398d3c4f0aeaec22c2bb1e682"><td align="right" class="memItemLeft" valign="top"><a id="a71cb083398d3c4f0aeaec22c2bb1e682" name="a71cb083398d3c4f0aeaec22c2bb1e682"></a>
+ </td><td class="memItemRight" valign="bottom"><b>setparamService</b></td></tr>
+<tr class="separator:a71cb083398d3c4f0aeaec22c2bb1e682"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af7b31558db3ca105993cac45b480cdb6" id="r_af7b31558db3ca105993cac45b480cdb6"><td align="right" class="memItemLeft" valign="top"><a id="af7b31558db3ca105993cac45b480cdb6" name="af7b31558db3ca105993cac45b480cdb6"></a>
+ </td><td class="memItemRight" valign="bottom"><b>sendCmdLongService</b></td></tr>
+<tr class="separator:af7b31558db3ca105993cac45b480cdb6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a97ab4ed95b55a36a6a47b97838a2c4e9" id="r_a97ab4ed95b55a36a6a47b97838a2c4e9"><td align="right" class="memItemLeft" valign="top"><a id="a97ab4ed95b55a36a6a47b97838a2c4e9" name="a97ab4ed95b55a36a6a47b97838a2c4e9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>ros_node</b></td></tr>
+<tr class="separator:a97ab4ed95b55a36a6a47b97838a2c4e9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a10dc5a794b998e68e49f378273ec7346" id="r_a10dc5a794b998e68e49f378273ec7346"><td align="right" class="memItemLeft" valign="top"><a id="a10dc5a794b998e68e49f378273ec7346" name="a10dc5a794b998e68e49f378273ec7346"></a>
+ </td><td class="memItemRight" valign="bottom"><b>executor</b></td></tr>
+<tr class="separator:a10dc5a794b998e68e49f378273ec7346"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a469994e78f66a44815c015b7f4b8b2f8" id="r_a469994e78f66a44815c015b7f4b8b2f8"><td align="right" class="memItemLeft" valign="top"><a id="a469994e78f66a44815c015b7f4b8b2f8" name="a469994e78f66a44815c015b7f4b8b2f8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>t1</b></td></tr>
+<tr class="separator:a469994e78f66a44815c015b7f4b8b2f8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a633de4b0c14ca52ea2432a3c8a5c4c31" id="r_a633de4b0c14ca52ea2432a3c8a5c4c31"><td align="right" class="memItemLeft" valign="top"><a id="a633de4b0c14ca52ea2432a3c8a5c4c31" name="a633de4b0c14ca52ea2432a3c8a5c4c31"></a>
+ </td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
+<tr class="separator:a633de4b0c14ca52ea2432a3c8a5c4c31"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0969a6176518f77bdb143670c38581aa" id="r_a0969a6176518f77bdb143670c38581aa"><td align="right" class="memItemLeft" valign="top"><a id="a0969a6176518f77bdb143670c38581aa" name="a0969a6176518f77bdb143670c38581aa"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mav0</b></td></tr>
+<tr class="separator:a0969a6176518f77bdb143670c38581aa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8fad286067e886a023aa852e3cfb336c" id="r_a8fad286067e886a023aa852e3cfb336c"><td align="right" class="memItemLeft" valign="top"><a id="a8fad286067e886a023aa852e3cfb336c" name="a8fad286067e886a023aa852e3cfb336c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>tgtSys</b></td></tr>
+<tr class="separator:a8fad286067e886a023aa852e3cfb336c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad00efb41ca386db28bacc7aefe79535c" id="r_ad00efb41ca386db28bacc7aefe79535c"><td align="right" class="memItemLeft" valign="top"><a id="ad00efb41ca386db28bacc7aefe79535c" name="ad00efb41ca386db28bacc7aefe79535c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>child</b></td></tr>
+<tr class="separator:ad00efb41ca386db28bacc7aefe79535c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a24aeadb733f27244ec14e4cba82eeee9" id="r_a24aeadb733f27244ec14e4cba82eeee9"><td align="right" class="memItemLeft" valign="top"><a id="a24aeadb733f27244ec14e4cba82eeee9" name="a24aeadb733f27244ec14e4cba82eeee9"></a>
+ </td><td class="memItemRight" valign="bottom"><b>t2</b></td></tr>
+<tr class="separator:a24aeadb733f27244ec14e4cba82eeee9"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>RflyRosCtrlApi结构体类。提供了与无人机进行通信和控制的完整接口，支持多种通信模式，并集成了ROS系统 </p>
+<pre class="fragment">创建一个通信实例
+ID: 表示飞机的CopterID号。按平台规则，port=20100+CopterID*2-2。
+ip: 数据向外发送的IP地址。默认是发往本机的127.0.0.1的IP；在分布式仿真时，也可以指定192.168打头的局域网电脑IP；也可以使用255.255.255.255的广播地址（会干扰网络其他电脑）
+Com: 与Pixhawk的连接模式。
+    Com='udp'，表示使用默认的udp模式接收数据，这种模式下，是接收CopterSim转发的PX4的MAVLink消息（或UDP_full,simple）消息包
+             使用port+1端口收和port端口发（例如，1号飞机是20101端口收，20100端口发，与CopterSim对应）。
+    Com='COM3'（Widnows下）或 Com='/dev/ttyUSB0'（Linux系统，也可能是ttyS0、ttyAMA0等），表示通过USB线（或者数传）连接飞控，使用默认57600的波特率。注意：波特率使用port口设置，默认port=0，会重映射为57600
+
+port: UDP模式下默认情况下设为0，会自动根据IP填充，按平台规则，port=20100+CopterID*2-2。如果这里赋值大于0，则会强制使用port定义的端口。
+      COM模式下，Port默认表示波特率self.baud=port。如果port=0，则会设置self.baud=57600
+
+
+接口示例：
+UDP模式
+PX4MavCtrler(1) # 默认IP
+PX4MavCtrler(1,'192.168.31.24') # 指定IP，用于远程控制
+
+串口模式
+PX4MavCtrler(1,'127.0.0.1','com1',57600) # 指定串口，并设置波特率</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a70d6a81ad95d709aa7b4b8689d3b4e34" name="a70d6a81ad95d709aa7b4b8689d3b4e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d6a81ad95d709aa7b4b8689d3b4e34">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Com</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'udp'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>RflyRosCtrlApi的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化传输模式，波特率，ip等等参数</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<p>分为ros1和ros2两种，定义一些ROS系统中的服务、订阅和发布 </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1d246a3bb2d9f51155d83676a98c65a8" name="a1d246a3bb2d9f51155d83676a98c65a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d246a3bb2d9f51155d83676a98c65a8">◆ </a></span>arm()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">arm </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>解锁无人机 </p>
+<ul>
+<li><a class="anchor" id="arm"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否解锁成功 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a1d246a3bb2d9f51155d83676a98c65a8_cgraph.svg" width="308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="475" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a1d246a3bb2d9f51155d83676a98c65a8_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a97b2df387a387f14d9ecb9ec9c327f68" name="a97b2df387a387f14d9ecb9ec9c327f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b2df387a387f14d9ecb9ec9c327f68">◆ </a></span>arm_px4()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">arm_px4 </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isArm</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>解锁或锁定PX4无人机 </p>
+<h1><a class="anchor" id="autotoc_md554"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">isArm</td><td>是否解锁 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>上锁或者解锁的结果 <br/>
+</dd></dl>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="560" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a97b2df387a387f14d9ecb9ec9c327f68_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ae8b2bbba58fd6f921fee46dae8be6abf" name="ae8b2bbba58fd6f921fee46dae8be6abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b2bbba58fd6f921fee46dae8be6abf">◆ </a></span>calcTypeMask()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">calcTypeMask </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>EnList</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>根据输入的启用列表计算Type Mask </p>
+<h1><a class="anchor" id="autotoc_md562"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">EnList</td><td>启用列表 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>掩膜类型 </dd></dl>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_ae8b2bbba58fd6f921fee46dae8be6abf_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ac191e5f90f81a3609656cdd0213c50c5" name="ac191e5f90f81a3609656cdd0213c50c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac191e5f90f81a3609656cdd0213c50c5">◆ </a></span>convert_to_payload64()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">convert_to_payload64 </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>payload_bytes</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将payload字节转换为Mavlink的payload64格式 </p>
+<h1><a class="anchor" id="autotoc_md552"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">payload_bytes</td><td>输入的payload字节 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回Mavlink.payload64格式的payload</dd></dl>
+<pre class="fragment">Convert payload bytes to Mavlink.payload64
+</pre> <div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="390" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_ac191e5f90f81a3609656cdd0213c50c5_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="aecd51687631b45b14740da57f3c3d777" name="aecd51687631b45b14740da57f3c3d777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd51687631b45b14740da57f3c3d777">◆ </a></span>convert_to_rosmsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">convert_to_rosmsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>mavmsg</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>header</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将pymavlink消息转换为ROS的Mavlink消息 </p>
+<h1><a class="anchor" id="autotoc_md553"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">mavmsg</td><td>pymavlink消息 </td></tr>
+<tr><td class="paramname">header</td><td>ROS消息头 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>mav_raw Mavlink消息</dd></dl>
+<pre class="fragment">Convert pymavlink message to Mavlink.msg
+
+Currently supports MAVLink v1.0 only.
+</pre> <div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_aecd51687631b45b14740da57f3c3d777_cgraph.svg" width="391"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_aecd51687631b45b14740da57f3c3d777_icgraph.svg" width="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a3f26ddcad2cd58eccffb4f05afb87094" name="a3f26ddcad2cd58eccffb4f05afb87094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f26ddcad2cd58eccffb4f05afb87094">◆ </a></span>disarm()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">disarm </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>锁定无人机 </p>
+<ul>
+<li><a class="anchor" id="disarm"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>上锁成功 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a3f26ddcad2cd58eccffb4f05afb87094_cgraph.svg" width="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="390" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a3f26ddcad2cd58eccffb4f05afb87094_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a4713173eafcc9af7aaa4f6cbcb7961fd" name="a4713173eafcc9af7aaa4f6cbcb7961fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4713173eafcc9af7aaa4f6cbcb7961fd">◆ </a></span>endOffboard()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">endOffboard </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>结束Offboard模式，停止相关线程，并关闭ROS2节点 </p>
+<h1><a class="anchor" id="autotoc_md560"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-9-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-9-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-9-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a4713173eafcc9af7aaa4f6cbcb7961fd_icgraph.svg" width="594"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a8a2b734fe58ba395639b61d4cf7e0800" name="a8a2b734fe58ba395639b61d4cf7e0800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2b734fe58ba395639b61d4cf7e0800">◆ </a></span>fillList()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">fillList </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>inLen</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>fill</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>填充或截断列表，使其长度达到指定值 <br/>
+</p>
+<h1><a class="anchor" id="autotoc_md555"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">data</td><td>输入列表 </td></tr>
+<tr><td class="paramname">inLen</td><td>输出列表的长度 </td></tr>
+<tr><td class="paramname">fill（默认为</td><td>0） 填充的值 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>填充或截断后的列表 <br/>
+</dd></dl>
+<div class="dynheader closed" id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-10-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-10-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-10-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a8a2b734fe58ba395639b61d4cf7e0800_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a189c43205620574f8c6fe072c50e0147" name="a189c43205620574f8c6fe072c50e0147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189c43205620574f8c6fe072c50e0147">◆ </a></span>gps_callback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">gps_callback </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>msg</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理GPS消息 </p>
+<ul>
+<li><a class="anchor" id="gps_callback"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">msg</td><td>GPS消息 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="af8bc1df903ced1c58d4ea7bbdd768c10" name="af8bc1df903ced1c58d4ea7bbdd768c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8bc1df903ced1c58d4ea7bbdd768c10">◆ </a></span>imu_callback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">imu_callback </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>msg</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理IMU消息 </p>
+<ul>
+<li><a class="anchor" id="imu_callback"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">msg</td><td>IMU消息 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-11-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-11-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-11-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_af8bc1df903ced1c58d4ea7bbdd768c10_cgraph.svg" width="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a5ec6f10ec3fc8785459ce8991c118d4f" name="a5ec6f10ec3fc8785459ce8991c118d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec6f10ec3fc8785459ce8991c118d4f">◆ </a></span>InitMavLoop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">InitMavLoop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>初始化Mavlink连接，并启动Mavros </p>
+<h1><a class="anchor" id="autotoc_md556"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</div>
+</div>
+<a id="a6c1cc012ad8e1158a31b05c16fc7e16f" name="a6c1cc012ad8e1158a31b05c16fc7e16f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1cc012ad8e1158a31b05c16fc7e16f">◆ </a></span>initOffboard()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">initOffboard </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>初始化Offboard模式并发送初始命令 </p>
+<h1><a class="anchor" id="autotoc_md558"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-12-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-12-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-12-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a6c1cc012ad8e1158a31b05c16fc7e16f_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="ae53498db1e10bff529310768847f0405" name="ae53498db1e10bff529310768847f0405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53498db1e10bff529310768847f0405">◆ </a></span>local_pose_callback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">local_pose_callback </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>msg</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理本地位姿消息 </p>
+<ul>
+<li><a class="anchor" id="local_pose_callback"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">msg</td><td>位姿消息 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-13-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-13-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-13-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="518" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_ae53498db1e10bff529310768847f0405_cgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a46bb24820a185a03b8120deaf841067a" name="a46bb24820a185a03b8120deaf841067a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bb24820a185a03b8120deaf841067a">◆ </a></span>local_vel_callback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">local_vel_callback </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>msg</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理本地速度消息 </p>
+<ul>
+<li><a class="anchor" id="local_vel_callback"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">msg</td><td>速度消息 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a1ef044685be8017fd4d3076090217ac8" name="a1ef044685be8017fd4d3076090217ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef044685be8017fd4d3076090217ac8">◆ </a></span>mavros_state_callback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">mavros_state_callback </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>msg</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>处理Mavros状态消息 </p>
+<ul>
+<li><a class="anchor" id="mavros_state_callback"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">msg</td><td>状态消息 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a3fc55963f2adebd421fde391e6fca094" name="a3fc55963f2adebd421fde391e6fca094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc55963f2adebd421fde391e6fca094">◆ </a></span>offboard()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">offboard </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>切换飞行模式到Offboard模式 </p>
+<ul>
+<li><a class="anchor" id="offboard"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否进入offboard模式 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-14-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-14-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-14-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a3fc55963f2adebd421fde391e6fca094_icgraph.svg" width="348"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a6b6a472dd78ba00d47fe9e0e5fb57d8d" name="a6b6a472dd78ba00d47fe9e0e5fb57d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6a472dd78ba00d47fe9e0e5fb57d8d">◆ </a></span>OffboardLoop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">OffboardLoop </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>持续发送Offboard命令以维持Offboard模式 </p>
+<h1><a class="anchor" id="autotoc_md559"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-15-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-15-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-15-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a6b6a472dd78ba00d47fe9e0e5fb57d8d_icgraph.svg" width="380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a658a7a30dcb55cec7686077cfe55aa77" name="a658a7a30dcb55cec7686077cfe55aa77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658a7a30dcb55cec7686077cfe55aa77">◆ </a></span>q2Euler()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">q2Euler </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>q</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从四元数计算欧拉角 </p>
+<ul>
+<li><a class="anchor" id="q2Euler"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">q</td><td>四元数 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>滚转角、俯仰角、偏航角 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-16-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-16-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-16-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a658a7a30dcb55cec7686077cfe55aa77_icgraph.svg" width="318"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ac570f2f51276de12b71bc307e4669b07" name="ac570f2f51276de12b71bc307e4669b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac570f2f51276de12b71bc307e4669b07">◆ </a></span>q2yaw()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">q2yaw </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>q</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从四元数计算偏航角 </p>
+<ul>
+<li><a class="anchor" id="q2yaw"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">q</td><td>四元数 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-17-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-17-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-17-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_ac570f2f51276de12b71bc307e4669b07_icgraph.svg" width="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a84bc8fad3b6e3ee2d6531c1201b9df42" name="a84bc8fad3b6e3ee2d6531c1201b9df42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84bc8fad3b6e3ee2d6531c1201b9df42">◆ </a></span>SendHILCtrlMsg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendHILCtrlMsg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ctrls</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*16</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送HIL（硬件在环）控制消息到Pixhawk，这些消息会转化为uORB消息rfly_ctrl <a class="anchor" id="SendHILCtrlMsg"></a></p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ctrls</td><td>16个控制量 </td></tr>
+<tr><td class="paramname">idx（默认值为</td><td>0） 0-3，用于选择不同的uORB消息rfly_ctrl，rfly_ctrl1，rfly_ctrl2，rfly_ctrl<ul>
+<li>0表示rfly_ctrl消息</li>
+<li>1表示rfly_ctrl1消息</li>
+<li>2表示2表示rfly_ctrl2消息</li>
+<li>3表示rfly_ctrl消息 </li>
+</ul>
+</td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无</dd></dl>
+<pre class="fragment"> Send hil_actuator_controls command to PX4, which will be transferred to uORB message rfly_ctrl
+https://mavlink.io/en/messages/common.html#HIL_ACTUATOR_CONTROLS
+</pre> <div class="dynheader closed" id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-18-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-18-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-18-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="454" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a84bc8fad3b6e3ee2d6531c1201b9df42_cgraph.svg" width="624"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a5e370977bb1e3c68bec43a4c3c974d1b" name="a5e370977bb1e3c68bec43a4c3c974d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e370977bb1e3c68bec43a4c3c974d1b">◆ </a></span>SendMavArm() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendMavArm </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isArm</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送解锁或锁定命令到无人机 </p>
+<h1><a class="anchor" id="autotoc_md557"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">isArm</td><td>是否解锁 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否发送成功 </dd></dl>
+<div class="dynheader closed" id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-19-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-19-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-19-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a5e370977bb1e3c68bec43a4c3c974d1b_cgraph.svg" width="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-20-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-20-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-20-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a5e370977bb1e3c68bec43a4c3c974d1b_icgraph.svg" width="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a0a193a6e3a68a7e2d01772aec0faa3ee" name="a0a193a6e3a68a7e2d01772aec0faa3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a193a6e3a68a7e2d01772aec0faa3ee">◆ </a></span>SendMavArm() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendMavArm </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>isArm</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送解锁或锁定命令到无人机 </p>
+<ul>
+<li><a class="anchor" id="SendMavArm"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">isArm（默认值为</td><td>0） 是否解锁 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-21-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-21-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-21-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="222" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a0a193a6e3a68a7e2d01772aec0faa3ee_cgraph.svg" width="610"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-22-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-22-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-22-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a0a193a6e3a68a7e2d01772aec0faa3ee_icgraph.svg" width="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a3b674c6bf3ce93f9a964070e6fd21551" name="a3b674c6bf3ce93f9a964070e6fd21551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b674c6bf3ce93f9a964070e6fd21551">◆ </a></span>SendMavCmdLong()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendMavCmdLong </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>command</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param1</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param2</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param3</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param4</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param5</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param6</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param7</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送长命令到飞行控制器 <a class="anchor" id="sendMavCmdLong"></a></p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">command</td><td>命令 </td></tr>
+<tr><td class="paramname">param1（默认值为</td><td>0） 参数1 </td></tr>
+<tr><td class="paramname">param2（默认值为</td><td>0） 参数2 </td></tr>
+<tr><td class="paramname">param3（默认值为</td><td>0） 参数3 </td></tr>
+<tr><td class="paramname">param4（默认值为</td><td>0） 参数4 </td></tr>
+<tr><td class="paramname">param5（默认值为</td><td>0） 参数5 </td></tr>
+<tr><td class="paramname">param6（默认值为</td><td>0） 参数6 </td></tr>
+<tr><td class="paramname">param7（默认值为</td><td>0） 参数7 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-23-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-23-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-23-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a3b674c6bf3ce93f9a964070e6fd21551_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a162081480a066efd9dc4aa4b2fdb95d9" name="a162081480a066efd9dc4aa4b2fdb95d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162081480a066efd9dc4aa4b2fdb95d9">◆ </a></span>sendMavSetParam()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">sendMavSetParam </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param_id_str</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param_value</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>param_type</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>设置MAVLink参数 <a class="anchor" id="sendMavSetParam"></a></p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">param_id_str</td><td>参数ID </td></tr>
+<tr><td class="paramname">param_value</td><td>参数值 </td></tr>
+<tr><td class="paramname">param_type</td><td>参数类型 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-24-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-24-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-24-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a162081480a066efd9dc4aa4b2fdb95d9_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<a id="a5bafd7c7044c98ec3f09d85608ff9dea" name="a5bafd7c7044c98ec3f09d85608ff9dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bafd7c7044c98ec3f09d85608ff9dea">◆ </a></span>SendPosNED()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendPosNED </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>z</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送NED坐标系下的位置命令 </p>
+<ul>
+<li><a class="anchor" id="SendPosNED"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">x（默认值为</td><td>nan） x方向位置 </td></tr>
+<tr><td class="paramname">y（默认值为</td><td>nan） y方向位置 </td></tr>
+<tr><td class="paramname">z（默认值为</td><td>nan） z方向位置 </td></tr>
+<tr><td class="paramname">yaw（默认值为</td><td>nan） 偏航角 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-25-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-25-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-25-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a5bafd7c7044c98ec3f09d85608ff9dea_cgraph.svg" width="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-26-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-26-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-26-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="187" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a5bafd7c7044c98ec3f09d85608ff9dea_icgraph.svg" width="604"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ae64f1d96bc1ed9cb3a87150e3d345310" name="ae64f1d96bc1ed9cb3a87150e3d345310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64f1d96bc1ed9cb3a87150e3d345310">◆ </a></span>SendPosVelNED()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendPosVelNED </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[math.nan]*3</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>VelE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[math.nan]*3</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawrate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送NED坐标系下的位置和速度命令 </p>
+<ul>
+<li><a class="anchor" id="SendPosVelNED"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">PosE（默认值为</td><td>[nan]*3） 位置 </td></tr>
+<tr><td class="paramname">VelE（默认值为</td><td>[nan]*3） 速度 </td></tr>
+<tr><td class="paramname">yaw（默认值为</td><td>nan） 偏航角 </td></tr>
+<tr><td class="paramname">yawrate（默认值为</td><td>nan） 偏航角速率 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-27-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-27-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-27-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="422" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_ae64f1d96bc1ed9cb3a87150e3d345310_cgraph.svg" width="420"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a4e385d03553bd32945810388ef3003dc" name="a4e385d03553bd32945810388ef3003dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e385d03553bd32945810388ef3003dc">◆ </a></span>SendVelFRD()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendVelFRD </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawrate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送FRD（前、右、下）坐标系下的速度命令 </p>
+<ul>
+<li><a class="anchor" id="SendVelFRD"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vx（默认值为</td><td>nan） x方向速度 </td></tr>
+<tr><td class="paramname">vy（默认值为</td><td>nan） y方向速度 </td></tr>
+<tr><td class="paramname">vz（默认值为</td><td>nan） z方向速度 </td></tr>
+<tr><td class="paramname">yawrate（默认值为</td><td>nan） 偏航角速率 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-28-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-28-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-28-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a4e385d03553bd32945810388ef3003dc_cgraph.svg" width="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-29-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-29-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-29-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="120" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_a4e385d03553bd32945810388ef3003dc_icgraph.svg" width="596"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="adf5bdea8e4b51e58b4e2572ff4115512" name="adf5bdea8e4b51e58b4e2572ff4115512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5bdea8e4b51e58b4e2572ff4115512">◆ </a></span>SendVelNED()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">SendVelNED </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>vz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yawrate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">math.nan</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>发送NED（北、东、下）坐标系下的速度命令 </p>
+<ul>
+<li><a class="anchor" id="SendVelNED"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">vx（默认值为</td><td>nan） x方向速度 </td></tr>
+<tr><td class="paramname">vy（默认值为</td><td>nan） y方向速度 </td></tr>
+<tr><td class="paramname">vz（默认值为</td><td>nan） z方向速度 </td></tr>
+<tr><td class="paramname">yawrate（默认值为</td><td>nan） 偏航角速率 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-30-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-30-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-30-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="104" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_adf5bdea8e4b51e58b4e2572ff4115512_cgraph.svg" width="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-31" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-31-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-31-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-31-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="238" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_adf5bdea8e4b51e58b4e2572ff4115512_icgraph.svg" width="611"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="af090fcf8098052b109026c210d36f067" name="af090fcf8098052b109026c210d36f067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af090fcf8098052b109026c210d36f067">◆ </a></span>stopRun()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">stopRun </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>停止运行，杀死子进程并提醒用户关闭所有终端窗口 </p>
+<h1><a class="anchor" id="autotoc_md561"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+<div class="dynheader closed" id="dynsection-32" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-32-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-32-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-32-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_af090fcf8098052b109026c210d36f067_icgraph.svg" width="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="adf8269c75db7e139aaa12454d041afc5" name="adf8269c75db7e139aaa12454d041afc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8269c75db7e139aaa12454d041afc5">◆ </a></span>yawSat()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">yawSat </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>yaw</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>对偏航角进行限制，使其保持在[-π/2, π/2]范围内 </p>
+<ul>
+<li><a class="anchor" id="yawSat"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">yaw</td><td>偏航角 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矫正后的偏航角 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-33" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-33-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-33-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-33-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi_adf8269c75db7e139aaa12454d041afc5_icgraph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="abc93537d93556a29eb5f2bcaaeaddb34" name="abc93537d93556a29eb5f2bcaaeaddb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc93537d93556a29eb5f2bcaaeaddb34">◆ </a></span>arm_state</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">arm_state</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>表示无人机的解锁/上锁状态 </p>
+</div>
+</div>
+<a id="a76432121357072730f76c1bf26df93ec" name="a76432121357072730f76c1bf26df93ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76432121357072730f76c1bf26df93ec">◆ </a></span>baud</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">baud</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>波特率，默认设置为115200 </p>
+</div>
+</div>
+<a id="aa0294f2b7541099fa3b7ee8e680ea6f8" name="aa0294f2b7541099fa3b7ee8e680ea6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0294f2b7541099fa3b7ee8e680ea6f8">◆ </a></span>Com</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Com</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储传入的通信模式参数 </p>
+</div>
+</div>
+<a id="a9e0992eae3950adccaf4847fbff4231d" name="a9e0992eae3950adccaf4847fbff4231d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0992eae3950adccaf4847fbff4231d">◆ </a></span>command</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">command</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储速度控制命令 </p>
+</div>
+</div>
+<a id="a4bc1de2c250838e7456f6b1991f9d9d9" name="a4bc1de2c250838e7456f6b1991f9d9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc1de2c250838e7456f6b1991f9d9d9">◆ </a></span>CopterID</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">CopterID</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>无人机的ID号，用于区分不同的无人机 </p>
+</div>
+</div>
+<a id="ae11b3deb3de3df7dc48e439074023e35" name="ae11b3deb3de3df7dc48e439074023e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11b3deb3de3df7dc48e439074023e35">◆ </a></span>count</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">count</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>计数器，初始化为0 </p>
+</div>
+</div>
+<a id="a28ccd506877becafed6eaf134bed2a75" name="a28ccd506877becafed6eaf134bed2a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ccd506877becafed6eaf134bed2a75">◆ </a></span>countHil</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">countHil</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>HIL（硬件在环）模式的计数器，初始化为0 </p>
+</div>
+</div>
+<a id="a22e4ec6ebc6b387fc6f7de5a6bd20faa" name="a22e4ec6ebc6b387fc6f7de5a6bd20faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e4ec6ebc6b387fc6f7de5a6bd20faa">◆ </a></span>current_heading</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">current_heading</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机当前的航向角信息 </p>
+</div>
+</div>
+<a id="a943f49763dd36e31fc7ea8604fcad789" name="a943f49763dd36e31fc7ea8604fcad789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a943f49763dd36e31fc7ea8604fcad789">◆ </a></span>frame</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">frame</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>定义数据坐标系的参考框架 </p>
+</div>
+</div>
+<a id="ae60203a581cc7376c4ff719262432a28" name="ae60203a581cc7376c4ff719262432a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60203a581cc7376c4ff719262432a28">◆ </a></span>gps</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">gps</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的GPS数据 </p>
+</div>
+</div>
+<a id="a1c63e66c94a8d22300990887e84ad6fc" name="a1c63e66c94a8d22300990887e84ad6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c63e66c94a8d22300990887e84ad6fc">◆ </a></span>imu</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">imu</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的IMU数据 </p>
+</div>
+</div>
+<a id="afd65cf072a93c93ad52b9f25b341e10b" name="afd65cf072a93c93ad52b9f25b341e10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd65cf072a93c93ad52b9f25b341e10b">◆ </a></span>ip</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ip</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储数据发送的IP地址 </p>
+</div>
+</div>
+<a id="abab070b71afa0e95b9a1e13368a97f68" name="abab070b71afa0e95b9a1e13368a97f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab070b71afa0e95b9a1e13368a97f68">◆ </a></span>isCom</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isCom</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于标识当前通信模式是否为串口模式 </p>
+</div>
+</div>
+<a id="ae51a721ce7bee177aaa20b0323940d8e" name="ae51a721ce7bee177aaa20b0323940d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51a721ce7bee177aaa20b0323940d8e">◆ </a></span>isInOffboard</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">isInOffboard</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>表示是否处于Offboard模式中 </p>
+</div>
+</div>
+<a id="a9409e8e3a60825de21387a982e92cef4" name="a9409e8e3a60825de21387a982e92cef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9409e8e3a60825de21387a982e92cef4">◆ </a></span>local_pose</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">local_pose</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的本地位姿数据 </p>
+</div>
+</div>
+<a id="a61c4ce198000730bbbab302aef10f4ce" name="a61c4ce198000730bbbab302aef10f4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c4ce198000730bbbab302aef10f4ce">◆ </a></span>local_vel</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">local_vel</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的本地速度数据 </p>
+</div>
+</div>
+<a id="a00453487e08f52c65d394aa780c33354" name="a00453487e08f52c65d394aa780c33354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00453487e08f52c65d394aa780c33354">◆ </a></span>mavros_state</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">mavros_state</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的当前状态信息 </p>
+</div>
+</div>
+<a id="aa4245fd18e22b7bc8981b61bf4faefb1" name="aa4245fd18e22b7bc8981b61bf4faefb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4245fd18e22b7bc8981b61bf4faefb1">◆ </a></span>offboard_state</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">offboard_state</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>表示无人机是否处于Offboard模式 </p>
+</div>
+</div>
+<a id="a7e288f7fac9275bb567c7e1cc2ce19ae" name="a7e288f7fac9275bb567c7e1cc2ce19ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e288f7fac9275bb567c7e1cc2ce19ae">◆ </a></span>offCmd</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">offCmd</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储位置控制命令 </p>
+</div>
+</div>
+<a id="af8fb0f45ee0195c7422a49e6a8d72369" name="af8fb0f45ee0195c7422a49e6a8d72369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fb0f45ee0195c7422a49e6a8d72369">◆ </a></span>port</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">port</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>端口号，默认根据CopterID计算而得 </p>
+</div>
+</div>
+<a id="ac5d5eb7584ab5adf9067d4917109c478" name="ac5d5eb7584ab5adf9067d4917109c478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d5eb7584ab5adf9067d4917109c478">◆ </a></span>received_imu</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">received_imu</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>表示是否接收到IMU数据 </p>
+</div>
+</div>
+<a id="adc6e5733fc3c22f0a7b2914188c49c90" name="adc6e5733fc3c22f0a7b2914188c49c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6e5733fc3c22f0a7b2914188c49c90">◆ </a></span>state</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">state</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储自定义状态信息 </p>
+</div>
+</div>
+<a id="a8b72134a11b47cc026de2c90c44d0f15" name="a8b72134a11b47cc026de2c90c44d0f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b72134a11b47cc026de2c90c44d0f15">◆ </a></span>uavAngEular</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uavAngEular</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的欧拉角信息 </p>
+</div>
+</div>
+<a id="aa9655942ee48a5b0ee7ae6fc59cb7335" name="aa9655942ee48a5b0ee7ae6fc59cb7335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9655942ee48a5b0ee7ae6fc59cb7335">◆ </a></span>uavAngQuatern</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uavAngQuatern</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的四元数姿态信息 </p>
+</div>
+</div>
+<a id="a161e363079707437fef42cbad8c9c5d8" name="a161e363079707437fef42cbad8c9c5d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161e363079707437fef42cbad8c9c5d8">◆ </a></span>uavAngRate</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uavAngRate</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的角速度信息 </p>
+</div>
+</div>
+<a id="a6710280b239d465b717aaf810fc3a6a2" name="a6710280b239d465b717aaf810fc3a6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6710280b239d465b717aaf810fc3a6a2">◆ </a></span>uavPosNED</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uavPosNED</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的本地NED坐标系位置信息 </p>
+</div>
+</div>
+<a id="a236bd5ab2dfc4c11e6a26011d7184427" name="a236bd5ab2dfc4c11e6a26011d7184427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236bd5ab2dfc4c11e6a26011d7184427">◆ </a></span>uavVelNED</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">uavVelNED</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>存储无人机的本地NED坐标系速度信息 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="RflyRosCtrlApi_8py.html">RflyRosCtrlApi.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

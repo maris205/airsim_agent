@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: MultiCopterDll类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>DllSimCtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll.html">MultiCopterDll</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">MultiCopterDll类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 MultiCopterDll 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll__inherit__graph.svg" width="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> MultiCopterDll 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll__coll__graph.svg" width="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6f61f124614ca49fb73193edfa1fc765" id="r_a6f61f124614ca49fb73193edfa1fc765"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f61f124614ca49fb73193edfa1fc765">__init__</a> (self, CopterID=1, ClassID=-1, MapName='Grasslands', ip='127.0.0.1', LocX=0, LocY=0, Yaw=0, UdpMode=0, useGPS=False, GpsOrin=[0, 0, 0])</td></tr>
+<tr class="memdesc:a6f61f124614ca49fb73193edfa1fc765"><td class="mdescLeft"> </td><td class="mdescRight">这是类的构造函数，用于初始化 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html" title="DLL文件外部加载接口类">ModelLoad</a> 类的实例。参数的详细含义参考 <a class="el" href="md_ctrl_2md_2BatScripts.html">Bat脚本使用参考</a> <br/></td></tr>
+<tr class="separator:a6f61f124614ca49fb73193edfa1fc765"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html">ModelLoad</a></td></tr>
+<tr class="memitem:af988b1ebd5bd032166adebe23944ff0d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_af988b1ebd5bd032166adebe23944ff0d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#af988b1ebd5bd032166adebe23944ff0d">CreateVehicle</a> (self, CopterID=1, ClassID=-1, MapName='Grasslands', ip='127.0.0.1', LocX=0, LocY=0, Yaw=0, UdpMode=0, useGPS=False, GpsOrin=[0, 0, 0])</td></tr>
+<tr class="memdesc:af988b1ebd5bd032166adebe23944ff0d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">初始化并配置载具模型。参数的详细含义参考 <a class="el" href="md_ctrl_2md_2BatScripts.html">Bat脚本使用参考</a> <br/></td></tr>
+<tr class="separator:af988b1ebd5bd032166adebe23944ff0d inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a89209829462275f36c55e891d6bc2bd2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a89209829462275f36c55e891d6bc2bd2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a89209829462275f36c55e891d6bc2bd2">Updata3Doutput</a> (self)</td></tr>
+<tr class="memdesc:a89209829462275f36c55e891d6bc2bd2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">用于更新载具模型仿真输出，读取车辆当前的运动状态数据并更新到 out3Ddata 和 outHilData，并与地形数据进行交互。  <br/></td></tr>
+<tr class="separator:a89209829462275f36c55e891d6bc2bd2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c1ca323d818aa00f8e0d71a50b49588 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a9c1ca323d818aa00f8e0d71a50b49588"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a9c1ca323d818aa00f8e0d71a50b49588">SendUpdate3DMap</a> (self, isSetSpeed=False)</td></tr>
+<tr class="memdesc:a9c1ca323d818aa00f8e0d71a50b49588 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">用于向 RflySim3D发送命令，更新 3D 地图或设置RflySim3D仿真速度。  <br/></td></tr>
+<tr class="separator:a9c1ca323d818aa00f8e0d71a50b49588 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a71d82eaf80140510db6603915a4d6e69 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a71d82eaf80140510db6603915a4d6e69"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a71d82eaf80140510db6603915a4d6e69">get3DDataBuf</a> (self)</td></tr>
+<tr class="memdesc:a71d82eaf80140510db6603915a4d6e69 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">提取载具模型的 3D 仿真数据out3Dvect并将其打包，以便通过网络转发给RflySim3D  <br/></td></tr>
+<tr class="separator:a71d82eaf80140510db6603915a4d6e69 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac6279ccc1e882bbf82e005dae93b308c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ac6279ccc1e882bbf82e005dae93b308c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ac6279ccc1e882bbf82e005dae93b308c">Send3DData</a> (self)</td></tr>
+<tr class="memdesc:ac6279ccc1e882bbf82e005dae93b308c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">将打包的 3D 数据通过 UDP 发送到端口 20010，用于与 RflySim3D 进行通信  <br/></td></tr>
+<tr class="separator:ac6279ccc1e882bbf82e005dae93b308c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a086d3213a443d47c03513da19295fc96 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a086d3213a443d47c03513da19295fc96"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a086d3213a443d47c03513da19295fc96">SendSimData</a> (self)</td></tr>
+<tr class="memdesc:a086d3213a443d47c03513da19295fc96 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">将与 Send3DData 同样的 3D 数据发送到端口 30100，用于仿真数据的传输  <br/></td></tr>
+<tr class="separator:a086d3213a443d47c03513da19295fc96 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a23904307e9696a3ed1a0aa486351f388 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a23904307e9696a3ed1a0aa486351f388"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a23904307e9696a3ed1a0aa486351f388">SendHILData</a> (self)</td></tr>
+<tr class="memdesc:a23904307e9696a3ed1a0aa486351f388 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">发送硬件在环（HIL）仿真数据到指定的端口，通常用于与飞控系统交互  <br/></td></tr>
+<tr class="separator:a23904307e9696a3ed1a0aa486351f388 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae764137a02695d7ca5952421de62d6ea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ae764137a02695d7ca5952421de62d6ea"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ae764137a02695d7ca5952421de62d6ea">SendOutCopter</a> (self)</td></tr>
+<tr class="memdesc:ae764137a02695d7ca5952421de62d6ea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">发送仿真数据到30100端口，可用于日志记录  <br/></td></tr>
+<tr class="separator:ae764137a02695d7ca5952421de62d6ea inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8a2b734fe58ba395639b61d4cf7e0800 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a8a2b734fe58ba395639b61d4cf7e0800"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800">fillList</a> (self, data, inLen, fill=0)</td></tr>
+<tr class="memdesc:a8a2b734fe58ba395639b61d4cf7e0800 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">填充或裁剪一个列表  <br/></td></tr>
+<tr class="separator:a8a2b734fe58ba395639b61d4cf7e0800 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a82efff7d738f6b3ea1aca95b38625b05 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a82efff7d738f6b3ea1aca95b38625b05"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a82efff7d738f6b3ea1aca95b38625b05">StartAutUpdate</a> (self, UpdateFreq=30, speed=-1)</td></tr>
+<tr class="memdesc:a82efff7d738f6b3ea1aca95b38625b05 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">用于启动自动更新循环，以指定的频率更新仿真状态。  <br/></td></tr>
+<tr class="separator:a82efff7d738f6b3ea1aca95b38625b05 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1a3a3b7496651742c99d8bde6e72b138 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a1a3a3b7496651742c99d8bde6e72b138"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1a3a3b7496651742c99d8bde6e72b138">StopAutUpdate</a> (self)</td></tr>
+<tr class="memdesc:a1a3a3b7496651742c99d8bde6e72b138 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">用于停止自动更新循环  <br/></td></tr>
+<tr class="separator:a1a3a3b7496651742c99d8bde6e72b138 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea9ac8705048bee7d45d790c5c62ee10 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aea9ac8705048bee7d45d790c5c62ee10"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#aea9ac8705048bee7d45d790c5c62ee10">AutUpdateLoop</a> (self)</td></tr>
+<tr class="memdesc:aea9ac8705048bee7d45d790c5c62ee10 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">自动更新循环的核心逻辑，实现持续的仿真更新、数据发送等功能。  <br/></td></tr>
+<tr class="separator:aea9ac8705048bee7d45d790c5c62ee10 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a918957834a2d46490acd64918fbe14a5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a918957834a2d46490acd64918fbe14a5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5">StartExtCtrl</a> (self)</td></tr>
+<tr class="memdesc:a918957834a2d46490acd64918fbe14a5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。  <br/></td></tr>
+<tr class="separator:a918957834a2d46490acd64918fbe14a5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a412e702c49ea6b5e241385efeff9a0e0 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a412e702c49ea6b5e241385efeff9a0e0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a412e702c49ea6b5e241385efeff9a0e0">StopExtCtrl</a> (self)</td></tr>
+<tr class="memdesc:a412e702c49ea6b5e241385efeff9a0e0 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">停止外部控制，关闭UDP套接字并终止接收线程。  <br/></td></tr>
+<tr class="separator:a412e702c49ea6b5e241385efeff9a0e0 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1cc273310408147338bde43eeb269c89 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a1cc273310408147338bde43eeb269c89"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1cc273310408147338bde43eeb269c89">Recv20100Loop</a> (self)</td></tr>
+<tr class="memdesc:a1cc273310408147338bde43eeb269c89 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">线程的主循环，用于接收20100端口的数据并根据控制模式执行相应的控制命令。  <br/></td></tr>
+<tr class="separator:a1cc273310408147338bde43eeb269c89 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a501aea156c9735d765560b9c7d059b73 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a501aea156c9735d765560b9c7d059b73"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a501aea156c9735d765560b9c7d059b73">Recv30100Loop</a> (self)</td></tr>
+<tr class="memdesc:a501aea156c9735d765560b9c7d059b73 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">线程的主循环，用于接收30100端口的数据并根据不同的数据类型执行相应处理。  <br/></td></tr>
+<tr class="separator:a501aea156c9735d765560b9c7d059b73 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a39163dd12b722e138348a96ab05e7e45 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a39163dd12b722e138348a96ab05e7e45"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a39163dd12b722e138348a96ab05e7e45">DllDestroyModel</a> (self)</td></tr>
+<tr class="memdesc:a39163dd12b722e138348a96ab05e7e45 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">销毁当前加载的仿真模型  <br/></td></tr>
+<tr class="separator:a39163dd12b722e138348a96ab05e7e45 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e27ee7210b49d26dc16fe41bdcbc65a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a2e27ee7210b49d26dc16fe41bdcbc65a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a2e27ee7210b49d26dc16fe41bdcbc65a">DllReInitModel</a> (self)</td></tr>
+<tr class="memdesc:a2e27ee7210b49d26dc16fe41bdcbc65a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">重新初始化仿真模型。  <br/></td></tr>
+<tr class="separator:a2e27ee7210b49d26dc16fe41bdcbc65a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ae2d332680d368f16f43aefa2c82575 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a9ae2d332680d368f16f43aefa2c82575"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a9ae2d332680d368f16f43aefa2c82575">DllInputSILs</a> (self, in_ints=[0] *8, in_floats=[0] *20)</td></tr>
+<tr class="memdesc:a9ae2d332680d368f16f43aefa2c82575 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">将综合模型系统仿真输入数据传递给 DLL，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#sendSILIntFloat">sendSILIntFloat</a> <br/>
+<br/></td></tr>
+<tr class="separator:a9ae2d332680d368f16f43aefa2c82575 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adce45b596770d35800308e9e051c464c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_adce45b596770d35800308e9e051c464c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#adce45b596770d35800308e9e051c464c">DllInputColls</a> (self, in_floats_collision=[0] *20)</td></tr>
+<tr class="memdesc:adce45b596770d35800308e9e051c464c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">将碰撞数据传递给 DLL，用于仿真中处理碰撞情况，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#sendColl20d">sendColl20d</a> <br/>
+<br/></td></tr>
+<tr class="separator:adce45b596770d35800308e9e051c464c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abe7c5e1fbc661f6a864eb5d3bd06aa26 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_abe7c5e1fbc661f6a864eb5d3bd06aa26"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#abe7c5e1fbc661f6a864eb5d3bd06aa26">DllTerrainIn15d</a> (self, terrain15d=[0] *15)</td></tr>
+<tr class="memdesc:abe7c5e1fbc661f6a864eb5d3bd06aa26 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">输入三维场景的地形高度数据给DLL，用于仿真环境的地形建模，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#sendTerrIn15d">sendTerrIn15d</a> <br/></td></tr>
+<tr class="separator:abe7c5e1fbc661f6a864eb5d3bd06aa26 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa34235b3667f543cecb46a18c109e7b5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aa34235b3667f543cecb46a18c109e7b5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#aa34235b3667f543cecb46a18c109e7b5">DllInitGpsPos</a> (self, gps=[0] *3)</td></tr>
+<tr class="memdesc:aa34235b3667f543cecb46a18c109e7b5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">初始化仿真的 GPS 坐标原点，用于地理位置相关的仿真，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#sendReGPSOrin">sendReGPSOrin</a> <br/>
+<br/></td></tr>
+<tr class="separator:aa34235b3667f543cecb46a18c109e7b5 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1fd6c1fe5e1f9e1b51017dd4db06e10c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a1fd6c1fe5e1f9e1b51017dd4db06e10c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1fd6c1fe5e1f9e1b51017dd4db06e10c">DllInitPosAngState</a> (self, init_pos_offset=[0, 0, 0], init_ang_offset=[0, 0, 0])</td></tr>
+<tr class="memdesc:a1fd6c1fe5e1f9e1b51017dd4db06e10c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">初始化位置和姿态状态，用于设置仿真对象的初始位置信息和朝向，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#sendReSimXyzRPYaw">sendReSimXyzRPYaw</a> <br/></td></tr>
+<tr class="separator:a1fd6c1fe5e1f9e1b51017dd4db06e10c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67ed5ac48428dfaf4ba36a2b8359e3f2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a67ed5ac48428dfaf4ba36a2b8359e3f2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a67ed5ac48428dfaf4ba36a2b8359e3f2">DllInputDoubCtrls</a> (self, in_doub_ctrls=[0] *28)</td></tr>
+<tr class="memdesc:a67ed5ac48428dfaf4ba36a2b8359e3f2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">综合模型外部控制指令输入接口，用于传递 28 维的双精度控制指令数据，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#sendInDoubCtrls">sendInDoubCtrls</a> <br/></td></tr>
+<tr class="separator:a67ed5ac48428dfaf4ba36a2b8359e3f2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21fefe0b9ef8e85b7970cf330efaeb3a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a21fefe0b9ef8e85b7970cf330efaeb3a"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a21fefe0b9ef8e85b7970cf330efaeb3a">DllinSIL28d</a> (self, in_doub_ctrls=[0] *28)</td></tr>
+<tr class="memdesc:a21fefe0b9ef8e85b7970cf330efaeb3a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">综合模型外部控制指令输入接口，用于传递 28 维的双精度控制指令数据，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#sendInDoubCtrls">sendInDoubCtrls</a> <br/></td></tr>
+<tr class="separator:a21fefe0b9ef8e85b7970cf330efaeb3a inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abfa6f24adfd5e9515425397c67affe2c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_abfa6f24adfd5e9515425397c67affe2c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#abfa6f24adfd5e9515425397c67affe2c">DllInCtrlExt</a> (self, in_ctrl_ext=[0] *140)</td></tr>
+<tr class="memdesc:abfa6f24adfd5e9515425397c67affe2c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">扩展控制数据，用于支持更高级的控制仿真功能，参见 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#sendInCtrlExtAll">sendInCtrlExtAll</a> <br/></td></tr>
+<tr class="separator:abfa6f24adfd5e9515425397c67affe2c inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac5c0eddae44179f345f795c98aa6eef6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ac5c0eddae44179f345f795c98aa6eef6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ac5c0eddae44179f345f795c98aa6eef6">DllInFromUE</a> (self, in_from_ue=[0] *32)</td></tr>
+<tr class="memdesc:ac5c0eddae44179f345f795c98aa6eef6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">从RflySim3D输入自定义数据到 DLL，用于与外部仿真环境的集成。  <br/></td></tr>
+<tr class="separator:ac5c0eddae44179f345f795c98aa6eef6 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a566e7c2f4fccaea47fd98cc903d2c65f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a566e7c2f4fccaea47fd98cc903d2c65f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a566e7c2f4fccaea47fd98cc903d2c65f">DllInputColls</a> (self, inCll=[0] *20)</td></tr>
+<tr class="memdesc:a566e7c2f4fccaea47fd98cc903d2c65f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">传递 20 维float数组的碰撞数据的接口，用于处理仿真对象之间的碰撞检测。  <br/></td></tr>
+<tr class="separator:a566e7c2f4fccaea47fd98cc903d2c65f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a31f80ac5e3f8b2d596afc4fb58b3e930 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a31f80ac5e3f8b2d596afc4fb58b3e930"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a31f80ac5e3f8b2d596afc4fb58b3e930">DllGetStep0</a> (self)</td></tr>
+<tr class="memdesc:a31f80ac5e3f8b2d596afc4fb58b3e930 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">获取仿真的步长，用于确定仿真时间步的大小。如果 DLL 中没有对应的函数，默认返回 0.001  <br/></td></tr>
+<tr class="separator:a31f80ac5e3f8b2d596afc4fb58b3e930 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c8d69e6f42dccce090c503b813481d2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a6c8d69e6f42dccce090c503b813481d2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a6c8d69e6f42dccce090c503b813481d2">Dllstep</a> (self)</td></tr>
+<tr class="memdesc:a6c8d69e6f42dccce090c503b813481d2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">执行一次仿真步骤。这是对 DLL 中仿真时间推进的基本调用。  <br/></td></tr>
+<tr class="separator:a6c8d69e6f42dccce090c503b813481d2 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad11f7333488004e462347852a1865330 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ad11f7333488004e462347852a1865330"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ad11f7333488004e462347852a1865330">ModelUpdate</a> (self, step_time)</td></tr>
+<tr class="memdesc:ad11f7333488004e462347852a1865330 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">手动更新仿真状态的接口  <br/></td></tr>
+<tr class="separator:ad11f7333488004e462347852a1865330 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac6d287b829efdea8734536b079dab144 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ac6d287b829efdea8734536b079dab144"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ac6d287b829efdea8734536b079dab144">DlloutVehileInfo60d</a> (self)</td></tr>
+<tr class="memdesc:ac6d287b829efdea8734536b079dab144 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">从 DLL 获取 60 维的载具三维信息数据。包括各种飞行器或车辆的状态数据。  <br/></td></tr>
+<tr class="separator:ac6d287b829efdea8734536b079dab144 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2567d8e03aa3ae8d3f577e61dbb1d8c4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a2567d8e03aa3ae8d3f577e61dbb1d8c4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a2567d8e03aa3ae8d3f577e61dbb1d8c4">DllOutCopterData</a> (self)</td></tr>
+<tr class="memdesc:a2567d8e03aa3ae8d3f577e61dbb1d8c4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">从 DLL 获取 32 维数据，包括飞行器的传感器读数、状态信息等  <br/></td></tr>
+<tr class="separator:a2567d8e03aa3ae8d3f577e61dbb1d8c4 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2649cd24ce0ba2ab68984a1288fdc006 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a2649cd24ce0ba2ab68984a1288fdc006"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a2649cd24ce0ba2ab68984a1288fdc006">SendPosNED</a> (self, x=0, y=0, z=0, yaw=0)</td></tr>
+<tr class="memdesc:a2649cd24ce0ba2ab68984a1288fdc006 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">发送NED（北东地）地球参考系下的位置控制命令。  <br/></td></tr>
+<tr class="separator:a2649cd24ce0ba2ab68984a1288fdc006 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5e1b0bdcb56abfec7750ac436fce54ac inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a5e1b0bdcb56abfec7750ac436fce54ac"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>SendPosLocal</b> (self, x=0, y=0, z=0, yaw=0)</td></tr>
+<tr class="separator:a5e1b0bdcb56abfec7750ac436fce54ac inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1f2d620b2302df0f54bc44b1e7407f8f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a1f2d620b2302df0f54bc44b1e7407f8f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a1f2d620b2302df0f54bc44b1e7407f8f">SendVelNED</a> (self, vx=0, vy=0, vz=0, yawRate=0)</td></tr>
+<tr class="memdesc:a1f2d620b2302df0f54bc44b1e7407f8f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">发送NED（北东地）地球参考系下的速度及偏航控制命令。  <br/></td></tr>
+<tr class="separator:a1f2d620b2302df0f54bc44b1e7407f8f inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9b938fdbb107126817a048f796eab491 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a9b938fdbb107126817a048f796eab491"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a9b938fdbb107126817a048f796eab491">SendVelFRD</a> (self, vx=0, vy=0, vz=0, yawRate=0)</td></tr>
+<tr class="memdesc:a9b938fdbb107126817a048f796eab491 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">发送FRD(前右下)机体参考系下的速度控制命令。  <br/></td></tr>
+<tr class="separator:a9b938fdbb107126817a048f796eab491 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8e4e155ee6a561981d258fff5fdabae8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a8e4e155ee6a561981d258fff5fdabae8"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8e4e155ee6a561981d258fff5fdabae8">SendVelNEDNoYaw</a> (self, northvel=0, eastvel=0, downvel=0)</td></tr>
+<tr class="memdesc:a8e4e155ee6a561981d258fff5fdabae8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="mdescLeft"> </td><td class="mdescRight">发送NED（北东地）地球参考系下的速度及偏航控制命令。  <br/></td></tr>
+<tr class="separator:a8e4e155ee6a561981d258fff5fdabae8 inherit pub_methods_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad')"><img alt="-" src="closed.png"/> Public 属性 继承自 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html">ModelLoad</a></td></tr>
+<tr class="memitem:ae39156fb07ed42ab04b44381baa97ac7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ae39156fb07ed42ab04b44381baa97ac7"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_socket</b></td></tr>
+<tr class="separator:ae39156fb07ed42ab04b44381baa97ac7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad6b9ebdacbfb95fbf140965d10d9027a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ad6b9ebdacbfb95fbf140965d10d9027a"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isSendExtData</b></td></tr>
+<tr class="separator:ad6b9ebdacbfb95fbf140965d10d9027a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32cae479b42909b0f55eab23c215e0b9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a32cae479b42909b0f55eab23c215e0b9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>out3Ddata</b></td></tr>
+<tr class="separator:a32cae479b42909b0f55eab23c215e0b9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5e26f29df8ce9be5727f950391cd3b42 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a5e26f29df8ce9be5727f950391cd3b42"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>out3Dvect</b></td></tr>
+<tr class="separator:a5e26f29df8ce9be5727f950391cd3b42 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed384cd0e164d86470bb017bcbd509d4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aed384cd0e164d86470bb017bcbd509d4"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>outHilData</b></td></tr>
+<tr class="separator:aed384cd0e164d86470bb017bcbd509d4 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace9c673bad32d04833a816b4dde196f6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ace9c673bad32d04833a816b4dde196f6"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>outCopterVect</b></td></tr>
+<tr class="separator:ace9c673bad32d04833a816b4dde196f6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abee776dd84e668bb64c349f50ae843f7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_abee776dd84e668bb64c349f50ae843f7"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>simSpeed</b></td></tr>
+<tr class="separator:abee776dd84e668bb64c349f50ae843f7 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a09c14c43f642f8bfbf6178862ddb877e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a09c14c43f642f8bfbf6178862ddb877e"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>dll</b></td></tr>
+<tr class="separator:a09c14c43f642f8bfbf6178862ddb877e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21ef6e552cab3f9b25a3e1dfd96b111d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a21ef6e552cab3f9b25a3e1dfd96b111d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isBroadCast</b></td></tr>
+<tr class="separator:a21ef6e552cab3f9b25a3e1dfd96b111d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a352e19d17c91854480225e76c4a4b1b2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a352e19d17c91854480225e76c4a4b1b2"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isAutoUpdate</b></td></tr>
+<tr class="separator:a352e19d17c91854480225e76c4a4b1b2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>CopterID</b></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aebaa85c67716daf5b2f014488b4b72ee inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aebaa85c67716daf5b2f014488b4b72ee"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>ClassID</b></td></tr>
+<tr class="separator:aebaa85c67716daf5b2f014488b4b72ee inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb616dbfe589e074e86f60597598bbff inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aeb616dbfe589e074e86f60597598bbff"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>MapName</b></td></tr>
+<tr class="separator:aeb616dbfe589e074e86f60597598bbff inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a06d01e76ba2f48de75d5b0a5e48a343d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a06d01e76ba2f48de75d5b0a5e48a343d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>LocX</b></td></tr>
+<tr class="separator:a06d01e76ba2f48de75d5b0a5e48a343d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aba8bdb00b05caf711e1d6a6d0d26b3f5 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aba8bdb00b05caf711e1d6a6d0d26b3f5"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>LocY</b></td></tr>
+<tr class="separator:aba8bdb00b05caf711e1d6a6d0d26b3f5 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f5462ae9de63c0eebe2cc9f99426c59 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a5f5462ae9de63c0eebe2cc9f99426c59"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>Yaw</b></td></tr>
+<tr class="separator:a5f5462ae9de63c0eebe2cc9f99426c59 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a42bdfbec37e0e271ceb464ff21e7b492 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a42bdfbec37e0e271ceb464ff21e7b492"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>UdpMode</b></td></tr>
+<tr class="separator:a42bdfbec37e0e271ceb464ff21e7b492 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b7bd998bb22d23044e33342719f09cc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a7b7bd998bb22d23044e33342719f09cc"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>useGPS</b></td></tr>
+<tr class="separator:a7b7bd998bb22d23044e33342719f09cc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad3ca2264befa29234ff36ebf220283bc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ad3ca2264befa29234ff36ebf220283bc"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>GpsOrin</b></td></tr>
+<tr class="separator:ad3ca2264befa29234ff36ebf220283bc inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9ec9dda576db2a36c42c1c3af155d07c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a9ec9dda576db2a36c42c1c3af155d07c"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
+<tr class="separator:a9ec9dda576db2a36c42c1c3af155d07c inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af1c4b55811a3f344abda826ee32b8286 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_af1c4b55811a3f344abda826ee32b8286"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>ue</b></td></tr>
+<tr class="separator:af1c4b55811a3f344abda826ee32b8286 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac0870ed1147c3a0ba959602774869d6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_aac0870ed1147c3a0ba959602774869d6"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>geo</b></td></tr>
+<tr class="separator:aac0870ed1147c3a0ba959602774869d6 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>ip</b></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8fb0f45ee0195c7422a49e6a8d72369 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_af8fb0f45ee0195c7422a49e6a8d72369"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>port</b></td></tr>
+<tr class="separator:af8fb0f45ee0195c7422a49e6a8d72369 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7edce898691c46189723718561e5998e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a7edce898691c46189723718561e5998e"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>port2</b></td></tr>
+<tr class="separator:a7edce898691c46189723718561e5998e inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb0c8a0d325a64fe51716c8dcbb237f3 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_acb0c8a0d325a64fe51716c8dcbb237f3"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>InitPos</b></td></tr>
+<tr class="separator:acb0c8a0d325a64fe51716c8dcbb237f3 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a98ee1dd2e785d8a692bfced9018c3a42 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a98ee1dd2e785d8a692bfced9018c3a42"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>InitAng</b></td></tr>
+<tr class="separator:a98ee1dd2e785d8a692bfced9018c3a42 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adbd0ae31c5964ec4646d8e406fc8dfd2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_adbd0ae31c5964ec4646d8e406fc8dfd2"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>GpsOrinInit</b></td></tr>
+<tr class="separator:adbd0ae31c5964ec4646d8e406fc8dfd2 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a469994e78f66a44815c015b7f4b8b2f8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a469994e78f66a44815c015b7f4b8b2f8"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>t1</b></td></tr>
+<tr class="separator:a469994e78f66a44815c015b7f4b8b2f8 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a29a4d93b7087ff1236f0229c3e8bc124 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a29a4d93b7087ff1236f0229c3e8bc124"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>Interval</b></td></tr>
+<tr class="separator:a29a4d93b7087ff1236f0229c3e8bc124 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af283e47b35becdb901d0dcb3109f4c4a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_af283e47b35becdb901d0dcb3109f4c4a"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>nextTime</b></td></tr>
+<tr class="separator:af283e47b35becdb901d0dcb3109f4c4a inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae2617d7a20ec69c0f1c7d23f007cbd20 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ae2617d7a20ec69c0f1c7d23f007cbd20"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>lastTime</b></td></tr>
+<tr class="separator:ae2617d7a20ec69c0f1c7d23f007cbd20 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a64691d33e7de2a9ccd7e625e7a182fa9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a64691d33e7de2a9ccd7e625e7a182fa9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_20100</b></td></tr>
+<tr class="separator:a64691d33e7de2a9ccd7e625e7a182fa9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af1c9f9af8f48f4c2303b8f3469bddaef inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_af1c9f9af8f48f4c2303b8f3469bddaef"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isRec20100</b></td></tr>
+<tr class="separator:af1c9f9af8f48f4c2303b8f3469bddaef inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a24aeadb733f27244ec14e4cba82eeee9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a24aeadb733f27244ec14e4cba82eeee9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>t2</b></td></tr>
+<tr class="separator:a24aeadb733f27244ec14e4cba82eeee9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5aef0f0b83a0211adf99c9c3776fec7d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a5aef0f0b83a0211adf99c9c3776fec7d"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>udp_30100</b></td></tr>
+<tr class="separator:a5aef0f0b83a0211adf99c9c3776fec7d inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5272c14e68c6fd6a9186b6f3831cb694 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_a5272c14e68c6fd6a9186b6f3831cb694"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>isRec30100</b></td></tr>
+<tr class="separator:a5272c14e68c6fd6a9186b6f3831cb694 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad63ffee70a630b49aa4e5677ad59c3a9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad" id="r_ad63ffee70a630b49aa4e5677ad59c3a9"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>t3</b></td></tr>
+<tr class="separator:ad63ffee70a630b49aa4e5677ad59c3a9 inherit pub_attribs_classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a6f61f124614ca49fb73193edfa1fc765" name="a6f61f124614ca49fb73193edfa1fc765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f61f124614ca49fb73193edfa1fc765">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>dll_name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ClassID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'Grasslands'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>MapName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>LocX</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>LocY</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>Yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>UdpMode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>useGPS</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是类的构造函数，用于初始化 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html" title="DLL文件外部加载接口类">ModelLoad</a> 类的实例。参数的详细含义参考 <a class="el" href="md_ctrl_2md_2BatScripts.html">Bat脚本使用参考</a> </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">dll_name</td><td>要加载的 DLL 文件的名称。 </td></tr>
+<tr><td class="paramname">CopterID</td><td>飞机ID </td></tr>
+<tr><td class="paramname">ClassID</td><td>载具三维样式 </td></tr>
+<tr><td class="paramname">MapName</td><td>仿真三维地图名称 </td></tr>
+<tr><td class="paramname">ip</td><td>ip地址，默认为本机 </td></tr>
+<tr><td class="paramname">LocX</td><td>载具初始X位置，单位m </td></tr>
+<tr><td class="paramname">LocY</td><td>载具初始Y位置，单位m </td></tr>
+<tr><td class="paramname">Yaw</td><td>载具初始yaw角度，设置地图中的初始航向角，单位是度数（degree）。航向角是指在水平面上，相对于北方的方向角。 </td></tr>
+<tr><td class="paramname">UdpMode</td><td>选择不同的通信模式（默认为Full） </td></tr>
+<tr><td class="paramname">useGPS</td><td>是否启用GPS模式(默认模式选择直角坐标系) </td></tr>
+<tr><td class="paramname">GpsOrin</td><td>GPS原点坐标，三维数列依次为经度、纬度、海拔高度 <br/>
+</td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+<p>重载 <a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#acd4dae14df46a8213f9e9331fbce7549">ModelLoad</a> .</p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="62" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll_a6f61f124614ca49fb73193edfa1fc765_cgraph.svg" width="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="62" scrolling="no" src="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll_a6f61f124614ca49fb73193edfa1fc765_icgraph.svg" width="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="DllSimCtrlAPI_8py.html">DllSimCtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

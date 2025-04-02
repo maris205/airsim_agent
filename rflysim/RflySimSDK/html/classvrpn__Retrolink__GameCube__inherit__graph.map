@@ -1,0 +1,19 @@
+<map id="vrpn_Retrolink_GameCube" name="vrpn_Retrolink_GameCube">
+<area shape="rect" id="Node000001" title=" " alt="" coords="89,304,267,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Retrolink.html" title=" " alt="" coords="42,155,147,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,196,109,225,122,255,142,281,164,301,160,305,138,284,117,257,104,227,96,198"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="154,80,272,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,117,116,156,114,152,178,113"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="132,229,225,256"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="209,122,184,229,179,228,204,121"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="251,155,342,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="241,115,284,152,281,156,237,119"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="134,5,292,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,48,216,80,210,80,210,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="5,80,130,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="80,120,92,153,87,155,75,122"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="181,272,181,304,176,304,176,272"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="249,229,376,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="278,266,203,306,201,301,275,261"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="306,196,313,228,307,230,300,197"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="DllGetStep0" name="DllGetStep0">
+<area shape="rect" id="Node000001" title="获取仿真的步长，用于确定仿真时间步的大小。如果 DLL 中没有对应的函数，默认返回 0.001" alt="" coords="5,29,98,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="34,30,32,20,33,11,40,5,52,3,63,5,70,12,66,15,61,10,51,8,43,10,38,14,37,20,39,28"/>
+</map>

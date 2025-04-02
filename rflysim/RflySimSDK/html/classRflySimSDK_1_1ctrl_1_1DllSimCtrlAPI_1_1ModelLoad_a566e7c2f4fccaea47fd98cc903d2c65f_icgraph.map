@@ -1,0 +1,7 @@
+<map id="DllInputColls" name="DllInputColls">
+<area shape="rect" id="Node000001" title="传递 20 维float数组的碰撞数据的接口，用于处理仿真对象之间的碰撞检测。" alt="" coords="307,5,403,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a501aea156c9735d765560b9c7d059b73" title="线程的主循环，用于接收30100端口的数据并根据不同的数据类型执行相应处理。" alt="" coords="144,5,259,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,21,259,21,259,16,291,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5" title="用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。" alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,21,96,21,96,16,128,16"/>
+</map>

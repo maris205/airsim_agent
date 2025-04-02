@@ -1,0 +1,9 @@
+<map id="getPX4Com" name="getPX4Com">
+<area shape="rect" id="Node000001" title="获取主机上的可用串口。" alt="" coords="499,5,592,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#ad0da89f7796ae63b8060b7feafdfff99" title="等待用户插入新的飞控设备" alt="" coords="319,5,451,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,21,452,21,452,16,484,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a25ae7216c8acdfaabd4792fa13238653" title="监控串口状态，检测新设备连接。" alt="" coords="143,5,271,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,21,271,21,271,16,303,16"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a0a046fe9810c33cc4ddfa6c971be7624" title="设置飞控的系统 ID 和 IP 地址，并进行参数配置。" alt="" coords="5,5,95,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="127,21,95,21,95,16,127,16"/>
+</map>

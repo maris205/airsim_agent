@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: RflyReqObjData(int opFlag, FString objName, FString colorStr)（指定回传数据）</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">RflyReqObjData(int opFlag, FString objName, FString colorStr)（指定回传数据）</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md269"></a>请求 RflySim3D 场景中的物体数据。该函数类似<a href="RflyReqVehicleData.html">RflyReqVehicleData函数</a>，它也会回传三维场景中物体的一些数据。但它一次只回传一个指定目标的数据。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">参数   </th><th class="markdownTableHeadNone">解释    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">opFlag   </td><td class="markdownTableBodyNone">操作标志，用于指定返回的数据类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">objName   </td><td class="markdownTableBodyNone">物体名称或相机 ID，用于指定要获取数据的目标物体或相机。对于相机数据，可以指定相机的 ID。对于物体数据，可以指定物体的名称    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">colorStr   </td><td class="markdownTableBodyNone">颜色字符串，可选参数，用于指定数据的颜色   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">opFlag   </th><th class="markdownTableHeadNone">说明    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">返回指定 ID 的相机（Camera）数据。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">返回指定 ID 的飞机（Copter）数据。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">返回指定名称的物体（Object）数据。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">20   </td><td class="markdownTableBodyNone">清除所有相机。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">21   </td><td class="markdownTableBodyNone">清除所有飞机。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">22   </td><td class="markdownTableBodyNone">清除所有物体。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">23   </td><td class="markdownTableBodyNone">清除所有飞机和物体。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">24   </td><td class="markdownTableBodyNone">清除所有相机、物体和飞机。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">删除一个相机。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone">删除一个飞机。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">12   </td><td class="markdownTableBodyNone">删除一个物体。   </td></tr>
+</table>
+<p>当 opFlag 为 0 时，该函数会返回指定 ID（objName=seqID）的用于捕获图像的相机数据。相机数据结构如下所示： <br/>
+<code>struct CameraData {</code> <br/>
+<code>int checksum = 0; // 校验和，常数 1234567891</code> <br/>
+<code>int SeqID; // 相机序号</code> <br/>
+<code>int TypeID; // 相机类型</code> <br/>
+<code>int DataHeight; // 图像像素高度</code> <br/>
+<code>int DataWidth; // 图像像素宽度</code> <br/>
+<code>float CameraFOV; // 相机视场角</code> <br/>
+<code>float PosUE[3]; // 相机的中心位置</code> <br/>
+<code>float angEuler[3]; // 相机的欧拉角</code> <br/>
+<code>double timestmp; // 时间戳</code> <br/>
+<code>};</code> <br/>
+</p>
+<p>当 opFlag 为 1 时，该函数会返回指定 ID 的飞机（objName=CopterID）的数据。飞机数据结构如下所示 <br/>
+<code>struct CoptReqData {</code> <br/>
+<code>int checksum = 0; // 校验和，常数 1234567891</code> <br/>
+<code>int CopterID; // 飞机 ID</code> <br/>
+<code>float PosUE[3]; // 飞机的中心位置（人为三维建模时指定，姿态坐标轴，不一定在几何中心）</code> <br/>
+<code>float angEuler[3]; // 飞机的欧拉角</code> <br/>
+<code>float boxOrigin[3]; // 物体几何中心坐标</code> <br/>
+<code>float BoxExtent[3]; // 物体外框长宽高的一半</code> <br/>
+<code>double timestmp; // 时间戳</code> <br/>
+<code>};</code> <br/>
+</p>
+<p>当 opFlag 为 2 时，该函数会返回指定 ID（objName= seqID/ ObjName[32]）的物体的数据。物体数据结构如下所示： <br/>
+<code>struct ObjReqData {</code> <br/>
+<code>int checksum = 0; // 校验和，常数 1234567891</code> <br/>
+<code>int seqID = 0;</code> <br/>
+<code>float PosUE[3]; // 物体的中心位置（人为三维建模时指定，姿态坐标轴，不一定在几何中心）</code> <br/>
+<code>float angEuler[3]; // 物体的欧拉角</code> <br/>
+<code>float boxOrigin[3]; // 物体几何中心坐标</code> <br/>
+<code>float BoxExtent[3]; // 物体外框长宽高的一半</code> <br/>
+<code>double timestmp; // 时间戳</code> <br/>
+<code>char ObjName[32] = { 0 }; // 碰物体的名字</code> <br/>
+<code>};</code> <br/>
+</p>
+<p><b>操作示例</b> <br/>
+ 当opFlag==0时，它可以根据请求创建一个相机用于捕获图像，而相机的数据可以通过该函数来获得： <br/>
+<code>RflyReqObjData 0 0 FFFFFF</code> <br/>
+ 当opFlag==1时，打开RflySim3D，鼠标双击地面+按下字母O+数字3，创建一个ID飞机（ID默认为1000），输入命令 <br/>
+<code>RflyReqObjData 1 1000 FFFFFF</code> <br/>
+ 当opFlag==2时，在RflySim3D中，并不是所有物体都是Copter类的对象（例如地形、障碍、建筑等），而此接口可以用于获取这些非Copter的物体的信息。打开RflySim3D，双击地面，我们可以看到鼠标击中地面后，屏幕上输出了一些信息，其中第一个单词表示击中物体的名字，也就是说“地形的名字为Landscape_1” <br/>
+</p>
+<p>然后我们使用命令 <br/>
+<code>RflyReqObjData 2 Landscape_1 FFFFFF</code> <br/>
+ 表示我们想知道名为“Landscape_1”的对象的信息。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

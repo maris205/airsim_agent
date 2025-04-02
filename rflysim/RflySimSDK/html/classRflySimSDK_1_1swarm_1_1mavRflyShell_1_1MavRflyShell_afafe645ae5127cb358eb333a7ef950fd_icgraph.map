@@ -1,0 +1,5 @@
+<map id="validate_ip" name="validate_ip">
+<area shape="rect" id="Node000001" title="检查 IP 地址是否符合标准格式。" alt="" coords="143,5,226,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a0a046fe9810c33cc4ddfa6c971be7624" title="设置飞控的系统 ID 和 IP 地址，并进行参数配置。" alt="" coords="5,5,95,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,21,95,21,95,16,127,16"/>
+</map>

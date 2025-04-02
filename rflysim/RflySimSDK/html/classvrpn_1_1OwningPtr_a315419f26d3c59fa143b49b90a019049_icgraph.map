@@ -1,0 +1,9 @@
+<map id="valid" name="valid">
+<area shape="rect" id="Node000001" title="Checks pointer validity" alt="" coords="134,56,182,83"/>
+<area shape="rect" id="Node000002" href="$classvrpn_1_1OwningPtr.html#a61efd4196a96540ee018fee8791f3f10" title="Redundant way of checking pointer validity" alt="" coords="9,5,82,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,55,76,35,78,30,121,50"/>
+<area shape="rect" id="Node000003" href="$classvrpn_1_1OwningPtr.html#a6ff1c9ec7b3d68698c7ea414e4ed0edf" title="Smart pointer operator" alt="" coords="9,56,82,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,72,83,72,83,67,118,67"/>
+<area shape="rect" id="Node000004" href="$classvrpn_1_1OwningPtr.html#aef4e7d4e0fa56e9f7509c555f73d24d2" title="Smart pointer operator overload" alt="" coords="5,107,86,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,89,78,109,76,104,118,84"/>
+</map>

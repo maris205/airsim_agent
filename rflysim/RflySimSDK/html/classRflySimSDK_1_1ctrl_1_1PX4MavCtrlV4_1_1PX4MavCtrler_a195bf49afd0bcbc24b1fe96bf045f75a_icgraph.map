@@ -1,0 +1,5 @@
+<map id="SendAttPX4" name="SendAttPX4">
+<area shape="rect" id="Node000001" title="前右下坐标系以目标姿态控制飞机" alt="" coords="158,5,251,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad7bbe8d48aa560565aa63b39edd37e77" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,21,110,21,110,16,142,16"/>
+</map>

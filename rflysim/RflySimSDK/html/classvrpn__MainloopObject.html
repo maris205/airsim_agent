@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_MainloopObject类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-static-methods">静态 Public 成员函数</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="classvrpn__MainloopObject-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_MainloopObject类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<p><code>#include &lt;<a class="el" href="vrpn__MainloopObject_8h_source.html">vrpn_MainloopObject.h</a>&gt;</code></p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_MainloopObject 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="187" scrolling="no" src="classvrpn__MainloopObject__inherit__graph.svg" width="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__MainloopObject_1_1CannotWrapNullPointerIntoMainloopObject.html">CannotWrapNullPointerIntoMainloopObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">Exception thrown when trying to wrap a NULL pointer.  <a href="structvrpn__MainloopObject_1_1CannotWrapNullPointerIntoMainloopObject.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3e55aab687202295661c365ecbf838c5" id="r_a3e55aab687202295661c365ecbf838c5"><td align="right" class="memItemLeft" valign="top">virtual </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e55aab687202295661c365ecbf838c5">~vrpn_MainloopObject</a> ()</td></tr>
+<tr class="memdesc:a3e55aab687202295661c365ecbf838c5"><td class="mdescLeft"> </td><td class="mdescRight">Destructor  <br/></td></tr>
+<tr class="separator:a3e55aab687202295661c365ecbf838c5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3fff12fa6a7375d280cd6e3ee9db20cc" id="r_a3fff12fa6a7375d280cd6e3ee9db20cc"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fff12fa6a7375d280cd6e3ee9db20cc">mainloop</a> ()=0</td></tr>
+<tr class="memdesc:a3fff12fa6a7375d280cd6e3ee9db20cc"><td class="mdescLeft"> </td><td class="mdescRight">The mainloop function: the primary thing we look for in a VRPN object  <br/></td></tr>
+<tr class="separator:a3fff12fa6a7375d280cd6e3ee9db20cc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af5980672ee120f8bfd681e24d069b027" id="r_af5980672ee120f8bfd681e24d069b027"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#af5980672ee120f8bfd681e24d069b027">broken</a> ()=0</td></tr>
+<tr class="separator:af5980672ee120f8bfd681e24d069b027"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a696606b8e180f583cae6c4dd08c306f0" id="r_a696606b8e180f583cae6c4dd08c306f0"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a696606b8e180f583cae6c4dd08c306f0"><td align="right" class="memTemplItemLeft" valign="top">static <a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> * </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a696606b8e180f583cae6c4dd08c306f0">wrap</a> (T o)</td></tr>
+<tr class="memdesc:a696606b8e180f583cae6c4dd08c306f0"><td class="mdescLeft"> </td><td class="mdescRight">Templated wrapping function  <br/></td></tr>
+<tr class="separator:a696606b8e180f583cae6c4dd08c306f0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a999dd8aa9d53ea329a86adc0e0f0b1be" id="r_a999dd8aa9d53ea329a86adc0e0f0b1be"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a999dd8aa9d53ea329a86adc0e0f0b1be"><td align="right" class="memTemplItemLeft" valign="top">static <a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> * </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a999dd8aa9d53ea329a86adc0e0f0b1be">wrap</a> (T o, bool owner)</td></tr>
+<tr class="separator:a999dd8aa9d53ea329a86adc0e0f0b1be"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a1d58295e94dbe7ee3623d7b8acc624a8" id="r_a1d58295e94dbe7ee3623d7b8acc624a8"><td align="right" class="memItemLeft" valign="top">virtual void * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d58295e94dbe7ee3623d7b8acc624a8">_returnContained</a> () const =0</td></tr>
+<tr class="separator:a1d58295e94dbe7ee3623d7b8acc624a8"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Comparison operators</div></td></tr>
+<tr class="memitem:aeedc04d4545f5f092c60e2ff68447c0c" id="r_aeedc04d4545f5f092c60e2ff68447c0c"><td align="right" class="memItemLeft" valign="top"><a id="aeedc04d4545f5f092c60e2ff68447c0c" name="aeedc04d4545f5f092c60e2ff68447c0c"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> const &amp;lhs, <a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> const &amp;rhs)</td></tr>
+<tr class="separator:aeedc04d4545f5f092c60e2ff68447c0c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac1e3413ae3ea145306dc5d369e2f12be" id="r_ac1e3413ae3ea145306dc5d369e2f12be"><td align="right" class="memItemLeft" valign="top"><a id="ac1e3413ae3ea145306dc5d369e2f12be" name="ac1e3413ae3ea145306dc5d369e2f12be"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> const &amp;lhs, <a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> const &amp;rhs)</td></tr>
+<tr class="separator:ac1e3413ae3ea145306dc5d369e2f12be"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>An interface for all VRPN objects that have a "mainloop" method. Not instantiated directly: use <a class="el" href="#a696606b8e180f583cae6c4dd08c306f0" title="Templated wrapping function">vrpn_MainloopObject::wrap()</a> to create one </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3e55aab687202295661c365ecbf838c5" name="a3e55aab687202295661c365ecbf838c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e55aab687202295661c365ecbf838c5">◆ </a></span>~vrpn_MainloopObject()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual ~<a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1d58295e94dbe7ee3623d7b8acc624a8" name="a1d58295e94dbe7ee3623d7b8acc624a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d58295e94dbe7ee3623d7b8acc624a8">◆ </a></span>_returnContained()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void * _returnContained </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Internal function to return a typeless pointer of the contained object, for comparison purposes. </p>
+<p>在 <a class="el" href="classdetail_1_1TypedMainloopObject_3_01T_01_5_01_4.html#aba122114d50f2c0f722842848831cbe7">TypedMainloopObject&lt; T * &gt;</a>, <a class="el" href="classdetail_1_1TypedMainloopObject_3_01vrpn__Connection_01_5_01_4.html#aba122114d50f2c0f722842848831cbe7">TypedMainloopObject&lt; vrpn_Connection * &gt;</a> , 以及 <a class="el" href="classdetail_1_1TypedMainloopObject_3_01vrpn__ConnectionPtr_01_4.html#aba122114d50f2c0f722842848831cbe7">TypedMainloopObject&lt; vrpn_ConnectionPtr &gt;</a> 内被实现.</p>
+</div>
+</div>
+<a id="af5980672ee120f8bfd681e24d069b027" name="af5980672ee120f8bfd681e24d069b027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5980672ee120f8bfd681e24d069b027">◆ </a></span>broken()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual bool broken </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Checks the connectionPtr() for the VRPN object to make sure it is not NULL. </p>
+<p>在 <a class="el" href="classdetail_1_1TypedMainloopObject_3_01T_01_5_01_4.html#a5e1f6922cf12f9c923bf36cc7d43a8fc">TypedMainloopObject&lt; T * &gt;</a>, <a class="el" href="classdetail_1_1TypedMainloopObject_3_01vrpn__Connection_01_5_01_4.html#a5e1f6922cf12f9c923bf36cc7d43a8fc">TypedMainloopObject&lt; vrpn_Connection * &gt;</a> , 以及 <a class="el" href="classdetail_1_1TypedMainloopObject_3_01vrpn__ConnectionPtr_01_4.html#a5e1f6922cf12f9c923bf36cc7d43a8fc">TypedMainloopObject&lt; vrpn_ConnectionPtr &gt;</a> 内被实现.</p>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__MainloopObject_af5980672ee120f8bfd681e24d069b027_icgraph.svg" width="548"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a3fff12fa6a7375d280cd6e3ee9db20cc" name="a3fff12fa6a7375d280cd6e3ee9db20cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fff12fa6a7375d280cd6e3ee9db20cc">◆ </a></span>mainloop()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void mainloop </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>The mainloop function: the primary thing we look for in a VRPN object </p>
+<p>在 <a class="el" href="classdetail_1_1TypedMainloopObject_3_01T_01_5_01_4.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">TypedMainloopObject&lt; T * &gt;</a>, <a class="el" href="classdetail_1_1TypedMainloopObject_3_01vrpn__Connection_01_5_01_4.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">TypedMainloopObject&lt; vrpn_Connection * &gt;</a> , 以及 <a class="el" href="classdetail_1_1TypedMainloopObject_3_01vrpn__ConnectionPtr_01_4.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">TypedMainloopObject&lt; vrpn_ConnectionPtr &gt;</a> 内被实现.</p>
+</div>
+</div>
+<a id="a696606b8e180f583cae6c4dd08c306f0" name="a696606b8e180f583cae6c4dd08c306f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696606b8e180f583cae6c4dd08c306f0">◆ </a></span>wrap() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> * wrap </td>
+<td>(</td>
+<td class="paramtype">T</td> <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Templated wrapping function </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__MainloopObject_a696606b8e180f583cae6c4dd08c306f0_icgraph.svg" width="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a999dd8aa9d53ea329a86adc0e0f0b1be" name="a999dd8aa9d53ea329a86adc0e0f0b1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999dd8aa9d53ea329a86adc0e0f0b1be">◆ </a></span>wrap() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__MainloopObject.html">vrpn_MainloopObject</a> * wrap </td>
+<td>(</td>
+<td class="paramtype">T</td> <td class="paramname"><span class="paramname"><em>o</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool</td> <td class="paramname"><span class="paramname"><em>owner</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Templated wrapping function that can encourage the wrapper to not destroy the wrapped object at destruction </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__MainloopObject_8h_source.html">vrpn_MainloopObject.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

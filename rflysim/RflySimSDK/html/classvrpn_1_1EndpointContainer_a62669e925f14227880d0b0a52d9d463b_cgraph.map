@@ -1,0 +1,5 @@
+<map id="is_valid" name="is_valid">
+<area shape="rect" id="Node000001" title="Checks to see if an index is both in&#45;range and pointing to a still&#45;extant object" alt="" coords="5,5,71,32"/>
+<area shape="rect" id="Node000002" href="$classvrpn_1_1EndpointContainer.html#a788160d3e627ab076c284ce165bf89db" title="Get size of container including NULL elements that haven&#39;t been compacted yet." alt="" coords="119,5,273,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,16,103,16,103,21,71,21"/>
+</map>

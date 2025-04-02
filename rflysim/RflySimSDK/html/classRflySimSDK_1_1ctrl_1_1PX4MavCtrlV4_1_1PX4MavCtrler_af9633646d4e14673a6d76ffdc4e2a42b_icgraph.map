@@ -1,0 +1,5 @@
+<map id="RcSendLoop" name="RcSendLoop">
+<area shape="rect" id="Node000001" title="循环发送遥控器信号" alt="" coords="170,5,266,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a04ece5591e0d1823e3f2f5fcd2142d98" title="初始化遥控器发送循环" alt="" coords="5,5,122,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,21,122,21,122,16,154,16"/>
+</map>

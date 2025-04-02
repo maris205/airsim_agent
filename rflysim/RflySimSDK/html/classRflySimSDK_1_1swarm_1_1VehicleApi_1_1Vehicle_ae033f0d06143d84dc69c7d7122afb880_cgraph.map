@@ -1,0 +1,15 @@
+<map id="yawSat1" name="yawSat1">
+<area shape="rect" id="Node000001" title="对偏航角进行幅度限制，将偏航角限制在[&#45;pi, pi]附近的范围内。" alt="" coords="5,72,78,99"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5" title="调整偏航角在&#45;π到π之间" alt="" coords="126,64,319,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,83,110,83,110,88,78,88"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#adf8269c75db7e139aaa12454d041afc5" title="对输入的偏航角进行角度约束，将偏航角限制在[&#45;pi, pi]区间内。" alt="" coords="367,29,432,56"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="55,70,85,46,125,25,185,14,247,13,304,19,352,28,351,33,303,24,246,18,186,19,127,31,88,50,58,74"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#adf8269c75db7e139aaa12454d041afc5" title="对偏航角进行限制，使其保持在[&#45;π/2, π/2]范围内" alt="" coords="480,72,682,115"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="71,97,97,108,126,116,214,127,303,128,389,122,465,113,465,118,389,127,303,133,214,132,125,121,95,113,69,102"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="188,64,187,54,192,45,204,39,222,37,242,40,253,46,251,51,240,45,222,43,206,45,196,49,192,55,193,63"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="318,68,354,59,356,64,320,74"/>
+<area shape="poly" id="edge7_Node000002_Node000004" title=" " alt="" coords="320,85,465,88,465,93,319,90"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="367,46,294,62,293,57,366,41"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="369,30,364,21,368,11,380,5,400,3,421,5,432,12,430,16,419,10,400,8,381,10,371,15,369,20,374,28"/>
+<area shape="poly" id="edge6_Node000003_Node000004" title=" " alt="" coords="434,49,489,65,487,70,432,54"/>
+</map>

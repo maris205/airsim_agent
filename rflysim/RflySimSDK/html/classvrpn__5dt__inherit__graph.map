@@ -1,0 +1,11 @@
+<map id="vrpn_5dt" name="vrpn_5dt">
+<area shape="rect" id="Node000001" title="Class to support reading data from serial 5DT data gloves." alt="" coords="49,304,120,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Serial__Analog.html" title=" " alt="" coords="18,229,151,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,272,87,304,82,304,82,272"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="38,155,131,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,197,87,229,82,229,82,197"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="26,80,143,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,122,87,154,82,154,82,122"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,5,164,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,48,87,80,82,80,82,48"/>
+</map>

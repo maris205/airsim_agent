@@ -1,0 +1,21 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classvrpn__SharedObject.html" title=" " alt="" coords="5,180,138,207"/>
+<area shape="rect" id="Node000001" href="$classvrpn__Shared__String.html" title=" " alt="" coords="188,80,324,107"/>
+<area shape="poly" id="edge355_Node000000_Node000001" title=" " alt="" coords="110,170,228,105,231,109,113,174"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Shared__float64.html" title=" " alt="" coords="186,180,326,207"/>
+<area shape="poly" id="edge358_Node000000_Node000004" title=" " alt="" coords="153,191,186,191,186,196,153,196"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Shared__int32.html" title=" " alt="" coords="191,272,320,299"/>
+<area shape="poly" id="edge361_Node000000_Node000007" title=" " alt="" coords="115,212,228,269,226,274,113,216"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Shared__String__Remote.html" title=" " alt="" coords="398,5,533,48"/>
+<area shape="poly" id="edge356_Node000001_Node000002" title=" " alt="" coords="314,72,396,46,398,51,316,77"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Shared__String__Server.html" title=" " alt="" coords="398,72,533,115"/>
+<area shape="poly" id="edge357_Node000001_Node000003" title=" " alt="" coords="339,91,397,91,397,96,339,96"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Shared__float64__Remote.html" title=" " alt="" coords="395,139,535,181"/>
+<area shape="poly" id="edge359_Node000004_Node000005" title=" " alt="" coords="341,177,394,169,395,174,342,182"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Shared__float64__Server.html" title=" " alt="" coords="395,205,535,248"/>
+<area shape="poly" id="edge360_Node000004_Node000006" title=" " alt="" coords="342,204,395,213,394,218,341,210"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Shared__int32__Remote.html" title=" " alt="" coords="374,272,556,299"/>
+<area shape="poly" id="edge362_Node000007_Node000008" title=" " alt="" coords="336,283,373,283,373,288,336,288"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Shared__int32__Server.html" title=" " alt="" coords="378,323,552,349"/>
+<area shape="poly" id="edge363_Node000007_Node000009" title=" " alt="" coords="329,300,408,319,406,325,328,305"/>
+</map>

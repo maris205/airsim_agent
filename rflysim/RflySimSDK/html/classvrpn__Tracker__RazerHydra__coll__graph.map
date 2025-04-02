@@ -1,0 +1,30 @@
+<map id="vrpn_Tracker_RazerHydra" name="vrpn_Tracker_RazerHydra">
+<area shape="rect" id="Node000001" title="Device supporting the Razer Hydra game controller as a tracker, analog device, and button device,..." alt="" coords="593,496,767,523"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog.html" title=" " alt="" coords="514,344,607,371"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="582,381,672,494,668,497,577,384"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="540,268,658,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="588,309,569,345,564,342,583,307"/>
+<area shape="rect" id="Node000011" href="$classvrpn__Button.html" title=" " alt="" coords="753,344,844,371"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="648,298,766,341,764,346,647,303"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Tracker.html" title=" " alt="" coords="632,344,729,371"/>
+<area shape="poly" id="edge15_Node000012_Node000003" title=" " alt="" coords="626,303,668,342,665,346,622,307"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="501,189,659,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="589,231,598,267,593,268,584,232"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="178,96,297,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="300,125,533,186,532,191,299,130"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="157,5,318,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="240,48,240,95,235,95,235,48"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="5,5,134,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="104,38,159,70,209,93,207,98,157,74,101,43"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="502,96,667,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="586,139,583,189,578,189,580,138"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="630,5,685,32"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="616,29,554,41,488,58,435,81,420,94,415,108,415,282,417,298,424,310,448,330,480,342,513,349,512,355,478,347,445,334,420,314,412,299,410,283,410,108,416,91,433,77,486,53,553,35,615,24"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="639,46,629,58,596,97,592,94,625,54,635,43"/>
+<area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="700,16,756,20,815,33,841,44,862,60,876,81,881,108,881,283,877,304,864,321,830,346,827,341,860,317,872,301,876,282,876,108,871,83,858,64,838,49,813,38,755,25,700,22"/>
+<area shape="poly" id="edge16_Node000012_Node000009" title=" " alt="" coords="682,42,701,72,707,90,709,108,709,283,703,317,690,345,685,342,698,315,704,282,704,108,702,91,696,74,677,45"/>
+<area shape="rect" id="Node000010" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="726,420,853,447"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="760,458,700,498,697,493,757,453"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="798,386,794,420,788,419,793,385"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="683,386,683,496,678,496,678,386"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="sendMavTakeOffLocal" name="sendMavTakeOffLocal">
+<area shape="rect" id="Node000001" title="发送指令使飞机从指定的本地位置起飞，并允许设置俯仰角、偏航角和上升速率" alt="" coords="5,56,156,83"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html#ab1205d651a5b3851758de62e94690be3" title=" " alt="" coords="205,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,53,231,33,232,39,145,58"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551" title="将 MAVLink 的长指令消息发送到 Pixhawk 系统" alt="" coords="244,56,376,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,67,228,67,228,72,156,72"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3b674c6bf3ce93f9a964070e6fd21551" title="发送长命令到飞行控制器" alt="" coords="204,107,416,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="130,81,193,99,192,104,129,86"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="464,56,535,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="377,67,448,67,448,72,377,72"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="583,56,697,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="536,67,568,67,568,72,536,72"/>
+</map>

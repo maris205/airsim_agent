@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: SemaphoreGuard类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>vrpn</b></li><li class="navelem"><a class="el" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn_1_1SemaphoreGuard-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">SemaphoreGuard类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>An RAII lock/guard class for <a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a>
+<a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__Thread_8h_source.html">vrpn_Thread.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa3f9d045a0a14b2affa259e39bd008c0" id="r_aa3f9d045a0a14b2affa259e39bd008c0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3f9d045a0a14b2affa259e39bd008c0">SemaphoreGuard</a> (<a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;sem)</td></tr>
+<tr class="memdesc:aa3f9d045a0a14b2affa259e39bd008c0"><td class="mdescLeft"> </td><td class="mdescRight">Constructor that locks (p) the semaphore  <br/></td></tr>
+<tr class="separator:aa3f9d045a0a14b2affa259e39bd008c0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7dff64e7a26a980c6f7a2bb6953cbf65" id="r_a7dff64e7a26a980c6f7a2bb6953cbf65"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dff64e7a26a980c6f7a2bb6953cbf65">SemaphoreGuard</a> (<a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;sem, <a class="el" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a>)</td></tr>
+<tr class="memdesc:a7dff64e7a26a980c6f7a2bb6953cbf65"><td class="mdescLeft"> </td><td class="mdescRight">overload that only tries to lock (condP) - doesn't block.  <br/></td></tr>
+<tr class="separator:a7dff64e7a26a980c6f7a2bb6953cbf65"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9d0a769dfab7b72107e15b9880b94021" id="r_a9d0a769dfab7b72107e15b9880b94021"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d0a769dfab7b72107e15b9880b94021">~SemaphoreGuard</a> ()</td></tr>
+<tr class="memdesc:a9d0a769dfab7b72107e15b9880b94021"><td class="mdescLeft"> </td><td class="mdescRight">Destructor that unlocks if we've locked.  <br/></td></tr>
+<tr class="separator:a9d0a769dfab7b72107e15b9880b94021"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8b660d2fb225d2dc900e1f7d0b60dadf" id="r_a8b660d2fb225d2dc900e1f7d0b60dadf"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b660d2fb225d2dc900e1f7d0b60dadf">locked</a> () const</td></tr>
+<tr class="memdesc:a8b660d2fb225d2dc900e1f7d0b60dadf"><td class="mdescLeft"> </td><td class="mdescRight">Checks to see if we locked.  <br/></td></tr>
+<tr class="separator:a8b660d2fb225d2dc900e1f7d0b60dadf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa81aed607133209dade63a226818224d" id="r_aa81aed607133209dade63a226818224d"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa81aed607133209dade63a226818224d">lock</a> ()</td></tr>
+<tr class="memdesc:aa81aed607133209dade63a226818224d"><td class="mdescLeft"> </td><td class="mdescRight">Locks the semaphore, if we haven't locked it already.  <br/></td></tr>
+<tr class="separator:aa81aed607133209dade63a226818224d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2a967b25a9d6da7b36e28942cd3b30ce" id="r_a2a967b25a9d6da7b36e28942cd3b30ce"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a967b25a9d6da7b36e28942cd3b30ce">try_to_lock</a> ()</td></tr>
+<tr class="memdesc:a2a967b25a9d6da7b36e28942cd3b30ce"><td class="mdescLeft"> </td><td class="mdescRight">Tries to lock - returns true if we locked it.  <br/></td></tr>
+<tr class="separator:a2a967b25a9d6da7b36e28942cd3b30ce"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9278be8203e1c42e2619179882ae4403" id="r_a9278be8203e1c42e2619179882ae4403"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9278be8203e1c42e2619179882ae4403">unlock</a> ()</td></tr>
+<tr class="memdesc:a9278be8203e1c42e2619179882ae4403"><td class="mdescLeft"> </td><td class="mdescRight">Unlocks the resource, if we have locked it.  <br/></td></tr>
+<tr class="separator:a9278be8203e1c42e2619179882ae4403"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>An RAII lock/guard class for <a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa3f9d045a0a14b2affa259e39bd008c0" name="aa3f9d045a0a14b2affa259e39bd008c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f9d045a0a14b2affa259e39bd008c0">◆ </a></span>SemaphoreGuard() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;</td> <td class="paramname"><span class="paramname"><em>sem</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor that locks (p) the semaphore </p>
+</div>
+</div>
+<a id="a7dff64e7a26a980c6f7a2bb6953cbf65" name="a7dff64e7a26a980c6f7a2bb6953cbf65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dff64e7a26a980c6f7a2bb6953cbf65">◆ </a></span>SemaphoreGuard() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;</td> <td class="paramname"><span class="paramname"><em>sem</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a></td> <td class="paramname"><span class="paramname"><em></em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>overload that only tries to lock (condP) - doesn't block. </p>
+</div>
+</div>
+<a id="a9d0a769dfab7b72107e15b9880b94021" name="a9d0a769dfab7b72107e15b9880b94021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0a769dfab7b72107e15b9880b94021">◆ </a></span>~SemaphoreGuard()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">~<a class="el" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor that unlocks if we've locked. </p>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa81aed607133209dade63a226818224d" name="aa81aed607133209dade63a226818224d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81aed607133209dade63a226818224d">◆ </a></span>lock()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void lock </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Locks the semaphore, if we haven't locked it already. </p>
+</div>
+</div>
+<a id="a8b660d2fb225d2dc900e1f7d0b60dadf" name="a8b660d2fb225d2dc900e1f7d0b60dadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b660d2fb225d2dc900e1f7d0b60dadf">◆ </a></span>locked()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool locked </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Checks to see if we locked. </p>
+</div>
+</div>
+<a id="a2a967b25a9d6da7b36e28942cd3b30ce" name="a2a967b25a9d6da7b36e28942cd3b30ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a967b25a9d6da7b36e28942cd3b30ce">◆ </a></span>try_to_lock()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">bool try_to_lock </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Tries to lock - returns true if we locked it. </p>
+</div>
+</div>
+<a id="a9278be8203e1c42e2619179882ae4403" name="a9278be8203e1c42e2619179882ae4403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9278be8203e1c42e2619179882ae4403">◆ </a></span>unlock()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void unlock </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Unlocks the resource, if we have locked it. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Thread_8h_source.html">vrpn_Thread.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

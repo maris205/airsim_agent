@@ -1,0 +1,14 @@
+<map id="DllInCtrlExt" name="DllInCtrlExt">
+<area shape="rect" id="Node000001" title="扩展控制数据，用于支持更高级的控制仿真功能，参见 sendInCtrlExtAll" alt="" coords="5,131,95,157"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="18,132,12,122,16,112,29,106,50,104,73,107,85,113,82,118,71,112,50,109,30,111,20,116,17,121,22,129"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="148,5,330,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="61,128,95,94,141,58,150,53,153,57,144,62,98,98,65,132"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="212,72,267,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="86,128,142,108,196,93,197,98,143,113,88,133"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="143,123,336,165"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="95,141,127,141,127,147,95,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="144,189,335,232"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="90,155,144,175,162,181,160,186,142,180,88,160"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="144,256,335,299"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="63,156,96,198,119,222,144,242,152,246,149,251,141,246,115,226,92,202,59,160"/>
+</map>

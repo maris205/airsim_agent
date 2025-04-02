@@ -1,0 +1,1 @@
+process finished status：绕楼梯飞行任务成功完成，运行消耗时间: 22.63 秒

@@ -1,0 +1,48 @@
+<map id="AutUpdateLoop" name="AutUpdateLoop">
+<area shape="rect" id="Node000001" title="自动更新循环的核心逻辑，实现持续的仿真更新、数据发送等功能。" alt="" coords="5,197,117,224"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a31f80ac5e3f8b2d596afc4fb58b3e930" title="获取仿真的步长，用于确定仿真时间步的大小。如果 DLL 中没有对应的函数，默认返回 0.001" alt="" coords="336,53,428,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,195,107,151,133,127,163,107,202,90,243,79,320,67,321,72,244,84,204,95,166,112,137,131,111,155,74,199"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ad11f7333488004e462347852a1865330" title="手动更新仿真状态的接口" alt="" coords="171,121,270,148"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="89,194,164,158,174,153,176,157,166,162,91,199"/>
+<area shape="rect" id="Node000016" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ac6279ccc1e882bbf82e005dae93b308c" title="将打包的 3D 数据通过 UDP 发送到端口 20010，用于与 RflySim3D 进行通信" alt="" coords="172,172,268,199"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="117,199,156,193,157,198,118,204"/>
+<area shape="rect" id="Node000018" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a23904307e9696a3ed1a0aa486351f388" title="发送硬件在环（HIL）仿真数据到指定的端口，通常用于与飞控系统交互" alt="" coords="170,223,270,249"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="118,217,155,223,154,228,117,222"/>
+<area shape="rect" id="Node000019" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ae764137a02695d7ca5952421de62d6ea" title="发送仿真数据到30100端口，可用于日志记录" alt="" coords="165,273,276,300"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="91,222,166,259,176,264,174,269,164,264,89,227"/>
+<area shape="rect" id="Node000020" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a086d3213a443d47c03513da19295fc96" title="将与 Send3DData 同样的 3D 数据发送到端口 30100，用于仿真数据的传输" alt="" coords="169,324,272,351"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="76,223,114,265,166,310,173,314,170,319,163,314,110,268,72,226"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="354,54,349,45,353,35,364,29,382,27,402,29,412,36,409,40,400,34,382,32,366,34,357,39,355,44,359,52"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="253,118,333,84,335,89,255,123"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a6c8d69e6f42dccce090c503b813481d2" title="执行一次仿真步骤。这是对 DLL 中仿真时间推进的基本调用。" alt="" coords="351,128,413,155"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="270,134,336,137,335,142,270,139"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a89209829462275f36c55e891d6bc2bd2" title="用于更新载具模型仿真输出，读取车辆当前的运动状态数据并更新到 out3Ddata 和 outHilData，并与地形数据进行交互。" alt="" coords="324,179,440,205"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="261,146,329,170,327,176,259,151"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="354,129,349,119,353,110,364,104,382,101,402,104,412,110,409,115,400,109,382,107,366,109,357,113,355,119,359,126"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a2567d8e03aa3ae8d3f577e61dbb1d8c4" title="从 DLL 获取 32 维数据，包括飞行器的传感器读数、状态信息等" alt="" coords="531,29,656,56"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="423,176,438,165,455,140,461,115,467,91,475,78,487,66,514,51,517,55,490,70,479,81,472,93,466,117,460,142,442,169,426,180"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#ac6d287b829efdea8734536b079dab144" title="从 DLL 获取 60 维的载具三维信息数据。包括各种飞行器或车辆的状态数据。" alt="" coords="527,104,660,131"/>
+<area shape="poly" id="edge10_Node000005_Node000007" title=" " alt="" coords="414,176,439,164,463,152,487,140,511,132,513,137,489,145,465,156,442,169,417,180"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#abe7c5e1fbc661f6a864eb5d3bd06aa26" title="输入三维场景的地形高度数据给DLL，用于仿真环境的地形建模，参见 sendTerrIn15d" alt="" coords="539,179,648,205"/>
+<area shape="poly" id="edge12_Node000005_Node000008" title=" " alt="" coords="441,189,523,189,523,195,441,195"/>
+<area shape="rect" id="Node000014" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="488,229,699,256"/>
+<area shape="poly" id="edge19_Node000005_Node000014" title=" " alt="" coords="441,203,521,223,519,228,440,208"/>
+<area shape="rect" id="Node000015" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="500,280,687,307"/>
+<area shape="poly" id="edge20_Node000005_Node000015" title=" " alt="" coords="400,204,439,235,490,266,506,272,504,277,487,270,436,239,397,208"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="558,30,551,21,556,11,570,5,594,3,619,5,632,12,630,16,617,10,593,8,571,10,559,15,557,20,562,27"/>
+<area shape="poly" id="edge11_Node000007_Node000007" title=" " alt="" coords="558,105,551,95,556,86,570,79,594,77,619,80,632,86,630,91,617,85,593,83,571,85,559,89,557,95,562,102"/>
+<area shape="poly" id="edge13_Node000008_Node000008" title=" " alt="" coords="558,180,551,170,556,160,570,154,594,152,619,155,632,161,630,166,617,160,593,157,571,159,559,164,557,169,562,177"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="752,53,934,96"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="627,176,697,140,721,123,745,106,757,100,759,105,748,110,724,127,700,145,629,181"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="816,120,871,147"/>
+<area shape="poly" id="edge15_Node000008_Node000010" title=" " alt="" coords="647,177,800,141,801,146,648,182"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="747,171,940,213"/>
+<area shape="poly" id="edge16_Node000008_Node000011" title=" " alt="" coords="648,189,731,189,731,195,648,195"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="748,237,939,280"/>
+<area shape="poly" id="edge17_Node000008_Node000012" title=" " alt="" coords="649,202,699,215,754,230,753,235,698,220,648,207"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="748,304,939,347"/>
+<area shape="poly" id="edge18_Node000008_Node000013" title=" " alt="" coords="649,195,675,202,700,215,718,234,726,253,733,272,748,290,754,294,750,298,745,294,728,275,721,255,713,237,697,219,673,207,648,200"/>
+<area shape="rect" id="Node000017" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a71d82eaf80140510db6603915a4d6e69" title="提取载具模型的 3D 仿真数据out3Dvect并将其打包，以便通过网络转发给RflySim3D" alt="" coords="330,273,434,300"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="255,197,277,208,354,261,351,266,275,213,253,201"/>
+<area shape="poly" id="edge26_Node000020_Node000017" title=" " alt="" coords="265,321,322,303,323,308,266,326"/>
+</map>

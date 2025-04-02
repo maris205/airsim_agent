@@ -1,0 +1,29 @@
+<map id="sendTakeoffMode" name="sendTakeoffMode">
+<area shape="rect" id="Node000001" title="发送指定使飞机起飞" alt="" coords="5,208,129,234"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html#ab1205d651a5b3851758de62e94690be3" title=" " alt="" coords="494,14,703,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,206,83,174,104,132,135,89,154,70,175,55,215,35,257,21,300,12,344,6,429,3,504,9,504,14,429,9,344,11,301,17,258,26,217,40,178,59,157,74,139,92,109,134,88,176,75,208"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551" title="将 MAVLink 的长指令消息发送到 Pixhawk 系统" alt="" coords="532,74,664,101"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="73,206,87,180,110,148,139,116,175,92,219,75,265,64,311,57,358,55,446,58,522,68,521,74,446,63,358,60,312,63,266,69,221,80,178,97,143,120,114,151,92,183,77,209"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3b674c6bf3ce93f9a964070e6fd21551" title="发送长命令到飞行控制器" alt="" coords="492,125,704,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="129,207,176,200,477,164,477,169,177,205,129,213"/>
+<area shape="rect" id="Node000007" href="$classRflyMavlink.html#ad584eaa3a3e2a747d67313910fa4e9d0" title=" " alt="" coords="206,258,415,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="130,231,228,252,227,257,129,236"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a831172bea8ba4f655418913776e1f30e" title="向 Pixhawk 发送命令更改其参数" alt="" coords="532,208,664,234"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="129,218,516,218,516,224,129,224"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a162081480a066efd9dc4aa4b2fdb95d9" title="发送MAVLink设置参数请求，用于通过MAVLink协议设置无人机的参数。根据参数类型，它可以设置整型或实型参数。" alt="" coords="177,309,444,352"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="86,233,126,264,178,295,193,301,191,306,175,299,123,268,82,237"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a162081480a066efd9dc4aa4b2fdb95d9" title="设置MAVLink参数" alt="" coords="205,376,416,434"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="77,233,115,295,144,331,178,361,192,370,190,375,175,366,140,334,110,298,73,236"/>
+<area shape="rect" id="Node000011" href="$classRflyMavlink.html#a422e024e21a6b9dc076fa65632d9fe1b" title=" " alt="" coords="220,458,400,485"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="73,234,83,276,102,334,133,394,154,421,178,444,207,459,204,464,175,448,150,425,128,397,97,336,77,278,68,235"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad29a52ae6a099350fc6319b302543e12" title="发送 MAVLink 命令到 PX4 以更改飞行模式" alt="" coords="259,106,362,133"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="84,205,125,177,176,149,243,128,244,134,178,154,127,181,87,209"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="752,141,824,168"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="665,98,705,110,750,131,748,136,703,115,664,103"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="872,141,985,168"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="824,152,856,152,856,157,824,157"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="664,205,703,193,748,173,750,178,705,198,665,210"/>
+<area shape="poly" id="edge13_Node000012_Node000002" title=" " alt="" coords="354,103,538,44,540,49,356,108"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="362,111,517,94,517,99,363,117"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="363,123,477,137,476,142,362,128"/>
+</map>

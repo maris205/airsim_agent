@@ -1,0 +1,5 @@
+<map id="vrpn_Tracker_IMU_Params" name="vrpn_Tracker_IMU_Params">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,187,139"/>
+<area shape="rect" id="Node000002" href="$classvrpn__IMU__Axis__Params.html" title="Describes information describing an IMU axis. It describes the analog channel to use to drive the axi..." alt="" coords="14,5,178,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,47,99,112,93,112,93,47"/>
+</map>

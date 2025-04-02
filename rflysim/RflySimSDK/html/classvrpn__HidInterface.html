@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_HidInterface类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__HidInterface-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_HidInterface类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_HidInterface 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="600" scrolling="no" src="classvrpn__HidInterface__inherit__graph.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_HidInterface 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="128" scrolling="no" src="classvrpn__HidInterface__coll__graph.svg" width="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a664bfbe45ba531971f668f236d0018cb" id="r_a664bfbe45ba531971f668f236d0018cb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a664bfbe45ba531971f668f236d0018cb">vrpn_HidInterface</a> (<a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> *acceptor, vrpn_uint16 <a class="el" href="#ab6e18eb35551f0d8717669353c94490a">vendor</a>=0, vrpn_uint16 <a class="el" href="#a3e2dd37c137ffeaf42d03622bbd3cf5c">product</a>=0, hid_device *device=NULL)</td></tr>
+<tr class="separator:a664bfbe45ba531971f668f236d0018cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab9f382922c4500e57981c411f10923b6" id="r_ab9f382922c4500e57981c411f10923b6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9f382922c4500e57981c411f10923b6">vrpn_HidInterface</a> (<a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> *acceptor, hid_device *device)</td></tr>
+<tr class="separator:ab9f382922c4500e57981c411f10923b6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8607c1b692833c6f0ad124dbd26c5382" id="r_a8607c1b692833c6f0ad124dbd26c5382"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8607c1b692833c6f0ad124dbd26c5382">vrpn_HidInterface</a> (const char *device_path, <a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> *acceptor, vrpn_uint16 <a class="el" href="#ab6e18eb35551f0d8717669353c94490a">vendor</a>=0, vrpn_uint16 <a class="el" href="#a3e2dd37c137ffeaf42d03622bbd3cf5c">product</a>=0)</td></tr>
+<tr class="separator:a8607c1b692833c6f0ad124dbd26c5382"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaf5c24295ab8f6b5f94073c606d2a725" id="r_aaf5c24295ab8f6b5f94073c606d2a725"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf5c24295ab8f6b5f94073c606d2a725">connected</a> () const</td></tr>
+<tr class="memdesc:aaf5c24295ab8f6b5f94073c606d2a725"><td class="mdescLeft"> </td><td class="mdescRight">Returns true iff the last device I/O succeeded  <br/></td></tr>
+<tr class="separator:aaf5c24295ab8f6b5f94073c606d2a725"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e" id="r_acd36d7881ea8503d5c5824e7a5ad6c7e"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
+<tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adb43a86035a352a2ae50c41330bcad77" id="r_adb43a86035a352a2ae50c41330bcad77"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#adb43a86035a352a2ae50c41330bcad77">reconnect</a> ()</td></tr>
+<tr class="separator:adb43a86035a352a2ae50c41330bcad77"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab6e18eb35551f0d8717669353c94490a" id="r_ab6e18eb35551f0d8717669353c94490a"><td align="right" class="memItemLeft" valign="top">vrpn_uint16 </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6e18eb35551f0d8717669353c94490a">vendor</a> () const</td></tr>
+<tr class="separator:ab6e18eb35551f0d8717669353c94490a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3e2dd37c137ffeaf42d03622bbd3cf5c" id="r_a3e2dd37c137ffeaf42d03622bbd3cf5c"><td align="right" class="memItemLeft" valign="top">vrpn_uint16 </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e2dd37c137ffeaf42d03622bbd3cf5c">product</a> () const</td></tr>
+<tr class="separator:a3e2dd37c137ffeaf42d03622bbd3cf5c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9630284a9031c235b24721dc5961ebaa" id="r_a9630284a9031c235b24721dc5961ebaa"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9630284a9031c235b24721dc5961ebaa">interface_number</a> () const</td></tr>
+<tr class="separator:a9630284a9031c235b24721dc5961ebaa"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a579f2d5006e9f3a78ec7b0beae5b9b68" id="r_a579f2d5006e9f3a78ec7b0beae5b9b68"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a579f2d5006e9f3a78ec7b0beae5b9b68">on_data_received</a> (size_t bytes, vrpn_uint8 *buffer)=0</td></tr>
+<tr class="memdesc:a579f2d5006e9f3a78ec7b0beae5b9b68"><td class="mdescLeft"> </td><td class="mdescRight">Derived class reimplements this callback. It is called whenever a read returns some data.  <br/></td></tr>
+<tr class="separator:a579f2d5006e9f3a78ec7b0beae5b9b68"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab5a50c9914b14c730c014e5124e1a383" id="r_ab5a50c9914b14c730c014e5124e1a383"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5a50c9914b14c730c014e5124e1a383">send_data</a> (size_t bytes, const vrpn_uint8 *buffer)</td></tr>
+<tr class="memdesc:ab5a50c9914b14c730c014e5124e1a383"><td class="mdescLeft"> </td><td class="mdescRight">Call this to send data to the device  <br/></td></tr>
+<tr class="separator:ab5a50c9914b14c730c014e5124e1a383"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb9b31637b39aa543ebdde20c77cce87" id="r_aeb9b31637b39aa543ebdde20c77cce87"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb9b31637b39aa543ebdde20c77cce87">send_feature_report</a> (size_t bytes, const vrpn_uint8 *buffer)</td></tr>
+<tr class="separator:aeb9b31637b39aa543ebdde20c77cce87"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1bd606124407a2bee746d1539b6dccfe" id="r_a1bd606124407a2bee746d1539b6dccfe"><td align="right" class="memItemLeft" valign="top">int </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bd606124407a2bee746d1539b6dccfe">get_feature_report</a> (size_t bytes, vrpn_uint8 *buffer)</td></tr>
+<tr class="separator:a1bd606124407a2bee746d1539b6dccfe"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a2a13500b283b7aa1caf51465744f6741" id="r_a2a13500b283b7aa1caf51465744f6741"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a13500b283b7aa1caf51465744f6741">m_acceptor</a></td></tr>
+<tr class="memdesc:a2a13500b283b7aa1caf51465744f6741"><td class="mdescLeft"> </td><td class="mdescRight">This is the HidAcceptor we use when reconnecting.  <br/></td></tr>
+<tr class="separator:a2a13500b283b7aa1caf51465744f6741"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abe10179738b17d73ccf54b4ec5f22685" id="r_abe10179738b17d73ccf54b4ec5f22685"><td align="right" class="memItemLeft" valign="top"><a id="abe10179738b17d73ccf54b4ec5f22685" name="abe10179738b17d73ccf54b4ec5f22685"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>m_working</b></td></tr>
+<tr class="separator:abe10179738b17d73ccf54b4ec5f22685"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af657e16ca4b5271512111060851704db" id="r_af657e16ca4b5271512111060851704db"><td align="right" class="memItemLeft" valign="top"><a id="af657e16ca4b5271512111060851704db" name="af657e16ca4b5271512111060851704db"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>m_vendor</b></td></tr>
+<tr class="separator:af657e16ca4b5271512111060851704db"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a77acb9674d913f1da14ffc25530aed72" id="r_a77acb9674d913f1da14ffc25530aed72"><td align="right" class="memItemLeft" valign="top"><a id="a77acb9674d913f1da14ffc25530aed72" name="a77acb9674d913f1da14ffc25530aed72"></a>
+vrpn_uint16 </td><td class="memItemRight" valign="bottom"><b>m_product</b></td></tr>
+<tr class="separator:a77acb9674d913f1da14ffc25530aed72"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7db447a6f32a3ed30e4ab4d65ec9b0d2" id="r_a7db447a6f32a3ed30e4ab4d65ec9b0d2"><td align="right" class="memItemLeft" valign="top"><a id="a7db447a6f32a3ed30e4ab4d65ec9b0d2" name="a7db447a6f32a3ed30e4ab4d65ec9b0d2"></a>
+int </td><td class="memItemRight" valign="bottom"><b>m_interface</b></td></tr>
+<tr class="separator:a7db447a6f32a3ed30e4ab4d65ec9b0d2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb06aa38dad9e6712640ad8b51a2a466" id="r_aeb06aa38dad9e6712640ad8b51a2a466"><td align="right" class="memItemLeft" valign="top">vrpn_uint16 </td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb06aa38dad9e6712640ad8b51a2a466">m_vendor_sought</a></td></tr>
+<tr class="memdesc:aeb06aa38dad9e6712640ad8b51a2a466"><td class="mdescLeft"> </td><td class="mdescRight">What vendor we want  <br/></td></tr>
+<tr class="separator:aeb06aa38dad9e6712640ad8b51a2a466"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af38fa552b4881191207a38dac9aa0360" id="r_af38fa552b4881191207a38dac9aa0360"><td align="right" class="memItemLeft" valign="top">vrpn_uint16 </td><td class="memItemRight" valign="bottom"><a class="el" href="#af38fa552b4881191207a38dac9aa0360">m_product_sought</a></td></tr>
+<tr class="memdesc:af38fa552b4881191207a38dac9aa0360"><td class="mdescLeft"> </td><td class="mdescRight">What product we want  <br/></td></tr>
+<tr class="separator:af38fa552b4881191207a38dac9aa0360"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a664bfbe45ba531971f668f236d0018cb" name="a664bfbe45ba531971f668f236d0018cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664bfbe45ba531971f668f236d0018cb">◆ </a></span>vrpn_HidInterface() <span class="overload">[1/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__HidInterface.html">vrpn_HidInterface</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> *</td> <td class="paramname"><span class="paramname"><em>acceptor</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>vendor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>product</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">hid_device *</td> <td class="paramname"><span class="paramname"><em>device</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor If we already have a HID device from some other source, it can be passed and we'll take ownership: still need the acceptor for reconnect, we just won't do it right away. </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">acceptor</td><td>Determines which device we want  </td></tr>
+<tr><td class="paramname">vendor</td><td>Default vendor is "any"  </td></tr>
+<tr><td class="paramname">product</td><td>Default product is "any"  </td></tr>
+<tr><td class="paramname">device</td><td>Optional underlying HID device to manage and take ownership of </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="ab9f382922c4500e57981c411f10923b6" name="ab9f382922c4500e57981c411f10923b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f382922c4500e57981c411f10923b6">◆ </a></span>vrpn_HidInterface() <span class="overload">[2/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__HidInterface.html">vrpn_HidInterface</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> *</td> <td class="paramname"><span class="paramname"><em>acceptor</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">hid_device *</td> <td class="paramname"><span class="paramname"><em>device</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Simplified constructor that just takes an acceptor and an underlying HID device (both non-optional).</p>
+<p>Designed for passing in a device (May look at you funny if you pass a NULL device, but will work just as if you had called the other constructor with a null device) but handles NULL devices just fine. </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">acceptor</td><td>Determines which device we want  </td></tr>
+<tr><td class="paramname">device</td><td>Underlying HID device to manage and take ownership of </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a8607c1b692833c6f0ad124dbd26c5382" name="a8607c1b692833c6f0ad124dbd26c5382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8607c1b692833c6f0ad124dbd26c5382">◆ </a></span>vrpn_HidInterface() <span class="overload">[3/3]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__HidInterface.html">vrpn_HidInterface</a> </td>
+<td>(</td>
+<td class="paramtype">const char *</td> <td class="paramname"><span class="paramname"><em>device_path</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a> *</td> <td class="paramname"><span class="paramname"><em>acceptor</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>vendor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint16</td> <td class="paramname"><span class="paramname"><em>product</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor If we already know the path to the device we want, we can pass it in and open it directly: still need the acceptor for reconnect enumeration, we just won't do it right away. </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">device_path</td><td>Platform-specific device path, suitable to be passed to HIDAPI's hid_open_path  </td></tr>
+<tr><td class="paramname">acceptor</td><td>Determines which device we want  </td></tr>
+<tr><td class="paramname">vendor</td><td>Default vendor is "any"  </td></tr>
+<tr><td class="paramname">product</td><td>Default product is "any" </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aaf5c24295ab8f6b5f94073c606d2a725" name="aaf5c24295ab8f6b5f94073c606d2a725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5c24295ab8f6b5f94073c606d2a725">◆ </a></span>connected()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual bool connected </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true iff the last device I/O succeeded </p>
+</div>
+</div>
+<a id="a1bd606124407a2bee746d1539b6dccfe" name="a1bd606124407a2bee746d1539b6dccfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd606124407a2bee746d1539b6dccfe">◆ </a></span>get_feature_report()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">int get_feature_report </td>
+<td>(</td>
+<td class="paramtype">size_t</td> <td class="paramname"><span class="paramname"><em>bytes</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint8 *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call this to get a feature report from the device - first byte must be Report ID (or 0x0 for devices without numbered reports) </p><dl class="section return"><dt>返回</dt><dd>Number of bytes received, or -1 on error </dd></dl>
+</div>
+</div>
+<a id="a9630284a9031c235b24721dc5961ebaa" name="a9630284a9031c235b24721dc5961ebaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9630284a9031c235b24721dc5961ebaa">◆ </a></span>interface_number()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">int interface_number </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the USB interface number of connected device May not contain valid information on all platforms or if an already-open device was provided to the constructor. </p>
+</div>
+</div>
+<a id="a579f2d5006e9f3a78ec7b0beae5b9b68" name="a579f2d5006e9f3a78ec7b0beae5b9b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579f2d5006e9f3a78ec7b0beae5b9b68">◆ </a></span>on_data_received()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void on_data_received </td>
+<td>(</td>
+<td class="paramtype">size_t</td> <td class="paramname"><span class="paramname"><em>bytes</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">vrpn_uint8 *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Derived class reimplements this callback. It is called whenever a read returns some data. </p>
+<p>WARNING! The data returned by this function differs when the device sends multiple report types and when it only has one. When it can have more than one, the report type is sent as the first byte. When it only has one, the report type is NOT included. This is the behavior of the HIDAPI library we are using. It is surprising to me, but that's how it behaves. </p>
+<p>在 <a class="el" href="classvrpn__3DConnexion.html#a13549f6645ee4e046e12750ae3b72769">vrpn_3DConnexion</a>, <a class="el" href="classvrpn__Analog__5dtUSB.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Analog_5dtUSB</a>, <a class="el" href="classvrpn__CHProducts__Controller__Raw.html#a13549f6645ee4e046e12750ae3b72769">vrpn_CHProducts_Controller_Raw</a>, <a class="el" href="classvrpn__Contour.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Contour</a>, <a class="el" href="classvrpn__DreamCheeky.html#a13549f6645ee4e046e12750ae3b72769">vrpn_DreamCheeky</a>, <a class="el" href="classvrpn__Futaba.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Futaba</a>, <a class="el" href="classvrpn__Griffin.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Griffin</a>, <a class="el" href="classvrpn__Logitech__Controller__Raw.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Logitech_Controller_Raw</a>, <a class="el" href="classvrpn__Microsoft__Controller__Raw.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Microsoft_Controller_Raw</a>, <a class="el" href="classvrpn__nVidia__shield.html#a13549f6645ee4e046e12750ae3b72769">vrpn_nVidia_shield</a>, <a class="el" href="classvrpn__Retrolink.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Retrolink</a>, <a class="el" href="classvrpn__Saitek__Controller__Raw.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Saitek_Controller_Raw</a>, <a class="el" href="classvrpn__Tracker__SpacePoint.html#a35ac5943888687731b5859b38e8ec23c">vrpn_Tracker_SpacePoint</a>, <a class="el" href="classvrpn__Tracker__Wintracker.html#a35ac5943888687731b5859b38e8ec23c">vrpn_Tracker_Wintracker</a>, <a class="el" href="classvrpn__Vality.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Vality</a> , 以及 <a class="el" href="classvrpn__Xkeys.html#a13549f6645ee4e046e12750ae3b72769">vrpn_Xkeys</a> 内被实现.</p>
+</div>
+</div>
+<a id="a3e2dd37c137ffeaf42d03622bbd3cf5c" name="a3e2dd37c137ffeaf42d03622bbd3cf5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2dd37c137ffeaf42d03622bbd3cf5c">◆ </a></span>product()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_uint16 product </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns USB product ID of connected device May not contain valid if an already-open device was provided to the constructor. </p>
+</div>
+</div>
+<a id="adb43a86035a352a2ae50c41330bcad77" name="adb43a86035a352a2ae50c41330bcad77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb43a86035a352a2ae50c41330bcad77">◆ </a></span>reconnect()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual bool reconnect </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Tries to reconnect to an acceptable device. Call this if you suspect a hotplug event has occurred. </p>
+</div>
+</div>
+<a id="ab5a50c9914b14c730c014e5124e1a383" name="ab5a50c9914b14c730c014e5124e1a383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a50c9914b14c730c014e5124e1a383">◆ </a></span>send_data()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void send_data </td>
+<td>(</td>
+<td class="paramtype">size_t</td> <td class="paramname"><span class="paramname"><em>bytes</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const vrpn_uint8 *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call this to send data to the device </p>
+</div>
+</div>
+<a id="aeb9b31637b39aa543ebdde20c77cce87" name="aeb9b31637b39aa543ebdde20c77cce87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9b31637b39aa543ebdde20c77cce87">◆ </a></span>send_feature_report()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void send_feature_report </td>
+<td>(</td>
+<td class="paramtype">size_t</td> <td class="paramname"><span class="paramname"><em>bytes</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const vrpn_uint8 *</td> <td class="paramname"><span class="paramname"><em>buffer</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call this to send a feature report to the device - first byte must be Report ID (or 0x0 for devices without numbered reports) </p>
+</div>
+</div>
+<a id="acd36d7881ea8503d5c5824e7a5ad6c7e" name="acd36d7881ea8503d5c5824e7a5ad6c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd36d7881ea8503d5c5824e7a5ad6c7e">◆ </a></span>update()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void update </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Polls the device buffers and causes on_data_received callbacks if appropriate You NEED to call this frequently to ensure the OS doesn't drop data </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="54" scrolling="no" src="classvrpn__HidInterface_acd36d7881ea8503d5c5824e7a5ad6c7e_icgraph.svg" width="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ab6e18eb35551f0d8717669353c94490a" name="ab6e18eb35551f0d8717669353c94490a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e18eb35551f0d8717669353c94490a">◆ </a></span>vendor()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_uint16 vendor </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns USB vendor ID of connected device May not contain valid if an already-open device was provided to the constructor. </p>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a2a13500b283b7aa1caf51465744f6741" name="a2a13500b283b7aa1caf51465744f6741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a13500b283b7aa1caf51465744f6741">◆ </a></span>m_acceptor</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__HidAcceptor.html">vrpn_HidAcceptor</a>* m_acceptor</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>This is the HidAcceptor we use when reconnecting. </p>
+<p>We do not take ownership of the pointer; it is the user's responsibility. Using a stack-allocated acceptor is a really good way to get a segfault when calling <a class="el" href="#adb43a86035a352a2ae50c41330bcad77">reconnect()</a>–there won't be an acceptor there any longer! Thus, always use "new" to make your acceptors. </p>
+</div>
+</div>
+<a id="af38fa552b4881191207a38dac9aa0360" name="af38fa552b4881191207a38dac9aa0360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af38fa552b4881191207a38dac9aa0360">◆ </a></span>m_product_sought</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_uint16 m_product_sought</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>What product we want </p>
+</div>
+</div>
+<a id="aeb06aa38dad9e6712640ad8b51a2a466" name="aeb06aa38dad9e6712640ad8b51a2a466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb06aa38dad9e6712640ad8b51a2a466">◆ </a></span>m_vendor_sought</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_uint16 m_vendor_sought</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>What vendor we want </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__HumanInterface_8h_source.html">vrpn_HumanInterface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

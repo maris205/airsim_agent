@@ -1,0 +1,5 @@
+<map id="scan_udp" name="scan_udp">
+<area shape="rect" id="Node000001" title="扫描局域网内的组播数据，解析并存储节点信息" alt="" coords="134,5,211,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1distSimCtrlAPI_1_1distSimCtrlAPI.html#ac385179ee7b8a0ac75b83d84f71bafde" title="关闭UDP套接字连接" alt="" coords="5,5,86,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,21,86,21,86,16,118,16"/>
+</map>

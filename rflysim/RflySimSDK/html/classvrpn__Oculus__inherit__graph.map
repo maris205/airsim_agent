@@ -1,0 +1,19 @@
+<map id="vrpn_Oculus" name="vrpn_Oculus">
+<area shape="rect" id="Node000001" title="Oculus Rift head&#45;mounted display base class" alt="" coords="104,229,198,256"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Oculus__DK1.html" title="Oculus Rift DK1 head&#45;mounted display" alt="" coords="12,304,139,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="129,269,90,306,86,302,125,265"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Oculus__DK2.html" title="Oculus Rift DK2 head&#45;mounted display base class for both intertial&#45; only and LED&#45;enabled version." alt="" coords="164,304,291,331"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="177,265,216,302,212,306,173,269"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog.html" title=" " alt="" coords="38,155,131,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,191,142,227,138,231,104,195"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="26,80,143,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,122,87,154,82,154,82,122"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,5,164,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,48,87,80,82,80,82,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="156,155,280,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,195,165,231,161,227,194,191"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Oculus__DK2__LEDs.html" title="Oculus Rift DK2 head&#45;mounted display (LEDs enabled)" alt="" coords="46,379,214,405"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="200,342,148,380,145,376,197,338"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Oculus__DK2__inertial.html" title="Oculus Rift DK2 head&#45;mounted display (inertial measurement unit only)" alt="" coords="237,379,409,405"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="257,338,308,376,305,380,254,342"/>
+</map>

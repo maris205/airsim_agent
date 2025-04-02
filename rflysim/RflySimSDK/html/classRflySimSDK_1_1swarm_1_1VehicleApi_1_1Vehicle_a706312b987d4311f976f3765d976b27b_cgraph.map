@@ -1,0 +1,7 @@
+<map id="SendPosNEDNoYaw" name="SendPosNEDNoYaw">
+<area shape="rect" id="Node000001" title="发送目标位置指令给PX4（NED坐标系，不控制偏航）。 设置CurFlag=0表示Offboard模式，offMode=0表示SET_POSITION_TARGET_LOCAL_NED消息格式。 仅启用..." alt="" coords="5,43,151,69"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="199,5,392,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,44,183,39,184,44,151,49"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="255,72,336,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,63,239,75,239,80,150,68"/>
+</map>

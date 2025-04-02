@@ -11,7 +11,7 @@ from gdino import GroundingDINOAPIWrapper, visualize
 from PIL import Image
 import uuid
 
-api_key="058a54a8-25d4-4157-81c7-1c54d50fe0d8" #使用自己的key，火山方舟
+api_key="ffd77d7c-f420-4b69-8557-80e7fa85c8b9" #使用自己的key，火山方舟
 gdino_token = "885af84f607caa6a12ba509b6c3c03a7" #使用自己的token，dino
 
 objects_dict = {

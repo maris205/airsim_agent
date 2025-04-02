@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Tracker_AnalogFly.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Tracker_AnalogFly.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef INCLUDED_ANALOGFLY</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define INCLUDED_ANALOGFLY</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;quat.h&gt;</span> <span class="comment">// for q_matrix_type</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdio.h&gt;</span> <span class="comment">// for NULL</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include "vrpn_Analog.h"</span> <span class="comment">// for vrpn_ANALOGCB, etc</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include "vrpn_Button.h"</span> <span class="comment">// for vrpn_BUTTONCB, etc</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_API, VRPN_CALLBACK</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include "vrpn_Shared.h"</span> <span class="comment">// for timeval</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include "vrpn_Tracker.h"</span> <span class="comment">// for vrpn_Tracker</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include "vrpn_Types.h"</span> <span class="comment">// for VRPN_FALSE, vrpn_FALSE</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// This parameter is passed to the constructor for the AnalogFly; it describes</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// the channel mapping and parameters of that mapping, as well as the button</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// that will be used to reset the tracker when it is pushed. Any entry which</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// has a NULL pointer for the name is disabled.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00022">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classvrpn__TAF__axis.html">   22</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__TAF__axis.html">vrpn_TAF_axis</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> <a class="code hl_class" href="classvrpn__TAF__axis.html">vrpn_TAF_axis</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      { name = NULL; channel = 0; offset = 0.0f; thresh = 0.0f;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        scale = 1.0f; power = 1.0f; };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> <span class="keywordtype">char</span> * name;    <span class="comment">//&lt; Name of the Analog device driving this axis</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> <span class="keywordtype">int</span> channel;    <span class="comment">//&lt; Which channel to use from the Analog device</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="keywordtype">float</span> offset;   <span class="comment">//&lt; Offset to apply to values from this channel to reach 0</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> <span class="keywordtype">float</span> thresh;   <span class="comment">//&lt; Threshold to apply after offset within which values count as zero</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> <span class="keywordtype">float</span> scale;    <span class="comment">//&lt; Scale applied to values after offset and threshold</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> <span class="keywordtype">float</span> power;    <span class="comment">//&lt; Power to which values are taken after scaling</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00038">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFlyParam.html">   38</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Tracker__AnalogFlyParam.html">vrpn_Tracker_AnalogFlyParam</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <a class="code hl_class" href="classvrpn__Tracker__AnalogFlyParam.html">vrpn_Tracker_AnalogFlyParam</a> (<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        x.name = y.name = z.name =</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        sx.name = sy.name = sz.name = reset_name = clutch_name = NULL;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFlyParam.html#a3b416797e2fe6e61ff1e40900357003d">   48</a></span> <a class="code hl_class" href="classvrpn__TAF__axis.html">vrpn_TAF_axis</a> <a class="code hl_variable" href="classvrpn__Tracker__AnalogFlyParam.html#a3b416797e2fe6e61ff1e40900357003d">x</a>, y, z;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFlyParam.html#ae2e3c0c5b02e5c73d81a147c04561248">   51</a></span> <a class="code hl_class" href="classvrpn__TAF__axis.html">vrpn_TAF_axis</a> <a class="code hl_variable" href="classvrpn__Tracker__AnalogFlyParam.html#ae2e3c0c5b02e5c73d81a147c04561248">sx</a>, sy, sz;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFlyParam.html#a17f0c21835f88339d27b34e94ac905ed">   55</a></span> <span class="keywordtype">char</span> * <a class="code hl_variable" href="classvrpn__Tracker__AnalogFlyParam.html#a17f0c21835f88339d27b34e94ac905ed">reset_name</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> <span class="keywordtype">int</span> reset_which;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> <span class="comment">// large distances</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFlyParam.html#a9a40d643e411c3562dff9bfa4e07edfb">   61</a></span> <span class="keywordtype">char</span> * <a class="code hl_variable" href="classvrpn__Tracker__AnalogFlyParam.html#a9a40d643e411c3562dff9bfa4e07edfb">clutch_name</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> <span class="keywordtype">int</span> clutch_which;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Tracker__AnalogFly.html">vrpn_Tracker_AnalogFly</a>;  <span class="comment">// Forward reference</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00067">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classvrpn__TAF__fullaxis.html">   67</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__TAF__fullaxis.html">vrpn_TAF_fullaxis</a> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> <a class="code hl_class" href="classvrpn__TAF__fullaxis.html">vrpn_TAF_fullaxis</a> (<span class="keywordtype">void</span>) { ana = NULL; value = 0.0; af = NULL; };</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> <a class="code hl_class" href="classvrpn__TAF__axis.html">vrpn_TAF_axis</a> axis;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> <a class="code hl_class" href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a> * ana;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> <a class="code hl_class" href="classvrpn__Tracker__AnalogFly.html">vrpn_Tracker_AnalogFly</a> * af;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keywordtype">double</span> value;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// tracker into a tracker by interpreting the joystick</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// positions as either position or velocity inputs and "flying" the user</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// around based on analog values.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// The "absolute" parameter tells whether the tracker integrates differential</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// changes (the default, with FALSE) or takes the analog values as absolute</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// positions or orientations.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// The mapping from analog channels to directions (or orientation changes) is</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// described in the vrpn_Tracker_AnalogFlyParam parameter. For translations,</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// values above threshold are multiplied by the scale and then taken to the</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// power; the result is the number of meters (or meters per second) to move</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// in that direction. For rotations, the result is taken as the number of</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// revolutions (or revolutions per second) around the given axis.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// Note that the reset button has no effect on an absolute tracker.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// The time reported by absolute trackers is as of the last report they have</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// had from their analog devices.  The time reported by differential trackers</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// is the local time that the report was generated.  This is to allow a</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// gen-locked camera tracker to have its time values passed forward through</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// the AnalogFly class.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// If reportChanges is TRUE, updates are ONLY sent if there has been a</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// change since the last update, in which case they are generated no faster</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// than update_rate. </span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// If worldFrame is TRUE, then translations and rotations take place in the</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">// world frame, rather than the local frame. Useful for a simulated wand</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// when doing desktop testing of immersive apps - easier to keep under control.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00105">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFly.html">  105</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Tracker__AnalogFly.html">vrpn_Tracker_AnalogFly</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Tracker.html">vrpn_Tracker</a> {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> <a class="code hl_class" href="classvrpn__Tracker__AnalogFly.html">vrpn_Tracker_AnalogFly</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> * trackercon,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <a class="code hl_class" href="classvrpn__Tracker__AnalogFlyParam.html">vrpn_Tracker_AnalogFlyParam</a> * params,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> <span class="keywordtype">float</span> update_rate, <span class="keywordtype">bool</span> absolute = vrpn_FALSE,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> <span class="keywordtype">bool</span> reportChanges = VRPN_FALSE, <span class="keywordtype">bool</span> worldFrame = VRPN_FALSE);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvrpn__Tracker__AnalogFly.html">~vrpn_Tracker_AnalogFly</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classvrpn__Tracker__AnalogFly.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">  114</a></span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Tracker__AnalogFly.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">mainloop</a> ();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> <span class="keywordtype">double</span>      d_update_interval;  <span class="comment">//&lt; How long to wait between sends</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> <span class="keyword">struct </span>timeval  d_prevtime;     <span class="comment">//&lt; Time of the previous report</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> <span class="keywordtype">bool</span>        d_absolute;     <span class="comment">//&lt; Report absolute (vs. differential)?</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> <span class="keywordtype">bool</span>       d_reportChanges;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> <span class="keywordtype">bool</span>       d_worldFrame;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> <a class="code hl_class" href="classvrpn__TAF__fullaxis.html">vrpn_TAF_fullaxis</a>   d_x, d_y, d_z, d_sx, d_sy, d_sz;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> <a class="code hl_class" href="classvrpn__Button__Remote.html">vrpn_Button_Remote</a>  * d_reset_button;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> <span class="keywordtype">int</span>         d_which_button;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> <a class="code hl_class" href="classvrpn__Button__Remote.html">vrpn_Button_Remote</a>  * d_clutch_button;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> <span class="keywordtype">int</span>         d_clutch_which;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> <span class="keywordtype">bool</span>                d_clutch_engaged;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> <span class="keywordtype">bool</span>        d_clutch_was_off;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    q_matrix_type d_initMatrix, d_currentMatrix, d_clutchMatrix;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> <span class="keywordtype">void</span>    update_matrix_based_on_values (<span class="keywordtype">double</span> time_interval);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> <span class="keywordtype">void</span>    convert_matrix_to_tracker (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> <span class="keywordtype">bool</span> shouldReport (<span class="keywordtype">double</span> elapsedInterval) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> <span class="keywordtype">int</span> setup_channel (<a class="code hl_class" href="classvrpn__TAF__fullaxis.html">vrpn_TAF_fullaxis</a> * full);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> <span class="keywordtype">int</span> teardown_channel (<a class="code hl_class" href="classvrpn__TAF__fullaxis.html">vrpn_TAF_fullaxis</a> * full);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> reset(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> <span class="keyword">static</span> <span class="keywordtype">void</span> VRPN_CALLBACK handle_analog_update (<span class="keywordtype">void</span> * userdata,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__ANALOGCB.html">vrpn_ANALOGCB</a> info);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> <span class="keyword">static</span> <span class="keywordtype">void</span> VRPN_CALLBACK handle_reset_press (<span class="keywordtype">void</span> * userdata, <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__BUTTONCB.html">vrpn_BUTTONCB</a> info);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> <span class="keyword">static</span> <span class="keywordtype">void</span> VRPN_CALLBACK handle_clutch_press (<span class="keywordtype">void</span> * userdata, <span class="keyword">const</span> <a class="code hl_struct" href="struct__vrpn__BUTTONCB.html">vrpn_BUTTONCB</a> info);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_newConnection(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassvrpn__Analog__Remote_html"><div class="ttname"><a href="classvrpn__Analog__Remote.html">vrpn_Analog_Remote</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:181</div></div>
+<div class="ttc" id="aclassvrpn__Button__Remote_html"><div class="ttname"><a href="classvrpn__Button__Remote.html">vrpn_Button_Remote</a></div><div class="ttdef"><b>定义</b> vrpn_Button.h:251</div></div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="aclassvrpn__TAF__axis_html"><div class="ttname"><a href="classvrpn__TAF__axis.html">vrpn_TAF_axis</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:22</div></div>
+<div class="ttc" id="aclassvrpn__TAF__fullaxis_html"><div class="ttname"><a href="classvrpn__TAF__fullaxis.html">vrpn_TAF_fullaxis</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:67</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFlyParam_html"><div class="ttname"><a href="classvrpn__Tracker__AnalogFlyParam.html">vrpn_Tracker_AnalogFlyParam</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:38</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFlyParam_html_a17f0c21835f88339d27b34e94ac905ed"><div class="ttname"><a href="classvrpn__Tracker__AnalogFlyParam.html#a17f0c21835f88339d27b34e94ac905ed">vrpn_Tracker_AnalogFlyParam::reset_name</a></div><div class="ttdeci">char * reset_name</div><div class="ttdoc">Button device that is used to reset the matrix to the origin</div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:55</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFlyParam_html_a3b416797e2fe6e61ff1e40900357003d"><div class="ttname"><a href="classvrpn__Tracker__AnalogFlyParam.html#a3b416797e2fe6e61ff1e40900357003d">vrpn_Tracker_AnalogFlyParam::x</a></div><div class="ttdeci">vrpn_TAF_axis x</div><div class="ttdoc">Translation along each of these three axes</div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:48</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFlyParam_html_a9a40d643e411c3562dff9bfa4e07edfb"><div class="ttname"><a href="classvrpn__Tracker__AnalogFlyParam.html#a9a40d643e411c3562dff9bfa4e07edfb">vrpn_Tracker_AnalogFlyParam::clutch_name</a></div><div class="ttdeci">char * clutch_name</div><div class="ttdoc">Clutch device that is used to enable relative motion over</div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:61</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFlyParam_html_ae2e3c0c5b02e5c73d81a147c04561248"><div class="ttname"><a href="classvrpn__Tracker__AnalogFlyParam.html#ae2e3c0c5b02e5c73d81a147c04561248">vrpn_Tracker_AnalogFlyParam::sx</a></div><div class="ttdeci">vrpn_TAF_axis sx</div><div class="ttdoc">Rotation in the positive direction about the three axes</div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:51</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFly_html"><div class="ttname"><a href="classvrpn__Tracker__AnalogFly.html">vrpn_Tracker_AnalogFly</a></div><div class="ttdoc">This class will turn an analog device such as a joystick or a camera</div><div class="ttdef"><b>定义</b> vrpn_Tracker_AnalogFly.h:105</div></div>
+<div class="ttc" id="aclassvrpn__Tracker__AnalogFly_html_a5299ecc517aeaf6e61dc5d2c5316b4cb"><div class="ttname"><a href="classvrpn__Tracker__AnalogFly.html#a5299ecc517aeaf6e61dc5d2c5316b4cb">vrpn_Tracker_AnalogFly::mainloop</a></div><div class="ttdeci">virtual void mainloop()</div></div>
+<div class="ttc" id="aclassvrpn__Tracker_html"><div class="ttname"><a href="classvrpn__Tracker.html">vrpn_Tracker</a></div><div class="ttdef"><b>定义</b> vrpn_Tracker.h:49</div></div>
+<div class="ttc" id="astruct__vrpn__ANALOGCB_html"><div class="ttname"><a href="struct__vrpn__ANALOGCB.html">_vrpn_ANALOGCB</a></div><div class="ttdef"><b>定义</b> vrpn_Analog.h:168</div></div>
+<div class="ttc" id="astruct__vrpn__BUTTONCB_html"><div class="ttname"><a href="struct__vrpn__BUTTONCB.html">_vrpn_BUTTONCB</a></div><div class="ttdef"><b>定义</b> vrpn_Button.h:226</div></div>
+<div class="ttc" id="astructvrpn__HANDLERPARAM_html"><div class="ttname"><a href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></div><div class="ttdoc">This structure is what is passed to a vrpn_Connection message callback.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

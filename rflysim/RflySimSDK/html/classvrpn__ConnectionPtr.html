@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_ConnectionPtr类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#related">相关符号</a> |
+<a href="classvrpn__ConnectionPtr-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_ConnectionPtr类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>A shared pointer class for holding on to <a class="el" href="classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism.">vrpn_Connection</a> instances, using the existing "intrusive reference counting" automatically.  
+ <a href="#details">更多...</a></p>
+<p><code>#include &lt;<a class="el" href="vrpn__ConnectionPtr_8h_source.html">vrpn_ConnectionPtr.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae9b37e0000cb513e2ebf9eef190d950c" id="r_ae9b37e0000cb513e2ebf9eef190d950c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9b37e0000cb513e2ebf9eef190d950c">vrpn_ConnectionPtr</a> (<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *c=NULL)</td></tr>
+<tr class="memdesc:ae9b37e0000cb513e2ebf9eef190d950c"><td class="mdescLeft"> </td><td class="mdescRight">Explicit constructor from a non-smart connection pointer  <br/></td></tr>
+<tr class="separator:ae9b37e0000cb513e2ebf9eef190d950c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed351dbc9de7611c5174df00796d947f" id="r_aed351dbc9de7611c5174df00796d947f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aed351dbc9de7611c5174df00796d947f">vrpn_ConnectionPtr</a> (<a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> const &amp;other)</td></tr>
+<tr class="memdesc:aed351dbc9de7611c5174df00796d947f"><td class="mdescLeft"> </td><td class="mdescRight">Copy constructor from smart pointer  <br/></td></tr>
+<tr class="separator:aed351dbc9de7611c5174df00796d947f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adb76c2d77c292814b4b4277cde1ea869" id="r_adb76c2d77c292814b4b4277cde1ea869"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="#adb76c2d77c292814b4b4277cde1ea869">operator=</a> (<a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> const &amp;other)</td></tr>
+<tr class="memdesc:adb76c2d77c292814b4b4277cde1ea869"><td class="mdescLeft"> </td><td class="mdescRight">Assignment operator from smart pointer  <br/></td></tr>
+<tr class="separator:adb76c2d77c292814b4b4277cde1ea869"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9af1d6b1ddc9c28eb7c7deb99b9d77df" id="r_a9af1d6b1ddc9c28eb7c7deb99b9d77df"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9af1d6b1ddc9c28eb7c7deb99b9d77df">operator=</a> (<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *other)</td></tr>
+<tr class="memdesc:a9af1d6b1ddc9c28eb7c7deb99b9d77df"><td class="mdescLeft"> </td><td class="mdescRight">Assignment operator from non-smart pointer  <br/></td></tr>
+<tr class="separator:a9af1d6b1ddc9c28eb7c7deb99b9d77df"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae815193513cf956ad685c3b46ebea965" id="r_ae815193513cf956ad685c3b46ebea965"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae815193513cf956ad685c3b46ebea965">~vrpn_ConnectionPtr</a> ()</td></tr>
+<tr class="memdesc:ae815193513cf956ad685c3b46ebea965"><td class="mdescLeft"> </td><td class="mdescRight">Destructor - decrements the contained reference count, if applicable  <br/></td></tr>
+<tr class="separator:ae815193513cf956ad685c3b46ebea965"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55" id="r_ad20897c5c8bd47f5d4005989bead0e55"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a69bf00b914b26467b274dac02ab0e8af" id="r_a69bf00b914b26467b274dac02ab0e8af"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#a69bf00b914b26467b274dac02ab0e8af">get</a> () const</td></tr>
+<tr class="separator:a69bf00b914b26467b274dac02ab0e8af"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a61efd4196a96540ee018fee8791f3f10" id="r_a61efd4196a96540ee018fee8791f3f10"><td align="right" class="memItemLeft" valign="top"><a id="a61efd4196a96540ee018fee8791f3f10" name="a61efd4196a96540ee018fee8791f3f10"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>operator!</b> () const</td></tr>
+<tr class="separator:a61efd4196a96540ee018fee8791f3f10"><td class="memSeparator" colspan="2"> </td></tr>
+<tr><td colspan="2"><div class="groupHeader">Smart Pointer operators</div></td></tr>
+<tr class="memitem:a40be4feb325b7e696d6c6d576ecbccc6" id="r_a40be4feb325b7e696d6c6d576ecbccc6"><td align="right" class="memItemLeft" valign="top"><a id="a40be4feb325b7e696d6c6d576ecbccc6" name="a40be4feb325b7e696d6c6d576ecbccc6"></a>
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> &amp; </td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
+<tr class="separator:a40be4feb325b7e696d6c6d576ecbccc6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a05d91257905c84cef49feff23cee6643" id="r_a05d91257905c84cef49feff23cee6643"><td align="right" class="memItemLeft" valign="top"><a id="a05d91257905c84cef49feff23cee6643" name="a05d91257905c84cef49feff23cee6643"></a>
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> const &amp; </td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:a05d91257905c84cef49feff23cee6643"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a913e1f978fad67bc2c2daedee449541a" id="r_a913e1f978fad67bc2c2daedee449541a"><td align="right" class="memItemLeft" valign="top"><a id="a913e1f978fad67bc2c2daedee449541a" name="a913e1f978fad67bc2c2daedee449541a"></a>
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
+<tr class="separator:a913e1f978fad67bc2c2daedee449541a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa3a2412bb50ec3326c160b7816bbd78e" id="r_aa3a2412bb50ec3326c160b7816bbd78e"><td align="right" class="memItemLeft" valign="top"><a id="aa3a2412bb50ec3326c160b7816bbd78e" name="aa3a2412bb50ec3326c160b7816bbd78e"></a>
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> const * </td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="separator:aa3a2412bb50ec3326c160b7816bbd78e"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Connection creation functions</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Use these function, rather than initializing a <a class="el" href="classvrpn__ConnectionPtr.html" title='A shared pointer class for holding on to vrpn_Connection instances, using the existing "intrusive ref...'>vrpn_ConnectionPtr</a> with results of vrpn_create_server_connection() - this will correctly handle the default reference added by the vrpn_create_server_connection() function. Identical signatures are provided for your convenience </p>
+</div></td></tr>
+<tr class="memitem:a98b8e759890ca35453c1d6457a76a525" id="r_a98b8e759890ca35453c1d6457a76a525"><td align="right" class="memItemLeft" valign="top"><a id="a98b8e759890ca35453c1d6457a76a525" name="a98b8e759890ca35453c1d6457a76a525"></a>
+static <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> </td><td class="memItemRight" valign="bottom"><b>create_server_connection</b> (int port=vrpn_DEFAULT_LISTEN_PORT_NO, const char *local_in_logfile_name=NULL, const char *local_out_logfile_name=NULL, const char *NIC_NAME=NULL)</td></tr>
+<tr class="separator:a98b8e759890ca35453c1d6457a76a525"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1343f48430d499d44635535a7e740dd1" id="r_a1343f48430d499d44635535a7e740dd1"><td align="right" class="memItemLeft" valign="top"><a id="a1343f48430d499d44635535a7e740dd1" name="a1343f48430d499d44635535a7e740dd1"></a>
+static <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> </td><td class="memItemRight" valign="bottom"><b>create_server_connection</b> (const char *cname, const char *local_in_logfile_name=NULL, const char *local_out_logfile_name=NULL)</td></tr>
+<tr class="separator:a1343f48430d499d44635535a7e740dd1"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="related" name="related"></a>
+相关符号</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(注意: 这些不是成员符号.) </p>
+</td></tr>
+<tr class="memitem:ae48d50fda609607d8c0828efe9f76b67" id="r_ae48d50fda609607d8c0828efe9f76b67"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae48d50fda609607d8c0828efe9f76b67">operator==</a> (const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;lhs, const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;rhs)</td></tr>
+<tr class="separator:ae48d50fda609607d8c0828efe9f76b67"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1bac3657877e8244fce2af8abe81fda3" id="r_a1bac3657877e8244fce2af8abe81fda3"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bac3657877e8244fce2af8abe81fda3">operator!=</a> (const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;lhs, const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;rhs)</td></tr>
+<tr class="separator:a1bac3657877e8244fce2af8abe81fda3"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Safe Bool Idiom</h2></td></tr>
+<tr class="memitem:a75cebab1425a0a18bdfa8171d82aa281" id="r_a75cebab1425a0a18bdfa8171d82aa281"><td align="right" class="memItemLeft" valign="top"><a id="a75cebab1425a0a18bdfa8171d82aa281" name="a75cebab1425a0a18bdfa8171d82aa281"></a>
+typedef <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *vrpn_ConnectionPtr::* </td><td class="memItemRight" valign="bottom"><b>unspecified_bool_type</b></td></tr>
+<tr class="separator:a75cebab1425a0a18bdfa8171d82aa281"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9e92a0477d69bebbc468adb74f34826b" id="r_a9e92a0477d69bebbc468adb74f34826b"><td align="right" class="memItemLeft" valign="top"><a id="a9e92a0477d69bebbc468adb74f34826b" name="a9e92a0477d69bebbc468adb74f34826b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>operator unspecified_bool_type</b> () const</td></tr>
+<tr class="separator:a9e92a0477d69bebbc468adb74f34826b"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A shared pointer class for holding on to <a class="el" href="classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism.">vrpn_Connection</a> instances, using the existing "intrusive reference counting" automatically. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ae9b37e0000cb513e2ebf9eef190d950c" name="ae9b37e0000cb513e2ebf9eef190d950c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b37e0000cb513e2ebf9eef190d950c">◆ </a></span>vrpn_ConnectionPtr() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *</td> <td class="paramname"><span class="paramname"><em>c</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Explicit constructor from a non-smart connection pointer </p>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__ConnectionPtr_ae9b37e0000cb513e2ebf9eef190d950c_cgraph.svg" width="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aed351dbc9de7611c5174df00796d947f" name="aed351dbc9de7611c5174df00796d947f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed351dbc9de7611c5174df00796d947f">◆ </a></span>vrpn_ConnectionPtr() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> const &amp;</td> <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Copy constructor from smart pointer </p>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__ConnectionPtr_aed351dbc9de7611c5174df00796d947f_cgraph.svg" width="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ae815193513cf956ad685c3b46ebea965" name="ae815193513cf956ad685c3b46ebea965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae815193513cf956ad685c3b46ebea965">◆ </a></span>~vrpn_ConnectionPtr()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">~<a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor - decrements the contained reference count, if applicable </p>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__ConnectionPtr_ae815193513cf956ad685c3b46ebea965_cgraph.svg" width="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a69bf00b914b26467b274dac02ab0e8af" name="a69bf00b914b26467b274dac02ab0e8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69bf00b914b26467b274dac02ab0e8af">◆ </a></span>get()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * get </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the contained "non-smart" pointer. You are responsible for calling <a class="el" href="classvrpn__Connection.html#a3bec6f13a84a014fca7183a8eaebd5d9" title="Counting references to this connection.">vrpn_Connection::addReference()</a> if you want to affect connection lifetime with this pointer! (Included VRPN devices take care of this by default) </p>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classvrpn__ConnectionPtr_a69bf00b914b26467b274dac02ab0e8af_icgraph.svg" width="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a9af1d6b1ddc9c28eb7c7deb99b9d77df" name="a9af1d6b1ddc9c28eb7c7deb99b9d77df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af1d6b1ddc9c28eb7c7deb99b9d77df">◆ </a></span>operator=() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp; operator= </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *</td> <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Assignment operator from non-smart pointer </p>
+<p>self-assignment is a no-op</p>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classvrpn__ConnectionPtr_a9af1d6b1ddc9c28eb7c7deb99b9d77df_cgraph.svg" width="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="adb76c2d77c292814b4b4277cde1ea869" name="adb76c2d77c292814b4b4277cde1ea869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb76c2d77c292814b4b4277cde1ea869">◆ </a></span>operator=() <span class="overload">[2/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp; operator= </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> const &amp;</td> <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Assignment operator from smart pointer </p>
+<p>self-assignment is a no-op</p>
+<div class="dynheader closed" id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-5-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-5-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-5-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classvrpn__ConnectionPtr_adb76c2d77c292814b4b4277cde1ea869_cgraph.svg" width="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ad20897c5c8bd47f5d4005989bead0e55" name="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">◆ </a></span>reset()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void reset </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the contained pointer and decrements the reference count, if applicable </p>
+<div class="dynheader closed" id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-6-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-6-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-6-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="139" scrolling="no" src="classvrpn__ConnectionPtr_ad20897c5c8bd47f5d4005989bead0e55_icgraph.svg" width="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="a1bac3657877e8244fce2af8abe81fda3" name="a1bac3657877e8244fce2af8abe81fda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bac3657877e8244fce2af8abe81fda3">◆ </a></span>operator!=()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool operator!= </td>
+<td>(</td>
+<td class="paramtype">const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;</td> <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;</td> <td class="paramname"><span class="paramname"><em>rhs</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Inequality operator for connection smart pointers </p>
+<div class="dynheader closed" id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-7-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-7-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-7-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__ConnectionPtr_a1bac3657877e8244fce2af8abe81fda3_cgraph.svg" width="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="ae48d50fda609607d8c0828efe9f76b67" name="ae48d50fda609607d8c0828efe9f76b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae48d50fda609607d8c0828efe9f76b67">◆ </a></span>operator==()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">bool operator== </td>
+<td>(</td>
+<td class="paramtype">const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;</td> <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const <a class="el" href="classvrpn__ConnectionPtr.html">vrpn_ConnectionPtr</a> &amp;</td> <td class="paramname"><span class="paramname"><em>rhs</em></span> )</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Equality operator for connection smart pointers </p>
+<div class="dynheader closed" id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-8-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-8-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-8-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classvrpn__ConnectionPtr_ae48d50fda609607d8c0828efe9f76b67_cgraph.svg" width="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__ConnectionPtr_8h_source.html">vrpn_ConnectionPtr.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

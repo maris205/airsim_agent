@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/mavlink/uAvionix/uAvionix.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_ad33f1dddab9e5eaec5103fc17ef0232.html">mavlink</a></li><li class="navelem"><a class="el" href="dir_441128c5de4f1bb1fab7769399d22e9e.html">uAvionix</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#define-members">宏定义</a> |
+<a href="#typedef-members">类型定义</a> |
+<a href="#enum-members">枚举</a> </div>
+<div class="headertitle"><div class="title">uAvionix.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>MAVLink comm protocol generated from uAvionix.xml  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include "../protocol.h"</code><br/>
+<code>#include "./mavlink_msg_uavionix_adsb_out_cfg.h"</code><br/>
+<code>#include "./mavlink_msg_uavionix_adsb_out_dynamic.h"</code><br/>
+<code>#include "./mavlink_msg_uavionix_adsb_transceiver_health_report.h"</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> uAvionix.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="588" scrolling="no" src="uAvionix_8h__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="144" scrolling="no" src="uAvionix_8h__dep__incl.svg" width="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="uAvionix_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad5a9a11154061c7163a348776d832360" id="r_ad5a9a11154061c7163a348776d832360"><td align="right" class="memItemLeft" valign="top"><a id="ad5a9a11154061c7163a348776d832360" name="ad5a9a11154061c7163a348776d832360"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_UAVIONIX_H</b></td></tr>
+<tr class="separator:ad5a9a11154061c7163a348776d832360"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec7bcd84c243ec07f25b1416f2168e1b" id="r_aec7bcd84c243ec07f25b1416f2168e1b"><td align="right" class="memItemLeft" valign="top"><a id="aec7bcd84c243ec07f25b1416f2168e1b" name="aec7bcd84c243ec07f25b1416f2168e1b"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_THIS_XML_IDX</b>   2</td></tr>
+<tr class="separator:aec7bcd84c243ec07f25b1416f2168e1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa90005429262b658c881fa203c4de208" id="r_aa90005429262b658c881fa203c4de208"><td align="right" class="memItemLeft" valign="top"><a id="aa90005429262b658c881fa203c4de208" name="aa90005429262b658c881fa203c4de208"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_LENGTHS</b>   {}</td></tr>
+<tr class="separator:aa90005429262b658c881fa203c4de208"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f709d5835acb54a11202a5fdc7a6bfe" id="r_a3f709d5835acb54a11202a5fdc7a6bfe"><td align="right" class="memItemLeft" valign="top"><a id="a3f709d5835acb54a11202a5fdc7a6bfe" name="a3f709d5835acb54a11202a5fdc7a6bfe"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_CRCS</b>   {{10001, 209, 20, 0, 0, 0}, {10002, 186, 41, 0, 0, 0}, {10003, 4, 1, 0, 0, 0}}</td></tr>
+<tr class="separator:a3f709d5835acb54a11202a5fdc7a6bfe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12224bb3d52618c5637edc93f5e6b634" id="r_a12224bb3d52618c5637edc93f5e6b634"><td align="right" class="memItemLeft" valign="top"><a id="a12224bb3d52618c5637edc93f5e6b634" name="a12224bb3d52618c5637edc93f5e6b634"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_ENABLED_UAVIONIX</b></td></tr>
+<tr class="separator:a12224bb3d52618c5637edc93f5e6b634"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af1c205039b83f88094655effde6b78a1" id="r_af1c205039b83f88094655effde6b78a1"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#af1c205039b83f88094655effde6b78a1">HAVE_ENUM_UAVIONIX_ADSB_OUT_DYNAMIC_STATE</a></td></tr>
+<tr class="memdesc:af1c205039b83f88094655effde6b78a1"><td class="mdescLeft"> </td><td class="mdescRight">State flags for ADS-B transponder dynamic report  <br/></td></tr>
+<tr class="separator:af1c205039b83f88094655effde6b78a1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a69eba354ec31a3d1585d69b8d3ecefe5" id="r_a69eba354ec31a3d1585d69b8d3ecefe5"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a69eba354ec31a3d1585d69b8d3ecefe5">HAVE_ENUM_UAVIONIX_ADSB_OUT_RF_SELECT</a></td></tr>
+<tr class="memdesc:a69eba354ec31a3d1585d69b8d3ecefe5"><td class="mdescLeft"> </td><td class="mdescRight">Transceiver RF control flags for ADS-B transponder dynamic reports  <br/></td></tr>
+<tr class="separator:a69eba354ec31a3d1585d69b8d3ecefe5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d803b7285930e2eaeeb6d020372482c" id="r_a5d803b7285930e2eaeeb6d020372482c"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d803b7285930e2eaeeb6d020372482c">HAVE_ENUM_UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX</a></td></tr>
+<tr class="memdesc:a5d803b7285930e2eaeeb6d020372482c"><td class="mdescLeft"> </td><td class="mdescRight">Status for ADS-B transponder dynamic input  <br/></td></tr>
+<tr class="separator:a5d803b7285930e2eaeeb6d020372482c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6fc3e325c8ad087ce58381f979c6240b" id="r_a6fc3e325c8ad087ce58381f979c6240b"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc3e325c8ad087ce58381f979c6240b">HAVE_ENUM_UAVIONIX_ADSB_RF_HEALTH</a></td></tr>
+<tr class="memdesc:a6fc3e325c8ad087ce58381f979c6240b"><td class="mdescLeft"> </td><td class="mdescRight">Status flags for ADS-B transponder dynamic output  <br/></td></tr>
+<tr class="separator:a6fc3e325c8ad087ce58381f979c6240b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af58ebeab440111060fe0fd1122299ea6" id="r_af58ebeab440111060fe0fd1122299ea6"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#af58ebeab440111060fe0fd1122299ea6">HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE</a></td></tr>
+<tr class="memdesc:af58ebeab440111060fe0fd1122299ea6"><td class="mdescLeft"> </td><td class="mdescRight">Definitions for aircraft size  <br/></td></tr>
+<tr class="separator:af58ebeab440111060fe0fd1122299ea6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1f139b92dea07fc61f4750977b11167f" id="r_a1f139b92dea07fc61f4750977b11167f"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f139b92dea07fc61f4750977b11167f">HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT</a></td></tr>
+<tr class="memdesc:a1f139b92dea07fc61f4750977b11167f"><td class="mdescLeft"> </td><td class="mdescRight">GPS lataral offset encoding  <br/></td></tr>
+<tr class="separator:a1f139b92dea07fc61f4750977b11167f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a534d47f2056a2e0bcdd90c7279ae509a" id="r_a534d47f2056a2e0bcdd90c7279ae509a"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a534d47f2056a2e0bcdd90c7279ae509a">HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON</a></td></tr>
+<tr class="memdesc:a534d47f2056a2e0bcdd90c7279ae509a"><td class="mdescLeft"> </td><td class="mdescRight">GPS longitudinal offset encoding  <br/></td></tr>
+<tr class="separator:a534d47f2056a2e0bcdd90c7279ae509a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a43d18873c60ae325e86f7c590c6ea658" id="r_a43d18873c60ae325e86f7c590c6ea658"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a43d18873c60ae325e86f7c590c6ea658">HAVE_ENUM_UAVIONIX_ADSB_EMERGENCY_STATUS</a></td></tr>
+<tr class="memdesc:a43d18873c60ae325e86f7c590c6ea658"><td class="mdescLeft"> </td><td class="mdescRight">Emergency status encoding  <br/></td></tr>
+<tr class="separator:a43d18873c60ae325e86f7c590c6ea658"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a713480f83cc8ffd484a19a4b9b690215" id="r_a713480f83cc8ffd484a19a4b9b690215"><td align="right" class="memItemLeft" valign="top"><a id="a713480f83cc8ffd484a19a4b9b690215" name="a713480f83cc8ffd484a19a4b9b690215"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_VERSION</b>   2</td></tr>
+<tr class="separator:a713480f83cc8ffd484a19a4b9b690215"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec7bcd84c243ec07f25b1416f2168e1b" id="r_aec7bcd84c243ec07f25b1416f2168e1b"><td align="right" class="memItemLeft" valign="top"><a id="aec7bcd84c243ec07f25b1416f2168e1b" name="aec7bcd84c243ec07f25b1416f2168e1b"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_THIS_XML_IDX</b>   2</td></tr>
+<tr class="separator:aec7bcd84c243ec07f25b1416f2168e1b"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a5d998c534e3a75df7879d2b39b8202e7" id="r_a5d998c534e3a75df7879d2b39b8202e7"><td align="right" class="memItemLeft" valign="top"><a id="a5d998c534e3a75df7879d2b39b8202e7" name="a5d998c534e3a75df7879d2b39b8202e7"></a>
+typedef enum UAVIONIX_ADSB_OUT_DYNAMIC_STATE </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE</b></td></tr>
+<tr class="separator:a5d998c534e3a75df7879d2b39b8202e7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac31f17360e9c98383c70d3ebfbecd31f" id="r_ac31f17360e9c98383c70d3ebfbecd31f"><td align="right" class="memItemLeft" valign="top"><a id="ac31f17360e9c98383c70d3ebfbecd31f" name="ac31f17360e9c98383c70d3ebfbecd31f"></a>
+typedef enum UAVIONIX_ADSB_OUT_RF_SELECT </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_RF_SELECT</b></td></tr>
+<tr class="separator:ac31f17360e9c98383c70d3ebfbecd31f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a06cedf2fc608fe1ab0792b9920389118" id="r_a06cedf2fc608fe1ab0792b9920389118"><td align="right" class="memItemLeft" valign="top"><a id="a06cedf2fc608fe1ab0792b9920389118" name="a06cedf2fc608fe1ab0792b9920389118"></a>
+typedef enum UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX</b></td></tr>
+<tr class="separator:a06cedf2fc608fe1ab0792b9920389118"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a1bd08aa8a30ed17c95a5a3f3836c1c" id="r_a4a1bd08aa8a30ed17c95a5a3f3836c1c"><td align="right" class="memItemLeft" valign="top"><a id="a4a1bd08aa8a30ed17c95a5a3f3836c1c" name="a4a1bd08aa8a30ed17c95a5a3f3836c1c"></a>
+typedef enum UAVIONIX_ADSB_RF_HEALTH </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_RF_HEALTH</b></td></tr>
+<tr class="separator:a4a1bd08aa8a30ed17c95a5a3f3836c1c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a6f34d09a3773270ac25d92d072d897" id="r_a7a6f34d09a3773270ac25d92d072d897"><td align="right" class="memItemLeft" valign="top"><a id="a7a6f34d09a3773270ac25d92d072d897" name="a7a6f34d09a3773270ac25d92d072d897"></a>
+typedef enum UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE</b></td></tr>
+<tr class="separator:a7a6f34d09a3773270ac25d92d072d897"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af09052c7498ab66235b64362cc4f377a" id="r_af09052c7498ab66235b64362cc4f377a"><td align="right" class="memItemLeft" valign="top"><a id="af09052c7498ab66235b64362cc4f377a" name="af09052c7498ab66235b64362cc4f377a"></a>
+typedef enum UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT</b></td></tr>
+<tr class="separator:af09052c7498ab66235b64362cc4f377a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2f29edf9ca16a95fa9a06b42f52f5ffd" id="r_a2f29edf9ca16a95fa9a06b42f52f5ffd"><td align="right" class="memItemLeft" valign="top"><a id="a2f29edf9ca16a95fa9a06b42f52f5ffd" name="a2f29edf9ca16a95fa9a06b42f52f5ffd"></a>
+typedef enum UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON</b></td></tr>
+<tr class="separator:a2f29edf9ca16a95fa9a06b42f52f5ffd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa03cfbf4fa02f936d1263b5c5d3f077b" id="r_aa03cfbf4fa02f936d1263b5c5d3f077b"><td align="right" class="memItemLeft" valign="top"><a id="aa03cfbf4fa02f936d1263b5c5d3f077b" name="aa03cfbf4fa02f936d1263b5c5d3f077b"></a>
+typedef enum UAVIONIX_ADSB_EMERGENCY_STATUS </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_EMERGENCY_STATUS</b></td></tr>
+<tr class="separator:aa03cfbf4fa02f936d1263b5c5d3f077b"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a355654c671b32d3b6bfda4a7b10b46ea" id="r_a355654c671b32d3b6bfda4a7b10b46ea"><td align="right" class="memItemLeft" valign="top"><a id="a355654c671b32d3b6bfda4a7b10b46ea" name="a355654c671b32d3b6bfda4a7b10b46ea"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE</b> { <br/>
+  <b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE_INTENT_CHANGE</b> =1
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE_AUTOPILOT_ENABLED</b> =2
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE_NICBARO_CROSSCHECKED</b> =4
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE_ON_GROUND</b> =8
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE_IDENT</b> =16
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_STATE_ENUM_END</b> =17
+<br/>
+ }</td></tr>
+<tr class="separator:a355654c671b32d3b6bfda4a7b10b46ea"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad62cfb08905fff4df65ad8377ec3d101" id="r_ad62cfb08905fff4df65ad8377ec3d101"><td align="right" class="memItemLeft" valign="top"><a id="ad62cfb08905fff4df65ad8377ec3d101" name="ad62cfb08905fff4df65ad8377ec3d101"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_RF_SELECT</b> { <b>UAVIONIX_ADSB_OUT_RF_SELECT_STANDBY</b> =0
+, <b>UAVIONIX_ADSB_OUT_RF_SELECT_RX_ENABLED</b> =1
+, <b>UAVIONIX_ADSB_OUT_RF_SELECT_TX_ENABLED</b> =2
+, <b>UAVIONIX_ADSB_OUT_RF_SELECT_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:ad62cfb08905fff4df65ad8377ec3d101"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76c978ae356133e2b3cb28784bc67997" id="r_a76c978ae356133e2b3cb28784bc67997"><td align="right" class="memItemLeft" valign="top"><a id="a76c978ae356133e2b3cb28784bc67997" name="a76c978ae356133e2b3cb28784bc67997"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX</b> { <br/>
+  <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_NONE_0</b> =0
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_NONE_1</b> =1
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_2D</b> =2
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_3D</b> =3
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_DGPS</b> =4
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_RTK</b> =5
+, <b>UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX_ENUM_END</b> =6
+<br/>
+ }</td></tr>
+<tr class="separator:a76c978ae356133e2b3cb28784bc67997"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae24b5af1757923c7ed227c05f6b7afbf" id="r_ae24b5af1757923c7ed227c05f6b7afbf"><td align="right" class="memItemLeft" valign="top"><a id="ae24b5af1757923c7ed227c05f6b7afbf" name="ae24b5af1757923c7ed227c05f6b7afbf"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_RF_HEALTH</b> { <br/>
+  <b>UAVIONIX_ADSB_RF_HEALTH_INITIALIZING</b> =0
+, <b>UAVIONIX_ADSB_RF_HEALTH_OK</b> =1
+, <b>UAVIONIX_ADSB_RF_HEALTH_FAIL_TX</b> =2
+, <b>UAVIONIX_ADSB_RF_HEALTH_FAIL_RX</b> =16
+, <br/>
+  <b>UAVIONIX_ADSB_RF_HEALTH_ENUM_END</b> =17
+<br/>
+ }</td></tr>
+<tr class="separator:ae24b5af1757923c7ed227c05f6b7afbf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa7a19406347b37d6292758a6444fb450" id="r_aa7a19406347b37d6292758a6444fb450"><td align="right" class="memItemLeft" valign="top"><a id="aa7a19406347b37d6292758a6444fb450" name="aa7a19406347b37d6292758a6444fb450"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE</b> { <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_NO_DATA</b> =0
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L15M_W23M</b> =1
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L25M_W28P5M</b> =2
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L25_34M</b> =3
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L35_33M</b> =4
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L35_38M</b> =5
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L45_39P5M</b> =6
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L45_45M</b> =7
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L55_45M</b> =8
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L55_52M</b> =9
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L65_59P5M</b> =10
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L65_67M</b> =11
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L75_W72P5M</b> =12
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L75_W80M</b> =13
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L85_W80M</b> =14
+, <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_L85_W90M</b> =15
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE_ENUM_END</b> =16
+<br/>
+ }</td></tr>
+<tr class="separator:aa7a19406347b37d6292758a6444fb450"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aba7eb16b34895b32031d9b34223302fb" id="r_aba7eb16b34895b32031d9b34223302fb"><td align="right" class="memItemLeft" valign="top"><a id="aba7eb16b34895b32031d9b34223302fb" name="aba7eb16b34895b32031d9b34223302fb"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT</b> { <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_NO_DATA</b> =0
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_LEFT_2M</b> =1
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_LEFT_4M</b> =2
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_LEFT_6M</b> =3
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_RIGHT_0M</b> =4
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_RIGHT_2M</b> =5
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_RIGHT_4M</b> =6
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_RIGHT_6M</b> =7
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT_ENUM_END</b> =8
+<br/>
+ }</td></tr>
+<tr class="separator:aba7eb16b34895b32031d9b34223302fb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a38cd30c47828d1768ad3033b36383c45" id="r_a38cd30c47828d1768ad3033b36383c45"><td align="right" class="memItemLeft" valign="top"><a id="a38cd30c47828d1768ad3033b36383c45" name="a38cd30c47828d1768ad3033b36383c45"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON</b> { <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON_NO_DATA</b> =0
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON_APPLIED_BY_SENSOR</b> =1
+, <b>UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:a38cd30c47828d1768ad3033b36383c45"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a54991c43658932a20fbf810fa807d39c" id="r_a54991c43658932a20fbf810fa807d39c"><td align="right" class="memItemLeft" valign="top"><a id="a54991c43658932a20fbf810fa807d39c" name="a54991c43658932a20fbf810fa807d39c"></a>enum  </td><td class="memItemRight" valign="bottom"><b>UAVIONIX_ADSB_EMERGENCY_STATUS</b> { <br/>
+  <b>UAVIONIX_ADSB_OUT_NO_EMERGENCY</b> =0
+, <b>UAVIONIX_ADSB_OUT_GENERAL_EMERGENCY</b> =1
+, <b>UAVIONIX_ADSB_OUT_LIFEGUARD_EMERGENCY</b> =2
+, <b>UAVIONIX_ADSB_OUT_MINIMUM_FUEL_EMERGENCY</b> =3
+, <br/>
+  <b>UAVIONIX_ADSB_OUT_NO_COMM_EMERGENCY</b> =4
+, <b>UAVIONIX_ADSB_OUT_UNLAWFUL_INTERFERANCE_EMERGENCY</b> =5
+, <b>UAVIONIX_ADSB_OUT_DOWNED_AIRCRAFT_EMERGENCY</b> =6
+, <b>UAVIONIX_ADSB_OUT_RESERVED</b> =7
+, <br/>
+  <b>UAVIONIX_ADSB_EMERGENCY_STATUS_ENUM_END</b> =8
+<br/>
+ }</td></tr>
+<tr class="separator:a54991c43658932a20fbf810fa807d39c"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>MAVLink comm protocol generated from uAvionix.xml </p>
+<dl class="section see"><dt>参见</dt><dd><a href="http://mavlink.org">http://mavlink.org</a> </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a43d18873c60ae325e86f7c590c6ea658" name="a43d18873c60ae325e86f7c590c6ea658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d18873c60ae325e86f7c590c6ea658">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_EMERGENCY_STATUS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_EMERGENCY_STATUS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Emergency status encoding </p>
+</div>
+</div>
+<a id="af58ebeab440111060fe0fd1122299ea6" name="af58ebeab440111060fe0fd1122299ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58ebeab440111060fe0fd1122299ea6">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_AIRCRAFT_SIZE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Definitions for aircraft size </p>
+</div>
+</div>
+<a id="a1f139b92dea07fc61f4750977b11167f" name="a1f139b92dea07fc61f4750977b11167f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f139b92dea07fc61f4750977b11167f">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LAT</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>GPS lataral offset encoding </p>
+</div>
+</div>
+<a id="a534d47f2056a2e0bcdd90c7279ae509a" name="a534d47f2056a2e0bcdd90c7279ae509a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534d47f2056a2e0bcdd90c7279ae509a">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_OUT_CFG_GPS_OFFSET_LON</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>GPS longitudinal offset encoding </p>
+</div>
+</div>
+<a id="a5d803b7285930e2eaeeb6d020372482c" name="a5d803b7285930e2eaeeb6d020372482c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d803b7285930e2eaeeb6d020372482c">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_OUT_DYNAMIC_GPS_FIX</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Status for ADS-B transponder dynamic input </p>
+</div>
+</div>
+<a id="af1c205039b83f88094655effde6b78a1" name="af1c205039b83f88094655effde6b78a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c205039b83f88094655effde6b78a1">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_OUT_DYNAMIC_STATE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_OUT_DYNAMIC_STATE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>State flags for ADS-B transponder dynamic report </p>
+</div>
+</div>
+<a id="a69eba354ec31a3d1585d69b8d3ecefe5" name="a69eba354ec31a3d1585d69b8d3ecefe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69eba354ec31a3d1585d69b8d3ecefe5">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_OUT_RF_SELECT</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_OUT_RF_SELECT</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Transceiver RF control flags for ADS-B transponder dynamic reports </p>
+</div>
+</div>
+<a id="a6fc3e325c8ad087ce58381f979c6240b" name="a6fc3e325c8ad087ce58381f979c6240b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc3e325c8ad087ce58381f979c6240b">◆ </a></span>HAVE_ENUM_UAVIONIX_ADSB_RF_HEALTH</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_UAVIONIX_ADSB_RF_HEALTH</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Status flags for ADS-B transponder dynamic output </p>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

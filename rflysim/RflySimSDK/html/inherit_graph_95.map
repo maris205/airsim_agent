@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html" title="DLL文件外部加载接口类" alt="" coords="5,5,90,32"/>
+<area shape="rect" id="Node000001" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1MultiCopterDll.html" title=" " alt="" coords="138,5,242,32"/>
+<area shape="poly" id="edge8_Node000000_Node000001" title=" " alt="" coords="105,16,137,16,137,21,105,21"/>
+</map>

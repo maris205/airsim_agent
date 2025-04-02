@@ -1,0 +1,32 @@
+<map id="send_cruise_speed_fw" name="send_cruise_speed_fw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,164,160,191"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2439e1ba892ef9bfc5d404483d6df32" title="发送指定改变飞机的巡航速度" alt="" coords="208,123,440,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,164,192,160,192,165,160,169"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7e0dd29fef4e80b08f7d96819e7a4a7e" title=" " alt="" coords="226,189,422,232"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="160,185,211,192,210,198,160,191"/>
+<area shape="rect" id="Node000003" href="$classRflyMavlink.html#ad584eaa3a3e2a747d67313910fa4e9d0" title=" " alt="" coords="517,5,726,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,120,412,80,449,59,487,42,509,34,511,39,489,46,451,64,415,84,355,124"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a831172bea8ba4f655418913776e1f30e" title="向 Pixhawk 发送命令更改其参数" alt="" coords="502,56,741,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="422,119,508,100,509,105,423,125"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a162081480a066efd9dc4aa4b2fdb95d9" title="发送MAVLink设置参数请求，用于通过MAVLink协议设置无人机的参数。根据参数类型，它可以设置整型或实型参数。" alt="" coords="488,123,755,165"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="441,141,472,141,472,147,441,147"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a162081480a066efd9dc4aa4b2fdb95d9" title="设置MAVLink参数" alt="" coords="516,189,727,248"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="413,163,502,186,501,191,411,169"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a48d5ff23dc613fc2cd1fb7d5ade86d7f" title="发送UDP简单数据" alt="" coords="500,272,743,315"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="423,164,442,175,459,196,466,218,473,239,490,258,495,262,492,266,486,262,469,241,461,220,455,199,438,179,420,168"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="803,64,997,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="741,78,788,79,788,85,741,83"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="1045,64,1264,107"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="997,83,1029,83,1029,88,997,88"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="738,269,754,258,767,243,774,227,778,194,782,160,788,143,801,125,814,113,818,117,805,128,793,145,787,162,783,195,779,229,771,245,757,262,741,273"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="809,139,991,181"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="733,269,754,258,769,242,777,226,786,209,802,191,807,187,810,192,805,195,790,212,782,228,774,246,757,262,736,274"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="809,205,991,248"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="713,269,793,249,794,255,714,274"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="803,272,997,315"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="743,291,788,291,788,296,743,296"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="804,339,996,381"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="714,313,794,332,793,337,713,318"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="804,405,996,448"/>
+<area shape="poly" id="edge13_Node000009_Node000014" title=" " alt="" coords="660,313,726,351,804,391,818,397,816,402,802,396,723,356,657,318"/>
+</map>

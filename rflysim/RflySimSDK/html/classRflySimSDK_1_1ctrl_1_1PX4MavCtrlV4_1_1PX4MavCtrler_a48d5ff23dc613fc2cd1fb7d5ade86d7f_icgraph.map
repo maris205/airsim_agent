@@ -1,0 +1,40 @@
+<map id="sendUDPSimpData" name="sendUDPSimpData">
+<area shape="rect" id="Node000001" title="发送UDP简单数据" alt="" coords="930,255,1066,282"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2b9fb60ce7dcd3b4a34fa97917227e1" title="发送指定改变飞机的巡航半径" alt="" coords="744,50,874,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="972,246,821,79,825,75,976,243"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2439e1ba892ef9bfc5d404483d6df32" title="发送指定改变飞机的巡航速度" alt="" coords="746,167,872,194"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="952,251,839,197,841,192,955,246"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#aa4667a3b8769fa59836727ab4ecdffef" title="发送指令到 Pixhawk 使其上锁/解锁" alt="" coords="530,343,630,370"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="920,289,882,297,631,349,630,344,881,292,918,283"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a46109bd6d1ca77160fa728636dad4840" title="发送Offboard命令到PX4" alt="" coords="736,470,882,497"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="977,295,824,471,820,468,973,292"/>
+<area shape="rect" id="Node000016" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6b235bdc0efb19b913b8526b4ee53bf6" title="发送命令让飞行器起飞到指定位置" alt="" coords="749,255,869,282"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="914,271,869,271,869,266,914,266"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="239,218,424,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="762,46,701,26,627,11,587,8,548,10,509,18,473,33,447,50,423,72,385,124,358,176,342,219,337,217,353,174,381,121,419,69,444,46,471,28,508,13,547,5,587,3,627,6,702,21,763,41"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a8d8c0bf267e64ca9f00984fedcf154fd" title=" " alt="" coords="482,42,678,85"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="728,66,679,66,679,61,728,61"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,218,191,261"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,242,191,242,191,237,223,237"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="752,165,693,151,623,140,547,138,509,142,473,150,440,163,408,181,358,220,354,216,405,177,437,159,471,145,508,136,547,132,623,134,694,145,753,160"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a94d9c919ea2f9e1ff65fa25d3f8f1b79" title=" " alt="" coords="482,159,678,202"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="730,183,679,183,679,178,730,178"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="514,348,471,334,408,300,358,263,361,259,411,295,473,329,516,343"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="285,419,378,446"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="516,373,473,385,368,422,366,416,471,380,514,368"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="536,546,624,573"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="766,506,689,537,625,554,623,549,687,532,764,501"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8e46a45fbec1a107548def62999b1994" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="533,597,627,623"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="787,510,744,550,718,570,690,587,659,599,628,607,627,601,658,594,687,582,715,566,741,546,783,506"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af04f4988d61436fa85ae2c0046784177" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="525,394,635,421"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="764,466,687,435,635,421,636,416,689,430,766,461"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad7bbe8d48aa560565aa63b39edd37e77" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="528,445,632,471"/>
+<area shape="poly" id="edge15_Node000010_Node000014" title=" " alt="" coords="721,476,633,467,633,461,721,471"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a71d512a670869eb9ea8d615517e7a13a" title="循环发送MAVLink的offboard模式控制命令" alt="" coords="514,495,646,522"/>
+<area shape="poly" id="edge16_Node000010_Node000015" title=" " alt="" coords="721,496,647,504,647,499,721,491"/>
+<area shape="poly" id="edge17_Node000015_Node000009" title=" " alt="" coords="499,494,471,486,366,449,368,444,473,481,501,489"/>
+<area shape="poly" id="edge19_Node000016_Node000003" title=" " alt="" coords="734,267,424,248,425,243,734,262"/>
+<area shape="rect" id="Node000017" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7e6b7d5dc106d745cf823364704a4904" title=" " alt="" coords="472,277,688,319"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="734,281,689,287,688,282,733,276"/>
+<area shape="poly" id="edge21_Node000017_Node000003" title=" " alt="" coords="472,275,424,264,425,259,473,270"/>
+</map>

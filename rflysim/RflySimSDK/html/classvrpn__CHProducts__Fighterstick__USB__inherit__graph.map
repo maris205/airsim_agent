@@ -1,0 +1,22 @@
+<map id="vrpn_CHProducts_Fighterstick_USB" name="vrpn_CHProducts_Fighterstick_USB">
+<area shape="rect" id="Node000001" title=" " alt="" coords="158,304,393,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__CHProducts__Controller__Raw.html" title=" " alt="" coords="5,155,228,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,195,134,226,152,254,169,270,189,283,231,301,228,306,186,287,166,274,148,258,129,228,119,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="247,80,364,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,115,151,157,149,152,258,110"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="162,229,255,256"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="291,121,219,230,215,227,287,118"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="302,155,393,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="323,119,342,153,338,156,318,122"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Dial.html" title=" " alt="" coords="430,229,507,256"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="347,112,377,130,406,153,440,192,464,227,459,230,436,195,403,157,374,135,344,116"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="227,5,385,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="308,48,308,80,303,80,303,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="54,80,179,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="119,122,119,154,114,154,114,122"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="232,266,266,302,262,305,228,269"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="280,229,407,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="323,269,289,305,285,302,319,266"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="348,197,347,229,341,229,343,197"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="422,264,310,306,308,301,420,259"/>
+</map>

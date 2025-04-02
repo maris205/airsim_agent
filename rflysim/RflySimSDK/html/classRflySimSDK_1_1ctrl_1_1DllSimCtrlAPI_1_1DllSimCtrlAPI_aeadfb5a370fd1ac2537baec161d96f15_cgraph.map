@@ -1,0 +1,13 @@
+<map id="sendDynModiParams" name="sendDynModiParams">
+<area shape="rect" id="Node000001" title="发送动态参数修改至指定CopterSim模拟器" alt="" coords="5,131,152,157"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="269,5,324,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,128,135,86,166,62,198,42,225,31,253,23,254,28,227,36,201,46,169,66,139,90,94,132"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="205,56,388,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,127,209,101,210,106,126,133"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="200,123,393,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,141,184,141,184,147,152,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="201,189,392,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,155,210,182,209,187,124,161"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="201,256,392,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="95,156,140,198,201,242,211,247,209,252,198,246,136,202,91,160"/>
+</map>

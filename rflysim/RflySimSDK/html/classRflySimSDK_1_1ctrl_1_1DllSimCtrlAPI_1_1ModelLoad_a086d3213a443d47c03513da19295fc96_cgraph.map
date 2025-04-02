@@ -1,0 +1,5 @@
+<map id="SendSimData" name="SendSimData">
+<area shape="rect" id="Node000001" title="将与 Send3DData 同样的 3D 数据发送到端口 30100，用于仿真数据的传输" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a71d82eaf80140510db6603915a4d6e69" title="提取载具模型的 3D 仿真数据out3Dvect并将其打包，以便通过网络转发给RflySim3D" alt="" coords="156,5,260,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,16,140,16,140,21,108,21"/>
+</map>

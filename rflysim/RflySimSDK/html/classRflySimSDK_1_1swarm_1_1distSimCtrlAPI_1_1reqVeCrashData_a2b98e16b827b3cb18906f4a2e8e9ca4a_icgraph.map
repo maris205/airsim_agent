@@ -1,0 +1,5 @@
+<map id="CopyData" name="CopyData">
+<area shape="rect" id="Node000001" title="从解包的数据元组iv中拷贝数据并赋给当前对象的成员变量" alt="" coords="120,5,200,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1distSimCtrlAPI_1_1reqVeCrashData.html#acf66aad6dafaa92808dca5febeec14c3" title="构造函数，初始化reqVeCrashData类成员" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

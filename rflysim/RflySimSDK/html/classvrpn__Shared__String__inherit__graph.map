@@ -1,0 +1,9 @@
+<map id="vrpn_Shared_String" name="vrpn_Shared_String">
+<area shape="rect" id="Node000001" title=" " alt="" coords="85,80,221,107"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Shared__String__Remote.html" title=" " alt="" coords="5,155,141,197"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,120,95,156,91,153,128,116"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Shared__String__Server.html" title=" " alt="" coords="165,155,301,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="178,116,215,153,211,156,174,120"/>
+<area shape="rect" id="Node000002" href="$classvrpn__SharedObject.html" title=" " alt="" coords="87,5,219,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,48,156,80,150,80,150,48"/>
+</map>

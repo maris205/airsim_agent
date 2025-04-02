@@ -1,0 +1,7 @@
+<map id="Get_TestResult" name="Get_TestResult">
+<area shape="rect" id="Node000001" title="获取测试结果的方法。" alt="" coords="328,5,440,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a66ef8716523dba0458386a656be21bc4" title="运行自动化测试的方法。该方法执行无人机自动化测试的运行逻辑。" alt="" coords="183,5,280,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,21,281,21,281,16,312,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#aea61c7c5e497c55a384ed4b50f77449e" title="启动自动化测试运行的方法。" alt="" coords="5,5,135,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="167,21,135,21,135,16,167,16"/>
+</map>

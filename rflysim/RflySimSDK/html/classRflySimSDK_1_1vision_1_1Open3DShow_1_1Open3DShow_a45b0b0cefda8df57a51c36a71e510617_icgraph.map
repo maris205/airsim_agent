@@ -1,0 +1,5 @@
+<map id="CloseShow" name="CloseShow">
+<area shape="rect" id="Node000001" title="关闭显示窗口，释放资源" alt="" coords="120,5,208,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1Open3DShow_1_1Open3DShow.html#ab3c211d2b7f3c35d46e368b2202f9477" title="在对象销毁时调用。它确保在对象被销毁时关闭显示窗口，释放资源" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

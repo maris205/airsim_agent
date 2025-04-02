@@ -1,0 +1,15 @@
+<map id="GetUDPRedisBuf" name="GetUDPRedisBuf">
+<area shape="rect" id="Node000001" title="从套接字或 Redis 订阅中获取数据" alt="" coords="453,97,578,124"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a9767c3d317e268dd34143eaa2a4d836d" title="开始循环监听来自20100系列端口或COM端口的MAVLink数据，更新Pixhawk状态" alt="" coords="301,64,390,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,98,390,89,391,83,438,93"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac055bb2906da02fee8b58cf19eebaed1" title="从30100串口监听真是数据，更新Pixhawk状态" alt="" coords="287,131,405,157"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="438,129,406,135,405,130,437,123"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="76,5,168,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,61,238,47,168,30,169,25,239,41,290,56"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1MavDataRec_1_1MavDataRec.html#a32a8cf3129b10a446f54a4e95860ede0" title="开始监听消息的函数。" alt="" coords="17,56,227,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,80,227,80,227,75,286,75"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#af26a96b08c3b6aae40f04c3d8a9ac773" title="初始化真实数据接收机制" alt="" coords="5,123,239,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="271,147,239,147,239,141,271,141"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a40a811a202c96d57a4f6aaa8c70837d7" title="初始化真实数据接收机制" alt="" coords="61,189,183,216"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="290,165,239,180,183,193,182,188,238,175,288,160"/>
+</map>

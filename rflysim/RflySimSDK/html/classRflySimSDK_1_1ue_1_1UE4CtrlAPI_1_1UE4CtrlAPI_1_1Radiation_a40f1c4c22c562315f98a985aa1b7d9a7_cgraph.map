@@ -1,0 +1,5 @@
+<map id="sendUE4SetStencilValueByMeshComponentName" name="sendUE4SetStencilValueByMeshComponentName">
+<area shape="rect" id="Node000001" title="由Actor的Mesh组件名向UE发送设置辐射模板值的命令" alt="" coords="5,5,189,48"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a7dd34f79e324afda9bbed53621df2aff" title="发送RflySim3D控制台命令的方法" alt="" coords="237,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,24,221,24,221,29,189,29"/>
+</map>

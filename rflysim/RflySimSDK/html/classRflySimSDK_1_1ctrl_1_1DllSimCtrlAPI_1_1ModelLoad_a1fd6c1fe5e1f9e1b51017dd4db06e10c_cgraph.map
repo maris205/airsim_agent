@@ -1,0 +1,14 @@
+<map id="DllInitPosAngState" name="DllInitPosAngState">
+<area shape="rect" id="Node000001" title="初始化位置和姿态状态，用于设置仿真对象的初始位置信息和朝向，参见 sendReSimXyzRPYaw" alt="" coords="5,131,138,157"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="36,132,29,122,34,112,48,106,72,104,97,107,110,113,108,118,95,112,71,109,49,111,37,116,35,121,40,129"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="191,5,374,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="87,128,129,94,184,58,196,52,198,57,187,62,132,98,90,132"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="255,72,310,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="118,128,185,108,239,93,240,99,186,113,120,133"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="186,123,379,165"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="138,141,170,141,170,147,138,147"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="187,189,378,232"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="117,155,199,182,197,187,116,161"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="187,256,378,299"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="87,156,129,198,157,221,187,242,196,247,194,252,184,246,154,225,125,202,83,160"/>
+</map>

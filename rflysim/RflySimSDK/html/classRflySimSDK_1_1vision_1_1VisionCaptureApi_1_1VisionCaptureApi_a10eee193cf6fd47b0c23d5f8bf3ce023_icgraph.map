@@ -1,0 +1,7 @@
+<map id="sendImgUDPNew" name="sendImgUDPNew">
+<area shape="rect" id="Node000001" title="用于图像数据的UDP发送" alt="" coords="302,5,429,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a1d8ed55a7d7e2bd75f5200d1b0d20898" title="从共享内存读取数据并进行处理，以不同的传感器类型来解析数据" alt="" coords="147,5,254,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,21,254,21,254,16,286,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#af1e50bb2020628758ed286f0876443be" title="用于启动图像捕获的循环过程，先是一些初始化，然后根据SendProtocol[0]来判断是内存共享还是UDP传输，分别进行相应的处理函数" alt="" coords="5,5,99,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,21,99,21,99,16,131,16"/>
+</map>

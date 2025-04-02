@@ -1,0 +1,11 @@
+<map id="DllInputColls" name="DllInputColls">
+<area shape="rect" id="Node000001" title="将碰撞数据传递给 DLL，用于仿真中处理碰撞情况，参见 sendColl20d" alt="" coords="451,31,548,57"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="523,18,515,12,499,9,485,11,477,16,475,22,479,29,474,31,470,22,473,12,483,6,500,4,517,7,527,13"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a566e7c2f4fccaea47fd98cc903d2c65f" title="传递 20 维float数组的碰撞数据的接口，用于处理仿真对象之间的碰撞检测。" alt="" coords="307,5,403,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="436,36,403,30,404,25,437,30"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a501aea156c9735d765560b9c7d059b73" title="线程的主循环，用于接收30100端口的数据并根据不同的数据类型执行相应处理。" alt="" coords="144,31,259,57"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="436,47,260,47,260,41,436,41"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="292,32,260,37,259,32,291,27"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a918957834a2d46490acd64918fbe14a5" title="用于启动外部控制功能，创建两个用于接收外部控制数据的UDP套接字，并开启两个线程来监听数据。" alt="" coords="5,31,96,57"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="128,47,96,47,96,41,128,41"/>
+</map>

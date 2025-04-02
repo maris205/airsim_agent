@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: MavlinkSerialPort类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><a class="el" href="namespaceRflySimSDK_1_1swarm_1_1mavRflyShell.html">mavRflyShell</a></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html">MavlinkSerialPort</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">MavlinkSerialPort类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>     
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a70ffc580935fc264519a70d550745ed0" id="r_a70ffc580935fc264519a70d550745ed0"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ffc580935fc264519a70d550745ed0">__init__</a> (self, portname, baudrate, devnum=0, <a class="el" href="#a69ee99c756714c09a55d9a5a0346dce4">debug</a>=0)</td></tr>
+<tr class="memdesc:a70ffc580935fc264519a70d550745ed0"><td class="mdescLeft"> </td><td class="mdescRight">初始化串口连接，用于与飞控进行 MAVLink 通信。  <br/></td></tr>
+<tr class="separator:a70ffc580935fc264519a70d550745ed0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a69ee99c756714c09a55d9a5a0346dce4" id="r_a69ee99c756714c09a55d9a5a0346dce4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a69ee99c756714c09a55d9a5a0346dce4">debug</a> (self, s, level=1)</td></tr>
+<tr class="memdesc:a69ee99c756714c09a55d9a5a0346dce4"><td class="mdescLeft"> </td><td class="mdescRight">输出调试信息。  <br/></td></tr>
+<tr class="separator:a69ee99c756714c09a55d9a5a0346dce4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaba36b77b9c0af01016f458211b2fa43" id="r_aaba36b77b9c0af01016f458211b2fa43"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba36b77b9c0af01016f458211b2fa43">write</a> (self, b)</td></tr>
+<tr class="memdesc:aaba36b77b9c0af01016f458211b2fa43"><td class="mdescLeft"> </td><td class="mdescRight">向飞控发送字节数据。  <br/></td></tr>
+<tr class="separator:aaba36b77b9c0af01016f458211b2fa43"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8ab79e14e24aa440dcd1d9e822eb1f1c" id="r_a8ab79e14e24aa440dcd1d9e822eb1f1c"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ab79e14e24aa440dcd1d9e822eb1f1c">close</a> (self)</td></tr>
+<tr class="memdesc:a8ab79e14e24aa440dcd1d9e822eb1f1c"><td class="mdescLeft"> </td><td class="mdescRight">关闭串口连接。  <br/></td></tr>
+<tr class="separator:a8ab79e14e24aa440dcd1d9e822eb1f1c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1c99c8c17ec76ba49907903807435fd4" id="r_a1c99c8c17ec76ba49907903807435fd4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c99c8c17ec76ba49907903807435fd4">read</a> (self, n)</td></tr>
+<tr class="memdesc:a1c99c8c17ec76ba49907903807435fd4"><td class="mdescLeft"> </td><td class="mdescRight">读取指定长度的字节数据。  <br/></td></tr>
+<tr class="separator:a1c99c8c17ec76ba49907903807435fd4"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ae4820663e9ad9d2aeb752f7393a6e181" id="r_ae4820663e9ad9d2aeb752f7393a6e181"><td align="right" class="memItemLeft" valign="top"><a id="ae4820663e9ad9d2aeb752f7393a6e181" name="ae4820663e9ad9d2aeb752f7393a6e181"></a>
+ </td><td class="memItemRight" valign="bottom"><b>baudrate</b></td></tr>
+<tr class="separator:ae4820663e9ad9d2aeb752f7393a6e181"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a680ed5d3fdf874dd4c8685cb51c3f1a6" id="r_a680ed5d3fdf874dd4c8685cb51c3f1a6"><td align="right" class="memItemLeft" valign="top"><a id="a680ed5d3fdf874dd4c8685cb51c3f1a6" name="a680ed5d3fdf874dd4c8685cb51c3f1a6"></a>
+ </td><td class="memItemRight" valign="bottom"><b>buf</b></td></tr>
+<tr class="separator:a680ed5d3fdf874dd4c8685cb51c3f1a6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8fb0f45ee0195c7422a49e6a8d72369" id="r_af8fb0f45ee0195c7422a49e6a8d72369"><td align="right" class="memItemLeft" valign="top"><a id="af8fb0f45ee0195c7422a49e6a8d72369" name="af8fb0f45ee0195c7422a49e6a8d72369"></a>
+ </td><td class="memItemRight" valign="bottom"><b>port</b></td></tr>
+<tr class="separator:af8fb0f45ee0195c7422a49e6a8d72369"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aed334d1ece87bb95d7d39c89d83e7563" id="r_aed334d1ece87bb95d7d39c89d83e7563"><td align="right" class="memItemLeft" valign="top"><a id="aed334d1ece87bb95d7d39c89d83e7563" name="aed334d1ece87bb95d7d39c89d83e7563"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mav</b></td></tr>
+<tr class="separator:aed334d1ece87bb95d7d39c89d83e7563"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a9b68254ff207d02a736834880f71d518" id="r_a9b68254ff207d02a736834880f71d518"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b68254ff207d02a736834880f71d518">_recv</a> (self)</td></tr>
+<tr class="memdesc:a9b68254ff207d02a736834880f71d518"><td class="mdescLeft"> </td><td class="mdescRight">从 MAVLink 中读取字节数据，处理接收到的数据。  <br/></td></tr>
+<tr class="separator:a9b68254ff207d02a736834880f71d518"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a423f6d0446ed8a66c4b4ea32d5e5d775" id="r_a423f6d0446ed8a66c4b4ea32d5e5d775"><td align="right" class="memItemLeft" valign="top"><a id="a423f6d0446ed8a66c4b4ea32d5e5d775" name="a423f6d0446ed8a66c4b4ea32d5e5d775"></a>
+ </td><td class="memItemRight" valign="bottom"><b>_debug</b></td></tr>
+<tr class="separator:a423f6d0446ed8a66c4b4ea32d5e5d775"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>    </p>
+<p>定义一个 <a class="el" href="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html" title="   ">MavlinkSerialPort</a> 类，用于通过 MAVLink 进行串口通信 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a70ffc580935fc264519a70d550745ed0" name="a70ffc580935fc264519a70d550745ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ffc580935fc264519a70d550745ed0">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>portname</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>baudrate</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>devnum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>debug</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>初始化串口连接，用于与飞控进行 MAVLink 通信。 </p>
+<ul>
+<li><a class="anchor" id="__init__"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">portname</td><td>串口名称（如 /dev/ttyUSB0）。 </td></tr>
+<tr><td class="paramname">baudrate</td><td>串口波特率（常见值如 115200）。 </td></tr>
+<tr><td class="paramname">devnum</td><td>设备编号，默认为 0。 </td></tr>
+<tr><td class="paramname">debug</td><td>调试级别，默认为 0。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。 </dd></dl>
+</li>
+</ul>
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort_a70ffc580935fc264519a70d550745ed0_cgraph.svg" width="182"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9b68254ff207d02a736834880f71d518" name="a9b68254ff207d02a736834880f71d518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b68254ff207d02a736834880f71d518">◆ </a></span>_recv()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">_recv </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从 MAVLink 中读取字节数据，处理接收到的数据。 </p>
+<ul>
+<li><a class="anchor" id="_recv"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>接收到的字节数据。</dd></dl>
+<pre class="fragment">从 MAVLink 中读取字节数据</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort_a9b68254ff207d02a736834880f71d518_icgraph.svg" width="159"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a8ab79e14e24aa440dcd1d9e822eb1f1c" name="a8ab79e14e24aa440dcd1d9e822eb1f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab79e14e24aa440dcd1d9e822eb1f1c">◆ </a></span>close()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">close </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>关闭串口连接。 </p>
+<ul>
+<li><a class="anchor" id="close"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">无</td><td></td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a69ee99c756714c09a55d9a5a0346dce4" name="a69ee99c756714c09a55d9a5a0346dce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ee99c756714c09a55d9a5a0346dce4">◆ </a></span>debug()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">debug </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>level</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>输出调试信息。 </p>
+<ul>
+<li><a class="anchor" id="debug"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">s</td><td>要输出的调试信息字符串。 </td></tr>
+<tr><td class="paramname">level</td><td>调试级别，默认为 1，决定输出的详细程度。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。</dd></dl>
+<pre class="fragment">写入调试文本</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-2-trigger" src="closed.png"/> 这是这个函数的调用关系图:</div>
+<div class="dynsummary" id="dynsection-2-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-2-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="139" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort_a69ee99c756714c09a55d9a5a0346dce4_icgraph.svg" width="182"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="a1c99c8c17ec76ba49907903807435fd4" name="a1c99c8c17ec76ba49907903807435fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c99c8c17ec76ba49907903807435fd4">◆ </a></span>read()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">read </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>n</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>读取指定长度的字节数据。 </p>
+<ul>
+<li><a class="anchor" id="read"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">n</td><td>要读取的字节数。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>读取到的字节数据。</dd></dl>
+<pre class="fragment">读取字节数据</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-3-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-3-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-3-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="88" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort_a1c99c8c17ec76ba49907903807435fd4_cgraph.svg" width="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<a id="aaba36b77b9c0af01016f458211b2fa43" name="aaba36b77b9c0af01016f458211b2fa43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba36b77b9c0af01016f458211b2fa43">◆ </a></span>write()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">write </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>b</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>向飞控发送字节数据。 </p>
+<ul>
+<li><a class="anchor" id="write"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">b</td><td>需要发送的字节数据。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。</dd></dl>
+<pre class="fragment">写入字节数据</pre> </li>
+</ul>
+<div class="dynheader closed" id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-4-trigger" src="closed.png"/> 函数调用图:</div>
+<div class="dynsummary" id="dynsection-4-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-4-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="38" scrolling="no" src="classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort_aaba36b77b9c0af01016f458211b2fa43_cgraph.svg" width="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<a class="el" href="mavRflyShell_8py.html">mavRflyShell.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

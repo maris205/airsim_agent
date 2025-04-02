@@ -1,0 +1,13 @@
+<map id="SendSetMode" name="SendSetMode">
+<area shape="rect" id="Node000001" title="发送 MAVLink 命令到 PX4 以更改飞行模式" alt="" coords="177,107,280,133"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="23,5,111,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,99,166,72,127,46,104,35,107,30,130,42,169,68,202,94"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8e46a45fbec1a107548def62999b1994" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="20,56,114,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,104,111,86,113,81,169,99"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af04f4988d61436fa85ae2c0046784177" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="12,107,122,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,123,122,123,122,117,161,117"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad7bbe8d48aa560565aa63b39edd37e77" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="15,157,119,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="169,141,113,159,111,154,168,136"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#abb9b7198036c12a8ca3fc8e833822cff" title="发送指定使飞机起飞" alt="" coords="5,208,129,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="202,146,169,172,130,198,107,210,104,205,127,194,166,168,199,141"/>
+</map>

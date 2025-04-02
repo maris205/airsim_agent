@@ -1,0 +1,5 @@
+<map id="get_pointer" name="get_pointer">
+<area shape="rect" id="Node000001" title="Extract the pointer (NULL if iterator is invalid)" alt="" coords="165,5,250,32"/>
+<area shape="rect" id="Node000002" href="$classvrpn_1_1EndpointIterator.html#a1fd087cd6febe2b305542fa57075ac35" title="Implicit conversion operator to pointer." alt="" coords="5,5,117,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,21,117,21,117,16,149,16"/>
+</map>

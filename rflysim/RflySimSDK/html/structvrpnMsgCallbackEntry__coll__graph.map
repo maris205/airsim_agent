@@ -1,0 +1,8 @@
+<map id="vrpnMsgCallbackEntry" name="vrpnMsgCallbackEntry">
+<area shape="rect" id="Node000001" title="Description of a callback entry for a user type." alt="" coords="11,187,165,213"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="182,192,191,200,183,208,166,211,165,205,181,203,186,200,179,196"/>
+<area shape="rect" id="Node000002" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="5,96,171,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,138,91,186,85,186,85,138"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="61,5,115,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,48,91,95,85,95,85,48"/>
+</map>

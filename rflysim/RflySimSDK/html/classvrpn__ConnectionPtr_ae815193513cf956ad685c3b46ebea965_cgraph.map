@@ -1,0 +1,5 @@
+<map id="~vrpn_ConnectionPtr" name="~vrpn_ConnectionPtr">
+<area shape="rect" id="Node000001" title="Destructor &#45; decrements the contained reference count, if applicable" alt="" coords="5,5,150,32"/>
+<area shape="rect" id="Node000002" href="$classvrpn__ConnectionPtr.html#ad20897c5c8bd47f5d4005989bead0e55" title=" " alt="" coords="198,5,248,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,16,182,16,182,21,150,21"/>
+</map>

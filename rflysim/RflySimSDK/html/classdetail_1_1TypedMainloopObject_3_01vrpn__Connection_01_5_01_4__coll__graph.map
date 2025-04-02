@@ -1,0 +1,11 @@
+<map id="TypedMainloopObject&lt; vrpn_Connection * &gt;" name="TypedMainloopObject&lt; vrpn_Connection * &gt;">
+<area shape="rect" id="Node000001" title="Specialization for connections, since they&#39;re reference&#45;counted." alt="" coords="22,187,174,229"/>
+<area shape="rect" id="Node000002" href="$classvrpn__MainloopObject.html" title=" " alt="" coords="5,96,149,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,137,96,185,91,187,80,139"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="173,96,293,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,134,129,188,126,184,202,130"/>
+<area shape="rect" id="Node000004" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="60,5,220,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="134,47,133,59,138,71,153,86,174,96,172,101,150,90,133,73,128,60,128,47"/>
+<area shape="rect" id="Node000005" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="261,5,389,32"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="316,48,298,74,264,98,261,93,294,70,312,45"/>
+</map>

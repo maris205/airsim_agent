@@ -1,0 +1,22 @@
+<map id="vrpn_Logitech_Extreme_3D_Pro" name="vrpn_Logitech_Extreme_3D_Pro">
+<area shape="rect" id="Node000001" title=" " alt="" coords="176,304,335,347"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Logitech__Controller__Raw.html" title=" " alt="" coords="5,155,205,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,196,117,226,132,254,163,281,198,301,195,306,159,286,128,258,112,228,105,198"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="229,80,346,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,115,138,157,136,152,241,110"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="142,229,236,256"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="273,121,200,230,195,227,269,118"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="279,155,371,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="303,119,321,153,316,155,299,122"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Dial.html" title=" " alt="" coords="411,229,487,256"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="327,112,356,131,384,153,419,192,444,228,439,231,415,195,381,157,353,135,324,117"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="208,5,367,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,48,290,80,285,80,285,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="43,80,167,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="108,122,108,154,102,154,102,122"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="211,267,241,302,237,306,207,270"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="260,229,387,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="305,270,275,306,271,302,301,266"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="327,197,327,229,321,229,322,197"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="406,265,307,306,305,301,404,260"/>
+</map>

@@ -1,0 +1,41 @@
+<map id="vrpn_Tracker_Fastrak" name="vrpn_Tracker_Fastrak">
+<area shape="rect" id="Node000001" title=" " alt="" coords="731,659,880,685"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker__Serial.html" title=" " alt="" coords="413,501,550,528"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,534,627,592,774,656,772,661,624,597,514,538"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Tracker.html" title=" " alt="" coords="433,375,530,401"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="484,417,484,501,479,501,479,417"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="603,268,720,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="628,305,505,376,502,372,626,300"/>
+<area shape="rect" id="Node000013" href="$classvrpn__Button.html" title=" " alt="" coords="833,375,924,401"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="702,299,854,372,851,376,700,304"/>
+<area shape="rect" id="Node000016" href="$classvrpn__Analog.html" title=" " alt="" coords="675,375,768,401"/>
+<area shape="poly" id="edge20_Node000016_Node000004" title=" " alt="" coords="678,307,717,373,712,376,674,309"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="560,189,718,216"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="649,230,660,267,655,268,644,232"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="178,96,297,123"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="308,124,583,186,582,191,307,129"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="157,5,318,32"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="240,48,240,95,235,95,235,48"/>
+<area shape="rect" id="Node000008" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="5,5,134,32"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="104,38,159,70,209,93,207,98,157,74,101,43"/>
+<area shape="rect" id="Node000009" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="560,96,726,123"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="644,139,642,189,637,189,639,138"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="738,5,793,32"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="809,17,863,21,920,34,945,46,965,61,979,82,984,108,984,575,982,593,975,608,950,633,917,651,881,662,879,657,915,646,947,629,970,605,977,591,979,574,979,108,974,84,961,65,942,50,918,39,862,26,808,22"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="723,24,635,31,533,46,486,57,449,71,424,88,417,98,415,108,415,282,420,310,433,334,468,372,464,376,429,338,415,312,410,283,410,108,412,96,420,84,446,66,485,52,532,40,634,26,723,19"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="725,37,687,58,668,77,653,97,649,94,664,74,684,54,723,32"/>
+<area shape="poly" id="edge16_Node000013_Node000010" title=" " alt="" coords="808,31,833,43,857,60,875,81,881,108,882,283,882,374,876,374,876,283,876,108,870,84,853,63,831,48,806,36"/>
+<area shape="poly" id="edge21_Node000016_Node000010" title=" " alt="" coords="768,48,768,108,768,283,764,310,755,336,733,376,728,373,750,334,759,309,763,282,763,108,763,48"/>
+<area shape="rect" id="Node000011" href="$classvrpn__Button__Server.html" title=" " alt="" coords="808,560,944,587"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="860,601,817,660,812,657,856,598"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="815,451,942,477"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="881,493,879,559,874,559,875,493"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="882,416,882,450,876,450,876,416"/>
+<area shape="rect" id="Node000014" href="$classvrpn__Clipping__Analog__Server.html" title="Analog server that can scale and clip its range to &#45;1..1." alt="" coords="637,552,784,595"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="725,607,742,633,757,646,775,656,772,660,754,650,738,636,721,610"/>
+<area shape="rect" id="Node000015" href="$classvrpn__Analog__Server.html" title=" " alt="" coords="652,451,791,477"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="721,493,716,552,710,551,716,493"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="724,416,724,450,719,450,719,416"/>
+<area shape="rect" id="Node000017" href="$structvrpn__Clipping__Analog__Server_1_1clipvals__struct.html" title=" " alt="" coords="524,451,629,477"/>
+<area shape="poly" id="edge22_Node000014_Node000017" title=" " alt="" coords="605,485,687,550,684,554,602,489"/>
+</map>

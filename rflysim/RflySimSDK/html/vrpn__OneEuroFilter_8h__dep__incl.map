@@ -1,0 +1,5 @@
+<map id="simulink/vrpn/vrpn_OneEuroFilter.h" name="simulink/vrpn/vrpn_OneEuroFilter.h">
+<area shape="rect" id="Node000001" title="Header file that completely implements a direction and orientation filter on tracking reports; it doe..." alt="" coords="5,5,133,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Tracker__Filter_8h.html" title="Header for a class of trackers that read from one tracker and apply a filter to the inputs,..." alt="" coords="5,96,133,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,64,72,96,66,96,66,64"/>
+</map>

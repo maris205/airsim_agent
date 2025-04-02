@@ -1,0 +1,7 @@
+<map id="simulink/mavlink/uAvionix/uAvionix.h" name="simulink/mavlink/uAvionix/uAvionix.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol generated from uAvionix.xml" alt="" coords="126,5,298,48"/>
+<area shape="rect" id="Node000002" href="$ardupilotmega_8h.html" title="MAVLink comm protocol generated from ardupilotmega.xml" alt="" coords="5,96,209,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,60,133,97,130,93,174,56"/>
+<area shape="rect" id="Node000003" href="$uAvionix_2mavlink_8h.html" title="MAVLink comm protocol built from uAvionix.xml" alt="" coords="233,96,405,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,56,296,93,292,97,247,60"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="vrpn_Event_Mouse" name="vrpn_Event_Mouse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,379,219,405"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Event__Analog.html" title=" " alt="" coords="5,304,140,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,339,141,376,137,380,96,343"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="58,155,151,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,197,78,304,73,303,96,196"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="103,80,220,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="145,121,116,156,112,153,140,117"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="180,155,272,181"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="185,117,217,152,213,156,181,120"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="83,5,241,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="164,48,164,80,159,80,159,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Button__Server.html" title=" " alt="" coords="164,304,301,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="209,343,168,380,164,376,206,339"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="165,229,292,256"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="233,272,234,303,229,304,227,272"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="230,197,231,229,225,229,224,197"/>
+</map>

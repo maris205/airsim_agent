@@ -1,0 +1,9 @@
+<map id="reqCamCoptObj" name="reqCamCoptObj">
+<area shape="rect" id="Node000001" title="请求场景内指定物体数据回传" alt="" coords="121,56,236,83"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a8100a9848217d349c54e431c52fbc430" title=" " alt="" coords="5,5,73,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,53,72,33,74,28,126,48"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a4ed913dbcf51afc1c50dbb1df83f0fa6" title=" " alt="" coords="5,56,73,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,72,73,72,73,67,105,67"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a480bdd34fbe6d77df9898259b6e64de7" title=" " alt="" coords="9,107,69,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,91,70,112,68,107,124,86"/>
+</map>

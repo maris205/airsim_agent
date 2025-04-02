@@ -1,0 +1,16 @@
+<map id="vrpn_Tracker_3DMouse" name="vrpn_Tracker_3DMouse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="71,304,232,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker__Serial.html" title=" " alt="" coords="5,229,143,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,265,140,302,136,306,97,269"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Tracker.html" title=" " alt="" coords="44,155,141,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,197,80,230,75,228,83,196"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="93,80,210,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="134,121,105,156,101,153,129,117"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button.html" title=" " alt="" coords="175,155,266,181"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="176,116,211,152,207,156,172,120"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="72,5,230,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="154,48,154,80,149,80,149,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="166,229,294,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="207,269,167,306,163,302,203,265"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="227,196,231,229,226,229,222,197"/>
+</map>

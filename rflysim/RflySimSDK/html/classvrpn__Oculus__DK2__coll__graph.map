@@ -1,0 +1,28 @@
+<map id="vrpn_Oculus_DK2" name="vrpn_Oculus_DK2">
+<area shape="rect" id="Node000001" title="Oculus Rift DK2 head&#45;mounted display base class for both intertial&#45; only and LED&#45;enabled version." alt="" coords="591,536,718,563"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Oculus.html" title="Oculus Rift head&#45;mounted display base class" alt="" coords="608,460,702,487"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="658,502,658,536,652,536,652,502"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="472,384,566,411"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="557,416,633,457,630,462,554,421"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="356,293,474,320"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="443,328,506,381,502,385,439,332"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="313,187,471,213"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="401,228,415,292,410,294,395,229"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="172,96,292,123"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="262,130,310,160,360,184,358,188,307,165,259,134"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="157,5,318,32"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="238,48,236,96,230,95,233,47"/>
+<area shape="rect" id="Node000008" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="5,5,134,32"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="103,38,157,70,205,93,202,98,154,74,101,43"/>
+<area shape="rect" id="Node000009" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="316,96,482,123"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="399,139,396,186,390,186,394,138"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="492,5,546,32"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="562,34,583,46,604,63,618,83,624,108,624,398,626,415,632,432,648,458,643,461,627,434,621,417,619,399,619,108,614,86,600,67,580,51,559,39"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="522,48,522,108,522,308,522,383,516,383,516,308,516,108,516,48"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="478,37,441,58,422,77,408,97,404,94,418,74,438,54,476,32"/>
+<area shape="rect" id="Node000011" href="$classvrpn__HidInterface.html" title=" " alt="" coords="659,384,784,411"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="702,424,668,461,664,458,698,420"/>
+<area shape="rect" id="Node000012" href="$classvrpn__HidAcceptor.html" title=" " alt="" coords="719,293,844,320"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="809,331,816,343,817,364,811,385,798,412,777,431,753,445,704,464,702,459,750,441,774,427,794,409,806,384,812,363,811,345,804,333"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="755,332,744,345,733,365,727,385,722,383,729,363,739,343,751,329"/>
+</map>

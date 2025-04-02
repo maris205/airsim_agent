@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: &lt;strong&gt;声音传感器&lt;/strong&gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+<div class="headertitle"><div class="title">&lt;strong&gt;声音传感器&lt;/strong&gt;</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md529"></a> </p><div class="image">
+<a data_lightbox="image" href="image-20250106165016076.png"><img alt="" class="thumbnail" height="auto" src="image-20250106165016076.png" width="100"/></a>
+<div class="caption">
+采集的左右声道音频</div></div>
+<h2><a class="anchor" id="autotoc_md530"></a>
+<b>1. 功能概述</b></h2>
+<h3><a class="anchor" id="autotoc_md531"></a>
+<b>1.1 支持的功能操作</b></h3>
+<ul>
+<li><b>传感器输出</b> 输出实时音频数据，用于环境音频采集与分析，可配置为开始或停止数据发送。</li>
+<li><b>应用场景</b><ul>
+<li>**环境音监测**：检测无人机飞行环境中的噪声强度和音频特征。</li>
+<li>**目标定位**：通过声音信号进行声源定位或特定目标检测（如人员求救声）。</li>
+<li>**音频采集**：用于多媒体任务，如同步视频的音频录制。</li>
+<li>**智能识别**：结合 AI，识别特定声音（如警报、语音命令）。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md532"></a>
+<b>1.2 使用示例</b></h3>
+<p><b>配置文件添加传感器</b> 以下是配置文件 <code>Config.json</code> 的示例代码，用于添加 RGB 图像传感器：</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    "VisionSensors":[</div>
+<div class="line">        {</div>
+<div class="line">            "SeqID":0,</div>
+<div class="line">            "TypeID":6,//声音传感器</div>
+<div class="line">            "TargetCopter":0,//无效</div>
+<div class="line">            "TargetMountType":0,//无效</div>
+<div class="line">            "DataWidth":0,//无效</div>
+<div class="line">            "DataHeight":0,//无效</div>
+<div class="line">            "DataCheckFreq":30,//发送频率</div>
+<div class="line">            "SendProtocol":[0,127,0,0,1,28003,0,0],</div>
+<div class="line">            "CameraFOV":0,//无效</div>
+<div class="line">            "SensorPosXYZ":[0,0,0],//无效</div>
+<div class="line">            "SensorAngEular":[0,0,0],//无效</div>
+<div class="line">            "otherParams":[1,0,0,0,0,0,0,0]//otherParams[0]是1的时候开始发送音频数据，是0的时候停止发送音频数据</div>
+<div class="line">        }</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><b>Python 调用传感器接口</b> 以下代码用于接收音频数据：</p>
+<div class="fragment"><div class="line">#加载传感器配置文件 (Config.json) 并发送捕获请求。</div>
+<div class="line">vis.jsonLoad()</div>
+<div class="line">isSuss = vis.sendReqToUE4()</div>
+<div class="line">#缓冲区与参数配置</div>
+<div class="line">buffer_size = 204800 #定义接收数据的最大大小。</div>
+<div class="line">sample_rate = 48000 #音频采样率（48 kHz）。</div>
+<div class="line">channels = 2 #音频采样率（48 kHz）。</div>
+<div class="line">data_buffer = b""#存储音频数据</div>
+<div class="line">elapsed_time = 0 #累计接收音频的时间</div>
+</div><!-- fragment --><p><b>例程链接</b></p>
+<ul>
+<li>示例工程：<a href="../../4.RflySimModel/3.CustExps/e7_ExternalSensors/e2_Voice_PyRec">4.RflySimModel\3.CustExps\e7_ExternalSensors\e2_Voice_PyRec</a></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md533"></a>
+<b>1.3 现实中的声音传感器</b></h3>
+<ul>
+<li>硬件示例<ul>
+<li>MEMS 麦克风模块（如 ADMP401、MAX9814）。</li>
+<li>高灵敏度环境音采集器（如 Zoom H1n 录音笔）。</li>
+<li>声波定位传感器（用于水下声呐）。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2><a class="anchor" id="autotoc_md535"></a>
+<b>2. 传感器配置</b></h2>
+<h3><a class="anchor" id="autotoc_md536"></a>
+<b>2.1 网络通信配置</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>参数名称</b> </th><th class="markdownTableHeadNone"><b>取值范围</b> </th><th class="markdownTableHeadNone"><b>含义</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SendProtocol</b> </td><td class="markdownTableBodyNone">[mode, IP, port, …]   </td><td class="markdownTableBodyNone">配置数据传输协议，支持共享内存和 UDP。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>SendProtocol[0]</b> </td><td class="markdownTableBodyNone">0: 共享内存；1: UDP 压缩传输   </td><td class="markdownTableBodyNone">选择传输方式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SendProtocol[5]</b> </td><td class="markdownTableBodyNone">端口号   </td><td class="markdownTableBodyNone">数据传输的目标端口号。   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md537"></a>
+<b>2.2 传感器技术规格</b></h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>技术参数</b> </th><th class="markdownTableHeadNone"><b>配置值</b> </th><th class="markdownTableHeadNone"><b>说明</b> </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>SeqID</b> </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">唯一传感器序号。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>TypeID</b> </td><td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">传感器类型，声音传感器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>DataCheckFreq</b> </td><td class="markdownTableBodyNone">30 Hz   </td><td class="markdownTableBodyNone">数据刷新频率，默认 30Hz，最大支持取决于<a href="md_ue_2md_2command_2t_8Maxfps.html">RflySim3D刷新率</a>。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>otherParams[0]</b> </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">是否发送音频数据，1为是，0为否   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

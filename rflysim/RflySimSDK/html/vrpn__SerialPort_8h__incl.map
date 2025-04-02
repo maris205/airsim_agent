@@ -1,0 +1,14 @@
+<map id="simulink/vrpn/vrpn_SerialPort.h" name="simulink/vrpn/vrpn_SerialPort.h">
+<area shape="rect" id="Node000001" title="Header" alt="" coords="144,5,272,48"/>
+<area shape="rect" id="Node000002" href="$vrpn__Configure_8h_source.html" title=" " alt="" coords="5,171,126,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,51,123,71,94,98,79,126,71,156,66,155,74,124,90,94,120,67,154,46"/>
+<area shape="rect" id="Node000003" href="$vrpn__Serial_8h.html" title="vrpn_Serial: Pulls all the serial port routines into one file to make porting to new operating system..." alt="" coords="104,96,201,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,50,172,85,167,82,192,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,96,303,123"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="225,47,249,82,245,85,220,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="327,96,380,123"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="247,46,319,86,316,90,244,51"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="139,125,94,163,90,159,135,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="150,171,218,197"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="160,122,175,155,170,158,155,124"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="vrpn_Analog_5dtUSB" name="vrpn_Analog_5dtUSB">
+<area shape="rect" id="Node000001" title="5th Dimension Technologies (5dt) &quot;Ultra&quot; USB data glove driver" alt="" coords="549,113,696,140"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog__5dtUSB__Glove14Left.html" title=" " alt="" coords="744,5,890,48"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="659,103,742,58,766,46,768,51,745,62,662,108"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Analog__5dtUSB__Glove14Right.html" title=" " alt="" coords="744,72,890,115"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="711,109,743,103,744,108,712,114"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Analog__5dtUSB__Glove5Left.html" title="Specialization of vrpn_Analog_5dtUSB for a 5&#45;sensor, left&#45;hand glove." alt="" coords="744,139,890,181"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="712,139,744,145,743,150,711,145"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Analog__5dtUSB__Glove5Right.html" title="Specialization of vrpn_Analog_5dtUSB for a 5&#45;sensor, right&#45;hand glove." alt="" coords="744,205,890,248"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="662,146,745,191,768,202,766,207,742,196,659,150"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog.html" title=" " alt="" coords="392,88,486,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="501,107,549,114,548,119,501,112"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="212,88,329,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,99,392,99,392,104,345,104"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,88,164,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="179,99,212,99,212,104,179,104"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="377,139,501,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="516,139,548,134,549,139,517,144"/>
+</map>

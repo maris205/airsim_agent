@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: WinInfo类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>ScreenCapApiV4</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1ScreenCapApiV4_1_1WinInfo.html">WinInfo</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1ScreenCapApiV4_1_1WinInfo-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">WinInfo类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>WinInfo结构体类。存储窗口句柄及其相关信息的类，包括窗口的宽度、高度、设备上下文 (DC) 等  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af881d071afac6942e0c890ca8ef2ed48" id="r_af881d071afac6942e0c890ca8ef2ed48"><td align="right" class="memItemLeft" valign="top"><a id="af881d071afac6942e0c890ca8ef2ed48" name="af881d071afac6942e0c890ca8ef2ed48"></a>
+ </td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, hWnd, width, height, saveDC, saveBitMap, mfcDC, hWndDC)</td></tr>
+<tr class="separator:af881d071afac6942e0c890ca8ef2ed48"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab9b5a65225c7abfd42140cda5233549e" id="r_ab9b5a65225c7abfd42140cda5233549e"><td align="right" class="memItemLeft" valign="top"><a id="ab9b5a65225c7abfd42140cda5233549e" name="ab9b5a65225c7abfd42140cda5233549e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>hWnd</b></td></tr>
+<tr class="separator:ab9b5a65225c7abfd42140cda5233549e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5558ace5433f9aabbf0a0ec059900d94" id="r_a5558ace5433f9aabbf0a0ec059900d94"><td align="right" class="memItemLeft" valign="top"><a id="a5558ace5433f9aabbf0a0ec059900d94" name="a5558ace5433f9aabbf0a0ec059900d94"></a>
+ </td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="separator:a5558ace5433f9aabbf0a0ec059900d94"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a509290c21d570ff479c1b9d9b1fe8810" id="r_a509290c21d570ff479c1b9d9b1fe8810"><td align="right" class="memItemLeft" valign="top"><a id="a509290c21d570ff479c1b9d9b1fe8810" name="a509290c21d570ff479c1b9d9b1fe8810"></a>
+ </td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="separator:a509290c21d570ff479c1b9d9b1fe8810"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab5dc95644b9ffcbce7165f45c8c4ec9e" id="r_ab5dc95644b9ffcbce7165f45c8c4ec9e"><td align="right" class="memItemLeft" valign="top"><a id="ab5dc95644b9ffcbce7165f45c8c4ec9e" name="ab5dc95644b9ffcbce7165f45c8c4ec9e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>saveDC</b></td></tr>
+<tr class="separator:ab5dc95644b9ffcbce7165f45c8c4ec9e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae67dea1971e4da16f3f18fe5b61adc3a" id="r_ae67dea1971e4da16f3f18fe5b61adc3a"><td align="right" class="memItemLeft" valign="top"><a id="ae67dea1971e4da16f3f18fe5b61adc3a" name="ae67dea1971e4da16f3f18fe5b61adc3a"></a>
+ </td><td class="memItemRight" valign="bottom"><b>saveBitMap</b></td></tr>
+<tr class="separator:ae67dea1971e4da16f3f18fe5b61adc3a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af557414ba201bafaa699e9ecc5742b21" id="r_af557414ba201bafaa699e9ecc5742b21"><td align="right" class="memItemLeft" valign="top"><a id="af557414ba201bafaa699e9ecc5742b21" name="af557414ba201bafaa699e9ecc5742b21"></a>
+ </td><td class="memItemRight" valign="bottom"><b>mfcDC</b></td></tr>
+<tr class="separator:af557414ba201bafaa699e9ecc5742b21"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae8c2ef115be0e1d8c246f75cd8ce1629" id="r_ae8c2ef115be0e1d8c246f75cd8ce1629"><td align="right" class="memItemLeft" valign="top"><a id="ae8c2ef115be0e1d8c246f75cd8ce1629" name="ae8c2ef115be0e1d8c246f75cd8ce1629"></a>
+ </td><td class="memItemRight" valign="bottom"><b>hWndDC</b></td></tr>
+<tr class="separator:ae8c2ef115be0e1d8c246f75cd8ce1629"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>WinInfo结构体类。存储窗口句柄及其相关信息的类，包括窗口的宽度、高度、设备上下文 (DC) 等 </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="ScreenCapApiV4_8py.html">ScreenCapApiV4.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

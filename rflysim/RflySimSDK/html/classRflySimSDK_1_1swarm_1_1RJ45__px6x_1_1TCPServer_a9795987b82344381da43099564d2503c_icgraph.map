@@ -1,0 +1,5 @@
+<map id="setup_server" name="setup_server">
+<area shape="rect" id="Node000001" title="设置TCP服务器，绑定地址和端口，并等待客户端连接。" alt="" coords="120,5,216,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer.html#abdd362d5f799ad16b5d6700efe590290" title="构造函数，初始化TCP服务端模式相关信息，并尝试绑定指定的IP和端口。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

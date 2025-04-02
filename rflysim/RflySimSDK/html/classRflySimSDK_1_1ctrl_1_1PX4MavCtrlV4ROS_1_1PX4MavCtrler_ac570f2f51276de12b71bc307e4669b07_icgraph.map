@@ -1,0 +1,7 @@
+<map id="q2yaw" name="q2yaw">
+<area shape="rect" id="Node000001" title="从输入的四元数（q）来计算偏航角" alt="" coords="240,39,299,65"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#af8bc1df903ced1c58d4ea7bbdd768c10" title="处理ROS中订阅的IMU话题的消息，更新无人机的IMU数据" alt="" coords="50,5,147,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,46,147,31,148,25,225,41"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#af8bc1df903ced1c58d4ea7bbdd768c10" title="处理IMU消息" alt="" coords="5,56,192,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,63,193,70,191,64,224,58"/>
+</map>

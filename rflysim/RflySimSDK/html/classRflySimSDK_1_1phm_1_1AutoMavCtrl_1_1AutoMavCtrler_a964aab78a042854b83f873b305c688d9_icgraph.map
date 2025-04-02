@@ -1,0 +1,7 @@
+<map id="StartSimProcess" name="StartSimProcess">
+<area shape="rect" id="Node000001" title="启动无人机仿真进程的方法。该方法用于启动无人机的仿真进程，包括但不限于初始化仿真环境、配置仿真参数以及启动仿真软件。" alt="" coords="337,5,457,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#abb965915f2e61ae0e3c80bc9202f40e5" title="启动仿真进程的方法。该方法启动无人机仿真所需的进程。" alt="" coords="141,5,289,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="321,21,289,21,289,16,321,16"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#af6641694b3857fefc4633fca9181a5cd" title="初始化无人机环境的方法。该方法根据传入的配置信息初始化无人机的仿真环境。" alt="" coords="5,5,93,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,21,93,21,93,16,125,16"/>
+</map>

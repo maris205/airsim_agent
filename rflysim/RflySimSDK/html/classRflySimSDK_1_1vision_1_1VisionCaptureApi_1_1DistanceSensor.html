@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: DistanceSensor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>vision</b></li><li class="navelem"><b>VisionCaptureApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1DistanceSensor.html">DistanceSensor</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1DistanceSensor-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">DistanceSensor类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>DistanceSensor结构体类，用于初始化测距传感器的参数  
+ <a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abdd362d5f799ad16b5d6700efe590290" id="r_abdd362d5f799ad16b5d6700efe590290"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd362d5f799ad16b5d6700efe590290">__init__</a> (self)</td></tr>
+<tr class="memdesc:abdd362d5f799ad16b5d6700efe590290"><td class="mdescLeft"> </td><td class="mdescRight">DistanceSensor的构造函数  <br/></td></tr>
+<tr class="separator:abdd362d5f799ad16b5d6700efe590290"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a59857f72b140fef3106ad66e18b67af6" id="r_a59857f72b140fef3106ad66e18b67af6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a59857f72b140fef3106ad66e18b67af6">TimeStamp</a></td></tr>
+<tr class="memdesc:a59857f72b140fef3106ad66e18b67af6"><td class="mdescLeft"> </td><td class="mdescRight">这是当前消息的时间戳，初始化为 0  <br/></td></tr>
+<tr class="separator:a59857f72b140fef3106ad66e18b67af6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a81b4dfc84803e5e70dd5d37d4a53ae7f" id="r_a81b4dfc84803e5e70dd5d37d4a53ae7f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a81b4dfc84803e5e70dd5d37d4a53ae7f">Distance</a></td></tr>
+<tr class="memdesc:a81b4dfc84803e5e70dd5d37d4a53ae7f"><td class="mdescLeft"> </td><td class="mdescRight">这是距离传感器测量到的距离，初始化为 0  <br/></td></tr>
+<tr class="separator:a81b4dfc84803e5e70dd5d37d4a53ae7f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bc1de2c250838e7456f6b1991f9d9d9">CopterID</a></td></tr>
+<tr class="memdesc:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="mdescLeft"> </td><td class="mdescRight">用于标识直升机的ID，初始化为 0  <br/></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4ffe5b53c87bc771bcb150544a4e74f" id="r_ab4ffe5b53c87bc771bcb150544a4e74f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ffe5b53c87bc771bcb150544a4e74f">RayStart</a></td></tr>
+<tr class="memdesc:ab4ffe5b53c87bc771bcb150544a4e74f"><td class="mdescLeft"> </td><td class="mdescRight">这是射线起点的坐标，初始化为[0,0,0]  <br/></td></tr>
+<tr class="separator:ab4ffe5b53c87bc771bcb150544a4e74f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9eee860f1676526eb41c3487f5cf09d7" id="r_a9eee860f1676526eb41c3487f5cf09d7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eee860f1676526eb41c3487f5cf09d7">AngEular</a></td></tr>
+<tr class="memdesc:a9eee860f1676526eb41c3487f5cf09d7"><td class="mdescLeft"> </td><td class="mdescRight">这是传感器的欧拉角（Euler Angles），初始化为[0,0,0]  <br/></td></tr>
+<tr class="separator:a9eee860f1676526eb41c3487f5cf09d7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8bd3453f717219e480f9e4ff7bf696f4" id="r_a8bd3453f717219e480f9e4ff7bf696f4"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bd3453f717219e480f9e4ff7bf696f4">ImpactPoint</a></td></tr>
+<tr class="memdesc:a8bd3453f717219e480f9e4ff7bf696f4"><td class="mdescLeft"> </td><td class="mdescRight">这是碰撞点的坐标，初始化为[0,0,0]  <br/></td></tr>
+<tr class="separator:a8bd3453f717219e480f9e4ff7bf696f4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1b7a77d70add5e51249b0246cdd3eeb5" id="r_a1b7a77d70add5e51249b0246cdd3eeb5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b7a77d70add5e51249b0246cdd3eeb5">BoxOri</a></td></tr>
+<tr class="memdesc:a1b7a77d70add5e51249b0246cdd3eeb5"><td class="mdescLeft"> </td><td class="mdescRight">这是盒子的原点或参考点，初始化为[0,0,0]  <br/></td></tr>
+<tr class="separator:a1b7a77d70add5e51249b0246cdd3eeb5"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>DistanceSensor结构体类，用于初始化测距传感器的参数 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abdd362d5f799ad16b5d6700efe590290" name="abdd362d5f799ad16b5d6700efe590290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd362d5f799ad16b5d6700efe590290">◆ </a></span>__init__()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">__init__ </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>DistanceSensor的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">初始化类属性</td><td></td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a9eee860f1676526eb41c3487f5cf09d7" name="a9eee860f1676526eb41c3487f5cf09d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eee860f1676526eb41c3487f5cf09d7">◆ </a></span>AngEular</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">AngEular</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是传感器的欧拉角（Euler Angles），初始化为[0,0,0] </p>
+</div>
+</div>
+<a id="a1b7a77d70add5e51249b0246cdd3eeb5" name="a1b7a77d70add5e51249b0246cdd3eeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b7a77d70add5e51249b0246cdd3eeb5">◆ </a></span>BoxOri</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">BoxOri</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是盒子的原点或参考点，初始化为[0,0,0] </p>
+</div>
+</div>
+<a id="a4bc1de2c250838e7456f6b1991f9d9d9" name="a4bc1de2c250838e7456f6b1991f9d9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc1de2c250838e7456f6b1991f9d9d9">◆ </a></span>CopterID</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">CopterID</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于标识直升机的ID，初始化为 0 </p>
+</div>
+</div>
+<a id="a81b4dfc84803e5e70dd5d37d4a53ae7f" name="a81b4dfc84803e5e70dd5d37d4a53ae7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b4dfc84803e5e70dd5d37d4a53ae7f">◆ </a></span>Distance</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Distance</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是距离传感器测量到的距离，初始化为 0 </p>
+</div>
+</div>
+<a id="a8bd3453f717219e480f9e4ff7bf696f4" name="a8bd3453f717219e480f9e4ff7bf696f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd3453f717219e480f9e4ff7bf696f4">◆ </a></span>ImpactPoint</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ImpactPoint</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是碰撞点的坐标，初始化为[0,0,0] </p>
+</div>
+</div>
+<a id="ab4ffe5b53c87bc771bcb150544a4e74f" name="ab4ffe5b53c87bc771bcb150544a4e74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ffe5b53c87bc771bcb150544a4e74f">◆ </a></span>RayStart</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">RayStart</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是射线起点的坐标，初始化为[0,0,0] </p>
+</div>
+</div>
+<a id="a59857f72b140fef3106ad66e18b67af6" name="a59857f72b140fef3106ad66e18b67af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59857f72b140fef3106ad66e18b67af6">◆ </a></span>TimeStamp</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">TimeStamp</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>这是当前消息的时间戳，初始化为 0 </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>vision/<a class="el" href="VisionCaptureApi_8py.html">VisionCaptureApi.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_Mutex_Remote类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pro-types">Protected 类型</a> |
+<a href="#pro-methods">Protected 成员函数</a> |
+<a href="#pro-static-methods">静态 Protected 成员函数</a> |
+<a href="#pro-attribs">Protected 属性</a> |
+<a href="classvrpn__Mutex__Remote-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_Mutex_Remote类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> 类 vrpn_Mutex_Remote 继承关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="112" scrolling="no" src="classvrpn__Mutex__Remote__inherit__graph.svg" width="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> vrpn_Mutex_Remote 的协作图:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="358" scrolling="no" src="classvrpn__Mutex__Remote__coll__graph.svg" width="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">struct  </td><td class="memItemRight" valign="bottom"><a class="el" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1e26cc0c78f02e0386f86b80e300b90c" id="r_a1e26cc0c78f02e0386f86b80e300b90c"><td align="right" class="memItemLeft" valign="top"><a id="a1e26cc0c78f02e0386f86b80e300b90c" name="a1e26cc0c78f02e0386f86b80e300b90c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Mutex_Remote</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *=NULL)</td></tr>
+<tr class="separator:a1e26cc0c78f02e0386f86b80e300b90c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a33028601a786df43494cd6d0027c4bd6" id="r_a33028601a786df43494cd6d0027c4bd6"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a33028601a786df43494cd6d0027c4bd6">isAvailable</a> (void) const</td></tr>
+<tr class="separator:a33028601a786df43494cd6d0027c4bd6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4177019e06acbeff44743ba871e5c047" id="r_a4177019e06acbeff44743ba871e5c047"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4177019e06acbeff44743ba871e5c047">isHeldLocally</a> (void) const</td></tr>
+<tr class="separator:a4177019e06acbeff44743ba871e5c047"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa5f323c2cab9195442deebde2c1a0c4a" id="r_aa5f323c2cab9195442deebde2c1a0c4a"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5f323c2cab9195442deebde2c1a0c4a">isHeldRemotely</a> (void) const</td></tr>
+<tr class="separator:aa5f323c2cab9195442deebde2c1a0c4a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a824cfa2c769ec7396cc2b74ddf444047" id="r_a824cfa2c769ec7396cc2b74ddf444047"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a824cfa2c769ec7396cc2b74ddf444047">request</a> (void)</td></tr>
+<tr class="separator:a824cfa2c769ec7396cc2b74ddf444047"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3299507dea21c693b66a23c77bfc3a7a" id="r_a3299507dea21c693b66a23c77bfc3a7a"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3299507dea21c693b66a23c77bfc3a7a">release</a> (void)</td></tr>
+<tr class="separator:a3299507dea21c693b66a23c77bfc3a7a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad47a035df63d185918936d2614792667" id="r_ad47a035df63d185918936d2614792667"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad47a035df63d185918936d2614792667">addRequestGrantedCallback</a> (void *userdata, int(*)(void *))</td></tr>
+<tr class="memdesc:ad47a035df63d185918936d2614792667"><td class="mdescLeft"> </td><td class="mdescRight">These callbacks are triggered when OUR request is granted.  <br/></td></tr>
+<tr class="separator:ad47a035df63d185918936d2614792667"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab359833c0ec22800c9b3afbff9ac1087" id="r_ab359833c0ec22800c9b3afbff9ac1087"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab359833c0ec22800c9b3afbff9ac1087">addRequestDeniedCallback</a> (void *userdata, int(*)(void *))</td></tr>
+<tr class="memdesc:ab359833c0ec22800c9b3afbff9ac1087"><td class="mdescLeft"> </td><td class="mdescRight">These callbacks are triggered when OUR request is denied.  <br/></td></tr>
+<tr class="separator:ab359833c0ec22800c9b3afbff9ac1087"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a92bcf6474debf7c012b0ce177ef25fcc" id="r_a92bcf6474debf7c012b0ce177ef25fcc"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#a92bcf6474debf7c012b0ce177ef25fcc">addTakeCallback</a> (void *userdata, int(*)(void *))</td></tr>
+<tr class="memdesc:a92bcf6474debf7c012b0ce177ef25fcc"><td class="mdescLeft"> </td><td class="mdescRight">These callbacks are triggered when ANY peer gets the mutex.  <br/></td></tr>
+<tr class="separator:a92bcf6474debf7c012b0ce177ef25fcc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4c6a61905d22470089f5ed07b72eb2f" id="r_ab4c6a61905d22470089f5ed07b72eb2f"><td align="right" class="memItemLeft" valign="top">vrpn_bool </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4c6a61905d22470089f5ed07b72eb2f">addReleaseCallback</a> (void *userdata, int(*)(void *))</td></tr>
+<tr class="separator:ab4c6a61905d22470089f5ed07b72eb2f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classvrpn__Mutex"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvrpn__Mutex')"><img alt="-" src="closed.png"/> Public 成员函数 继承自 <a class="el" href="classvrpn__Mutex.html">vrpn_Mutex</a></td></tr>
+<tr class="memitem:a3c2d076b79b8b1085d11788e6599577e inherit pub_methods_classvrpn__Mutex" id="r_a3c2d076b79b8b1085d11788e6599577e"><td align="right" class="memItemLeft" valign="top">
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_Mutex</b> (const char *name, <a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> *=NULL)</td></tr>
+<tr class="separator:a3c2d076b79b8b1085d11788e6599577e inherit pub_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5fe2749decbc9e4b882aa0aabb649fa4 inherit pub_methods_classvrpn__Mutex" id="r_a5fe2749decbc9e4b882aa0aabb649fa4"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>mainloop</b> (void)</td></tr>
+<tr class="separator:a5fe2749decbc9e4b882aa0aabb649fa4 inherit pub_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:adc6e5733fc3c22f0a7b2914188c49c90" id="r_adc6e5733fc3c22f0a7b2914188c49c90"><td align="right" class="memItemLeft" valign="top"><a id="adc6e5733fc3c22f0a7b2914188c49c90" name="adc6e5733fc3c22f0a7b2914188c49c90"></a>enum  </td><td class="memItemRight" valign="bottom"><b>state</b> { <b>OURS</b>
+, <b>REQUESTING</b>
+, <b>AVAILABLE</b>
+, <b>HELD_REMOTELY</b>
+ }</td></tr>
+<tr class="separator:adc6e5733fc3c22f0a7b2914188c49c90"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a990ac82447f7016de27c5cb0c393ce94" id="r_a990ac82447f7016de27c5cb0c393ce94"><td align="right" class="memItemLeft" valign="top"><a id="a990ac82447f7016de27c5cb0c393ce94" name="a990ac82447f7016de27c5cb0c393ce94"></a>
+void </td><td class="memItemRight" valign="bottom"><b>requestIndex</b> (void)</td></tr>
+<tr class="separator:a990ac82447f7016de27c5cb0c393ce94"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a273fdb4f6d846b4b038a0d3e045b8b42" id="r_a273fdb4f6d846b4b038a0d3e045b8b42"><td align="right" class="memItemLeft" valign="top"><a id="a273fdb4f6d846b4b038a0d3e045b8b42" name="a273fdb4f6d846b4b038a0d3e045b8b42"></a>
+void </td><td class="memItemRight" valign="bottom"><b>triggerGrantCallbacks</b> (void)</td></tr>
+<tr class="separator:a273fdb4f6d846b4b038a0d3e045b8b42"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8f22a9329b0ec8fc1034dc763b8e9497" id="r_a8f22a9329b0ec8fc1034dc763b8e9497"><td align="right" class="memItemLeft" valign="top"><a id="a8f22a9329b0ec8fc1034dc763b8e9497" name="a8f22a9329b0ec8fc1034dc763b8e9497"></a>
+void </td><td class="memItemRight" valign="bottom"><b>triggerDenyCallbacks</b> (void)</td></tr>
+<tr class="separator:a8f22a9329b0ec8fc1034dc763b8e9497"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a77a2d526ba00d7332689b687c1fcc108" id="r_a77a2d526ba00d7332689b687c1fcc108"><td align="right" class="memItemLeft" valign="top"><a id="a77a2d526ba00d7332689b687c1fcc108" name="a77a2d526ba00d7332689b687c1fcc108"></a>
+void </td><td class="memItemRight" valign="bottom"><b>triggerTakeCallbacks</b> (void)</td></tr>
+<tr class="separator:a77a2d526ba00d7332689b687c1fcc108"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9adabfa40eca46633145e05ca304076a" id="r_a9adabfa40eca46633145e05ca304076a"><td align="right" class="memItemLeft" valign="top"><a id="a9adabfa40eca46633145e05ca304076a" name="a9adabfa40eca46633145e05ca304076a"></a>
+void </td><td class="memItemRight" valign="bottom"><b>triggerReleaseCallbacks</b> (void)</td></tr>
+<tr class="separator:a9adabfa40eca46633145e05ca304076a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_methods_classvrpn__Mutex"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvrpn__Mutex')"><img alt="-" src="closed.png"/> Protected 成员函数 继承自 <a class="el" href="classvrpn__Mutex.html">vrpn_Mutex</a></td></tr>
+<tr class="memitem:a1ba10320b5723c3df55394cb40856586 inherit pro_methods_classvrpn__Mutex" id="r_a1ba10320b5723c3df55394cb40856586"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>sendRequest</b> (vrpn_int32 index)</td></tr>
+<tr class="separator:a1ba10320b5723c3df55394cb40856586 inherit pro_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0929a8f7bb46e87019dc9dfc8b98584a inherit pro_methods_classvrpn__Mutex" id="r_a0929a8f7bb46e87019dc9dfc8b98584a"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>sendRelease</b> (void)</td></tr>
+<tr class="separator:a0929a8f7bb46e87019dc9dfc8b98584a inherit pro_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aca995dae2313a74147c8043aa6776cbe inherit pro_methods_classvrpn__Mutex" id="r_aca995dae2313a74147c8043aa6776cbe"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>sendReleaseNotification</b> (void)</td></tr>
+<tr class="separator:aca995dae2313a74147c8043aa6776cbe inherit pro_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab22ec98edcbdd60258ace4cef0bedd5d inherit pro_methods_classvrpn__Mutex" id="r_ab22ec98edcbdd60258ace4cef0bedd5d"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>sendGrantRequest</b> (vrpn_int32 index)</td></tr>
+<tr class="separator:ab22ec98edcbdd60258ace4cef0bedd5d inherit pro_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adfc5a6b10d82bace816205e599214e6f inherit pro_methods_classvrpn__Mutex" id="r_adfc5a6b10d82bace816205e599214e6f"><td align="right" class="memItemLeft" valign="top">
+void </td><td class="memItemRight" valign="bottom"><b>sendDenyRequest</b> (vrpn_int32 index)</td></tr>
+<tr class="separator:adfc5a6b10d82bace816205e599214e6f inherit pro_methods_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:a92a2caf5c4f85803c121a30765358182" id="r_a92a2caf5c4f85803c121a30765358182"><td align="right" class="memItemLeft" valign="top"><a id="a92a2caf5c4f85803c121a30765358182" name="a92a2caf5c4f85803c121a30765358182"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_grantRequest</b> (void *, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>)</td></tr>
+<tr class="separator:a92a2caf5c4f85803c121a30765358182"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a420a3aa854a361e18f5d766a4d33c485" id="r_a420a3aa854a361e18f5d766a4d33c485"><td align="right" class="memItemLeft" valign="top"><a id="a420a3aa854a361e18f5d766a4d33c485" name="a420a3aa854a361e18f5d766a4d33c485"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_denyRequest</b> (void *, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>)</td></tr>
+<tr class="separator:a420a3aa854a361e18f5d766a4d33c485"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4dbee21c83d685ca49ce373a72c06d13" id="r_a4dbee21c83d685ca49ce373a72c06d13"><td align="right" class="memItemLeft" valign="top"><a id="a4dbee21c83d685ca49ce373a72c06d13" name="a4dbee21c83d685ca49ce373a72c06d13"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_releaseNotification</b> (void *, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>)</td></tr>
+<tr class="separator:a4dbee21c83d685ca49ce373a72c06d13"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a874b5b305c2c0ad367046053270b13cc" id="r_a874b5b305c2c0ad367046053270b13cc"><td align="right" class="memItemLeft" valign="top"><a id="a874b5b305c2c0ad367046053270b13cc" name="a874b5b305c2c0ad367046053270b13cc"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_initialize</b> (void *, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>)</td></tr>
+<tr class="separator:a874b5b305c2c0ad367046053270b13cc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae3b3a445058a2a63491f8480f8530326" id="r_ae3b3a445058a2a63491f8480f8530326"><td align="right" class="memItemLeft" valign="top"><a id="ae3b3a445058a2a63491f8480f8530326" name="ae3b3a445058a2a63491f8480f8530326"></a>
+static int VRPN_CALLBACK </td><td class="memItemRight" valign="bottom"><b>handle_gotConnection</b> (void *, <a class="el" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>)</td></tr>
+<tr class="separator:ae3b3a445058a2a63491f8480f8530326"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aba1a6ef2f083810806cef54214961326" id="r_aba1a6ef2f083810806cef54214961326"><td align="right" class="memItemLeft" valign="top"><a id="aba1a6ef2f083810806cef54214961326" name="aba1a6ef2f083810806cef54214961326"></a>
+state </td><td class="memItemRight" valign="bottom"><b>d_state</b></td></tr>
+<tr class="separator:aba1a6ef2f083810806cef54214961326"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad8487f47df99c948e57a611f9c977f6b" id="r_ad8487f47df99c948e57a611f9c977f6b"><td align="right" class="memItemLeft" valign="top"><a id="ad8487f47df99c948e57a611f9c977f6b" name="ad8487f47df99c948e57a611f9c977f6b"></a>
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_myIndex</b></td></tr>
+<tr class="separator:ad8487f47df99c948e57a611f9c977f6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adb426df0531bfe4ccd1ce60dbfaeb016" id="r_adb426df0531bfe4ccd1ce60dbfaeb016"><td align="right" class="memItemLeft" valign="top"><a id="adb426df0531bfe4ccd1ce60dbfaeb016" name="adb426df0531bfe4ccd1ce60dbfaeb016"></a>
+vrpn_bool </td><td class="memItemRight" valign="bottom"><b>d_requestBeforeInit</b></td></tr>
+<tr class="separator:adb426df0531bfe4ccd1ce60dbfaeb016"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb1add50aefd4209db53c22d0b0cf162" id="r_acb1add50aefd4209db53c22d0b0cf162"><td align="right" class="memItemLeft" valign="top"><a id="acb1add50aefd4209db53c22d0b0cf162" name="acb1add50aefd4209db53c22d0b0cf162"></a>
+<a class="el" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> * </td><td class="memItemRight" valign="bottom"><b>d_reqGrantedCB</b></td></tr>
+<tr class="separator:acb1add50aefd4209db53c22d0b0cf162"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c176958b47e1c842fc601bbe9eb3347" id="r_a4c176958b47e1c842fc601bbe9eb3347"><td align="right" class="memItemLeft" valign="top"><a id="a4c176958b47e1c842fc601bbe9eb3347" name="a4c176958b47e1c842fc601bbe9eb3347"></a>
+<a class="el" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> * </td><td class="memItemRight" valign="bottom"><b>d_reqDeniedCB</b></td></tr>
+<tr class="separator:a4c176958b47e1c842fc601bbe9eb3347"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4951c1b33de3ad5e7857b0a5b0bb7916" id="r_a4951c1b33de3ad5e7857b0a5b0bb7916"><td align="right" class="memItemLeft" valign="top"><a id="a4951c1b33de3ad5e7857b0a5b0bb7916" name="a4951c1b33de3ad5e7857b0a5b0bb7916"></a>
+<a class="el" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> * </td><td class="memItemRight" valign="bottom"><b>d_takeCB</b></td></tr>
+<tr class="separator:a4951c1b33de3ad5e7857b0a5b0bb7916"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7b8a66027b197acf2a0cd8aa21fa39fa" id="r_a7b8a66027b197acf2a0cd8aa21fa39fa"><td align="right" class="memItemLeft" valign="top"><a id="a7b8a66027b197acf2a0cd8aa21fa39fa" name="a7b8a66027b197acf2a0cd8aa21fa39fa"></a>
+<a class="el" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> * </td><td class="memItemRight" valign="bottom"><b>d_releaseCB</b></td></tr>
+<tr class="separator:a7b8a66027b197acf2a0cd8aa21fa39fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pro_attribs_classvrpn__Mutex"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvrpn__Mutex')"><img alt="-" src="closed.png"/> Protected 属性 继承自 <a class="el" href="classvrpn__Mutex.html">vrpn_Mutex</a></td></tr>
+<tr class="memitem:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__Mutex" id="r_aa15df0bbfd40028dc70ad9da0c3749f2"><td align="right" class="memItemLeft" valign="top">
+<a class="el" href="classvrpn__Connection.html">vrpn_Connection</a> * </td><td class="memItemRight" valign="bottom"><b>d_connection</b></td></tr>
+<tr class="separator:aa15df0bbfd40028dc70ad9da0c3749f2 inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a982d2451bd9d2ccbf1bae1a873283763 inherit pro_attribs_classvrpn__Mutex" id="r_a982d2451bd9d2ccbf1bae1a873283763"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_myId</b></td></tr>
+<tr class="separator:a982d2451bd9d2ccbf1bae1a873283763 inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1b693a0a5e27365db19f9655ca858faa inherit pro_attribs_classvrpn__Mutex" id="r_a1b693a0a5e27365db19f9655ca858faa"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_requestIndex_type</b></td></tr>
+<tr class="separator:a1b693a0a5e27365db19f9655ca858faa inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6d6e5dbedd9d3fa1acb0c453baec4813 inherit pro_attribs_classvrpn__Mutex" id="r_a6d6e5dbedd9d3fa1acb0c453baec4813"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_requestMutex_type</b></td></tr>
+<tr class="separator:a6d6e5dbedd9d3fa1acb0c453baec4813 inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af4eaa3daca9b141be51ccf3277d41879 inherit pro_attribs_classvrpn__Mutex" id="r_af4eaa3daca9b141be51ccf3277d41879"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_release_type</b></td></tr>
+<tr class="separator:af4eaa3daca9b141be51ccf3277d41879 inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac729f2f44bc5bf66dbb5b0d59132317a inherit pro_attribs_classvrpn__Mutex" id="r_ac729f2f44bc5bf66dbb5b0d59132317a"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_releaseNotification_type</b></td></tr>
+<tr class="separator:ac729f2f44bc5bf66dbb5b0d59132317a inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac93a47290f1d562b492fa35596a3d96f inherit pro_attribs_classvrpn__Mutex" id="r_ac93a47290f1d562b492fa35596a3d96f"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_grantRequest_type</b></td></tr>
+<tr class="separator:ac93a47290f1d562b492fa35596a3d96f inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a66895190b4d1e8fb03efa3c200de4a8d inherit pro_attribs_classvrpn__Mutex" id="r_a66895190b4d1e8fb03efa3c200de4a8d"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_denyRequest_type</b></td></tr>
+<tr class="separator:a66895190b4d1e8fb03efa3c200de4a8d inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a739e9c8b7dec34a6cd03331f480171d5 inherit pro_attribs_classvrpn__Mutex" id="r_a739e9c8b7dec34a6cd03331f480171d5"><td align="right" class="memItemLeft" valign="top">
+vrpn_int32 </td><td class="memItemRight" valign="bottom"><b>d_initialize_type</b></td></tr>
+<tr class="separator:a739e9c8b7dec34a6cd03331f480171d5 inherit pro_attribs_classvrpn__Mutex"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab4c6a61905d22470089f5ed07b72eb2f" name="ab4c6a61905d22470089f5ed07b72eb2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c6a61905d22470089f5ed07b72eb2f">◆ </a></span>addReleaseCallback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool addReleaseCallback </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int(*</td> <td class="paramname"><span class="paramname"><em> </em></span>)(void *) )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>These callbacks are triggered when ANY peer releases the mutex. </p>
+</div>
+</div>
+<a id="ab359833c0ec22800c9b3afbff9ac1087" name="ab359833c0ec22800c9b3afbff9ac1087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab359833c0ec22800c9b3afbff9ac1087">◆ </a></span>addRequestDeniedCallback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool addRequestDeniedCallback </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int(*</td> <td class="paramname"><span class="paramname"><em> </em></span>)(void *) )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>These callbacks are triggered when OUR request is denied. </p>
+</div>
+</div>
+<a id="ad47a035df63d185918936d2614792667" name="ad47a035df63d185918936d2614792667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47a035df63d185918936d2614792667">◆ </a></span>addRequestGrantedCallback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool addRequestGrantedCallback </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int(*</td> <td class="paramname"><span class="paramname"><em> </em></span>)(void *) )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>These callbacks are triggered when OUR request is granted. </p>
+</div>
+</div>
+<a id="a92bcf6474debf7c012b0ce177ef25fcc" name="a92bcf6474debf7c012b0ce177ef25fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bcf6474debf7c012b0ce177ef25fcc">◆ </a></span>addTakeCallback()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool addTakeCallback </td>
+<td>(</td>
+<td class="paramtype">void *</td> <td class="paramname"><span class="paramname"><em>userdata</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">int(*</td> <td class="paramname"><span class="paramname"><em> </em></span>)(void *) )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>These callbacks are triggered when ANY peer gets the mutex. </p>
+</div>
+</div>
+<a id="a33028601a786df43494cd6d0027c4bd6" name="a33028601a786df43494cd6d0027c4bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33028601a786df43494cd6d0027c4bd6">◆ </a></span>isAvailable()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool isAvailable </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>True from when <a class="el" href="#a3299507dea21c693b66a23c77bfc3a7a">release()</a> is called or we receive a release message from another process until <a class="el" href="#a824cfa2c769ec7396cc2b74ddf444047">request()</a> is called or we grant the lock to another process in response to its request message. </p>
+</div>
+</div>
+<a id="a4177019e06acbeff44743ba871e5c047" name="a4177019e06acbeff44743ba871e5c047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4177019e06acbeff44743ba871e5c047">◆ </a></span>isHeldLocally()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool isHeldLocally </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>True from when RequestGranted callbacks are triggered until <a class="el" href="#a3299507dea21c693b66a23c77bfc3a7a">release()</a> is called. </p>
+</div>
+</div>
+<a id="aa5f323c2cab9195442deebde2c1a0c4a" name="aa5f323c2cab9195442deebde2c1a0c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f323c2cab9195442deebde2c1a0c4a">◆ </a></span>isHeldRemotely()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">vrpn_bool isHeldRemotely </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>True from when we grant the lock to another process in response to its request message until we receive a release message from another process. </p>
+</div>
+</div>
+<a id="a3299507dea21c693b66a23c77bfc3a7a" name="a3299507dea21c693b66a23c77bfc3a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3299507dea21c693b66a23c77bfc3a7a">◆ </a></span>release()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void release </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Release the distributed lock. Does nothing if !isHeldLocally() and there isn't a request pending. </p>
+</div>
+</div>
+<a id="a824cfa2c769ec7396cc2b74ddf444047" name="a824cfa2c769ec7396cc2b74ddf444047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824cfa2c769ec7396cc2b74ddf444047">◆ </a></span>request()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void request </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Request the distributed lock. Does not request the lock if !isAvailable(), instead automatically triggering DeniedCallbacks. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__Mutex_8h_source.html">vrpn_Mutex.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

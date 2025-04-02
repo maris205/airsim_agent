@@ -1,0 +1,1567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/mavlink/ardupilotmega/ardupilotmega.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_ad33f1dddab9e5eaec5103fc17ef0232.html">mavlink</a></li><li class="navelem"><a class="el" href="dir_0bc081e0fd7e1ba0adc82f866c5ec0b4.html">ardupilotmega</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#define-members">宏定义</a> |
+<a href="#typedef-members">类型定义</a> |
+<a href="#enum-members">枚举</a> </div>
+<div class="headertitle"><div class="title">ardupilotmega.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>MAVLink comm protocol generated from ardupilotmega.xml  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include "../protocol.h"</code><br/>
+<code>#include "./mavlink_msg_sensor_offsets.h"</code><br/>
+<code>#include "./mavlink_msg_set_mag_offsets.h"</code><br/>
+<code>#include "./mavlink_msg_meminfo.h"</code><br/>
+<code>#include "./mavlink_msg_ap_adc.h"</code><br/>
+<code>#include "./mavlink_msg_digicam_configure.h"</code><br/>
+<code>#include "./mavlink_msg_digicam_control.h"</code><br/>
+<code>#include "./mavlink_msg_mount_configure.h"</code><br/>
+<code>#include "./mavlink_msg_mount_control.h"</code><br/>
+<code>#include "./mavlink_msg_mount_status.h"</code><br/>
+<code>#include "./mavlink_msg_fence_point.h"</code><br/>
+<code>#include "./mavlink_msg_fence_fetch_point.h"</code><br/>
+<code>#include "./mavlink_msg_fence_status.h"</code><br/>
+<code>#include "./mavlink_msg_ahrs.h"</code><br/>
+<code>#include "./mavlink_msg_simstate.h"</code><br/>
+<code>#include "./mavlink_msg_hwstatus.h"</code><br/>
+<code>#include "./mavlink_msg_radio.h"</code><br/>
+<code>#include "./mavlink_msg_limits_status.h"</code><br/>
+<code>#include "./mavlink_msg_wind.h"</code><br/>
+<code>#include "./mavlink_msg_data16.h"</code><br/>
+<code>#include "./mavlink_msg_data32.h"</code><br/>
+<code>#include "./mavlink_msg_data64.h"</code><br/>
+<code>#include "./mavlink_msg_data96.h"</code><br/>
+<code>#include "./mavlink_msg_rangefinder.h"</code><br/>
+<code>#include "./mavlink_msg_airspeed_autocal.h"</code><br/>
+<code>#include "./mavlink_msg_rally_point.h"</code><br/>
+<code>#include "./mavlink_msg_rally_fetch_point.h"</code><br/>
+<code>#include "./mavlink_msg_compassmot_status.h"</code><br/>
+<code>#include "./mavlink_msg_ahrs2.h"</code><br/>
+<code>#include "./mavlink_msg_camera_status.h"</code><br/>
+<code>#include "./mavlink_msg_camera_feedback.h"</code><br/>
+<code>#include "./mavlink_msg_battery2.h"</code><br/>
+<code>#include "./mavlink_msg_ahrs3.h"</code><br/>
+<code>#include "./mavlink_msg_autopilot_version_request.h"</code><br/>
+<code>#include "./mavlink_msg_remote_log_data_block.h"</code><br/>
+<code>#include "./mavlink_msg_remote_log_block_status.h"</code><br/>
+<code>#include "./mavlink_msg_led_control.h"</code><br/>
+<code>#include "./mavlink_msg_mag_cal_progress.h"</code><br/>
+<code>#include "./mavlink_msg_mag_cal_report.h"</code><br/>
+<code>#include "./mavlink_msg_ekf_status_report.h"</code><br/>
+<code>#include "./mavlink_msg_pid_tuning.h"</code><br/>
+<code>#include "./mavlink_msg_gimbal_report.h"</code><br/>
+<code>#include "./mavlink_msg_gimbal_control.h"</code><br/>
+<code>#include "./mavlink_msg_gimbal_torque_cmd_report.h"</code><br/>
+<code>#include "./mavlink_msg_gopro_heartbeat.h"</code><br/>
+<code>#include "./mavlink_msg_gopro_get_request.h"</code><br/>
+<code>#include "./mavlink_msg_gopro_get_response.h"</code><br/>
+<code>#include "./mavlink_msg_gopro_set_request.h"</code><br/>
+<code>#include "./mavlink_msg_gopro_set_response.h"</code><br/>
+<code>#include "./mavlink_msg_rpm.h"</code><br/>
+<code>#include "./mavlink_msg_device_op_read.h"</code><br/>
+<code>#include "./mavlink_msg_device_op_read_reply.h"</code><br/>
+<code>#include "./mavlink_msg_device_op_write.h"</code><br/>
+<code>#include "./mavlink_msg_device_op_write_reply.h"</code><br/>
+<code>#include "./mavlink_msg_adap_tuning.h"</code><br/>
+<code>#include "./mavlink_msg_vision_position_delta.h"</code><br/>
+<code>#include "<a class="el" href="common_8h_source.html">../common/common.h</a>"</code><br/>
+<code>#include "<a class="el" href="uAvionix_8h_source.html">../uAvionix/uAvionix.h</a>"</code><br/>
+</div>
+<p><a href="ardupilotmega_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a73d15c1b439decaeede4ea4b8de2028a" id="r_a73d15c1b439decaeede4ea4b8de2028a"><td align="right" class="memItemLeft" valign="top"><a id="a73d15c1b439decaeede4ea4b8de2028a" name="a73d15c1b439decaeede4ea4b8de2028a"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_ARDUPILOTMEGA_H</b></td></tr>
+<tr class="separator:a73d15c1b439decaeede4ea4b8de2028a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec7bcd84c243ec07f25b1416f2168e1b" id="r_aec7bcd84c243ec07f25b1416f2168e1b"><td align="right" class="memItemLeft" valign="top"><a id="aec7bcd84c243ec07f25b1416f2168e1b" name="aec7bcd84c243ec07f25b1416f2168e1b"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_THIS_XML_IDX</b>   0</td></tr>
+<tr class="separator:aec7bcd84c243ec07f25b1416f2168e1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa90005429262b658c881fa203c4de208" id="r_aa90005429262b658c881fa203c4de208"><td align="right" class="memItemLeft" valign="top"><a id="aa90005429262b658c881fa203c4de208" name="aa90005429262b658c881fa203c4de208"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_LENGTHS</b>   {}</td></tr>
+<tr class="separator:aa90005429262b658c881fa203c4de208"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f709d5835acb54a11202a5fdc7a6bfe" id="r_a3f709d5835acb54a11202a5fdc7a6bfe"><td align="right" class="memItemLeft" valign="top"><a id="a3f709d5835acb54a11202a5fdc7a6bfe" name="a3f709d5835acb54a11202a5fdc7a6bfe"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_CRCS</b>   {{0, 50, 9, 0, 0, 0}, {1, 124, 31, 0, 0, 0}, {2, 137, 12, 0, 0, 0}, {4, 237, 14, 3, 12, 13}, {5, 217, 28, 1, 0, 0}, {6, 104, 3, 0, 0, 0}, {7, 119, 32, 0, 0, 0}, {11, 89, 6, 1, 4, 0}, {20, 214, 20, 3, 2, 3}, {21, 159, 2, 3, 0, 1}, {22, 220, 25, 0, 0, 0}, {23, 168, 23, 3, 4, 5}, {24, 24, 30, 0, 0, 0}, {25, 23, 101, 0, 0, 0}, {26, 170, 22, 0, 0, 0}, {27, 144, 26, 0, 0, 0}, {28, 67, 16, 0, 0, 0}, {29, 115, 14, 0, 0, 0}, {30, 39, 28, 0, 0, 0}, {31, 246, 32, 0, 0, 0}, {32, 185, 28, 0, 0, 0}, {33, 104, 28, 0, 0, 0}, {34, 237, 22, 0, 0, 0}, {35, 244, 22, 0, 0, 0}, {36, 222, 21, 0, 0, 0}, {37, 212, 6, 3, 4, 5}, {38, 9, 6, 3, 4, 5}, {39, 254, 37, 3, 32, 33}, {40, 230, 4, 3, 2, 3}, {41, 28, 4, 3, 2, 3}, {42, 28, 2, 0, 0, 0}, {43, 132, 2, 3, 0, 1}, {44, 221, 4, 3, 2, 3}, {45, 232, 2, 3, 0, 1}, {46, 11, 2, 0, 0, 0}, {47, 153, 3, 3, 0, 1}, {48, 41, 13, 1, 12, 0}, {49, 39, 12, 0, 0, 0}, {50, 78, 37, 3, 18, 19}, {51, 196, 4, 3, 2, 3}, {54, 15, 27, 3, 24, 25}, {55, 3, 25, 0, 0, 0}, {61, 167, 72, 0, 0, 0}, {62, 183, 26, 0, 0, 0}, {63, 119, 181, 0, 0, 0}, {64, 191, 225, 0, 0, 0}, {65, 118, 42, 0, 0, 0}, {66, 148, 6, 3, 2, 3}, {67, 21, 4, 0, 0, 0}, {69, 243, 11, 0, 0, 0}, {70, 124, 18, 3, 16, 17}, {73, 38, 37, 3, 32, 33}, {74, 20, 20, 0, 0, 0}, {75, 158, 35, 3, 30, 31}, {76, 152, 33, 3, 30, 31}, {77, 143, 3, 3, 8, 9}, {81, 106, 22, 0, 0, 0}, {82, 49, 39, 3, 36, 37}, {83, 22, 37, 0, 0, 0}, {84, 143, 53, 3, 50, 51}, {85, 140, 51, 0, 0, 0}, {86, 5, 53, 3, 50, 51}, {87, 150, 51, 0, 0, 0}, {89, 231, 28, 0, 0, 0}, {90, 183, 56, 0, 0, 0}, {91, 63, 42, 0, 0, 0}, {92, 54, 33, 0, 0, 0}, {93, 47, 81, 0, 0, 0}, {100, 175, 26, 0, 0, 0}, {101, 102, 32, 0, 0, 0}, {102, 158, 32, 0, 0, 0}, {103, 208, 20, 0, 0, 0}, {104, 56, 32, 0, 0, 0}, {105, 93, 62, 0, 0, 0}, {106, 138, 44, 0, 0, 0}, {107, 108, 64, 0, 0, 0}, {108, 32, 84, 0, 0, 0}, {109, 185, 9, 0, 0, 0}, {110, 84, 254, 3, 1, 2}, {111, 34, 16, 0, 0, 0}, {112, 174, 12, 0, 0, 0}, {113, 124, 36, 0, 0, 0}, {114, 237, 44, 0, 0, 0}, {115, 4, 64, 0, 0, 0}, {116, 76, 22, 0, 0, 0}, {117, 128, 6, 3, 4, 5}, {118, 56, 14, 0, 0, 0}, {119, 116, 12, 3, 10, 11}, {120, 134, 97, 0, 0, 0}, {121, 237, 2, 3, 0, 1}, {122, 203, 2, 3, 0, 1}, {123, 250, 113, 3, 0, 1}, {124, 87, 35, 0, 0, 0}, {125, 203, 6, 0, 0, 0}, {126, 220, 79, 0, 0, 0}, {127, 25, 35, 0, 0, 0}, {128, 226, 35, 0, 0, 0}, {129, 46, 22, 0, 0, 0}, {130, 29, 13, 0, 0, 0}, {131, 223, 255, 0, 0, 0}, {132, 85, 14, 0, 0, 0}, {133, 6, 18, 0, 0, 0}, {134, 229, 43, 0, 0, 0}, {135, 203, 8, 0, 0, 0}, {136, 1, 22, 0, 0, 0}, {137, 195, 14, 0, 0, 0}, {138, 109, 36, 0, 0, 0}, {139, 168, 43, 3, 41, 42}, {140, 181, 41, 0, 0, 0}, {141, 47, 32, 0, 0, 0}, {142, 72, 243, 0, 0, 0}, {143, 131, 14, 0, 0, 0}, {144, 127, 93, 0, 0, 0}, {146, 103, 100, 0, 0, 0}, {147, 154, 36, 0, 0, 0}, {148, 178, 60, 0, 0, 0}, {149, 200, 30, 0, 0, 0}, {150, 134, 42, 0, 0, 0}, {151, 219, 8, 3, 6, 7}, {152, 208, 4, 0, 0, 0}, {153, 188, 12, 0, 0, 0}, {154, 84, 15, 3, 6, 7}, {155, 22, 13, 3, 4, 5}, {156, 19, 6, 3, 0, 1}, {157, 21, 15, 3, 12, 13}, {158, 134, 14, 3, 12, 13}, {160, 78, 12, 3, 8, 9}, {161, 68, 3, 3, 0, 1}, {162, 189, 8, 0, 0, 0}, {163, 127, 28, 0, 0, 0}, {164, 154, 44, 0, 0, 0}, {165, 21, 3, 0, 0, 0}, {166, 21, 9, 0, 0, 0}, {167, 144, 22, 0, 0, 0}, {168, 1, 12, 0, 0, 0}, {169, 234, 18, 0, 0, 0}, {170, 73, 34, 0, 0, 0}, {171, 181, 66, 0, 0, 0}, {172, 22, 98, 0, 0, 0}, {173, 83, 8, 0, 0, 0}, {174, 167, 48, 0, 0, 0}, {175, 138, 19, 3, 14, 15}, {176, 234, 3, 3, 0, 1}, {177, 240, 20, 0, 0, 0}, {178, 47, 24, 0, 0, 0}, {179, 189, 29, 1, 26, 0}, {180, 52, 45, 1, 42, 0}, {181, 174, 4, 0, 0, 0}, {182, 229, 40, 0, 0, 0}, {183, 85, 2, 3, 0, 1}, {184, 159, 206, 3, 4, 5}, {185, 186, 7, 3, 4, 5}, {186, 72, 29, 3, 0, 1}, {191, 92, 27, 0, 0, 0}, {192, 36, 44, 0, 0, 0}, {193, 71, 22, 0, 0, 0}, {194, 98, 25, 0, 0, 0}, {200, 134, 42, 3, 40, 41}, {201, 205, 14, 3, 12, 13}, {214, 69, 8, 3, 6, 7}, {215, 101, 3, 0, 0, 0}, {216, 50, 3, 3, 0, 1}, {217, 202, 6, 0, 0, 0}, {218, 17, 7, 3, 0, 1}, {219, 162, 2, 0, 0, 0}, {226, 207, 8, 0, 0, 0}, {230, 163, 42, 0, 0, 0}, {231, 105, 40, 0, 0, 0}, {232, 151, 63, 0, 0, 0}, {233, 35, 182, 0, 0, 0}, {234, 150, 40, 0, 0, 0}, {241, 90, 32, 0, 0, 0}, {242, 104, 52, 0, 0, 0}, {243, 85, 53, 1, 52, 0}, {244, 95, 6, 0, 0, 0}, {245, 130, 2, 0, 0, 0}, {246, 184, 38, 0, 0, 0}, {247, 81, 19, 0, 0, 0}, {248, 8, 254, 3, 3, 4}, {249, 204, 36, 0, 0, 0}, {250, 49, 30, 0, 0, 0}, {251, 170, 18, 0, 0, 0}, {252, 44, 18, 0, 0, 0}, {253, 83, 51, 0, 0, 0}, {254, 46, 9, 0, 0, 0}, {256, 71, 42, 3, 8, 9}, {257, 131, 9, 0, 0, 0}, {258, 187, 32, 3, 0, 1}, {259, 92, 235, 0, 0, 0}, {260, 146, 5, 0, 0, 0}, {261, 179, 27, 0, 0, 0}, {262, 12, 18, 0, 0, 0}, {263, 133, 255, 0, 0, 0}, {264, 49, 28, 0, 0, 0}, {265, 26, 16, 0, 0, 0}, {266, 193, 255, 3, 2, 3}, {267, 35, 255, 3, 2, 3}, {268, 14, 4, 3, 2, 3}, {269, 58, 246, 0, 0, 0}, {270, 232, 247, 3, 14, 15}, {299, 19, 96, 0, 0, 0}, {300, 217, 22, 0, 0, 0}, {310, 28, 17, 0, 0, 0}, {311, 95, 116, 0, 0, 0}, {320, 243, 20, 3, 2, 3}, {321, 88, 2, 3, 0, 1}, {322, 243, 149, 0, 0, 0}, {323, 78, 147, 3, 0, 1}, {324, 132, 146, 0, 0, 0}, {330, 201, 22, 0, 0, 0}, {10001, 209, 20, 0, 0, 0}, {10002, 186, 41, 0, 0, 0}, {10003, 4, 1, 0, 0, 0}, {11000, 134, 51, 3, 4, 5}, {11001, 15, 135, 0, 0, 0}, {11002, 234, 179, 3, 4, 5}, {11003, 64, 5, 0, 0, 0}, {11010, 46, 49, 0, 0, 0}, {11011, 106, 44, 0, 0, 0}}</td></tr>
+<tr class="separator:a3f709d5835acb54a11202a5fdc7a6bfe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af12803962f629ab01871eda0ee546903" id="r_af12803962f629ab01871eda0ee546903"><td align="right" class="memItemLeft" valign="top"><a id="af12803962f629ab01871eda0ee546903" name="af12803962f629ab01871eda0ee546903"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_ENABLED_ARDUPILOTMEGA</b></td></tr>
+<tr class="separator:af12803962f629ab01871eda0ee546903"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad8091202dd8c67bbaba04c88d0941400" id="r_ad8091202dd8c67bbaba04c88d0941400"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8091202dd8c67bbaba04c88d0941400">HAVE_ENUM_ACCELCAL_VEHICLE_POS</a></td></tr>
+<tr class="memdesc:ad8091202dd8c67bbaba04c88d0941400"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:ad8091202dd8c67bbaba04c88d0941400"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a073ec1e277b3d058a124e241c473d5ee" id="r_a073ec1e277b3d058a124e241c473d5ee"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a073ec1e277b3d058a124e241c473d5ee">HAVE_ENUM_MAV_CMD</a></td></tr>
+<tr class="memdesc:a073ec1e277b3d058a124e241c473d5ee"><td class="mdescLeft"> </td><td class="mdescRight">Commands to be executed by the MAV. They can be executed on user request, or as part of a mission script. If the action is used in a mission, the parameter mapping to the waypoint/mission message is as follows: Param 1, Param 2, Param 3, Param 4, X: Param 5, Y:Param 6, Z:Param 7. This command list is similar what ARINC 424 is for commercial aircraft: A data format how to interpret waypoint/mission data.  <br/></td></tr>
+<tr class="separator:a073ec1e277b3d058a124e241c473d5ee"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5219813696cec0f0a3144d63c6a7e73e" id="r_a5219813696cec0f0a3144d63c6a7e73e"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5219813696cec0f0a3144d63c6a7e73e">HAVE_ENUM_LIMITS_STATE</a></td></tr>
+<tr class="memdesc:a5219813696cec0f0a3144d63c6a7e73e"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a5219813696cec0f0a3144d63c6a7e73e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aafccf9b8de8c4583b2a43c8a73a76fa5" id="r_aafccf9b8de8c4583b2a43c8a73a76fa5"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aafccf9b8de8c4583b2a43c8a73a76fa5">HAVE_ENUM_LIMIT_MODULE</a></td></tr>
+<tr class="memdesc:aafccf9b8de8c4583b2a43c8a73a76fa5"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aafccf9b8de8c4583b2a43c8a73a76fa5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af98e7af08d25816fe6b9e8e5180c1011" id="r_af98e7af08d25816fe6b9e8e5180c1011"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#af98e7af08d25816fe6b9e8e5180c1011">HAVE_ENUM_RALLY_FLAGS</a></td></tr>
+<tr class="memdesc:af98e7af08d25816fe6b9e8e5180c1011"><td class="mdescLeft"> </td><td class="mdescRight">Flags in RALLY_POINT message  <br/></td></tr>
+<tr class="separator:af98e7af08d25816fe6b9e8e5180c1011"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab194c8cb724fb8b804d5b49d7ddf3ef6" id="r_ab194c8cb724fb8b804d5b49d7ddf3ef6"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab194c8cb724fb8b804d5b49d7ddf3ef6">HAVE_ENUM_PARACHUTE_ACTION</a></td></tr>
+<tr class="memdesc:ab194c8cb724fb8b804d5b49d7ddf3ef6"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:ab194c8cb724fb8b804d5b49d7ddf3ef6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1322437769728844c1394b8d7a9fead6" id="r_a1322437769728844c1394b8d7a9fead6"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1322437769728844c1394b8d7a9fead6">HAVE_ENUM_GRIPPER_ACTIONS</a></td></tr>
+<tr class="memdesc:a1322437769728844c1394b8d7a9fead6"><td class="mdescLeft"> </td><td class="mdescRight">Gripper actions.  <br/></td></tr>
+<tr class="separator:a1322437769728844c1394b8d7a9fead6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aab78229e8cff3a5a52d879d06db0b1c5" id="r_aab78229e8cff3a5a52d879d06db0b1c5"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aab78229e8cff3a5a52d879d06db0b1c5">HAVE_ENUM_CAMERA_STATUS_TYPES</a></td></tr>
+<tr class="memdesc:aab78229e8cff3a5a52d879d06db0b1c5"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aab78229e8cff3a5a52d879d06db0b1c5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8b9d49fe0852dc3c8fd73b6175151280" id="r_a8b9d49fe0852dc3c8fd73b6175151280"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9d49fe0852dc3c8fd73b6175151280">HAVE_ENUM_CAMERA_FEEDBACK_FLAGS</a></td></tr>
+<tr class="memdesc:a8b9d49fe0852dc3c8fd73b6175151280"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a8b9d49fe0852dc3c8fd73b6175151280"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa5e996f3c7c49da2994b7f68e1e8a76a" id="r_aa5e996f3c7c49da2994b7f68e1e8a76a"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5e996f3c7c49da2994b7f68e1e8a76a">HAVE_ENUM_MAV_MODE_GIMBAL</a></td></tr>
+<tr class="memdesc:aa5e996f3c7c49da2994b7f68e1e8a76a"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aa5e996f3c7c49da2994b7f68e1e8a76a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3e6b1d94950b96b7397ae0100a31b821" id="r_a3e6b1d94950b96b7397ae0100a31b821"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e6b1d94950b96b7397ae0100a31b821">HAVE_ENUM_GIMBAL_AXIS</a></td></tr>
+<tr class="memdesc:a3e6b1d94950b96b7397ae0100a31b821"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a3e6b1d94950b96b7397ae0100a31b821"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab33c0a80aaa4f5158e23d1d158092e80" id="r_ab33c0a80aaa4f5158e23d1d158092e80"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33c0a80aaa4f5158e23d1d158092e80">HAVE_ENUM_GIMBAL_AXIS_CALIBRATION_STATUS</a></td></tr>
+<tr class="memdesc:ab33c0a80aaa4f5158e23d1d158092e80"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:ab33c0a80aaa4f5158e23d1d158092e80"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a55b3ff327f7b3fd8f30db57d3341b63d" id="r_a55b3ff327f7b3fd8f30db57d3341b63d"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a55b3ff327f7b3fd8f30db57d3341b63d">HAVE_ENUM_GIMBAL_AXIS_CALIBRATION_REQUIRED</a></td></tr>
+<tr class="memdesc:a55b3ff327f7b3fd8f30db57d3341b63d"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a55b3ff327f7b3fd8f30db57d3341b63d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a02bd755b34c4e04c4f3e36499c41e23b" id="r_a02bd755b34c4e04c4f3e36499c41e23b"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a02bd755b34c4e04c4f3e36499c41e23b">HAVE_ENUM_GOPRO_HEARTBEAT_STATUS</a></td></tr>
+<tr class="memdesc:a02bd755b34c4e04c4f3e36499c41e23b"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a02bd755b34c4e04c4f3e36499c41e23b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aea7e0f8ad9a9706d35b83c6f60b41212" id="r_aea7e0f8ad9a9706d35b83c6f60b41212"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7e0f8ad9a9706d35b83c6f60b41212">HAVE_ENUM_GOPRO_HEARTBEAT_FLAGS</a></td></tr>
+<tr class="memdesc:aea7e0f8ad9a9706d35b83c6f60b41212"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aea7e0f8ad9a9706d35b83c6f60b41212"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa41cfc388d05c74b72f9bfd3b1144d99" id="r_aa41cfc388d05c74b72f9bfd3b1144d99"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa41cfc388d05c74b72f9bfd3b1144d99">HAVE_ENUM_GOPRO_REQUEST_STATUS</a></td></tr>
+<tr class="memdesc:aa41cfc388d05c74b72f9bfd3b1144d99"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aa41cfc388d05c74b72f9bfd3b1144d99"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8d121ecfe2c9b15e95cb7ca5c4487d31" id="r_a8d121ecfe2c9b15e95cb7ca5c4487d31"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d121ecfe2c9b15e95cb7ca5c4487d31">HAVE_ENUM_GOPRO_COMMAND</a></td></tr>
+<tr class="memdesc:a8d121ecfe2c9b15e95cb7ca5c4487d31"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a8d121ecfe2c9b15e95cb7ca5c4487d31"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a77d2b694a0761445e457a8608705bea4" id="r_a77d2b694a0761445e457a8608705bea4"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d2b694a0761445e457a8608705bea4">HAVE_ENUM_GOPRO_CAPTURE_MODE</a></td></tr>
+<tr class="memdesc:a77d2b694a0761445e457a8608705bea4"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a77d2b694a0761445e457a8608705bea4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a65ef1c0ce781a22a5bddb133a139ef64" id="r_a65ef1c0ce781a22a5bddb133a139ef64"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a65ef1c0ce781a22a5bddb133a139ef64">HAVE_ENUM_GOPRO_RESOLUTION</a></td></tr>
+<tr class="memdesc:a65ef1c0ce781a22a5bddb133a139ef64"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a65ef1c0ce781a22a5bddb133a139ef64"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1b095f155c76f4899b7baf3d7918ef62" id="r_a1b095f155c76f4899b7baf3d7918ef62"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b095f155c76f4899b7baf3d7918ef62">HAVE_ENUM_GOPRO_FRAME_RATE</a></td></tr>
+<tr class="memdesc:a1b095f155c76f4899b7baf3d7918ef62"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a1b095f155c76f4899b7baf3d7918ef62"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1bdab0bf5124b82449cc50cfb19fd824" id="r_a1bdab0bf5124b82449cc50cfb19fd824"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bdab0bf5124b82449cc50cfb19fd824">HAVE_ENUM_GOPRO_FIELD_OF_VIEW</a></td></tr>
+<tr class="memdesc:a1bdab0bf5124b82449cc50cfb19fd824"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a1bdab0bf5124b82449cc50cfb19fd824"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1c4582b6b07ca288e6170ccc04a78b3d" id="r_a1c4582b6b07ca288e6170ccc04a78b3d"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c4582b6b07ca288e6170ccc04a78b3d">HAVE_ENUM_GOPRO_VIDEO_SETTINGS_FLAGS</a></td></tr>
+<tr class="memdesc:a1c4582b6b07ca288e6170ccc04a78b3d"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a1c4582b6b07ca288e6170ccc04a78b3d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a359943a4797a404c4aae98e457d06de6" id="r_a359943a4797a404c4aae98e457d06de6"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a359943a4797a404c4aae98e457d06de6">HAVE_ENUM_GOPRO_PHOTO_RESOLUTION</a></td></tr>
+<tr class="memdesc:a359943a4797a404c4aae98e457d06de6"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a359943a4797a404c4aae98e457d06de6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6093c04f53f082fd1f529a9804576135" id="r_a6093c04f53f082fd1f529a9804576135"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a6093c04f53f082fd1f529a9804576135">HAVE_ENUM_GOPRO_PROTUNE_WHITE_BALANCE</a></td></tr>
+<tr class="memdesc:a6093c04f53f082fd1f529a9804576135"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a6093c04f53f082fd1f529a9804576135"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a35ed0874ef627e608eb95fd97047f2b1" id="r_a35ed0874ef627e608eb95fd97047f2b1"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a35ed0874ef627e608eb95fd97047f2b1">HAVE_ENUM_GOPRO_PROTUNE_COLOUR</a></td></tr>
+<tr class="memdesc:a35ed0874ef627e608eb95fd97047f2b1"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a35ed0874ef627e608eb95fd97047f2b1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa25a9b3fc635337f01f64c6c1b8db77b" id="r_aa25a9b3fc635337f01f64c6c1b8db77b"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25a9b3fc635337f01f64c6c1b8db77b">HAVE_ENUM_GOPRO_PROTUNE_GAIN</a></td></tr>
+<tr class="memdesc:aa25a9b3fc635337f01f64c6c1b8db77b"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aa25a9b3fc635337f01f64c6c1b8db77b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7384eb4ba36b9f402d444f5df25b1706" id="r_a7384eb4ba36b9f402d444f5df25b1706"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7384eb4ba36b9f402d444f5df25b1706">HAVE_ENUM_GOPRO_PROTUNE_SHARPNESS</a></td></tr>
+<tr class="memdesc:a7384eb4ba36b9f402d444f5df25b1706"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a7384eb4ba36b9f402d444f5df25b1706"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a69443c0c12cb166a4011096a53e95fec" id="r_a69443c0c12cb166a4011096a53e95fec"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a69443c0c12cb166a4011096a53e95fec">HAVE_ENUM_GOPRO_PROTUNE_EXPOSURE</a></td></tr>
+<tr class="memdesc:a69443c0c12cb166a4011096a53e95fec"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a69443c0c12cb166a4011096a53e95fec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4caa67ab273ba8430842498a46c26cf9" id="r_a4caa67ab273ba8430842498a46c26cf9"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4caa67ab273ba8430842498a46c26cf9">HAVE_ENUM_GOPRO_CHARGING</a></td></tr>
+<tr class="memdesc:a4caa67ab273ba8430842498a46c26cf9"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a4caa67ab273ba8430842498a46c26cf9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a374ef069be0850827643062e1792fcd2" id="r_a374ef069be0850827643062e1792fcd2"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a374ef069be0850827643062e1792fcd2">HAVE_ENUM_GOPRO_MODEL</a></td></tr>
+<tr class="memdesc:a374ef069be0850827643062e1792fcd2"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a374ef069be0850827643062e1792fcd2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a57111495df7feac9630ec98f3dcec721" id="r_a57111495df7feac9630ec98f3dcec721"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a57111495df7feac9630ec98f3dcec721">HAVE_ENUM_GOPRO_BURST_RATE</a></td></tr>
+<tr class="memdesc:a57111495df7feac9630ec98f3dcec721"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a57111495df7feac9630ec98f3dcec721"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4cfb5589883f44aea1e1140dc811e9c" id="r_aa4cfb5589883f44aea1e1140dc811e9c"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4cfb5589883f44aea1e1140dc811e9c">HAVE_ENUM_LED_CONTROL_PATTERN</a></td></tr>
+<tr class="memdesc:aa4cfb5589883f44aea1e1140dc811e9c"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:aa4cfb5589883f44aea1e1140dc811e9c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2c8f4884d38ad1191fe45613b9fd576e" id="r_a2c8f4884d38ad1191fe45613b9fd576e"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8f4884d38ad1191fe45613b9fd576e">HAVE_ENUM_EKF_STATUS_FLAGS</a></td></tr>
+<tr class="memdesc:a2c8f4884d38ad1191fe45613b9fd576e"><td class="mdescLeft"> </td><td class="mdescRight">Flags in EKF_STATUS message  <br/></td></tr>
+<tr class="separator:a2c8f4884d38ad1191fe45613b9fd576e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af0eba5e8953c0f0c520cc4ae9733a0f9" id="r_af0eba5e8953c0f0c520cc4ae9733a0f9"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#af0eba5e8953c0f0c520cc4ae9733a0f9">HAVE_ENUM_PID_TUNING_AXIS</a></td></tr>
+<tr class="memdesc:af0eba5e8953c0f0c520cc4ae9733a0f9"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:af0eba5e8953c0f0c520cc4ae9733a0f9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a53588323dd7241a86b7182c2e0e9dbd4" id="r_a53588323dd7241a86b7182c2e0e9dbd4"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a53588323dd7241a86b7182c2e0e9dbd4">HAVE_ENUM_MAG_CAL_STATUS</a></td></tr>
+<tr class="memdesc:a53588323dd7241a86b7182c2e0e9dbd4"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a53588323dd7241a86b7182c2e0e9dbd4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f0907ebb3664b8a72f26e28f72a64eb" id="r_a5f0907ebb3664b8a72f26e28f72a64eb"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f0907ebb3664b8a72f26e28f72a64eb">HAVE_ENUM_MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS</a></td></tr>
+<tr class="memdesc:a5f0907ebb3664b8a72f26e28f72a64eb"><td class="mdescLeft"> </td><td class="mdescRight">Special ACK block numbers control activation of dataflash log streaming  <br/></td></tr>
+<tr class="separator:a5f0907ebb3664b8a72f26e28f72a64eb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1629e9afa066319fb3baaba266606fe7" id="r_a1629e9afa066319fb3baaba266606fe7"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1629e9afa066319fb3baaba266606fe7">HAVE_ENUM_MAV_REMOTE_LOG_DATA_BLOCK_STATUSES</a></td></tr>
+<tr class="memdesc:a1629e9afa066319fb3baaba266606fe7"><td class="mdescLeft"> </td><td class="mdescRight">Possible remote log data block statuses  <br/></td></tr>
+<tr class="separator:a1629e9afa066319fb3baaba266606fe7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a89f5d53ff19963b390098b3b1b9867ef" id="r_a89f5d53ff19963b390098b3b1b9867ef"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a89f5d53ff19963b390098b3b1b9867ef">HAVE_ENUM_DEVICE_OP_BUSTYPE</a></td></tr>
+<tr class="memdesc:a89f5d53ff19963b390098b3b1b9867ef"><td class="mdescLeft"> </td><td class="mdescRight">Bus types for device operations  <br/></td></tr>
+<tr class="separator:a89f5d53ff19963b390098b3b1b9867ef"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a713480f83cc8ffd484a19a4b9b690215" id="r_a713480f83cc8ffd484a19a4b9b690215"><td align="right" class="memItemLeft" valign="top"><a id="a713480f83cc8ffd484a19a4b9b690215" name="a713480f83cc8ffd484a19a4b9b690215"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_VERSION</b>   2</td></tr>
+<tr class="separator:a713480f83cc8ffd484a19a4b9b690215"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec7bcd84c243ec07f25b1416f2168e1b" id="r_aec7bcd84c243ec07f25b1416f2168e1b"><td align="right" class="memItemLeft" valign="top"><a id="aec7bcd84c243ec07f25b1416f2168e1b" name="aec7bcd84c243ec07f25b1416f2168e1b"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_THIS_XML_IDX</b>   0</td></tr>
+<tr class="separator:aec7bcd84c243ec07f25b1416f2168e1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a384e37b2c133fdf33407436a982d2fb7" id="r_a384e37b2c133fdf33407436a982d2fb7"><td align="right" class="memItemLeft" valign="top"><a id="a384e37b2c133fdf33407436a982d2fb7" name="a384e37b2c133fdf33407436a982d2fb7"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_INFO</b>   {MAVLINK_MESSAGE_INFO_HEARTBEAT, MAVLINK_MESSAGE_INFO_SYS_STATUS, MAVLINK_MESSAGE_INFO_SYSTEM_TIME, MAVLINK_MESSAGE_INFO_PING, MAVLINK_MESSAGE_INFO_CHANGE_OPERATOR_CONTROL, MAVLINK_MESSAGE_INFO_CHANGE_OPERATOR_CONTROL_ACK, MAVLINK_MESSAGE_INFO_AUTH_KEY, MAVLINK_MESSAGE_INFO_SET_MODE, MAVLINK_MESSAGE_INFO_PARAM_REQUEST_READ, MAVLINK_MESSAGE_INFO_PARAM_REQUEST_LIST, MAVLINK_MESSAGE_INFO_PARAM_VALUE, MAVLINK_MESSAGE_INFO_PARAM_SET, MAVLINK_MESSAGE_INFO_GPS_RAW_INT, MAVLINK_MESSAGE_INFO_GPS_STATUS, MAVLINK_MESSAGE_INFO_SCALED_IMU, MAVLINK_MESSAGE_INFO_RAW_IMU, MAVLINK_MESSAGE_INFO_RAW_PRESSURE, MAVLINK_MESSAGE_INFO_SCALED_PRESSURE, MAVLINK_MESSAGE_INFO_ATTITUDE, MAVLINK_MESSAGE_INFO_ATTITUDE_QUATERNION, MAVLINK_MESSAGE_INFO_LOCAL_POSITION_NED, MAVLINK_MESSAGE_INFO_GLOBAL_POSITION_INT, MAVLINK_MESSAGE_INFO_RC_CHANNELS_SCALED, MAVLINK_MESSAGE_INFO_RC_CHANNELS_RAW, MAVLINK_MESSAGE_INFO_SERVO_OUTPUT_RAW, MAVLINK_MESSAGE_INFO_MISSION_REQUEST_PARTIAL_LIST, MAVLINK_MESSAGE_INFO_MISSION_WRITE_PARTIAL_LIST, MAVLINK_MESSAGE_INFO_MISSION_ITEM, MAVLINK_MESSAGE_INFO_MISSION_REQUEST, MAVLINK_MESSAGE_INFO_MISSION_SET_CURRENT, MAVLINK_MESSAGE_INFO_MISSION_CURRENT, MAVLINK_MESSAGE_INFO_MISSION_REQUEST_LIST, MAVLINK_MESSAGE_INFO_MISSION_COUNT, MAVLINK_MESSAGE_INFO_MISSION_CLEAR_ALL, MAVLINK_MESSAGE_INFO_MISSION_ITEM_REACHED, MAVLINK_MESSAGE_INFO_MISSION_ACK, MAVLINK_MESSAGE_INFO_SET_GPS_GLOBAL_ORIGIN, MAVLINK_MESSAGE_INFO_GPS_GLOBAL_ORIGIN, MAVLINK_MESSAGE_INFO_PARAM_MAP_RC, MAVLINK_MESSAGE_INFO_MISSION_REQUEST_INT, MAVLINK_MESSAGE_INFO_SAFETY_SET_ALLOWED_AREA, MAVLINK_MESSAGE_INFO_SAFETY_ALLOWED_AREA, MAVLINK_MESSAGE_INFO_ATTITUDE_QUATERNION_COV, MAVLINK_MESSAGE_INFO_NAV_CONTROLLER_OUTPUT, MAVLINK_MESSAGE_INFO_GLOBAL_POSITION_INT_COV, MAVLINK_MESSAGE_INFO_LOCAL_POSITION_NED_COV, MAVLINK_MESSAGE_INFO_RC_CHANNELS, MAVLINK_MESSAGE_INFO_REQUEST_DATA_STREAM, MAVLINK_MESSAGE_INFO_DATA_STREAM, MAVLINK_MESSAGE_INFO_MANUAL_CONTROL, MAVLINK_MESSAGE_INFO_RC_CHANNELS_OVERRIDE, MAVLINK_MESSAGE_INFO_MISSION_ITEM_INT, MAVLINK_MESSAGE_INFO_VFR_HUD, MAVLINK_MESSAGE_INFO_COMMAND_INT, MAVLINK_MESSAGE_INFO_COMMAND_LONG, MAVLINK_MESSAGE_INFO_COMMAND_ACK, MAVLINK_MESSAGE_INFO_MANUAL_SETPOINT, MAVLINK_MESSAGE_INFO_SET_ATTITUDE_TARGET, MAVLINK_MESSAGE_INFO_ATTITUDE_TARGET, MAVLINK_MESSAGE_INFO_SET_POSITION_TARGET_LOCAL_NED, MAVLINK_MESSAGE_INFO_POSITION_TARGET_LOCAL_NED, MAVLINK_MESSAGE_INFO_SET_POSITION_TARGET_GLOBAL_INT, MAVLINK_MESSAGE_INFO_POSITION_TARGET_GLOBAL_INT, MAVLINK_MESSAGE_INFO_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET, MAVLINK_MESSAGE_INFO_HIL_STATE, MAVLINK_MESSAGE_INFO_HIL_CONTROLS, MAVLINK_MESSAGE_INFO_HIL_RC_INPUTS_RAW, MAVLINK_MESSAGE_INFO_HIL_ACTUATOR_CONTROLS, MAVLINK_MESSAGE_INFO_OPTICAL_FLOW, MAVLINK_MESSAGE_INFO_GLOBAL_VISION_POSITION_ESTIMATE, MAVLINK_MESSAGE_INFO_VISION_POSITION_ESTIMATE, MAVLINK_MESSAGE_INFO_VISION_SPEED_ESTIMATE, MAVLINK_MESSAGE_INFO_VICON_POSITION_ESTIMATE, MAVLINK_MESSAGE_INFO_HIGHRES_IMU, MAVLINK_MESSAGE_INFO_OPTICAL_FLOW_RAD, MAVLINK_MESSAGE_INFO_HIL_SENSOR, MAVLINK_MESSAGE_INFO_SIM_STATE, MAVLINK_MESSAGE_INFO_RADIO_STATUS, MAVLINK_MESSAGE_INFO_FILE_TRANSFER_PROTOCOL, MAVLINK_MESSAGE_INFO_TIMESYNC, MAVLINK_MESSAGE_INFO_CAMERA_TRIGGER, MAVLINK_MESSAGE_INFO_HIL_GPS, MAVLINK_MESSAGE_INFO_HIL_OPTICAL_FLOW, MAVLINK_MESSAGE_INFO_HIL_STATE_QUATERNION, MAVLINK_MESSAGE_INFO_SCALED_IMU2, MAVLINK_MESSAGE_INFO_LOG_REQUEST_LIST, MAVLINK_MESSAGE_INFO_LOG_ENTRY, MAVLINK_MESSAGE_INFO_LOG_REQUEST_DATA, MAVLINK_MESSAGE_INFO_LOG_DATA, MAVLINK_MESSAGE_INFO_LOG_ERASE, MAVLINK_MESSAGE_INFO_LOG_REQUEST_END, MAVLINK_MESSAGE_INFO_GPS_INJECT_DATA, MAVLINK_MESSAGE_INFO_GPS2_RAW, MAVLINK_MESSAGE_INFO_POWER_STATUS, MAVLINK_MESSAGE_INFO_SERIAL_CONTROL, MAVLINK_MESSAGE_INFO_GPS_RTK, MAVLINK_MESSAGE_INFO_GPS2_RTK, MAVLINK_MESSAGE_INFO_SCALED_IMU3, MAVLINK_MESSAGE_INFO_DATA_TRANSMISSION_HANDSHAKE, MAVLINK_MESSAGE_INFO_ENCAPSULATED_DATA, MAVLINK_MESSAGE_INFO_DISTANCE_SENSOR, MAVLINK_MESSAGE_INFO_TERRAIN_REQUEST, MAVLINK_MESSAGE_INFO_TERRAIN_DATA, MAVLINK_MESSAGE_INFO_TERRAIN_CHECK, MAVLINK_MESSAGE_INFO_TERRAIN_REPORT, MAVLINK_MESSAGE_INFO_SCALED_PRESSURE2, MAVLINK_MESSAGE_INFO_ATT_POS_MOCAP, MAVLINK_MESSAGE_INFO_SET_ACTUATOR_CONTROL_TARGET, MAVLINK_MESSAGE_INFO_ACTUATOR_CONTROL_TARGET, MAVLINK_MESSAGE_INFO_ALTITUDE, MAVLINK_MESSAGE_INFO_RESOURCE_REQUEST, MAVLINK_MESSAGE_INFO_SCALED_PRESSURE3, MAVLINK_MESSAGE_INFO_FOLLOW_TARGET, MAVLINK_MESSAGE_INFO_CONTROL_SYSTEM_STATE, MAVLINK_MESSAGE_INFO_BATTERY_STATUS, MAVLINK_MESSAGE_INFO_AUTOPILOT_VERSION, MAVLINK_MESSAGE_INFO_LANDING_TARGET, MAVLINK_MESSAGE_INFO_SENSOR_OFFSETS, MAVLINK_MESSAGE_INFO_SET_MAG_OFFSETS, MAVLINK_MESSAGE_INFO_MEMINFO, MAVLINK_MESSAGE_INFO_AP_ADC, MAVLINK_MESSAGE_INFO_DIGICAM_CONFIGURE, MAVLINK_MESSAGE_INFO_DIGICAM_CONTROL, MAVLINK_MESSAGE_INFO_MOUNT_CONFIGURE, MAVLINK_MESSAGE_INFO_MOUNT_CONTROL, MAVLINK_MESSAGE_INFO_MOUNT_STATUS, MAVLINK_MESSAGE_INFO_FENCE_POINT, MAVLINK_MESSAGE_INFO_FENCE_FETCH_POINT, MAVLINK_MESSAGE_INFO_FENCE_STATUS, MAVLINK_MESSAGE_INFO_AHRS, MAVLINK_MESSAGE_INFO_SIMSTATE, MAVLINK_MESSAGE_INFO_HWSTATUS, MAVLINK_MESSAGE_INFO_RADIO, MAVLINK_MESSAGE_INFO_LIMITS_STATUS, MAVLINK_MESSAGE_INFO_WIND, MAVLINK_MESSAGE_INFO_DATA16, MAVLINK_MESSAGE_INFO_DATA32, MAVLINK_MESSAGE_INFO_DATA64, MAVLINK_MESSAGE_INFO_DATA96, MAVLINK_MESSAGE_INFO_RANGEFINDER, MAVLINK_MESSAGE_INFO_AIRSPEED_AUTOCAL, MAVLINK_MESSAGE_INFO_RALLY_POINT, MAVLINK_MESSAGE_INFO_RALLY_FETCH_POINT, MAVLINK_MESSAGE_INFO_COMPASSMOT_STATUS, MAVLINK_MESSAGE_INFO_AHRS2, MAVLINK_MESSAGE_INFO_CAMERA_STATUS, MAVLINK_MESSAGE_INFO_CAMERA_FEEDBACK, MAVLINK_MESSAGE_INFO_BATTERY2, MAVLINK_MESSAGE_INFO_AHRS3, MAVLINK_MESSAGE_INFO_AUTOPILOT_VERSION_REQUEST, MAVLINK_MESSAGE_INFO_REMOTE_LOG_DATA_BLOCK, MAVLINK_MESSAGE_INFO_REMOTE_LOG_BLOCK_STATUS, MAVLINK_MESSAGE_INFO_LED_CONTROL, MAVLINK_MESSAGE_INFO_MAG_CAL_PROGRESS, MAVLINK_MESSAGE_INFO_MAG_CAL_REPORT, MAVLINK_MESSAGE_INFO_EKF_STATUS_REPORT, MAVLINK_MESSAGE_INFO_PID_TUNING, MAVLINK_MESSAGE_INFO_GIMBAL_REPORT, MAVLINK_MESSAGE_INFO_GIMBAL_CONTROL, MAVLINK_MESSAGE_INFO_GIMBAL_TORQUE_CMD_REPORT, MAVLINK_MESSAGE_INFO_GOPRO_HEARTBEAT, MAVLINK_MESSAGE_INFO_GOPRO_GET_REQUEST, MAVLINK_MESSAGE_INFO_GOPRO_GET_RESPONSE, MAVLINK_MESSAGE_INFO_GOPRO_SET_REQUEST, MAVLINK_MESSAGE_INFO_GOPRO_SET_RESPONSE, MAVLINK_MESSAGE_INFO_RPM, MAVLINK_MESSAGE_INFO_ESTIMATOR_STATUS, MAVLINK_MESSAGE_INFO_WIND_COV, MAVLINK_MESSAGE_INFO_GPS_INPUT, MAVLINK_MESSAGE_INFO_GPS_RTCM_DATA, MAVLINK_MESSAGE_INFO_HIGH_LATENCY, MAVLINK_MESSAGE_INFO_VIBRATION, MAVLINK_MESSAGE_INFO_HOME_POSITION, MAVLINK_MESSAGE_INFO_SET_HOME_POSITION, MAVLINK_MESSAGE_INFO_MESSAGE_INTERVAL, MAVLINK_MESSAGE_INFO_EXTENDED_SYS_STATE, MAVLINK_MESSAGE_INFO_ADSB_VEHICLE, MAVLINK_MESSAGE_INFO_COLLISION, MAVLINK_MESSAGE_INFO_V2_EXTENSION, MAVLINK_MESSAGE_INFO_MEMORY_VECT, MAVLINK_MESSAGE_INFO_DEBUG_VECT, MAVLINK_MESSAGE_INFO_NAMED_VALUE_FLOAT, MAVLINK_MESSAGE_INFO_NAMED_VALUE_INT, MAVLINK_MESSAGE_INFO_STATUSTEXT, MAVLINK_MESSAGE_INFO_DEBUG, MAVLINK_MESSAGE_INFO_SETUP_SIGNING, MAVLINK_MESSAGE_INFO_BUTTON_CHANGE, MAVLINK_MESSAGE_INFO_PLAY_TUNE, MAVLINK_MESSAGE_INFO_CAMERA_INFORMATION, MAVLINK_MESSAGE_INFO_CAMERA_SETTINGS, MAVLINK_MESSAGE_INFO_STORAGE_INFORMATION, MAVLINK_MESSAGE_INFO_CAMERA_CAPTURE_STATUS, MAVLINK_MESSAGE_INFO_CAMERA_IMAGE_CAPTURED, MAVLINK_MESSAGE_INFO_FLIGHT_INFORMATION, MAVLINK_MESSAGE_INFO_MOUNT_ORIENTATION, MAVLINK_MESSAGE_INFO_LOGGING_DATA, MAVLINK_MESSAGE_INFO_LOGGING_DATA_ACKED, MAVLINK_MESSAGE_INFO_LOGGING_ACK, MAVLINK_MESSAGE_INFO_VIDEO_STREAM_INFORMATION, MAVLINK_MESSAGE_INFO_SET_VIDEO_STREAM_SETTINGS, MAVLINK_MESSAGE_INFO_WIFI_CONFIG_AP, MAVLINK_MESSAGE_INFO_PROTOCOL_VERSION, MAVLINK_MESSAGE_INFO_UAVCAN_NODE_STATUS, MAVLINK_MESSAGE_INFO_UAVCAN_NODE_INFO, MAVLINK_MESSAGE_INFO_PARAM_EXT_REQUEST_READ, MAVLINK_MESSAGE_INFO_PARAM_EXT_REQUEST_LIST, MAVLINK_MESSAGE_INFO_PARAM_EXT_VALUE, MAVLINK_MESSAGE_INFO_PARAM_EXT_SET, MAVLINK_MESSAGE_INFO_PARAM_EXT_ACK, MAVLINK_MESSAGE_INFO_OBSTACLE_DISTANCE, MAVLINK_MESSAGE_INFO_UAVIONIX_ADSB_OUT_CFG, MAVLINK_MESSAGE_INFO_UAVIONIX_ADSB_OUT_DYNAMIC, MAVLINK_MESSAGE_INFO_UAVIONIX_ADSB_TRANSCEIVER_HEALTH_REPORT, MAVLINK_MESSAGE_INFO_DEVICE_OP_READ, MAVLINK_MESSAGE_INFO_DEVICE_OP_READ_REPLY, MAVLINK_MESSAGE_INFO_DEVICE_OP_WRITE, MAVLINK_MESSAGE_INFO_DEVICE_OP_WRITE_REPLY, MAVLINK_MESSAGE_INFO_ADAP_TUNING, MAVLINK_MESSAGE_INFO_VISION_POSITION_DELTA}</td></tr>
+<tr class="separator:a384e37b2c133fdf33407436a982d2fb7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2be08a10a49cf4e78f0b5579b4b103f5" id="r_a2be08a10a49cf4e78f0b5579b4b103f5"><td align="right" class="memItemLeft" valign="top"><a id="a2be08a10a49cf4e78f0b5579b4b103f5" name="a2be08a10a49cf4e78f0b5579b4b103f5"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_NAMES</b>   {{ "ACTUATOR_CONTROL_TARGET", 140 }, { "ADAP_TUNING", 11010 }, { "ADSB_VEHICLE", 246 }, { "AHRS", 163 }, { "AHRS2", 178 }, { "AHRS3", 182 }, { "AIRSPEED_AUTOCAL", 174 }, { "ALTITUDE", 141 }, { "AP_ADC", 153 }, { "ATTITUDE", 30 }, { "ATTITUDE_QUATERNION", 31 }, { "ATTITUDE_QUATERNION_COV", 61 }, { "ATTITUDE_TARGET", 83 }, { "ATT_POS_MOCAP", 138 }, { "AUTH_KEY", 7 }, { "AUTOPILOT_VERSION", 148 }, { "AUTOPILOT_VERSION_REQUEST", 183 }, { "BATTERY2", 181 }, { "BATTERY_STATUS", 147 }, { "BUTTON_CHANGE", 257 }, { "CAMERA_CAPTURE_STATUS", 262 }, { "CAMERA_FEEDBACK", 180 }, { "CAMERA_IMAGE_CAPTURED", 263 }, { "CAMERA_INFORMATION", 259 }, { "CAMERA_SETTINGS", 260 }, { "CAMERA_STATUS", 179 }, { "CAMERA_TRIGGER", 112 }, { "CHANGE_OPERATOR_CONTROL", 5 }, { "CHANGE_OPERATOR_CONTROL_ACK", 6 }, { "COLLISION", 247 }, { "COMMAND_ACK", 77 }, { "COMMAND_INT", 75 }, { "COMMAND_LONG", 76 }, { "COMPASSMOT_STATUS", 177 }, { "CONTROL_SYSTEM_STATE", 146 }, { "DATA16", 169 }, { "DATA32", 170 }, { "DATA64", 171 }, { "DATA96", 172 }, { "DATA_STREAM", 67 }, { "DATA_TRANSMISSION_HANDSHAKE", 130 }, { "DEBUG", 254 }, { "DEBUG_VECT", 250 }, { "DEVICE_OP_READ", 11000 }, { "DEVICE_OP_READ_REPLY", 11001 }, { "DEVICE_OP_WRITE", 11002 }, { "DEVICE_OP_WRITE_REPLY", 11003 }, { "DIGICAM_CONFIGURE", 154 }, { "DIGICAM_CONTROL", 155 }, { "DISTANCE_SENSOR", 132 }, { "EKF_STATUS_REPORT", 193 }, { "ENCAPSULATED_DATA", 131 }, { "ESTIMATOR_STATUS", 230 }, { "EXTENDED_SYS_STATE", 245 }, { "FENCE_FETCH_POINT", 161 }, { "FENCE_POINT", 160 }, { "FENCE_STATUS", 162 }, { "FILE_TRANSFER_PROTOCOL", 110 }, { "FLIGHT_INFORMATION", 264 }, { "FOLLOW_TARGET", 144 }, { "GIMBAL_CONTROL", 201 }, { "GIMBAL_REPORT", 200 }, { "GIMBAL_TORQUE_CMD_REPORT", 214 }, { "GLOBAL_POSITION_INT", 33 }, { "GLOBAL_POSITION_INT_COV", 63 }, { "GLOBAL_VISION_POSITION_ESTIMATE", 101 }, { "GOPRO_GET_REQUEST", 216 }, { "GOPRO_GET_RESPONSE", 217 }, { "GOPRO_HEARTBEAT", 215 }, { "GOPRO_SET_REQUEST", 218 }, { "GOPRO_SET_RESPONSE", 219 }, { "GPS2_RAW", 124 }, { "GPS2_RTK", 128 }, { "GPS_GLOBAL_ORIGIN", 49 }, { "GPS_INJECT_DATA", 123 }, { "GPS_INPUT", 232 }, { "GPS_RAW_INT", 24 }, { "GPS_RTCM_DATA", 233 }, { "GPS_RTK", 127 }, { "GPS_STATUS", 25 }, { "HEARTBEAT", 0 }, { "HIGHRES_IMU", 105 }, { "HIGH_LATENCY", 234 }, { "HIL_ACTUATOR_CONTROLS", 93 }, { "HIL_CONTROLS", 91 }, { "HIL_GPS", 113 }, { "HIL_OPTICAL_FLOW", 114 }, { "HIL_RC_INPUTS_RAW", 92 }, { "HIL_SENSOR", 107 }, { "HIL_STATE", 90 }, { "HIL_STATE_QUATERNION", 115 }, { "HOME_POSITION", 242 }, { "HWSTATUS", 165 }, { "LANDING_TARGET", 149 }, { "LED_CONTROL", 186 }, { "LIMITS_STATUS", 167 }, { "LOCAL_POSITION_NED", 32 }, { "LOCAL_POSITION_NED_COV", 64 }, { "LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET", 89 }, { "LOGGING_ACK", 268 }, { "LOGGING_DATA", 266 }, { "LOGGING_DATA_ACKED", 267 }, { "LOG_DATA", 120 }, { "LOG_ENTRY", 118 }, { "LOG_ERASE", 121 }, { "LOG_REQUEST_DATA", 119 }, { "LOG_REQUEST_END", 122 }, { "LOG_REQUEST_LIST", 117 }, { "MAG_CAL_PROGRESS", 191 }, { "MAG_CAL_REPORT", 192 }, { "MANUAL_CONTROL", 69 }, { "MANUAL_SETPOINT", 81 }, { "MEMINFO", 152 }, { "MEMORY_VECT", 249 }, { "MESSAGE_INTERVAL", 244 }, { "MISSION_ACK", 47 }, { "MISSION_CLEAR_ALL", 45 }, { "MISSION_COUNT", 44 }, { "MISSION_CURRENT", 42 }, { "MISSION_ITEM", 39 }, { "MISSION_ITEM_INT", 73 }, { "MISSION_ITEM_REACHED", 46 }, { "MISSION_REQUEST", 40 }, { "MISSION_REQUEST_INT", 51 }, { "MISSION_REQUEST_LIST", 43 }, { "MISSION_REQUEST_PARTIAL_LIST", 37 }, { "MISSION_SET_CURRENT", 41 }, { "MISSION_WRITE_PARTIAL_LIST", 38 }, { "MOUNT_CONFIGURE", 156 }, { "MOUNT_CONTROL", 157 }, { "MOUNT_ORIENTATION", 265 }, { "MOUNT_STATUS", 158 }, { "NAMED_VALUE_FLOAT", 251 }, { "NAMED_VALUE_INT", 252 }, { "NAV_CONTROLLER_OUTPUT", 62 }, { "OBSTACLE_DISTANCE", 330 }, { "OPTICAL_FLOW", 100 }, { "OPTICAL_FLOW_RAD", 106 }, { "PARAM_EXT_ACK", 324 }, { "PARAM_EXT_REQUEST_LIST", 321 }, { "PARAM_EXT_REQUEST_READ", 320 }, { "PARAM_EXT_SET", 323 }, { "PARAM_EXT_VALUE", 322 }, { "PARAM_MAP_RC", 50 }, { "PARAM_REQUEST_LIST", 21 }, { "PARAM_REQUEST_READ", 20 }, { "PARAM_SET", 23 }, { "PARAM_VALUE", 22 }, { "PID_TUNING", 194 }, { "PING", 4 }, { "PLAY_TUNE", 258 }, { "POSITION_TARGET_GLOBAL_INT", 87 }, { "POSITION_TARGET_LOCAL_NED", 85 }, { "POWER_STATUS", 125 }, { "PROTOCOL_VERSION", 300 }, { "RADIO", 166 }, { "RADIO_STATUS", 109 }, { "RALLY_FETCH_POINT", 176 }, { "RALLY_POINT", 175 }, { "RANGEFINDER", 173 }, { "RAW_IMU", 27 }, { "RAW_PRESSURE", 28 }, { "RC_CHANNELS", 65 }, { "RC_CHANNELS_OVERRIDE", 70 }, { "RC_CHANNELS_RAW", 35 }, { "RC_CHANNELS_SCALED", 34 }, { "REMOTE_LOG_BLOCK_STATUS", 185 }, { "REMOTE_LOG_DATA_BLOCK", 184 }, { "REQUEST_DATA_STREAM", 66 }, { "RESOURCE_REQUEST", 142 }, { "RPM", 226 }, { "SAFETY_ALLOWED_AREA", 55 }, { "SAFETY_SET_ALLOWED_AREA", 54 }, { "SCALED_IMU", 26 }, { "SCALED_IMU2", 116 }, { "SCALED_IMU3", 129 }, { "SCALED_PRESSURE", 29 }, { "SCALED_PRESSURE2", 137 }, { "SCALED_PRESSURE3", 143 }, { "SENSOR_OFFSETS", 150 }, { "SERIAL_CONTROL", 126 }, { "SERVO_OUTPUT_RAW", 36 }, { "SETUP_SIGNING", 256 }, { "SET_ACTUATOR_CONTROL_TARGET", 139 }, { "SET_ATTITUDE_TARGET", 82 }, { "SET_GPS_GLOBAL_ORIGIN", 48 }, { "SET_HOME_POSITION", 243 }, { "SET_MAG_OFFSETS", 151 }, { "SET_MODE", 11 }, { "SET_POSITION_TARGET_GLOBAL_INT", 86 }, { "SET_POSITION_TARGET_LOCAL_NED", 84 }, { "SET_VIDEO_STREAM_SETTINGS", 270 }, { "SIMSTATE", 164 }, { "SIM_STATE", 108 }, { "STATUSTEXT", 253 }, { "STORAGE_INFORMATION", 261 }, { "SYSTEM_TIME", 2 }, { "SYS_STATUS", 1 }, { "TERRAIN_CHECK", 135 }, { "TERRAIN_DATA", 134 }, { "TERRAIN_REPORT", 136 }, { "TERRAIN_REQUEST", 133 }, { "TIMESYNC", 111 }, { "UAVCAN_NODE_INFO", 311 }, { "UAVCAN_NODE_STATUS", 310 }, { "UAVIONIX_ADSB_OUT_CFG", 10001 }, { "UAVIONIX_ADSB_OUT_DYNAMIC", 10002 }, { "UAVIONIX_ADSB_TRANSCEIVER_HEALTH_REPORT", 10003 }, { "V2_EXTENSION", 248 }, { "VFR_HUD", 74 }, { "VIBRATION", 241 }, { "VICON_POSITION_ESTIMATE", 104 }, { "VIDEO_STREAM_INFORMATION", 269 }, { "VISION_POSITION_DELTA", 11011 }, { "VISION_POSITION_ESTIMATE", 102 }, { "VISION_SPEED_ESTIMATE", 103 }, { "WIFI_CONFIG_AP", 299 }, { "WIND", 168 }, { "WIND_COV", 231 }}</td></tr>
+<tr class="separator:a2be08a10a49cf4e78f0b5579b4b103f5"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a0ab4c15267eca89bb9312c1a081ccffb" id="r_a0ab4c15267eca89bb9312c1a081ccffb"><td align="right" class="memItemLeft" valign="top"><a id="a0ab4c15267eca89bb9312c1a081ccffb" name="a0ab4c15267eca89bb9312c1a081ccffb"></a>
+typedef enum ACCELCAL_VEHICLE_POS </td><td class="memItemRight" valign="bottom"><b>ACCELCAL_VEHICLE_POS</b></td></tr>
+<tr class="separator:a0ab4c15267eca89bb9312c1a081ccffb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0bfb9c2b2069f81429a79386f51f08d4" id="r_a0bfb9c2b2069f81429a79386f51f08d4"><td align="right" class="memItemLeft" valign="top"><a id="a0bfb9c2b2069f81429a79386f51f08d4" name="a0bfb9c2b2069f81429a79386f51f08d4"></a>
+typedef enum MAV_CMD </td><td class="memItemRight" valign="bottom"><b>MAV_CMD</b></td></tr>
+<tr class="separator:a0bfb9c2b2069f81429a79386f51f08d4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aab2a9a1caebf2fa01ce551c90ad2e3d9" id="r_aab2a9a1caebf2fa01ce551c90ad2e3d9"><td align="right" class="memItemLeft" valign="top"><a id="aab2a9a1caebf2fa01ce551c90ad2e3d9" name="aab2a9a1caebf2fa01ce551c90ad2e3d9"></a>
+typedef enum LIMITS_STATE </td><td class="memItemRight" valign="bottom"><b>LIMITS_STATE</b></td></tr>
+<tr class="separator:aab2a9a1caebf2fa01ce551c90ad2e3d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a974daa971a253956877f9690835603a3" id="r_a974daa971a253956877f9690835603a3"><td align="right" class="memItemLeft" valign="top"><a id="a974daa971a253956877f9690835603a3" name="a974daa971a253956877f9690835603a3"></a>
+typedef enum LIMIT_MODULE </td><td class="memItemRight" valign="bottom"><b>LIMIT_MODULE</b></td></tr>
+<tr class="separator:a974daa971a253956877f9690835603a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a65301c4a06addc60007e96b79099e0e8" id="r_a65301c4a06addc60007e96b79099e0e8"><td align="right" class="memItemLeft" valign="top"><a id="a65301c4a06addc60007e96b79099e0e8" name="a65301c4a06addc60007e96b79099e0e8"></a>
+typedef enum RALLY_FLAGS </td><td class="memItemRight" valign="bottom"><b>RALLY_FLAGS</b></td></tr>
+<tr class="separator:a65301c4a06addc60007e96b79099e0e8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acded59f578d4fdf4205eb6a519850b31" id="r_acded59f578d4fdf4205eb6a519850b31"><td align="right" class="memItemLeft" valign="top"><a id="acded59f578d4fdf4205eb6a519850b31" name="acded59f578d4fdf4205eb6a519850b31"></a>
+typedef enum PARACHUTE_ACTION </td><td class="memItemRight" valign="bottom"><b>PARACHUTE_ACTION</b></td></tr>
+<tr class="separator:acded59f578d4fdf4205eb6a519850b31"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaf4b33fbd43fbbde1576cada15b8f224" id="r_aaf4b33fbd43fbbde1576cada15b8f224"><td align="right" class="memItemLeft" valign="top"><a id="aaf4b33fbd43fbbde1576cada15b8f224" name="aaf4b33fbd43fbbde1576cada15b8f224"></a>
+typedef enum GRIPPER_ACTIONS </td><td class="memItemRight" valign="bottom"><b>GRIPPER_ACTIONS</b></td></tr>
+<tr class="separator:aaf4b33fbd43fbbde1576cada15b8f224"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa4f381244f4cd8051a1f14cdf69b4711" id="r_aa4f381244f4cd8051a1f14cdf69b4711"><td align="right" class="memItemLeft" valign="top"><a id="aa4f381244f4cd8051a1f14cdf69b4711" name="aa4f381244f4cd8051a1f14cdf69b4711"></a>
+typedef enum CAMERA_STATUS_TYPES </td><td class="memItemRight" valign="bottom"><b>CAMERA_STATUS_TYPES</b></td></tr>
+<tr class="separator:aa4f381244f4cd8051a1f14cdf69b4711"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a66aaf63fca4c49579e5ed715a880fbf3" id="r_a66aaf63fca4c49579e5ed715a880fbf3"><td align="right" class="memItemLeft" valign="top"><a id="a66aaf63fca4c49579e5ed715a880fbf3" name="a66aaf63fca4c49579e5ed715a880fbf3"></a>
+typedef enum CAMERA_FEEDBACK_FLAGS </td><td class="memItemRight" valign="bottom"><b>CAMERA_FEEDBACK_FLAGS</b></td></tr>
+<tr class="separator:a66aaf63fca4c49579e5ed715a880fbf3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5be2a731d76d9135b4557b52611b099c" id="r_a5be2a731d76d9135b4557b52611b099c"><td align="right" class="memItemLeft" valign="top"><a id="a5be2a731d76d9135b4557b52611b099c" name="a5be2a731d76d9135b4557b52611b099c"></a>
+typedef enum MAV_MODE_GIMBAL </td><td class="memItemRight" valign="bottom"><b>MAV_MODE_GIMBAL</b></td></tr>
+<tr class="separator:a5be2a731d76d9135b4557b52611b099c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afbbed773e8aa5e587fa2074c7b92fc2a" id="r_afbbed773e8aa5e587fa2074c7b92fc2a"><td align="right" class="memItemLeft" valign="top"><a id="afbbed773e8aa5e587fa2074c7b92fc2a" name="afbbed773e8aa5e587fa2074c7b92fc2a"></a>
+typedef enum GIMBAL_AXIS </td><td class="memItemRight" valign="bottom"><b>GIMBAL_AXIS</b></td></tr>
+<tr class="separator:afbbed773e8aa5e587fa2074c7b92fc2a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a12f1cacaeceb2240c5ed1787edf99645" id="r_a12f1cacaeceb2240c5ed1787edf99645"><td align="right" class="memItemLeft" valign="top"><a id="a12f1cacaeceb2240c5ed1787edf99645" name="a12f1cacaeceb2240c5ed1787edf99645"></a>
+typedef enum GIMBAL_AXIS_CALIBRATION_STATUS </td><td class="memItemRight" valign="bottom"><b>GIMBAL_AXIS_CALIBRATION_STATUS</b></td></tr>
+<tr class="separator:a12f1cacaeceb2240c5ed1787edf99645"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8ee572ec0a84486dcd30981c53c188a9" id="r_a8ee572ec0a84486dcd30981c53c188a9"><td align="right" class="memItemLeft" valign="top"><a id="a8ee572ec0a84486dcd30981c53c188a9" name="a8ee572ec0a84486dcd30981c53c188a9"></a>
+typedef enum GIMBAL_AXIS_CALIBRATION_REQUIRED </td><td class="memItemRight" valign="bottom"><b>GIMBAL_AXIS_CALIBRATION_REQUIRED</b></td></tr>
+<tr class="separator:a8ee572ec0a84486dcd30981c53c188a9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a86b73fb68a4043c560a08dcc6c79f50f" id="r_a86b73fb68a4043c560a08dcc6c79f50f"><td align="right" class="memItemLeft" valign="top"><a id="a86b73fb68a4043c560a08dcc6c79f50f" name="a86b73fb68a4043c560a08dcc6c79f50f"></a>
+typedef enum GOPRO_HEARTBEAT_STATUS </td><td class="memItemRight" valign="bottom"><b>GOPRO_HEARTBEAT_STATUS</b></td></tr>
+<tr class="separator:a86b73fb68a4043c560a08dcc6c79f50f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afb77b463c567a5df0b5c5a68c30ed3b3" id="r_afb77b463c567a5df0b5c5a68c30ed3b3"><td align="right" class="memItemLeft" valign="top"><a id="afb77b463c567a5df0b5c5a68c30ed3b3" name="afb77b463c567a5df0b5c5a68c30ed3b3"></a>
+typedef enum GOPRO_HEARTBEAT_FLAGS </td><td class="memItemRight" valign="bottom"><b>GOPRO_HEARTBEAT_FLAGS</b></td></tr>
+<tr class="separator:afb77b463c567a5df0b5c5a68c30ed3b3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac6737679a8bdaf9f5bf2b071a5af15a9" id="r_ac6737679a8bdaf9f5bf2b071a5af15a9"><td align="right" class="memItemLeft" valign="top"><a id="ac6737679a8bdaf9f5bf2b071a5af15a9" name="ac6737679a8bdaf9f5bf2b071a5af15a9"></a>
+typedef enum GOPRO_REQUEST_STATUS </td><td class="memItemRight" valign="bottom"><b>GOPRO_REQUEST_STATUS</b></td></tr>
+<tr class="separator:ac6737679a8bdaf9f5bf2b071a5af15a9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a63e2d3a340e5629b0d43cf1e8e5e66e8" id="r_a63e2d3a340e5629b0d43cf1e8e5e66e8"><td align="right" class="memItemLeft" valign="top"><a id="a63e2d3a340e5629b0d43cf1e8e5e66e8" name="a63e2d3a340e5629b0d43cf1e8e5e66e8"></a>
+typedef enum GOPRO_COMMAND </td><td class="memItemRight" valign="bottom"><b>GOPRO_COMMAND</b></td></tr>
+<tr class="separator:a63e2d3a340e5629b0d43cf1e8e5e66e8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a358a93cf89574c445a9147ed586a46fb" id="r_a358a93cf89574c445a9147ed586a46fb"><td align="right" class="memItemLeft" valign="top"><a id="a358a93cf89574c445a9147ed586a46fb" name="a358a93cf89574c445a9147ed586a46fb"></a>
+typedef enum GOPRO_CAPTURE_MODE </td><td class="memItemRight" valign="bottom"><b>GOPRO_CAPTURE_MODE</b></td></tr>
+<tr class="separator:a358a93cf89574c445a9147ed586a46fb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4189da1622ad4bb7fd511d30152cd1de" id="r_a4189da1622ad4bb7fd511d30152cd1de"><td align="right" class="memItemLeft" valign="top"><a id="a4189da1622ad4bb7fd511d30152cd1de" name="a4189da1622ad4bb7fd511d30152cd1de"></a>
+typedef enum GOPRO_RESOLUTION </td><td class="memItemRight" valign="bottom"><b>GOPRO_RESOLUTION</b></td></tr>
+<tr class="separator:a4189da1622ad4bb7fd511d30152cd1de"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a78a250330f16c6519121b1a54ba43c45" id="r_a78a250330f16c6519121b1a54ba43c45"><td align="right" class="memItemLeft" valign="top"><a id="a78a250330f16c6519121b1a54ba43c45" name="a78a250330f16c6519121b1a54ba43c45"></a>
+typedef enum GOPRO_FRAME_RATE </td><td class="memItemRight" valign="bottom"><b>GOPRO_FRAME_RATE</b></td></tr>
+<tr class="separator:a78a250330f16c6519121b1a54ba43c45"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acdc0b2d29bf70f32c0a5345337118ba3" id="r_acdc0b2d29bf70f32c0a5345337118ba3"><td align="right" class="memItemLeft" valign="top"><a id="acdc0b2d29bf70f32c0a5345337118ba3" name="acdc0b2d29bf70f32c0a5345337118ba3"></a>
+typedef enum GOPRO_FIELD_OF_VIEW </td><td class="memItemRight" valign="bottom"><b>GOPRO_FIELD_OF_VIEW</b></td></tr>
+<tr class="separator:acdc0b2d29bf70f32c0a5345337118ba3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2605a016bf0647a8248f7f0df1ce3577" id="r_a2605a016bf0647a8248f7f0df1ce3577"><td align="right" class="memItemLeft" valign="top"><a id="a2605a016bf0647a8248f7f0df1ce3577" name="a2605a016bf0647a8248f7f0df1ce3577"></a>
+typedef enum GOPRO_VIDEO_SETTINGS_FLAGS </td><td class="memItemRight" valign="bottom"><b>GOPRO_VIDEO_SETTINGS_FLAGS</b></td></tr>
+<tr class="separator:a2605a016bf0647a8248f7f0df1ce3577"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6bc4eca6b28ad6a06fabb83f4c74dd1c" id="r_a6bc4eca6b28ad6a06fabb83f4c74dd1c"><td align="right" class="memItemLeft" valign="top"><a id="a6bc4eca6b28ad6a06fabb83f4c74dd1c" name="a6bc4eca6b28ad6a06fabb83f4c74dd1c"></a>
+typedef enum GOPRO_PHOTO_RESOLUTION </td><td class="memItemRight" valign="bottom"><b>GOPRO_PHOTO_RESOLUTION</b></td></tr>
+<tr class="separator:a6bc4eca6b28ad6a06fabb83f4c74dd1c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e4e1547504c9e1911cb3ec9e481f7f1" id="r_a1e4e1547504c9e1911cb3ec9e481f7f1"><td align="right" class="memItemLeft" valign="top"><a id="a1e4e1547504c9e1911cb3ec9e481f7f1" name="a1e4e1547504c9e1911cb3ec9e481f7f1"></a>
+typedef enum GOPRO_PROTUNE_WHITE_BALANCE </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_WHITE_BALANCE</b></td></tr>
+<tr class="separator:a1e4e1547504c9e1911cb3ec9e481f7f1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac16361af94f51fcc6965f896265e31fd" id="r_ac16361af94f51fcc6965f896265e31fd"><td align="right" class="memItemLeft" valign="top"><a id="ac16361af94f51fcc6965f896265e31fd" name="ac16361af94f51fcc6965f896265e31fd"></a>
+typedef enum GOPRO_PROTUNE_COLOUR </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_COLOUR</b></td></tr>
+<tr class="separator:ac16361af94f51fcc6965f896265e31fd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a620729a66c3e0214ffd18641ec170fb3" id="r_a620729a66c3e0214ffd18641ec170fb3"><td align="right" class="memItemLeft" valign="top"><a id="a620729a66c3e0214ffd18641ec170fb3" name="a620729a66c3e0214ffd18641ec170fb3"></a>
+typedef enum GOPRO_PROTUNE_GAIN </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_GAIN</b></td></tr>
+<tr class="separator:a620729a66c3e0214ffd18641ec170fb3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e3c1d32c5d2f9817b147a24e2c84676" id="r_a2e3c1d32c5d2f9817b147a24e2c84676"><td align="right" class="memItemLeft" valign="top"><a id="a2e3c1d32c5d2f9817b147a24e2c84676" name="a2e3c1d32c5d2f9817b147a24e2c84676"></a>
+typedef enum GOPRO_PROTUNE_SHARPNESS </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_SHARPNESS</b></td></tr>
+<tr class="separator:a2e3c1d32c5d2f9817b147a24e2c84676"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac2d3ae70e77fbcf84bbe69b92defd55b" id="r_ac2d3ae70e77fbcf84bbe69b92defd55b"><td align="right" class="memItemLeft" valign="top"><a id="ac2d3ae70e77fbcf84bbe69b92defd55b" name="ac2d3ae70e77fbcf84bbe69b92defd55b"></a>
+typedef enum GOPRO_PROTUNE_EXPOSURE </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_EXPOSURE</b></td></tr>
+<tr class="separator:ac2d3ae70e77fbcf84bbe69b92defd55b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7c025423cc65a76da11d48d78a4137b4" id="r_a7c025423cc65a76da11d48d78a4137b4"><td align="right" class="memItemLeft" valign="top"><a id="a7c025423cc65a76da11d48d78a4137b4" name="a7c025423cc65a76da11d48d78a4137b4"></a>
+typedef enum GOPRO_CHARGING </td><td class="memItemRight" valign="bottom"><b>GOPRO_CHARGING</b></td></tr>
+<tr class="separator:a7c025423cc65a76da11d48d78a4137b4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a67d94e25efa3426bd0950fc93c216cbc" id="r_a67d94e25efa3426bd0950fc93c216cbc"><td align="right" class="memItemLeft" valign="top"><a id="a67d94e25efa3426bd0950fc93c216cbc" name="a67d94e25efa3426bd0950fc93c216cbc"></a>
+typedef enum GOPRO_MODEL </td><td class="memItemRight" valign="bottom"><b>GOPRO_MODEL</b></td></tr>
+<tr class="separator:a67d94e25efa3426bd0950fc93c216cbc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af4b57eea0a5957a38c51b504a19f6118" id="r_af4b57eea0a5957a38c51b504a19f6118"><td align="right" class="memItemLeft" valign="top"><a id="af4b57eea0a5957a38c51b504a19f6118" name="af4b57eea0a5957a38c51b504a19f6118"></a>
+typedef enum GOPRO_BURST_RATE </td><td class="memItemRight" valign="bottom"><b>GOPRO_BURST_RATE</b></td></tr>
+<tr class="separator:af4b57eea0a5957a38c51b504a19f6118"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9535dce8053458ed3afc497ccd377261" id="r_a9535dce8053458ed3afc497ccd377261"><td align="right" class="memItemLeft" valign="top"><a id="a9535dce8053458ed3afc497ccd377261" name="a9535dce8053458ed3afc497ccd377261"></a>
+typedef enum LED_CONTROL_PATTERN </td><td class="memItemRight" valign="bottom"><b>LED_CONTROL_PATTERN</b></td></tr>
+<tr class="separator:a9535dce8053458ed3afc497ccd377261"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acfdd1532481b5e3cb726a06d353d391e" id="r_acfdd1532481b5e3cb726a06d353d391e"><td align="right" class="memItemLeft" valign="top"><a id="acfdd1532481b5e3cb726a06d353d391e" name="acfdd1532481b5e3cb726a06d353d391e"></a>
+typedef enum EKF_STATUS_FLAGS </td><td class="memItemRight" valign="bottom"><b>EKF_STATUS_FLAGS</b></td></tr>
+<tr class="separator:acfdd1532481b5e3cb726a06d353d391e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac90b6d9d6c98f0831b6bcab64d851735" id="r_ac90b6d9d6c98f0831b6bcab64d851735"><td align="right" class="memItemLeft" valign="top"><a id="ac90b6d9d6c98f0831b6bcab64d851735" name="ac90b6d9d6c98f0831b6bcab64d851735"></a>
+typedef enum PID_TUNING_AXIS </td><td class="memItemRight" valign="bottom"><b>PID_TUNING_AXIS</b></td></tr>
+<tr class="separator:ac90b6d9d6c98f0831b6bcab64d851735"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa70e3415966cef7bc2e82fb62d13c747" id="r_aa70e3415966cef7bc2e82fb62d13c747"><td align="right" class="memItemLeft" valign="top"><a id="aa70e3415966cef7bc2e82fb62d13c747" name="aa70e3415966cef7bc2e82fb62d13c747"></a>
+typedef enum MAG_CAL_STATUS </td><td class="memItemRight" valign="bottom"><b>MAG_CAL_STATUS</b></td></tr>
+<tr class="separator:aa70e3415966cef7bc2e82fb62d13c747"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a47bc2206fd787b6e2599f6e0c3f04785" id="r_a47bc2206fd787b6e2599f6e0c3f04785"><td align="right" class="memItemLeft" valign="top"><a id="a47bc2206fd787b6e2599f6e0c3f04785" name="a47bc2206fd787b6e2599f6e0c3f04785"></a>
+typedef enum MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS </td><td class="memItemRight" valign="bottom"><b>MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS</b></td></tr>
+<tr class="separator:a47bc2206fd787b6e2599f6e0c3f04785"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab4501f5c196872dc53d42988a8fdaa6d" id="r_ab4501f5c196872dc53d42988a8fdaa6d"><td align="right" class="memItemLeft" valign="top"><a id="ab4501f5c196872dc53d42988a8fdaa6d" name="ab4501f5c196872dc53d42988a8fdaa6d"></a>
+typedef enum MAV_REMOTE_LOG_DATA_BLOCK_STATUSES </td><td class="memItemRight" valign="bottom"><b>MAV_REMOTE_LOG_DATA_BLOCK_STATUSES</b></td></tr>
+<tr class="separator:ab4501f5c196872dc53d42988a8fdaa6d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1ce670d81229cdd9b6bcb20b96caf587" id="r_a1ce670d81229cdd9b6bcb20b96caf587"><td align="right" class="memItemLeft" valign="top"><a id="a1ce670d81229cdd9b6bcb20b96caf587" name="a1ce670d81229cdd9b6bcb20b96caf587"></a>
+typedef enum DEVICE_OP_BUSTYPE </td><td class="memItemRight" valign="bottom"><b>DEVICE_OP_BUSTYPE</b></td></tr>
+<tr class="separator:a1ce670d81229cdd9b6bcb20b96caf587"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a1bbb727a6f4120b8cea3d8c04aa091bb" id="r_a1bbb727a6f4120b8cea3d8c04aa091bb"><td align="right" class="memItemLeft" valign="top"><a id="a1bbb727a6f4120b8cea3d8c04aa091bb" name="a1bbb727a6f4120b8cea3d8c04aa091bb"></a>enum  </td><td class="memItemRight" valign="bottom"><b>ACCELCAL_VEHICLE_POS</b> { <br/>
+  <b>ACCELCAL_VEHICLE_POS_LEVEL</b> =1
+, <b>ACCELCAL_VEHICLE_POS_LEFT</b> =2
+, <b>ACCELCAL_VEHICLE_POS_RIGHT</b> =3
+, <b>ACCELCAL_VEHICLE_POS_NOSEDOWN</b> =4
+, <br/>
+  <b>ACCELCAL_VEHICLE_POS_NOSEUP</b> =5
+, <b>ACCELCAL_VEHICLE_POS_BACK</b> =6
+, <b>ACCELCAL_VEHICLE_POS_ENUM_END</b> =7
+<br/>
+ }</td></tr>
+<tr class="separator:a1bbb727a6f4120b8cea3d8c04aa091bb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a532ed19c5f99d731a8bd3f2f80e48b6b" id="r_a532ed19c5f99d731a8bd3f2f80e48b6b"><td align="right" class="memItemLeft" valign="top"><a id="a532ed19c5f99d731a8bd3f2f80e48b6b" name="a532ed19c5f99d731a8bd3f2f80e48b6b"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_CMD</b> { <br/>
+  <b>MAV_CMD_NAV_WAYPOINT</b> =16
+, <b>MAV_CMD_NAV_LOITER_UNLIM</b> =17
+, <b>MAV_CMD_NAV_LOITER_TURNS</b> =18
+, <b>MAV_CMD_NAV_LOITER_TIME</b> =19
+, <br/>
+  <b>MAV_CMD_NAV_RETURN_TO_LAUNCH</b> =20
+, <b>MAV_CMD_NAV_LAND</b> =21
+, <b>MAV_CMD_NAV_TAKEOFF</b> =22
+, <b>MAV_CMD_NAV_LAND_LOCAL</b> =23
+, <br/>
+  <b>MAV_CMD_NAV_TAKEOFF_LOCAL</b> =24
+, <b>MAV_CMD_NAV_FOLLOW</b> =25
+, <b>MAV_CMD_NAV_CONTINUE_AND_CHANGE_ALT</b> =30
+, <b>MAV_CMD_NAV_LOITER_TO_ALT</b> =31
+, <br/>
+  <b>MAV_CMD_DO_FOLLOW</b> =32
+, <b>MAV_CMD_DO_FOLLOW_REPOSITION</b> =33
+, <b>MAV_CMD_NAV_ROI</b> =80
+, <b>MAV_CMD_NAV_PATHPLANNING</b> =81
+, <br/>
+  <b>MAV_CMD_NAV_SPLINE_WAYPOINT</b> =82
+, <b>MAV_CMD_NAV_ALTITUDE_WAIT</b> =83
+, <b>MAV_CMD_NAV_VTOL_TAKEOFF</b> =84
+, <b>MAV_CMD_NAV_VTOL_LAND</b> =85
+, <br/>
+  <b>MAV_CMD_NAV_GUIDED_ENABLE</b> =92
+, <b>MAV_CMD_NAV_DELAY</b> =93
+, <b>MAV_CMD_NAV_PAYLOAD_PLACE</b> =94
+, <b>MAV_CMD_NAV_LAST</b> =95
+, <br/>
+  <b>MAV_CMD_CONDITION_DELAY</b> =112
+, <b>MAV_CMD_CONDITION_CHANGE_ALT</b> =113
+, <b>MAV_CMD_CONDITION_DISTANCE</b> =114
+, <b>MAV_CMD_CONDITION_YAW</b> =115
+, <br/>
+  <b>MAV_CMD_CONDITION_LAST</b> =159
+, <b>MAV_CMD_DO_SET_MODE</b> =176
+, <b>MAV_CMD_DO_JUMP</b> =177
+, <b>MAV_CMD_DO_CHANGE_SPEED</b> =178
+, <br/>
+  <b>MAV_CMD_DO_SET_HOME</b> =179
+, <b>MAV_CMD_DO_SET_PARAMETER</b> =180
+, <b>MAV_CMD_DO_SET_RELAY</b> =181
+, <b>MAV_CMD_DO_REPEAT_RELAY</b> =182
+, <br/>
+  <b>MAV_CMD_DO_SET_SERVO</b> =183
+, <b>MAV_CMD_DO_REPEAT_SERVO</b> =184
+, <b>MAV_CMD_DO_FLIGHTTERMINATION</b> =185
+, <b>MAV_CMD_DO_CHANGE_ALTITUDE</b> =186
+, <br/>
+  <b>MAV_CMD_DO_LAND_START</b> =189
+, <b>MAV_CMD_DO_RALLY_LAND</b> =190
+, <b>MAV_CMD_DO_GO_AROUND</b> =191
+, <b>MAV_CMD_DO_REPOSITION</b> =192
+, <br/>
+  <b>MAV_CMD_DO_PAUSE_CONTINUE</b> =193
+, <b>MAV_CMD_DO_SET_REVERSE</b> =194
+, <b>MAV_CMD_DO_CONTROL_VIDEO</b> =200
+, <b>MAV_CMD_DO_SET_ROI</b> =201
+, <br/>
+  <b>MAV_CMD_DO_DIGICAM_CONFIGURE</b> =202
+, <b>MAV_CMD_DO_DIGICAM_CONTROL</b> =203
+, <b>MAV_CMD_DO_MOUNT_CONFIGURE</b> =204
+, <b>MAV_CMD_DO_MOUNT_CONTROL</b> =205
+, <br/>
+  <b>MAV_CMD_DO_SET_CAM_TRIGG_DIST</b> =206
+, <b>MAV_CMD_DO_FENCE_ENABLE</b> =207
+, <b>MAV_CMD_DO_PARACHUTE</b> =208
+, <b>MAV_CMD_DO_MOTOR_TEST</b> =209
+, <br/>
+  <b>MAV_CMD_DO_INVERTED_FLIGHT</b> =210
+, <b>MAV_CMD_DO_GRIPPER</b> =211
+, <b>MAV_CMD_DO_AUTOTUNE_ENABLE</b> =212
+, <b>MAV_CMD_NAV_SET_YAW_SPEED</b> =213
+, <br/>
+  <b>MAV_CMD_DO_SET_CAM_TRIGG_INTERVAL</b> =214
+, <b>MAV_CMD_DO_MOUNT_CONTROL_QUAT</b> =220
+, <b>MAV_CMD_DO_GUIDED_MASTER</b> =221
+, <b>MAV_CMD_DO_GUIDED_LIMITS</b> =222
+, <br/>
+  <b>MAV_CMD_DO_ENGINE_CONTROL</b> =223
+, <b>MAV_CMD_DO_LAST</b> =240
+, <b>MAV_CMD_PREFLIGHT_CALIBRATION</b> =241
+, <b>MAV_CMD_PREFLIGHT_SET_SENSOR_OFFSETS</b> =242
+, <br/>
+  <b>MAV_CMD_PREFLIGHT_UAVCAN</b> =243
+, <b>MAV_CMD_PREFLIGHT_STORAGE</b> =245
+, <b>MAV_CMD_PREFLIGHT_REBOOT_SHUTDOWN</b> =246
+, <b>MAV_CMD_OVERRIDE_GOTO</b> =252
+, <br/>
+  <b>MAV_CMD_MISSION_START</b> =300
+, <b>MAV_CMD_COMPONENT_ARM_DISARM</b> =400
+, <b>MAV_CMD_GET_HOME_POSITION</b> =410
+, <b>MAV_CMD_START_RX_PAIR</b> =500
+, <br/>
+  <b>MAV_CMD_GET_MESSAGE_INTERVAL</b> =510
+, <b>MAV_CMD_SET_MESSAGE_INTERVAL</b> =511
+, <b>MAV_CMD_REQUEST_PROTOCOL_VERSION</b> =519
+, <b>MAV_CMD_REQUEST_AUTOPILOT_CAPABILITIES</b> =520
+, <br/>
+  <b>MAV_CMD_REQUEST_CAMERA_INFORMATION</b> =521
+, <b>MAV_CMD_REQUEST_CAMERA_SETTINGS</b> =522
+, <b>MAV_CMD_REQUEST_STORAGE_INFORMATION</b> =525
+, <b>MAV_CMD_STORAGE_FORMAT</b> =526
+, <br/>
+  <b>MAV_CMD_REQUEST_CAMERA_CAPTURE_STATUS</b> =527
+, <b>MAV_CMD_REQUEST_FLIGHT_INFORMATION</b> =528
+, <b>MAV_CMD_RESET_CAMERA_SETTINGS</b> =529
+, <b>MAV_CMD_SET_CAMERA_MODE</b> =530
+, <br/>
+  <b>MAV_CMD_IMAGE_START_CAPTURE</b> =2000
+, <b>MAV_CMD_IMAGE_STOP_CAPTURE</b> =2001
+, <b>MAV_CMD_REQUEST_CAMERA_IMAGE_CAPTURE</b> =2002
+, <b>MAV_CMD_DO_TRIGGER_CONTROL</b> =2003
+, <br/>
+  <b>MAV_CMD_VIDEO_START_CAPTURE</b> =2500
+, <b>MAV_CMD_VIDEO_STOP_CAPTURE</b> =2501
+, <b>MAV_CMD_VIDEO_START_STREAMING</b> =2502
+, <b>MAV_CMD_VIDEO_STOP_STREAMING</b> =2503
+, <br/>
+  <b>MAV_CMD_REQUEST_VIDEO_STREAM_INFORMATION</b> =2504
+, <b>MAV_CMD_LOGGING_START</b> =2510
+, <b>MAV_CMD_LOGGING_STOP</b> =2511
+, <b>MAV_CMD_AIRFRAME_CONFIGURATION</b> =2520
+, <br/>
+  <b>MAV_CMD_PANORAMA_CREATE</b> =2800
+, <b>MAV_CMD_DO_VTOL_TRANSITION</b> =3000
+, <b>MAV_CMD_ARM_AUTHORIZATION_REQUEST</b> =3001
+, <b>MAV_CMD_SET_GUIDED_SUBMODE_STANDARD</b> =4000
+, <br/>
+  <b>MAV_CMD_SET_GUIDED_SUBMODE_CIRCLE</b> =4001
+, <b>MAV_CMD_CONDITION_GATE</b> =4501
+, <b>MAV_CMD_NAV_FENCE_RETURN_POINT</b> =5000
+, <b>MAV_CMD_NAV_FENCE_POLYGON_VERTEX_INCLUSION</b> =5001
+, <br/>
+  <b>MAV_CMD_NAV_FENCE_POLYGON_VERTEX_EXCLUSION</b> =5002
+, <b>MAV_CMD_NAV_FENCE_CIRCLE_INCLUSION</b> =5003
+, <b>MAV_CMD_NAV_FENCE_CIRCLE_EXCLUSION</b> =5004
+, <b>MAV_CMD_NAV_RALLY_POINT</b> =5100
+, <br/>
+  <b>MAV_CMD_UAVCAN_GET_NODE_INFO</b> =5200
+, <b>MAV_CMD_PAYLOAD_PREPARE_DEPLOY</b> =30001
+, <b>MAV_CMD_PAYLOAD_CONTROL_DEPLOY</b> =30002
+, <b>MAV_CMD_WAYPOINT_USER_1</b> =31000
+, <br/>
+  <b>MAV_CMD_WAYPOINT_USER_2</b> =31001
+, <b>MAV_CMD_WAYPOINT_USER_3</b> =31002
+, <b>MAV_CMD_WAYPOINT_USER_4</b> =31003
+, <b>MAV_CMD_WAYPOINT_USER_5</b> =31004
+, <br/>
+  <b>MAV_CMD_SPATIAL_USER_1</b> =31005
+, <b>MAV_CMD_SPATIAL_USER_2</b> =31006
+, <b>MAV_CMD_SPATIAL_USER_3</b> =31007
+, <b>MAV_CMD_SPATIAL_USER_4</b> =31008
+, <br/>
+  <b>MAV_CMD_SPATIAL_USER_5</b> =31009
+, <b>MAV_CMD_USER_1</b> =31010
+, <b>MAV_CMD_USER_2</b> =31011
+, <b>MAV_CMD_USER_3</b> =31012
+, <br/>
+  <b>MAV_CMD_USER_4</b> =31013
+, <b>MAV_CMD_USER_5</b> =31014
+, <b>MAV_CMD_POWER_OFF_INITIATED</b> =42000
+, <b>MAV_CMD_SOLO_BTN_FLY_CLICK</b> =42001
+, <br/>
+  <b>MAV_CMD_SOLO_BTN_FLY_HOLD</b> =42002
+, <b>MAV_CMD_SOLO_BTN_PAUSE_CLICK</b> =42003
+, <b>MAV_CMD_DO_START_MAG_CAL</b> =42424
+, <b>MAV_CMD_DO_ACCEPT_MAG_CAL</b> =42425
+, <br/>
+  <b>MAV_CMD_DO_CANCEL_MAG_CAL</b> =42426
+, <b>MAV_CMD_SET_FACTORY_TEST_MODE</b> =42427
+, <b>MAV_CMD_DO_SEND_BANNER</b> =42428
+, <b>MAV_CMD_ACCELCAL_VEHICLE_POS</b> =42429
+, <br/>
+  <b>MAV_CMD_GIMBAL_RESET</b> =42501
+, <b>MAV_CMD_GIMBAL_AXIS_CALIBRATION_STATUS</b> =42502
+, <b>MAV_CMD_GIMBAL_REQUEST_AXIS_CALIBRATION</b> =42503
+, <b>MAV_CMD_GIMBAL_FULL_RESET</b> =42505
+, <br/>
+  <b>MAV_CMD_ENUM_END</b> =42506
+<br/>
+ }</td></tr>
+<tr class="separator:a532ed19c5f99d731a8bd3f2f80e48b6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0788f4d2f4f7752a542d9021ce178acb" id="r_a0788f4d2f4f7752a542d9021ce178acb"><td align="right" class="memItemLeft" valign="top"><a id="a0788f4d2f4f7752a542d9021ce178acb" name="a0788f4d2f4f7752a542d9021ce178acb"></a>enum  </td><td class="memItemRight" valign="bottom"><b>LIMITS_STATE</b> { <br/>
+  <b>LIMITS_INIT</b> =0
+, <b>LIMITS_DISABLED</b> =1
+, <b>LIMITS_ENABLED</b> =2
+, <b>LIMITS_TRIGGERED</b> =3
+, <br/>
+  <b>LIMITS_RECOVERING</b> =4
+, <b>LIMITS_RECOVERED</b> =5
+, <b>LIMITS_STATE_ENUM_END</b> =6
+<br/>
+ }</td></tr>
+<tr class="separator:a0788f4d2f4f7752a542d9021ce178acb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a96d127af220502200d761489cc042f5d" id="r_a96d127af220502200d761489cc042f5d"><td align="right" class="memItemLeft" valign="top"><a id="a96d127af220502200d761489cc042f5d" name="a96d127af220502200d761489cc042f5d"></a>enum  </td><td class="memItemRight" valign="bottom"><b>LIMIT_MODULE</b> { <b>LIMIT_GPSLOCK</b> =1
+, <b>LIMIT_GEOFENCE</b> =2
+, <b>LIMIT_ALTITUDE</b> =4
+, <b>LIMIT_MODULE_ENUM_END</b> =5
+ }</td></tr>
+<tr class="separator:a96d127af220502200d761489cc042f5d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a41db1fa94f23f6cda5859a0c1200e432" id="r_a41db1fa94f23f6cda5859a0c1200e432"><td align="right" class="memItemLeft" valign="top"><a id="a41db1fa94f23f6cda5859a0c1200e432" name="a41db1fa94f23f6cda5859a0c1200e432"></a>enum  </td><td class="memItemRight" valign="bottom"><b>RALLY_FLAGS</b> { <b>FAVORABLE_WIND</b> =1
+, <b>LAND_IMMEDIATELY</b> =2
+, <b>RALLY_FLAGS_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:a41db1fa94f23f6cda5859a0c1200e432"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7184991360a50cce2416f143fb34e8d5" id="r_a7184991360a50cce2416f143fb34e8d5"><td align="right" class="memItemLeft" valign="top"><a id="a7184991360a50cce2416f143fb34e8d5" name="a7184991360a50cce2416f143fb34e8d5"></a>enum  </td><td class="memItemRight" valign="bottom"><b>PARACHUTE_ACTION</b> { <b>PARACHUTE_DISABLE</b> =0
+, <b>PARACHUTE_ENABLE</b> =1
+, <b>PARACHUTE_RELEASE</b> =2
+, <b>PARACHUTE_ACTION_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:a7184991360a50cce2416f143fb34e8d5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae8582f8b3b50d1377bea85be1e2e3b57" id="r_ae8582f8b3b50d1377bea85be1e2e3b57"><td align="right" class="memItemLeft" valign="top"><a id="ae8582f8b3b50d1377bea85be1e2e3b57" name="ae8582f8b3b50d1377bea85be1e2e3b57"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GRIPPER_ACTIONS</b> { <b>GRIPPER_ACTION_RELEASE</b> =0
+, <b>GRIPPER_ACTION_GRAB</b> =1
+, <b>GRIPPER_ACTIONS_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:ae8582f8b3b50d1377bea85be1e2e3b57"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a21bdfe1e2d31819292595a3e4c163db7" id="r_a21bdfe1e2d31819292595a3e4c163db7"><td align="right" class="memItemLeft" valign="top"><a id="a21bdfe1e2d31819292595a3e4c163db7" name="a21bdfe1e2d31819292595a3e4c163db7"></a>enum  </td><td class="memItemRight" valign="bottom"><b>CAMERA_STATUS_TYPES</b> { <br/>
+  <b>CAMERA_STATUS_TYPE_HEARTBEAT</b> =0
+, <b>CAMERA_STATUS_TYPE_TRIGGER</b> =1
+, <b>CAMERA_STATUS_TYPE_DISCONNECT</b> =2
+, <b>CAMERA_STATUS_TYPE_ERROR</b> =3
+, <br/>
+  <b>CAMERA_STATUS_TYPE_LOWBATT</b> =4
+, <b>CAMERA_STATUS_TYPE_LOWSTORE</b> =5
+, <b>CAMERA_STATUS_TYPE_LOWSTOREV</b> =6
+, <b>CAMERA_STATUS_TYPES_ENUM_END</b> =7
+<br/>
+ }</td></tr>
+<tr class="separator:a21bdfe1e2d31819292595a3e4c163db7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1b3f3331907ed4cfc61949d0488ad929" id="r_a1b3f3331907ed4cfc61949d0488ad929"><td align="right" class="memItemLeft" valign="top"><a id="a1b3f3331907ed4cfc61949d0488ad929" name="a1b3f3331907ed4cfc61949d0488ad929"></a>enum  </td><td class="memItemRight" valign="bottom"><b>CAMERA_FEEDBACK_FLAGS</b> { <br/>
+  <b>CAMERA_FEEDBACK_PHOTO</b> =0
+, <b>CAMERA_FEEDBACK_VIDEO</b> =1
+, <b>CAMERA_FEEDBACK_BADEXPOSURE</b> =2
+, <b>CAMERA_FEEDBACK_CLOSEDLOOP</b> =3
+, <br/>
+  <b>CAMERA_FEEDBACK_OPENLOOP</b> =4
+, <b>CAMERA_FEEDBACK_FLAGS_ENUM_END</b> =5
+<br/>
+ }</td></tr>
+<tr class="separator:a1b3f3331907ed4cfc61949d0488ad929"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad7390a1b848eef6c80fe50bafb402c6a" id="r_ad7390a1b848eef6c80fe50bafb402c6a"><td align="right" class="memItemLeft" valign="top"><a id="ad7390a1b848eef6c80fe50bafb402c6a" name="ad7390a1b848eef6c80fe50bafb402c6a"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_MODE_GIMBAL</b> { <br/>
+  <b>MAV_MODE_GIMBAL_UNINITIALIZED</b> =0
+, <b>MAV_MODE_GIMBAL_CALIBRATING_PITCH</b> =1
+, <b>MAV_MODE_GIMBAL_CALIBRATING_ROLL</b> =2
+, <b>MAV_MODE_GIMBAL_CALIBRATING_YAW</b> =3
+, <br/>
+  <b>MAV_MODE_GIMBAL_INITIALIZED</b> =4
+, <b>MAV_MODE_GIMBAL_ACTIVE</b> =5
+, <b>MAV_MODE_GIMBAL_RATE_CMD_TIMEOUT</b> =6
+, <b>MAV_MODE_GIMBAL_ENUM_END</b> =7
+<br/>
+ }</td></tr>
+<tr class="separator:ad7390a1b848eef6c80fe50bafb402c6a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1fb4c264ba754649d74ea33cf428da55" id="r_a1fb4c264ba754649d74ea33cf428da55"><td align="right" class="memItemLeft" valign="top"><a id="a1fb4c264ba754649d74ea33cf428da55" name="a1fb4c264ba754649d74ea33cf428da55"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GIMBAL_AXIS</b> { <b>GIMBAL_AXIS_YAW</b> =0
+, <b>GIMBAL_AXIS_PITCH</b> =1
+, <b>GIMBAL_AXIS_ROLL</b> =2
+, <b>GIMBAL_AXIS_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:a1fb4c264ba754649d74ea33cf428da55"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a16ef58073ee95bcd7f2974ae124adce0" id="r_a16ef58073ee95bcd7f2974ae124adce0"><td align="right" class="memItemLeft" valign="top"><a id="a16ef58073ee95bcd7f2974ae124adce0" name="a16ef58073ee95bcd7f2974ae124adce0"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GIMBAL_AXIS_CALIBRATION_STATUS</b> { <b>GIMBAL_AXIS_CALIBRATION_STATUS_IN_PROGRESS</b> =0
+, <b>GIMBAL_AXIS_CALIBRATION_STATUS_SUCCEEDED</b> =1
+, <b>GIMBAL_AXIS_CALIBRATION_STATUS_FAILED</b> =2
+, <b>GIMBAL_AXIS_CALIBRATION_STATUS_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:a16ef58073ee95bcd7f2974ae124adce0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9978d5585b2b0782e08efc185b5869d6" id="r_a9978d5585b2b0782e08efc185b5869d6"><td align="right" class="memItemLeft" valign="top"><a id="a9978d5585b2b0782e08efc185b5869d6" name="a9978d5585b2b0782e08efc185b5869d6"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GIMBAL_AXIS_CALIBRATION_REQUIRED</b> { <b>GIMBAL_AXIS_CALIBRATION_REQUIRED_UNKNOWN</b> =0
+, <b>GIMBAL_AXIS_CALIBRATION_REQUIRED_TRUE</b> =1
+, <b>GIMBAL_AXIS_CALIBRATION_REQUIRED_FALSE</b> =2
+, <b>GIMBAL_AXIS_CALIBRATION_REQUIRED_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:a9978d5585b2b0782e08efc185b5869d6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a187c0fff26dab6d743415a6009b361cc" id="r_a187c0fff26dab6d743415a6009b361cc"><td align="right" class="memItemLeft" valign="top"><a id="a187c0fff26dab6d743415a6009b361cc" name="a187c0fff26dab6d743415a6009b361cc"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_HEARTBEAT_STATUS</b> { <br/>
+  <b>GOPRO_HEARTBEAT_STATUS_DISCONNECTED</b> =0
+, <b>GOPRO_HEARTBEAT_STATUS_INCOMPATIBLE</b> =1
+, <b>GOPRO_HEARTBEAT_STATUS_CONNECTED</b> =2
+, <b>GOPRO_HEARTBEAT_STATUS_ERROR</b> =3
+, <br/>
+  <b>GOPRO_HEARTBEAT_STATUS_ENUM_END</b> =4
+<br/>
+ }</td></tr>
+<tr class="separator:a187c0fff26dab6d743415a6009b361cc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac3fd7abf1eb5e2982d8973ef0d5c990d" id="r_ac3fd7abf1eb5e2982d8973ef0d5c990d"><td align="right" class="memItemLeft" valign="top"><a id="ac3fd7abf1eb5e2982d8973ef0d5c990d" name="ac3fd7abf1eb5e2982d8973ef0d5c990d"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_HEARTBEAT_FLAGS</b> { <b>GOPRO_FLAG_RECORDING</b> =1
+, <b>GOPRO_HEARTBEAT_FLAGS_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:ac3fd7abf1eb5e2982d8973ef0d5c990d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a090bdaec806a7ac7ef01139fc0667a0d" id="r_a090bdaec806a7ac7ef01139fc0667a0d"><td align="right" class="memItemLeft" valign="top"><a id="a090bdaec806a7ac7ef01139fc0667a0d" name="a090bdaec806a7ac7ef01139fc0667a0d"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_REQUEST_STATUS</b> { <b>GOPRO_REQUEST_SUCCESS</b> =0
+, <b>GOPRO_REQUEST_FAILED</b> =1
+, <b>GOPRO_REQUEST_STATUS_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:a090bdaec806a7ac7ef01139fc0667a0d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ace5bd45cd717c1968eded01afa0a29e9" id="r_ace5bd45cd717c1968eded01afa0a29e9"><td align="right" class="memItemLeft" valign="top"><a id="ace5bd45cd717c1968eded01afa0a29e9" name="ace5bd45cd717c1968eded01afa0a29e9"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_COMMAND</b> { <br/>
+  <b>GOPRO_COMMAND_POWER</b> =0
+, <b>GOPRO_COMMAND_CAPTURE_MODE</b> =1
+, <b>GOPRO_COMMAND_SHUTTER</b> =2
+, <b>GOPRO_COMMAND_BATTERY</b> =3
+, <br/>
+  <b>GOPRO_COMMAND_MODEL</b> =4
+, <b>GOPRO_COMMAND_VIDEO_SETTINGS</b> =5
+, <b>GOPRO_COMMAND_LOW_LIGHT</b> =6
+, <b>GOPRO_COMMAND_PHOTO_RESOLUTION</b> =7
+, <br/>
+  <b>GOPRO_COMMAND_PHOTO_BURST_RATE</b> =8
+, <b>GOPRO_COMMAND_PROTUNE</b> =9
+, <b>GOPRO_COMMAND_PROTUNE_WHITE_BALANCE</b> =10
+, <b>GOPRO_COMMAND_PROTUNE_COLOUR</b> =11
+, <br/>
+  <b>GOPRO_COMMAND_PROTUNE_GAIN</b> =12
+, <b>GOPRO_COMMAND_PROTUNE_SHARPNESS</b> =13
+, <b>GOPRO_COMMAND_PROTUNE_EXPOSURE</b> =14
+, <b>GOPRO_COMMAND_TIME</b> =15
+, <br/>
+  <b>GOPRO_COMMAND_CHARGING</b> =16
+, <b>GOPRO_COMMAND_ENUM_END</b> =17
+<br/>
+ }</td></tr>
+<tr class="separator:ace5bd45cd717c1968eded01afa0a29e9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af66124b3d053531cfc07bc884661ea3e" id="r_af66124b3d053531cfc07bc884661ea3e"><td align="right" class="memItemLeft" valign="top"><a id="af66124b3d053531cfc07bc884661ea3e" name="af66124b3d053531cfc07bc884661ea3e"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_CAPTURE_MODE</b> { <br/>
+  <b>GOPRO_CAPTURE_MODE_VIDEO</b> =0
+, <b>GOPRO_CAPTURE_MODE_PHOTO</b> =1
+, <b>GOPRO_CAPTURE_MODE_BURST</b> =2
+, <b>GOPRO_CAPTURE_MODE_TIME_LAPSE</b> =3
+, <br/>
+  <b>GOPRO_CAPTURE_MODE_MULTI_SHOT</b> =4
+, <b>GOPRO_CAPTURE_MODE_PLAYBACK</b> =5
+, <b>GOPRO_CAPTURE_MODE_SETUP</b> =6
+, <b>GOPRO_CAPTURE_MODE_UNKNOWN</b> =255
+, <br/>
+  <b>GOPRO_CAPTURE_MODE_ENUM_END</b> =256
+<br/>
+ }</td></tr>
+<tr class="separator:af66124b3d053531cfc07bc884661ea3e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a18f2adbbecf1ea2288cb39b163231bdb" id="r_a18f2adbbecf1ea2288cb39b163231bdb"><td align="right" class="memItemLeft" valign="top"><a id="a18f2adbbecf1ea2288cb39b163231bdb" name="a18f2adbbecf1ea2288cb39b163231bdb"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_RESOLUTION</b> { <br/>
+  <b>GOPRO_RESOLUTION_480p</b> =0
+, <b>GOPRO_RESOLUTION_720p</b> =1
+, <b>GOPRO_RESOLUTION_960p</b> =2
+, <b>GOPRO_RESOLUTION_1080p</b> =3
+, <br/>
+  <b>GOPRO_RESOLUTION_1440p</b> =4
+, <b>GOPRO_RESOLUTION_2_7k_17_9</b> =5
+, <b>GOPRO_RESOLUTION_2_7k_16_9</b> =6
+, <b>GOPRO_RESOLUTION_2_7k_4_3</b> =7
+, <br/>
+  <b>GOPRO_RESOLUTION_4k_16_9</b> =8
+, <b>GOPRO_RESOLUTION_4k_17_9</b> =9
+, <b>GOPRO_RESOLUTION_720p_SUPERVIEW</b> =10
+, <b>GOPRO_RESOLUTION_1080p_SUPERVIEW</b> =11
+, <br/>
+  <b>GOPRO_RESOLUTION_2_7k_SUPERVIEW</b> =12
+, <b>GOPRO_RESOLUTION_4k_SUPERVIEW</b> =13
+, <b>GOPRO_RESOLUTION_ENUM_END</b> =14
+<br/>
+ }</td></tr>
+<tr class="separator:a18f2adbbecf1ea2288cb39b163231bdb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a10580e452444d63a5ea1b861de41eaac" id="r_a10580e452444d63a5ea1b861de41eaac"><td align="right" class="memItemLeft" valign="top"><a id="a10580e452444d63a5ea1b861de41eaac" name="a10580e452444d63a5ea1b861de41eaac"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_FRAME_RATE</b> { <br/>
+  <b>GOPRO_FRAME_RATE_12</b> =0
+, <b>GOPRO_FRAME_RATE_15</b> =1
+, <b>GOPRO_FRAME_RATE_24</b> =2
+, <b>GOPRO_FRAME_RATE_25</b> =3
+, <br/>
+  <b>GOPRO_FRAME_RATE_30</b> =4
+, <b>GOPRO_FRAME_RATE_48</b> =5
+, <b>GOPRO_FRAME_RATE_50</b> =6
+, <b>GOPRO_FRAME_RATE_60</b> =7
+, <br/>
+  <b>GOPRO_FRAME_RATE_80</b> =8
+, <b>GOPRO_FRAME_RATE_90</b> =9
+, <b>GOPRO_FRAME_RATE_100</b> =10
+, <b>GOPRO_FRAME_RATE_120</b> =11
+, <br/>
+  <b>GOPRO_FRAME_RATE_240</b> =12
+, <b>GOPRO_FRAME_RATE_12_5</b> =13
+, <b>GOPRO_FRAME_RATE_ENUM_END</b> =14
+<br/>
+ }</td></tr>
+<tr class="separator:a10580e452444d63a5ea1b861de41eaac"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aff15600e940a6ba5582e7650630a41cf" id="r_aff15600e940a6ba5582e7650630a41cf"><td align="right" class="memItemLeft" valign="top"><a id="aff15600e940a6ba5582e7650630a41cf" name="aff15600e940a6ba5582e7650630a41cf"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_FIELD_OF_VIEW</b> { <b>GOPRO_FIELD_OF_VIEW_WIDE</b> =0
+, <b>GOPRO_FIELD_OF_VIEW_MEDIUM</b> =1
+, <b>GOPRO_FIELD_OF_VIEW_NARROW</b> =2
+, <b>GOPRO_FIELD_OF_VIEW_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:aff15600e940a6ba5582e7650630a41cf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaf6c8902d45842e531beff56cd81cfc4" id="r_aaf6c8902d45842e531beff56cd81cfc4"><td align="right" class="memItemLeft" valign="top"><a id="aaf6c8902d45842e531beff56cd81cfc4" name="aaf6c8902d45842e531beff56cd81cfc4"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_VIDEO_SETTINGS_FLAGS</b> { <b>GOPRO_VIDEO_SETTINGS_TV_MODE</b> =1
+, <b>GOPRO_VIDEO_SETTINGS_FLAGS_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:aaf6c8902d45842e531beff56cd81cfc4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c3c089e918c3d7dc290e74416903659" id="r_a6c3c089e918c3d7dc290e74416903659"><td align="right" class="memItemLeft" valign="top"><a id="a6c3c089e918c3d7dc290e74416903659" name="a6c3c089e918c3d7dc290e74416903659"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_PHOTO_RESOLUTION</b> { <br/>
+  <b>GOPRO_PHOTO_RESOLUTION_5MP_MEDIUM</b> =0
+, <b>GOPRO_PHOTO_RESOLUTION_7MP_MEDIUM</b> =1
+, <b>GOPRO_PHOTO_RESOLUTION_7MP_WIDE</b> =2
+, <b>GOPRO_PHOTO_RESOLUTION_10MP_WIDE</b> =3
+, <br/>
+  <b>GOPRO_PHOTO_RESOLUTION_12MP_WIDE</b> =4
+, <b>GOPRO_PHOTO_RESOLUTION_ENUM_END</b> =5
+<br/>
+ }</td></tr>
+<tr class="separator:a6c3c089e918c3d7dc290e74416903659"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acf8bb97d27f490c5d4323b04b451700a" id="r_acf8bb97d27f490c5d4323b04b451700a"><td align="right" class="memItemLeft" valign="top"><a id="acf8bb97d27f490c5d4323b04b451700a" name="acf8bb97d27f490c5d4323b04b451700a"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_WHITE_BALANCE</b> { <br/>
+  <b>GOPRO_PROTUNE_WHITE_BALANCE_AUTO</b> =0
+, <b>GOPRO_PROTUNE_WHITE_BALANCE_3000K</b> =1
+, <b>GOPRO_PROTUNE_WHITE_BALANCE_5500K</b> =2
+, <b>GOPRO_PROTUNE_WHITE_BALANCE_6500K</b> =3
+, <br/>
+  <b>GOPRO_PROTUNE_WHITE_BALANCE_RAW</b> =4
+, <b>GOPRO_PROTUNE_WHITE_BALANCE_ENUM_END</b> =5
+<br/>
+ }</td></tr>
+<tr class="separator:acf8bb97d27f490c5d4323b04b451700a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac85f5ed7b437e35e901c924411913cd8" id="r_ac85f5ed7b437e35e901c924411913cd8"><td align="right" class="memItemLeft" valign="top"><a id="ac85f5ed7b437e35e901c924411913cd8" name="ac85f5ed7b437e35e901c924411913cd8"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_COLOUR</b> { <b>GOPRO_PROTUNE_COLOUR_STANDARD</b> =0
+, <b>GOPRO_PROTUNE_COLOUR_NEUTRAL</b> =1
+, <b>GOPRO_PROTUNE_COLOUR_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:ac85f5ed7b437e35e901c924411913cd8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa15cc1060319be27e6c89cb473b4c51" id="r_aaa15cc1060319be27e6c89cb473b4c51"><td align="right" class="memItemLeft" valign="top"><a id="aaa15cc1060319be27e6c89cb473b4c51" name="aaa15cc1060319be27e6c89cb473b4c51"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_GAIN</b> { <br/>
+  <b>GOPRO_PROTUNE_GAIN_400</b> =0
+, <b>GOPRO_PROTUNE_GAIN_800</b> =1
+, <b>GOPRO_PROTUNE_GAIN_1600</b> =2
+, <b>GOPRO_PROTUNE_GAIN_3200</b> =3
+, <br/>
+  <b>GOPRO_PROTUNE_GAIN_6400</b> =4
+, <b>GOPRO_PROTUNE_GAIN_ENUM_END</b> =5
+<br/>
+ }</td></tr>
+<tr class="separator:aaa15cc1060319be27e6c89cb473b4c51"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae6d4ab8474f3de939c687dd6b19c557e" id="r_ae6d4ab8474f3de939c687dd6b19c557e"><td align="right" class="memItemLeft" valign="top"><a id="ae6d4ab8474f3de939c687dd6b19c557e" name="ae6d4ab8474f3de939c687dd6b19c557e"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_SHARPNESS</b> { <b>GOPRO_PROTUNE_SHARPNESS_LOW</b> =0
+, <b>GOPRO_PROTUNE_SHARPNESS_MEDIUM</b> =1
+, <b>GOPRO_PROTUNE_SHARPNESS_HIGH</b> =2
+, <b>GOPRO_PROTUNE_SHARPNESS_ENUM_END</b> =3
+ }</td></tr>
+<tr class="separator:ae6d4ab8474f3de939c687dd6b19c557e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae13d36b3770e3ac7daf4753ebc9654ba" id="r_ae13d36b3770e3ac7daf4753ebc9654ba"><td align="right" class="memItemLeft" valign="top"><a id="ae13d36b3770e3ac7daf4753ebc9654ba" name="ae13d36b3770e3ac7daf4753ebc9654ba"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_PROTUNE_EXPOSURE</b> { <br/>
+  <b>GOPRO_PROTUNE_EXPOSURE_NEG_5_0</b> =0
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_4_5</b> =1
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_4_0</b> =2
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_3_5</b> =3
+, <br/>
+  <b>GOPRO_PROTUNE_EXPOSURE_NEG_3_0</b> =4
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_2_5</b> =5
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_2_0</b> =6
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_1_5</b> =7
+, <br/>
+  <b>GOPRO_PROTUNE_EXPOSURE_NEG_1_0</b> =8
+, <b>GOPRO_PROTUNE_EXPOSURE_NEG_0_5</b> =9
+, <b>GOPRO_PROTUNE_EXPOSURE_ZERO</b> =10
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_0_5</b> =11
+, <br/>
+  <b>GOPRO_PROTUNE_EXPOSURE_POS_1_0</b> =12
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_1_5</b> =13
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_2_0</b> =14
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_2_5</b> =15
+, <br/>
+  <b>GOPRO_PROTUNE_EXPOSURE_POS_3_0</b> =16
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_3_5</b> =17
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_4_0</b> =18
+, <b>GOPRO_PROTUNE_EXPOSURE_POS_4_5</b> =19
+, <br/>
+  <b>GOPRO_PROTUNE_EXPOSURE_POS_5_0</b> =20
+, <b>GOPRO_PROTUNE_EXPOSURE_ENUM_END</b> =21
+<br/>
+ }</td></tr>
+<tr class="separator:ae13d36b3770e3ac7daf4753ebc9654ba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8d72385d366cc35051e9bd90477800b8" id="r_a8d72385d366cc35051e9bd90477800b8"><td align="right" class="memItemLeft" valign="top"><a id="a8d72385d366cc35051e9bd90477800b8" name="a8d72385d366cc35051e9bd90477800b8"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_CHARGING</b> { <b>GOPRO_CHARGING_DISABLED</b> =0
+, <b>GOPRO_CHARGING_ENABLED</b> =1
+, <b>GOPRO_CHARGING_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:a8d72385d366cc35051e9bd90477800b8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a99a57f83fe57d806a99d330533047b27" id="r_a99a57f83fe57d806a99d330533047b27"><td align="right" class="memItemLeft" valign="top"><a id="a99a57f83fe57d806a99d330533047b27" name="a99a57f83fe57d806a99d330533047b27"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_MODEL</b> { <br/>
+  <b>GOPRO_MODEL_UNKNOWN</b> =0
+, <b>GOPRO_MODEL_HERO_3_PLUS_SILVER</b> =1
+, <b>GOPRO_MODEL_HERO_3_PLUS_BLACK</b> =2
+, <b>GOPRO_MODEL_HERO_4_SILVER</b> =3
+, <br/>
+  <b>GOPRO_MODEL_HERO_4_BLACK</b> =4
+, <b>GOPRO_MODEL_ENUM_END</b> =5
+<br/>
+ }</td></tr>
+<tr class="separator:a99a57f83fe57d806a99d330533047b27"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a88554d9e9e487812def2ae4d7a979d40" id="r_a88554d9e9e487812def2ae4d7a979d40"><td align="right" class="memItemLeft" valign="top"><a id="a88554d9e9e487812def2ae4d7a979d40" name="a88554d9e9e487812def2ae4d7a979d40"></a>enum  </td><td class="memItemRight" valign="bottom"><b>GOPRO_BURST_RATE</b> { <br/>
+  <b>GOPRO_BURST_RATE_3_IN_1_SECOND</b> =0
+, <b>GOPRO_BURST_RATE_5_IN_1_SECOND</b> =1
+, <b>GOPRO_BURST_RATE_10_IN_1_SECOND</b> =2
+, <b>GOPRO_BURST_RATE_10_IN_2_SECOND</b> =3
+, <br/>
+  <b>GOPRO_BURST_RATE_10_IN_3_SECOND</b> =4
+, <b>GOPRO_BURST_RATE_30_IN_1_SECOND</b> =5
+, <b>GOPRO_BURST_RATE_30_IN_2_SECOND</b> =6
+, <b>GOPRO_BURST_RATE_30_IN_3_SECOND</b> =7
+, <br/>
+  <b>GOPRO_BURST_RATE_30_IN_6_SECOND</b> =8
+, <b>GOPRO_BURST_RATE_ENUM_END</b> =9
+<br/>
+ }</td></tr>
+<tr class="separator:a88554d9e9e487812def2ae4d7a979d40"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c94f3ebb2db28702ad291ec2856f5dc" id="r_a6c94f3ebb2db28702ad291ec2856f5dc"><td align="right" class="memItemLeft" valign="top"><a id="a6c94f3ebb2db28702ad291ec2856f5dc" name="a6c94f3ebb2db28702ad291ec2856f5dc"></a>enum  </td><td class="memItemRight" valign="bottom"><b>LED_CONTROL_PATTERN</b> { <b>LED_CONTROL_PATTERN_OFF</b> =0
+, <b>LED_CONTROL_PATTERN_FIRMWAREUPDATE</b> =1
+, <b>LED_CONTROL_PATTERN_CUSTOM</b> =255
+, <b>LED_CONTROL_PATTERN_ENUM_END</b> =256
+ }</td></tr>
+<tr class="separator:a6c94f3ebb2db28702ad291ec2856f5dc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa0930464f8c0dddb4bbd590e08935abf" id="r_aa0930464f8c0dddb4bbd590e08935abf"><td align="right" class="memItemLeft" valign="top"><a id="aa0930464f8c0dddb4bbd590e08935abf" name="aa0930464f8c0dddb4bbd590e08935abf"></a>enum  </td><td class="memItemRight" valign="bottom"><b>EKF_STATUS_FLAGS</b> { <br/>
+  <b>EKF_ATTITUDE</b> =1
+, <b>EKF_VELOCITY_HORIZ</b> =2
+, <b>EKF_VELOCITY_VERT</b> =4
+, <b>EKF_POS_HORIZ_REL</b> =8
+, <br/>
+  <b>EKF_POS_HORIZ_ABS</b> =16
+, <b>EKF_POS_VERT_ABS</b> =32
+, <b>EKF_POS_VERT_AGL</b> =64
+, <b>EKF_CONST_POS_MODE</b> =128
+, <br/>
+  <b>EKF_PRED_POS_HORIZ_REL</b> =256
+, <b>EKF_PRED_POS_HORIZ_ABS</b> =512
+, <b>EKF_STATUS_FLAGS_ENUM_END</b> =513
+<br/>
+ }</td></tr>
+<tr class="separator:aa0930464f8c0dddb4bbd590e08935abf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a57f81a15704990ca6b0f2eba2411baf0" id="r_a57f81a15704990ca6b0f2eba2411baf0"><td align="right" class="memItemLeft" valign="top"><a id="a57f81a15704990ca6b0f2eba2411baf0" name="a57f81a15704990ca6b0f2eba2411baf0"></a>enum  </td><td class="memItemRight" valign="bottom"><b>PID_TUNING_AXIS</b> { <br/>
+  <b>PID_TUNING_ROLL</b> =1
+, <b>PID_TUNING_PITCH</b> =2
+, <b>PID_TUNING_YAW</b> =3
+, <b>PID_TUNING_ACCZ</b> =4
+, <br/>
+  <b>PID_TUNING_STEER</b> =5
+, <b>PID_TUNING_LANDING</b> =6
+, <b>PID_TUNING_AXIS_ENUM_END</b> =7
+<br/>
+ }</td></tr>
+<tr class="separator:a57f81a15704990ca6b0f2eba2411baf0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a990ec8092cc502d556144ba70ecb07e7" id="r_a990ec8092cc502d556144ba70ecb07e7"><td align="right" class="memItemLeft" valign="top"><a id="a990ec8092cc502d556144ba70ecb07e7" name="a990ec8092cc502d556144ba70ecb07e7"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAG_CAL_STATUS</b> { <br/>
+  <b>MAG_CAL_NOT_STARTED</b> =0
+, <b>MAG_CAL_WAITING_TO_START</b> =1
+, <b>MAG_CAL_RUNNING_STEP_ONE</b> =2
+, <b>MAG_CAL_RUNNING_STEP_TWO</b> =3
+, <br/>
+  <b>MAG_CAL_SUCCESS</b> =4
+, <b>MAG_CAL_FAILED</b> =5
+, <b>MAG_CAL_STATUS_ENUM_END</b> =6
+<br/>
+ }</td></tr>
+<tr class="separator:a990ec8092cc502d556144ba70ecb07e7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e92d9ced97a2c75e7c427c086edc9cf" id="r_a1e92d9ced97a2c75e7c427c086edc9cf"><td align="right" class="memItemLeft" valign="top"><a id="a1e92d9ced97a2c75e7c427c086edc9cf" name="a1e92d9ced97a2c75e7c427c086edc9cf"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS</b> { <b>MAV_REMOTE_LOG_DATA_BLOCK_STOP</b> =2147483645
+, <b>MAV_REMOTE_LOG_DATA_BLOCK_START</b> =2147483646
+, <b>MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS_ENUM_END</b> =2147483647
+ }</td></tr>
+<tr class="separator:a1e92d9ced97a2c75e7c427c086edc9cf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab93b06d2499e6b5fba16c5e1dd3e23cf" id="r_ab93b06d2499e6b5fba16c5e1dd3e23cf"><td align="right" class="memItemLeft" valign="top"><a id="ab93b06d2499e6b5fba16c5e1dd3e23cf" name="ab93b06d2499e6b5fba16c5e1dd3e23cf"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_REMOTE_LOG_DATA_BLOCK_STATUSES</b> { <b>MAV_REMOTE_LOG_DATA_BLOCK_NACK</b> =0
+, <b>MAV_REMOTE_LOG_DATA_BLOCK_ACK</b> =1
+, <b>MAV_REMOTE_LOG_DATA_BLOCK_STATUSES_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:ab93b06d2499e6b5fba16c5e1dd3e23cf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a17bd3f28fb1479fa59c8993b3746aa0a" id="r_a17bd3f28fb1479fa59c8993b3746aa0a"><td align="right" class="memItemLeft" valign="top"><a id="a17bd3f28fb1479fa59c8993b3746aa0a" name="a17bd3f28fb1479fa59c8993b3746aa0a"></a>enum  </td><td class="memItemRight" valign="bottom"><b>DEVICE_OP_BUSTYPE</b> { <b>DEVICE_OP_BUSTYPE_I2C</b> =0
+, <b>DEVICE_OP_BUSTYPE_SPI</b> =1
+, <b>DEVICE_OP_BUSTYPE_ENUM_END</b> =2
+ }</td></tr>
+<tr class="separator:a17bd3f28fb1479fa59c8993b3746aa0a"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>MAVLink comm protocol generated from ardupilotmega.xml </p>
+<dl class="section see"><dt>参见</dt><dd><a href="http://mavlink.org">http://mavlink.org</a> </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="ad8091202dd8c67bbaba04c88d0941400" name="ad8091202dd8c67bbaba04c88d0941400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8091202dd8c67bbaba04c88d0941400">◆ </a></span>HAVE_ENUM_ACCELCAL_VEHICLE_POS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_ACCELCAL_VEHICLE_POS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a8b9d49fe0852dc3c8fd73b6175151280" name="a8b9d49fe0852dc3c8fd73b6175151280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9d49fe0852dc3c8fd73b6175151280">◆ </a></span>HAVE_ENUM_CAMERA_FEEDBACK_FLAGS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_CAMERA_FEEDBACK_FLAGS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="aab78229e8cff3a5a52d879d06db0b1c5" name="aab78229e8cff3a5a52d879d06db0b1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab78229e8cff3a5a52d879d06db0b1c5">◆ </a></span>HAVE_ENUM_CAMERA_STATUS_TYPES</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_CAMERA_STATUS_TYPES</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a89f5d53ff19963b390098b3b1b9867ef" name="a89f5d53ff19963b390098b3b1b9867ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f5d53ff19963b390098b3b1b9867ef">◆ </a></span>HAVE_ENUM_DEVICE_OP_BUSTYPE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_DEVICE_OP_BUSTYPE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Bus types for device operations </p>
+</div>
+</div>
+<a id="a2c8f4884d38ad1191fe45613b9fd576e" name="a2c8f4884d38ad1191fe45613b9fd576e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8f4884d38ad1191fe45613b9fd576e">◆ </a></span>HAVE_ENUM_EKF_STATUS_FLAGS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_EKF_STATUS_FLAGS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flags in EKF_STATUS message </p>
+</div>
+</div>
+<a id="a3e6b1d94950b96b7397ae0100a31b821" name="a3e6b1d94950b96b7397ae0100a31b821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6b1d94950b96b7397ae0100a31b821">◆ </a></span>HAVE_ENUM_GIMBAL_AXIS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GIMBAL_AXIS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a55b3ff327f7b3fd8f30db57d3341b63d" name="a55b3ff327f7b3fd8f30db57d3341b63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b3ff327f7b3fd8f30db57d3341b63d">◆ </a></span>HAVE_ENUM_GIMBAL_AXIS_CALIBRATION_REQUIRED</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GIMBAL_AXIS_CALIBRATION_REQUIRED</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="ab33c0a80aaa4f5158e23d1d158092e80" name="ab33c0a80aaa4f5158e23d1d158092e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33c0a80aaa4f5158e23d1d158092e80">◆ </a></span>HAVE_ENUM_GIMBAL_AXIS_CALIBRATION_STATUS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GIMBAL_AXIS_CALIBRATION_STATUS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a57111495df7feac9630ec98f3dcec721" name="a57111495df7feac9630ec98f3dcec721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57111495df7feac9630ec98f3dcec721">◆ </a></span>HAVE_ENUM_GOPRO_BURST_RATE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_BURST_RATE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a77d2b694a0761445e457a8608705bea4" name="a77d2b694a0761445e457a8608705bea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d2b694a0761445e457a8608705bea4">◆ </a></span>HAVE_ENUM_GOPRO_CAPTURE_MODE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_CAPTURE_MODE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a4caa67ab273ba8430842498a46c26cf9" name="a4caa67ab273ba8430842498a46c26cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4caa67ab273ba8430842498a46c26cf9">◆ </a></span>HAVE_ENUM_GOPRO_CHARGING</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_CHARGING</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a8d121ecfe2c9b15e95cb7ca5c4487d31" name="a8d121ecfe2c9b15e95cb7ca5c4487d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d121ecfe2c9b15e95cb7ca5c4487d31">◆ </a></span>HAVE_ENUM_GOPRO_COMMAND</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_COMMAND</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a1bdab0bf5124b82449cc50cfb19fd824" name="a1bdab0bf5124b82449cc50cfb19fd824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bdab0bf5124b82449cc50cfb19fd824">◆ </a></span>HAVE_ENUM_GOPRO_FIELD_OF_VIEW</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_FIELD_OF_VIEW</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a1b095f155c76f4899b7baf3d7918ef62" name="a1b095f155c76f4899b7baf3d7918ef62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b095f155c76f4899b7baf3d7918ef62">◆ </a></span>HAVE_ENUM_GOPRO_FRAME_RATE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_FRAME_RATE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="aea7e0f8ad9a9706d35b83c6f60b41212" name="aea7e0f8ad9a9706d35b83c6f60b41212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7e0f8ad9a9706d35b83c6f60b41212">◆ </a></span>HAVE_ENUM_GOPRO_HEARTBEAT_FLAGS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_HEARTBEAT_FLAGS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a02bd755b34c4e04c4f3e36499c41e23b" name="a02bd755b34c4e04c4f3e36499c41e23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02bd755b34c4e04c4f3e36499c41e23b">◆ </a></span>HAVE_ENUM_GOPRO_HEARTBEAT_STATUS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_HEARTBEAT_STATUS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a374ef069be0850827643062e1792fcd2" name="a374ef069be0850827643062e1792fcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374ef069be0850827643062e1792fcd2">◆ </a></span>HAVE_ENUM_GOPRO_MODEL</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_MODEL</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a359943a4797a404c4aae98e457d06de6" name="a359943a4797a404c4aae98e457d06de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359943a4797a404c4aae98e457d06de6">◆ </a></span>HAVE_ENUM_GOPRO_PHOTO_RESOLUTION</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_PHOTO_RESOLUTION</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a35ed0874ef627e608eb95fd97047f2b1" name="a35ed0874ef627e608eb95fd97047f2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ed0874ef627e608eb95fd97047f2b1">◆ </a></span>HAVE_ENUM_GOPRO_PROTUNE_COLOUR</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_PROTUNE_COLOUR</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a69443c0c12cb166a4011096a53e95fec" name="a69443c0c12cb166a4011096a53e95fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69443c0c12cb166a4011096a53e95fec">◆ </a></span>HAVE_ENUM_GOPRO_PROTUNE_EXPOSURE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_PROTUNE_EXPOSURE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="aa25a9b3fc635337f01f64c6c1b8db77b" name="aa25a9b3fc635337f01f64c6c1b8db77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25a9b3fc635337f01f64c6c1b8db77b">◆ </a></span>HAVE_ENUM_GOPRO_PROTUNE_GAIN</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_PROTUNE_GAIN</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a7384eb4ba36b9f402d444f5df25b1706" name="a7384eb4ba36b9f402d444f5df25b1706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7384eb4ba36b9f402d444f5df25b1706">◆ </a></span>HAVE_ENUM_GOPRO_PROTUNE_SHARPNESS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_PROTUNE_SHARPNESS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a6093c04f53f082fd1f529a9804576135" name="a6093c04f53f082fd1f529a9804576135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6093c04f53f082fd1f529a9804576135">◆ </a></span>HAVE_ENUM_GOPRO_PROTUNE_WHITE_BALANCE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_PROTUNE_WHITE_BALANCE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="aa41cfc388d05c74b72f9bfd3b1144d99" name="aa41cfc388d05c74b72f9bfd3b1144d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41cfc388d05c74b72f9bfd3b1144d99">◆ </a></span>HAVE_ENUM_GOPRO_REQUEST_STATUS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_REQUEST_STATUS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a65ef1c0ce781a22a5bddb133a139ef64" name="a65ef1c0ce781a22a5bddb133a139ef64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ef1c0ce781a22a5bddb133a139ef64">◆ </a></span>HAVE_ENUM_GOPRO_RESOLUTION</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_RESOLUTION</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a1c4582b6b07ca288e6170ccc04a78b3d" name="a1c4582b6b07ca288e6170ccc04a78b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4582b6b07ca288e6170ccc04a78b3d">◆ </a></span>HAVE_ENUM_GOPRO_VIDEO_SETTINGS_FLAGS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GOPRO_VIDEO_SETTINGS_FLAGS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a1322437769728844c1394b8d7a9fead6" name="a1322437769728844c1394b8d7a9fead6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1322437769728844c1394b8d7a9fead6">◆ </a></span>HAVE_ENUM_GRIPPER_ACTIONS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_GRIPPER_ACTIONS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Gripper actions. </p>
+</div>
+</div>
+<a id="aa4cfb5589883f44aea1e1140dc811e9c" name="aa4cfb5589883f44aea1e1140dc811e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4cfb5589883f44aea1e1140dc811e9c">◆ </a></span>HAVE_ENUM_LED_CONTROL_PATTERN</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_LED_CONTROL_PATTERN</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="aafccf9b8de8c4583b2a43c8a73a76fa5" name="aafccf9b8de8c4583b2a43c8a73a76fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafccf9b8de8c4583b2a43c8a73a76fa5">◆ </a></span>HAVE_ENUM_LIMIT_MODULE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_LIMIT_MODULE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a5219813696cec0f0a3144d63c6a7e73e" name="a5219813696cec0f0a3144d63c6a7e73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5219813696cec0f0a3144d63c6a7e73e">◆ </a></span>HAVE_ENUM_LIMITS_STATE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_LIMITS_STATE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a53588323dd7241a86b7182c2e0e9dbd4" name="a53588323dd7241a86b7182c2e0e9dbd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53588323dd7241a86b7182c2e0e9dbd4">◆ </a></span>HAVE_ENUM_MAG_CAL_STATUS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAG_CAL_STATUS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a073ec1e277b3d058a124e241c473d5ee" name="a073ec1e277b3d058a124e241c473d5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073ec1e277b3d058a124e241c473d5ee">◆ </a></span>HAVE_ENUM_MAV_CMD</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_CMD</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Commands to be executed by the MAV. They can be executed on user request, or as part of a mission script. If the action is used in a mission, the parameter mapping to the waypoint/mission message is as follows: Param 1, Param 2, Param 3, Param 4, X: Param 5, Y:Param 6, Z:Param 7. This command list is similar what ARINC 424 is for commercial aircraft: A data format how to interpret waypoint/mission data. </p>
+</div>
+</div>
+<a id="aa5e996f3c7c49da2994b7f68e1e8a76a" name="aa5e996f3c7c49da2994b7f68e1e8a76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e996f3c7c49da2994b7f68e1e8a76a">◆ </a></span>HAVE_ENUM_MAV_MODE_GIMBAL</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_MODE_GIMBAL</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a5f0907ebb3664b8a72f26e28f72a64eb" name="a5f0907ebb3664b8a72f26e28f72a64eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0907ebb3664b8a72f26e28f72a64eb">◆ </a></span>HAVE_ENUM_MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_REMOTE_LOG_DATA_BLOCK_COMMANDS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Special ACK block numbers control activation of dataflash log streaming </p>
+</div>
+</div>
+<a id="a1629e9afa066319fb3baaba266606fe7" name="a1629e9afa066319fb3baaba266606fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1629e9afa066319fb3baaba266606fe7">◆ </a></span>HAVE_ENUM_MAV_REMOTE_LOG_DATA_BLOCK_STATUSES</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_REMOTE_LOG_DATA_BLOCK_STATUSES</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Possible remote log data block statuses </p>
+</div>
+</div>
+<a id="ab194c8cb724fb8b804d5b49d7ddf3ef6" name="ab194c8cb724fb8b804d5b49d7ddf3ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab194c8cb724fb8b804d5b49d7ddf3ef6">◆ </a></span>HAVE_ENUM_PARACHUTE_ACTION</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_PARACHUTE_ACTION</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="af0eba5e8953c0f0c520cc4ae9733a0f9" name="af0eba5e8953c0f0c520cc4ae9733a0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0eba5e8953c0f0c520cc4ae9733a0f9">◆ </a></span>HAVE_ENUM_PID_TUNING_AXIS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_PID_TUNING_AXIS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="af98e7af08d25816fe6b9e8e5180c1011" name="af98e7af08d25816fe6b9e8e5180c1011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98e7af08d25816fe6b9e8e5180c1011">◆ </a></span>HAVE_ENUM_RALLY_FLAGS</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_RALLY_FLAGS</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Flags in RALLY_POINT message </p>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

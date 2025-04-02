@@ -1,0 +1,7 @@
+<map id="convert_to_rosmsg" name="convert_to_rosmsg">
+<area shape="rect" id="Node000001" title="将 pymavlink 库中的一个MAVLink消息对象转换为ROS消息格式。" alt="" coords="308,35,440,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a84bc8fad3b6e3ee2d6531c1201b9df42" title="发送硬件在环仿真的hil_actuator_controls消息（消息定义可见：https://mavlink.io/en/messages/common.html#HIL_ACTUATOR_CONTR..." alt="" coords="73,5,192,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,41,192,28,192,23,292,35"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a84bc8fad3b6e3ee2d6531c1201b9df42" title="发送HIL（硬件在环）控制消息到Pixhawk，这些消息会转化为uORB消息rfly_ctrl" alt="" coords="5,56,260,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,60,260,64,260,59,292,55"/>
+</map>

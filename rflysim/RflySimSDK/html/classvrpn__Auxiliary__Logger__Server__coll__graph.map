@@ -1,0 +1,19 @@
+<map id="vrpn_Auxiliary_Logger_Server" name="vrpn_Auxiliary_Logger_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="254,415,403,457"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Auxiliary__Logger.html" title=" " alt="" coords="254,339,403,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,381,331,415,326,415,326,381"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="270,263,387,289"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,304,331,338,326,338,326,304"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="249,187,407,213"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="331,228,331,262,326,262,326,228"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="186,96,305,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="266,133,289,161,315,184,311,188,285,165,262,137"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="88,47,91,60,98,70,111,79,132,86,186,98,185,103,131,91,109,83,94,74,86,62,83,48"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="207,5,335,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="266,48,252,96,247,95,260,46"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="330,96,495,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="395,136,370,165,345,188,341,184,366,161,391,133"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="385,5,439,32"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="415,48,415,95,410,95,410,48"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="RollSat" name="RollSat">
+<area shape="rect" id="Node000001" title="对滚转角进行幅度限制，将滚转角限制在[&#45;pi/6, pi/6]范围内。" alt="" coords="5,29,70,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="25,29,24,12,29,5,38,3,46,6,51,12,47,15,43,10,37,8,32,10,29,14,30,29"/>
+</map>

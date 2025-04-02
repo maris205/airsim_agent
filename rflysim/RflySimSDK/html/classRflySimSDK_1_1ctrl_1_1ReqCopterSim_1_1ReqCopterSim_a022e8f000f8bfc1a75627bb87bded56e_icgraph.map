@@ -1,0 +1,33 @@
+<map id="isValidIp" name="isValidIp">
+<area shape="rect" id="Node000001" title="检查给定的IP地址是否有效。" alt="" coords="521,335,592,361"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#af2780f533f88d104886b21e69602baaf" title="根据CopterID获取其IP地址。" alt="" coords="386,335,473,361"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,351,474,351,474,345,506,345"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a4e53c2c2f48a4f24cfeb8f02bce9af36" title="请求初始化指定的CopterSim。" alt="" coords="210,208,338,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,327,290,237,294,233,402,323"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a349f88574a88e69138ab1cd4f4d428b2" title="请求更改CopterSim的DLL模型和地图。" alt="" coords="220,461,328,488"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="402,373,294,463,290,459,399,369"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a58140f602a3a10fd9053dac25543f772" title="请求指定的CopterSim切换到GPS显示模式。" alt="" coords="23,5,144,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="260,194,245,160,223,120,195,80,160,46,141,35,143,30,163,42,199,77,227,118,249,158,265,192"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a8cda8c4be87d0efe8cf4dc8d8f79d2d6" title="请求指定的CopterSim切换到xy显示模式。" alt="" coords="27,56,140,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="254,196,214,146,189,120,160,97,138,86,141,81,163,92,192,116,218,142,258,193"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a6327a91322c51ca16bb60cde06b6d0ce" title="请求指定的CopterSim将GPS原点更改为指定的值。" alt="" coords="24,107,143,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="243,201,205,174,160,148,133,136,135,131,163,143,208,169,246,196"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a9a4004e6c8a009eca2bd38c89d2b03b8" title="请求指定的CopterSim将位置更改为指定的GPS值。" alt="" coords="25,157,142,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="205,206,136,187,137,182,207,201"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#adc3fe54f46508551752140a37c88e873" title="请求指定的CopterSim向主机计算机发送数据。" alt="" coords="32,208,135,235"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="194,224,135,224,135,219,194,219"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a16ca1f216db12b50e76043d9134d6e0a" title="请求指定的CopterSim将UDP模式更改为指定的值。" alt="" coords="11,259,156,285"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="207,242,137,261,136,255,205,237"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a74cc604f93fd8e353b368293dd065e58" title="请求指定的CopterSim将xyYaw更改为指定的值。" alt="" coords="18,309,149,336"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="246,246,208,274,163,300,135,311,133,306,160,295,205,269,243,242"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a21d7a1c9435d67453f1830cb56e4753e" title="请求指定的CopterSim将Xyz和RollPitchYaw更改为指定的值。" alt="" coords="5,360,162,387"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="258,250,218,300,192,327,163,350,141,362,138,357,160,346,189,323,214,297,254,246"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#ae0fb448b206ebc2889f3cc504c53c181" title="请求通过索引更改CopterSim的DLL模型。" alt="" coords="22,411,145,437"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="205,459,136,441,137,435,207,454"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a23a25d5e2913be5cc45e8a53d00f78e3" title="请求通过名称更改CopterSim的DLL模型。" alt="" coords="13,461,154,488"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="204,477,154,477,154,472,204,472"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a4abdd798c7d2ab6e879f9e23bbd881b7" title="请求通过索引更改CopterSim的地图。" alt="" coords="17,512,150,539"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="207,495,137,514,136,509,205,490"/>
+<area shape="rect" id="Node000016" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#a066bdb88bd2e8932f363919b217b8033" title="请求通过名称更改CopterSim的地图。" alt="" coords="9,563,158,589"/>
+<area shape="poly" id="edge15_Node000012_Node000016" title=" " alt="" coords="246,500,208,527,163,553,135,565,133,560,160,548,205,522,243,495"/>
+</map>

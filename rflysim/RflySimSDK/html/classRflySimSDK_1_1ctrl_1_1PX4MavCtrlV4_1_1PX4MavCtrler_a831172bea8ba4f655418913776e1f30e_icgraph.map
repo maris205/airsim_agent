@@ -1,0 +1,36 @@
+<map id="sendMavSetParam" name="sendMavSetParam">
+<area shape="rect" id="Node000001" title="向 Pixhawk 发送命令更改其参数" alt="" coords="754,300,887,327"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#addf531f952f5bd26e149d7fa66b16cbe" title="发送指令使飞机起飞" alt="" coords="534,5,655,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="813,285,803,233,784,168,752,102,730,72,705,46,681,32,654,24,656,19,683,27,708,42,734,69,756,99,789,166,808,232,818,284"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="551,56,638,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="810,286,797,243,776,192,746,140,727,117,705,97,673,81,638,73,639,68,675,76,708,92,730,113,750,137,781,189,802,241,815,284"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a6c1cc012ad8e1158a31b05c16fc7e16f" title="初始化Offboard模式并发送初始命令" alt="" coords="483,107,706,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="804,288,765,225,737,192,705,164,685,152,688,148,708,159,741,188,769,222,808,285"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8e46a45fbec1a107548def62999b1994" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="548,173,642,200"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="796,290,757,251,732,231,705,214,674,202,642,195,643,189,675,197,708,210,735,227,760,247,800,286"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#af04f4988d61436fa85ae2c0046784177" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="540,224,650,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="778,295,705,265,650,250,651,245,707,260,780,290"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ad7bbe8d48aa560565aa63b39edd37e77" title="发送命令进入offboard模式，消息发送频率为30HZ" alt="" coords="542,275,647,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="739,307,647,296,648,291,739,302"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a04ece5591e0d1823e3f2f5fcd2142d98" title="初始化遥控器发送循环" alt="" coords="536,325,653,352"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="739,325,654,335,653,330,739,320"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac682eb48ec96857f15c60a50fe57c26b" title="发送设定多旋翼飞行器的最大速度" alt="" coords="531,376,658,403"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="780,336,707,367,659,380,658,375,705,361,778,331"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2b9fb60ce7dcd3b4a34fa97917227e1" title="发送指定改变飞机的巡航半径" alt="" coords="530,427,660,453"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="800,340,760,380,735,400,707,417,661,433,659,428,705,412,732,396,757,376,796,336"/>
+<area shape="rect" id="Node000014" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ab2439e1ba892ef9bfc5d404483d6df32" title="发送指定改变飞机的巡航速度" alt="" coords="532,477,658,504"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="809,342,770,406,741,439,708,468,684,479,659,487,657,482,682,474,705,463,738,436,766,403,804,339"/>
+<area shape="rect" id="Node000016" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7d1bf2f78e1ba0ef5091ef993d6a3df8" title="发送指定改变飞机的地面速度" alt="" coords="530,528,660,555"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="814,342,800,382,778,430,748,478,708,518,685,531,661,538,659,533,683,526,705,514,744,475,774,427,795,380,809,341"/>
+<area shape="rect" id="Node000017" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#abb9b7198036c12a8ca3fc8e833822cff" title="发送指定使飞机起飞" alt="" coords="533,579,656,605"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="818,342,807,392,786,453,754,516,733,544,708,569,684,583,657,591,656,586,682,578,705,565,729,541,750,513,781,451,801,390,812,341"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#ad3592187e834f5e4fd42b1f2138f5ae7" title="接收并处理来自Mavlink的控制数据循环线程。" alt="" coords="244,444,430,487"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="514,451,430,459,430,454,513,445"/>
+<area shape="rect" id="Node000013" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a8d8c0bf267e64ca9f00984fedcf154fd" title=" " alt="" coords="239,377,435,420"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="513,430,435,417,436,412,514,424"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title="初始化简化模型（质点模型）的运行环境，包括起始状态、目标IP地址和GPS原点设定。 启动模型更新循环与Mavlink数据监听线程。" alt="" coords="5,444,191,487"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="228,468,191,468,191,463,228,463"/>
+<area shape="poly" id="edge14_Node000014_Node000011" title=" " alt="" coords="516,486,430,477,430,472,516,480"/>
+<area shape="rect" id="Node000015" href="$classRflySimSDK_1_1ctrl_1_1api_1_1Ctrl.html#a94d9c919ea2f9e1ff65fa25d3f8f1b79" title=" " alt="" coords="239,511,435,553"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="516,506,436,519,435,514,516,501"/>
+</map>

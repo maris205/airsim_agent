@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: phm/DeBug.py 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_dc0e21c986d214dbf5864782b8c2b016.html">phm</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#func-members">函数</a> |
+<a href="#var-members">变量</a> </div>
+<div class="headertitle"><div class="title">DeBug.py 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>该脚本用于收集和诊断RflySim平台的运行环境和状态。脚本提供了一系列的函数，用于检测操作系统信息、RflySim安装状态、依赖环境、网络环境等，并将结果写入文件。 <a class="anchor" id="DeBug接口库文件"></a>
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afbaf6c6a180f485396022758dd027bd7" id="r_afbaf6c6a180f485396022758dd027bd7"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afbaf6c6a180f485396022758dd027bd7">write_to_file</a> (content, target_directory)</td></tr>
+<tr class="memdesc:afbaf6c6a180f485396022758dd027bd7"><td class="mdescLeft"> </td><td class="mdescRight">将给定内容写入指定目录的文件中。  <br/></td></tr>
+<tr class="separator:afbaf6c6a180f485396022758dd027bd7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e3c809ce5403511c12cfb4684910036" id="r_a2e3c809ce5403511c12cfb4684910036"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e3c809ce5403511c12cfb4684910036">get_rfly_ver</a> (directory)</td></tr>
+<tr class="memdesc:a2e3c809ce5403511c12cfb4684910036"><td class="mdescLeft"> </td><td class="mdescRight">获取RflySim工具链的小版本号（发布日期）。  <br/></td></tr>
+<tr class="separator:a2e3c809ce5403511c12cfb4684910036"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4caf2f9785c1dc95d0ae1b2fa146d6a9" id="r_a4caf2f9785c1dc95d0ae1b2fa146d6a9"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4caf2f9785c1dc95d0ae1b2fa146d6a9">get_local_ips</a> ()</td></tr>
+<tr class="memdesc:a4caf2f9785c1dc95d0ae1b2fa146d6a9"><td class="mdescLeft"> </td><td class="mdescRight">获取本机的所有本地IP地址。  <br/></td></tr>
+<tr class="separator:a4caf2f9785c1dc95d0ae1b2fa146d6a9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad1afa96e0d49f710493f991c84d002b6" id="r_ad1afa96e0d49f710493f991c84d002b6"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1afa96e0d49f710493f991c84d002b6">ping_all_ips</a> (ips)</td></tr>
+<tr class="memdesc:ad1afa96e0d49f710493f991c84d002b6"><td class="mdescLeft"> </td><td class="mdescRight">检查IP地址间的连通性。  <br/></td></tr>
+<tr class="separator:ad1afa96e0d49f710493f991c84d002b6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7241d7516ed7eacc1ffde206038132fd" id="r_a7241d7516ed7eacc1ffde206038132fd"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7241d7516ed7eacc1ffde206038132fd">get_ipconfig_output</a> ()</td></tr>
+<tr class="memdesc:a7241d7516ed7eacc1ffde206038132fd"><td class="mdescLeft"> </td><td class="mdescRight">运行ipconfig命令并获取网络配置输出。  <br/></td></tr>
+<tr class="separator:a7241d7516ed7eacc1ffde206038132fd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab545c114b922564c0b84f955fc440e77" id="r_ab545c114b922564c0b84f955fc440e77"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ab545c114b922564c0b84f955fc440e77">get_wsl_info</a> ()</td></tr>
+<tr class="memdesc:ab545c114b922564c0b84f955fc440e77"><td class="mdescLeft"> </td><td class="mdescRight">运行wsl命令并获取WSL状态信息。  <br/></td></tr>
+<tr class="separator:ab545c114b922564c0b84f955fc440e77"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeeda46e30ca341165ff228e155698f4f" id="r_aeeda46e30ca341165ff228e155698f4f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeda46e30ca341165ff228e155698f4f">get_installed_software</a> ()</td></tr>
+<tr class="memdesc:aeeda46e30ca341165ff228e155698f4f"><td class="mdescLeft"> </td><td class="mdescRight">检测电脑中安装的所有软件。  <br/></td></tr>
+<tr class="separator:aeeda46e30ca341165ff228e155698f4f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac6492d61a395aea52cbed73bed124258" id="r_ac6492d61a395aea52cbed73bed124258"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6492d61a395aea52cbed73bed124258">find_uav_drive</a> (installed_software, SoftWareName)</td></tr>
+<tr class="memdesc:ac6492d61a395aea52cbed73bed124258"><td class="mdescLeft"> </td><td class="mdescRight">在已安装软件列表中寻找特定软件。  <br/></td></tr>
+<tr class="separator:ac6492d61a395aea52cbed73bed124258"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3d8ccdea65ba98e7e4c3a510dc9b1cb2" id="r_a3d8ccdea65ba98e7e4c3a510dc9b1cb2"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8ccdea65ba98e7e4c3a510dc9b1cb2">get_documents_folder</a> ()</td></tr>
+<tr class="memdesc:a3d8ccdea65ba98e7e4c3a510dc9b1cb2"><td class="mdescLeft"> </td><td class="mdescRight">获取"文档"文件夹的位置。  <br/></td></tr>
+<tr class="separator:a3d8ccdea65ba98e7e4c3a510dc9b1cb2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa506f4424627a168041be59d3584d7d3" id="r_aa506f4424627a168041be59d3584d7d3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa506f4424627a168041be59d3584d7d3">get_gpu_info</a> ()</td></tr>
+<tr class="memdesc:aa506f4424627a168041be59d3584d7d3"><td class="mdescLeft"> </td><td class="mdescRight">获取显卡信息。  <br/></td></tr>
+<tr class="separator:aa506f4424627a168041be59d3584d7d3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afcab20e4428f4ed367b475477a14400b" id="r_afcab20e4428f4ed367b475477a14400b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#afcab20e4428f4ed367b475477a14400b">Os_Info_Get</a> ()</td></tr>
+<tr class="memdesc:afcab20e4428f4ed367b475477a14400b"><td class="mdescLeft"> </td><td class="mdescRight">收集电脑系统信息。  <br/></td></tr>
+<tr class="separator:afcab20e4428f4ed367b475477a14400b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7596acfb300c2b275cfed021e6f000cb" id="r_a7596acfb300c2b275cfed021e6f000cb"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a7596acfb300c2b275cfed021e6f000cb">Rfly_Info_Get</a> ()</td></tr>
+<tr class="memdesc:a7596acfb300c2b275cfed021e6f000cb"><td class="mdescLeft"> </td><td class="mdescRight">收集RflySim平台信息。  <br/></td></tr>
+<tr class="separator:a7596acfb300c2b275cfed021e6f000cb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abda4cbc95aeb265124b9754cc8dd984f" id="r_abda4cbc95aeb265124b9754cc8dd984f"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#abda4cbc95aeb265124b9754cc8dd984f">RflyEnv_Info_Get</a> ()</td></tr>
+<tr class="memdesc:abda4cbc95aeb265124b9754cc8dd984f"><td class="mdescLeft"> </td><td class="mdescRight">收集RflySim平台依赖环境信息。  <br/></td></tr>
+<tr class="separator:abda4cbc95aeb265124b9754cc8dd984f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af4f0569fecbe3026550196d6d0de1b9d" id="r_af4f0569fecbe3026550196d6d0de1b9d"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#af4f0569fecbe3026550196d6d0de1b9d">NetEnv_Info_Get</a> ()</td></tr>
+<tr class="memdesc:af4f0569fecbe3026550196d6d0de1b9d"><td class="mdescLeft"> </td><td class="mdescRight">收集网络环境信息。  <br/></td></tr>
+<tr class="separator:af4f0569fecbe3026550196d6d0de1b9d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9392c92d5147da21c373a6e85f2836d5" id="r_a9392c92d5147da21c373a6e85f2836d5"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9392c92d5147da21c373a6e85f2836d5">ComToTxt</a> ()</td></tr>
+<tr class="memdesc:a9392c92d5147da21c373a6e85f2836d5"><td class="mdescLeft"> </td><td class="mdescRight">组合所有诊断信息并转换为文本。  <br/></td></tr>
+<tr class="separator:a9392c92d5147da21c373a6e85f2836d5"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a6858851eee0e05f318897984757b59dc" id="r_a6858851eee0e05f318897984757b59dc"><td align="right" class="memItemLeft" valign="top"><a id="a6858851eee0e05f318897984757b59dc" name="a6858851eee0e05f318897984757b59dc"></a>
+ </td><td class="memItemRight" valign="bottom"><b>content</b> = <a class="el" href="#a9392c92d5147da21c373a6e85f2836d5">ComToTxt</a>()</td></tr>
+<tr class="separator:a6858851eee0e05f318897984757b59dc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a212e47625f1e1bb6c98975ec01ef6f11" id="r_a212e47625f1e1bb6c98975ec01ef6f11"><td align="right" class="memItemLeft" valign="top"><a id="a212e47625f1e1bb6c98975ec01ef6f11" name="a212e47625f1e1bb6c98975ec01ef6f11"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rfly_info</b></td></tr>
+<tr class="separator:a212e47625f1e1bb6c98975ec01ef6f11"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6319dea777716b852b23c80fdfcf9bbe" id="r_a6319dea777716b852b23c80fdfcf9bbe"><td align="right" class="memItemLeft" valign="top"><a id="a6319dea777716b852b23c80fdfcf9bbe" name="a6319dea777716b852b23c80fdfcf9bbe"></a>
+ </td><td class="memItemRight" valign="bottom"><b>rfly_dir</b></td></tr>
+<tr class="separator:a6319dea777716b852b23c80fdfcf9bbe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9c2b7183feb051a59cc527da5b81d12d" id="r_a9c2b7183feb051a59cc527da5b81d12d"><td align="right" class="memItemLeft" valign="top"><a id="a9c2b7183feb051a59cc527da5b81d12d" name="a9c2b7183feb051a59cc527da5b81d12d"></a>
+ </td><td class="memItemRight" valign="bottom"><b>build_toolchain</b></td></tr>
+<tr class="separator:a9c2b7183feb051a59cc527da5b81d12d"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该脚本用于收集和诊断RflySim平台的运行环境和状态。脚本提供了一系列的函数，用于检测操作系统信息、RflySim安装状态、依赖环境、网络环境等，并将结果写入文件。 <a class="anchor" id="DeBug接口库文件"></a></p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a9392c92d5147da21c373a6e85f2836d5" name="a9392c92d5147da21c373a6e85f2836d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9392c92d5147da21c373a6e85f2836d5">◆ </a></span>ComToTxt()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ComToTxt </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>组合所有诊断信息并转换为文本。 </p>
+<ul>
+<li><a class="anchor" id="ComToTxt"></a> <dl class="section return"><dt>返回</dt><dd>返回包含所有诊断信息的字符串。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="ac6492d61a395aea52cbed73bed124258" name="ac6492d61a395aea52cbed73bed124258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6492d61a395aea52cbed73bed124258">◆ </a></span>find_uav_drive()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">find_uav_drive </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>installed_software</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>SoftWareName</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>在已安装软件列表中寻找特定软件。 </p>
+<ul>
+<li><a class="anchor" id="find_uav_drive"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">installed_software</td><td>已安装软件列表。 </td></tr>
+<tr><td class="paramname">SoftWareName</td><td>要寻找的软件名称。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回包含特定软件名称的软件列表。 寻找特定的某个软件 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a3d8ccdea65ba98e7e4c3a510dc9b1cb2" name="a3d8ccdea65ba98e7e4c3a510dc9b1cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8ccdea65ba98e7e4c3a510dc9b1cb2">◆ </a></span>get_documents_folder()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_documents_folder </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取"文档"文件夹的位置。 </p>
+<ul>
+<li><a class="anchor" id="get_documents_folder"></a> <dl class="section return"><dt>返回</dt><dd>返回"文档"文件夹的路径。 获取"文档"文件夹的位置。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="aa506f4424627a168041be59d3584d7d3" name="aa506f4424627a168041be59d3584d7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa506f4424627a168041be59d3584d7d3">◆ </a></span>get_gpu_info()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_gpu_info </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取显卡信息。 </p>
+<ul>
+<li><a class="anchor" id="get_gpu_info"></a> <dl class="section return"><dt>返回</dt><dd>返回包含显卡信息的字符串。 获取显卡信息 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="aeeda46e30ca341165ff228e155698f4f" name="aeeda46e30ca341165ff228e155698f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeda46e30ca341165ff228e155698f4f">◆ </a></span>get_installed_software()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_installed_software </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检测电脑中安装的所有软件。 </p>
+<ul>
+<li><a class="anchor" id="get_installed_software"></a> <dl class="section return"><dt>返回</dt><dd>返回包含安装软件名称和版本的列表。 检测电脑中所有的软件 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a7241d7516ed7eacc1ffde206038132fd" name="a7241d7516ed7eacc1ffde206038132fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7241d7516ed7eacc1ffde206038132fd">◆ </a></span>get_ipconfig_output()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_ipconfig_output </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>运行ipconfig命令并获取网络配置输出。 </p>
+<ul>
+<li><a class="anchor" id="get_ipconfig_output"></a> <dl class="section return"><dt>返回</dt><dd>返回包含网络配置信息的列表。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a4caf2f9785c1dc95d0ae1b2fa146d6a9" name="a4caf2f9785c1dc95d0ae1b2fa146d6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4caf2f9785c1dc95d0ae1b2fa146d6a9">◆ </a></span>get_local_ips()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_local_ips </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取本机的所有本地IP地址。 </p>
+<ul>
+<li><a class="anchor" id="get_local_ips"></a> <dl class="section return"><dt>返回</dt><dd>返回包含本机所有本地IP地址的列表。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a2e3c809ce5403511c12cfb4684910036" name="a2e3c809ce5403511c12cfb4684910036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3c809ce5403511c12cfb4684910036">◆ </a></span>get_rfly_ver()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_rfly_ver </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>directory</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取RflySim工具链的小版本号（发布日期）。 </p>
+<ul>
+<li><a class="anchor" id="get_rfly_ver"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">directory</td><td>RflySim安装目录。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回RflySim工具链的小版本号。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="ab545c114b922564c0b84f955fc440e77" name="ab545c114b922564c0b84f955fc440e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab545c114b922564c0b84f955fc440e77">◆ </a></span>get_wsl_info()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">get_wsl_info </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>运行wsl命令并获取WSL状态信息。 </p>
+<ul>
+<li><a class="anchor" id="get_wsl_info"></a> <dl class="section return"><dt>返回</dt><dd>返回包含WSL状态信息的列表。 运行cmd命令检测wsl状态信息 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="af4f0569fecbe3026550196d6d0de1b9d" name="af4f0569fecbe3026550196d6d0de1b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f0569fecbe3026550196d6d0de1b9d">◆ </a></span>NetEnv_Info_Get()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">NetEnv_Info_Get </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>收集网络环境信息。 </p>
+<ul>
+<li><a class="anchor" id="NetEnv_Info_Get"></a> <dl class="section return"><dt>返回</dt><dd>返回包含网络环境信息的字符串。 4.网络环境检测 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="afcab20e4428f4ed367b475477a14400b" name="afcab20e4428f4ed367b475477a14400b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcab20e4428f4ed367b475477a14400b">◆ </a></span>Os_Info_Get()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Os_Info_Get </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>收集电脑系统信息。 </p>
+<ul>
+<li><a class="anchor" id="Os_Info_Get"></a> <dl class="section return"><dt>返回</dt><dd>返回包含操作系统信息的字符串。 1.电脑系统检测 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="ad1afa96e0d49f710493f991c84d002b6" name="ad1afa96e0d49f710493f991c84d002b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1afa96e0d49f710493f991c84d002b6">◆ </a></span>ping_all_ips()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">ping_all_ips </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>ips</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>检查IP地址间的连通性。 </p>
+<ul>
+<li><a class="anchor" id="ping_all_ips"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">ips</td><td>本地IP地址列表。 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回无法ping通的IP地址对列表。 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a7596acfb300c2b275cfed021e6f000cb" name="a7596acfb300c2b275cfed021e6f000cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7596acfb300c2b275cfed021e6f000cb">◆ </a></span>Rfly_Info_Get()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">Rfly_Info_Get </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>收集RflySim平台信息。 </p>
+<ul>
+<li><a class="anchor" id="Rfly_Info_Get"></a> <dl class="section return"><dt>返回</dt><dd>返回包含RflySim平台信息的元组。 2.RflySim平台检测 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="abda4cbc95aeb265124b9754cc8dd984f" name="abda4cbc95aeb265124b9754cc8dd984f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda4cbc95aeb265124b9754cc8dd984f">◆ </a></span>RflyEnv_Info_Get()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">RflyEnv_Info_Get </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>收集RflySim平台依赖环境信息。 </p>
+<ul>
+<li><a class="anchor" id="RflyEnv_Info_Get"></a> <dl class="section return"><dt>返回</dt><dd>返回包含RflySim依赖环境信息的字符串。 3.RflySim平台依赖环境检测 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="afbaf6c6a180f485396022758dd027bd7" name="afbaf6c6a180f485396022758dd027bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbaf6c6a180f485396022758dd027bd7">◆ </a></span>write_to_file()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">write_to_file </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>content</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>target_directory</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>将给定内容写入指定目录的文件中。 </p>
+<ul>
+<li><a class="anchor" id="write_to_file"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">content</td><td>要写入文件的内容。 </td></tr>
+<tr><td class="paramname">target_directory</td><td>目标目录路径。 </td></tr>
+</table>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

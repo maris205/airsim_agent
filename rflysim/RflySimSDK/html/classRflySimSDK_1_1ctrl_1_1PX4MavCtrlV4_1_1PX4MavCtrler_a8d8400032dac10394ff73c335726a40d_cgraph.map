@@ -1,0 +1,13 @@
+<map id="sendMavLand" name="sendMavLand">
+<area shape="rect" id="Node000001" title="发送指令使飞机降落到指定位置" alt="" coords="5,56,108,83"/>
+<area shape="rect" id="Node000002" href="$classRflyMavlink.html#ab1205d651a5b3851758de62e94690be3" title=" " alt="" coords="157,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,54,155,41,187,34,188,39,156,47,109,59"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a3b674c6bf3ce93f9a964070e6fd21551" title="将 MAVLink 的长指令消息发送到 Pixhawk 系统" alt="" coords="196,56,328,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,67,180,67,180,72,108,72"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3b674c6bf3ce93f9a964070e6fd21551" title="发送长命令到飞行控制器" alt="" coords="156,107,368,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="101,81,156,99,155,104,99,86"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#ac9815dd5305413ed032cd5db6d07aefa" title="发送数据" alt="" coords="416,56,487,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="329,67,400,67,400,72,329,72"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="535,56,649,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="488,67,520,67,520,72,488,72"/>
+</map>

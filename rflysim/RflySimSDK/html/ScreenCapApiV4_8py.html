@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vision/ScreenCapApiV4.py 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_094696d64bf9042e34c4ff3938c71239.html">vision</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#nested-classes">类</a> |
+<a href="#func-members">函数</a> |
+<a href="#var-members">变量</a> </div>
+<div class="headertitle"><div class="title">ScreenCapApiV4.py 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>这是用于捕获和处理由 Unreal Engine 4.23 及以上版本生成的 RflySim3D 窗口的屏幕截图，并转换成 OpenCV 图像格式的模块。 <a class="anchor" id="ScreenCapApiV4接口库文件"></a> 对应例程链接见  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1vision_1_1ScreenCapApiV4_1_1WinInfo.html">WinInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">WinInfo结构体类。存储窗口句柄及其相关信息的类，包括窗口的宽度、高度、设备上下文 (DC) 等  <a href="classRflySimSDK_1_1vision_1_1ScreenCapApiV4_1_1WinInfo.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a407aeae5d2199a8857e3dbec8e8eb37b" id="r_a407aeae5d2199a8857e3dbec8e8eb37b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a407aeae5d2199a8857e3dbec8e8eb37b">window_enumeration_handler</a> (hwnd, window_hwnds)</td></tr>
+<tr class="memdesc:a407aeae5d2199a8857e3dbec8e8eb37b"><td class="mdescLeft"> </td><td class="mdescRight">用于获取所有类名为 "UnrealWindow" 的窗口句柄，并将其添加到 window_hwnds 列表中  <br/></td></tr>
+<tr class="separator:a407aeae5d2199a8857e3dbec8e8eb37b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a803cb43bacf0e9709e7a3c7ab019b830" id="r_a803cb43bacf0e9709e7a3c7ab019b830"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a803cb43bacf0e9709e7a3c7ab019b830">getWndHandls</a> ()</td></tr>
+<tr class="memdesc:a803cb43bacf0e9709e7a3c7ab019b830"><td class="mdescLeft"> </td><td class="mdescRight">获取所有 RflySim3D 窗口的句柄并按顺序排列。返回这些窗口的句柄列表  <br/></td></tr>
+<tr class="separator:a803cb43bacf0e9709e7a3c7ab019b830"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8af281b93971daf1ee0b1ad247a51323" id="r_a8af281b93971daf1ee0b1ad247a51323"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a8af281b93971daf1ee0b1ad247a51323">getHwndInfo</a> (hWnd)</td></tr>
+<tr class="memdesc:a8af281b93971daf1ee0b1ad247a51323"><td class="mdescLeft"> </td><td class="mdescRight">获取指定窗口句柄的详细信息，并返回一个 <a class="el" href="classRflySimSDK_1_1vision_1_1ScreenCapApiV4_1_1WinInfo.html" title="WinInfo结构体类。存储窗口句柄及其相关信息的类，包括窗口的宽度、高度、设备上下文 (DC) 等">WinInfo</a> 对象  <br/></td></tr>
+<tr class="separator:a8af281b93971daf1ee0b1ad247a51323"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4f15e2624497e23b8b4699e61518ad0b" id="r_a4f15e2624497e23b8b4699e61518ad0b"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f15e2624497e23b8b4699e61518ad0b">getCVImg</a> (wInfo)</td></tr>
+<tr class="memdesc:a4f15e2624497e23b8b4699e61518ad0b"><td class="mdescLeft"> </td><td class="mdescRight">从 RflySim3D 窗口的客户区获取图像，并返回 OpenCV 格式的图像  <br/></td></tr>
+<tr class="separator:a4f15e2624497e23b8b4699e61518ad0b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa67be630529171be30a2be9f8dd6fd61" id="r_aa67be630529171be30a2be9f8dd6fd61"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#aa67be630529171be30a2be9f8dd6fd61">getCVImgList</a> (wInfoList)</td></tr>
+<tr class="memdesc:aa67be630529171be30a2be9f8dd6fd61"><td class="mdescLeft"> </td><td class="mdescRight">接收一个窗口信息列表 wInfoList，然后根据是否是新版本的UE4，  <br/></td></tr>
+<tr class="separator:aa67be630529171be30a2be9f8dd6fd61"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d265d8b58f4aeb2ffb02bf22cc91486" id="r_a1d265d8b58f4aeb2ffb02bf22cc91486"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d265d8b58f4aeb2ffb02bf22cc91486">moveWd</a> (hwd, x=0, y=0, topMost=False)</td></tr>
+<tr class="memdesc:a1d265d8b58f4aeb2ffb02bf22cc91486"><td class="mdescLeft"> </td><td class="mdescRight">用于移动窗口到指定位置并设置是否始终置顶  <br/></td></tr>
+<tr class="separator:a1d265d8b58f4aeb2ffb02bf22cc91486"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae26e85cf4ff231f5405d285c67fe7c90" id="r_ae26e85cf4ff231f5405d285c67fe7c90"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="#ae26e85cf4ff231f5405d285c67fe7c90">clearHWND</a> (wInfo)</td></tr>
+<tr class="memdesc:ae26e85cf4ff231f5405d285c67fe7c90"><td class="mdescLeft"> </td><td class="mdescRight">用于清理和释放窗口对象占用的资源  <br/></td></tr>
+<tr class="separator:ae26e85cf4ff231f5405d285c67fe7c90"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a393eaa98a96ffddf0a54a0bc913c056b" id="r_a393eaa98a96ffddf0a54a0bc913c056b"><td align="right" class="memItemLeft" valign="top"><a id="a393eaa98a96ffddf0a54a0bc913c056b" name="a393eaa98a96ffddf0a54a0bc913c056b"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>isNewUE</b> = True</td></tr>
+<tr class="separator:a393eaa98a96ffddf0a54a0bc913c056b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1aabac6d068eef6a7bad3fdf50a05cc8" id="r_a1aabac6d068eef6a7bad3fdf50a05cc8"><td align="right" class="memItemLeft" valign="top"><a id="a1aabac6d068eef6a7bad3fdf50a05cc8" name="a1aabac6d068eef6a7bad3fdf50a05cc8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>d</b> = d3dshot.create(capture_output="numpy",frame_buffer_size=1)</td></tr>
+<tr class="separator:a1aabac6d068eef6a7bad3fdf50a05cc8"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>这是用于捕获和处理由 Unreal Engine 4.23 及以上版本生成的 RflySim3D 窗口的屏幕截图，并转换成 OpenCV 图像格式的模块。 <a class="anchor" id="ScreenCapApiV4接口库文件"></a> 对应例程链接见 </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ae26e85cf4ff231f5405d285c67fe7c90" name="ae26e85cf4ff231f5405d285c67fe7c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26e85cf4ff231f5405d285c67fe7c90">◆ </a></span>clearHWND()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">clearHWND </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>wInfo</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于清理和释放窗口对象占用的资源 </p>
+<ul>
+<li><a class="anchor" id="clearHWND"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">wInfo</td><td>窗口信息对象 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a4f15e2624497e23b8b4699e61518ad0b" name="a4f15e2624497e23b8b4699e61518ad0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f15e2624497e23b8b4699e61518ad0b">◆ </a></span>getCVImg()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getCVImg </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>wInfo</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>从 RflySim3D 窗口的客户区获取图像，并返回 OpenCV 格式的图像 </p>
+<ul>
+<li><a class="anchor" id="getCVImg"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">wInfo</td><td>窗口信息对象 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OpenCV 格式的图像 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="aa67be630529171be30a2be9f8dd6fd61" name="aa67be630529171be30a2be9f8dd6fd61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67be630529171be30a2be9f8dd6fd61">◆ </a></span>getCVImgList()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getCVImgList </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>wInfoList</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>接收一个窗口信息列表 wInfoList，然后根据是否是新版本的UE4， </p>
+<ul>
+<li><a class="anchor" id="getCVImgList"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">wInfoList</td><td>窗口信息列表 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>包含每个窗口图像的列表 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a8af281b93971daf1ee0b1ad247a51323" name="a8af281b93971daf1ee0b1ad247a51323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af281b93971daf1ee0b1ad247a51323">◆ </a></span>getHwndInfo()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getHwndInfo </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>hWnd</em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取指定窗口句柄的详细信息，并返回一个 WinInfo 对象 </p>
+<h1><a class="anchor" id="autotoc_md563"></a>
+-</h1>
+<dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">hWnd</td><td>窗口句柄 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>包含窗口句柄，窗宽、窗高信息的WinInfo对象 </dd></dl>
+</div>
+</div>
+<a id="a803cb43bacf0e9709e7a3c7ab019b830" name="a803cb43bacf0e9709e7a3c7ab019b830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803cb43bacf0e9709e7a3c7ab019b830">◆ </a></span>getWndHandls()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">getWndHandls </td>
+<td>(</td>
+<td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>获取所有 RflySim3D 窗口的句柄并按顺序排列。返回这些窗口的句柄列表 </p>
+</div>
+</div>
+<a id="a1d265d8b58f4aeb2ffb02bf22cc91486" name="a1d265d8b58f4aeb2ffb02bf22cc91486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d265d8b58f4aeb2ffb02bf22cc91486">◆ </a></span>moveWd()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">moveWd </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>hwd</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>topMost</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于移动窗口到指定位置并设置是否始终置顶 </p>
+<ul>
+<li><a class="anchor" id="moveWd"></a><dl class="params"><dt>参数</dt><dd>
+<table class="params">
+<tr><td class="paramname">hwd</td><td>窗口句柄 </td></tr>
+<tr><td class="paramname">x（默认值为</td><td>0） 窗口左上角x坐标 </td></tr>
+<tr><td class="paramname">y（默认值为</td><td>0） 窗口左上角y坐标 </td></tr>
+<tr><td class="paramname">topMost（默认值为</td><td>False） 是否始终置顶 </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>窗口右下角坐标 </dd></dl>
+</li>
+</ul>
+</div>
+</div>
+<a id="a407aeae5d2199a8857e3dbec8e8eb37b" name="a407aeae5d2199a8857e3dbec8e8eb37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407aeae5d2199a8857e3dbec8e8eb37b">◆ </a></span>window_enumeration_handler()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">window_enumeration_handler </td>
+<td>(</td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>hwnd</em></span>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"></td> <td class="paramname"><span class="paramname"><em>window_hwnds</em></span> )</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>用于获取所有类名为 "UnrealWindow" 的窗口句柄，并将其添加到 window_hwnds 列表中 </p>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

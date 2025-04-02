@@ -1,0 +1,5 @@
+<map id="SendBufTrue" name="SendBufTrue">
+<area shape="rect" id="Node000001" title="发送数据" alt="" coords="5,5,103,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a21d5a8085840fe831a90a679270c0c61" title="发送数据到redis" alt="" coords="151,5,264,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,16,135,16,135,21,103,21"/>
+</map>

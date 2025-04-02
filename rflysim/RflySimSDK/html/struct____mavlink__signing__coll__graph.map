@@ -1,0 +1,7 @@
+<map id="__mavlink_signing" name="__mavlink_signing">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,203,134,229"/>
+<area shape="rect" id="Node000002" href="$struct____mavlink__status.html" title=" " alt="" coords="8,112,131,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,154,72,202,67,202,67,154"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="42,5,97,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,47,72,112,67,112,67,47"/>
+</map>

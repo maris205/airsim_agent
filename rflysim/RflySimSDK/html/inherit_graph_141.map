@@ -1,0 +1,17 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,157,103,184"/>
+<area shape="rect" id="Node000001" href="$structvrpn__SerialPort_1_1CloseFailure.html" title=" " alt="" coords="151,5,342,32"/>
+<area shape="poly" id="edge16_Node000000_Node000001" title=" " alt="" coords="67,142,99,91,122,64,149,42,172,30,174,35,152,46,126,68,104,94,71,145"/>
+<area shape="rect" id="Node000002" href="$structvrpn__SerialPort_1_1DrainFailure.html" title=" " alt="" coords="152,56,340,83"/>
+<area shape="poly" id="edge17_Node000000_Node000002" title=" " alt="" coords="78,145,110,117,149,92,178,81,180,86,152,97,114,122,81,149"/>
+<area shape="rect" id="Node000003" href="$structvrpn__SerialPort_1_1FlushFailure.html" title=" " alt="" coords="152,107,341,133"/>
+<area shape="poly" id="edge18_Node000000_Node000003" title=" " alt="" coords="117,151,192,131,194,137,119,157"/>
+<area shape="rect" id="Node000004" href="$structvrpn__SerialPort_1_1OpenFailure.html" title=" " alt="" coords="152,157,340,184"/>
+<area shape="poly" id="edge19_Node000000_Node000004" title=" " alt="" coords="118,168,152,168,152,173,118,173"/>
+<area shape="rect" id="Node000005" href="$structvrpn__SerialPort_1_1RTSFailure.html" title=" " alt="" coords="155,208,338,235"/>
+<area shape="poly" id="edge20_Node000000_Node000005" title=" " alt="" coords="119,185,194,205,192,210,117,190"/>
+<area shape="rect" id="Node000006" href="$structvrpn__SerialPort_1_1ReadFailure.html" title=" " alt="" coords="152,259,340,285"/>
+<area shape="poly" id="edge21_Node000000_Node000006" title=" " alt="" coords="81,193,114,220,152,244,180,256,178,261,149,249,110,224,78,197"/>
+<area shape="rect" id="Node000007" href="$structvrpn__SerialPort_1_1WriteFailure.html" title=" " alt="" coords="153,309,340,336"/>
+<area shape="poly" id="edge22_Node000000_Node000007" title=" " alt="" coords="71,197,104,247,126,273,152,295,174,306,172,311,149,300,122,277,99,251,67,199"/>
+</map>

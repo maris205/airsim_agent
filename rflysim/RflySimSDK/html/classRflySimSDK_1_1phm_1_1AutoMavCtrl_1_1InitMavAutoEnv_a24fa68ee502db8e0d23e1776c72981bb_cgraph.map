@@ -1,0 +1,27 @@
+<map id="InitMAVEnv" name="InitMAVEnv">
+<area shape="rect" id="Node000001" title="初始化无人机环境的方法。" alt="" coords="5,132,96,159"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac222accaa3a1e4e358704ce359e9b26e" title="配置多无人机环境的方法。" alt="" coords="144,56,236,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,129,149,88,152,93,78,134"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#add9872209c31399a9eb53d461244823d" title="该方法根据传入的配置信息设置无人机的参数和属性。" alt="" coords="164,208,216,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="78,157,152,198,149,203,76,162"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#a33f010a37ae59541d82af34f4f31b0dd" title="设置地图的方法。" alt="" coords="162,107,218,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="96,134,146,125,147,130,97,140"/>
+<area shape="rect" id="Node000011" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#a61a15cecf464b21a4b0856fcd372a80a" title="重置环境到原始状态的方法。" alt="" coords="157,157,222,184"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="97,151,143,159,142,165,96,156"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ab83426dda1d526182c0309c88eb10ed5" title="修改批处理文件以配置环境的方法。" alt="" coords="292,56,345,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,67,276,67,276,72,236,72"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac5bec7d7183ca3f4b41be73b98c5b319" title="设置批处理文件中的车辆数量的方法。" alt="" coords="285,5,352,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="225,53,269,35,271,40,227,58"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ac56b15c3f8372b0c42dce1110c686660" title="获取指定框架的路径的方法。" alt="" coords="284,157,353,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="220,81,238,93,262,118,286,143,288,145,284,149,282,147,259,121,234,97,217,85"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="219,128,270,149,268,154,217,133"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#a0a17a0c6b8ceadc505a088fdeeddd7e5" title="修改批处理文件以设置地图的方法。" alt="" coords="286,107,351,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="218,117,271,117,271,123,218,123"/>
+<area shape="rect" id="Node000009" href="$classvrpn__ConnectionForwarder.html#a14a6e195271cc51d3605cd17b4f6898c" title=" " alt="" coords="401,81,612,108"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="351,113,387,108,388,113,352,118"/>
+<area shape="rect" id="Node000010" href="$classvrpn__StreamForwarder.html#acd9302ebe2ba7ed825687847574c3e9f" title=" " alt="" coords="413,132,600,159"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="352,122,398,128,398,133,351,127"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="223,168,268,168,268,173,223,173"/>
+<area shape="rect" id="Node000012" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html#ad2e2c4da9d12bfe2ef0002eccc08a00f" title="修改批处理文件以设置单个无人机的方法。" alt="" coords="286,208,352,235"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="224,181,272,200,270,205,222,186"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="loop" name="loop">
+<area shape="rect" id="Node000001" title="循环线程函数，用于初始化控制循环环境。" alt="" coords="120,5,165,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie.html#ad2c5a2e8395769b5b40e0994673d684c" title="构造函数，初始化Crazyflie对象的相关参数和控制接口。" alt="" coords="5,5,72,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,21,72,21,72,16,104,16"/>
+</map>

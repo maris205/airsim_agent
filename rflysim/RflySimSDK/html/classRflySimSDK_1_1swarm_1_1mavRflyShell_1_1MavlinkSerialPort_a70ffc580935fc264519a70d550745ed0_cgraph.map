@@ -1,0 +1,5 @@
+<map id="__init__" name="__init__">
+<area shape="rect" id="Node000001" title="初始化串口连接，用于与飞控进行 MAVLink 通信。" alt="" coords="5,5,72,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavlinkSerialPort.html#a69ee99c756714c09a55d9a5a0346dce4" title="输出调试信息。" alt="" coords="120,5,176,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,16,104,16,104,21,72,21"/>
+</map>

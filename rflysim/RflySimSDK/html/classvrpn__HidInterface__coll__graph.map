@@ -1,0 +1,5 @@
+<map id="vrpn_HidInterface" name="vrpn_HidInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,96,130,123"/>
+<area shape="rect" id="Node000002" href="$classvrpn__HidAcceptor.html" title=" " alt="" coords="5,5,131,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,48,71,95,65,95,65,48"/>
+</map>

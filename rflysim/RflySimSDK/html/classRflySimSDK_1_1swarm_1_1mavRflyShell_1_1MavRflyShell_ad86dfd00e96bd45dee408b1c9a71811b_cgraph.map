@@ -1,0 +1,5 @@
+<map id="checkSerialAvailable" name="checkSerialAvailable">
+<area shape="rect" id="Node000001" title="检查当前串口是否仍然可用" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1mavRflyShell_1_1MavRflyShell.html#a5781c33e6830b07570f7d09d454ac8ec" title="获取当前可用的串口列表" alt="" coords="196,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
+</map>

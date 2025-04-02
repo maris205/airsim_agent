@@ -1,0 +1,5 @@
+<map id="change_connection_mode" name="change_connection_mode">
+<area shape="rect" id="Node000001" title="修改连接模式，允许用户通过输入选择新的模式，并发送指令给设备。" alt="" coords="5,5,178,32"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1swarm_1_1RJ45__px6x_1_1TCPServer.html#ad249892ece8b04194191f882a6209158" title="打印当前连接模式" alt="" coords="226,5,358,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,16,210,16,210,21,178,21"/>
+</map>

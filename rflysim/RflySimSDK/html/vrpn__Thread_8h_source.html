@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Thread.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Thread.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vrpn__Thread_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Copyright 2015 Sensics, Inc.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Distributed under the Boost Software License, Version 1.0.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//    (See accompanying file LICENSE_1_0.txt or copy at</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//          http://www.boost.org/LICENSE_1_0.txt)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef INCLUDED_vrpn_Thread_h_GUID_A455652F_72CE_4F8A_859E_543489012D01</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define INCLUDED_vrpn_Thread_h_GUID_A455652F_72CE_4F8A_859E_543489012D01</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Internal Includes</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_API</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Library/third-party includes</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// - none</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Standard includes</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#if defined(sgi) || (defined(_WIN32) &amp;&amp; !defined(__CYGWIN__)) ||               \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">    defined(linux) || defined(__APPLE__)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define vrpn_THREADS_AVAILABLE</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#undef vrpn_THREADS_AVAILABLE</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// multi process stuff</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#if defined(sgi)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;task.h&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;ulocks.h&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include "<a class="code" href="vrpn__WindowsH_8h.html">vrpn_WindowsH.h</a>"</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &lt;process.h&gt;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &lt;pthread.h&gt;</span> <span class="comment">// for pthread_t</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &lt;semaphore.h&gt;</span> <span class="comment">// for sem_t</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// make the SGI compile without tons of warnings</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#ifdef sgi</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#pragma set woff 1110, 1424, 3201</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// and reset the warnings</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifdef sgi</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#pragma reset woff 1110, 1424, 3201</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00063">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html">   63</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#aae030ce8da83682b335ae5a953d1f185">   66</a></span> <a class="code hl_function" href="classvrpn__Semaphore.html#aae030ce8da83682b335ae5a953d1f185">vrpn_Semaphore</a>(<span class="keywordtype">int</span> cNumResources = 1);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#ab4f77c345e3e29937a34072c3d1cc487">   69</a></span> <a class="code hl_function" href="classvrpn__Semaphore.html#ab4f77c345e3e29937a34072c3d1cc487">~vrpn_Semaphore</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#a46bc838030f9cad1f187433a01ab1def">   73</a></span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classvrpn__Semaphore.html#a46bc838030f9cad1f187433a01ab1def">reset</a>(<span class="keywordtype">int</span> cNumResources = 1);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#a60d1a030252f73d00851e6d495b735d0">   77</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Semaphore.html#a60d1a030252f73d00851e6d495b735d0">p</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#a6b77f36f768b45d77dd4e19cae81d240">   81</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Semaphore.html#a6b77f36f768b45d77dd4e19cae81d240">v</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#a40c791a284f3f0e9697512fd2f97fdda">   86</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Semaphore.html#a40c791a284f3f0e9697512fd2f97fdda">condP</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classvrpn__Semaphore.html#a6ac3a4a2d385ecc7c8831899d523b389">   89</a></span> <span class="keywordtype">int</span> <a class="code hl_function" href="classvrpn__Semaphore.html#a6ac3a4a2d385ecc7c8831899d523b389">numResources</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> <a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a>(<span class="keyword">const</span> <a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> <a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> <span class="keywordtype">bool</span> init();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <span class="keywordtype">bool</span> destroy();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> <span class="keywordtype">int</span> cResources;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> <span class="comment">// arch specific details</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#ifdef sgi</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> <span class="comment">// single mem area for dynamically alloced shared mem</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> <span class="keyword">static</span> usptr_t *ppaArena;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <span class="keyword">static</span> <span class="keywordtype">void</span> allocArena();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> <span class="comment">// the semaphore struct in the arena</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    usema_t *ps;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    ulock_t l;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> <span class="keywordtype">bool</span> fUsingLock;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    HANDLE hSemaphore;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    sem_t *semaphore; <span class="comment">// Posix</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>};</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">namespace </span>vrpn {</div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00122">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structvrpn_1_1try__to__lock__t.html">  122</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a> {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    };</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="vrpn__Thread_8h.html#acd93b14d1ca3eb0b6f124e2df7d26c94">  127</a></span> <span class="keyword">const</span> <a class="code hl_struct" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a> <a class="code hl_variable" href="vrpn__Thread_8h.html#acd93b14d1ca3eb0b6f124e2df7d26c94">try_to_lock</a> = {};</div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00129">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html">  129</a></span> <span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#aa3f9d045a0a14b2affa259e39bd008c0">  132</a></span> <span class="keyword">explicit</span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#aa3f9d045a0a14b2affa259e39bd008c0">SemaphoreGuard</a>(<a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;sem);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#a7dff64e7a26a980c6f7a2bb6953cbf65">  135</a></span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#a7dff64e7a26a980c6f7a2bb6953cbf65">SemaphoreGuard</a>(<a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;sem, <a class="code hl_struct" href="structvrpn_1_1try__to__lock__t.html">try_to_lock_t</a>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#a9d0a769dfab7b72107e15b9880b94021">  138</a></span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#a9d0a769dfab7b72107e15b9880b94021">~SemaphoreGuard</a>();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#a8b660d2fb225d2dc900e1f7d0b60dadf">  141</a></span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#a8b660d2fb225d2dc900e1f7d0b60dadf">locked</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> locked_; }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#aa81aed607133209dade63a226818224d">  144</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#aa81aed607133209dade63a226818224d">lock</a>();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#a2a967b25a9d6da7b36e28942cd3b30ce">  147</a></span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#a2a967b25a9d6da7b36e28942cd3b30ce">try_to_lock</a>();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classvrpn_1_1SemaphoreGuard.html#a9278be8203e1c42e2619179882ae4403">  150</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn_1_1SemaphoreGuard.html#a9278be8203e1c42e2619179882ae4403">unlock</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> <span class="keywordtype">void</span> handleLockResult_(<span class="keywordtype">int</span> result);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> <a class="code hl_class" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a>(<a class="code hl_class" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> <span class="keyword">const</span> &amp;);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> <a class="code hl_class" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> &amp;operator=(<a class="code hl_class" href="classvrpn_1_1SemaphoreGuard.html">SemaphoreGuard</a> <span class="keyword">const</span> &amp;);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> <span class="keywordtype">bool</span> locked_;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> <a class="code hl_class" href="classvrpn__Semaphore.html">vrpn_Semaphore</a> &amp;sem_;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    };</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>} <span class="comment">// namespace vrpn</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// A ptr to this struct will be passed to the</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// thread function.  The user data ptr will be in pvUD.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">// (There used to be a non-functional semaphore object</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// also in this structure, but it was removed.  This leaves</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// a struct with only one element, which is a pain but</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// at least it doesn't break existing code.  If we need</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">// to add something else later, there is a place for it.</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">// The user should create and manage any semaphore needed</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">// to handle access control to the userdata.</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00175">
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="structvrpn__ThreadData.html">  175</a></span><span class="keyword">struct </span>VRPN_API <a class="code hl_struct" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> <span class="keywordtype">void</span> *pvUD;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>};</div>
+</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword">typedef</span> void(*vrpn_THREAD_FUNC)(<a class="code hl_struct" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> &amp;threadData);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">// Don't let the existence of a Thread class fool you into thinking</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">// that VRPN is thread-safe.  This and the Semaphore are included as</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">// building blocks towards making your own code thread-safe.  They are</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">// here to enable the vrpn_Imager_Stream_Buffer class to do its thing.</span></div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00185">
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classvrpn__Thread.html">  185</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Thread.html">vrpn_Thread</a> {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> <span class="comment">// args are the routine to run in the thread</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> <span class="comment">// a ThreadData struct which will be passed into</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> <span class="comment">// the thread (it will be passed as a void *).</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> <a class="code hl_class" href="classvrpn__Thread.html">vrpn_Thread</a>(vrpn_THREAD_FUNC pfThread, <a class="code hl_struct" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> td);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> <a class="code hl_class" href="classvrpn__Thread.html">~vrpn_Thread</a>();</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#if defined(sgi)</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> thread_t;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> <span class="keyword">typedef</span> uintptr_t thread_t;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> <span class="keyword">typedef</span> pthread_t thread_t;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> <span class="comment">// start/kill the thread (true on success, false on failure)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> <span class="keywordtype">bool</span> go();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> <span class="keywordtype">bool</span> kill();</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> <span class="comment">// thread info: check if running, get proc id</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> <span class="keywordtype">bool</span> running();</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    thread_t pid();</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> <span class="comment">// run-time user function to test if threads are available</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> <span class="comment">// (same value as #ifdef THREADS_AVAILABLE)</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> available();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> <span class="comment">// Number of processors available on this machine.</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> <span class="keyword">static</span> <span class="keywordtype">unsigned</span> number_of_processors();</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> <span class="comment">// This can be used to change the ThreadData user data ptr</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> <span class="comment">// between calls to go (ie, when a thread object is used</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> <span class="comment">// many times with different args).  This will take</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> <span class="comment">// effect the next time go() is called.</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> <span class="keywordtype">void</span> userData(<span class="keywordtype">void</span> *pvNewUserData);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> <span class="keywordtype">void</span> *userData();</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> <span class="comment">// user func and data ptrs</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    void(*pfThread)(<a class="code hl_struct" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> &amp;ThreadData);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> <a class="code hl_struct" href="structvrpn__ThreadData.html">vrpn_ThreadData</a> td;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> <span class="comment">// utility func for calling the specified function.</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> <span class="keyword">static</span> <span class="keywordtype">void</span> threadFuncShell(<span class="keywordtype">void</span> *pvThread);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> <span class="comment">// Posix version of the utility function, makes the</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> <span class="comment">// function prototype match.</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> <span class="keyword">static</span> <span class="keywordtype">void</span> *threadFuncShellPosix(<span class="keywordtype">void</span> *pvThread);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> <span class="comment">// the process id</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    thread_t threadID;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>};</div>
+</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">// Returns true if they work and false if they do not.</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">extern</span> <span class="keywordtype">bool</span> vrpn_test_threads_and_semaphores(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#endif </span><span class="comment">// INCLUDED_vrpn_Thread_h_GUID_A455652F_72CE_4F8A_859E_543489012D01</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html">vrpn::SemaphoreGuard</a></div><div class="ttdoc">An RAII lock/guard class for vrpn_Semaphore</div><div class="ttdef"><b>定义</b> vrpn_Thread.h:129</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_a2a967b25a9d6da7b36e28942cd3b30ce"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#a2a967b25a9d6da7b36e28942cd3b30ce">vrpn::SemaphoreGuard::try_to_lock</a></div><div class="ttdeci">bool try_to_lock()</div><div class="ttdoc">Tries to lock - returns true if we locked it.</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_a7dff64e7a26a980c6f7a2bb6953cbf65"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#a7dff64e7a26a980c6f7a2bb6953cbf65">vrpn::SemaphoreGuard::SemaphoreGuard</a></div><div class="ttdeci">SemaphoreGuard(vrpn_Semaphore &amp;sem, try_to_lock_t)</div><div class="ttdoc">overload that only tries to lock (condP) - doesn't block.</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_a8b660d2fb225d2dc900e1f7d0b60dadf"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#a8b660d2fb225d2dc900e1f7d0b60dadf">vrpn::SemaphoreGuard::locked</a></div><div class="ttdeci">bool locked() const</div><div class="ttdoc">Checks to see if we locked.</div><div class="ttdef"><b>定义</b> vrpn_Thread.h:141</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_a9278be8203e1c42e2619179882ae4403"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#a9278be8203e1c42e2619179882ae4403">vrpn::SemaphoreGuard::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdoc">Unlocks the resource, if we have locked it.</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_a9d0a769dfab7b72107e15b9880b94021"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#a9d0a769dfab7b72107e15b9880b94021">vrpn::SemaphoreGuard::~SemaphoreGuard</a></div><div class="ttdeci">~SemaphoreGuard()</div><div class="ttdoc">Destructor that unlocks if we've locked.</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_aa3f9d045a0a14b2affa259e39bd008c0"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#aa3f9d045a0a14b2affa259e39bd008c0">vrpn::SemaphoreGuard::SemaphoreGuard</a></div><div class="ttdeci">SemaphoreGuard(vrpn_Semaphore &amp;sem)</div><div class="ttdoc">Constructor that locks (p) the semaphore</div></div>
+<div class="ttc" id="aclassvrpn_1_1SemaphoreGuard_html_aa81aed607133209dade63a226818224d"><div class="ttname"><a href="classvrpn_1_1SemaphoreGuard.html#aa81aed607133209dade63a226818224d">vrpn::SemaphoreGuard::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdoc">Locks the semaphore, if we haven't locked it already.</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html"><div class="ttname"><a href="classvrpn__Semaphore.html">vrpn_Semaphore</a></div><div class="ttdef"><b>定义</b> vrpn_Thread.h:63</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_a40c791a284f3f0e9697512fd2f97fdda"><div class="ttname"><a href="classvrpn__Semaphore.html#a40c791a284f3f0e9697512fd2f97fdda">vrpn_Semaphore::condP</a></div><div class="ttdeci">int condP()</div><div class="ttdoc">Non-blocking attempt to acquire resource ("down")</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_a46bc838030f9cad1f187433a01ab1def"><div class="ttname"><a href="classvrpn__Semaphore.html#a46bc838030f9cad1f187433a01ab1def">vrpn_Semaphore::reset</a></div><div class="ttdeci">bool reset(int cNumResources=1)</div><div class="ttdoc">routine to reset it (true on success, false on failure) (may create new semaphore)</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_a60d1a030252f73d00851e6d495b735d0"><div class="ttname"><a href="classvrpn__Semaphore.html#a60d1a030252f73d00851e6d495b735d0">vrpn_Semaphore::p</a></div><div class="ttdeci">int p()</div><div class="ttdoc">Blocking acquire of resource. ("down")</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_a6ac3a4a2d385ecc7c8831899d523b389"><div class="ttname"><a href="classvrpn__Semaphore.html#a6ac3a4a2d385ecc7c8831899d523b389">vrpn_Semaphore::numResources</a></div><div class="ttdeci">int numResources()</div><div class="ttdoc">read values</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_a6b77f36f768b45d77dd4e19cae81d240"><div class="ttname"><a href="classvrpn__Semaphore.html#a6b77f36f768b45d77dd4e19cae81d240">vrpn_Semaphore::v</a></div><div class="ttdeci">int v()</div><div class="ttdoc">Release of resource. ("up")</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_aae030ce8da83682b335ae5a953d1f185"><div class="ttname"><a href="classvrpn__Semaphore.html#aae030ce8da83682b335ae5a953d1f185">vrpn_Semaphore::vrpn_Semaphore</a></div><div class="ttdeci">vrpn_Semaphore(int cNumResources=1)</div><div class="ttdoc">constructor - mutex by default (0 is a sync primitive)</div></div>
+<div class="ttc" id="aclassvrpn__Semaphore_html_ab4f77c345e3e29937a34072c3d1cc487"><div class="ttname"><a href="classvrpn__Semaphore.html#ab4f77c345e3e29937a34072c3d1cc487">vrpn_Semaphore::~vrpn_Semaphore</a></div><div class="ttdeci">~vrpn_Semaphore()</div><div class="ttdoc">destructor</div></div>
+<div class="ttc" id="aclassvrpn__Thread_html"><div class="ttname"><a href="classvrpn__Thread.html">vrpn_Thread</a></div><div class="ttdef"><b>定义</b> vrpn_Thread.h:185</div></div>
+<div class="ttc" id="astructvrpn_1_1try__to__lock__t_html"><div class="ttname"><a href="structvrpn_1_1try__to__lock__t.html">vrpn::try_to_lock_t</a></div><div class="ttdef"><b>定义</b> vrpn_Thread.h:122</div></div>
+<div class="ttc" id="astructvrpn__ThreadData_html"><div class="ttname"><a href="structvrpn__ThreadData.html">vrpn_ThreadData</a></div><div class="ttdef"><b>定义</b> vrpn_Thread.h:175</div></div>
+<div class="ttc" id="avrpn__Thread_8h_html_acd93b14d1ca3eb0b6f124e2df7d26c94"><div class="ttname"><a href="vrpn__Thread_8h.html#acd93b14d1ca3eb0b6f124e2df7d26c94">vrpn::try_to_lock</a></div><div class="ttdeci">const try_to_lock_t try_to_lock</div><div class="ttdoc">Dummy variable to pass to SemaphoreGuard to indicate we only want a conditional lock.</div><div class="ttdef"><b>定义</b> vrpn_Thread.h:127</div></div>
+<div class="ttc" id="avrpn__WindowsH_8h_html"><div class="ttname"><a href="vrpn__WindowsH_8h.html">vrpn_WindowsH.h</a></div><div class="ttdoc">Header to minimally include windows.h</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

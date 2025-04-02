@@ -1,0 +1,13 @@
+<map id="vrpn_Analog_5dtUSB_Glove5Left" name="vrpn_Analog_5dtUSB_Glove5Left">
+<area shape="rect" id="Node000001" title="Specialization of vrpn_Analog_5dtUSB for a 5&#45;sensor, left&#45;hand glove." alt="" coords="78,304,224,347"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Analog__5dtUSB.html" title="5th Dimension Technologies (5dt) &quot;Ultra&quot; USB data glove driver" alt="" coords="78,229,224,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,272,154,304,148,304,148,272"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="38,155,131,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,191,142,227,138,231,104,195"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="26,80,143,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,122,87,154,82,154,82,122"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="5,5,164,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,48,87,80,82,80,82,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__HidInterface.html" title=" " alt="" coords="156,155,280,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="198,195,165,231,161,227,194,191"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SendAccPX4" name="SendAccPX4">
+<area shape="rect" id="Node000001" title="发送目标加速度给PX4" alt="" coords="5,35,105,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a7909afcca64461bbd9b8c24cdeef47ea" title="获取offboard消息的位图" alt="" coords="205,5,286,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,38,189,25,190,30,106,43"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a7909afcca64461bbd9b8c24cdeef47ea" title="根据EnList生成POSITION_TARGET_LOCAL_NED消息的type_mask位图。" alt="" coords="153,56,338,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,53,138,58,137,63,105,58"/>
+</map>

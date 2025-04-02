@@ -1,0 +1,24 @@
+<map id="vrpn_Xkeys_Jog_And_Shuttle68" name="vrpn_Xkeys_Jog_And_Shuttle68">
+<area shape="rect" id="Node000001" title=" " alt="" coords="180,304,328,347"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Xkeys__v2.html" title=" " alt="" coords="5,229,117,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,260,205,301,203,306,104,265"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Xkeys.html" title=" " alt="" coords="44,155,134,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,197,68,230,63,228,76,195"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="185,80,302,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="204,116,117,156,115,152,202,111"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Analog.html" title=" " alt="" coords="141,229,234,256"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="236,122,195,230,190,228,231,120"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Button.html" title=" " alt="" coords="253,155,344,181"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="265,118,291,153,287,156,260,121"/>
+<area shape="rect" id="Node000010" href="$classvrpn__Dial.html" title=" " alt="" coords="379,155,455,181"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="289,111,388,152,386,156,287,115"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="164,5,323,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="246,48,246,80,241,80,241,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__HidInterface.html" title=" " alt="" coords="27,80,151,107"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="92,122,92,154,86,154,86,122"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="210,267,240,302,235,306,206,270"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="259,229,386,256"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="304,270,274,306,269,302,300,266"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="310,196,321,228,316,230,305,197"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="420,198,415,228,400,258,368,286,330,306,328,301,365,282,396,254,410,226,415,197"/>
+</map>

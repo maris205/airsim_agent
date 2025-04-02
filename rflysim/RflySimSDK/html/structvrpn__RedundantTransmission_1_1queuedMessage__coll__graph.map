@@ -1,0 +1,8 @@
+<map id="vrpn_RedundantTransmission::queuedMessage" name="vrpn_RedundantTransmission::queuedMessage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,187,200,229"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="217,199,226,208,218,216,200,220,199,214,216,211,221,208,213,204"/>
+<area shape="rect" id="Node000002" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="20,96,185,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,139,105,186,100,186,100,139"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,5,130,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,48,105,95,100,95,100,48"/>
+</map>

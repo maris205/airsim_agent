@@ -1,0 +1,11 @@
+<map id="yawSat" name="yawSat">
+<area shape="rect" id="Node000001" title="对输入的偏航角进行角度约束，将偏航角限制在[&#45;pi, pi]区间内。" alt="" coords="6,37,72,64"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="8,38,3,29,7,19,19,13,39,11,60,13,72,20,69,24,58,18,39,16,20,18,11,23,8,28,13,36"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#adf8269c75db7e139aaa12454d041afc5" title="调整偏航角在&#45;π到π之间" alt="" coords="120,29,313,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,55,104,57,104,62,72,60"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#adf8269c75db7e139aaa12454d041afc5" title="对偏航角进行限制，使其保持在[&#45;π/2, π/2]范围内" alt="" coords="361,59,562,101"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="67,62,92,73,120,81,177,90,235,93,345,91,345,96,235,99,176,95,119,87,90,78,65,67"/>
+<area shape="poly" id="edge3_Node000002_Node000001" title=" " alt="" coords="119,44,87,45,87,40,119,39"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="182,29,181,19,186,10,198,5,216,3,235,5,247,11,244,16,234,10,216,8,200,10,190,14,186,21,187,28"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="314,60,346,63,345,69,313,65"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="vrpn_GlobalHapticsOrb" name="vrpn_GlobalHapticsOrb">
+<area shape="rect" id="Node000001" title=" " alt="" coords="148,304,305,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Serial__Analog.html" title=" " alt="" coords="5,229,139,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,261,201,301,198,306,112,265"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="45,155,139,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,197,78,230,73,228,82,196"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="168,80,285,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="191,117,117,156,114,152,189,112"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button.html" title=" " alt="" coords="181,155,272,181"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="229,122,229,154,224,154,224,122"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Dial.html" title=" " alt="" coords="314,229,390,256"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="252,116,286,153,345,227,341,230,282,156,248,120"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="148,5,306,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,48,229,80,224,80,224,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="163,229,290,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="229,272,229,304,224,304,224,272"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="229,197,229,229,224,229,224,197"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="319,266,250,306,247,301,316,262"/>
+</map>

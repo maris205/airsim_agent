@@ -1,0 +1,7 @@
+<map id="SendMavArm" name="SendMavArm">
+<area shape="rect" id="Node000001" title="发送指令到 Pixhawk 使其上锁/解锁" alt="" coords="239,35,339,61"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8db56cecaedeed885a617c2ccc9f457e" title="初始化 MAVLink 通信循环，并与coptersim进行通信" alt="" coords="52,5,144,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,41,144,28,145,23,223,35"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html#a9eb9aa9ab061a5450fd0f4cf01defbab" title=" " alt="" coords="5,56,191,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,61,191,66,191,60,223,55"/>
+</map>

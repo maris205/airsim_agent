@@ -1,0 +1,17 @@
+<map id="AutoMavRun" name="AutoMavRun">
+<area shape="rect" id="Node000001" title="运行自动化测试的方法。该方法执行无人机自动化测试的运行逻辑。" alt="" coords="5,132,103,159"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a45b5ae40d05e1a7e2404cc1d1f7791a1" title="计算飞行状态的方法。" alt="" coords="151,5,302,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,130,98,87,122,63,149,42,158,37,161,41,152,46,125,67,102,90,67,133"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a9387a4182985428393548bd01bbffb4a" title="分析控制命令的方法。" alt="" coords="186,56,266,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="77,129,150,92,170,84,172,89,152,97,80,134"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a0f32c6380f95e18cebb0182a60c9e67a" title="计算偏差的方法。" alt="" coords="188,107,264,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="103,136,173,125,173,130,103,141"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a684c13248e624280e91f5730c2747b56" title="获取测试结果的方法。" alt="" coords="170,157,282,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="103,150,155,158,154,163,103,155"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a4758478e755fbfe5854a6b33a86cd172" title="获取期望的位置和速度命令的方法。" alt="" coords="174,208,279,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="80,157,152,194,167,200,165,205,150,198,77,161"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a8bbc6fe66183b1205a2c2130fe54c3bc" title="结束仿真进程的方法。该方法结束无人机仿真所需的进程。" alt="" coords="155,259,298,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="67,157,102,200,125,224,152,244,161,250,158,254,149,249,122,228,98,204,63,161"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1AutoMavCtrler.html#a656b56d2db07efb7af4e92ffe33d43ac" title="结束无人机仿真进程的方法。该方法用于安全地关闭无人机的仿真进程，确保所有仿真软件和相关资源被正确释放。" alt="" coords="350,259,465,285"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="298,269,334,269,334,275,298,275"/>
+</map>

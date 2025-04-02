@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/mavlink/minimal/minimal.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_ad33f1dddab9e5eaec5103fc17ef0232.html">mavlink</a></li><li class="navelem"><a class="el" href="dir_b28ba825914bb87bbfc8c5b36cef531f.html">minimal</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#define-members">宏定义</a> |
+<a href="#typedef-members">类型定义</a> |
+<a href="#enum-members">枚举</a> </div>
+<div class="headertitle"><div class="title">minimal.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p>MAVLink comm protocol generated from minimal.xml  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include "../protocol.h"</code><br/>
+<code>#include "./mavlink_msg_heartbeat.h"</code><br/>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-0-trigger" src="closed.png"/> minimal.h 的引用(Include)关系图:</div>
+<div class="dynsummary" id="dynsection-0-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-0-content" style="display:none;">
+<div class="center"><div class="zoom"><iframe frameborder="0" height="564" scrolling="no" src="minimal_8h__incl.svg" width="100%"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader closed" id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" style="cursor:pointer;">
+<img alt="+" id="dynsection-1-trigger" src="closed.png"/> 此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dynsummary" id="dynsection-1-summary" style="display:block;">
+</div>
+<div class="dyncontent" id="dynsection-1-content" style="display:none;">
+<div class="center"><iframe frameborder="0" height="144" scrolling="no" src="minimal_8h__dep__incl.svg" width="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="minimal_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a88890384324224a0e19172f44fc76808" id="r_a88890384324224a0e19172f44fc76808"><td align="right" class="memItemLeft" valign="top"><a id="a88890384324224a0e19172f44fc76808" name="a88890384324224a0e19172f44fc76808"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MINIMAL_H</b></td></tr>
+<tr class="separator:a88890384324224a0e19172f44fc76808"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec7bcd84c243ec07f25b1416f2168e1b" id="r_aec7bcd84c243ec07f25b1416f2168e1b"><td align="right" class="memItemLeft" valign="top"><a id="aec7bcd84c243ec07f25b1416f2168e1b" name="aec7bcd84c243ec07f25b1416f2168e1b"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_THIS_XML_IDX</b>   0</td></tr>
+<tr class="separator:aec7bcd84c243ec07f25b1416f2168e1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa90005429262b658c881fa203c4de208" id="r_aa90005429262b658c881fa203c4de208"><td align="right" class="memItemLeft" valign="top"><a id="aa90005429262b658c881fa203c4de208" name="aa90005429262b658c881fa203c4de208"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_LENGTHS</b>   {}</td></tr>
+<tr class="separator:aa90005429262b658c881fa203c4de208"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3f709d5835acb54a11202a5fdc7a6bfe" id="r_a3f709d5835acb54a11202a5fdc7a6bfe"><td align="right" class="memItemLeft" valign="top"><a id="a3f709d5835acb54a11202a5fdc7a6bfe" name="a3f709d5835acb54a11202a5fdc7a6bfe"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_CRCS</b>   {{0, 50, 9, 0, 0, 0}}</td></tr>
+<tr class="separator:a3f709d5835acb54a11202a5fdc7a6bfe"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a913ac6f00a03f60361fe388081758e72" id="r_a913ac6f00a03f60361fe388081758e72"><td align="right" class="memItemLeft" valign="top"><a id="a913ac6f00a03f60361fe388081758e72" name="a913ac6f00a03f60361fe388081758e72"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_ENABLED_MINIMAL</b></td></tr>
+<tr class="separator:a913ac6f00a03f60361fe388081758e72"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2e111ba3d51671c7c15302296b1637a3" id="r_a2e111ba3d51671c7c15302296b1637a3"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e111ba3d51671c7c15302296b1637a3">HAVE_ENUM_MAV_AUTOPILOT</a></td></tr>
+<tr class="memdesc:a2e111ba3d51671c7c15302296b1637a3"><td class="mdescLeft"> </td><td class="mdescRight">Micro air vehicle / autopilot classes. This identifies the individual model.  <br/></td></tr>
+<tr class="separator:a2e111ba3d51671c7c15302296b1637a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3b4a4b640a6f693143693967d9c4186f" id="r_a3b4a4b640a6f693143693967d9c4186f"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b4a4b640a6f693143693967d9c4186f">HAVE_ENUM_MAV_TYPE</a></td></tr>
+<tr class="memdesc:a3b4a4b640a6f693143693967d9c4186f"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a3b4a4b640a6f693143693967d9c4186f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4d10e65452d104b7a6f725423e01f83a" id="r_a4d10e65452d104b7a6f725423e01f83a"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d10e65452d104b7a6f725423e01f83a">HAVE_ENUM_MAV_MODE_FLAG</a></td></tr>
+<tr class="memdesc:a4d10e65452d104b7a6f725423e01f83a"><td class="mdescLeft"> </td><td class="mdescRight">These flags encode the MAV mode.  <br/></td></tr>
+<tr class="separator:a4d10e65452d104b7a6f725423e01f83a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af64abdf9b0014e46b8228dbd5c8d49e5" id="r_af64abdf9b0014e46b8228dbd5c8d49e5"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#af64abdf9b0014e46b8228dbd5c8d49e5">HAVE_ENUM_MAV_MODE_FLAG_DECODE_POSITION</a></td></tr>
+<tr class="memdesc:af64abdf9b0014e46b8228dbd5c8d49e5"><td class="mdescLeft"> </td><td class="mdescRight">These values encode the bit positions of the decode position. These values can be used to read the value of a flag bit by combining the base_mode variable with AND with the flag position value. The result will be either 0 or 1, depending on if the flag is set or not.  <br/></td></tr>
+<tr class="separator:af64abdf9b0014e46b8228dbd5c8d49e5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1dd10ffbd73c33a555cb151a5c92e812" id="r_a1dd10ffbd73c33a555cb151a5c92e812"><td align="right" class="memItemLeft" valign="top">#define </td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dd10ffbd73c33a555cb151a5c92e812">HAVE_ENUM_MAV_STATE</a></td></tr>
+<tr class="memdesc:a1dd10ffbd73c33a555cb151a5c92e812"><td class="mdescLeft"> </td><td class="mdescRight"><br/>
+<br/></td></tr>
+<tr class="separator:a1dd10ffbd73c33a555cb151a5c92e812"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a713480f83cc8ffd484a19a4b9b690215" id="r_a713480f83cc8ffd484a19a4b9b690215"><td align="right" class="memItemLeft" valign="top"><a id="a713480f83cc8ffd484a19a4b9b690215" name="a713480f83cc8ffd484a19a4b9b690215"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_VERSION</b>   2</td></tr>
+<tr class="separator:a713480f83cc8ffd484a19a4b9b690215"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec7bcd84c243ec07f25b1416f2168e1b" id="r_aec7bcd84c243ec07f25b1416f2168e1b"><td align="right" class="memItemLeft" valign="top"><a id="aec7bcd84c243ec07f25b1416f2168e1b" name="aec7bcd84c243ec07f25b1416f2168e1b"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_THIS_XML_IDX</b>   0</td></tr>
+<tr class="separator:aec7bcd84c243ec07f25b1416f2168e1b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a384e37b2c133fdf33407436a982d2fb7" id="r_a384e37b2c133fdf33407436a982d2fb7"><td align="right" class="memItemLeft" valign="top"><a id="a384e37b2c133fdf33407436a982d2fb7" name="a384e37b2c133fdf33407436a982d2fb7"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_INFO</b>   {MAVLINK_MESSAGE_INFO_HEARTBEAT}</td></tr>
+<tr class="separator:a384e37b2c133fdf33407436a982d2fb7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2be08a10a49cf4e78f0b5579b4b103f5" id="r_a2be08a10a49cf4e78f0b5579b4b103f5"><td align="right" class="memItemLeft" valign="top"><a id="a2be08a10a49cf4e78f0b5579b4b103f5" name="a2be08a10a49cf4e78f0b5579b4b103f5"></a>
+#define </td><td class="memItemRight" valign="bottom"><b>MAVLINK_MESSAGE_NAMES</b>   {{ "HEARTBEAT", 0 }}</td></tr>
+<tr class="separator:a2be08a10a49cf4e78f0b5579b4b103f5"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a5863beaf01d6939bd3d0a11023ef0430" id="r_a5863beaf01d6939bd3d0a11023ef0430"><td align="right" class="memItemLeft" valign="top"><a id="a5863beaf01d6939bd3d0a11023ef0430" name="a5863beaf01d6939bd3d0a11023ef0430"></a>
+typedef enum MAV_AUTOPILOT </td><td class="memItemRight" valign="bottom"><b>MAV_AUTOPILOT</b></td></tr>
+<tr class="separator:a5863beaf01d6939bd3d0a11023ef0430"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a51a661b6ac91f26e5329cff18516bc67" id="r_a51a661b6ac91f26e5329cff18516bc67"><td align="right" class="memItemLeft" valign="top"><a id="a51a661b6ac91f26e5329cff18516bc67" name="a51a661b6ac91f26e5329cff18516bc67"></a>
+typedef enum MAV_TYPE </td><td class="memItemRight" valign="bottom"><b>MAV_TYPE</b></td></tr>
+<tr class="separator:a51a661b6ac91f26e5329cff18516bc67"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aedc1948ad4bcb739dcb2cfebacbabe44" id="r_aedc1948ad4bcb739dcb2cfebacbabe44"><td align="right" class="memItemLeft" valign="top"><a id="aedc1948ad4bcb739dcb2cfebacbabe44" name="aedc1948ad4bcb739dcb2cfebacbabe44"></a>
+typedef enum MAV_MODE_FLAG </td><td class="memItemRight" valign="bottom"><b>MAV_MODE_FLAG</b></td></tr>
+<tr class="separator:aedc1948ad4bcb739dcb2cfebacbabe44"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa5930da35738ffd0a5fdf09c44729258" id="r_aa5930da35738ffd0a5fdf09c44729258"><td align="right" class="memItemLeft" valign="top"><a id="aa5930da35738ffd0a5fdf09c44729258" name="aa5930da35738ffd0a5fdf09c44729258"></a>
+typedef enum MAV_MODE_FLAG_DECODE_POSITION </td><td class="memItemRight" valign="bottom"><b>MAV_MODE_FLAG_DECODE_POSITION</b></td></tr>
+<tr class="separator:aa5930da35738ffd0a5fdf09c44729258"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab70b8e3323cf9018010e2aadefe24cca" id="r_ab70b8e3323cf9018010e2aadefe24cca"><td align="right" class="memItemLeft" valign="top"><a id="ab70b8e3323cf9018010e2aadefe24cca" name="ab70b8e3323cf9018010e2aadefe24cca"></a>
+typedef enum MAV_STATE </td><td class="memItemRight" valign="bottom"><b>MAV_STATE</b></td></tr>
+<tr class="separator:ab70b8e3323cf9018010e2aadefe24cca"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:add415966c25b466767c08bf3b8c00baa" id="r_add415966c25b466767c08bf3b8c00baa"><td align="right" class="memItemLeft" valign="top"><a id="add415966c25b466767c08bf3b8c00baa" name="add415966c25b466767c08bf3b8c00baa"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_AUTOPILOT</b> { <br/>
+  <b>MAV_AUTOPILOT_GENERIC</b> =0
+, <b>MAV_AUTOPILOT_PIXHAWK</b> =1
+, <b>MAV_AUTOPILOT_SLUGS</b> =2
+, <b>MAV_AUTOPILOT_ARDUPILOTMEGA</b> =3
+, <br/>
+  <b>MAV_AUTOPILOT_OPENPILOT</b> =4
+, <b>MAV_AUTOPILOT_GENERIC_WAYPOINTS_ONLY</b> =5
+, <b>MAV_AUTOPILOT_GENERIC_WAYPOINTS_AND_SIMPLE_NAVIGATION_ONLY</b> =6
+, <b>MAV_AUTOPILOT_GENERIC_MISSION_FULL</b> =7
+, <br/>
+  <b>MAV_AUTOPILOT_INVALID</b> =8
+, <b>MAV_AUTOPILOT_PPZ</b> =9
+, <b>MAV_AUTOPILOT_UDB</b> =10
+, <b>MAV_AUTOPILOT_FP</b> =11
+, <br/>
+  <b>MAV_AUTOPILOT_ENUM_END</b> =12
+<br/>
+ }</td></tr>
+<tr class="separator:add415966c25b466767c08bf3b8c00baa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaf404a9fdbd4c9a05d6cab18790dbb28" id="r_aaf404a9fdbd4c9a05d6cab18790dbb28"><td align="right" class="memItemLeft" valign="top"><a id="aaf404a9fdbd4c9a05d6cab18790dbb28" name="aaf404a9fdbd4c9a05d6cab18790dbb28"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_TYPE</b> { <br/>
+  <b>MAV_TYPE_GENERIC</b> =0
+, <b>MAV_TYPE_FIXED_WING</b> =1
+, <b>MAV_TYPE_QUADROTOR</b> =2
+, <b>MAV_TYPE_COAXIAL</b> =3
+, <br/>
+  <b>MAV_TYPE_HELICOPTER</b> =4
+, <b>MAV_TYPE_ANTENNA_TRACKER</b> =5
+, <b>MAV_TYPE_GCS</b> =6
+, <b>MAV_TYPE_AIRSHIP</b> =7
+, <br/>
+  <b>MAV_TYPE_FREE_BALLOON</b> =8
+, <b>MAV_TYPE_ROCKET</b> =9
+, <b>MAV_TYPE_GROUND_ROVER</b> =10
+, <b>MAV_TYPE_SURFACE_BOAT</b> =11
+, <br/>
+  <b>MAV_TYPE_SUBMARINE</b> =12
+, <b>MAV_TYPE_HEXAROTOR</b> =13
+, <b>MAV_TYPE_OCTOROTOR</b> =14
+, <b>MAV_TYPE_TRICOPTER</b> =15
+, <br/>
+  <b>MAV_TYPE_FLAPPING_WING</b> =16
+, <b>MAV_TYPE_ENUM_END</b> =17
+<br/>
+ }</td></tr>
+<tr class="separator:aaf404a9fdbd4c9a05d6cab18790dbb28"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae603f5021d4667cfcb111ccb235cdd85" id="r_ae603f5021d4667cfcb111ccb235cdd85"><td align="right" class="memItemLeft" valign="top"><a id="ae603f5021d4667cfcb111ccb235cdd85" name="ae603f5021d4667cfcb111ccb235cdd85"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_MODE_FLAG</b> { <br/>
+  <b>MAV_MODE_FLAG_CUSTOM_MODE_ENABLED</b> =1
+, <b>MAV_MODE_FLAG_TEST_ENABLED</b> =2
+, <b>MAV_MODE_FLAG_AUTO_ENABLED</b> =4
+, <b>MAV_MODE_FLAG_GUIDED_ENABLED</b> =8
+, <br/>
+  <b>MAV_MODE_FLAG_STABILIZE_ENABLED</b> =16
+, <b>MAV_MODE_FLAG_HIL_ENABLED</b> =32
+, <b>MAV_MODE_FLAG_MANUAL_INPUT_ENABLED</b> =64
+, <b>MAV_MODE_FLAG_SAFETY_ARMED</b> =128
+, <br/>
+  <b>MAV_MODE_FLAG_ENUM_END</b> =129
+<br/>
+ }</td></tr>
+<tr class="separator:ae603f5021d4667cfcb111ccb235cdd85"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa2237338e86bf81f4a42fd236080518e" id="r_aa2237338e86bf81f4a42fd236080518e"><td align="right" class="memItemLeft" valign="top"><a id="aa2237338e86bf81f4a42fd236080518e" name="aa2237338e86bf81f4a42fd236080518e"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_MODE_FLAG_DECODE_POSITION</b> { <br/>
+  <b>MAV_MODE_FLAG_DECODE_POSITION_CUSTOM_MODE</b> =1
+, <b>MAV_MODE_FLAG_DECODE_POSITION_TEST</b> =2
+, <b>MAV_MODE_FLAG_DECODE_POSITION_AUTO</b> =4
+, <b>MAV_MODE_FLAG_DECODE_POSITION_GUIDED</b> =8
+, <br/>
+  <b>MAV_MODE_FLAG_DECODE_POSITION_STABILIZE</b> =16
+, <b>MAV_MODE_FLAG_DECODE_POSITION_HIL</b> =32
+, <b>MAV_MODE_FLAG_DECODE_POSITION_MANUAL</b> =64
+, <b>MAV_MODE_FLAG_DECODE_POSITION_SAFETY</b> =128
+, <br/>
+  <b>MAV_MODE_FLAG_DECODE_POSITION_ENUM_END</b> =129
+<br/>
+ }</td></tr>
+<tr class="separator:aa2237338e86bf81f4a42fd236080518e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3ca5e79cdc1f95d953a6d1d7ab1e90bb" id="r_a3ca5e79cdc1f95d953a6d1d7ab1e90bb"><td align="right" class="memItemLeft" valign="top"><a id="a3ca5e79cdc1f95d953a6d1d7ab1e90bb" name="a3ca5e79cdc1f95d953a6d1d7ab1e90bb"></a>enum  </td><td class="memItemRight" valign="bottom"><b>MAV_STATE</b> { <br/>
+  <b>MAV_STATE_UNINIT</b> =0
+, <b>MAV_STATE_BOOT</b> =1
+, <b>MAV_STATE_CALIBRATING</b> =2
+, <b>MAV_STATE_STANDBY</b> =3
+, <br/>
+  <b>MAV_STATE_ACTIVE</b> =4
+, <b>MAV_STATE_CRITICAL</b> =5
+, <b>MAV_STATE_EMERGENCY</b> =6
+, <b>MAV_STATE_POWEROFF</b> =7
+, <br/>
+  <b>MAV_STATE_ENUM_END</b> =8
+<br/>
+ }</td></tr>
+<tr class="separator:a3ca5e79cdc1f95d953a6d1d7ab1e90bb"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>MAVLink comm protocol generated from minimal.xml </p>
+<dl class="section see"><dt>参见</dt><dd><a href="http://mavlink.org">http://mavlink.org</a> </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a2e111ba3d51671c7c15302296b1637a3" name="a2e111ba3d51671c7c15302296b1637a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e111ba3d51671c7c15302296b1637a3">◆ </a></span>HAVE_ENUM_MAV_AUTOPILOT</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_AUTOPILOT</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Micro air vehicle / autopilot classes. This identifies the individual model. </p>
+</div>
+</div>
+<a id="a4d10e65452d104b7a6f725423e01f83a" name="a4d10e65452d104b7a6f725423e01f83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d10e65452d104b7a6f725423e01f83a">◆ </a></span>HAVE_ENUM_MAV_MODE_FLAG</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_MODE_FLAG</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>These flags encode the MAV mode. </p>
+</div>
+</div>
+<a id="af64abdf9b0014e46b8228dbd5c8d49e5" name="af64abdf9b0014e46b8228dbd5c8d49e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64abdf9b0014e46b8228dbd5c8d49e5">◆ </a></span>HAVE_ENUM_MAV_MODE_FLAG_DECODE_POSITION</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_MODE_FLAG_DECODE_POSITION</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>These values encode the bit positions of the decode position. These values can be used to read the value of a flag bit by combining the base_mode variable with AND with the flag position value. The result will be either 0 or 1, depending on if the flag is set or not. </p>
+</div>
+</div>
+<a id="a1dd10ffbd73c33a555cb151a5c92e812" name="a1dd10ffbd73c33a555cb151a5c92e812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd10ffbd73c33a555cb151a5c92e812">◆ </a></span>HAVE_ENUM_MAV_STATE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_STATE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+<a id="a3b4a4b640a6f693143693967d9c4186f" name="a3b4a4b640a6f693143693967d9c4186f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4a4b640a6f693143693967d9c4186f">◆ </a></span>HAVE_ENUM_MAV_TYPE</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">#define HAVE_ENUM_MAV_TYPE</td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p><br/>
+</p>
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

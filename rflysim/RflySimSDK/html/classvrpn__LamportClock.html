@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: vrpn_LamportClock类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="classvrpn__LamportClock-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">vrpn_LamportClock类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<p><code>#include &lt;<a class="el" href="vrpn__LamportClock_8h_source.html">vrpn_LamportClock.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a51a757455cdace94e21d64051663c4bd" id="r_a51a757455cdace94e21d64051663c4bd"><td align="right" class="memItemLeft" valign="top"><a id="a51a757455cdace94e21d64051663c4bd" name="a51a757455cdace94e21d64051663c4bd"></a>
+ </td><td class="memItemRight" valign="bottom"><b>vrpn_LamportClock</b> (int numHosts, int ourIndex)</td></tr>
+<tr class="separator:a51a757455cdace94e21d64051663c4bd"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9326c93c966db75686752020d50da80e" id="r_a9326c93c966db75686752020d50da80e"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="#a9326c93c966db75686752020d50da80e">receive</a> (const <a class="el" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp;)</td></tr>
+<tr class="separator:a9326c93c966db75686752020d50da80e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afc9c1e4b1eac112be6d31bf16d80838a" id="r_afc9c1e4b1eac112be6d31bf16d80838a"><td align="right" class="memItemLeft" valign="top"><a class="el" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="#afc9c1e4b1eac112be6d31bf16d80838a">getTimestampAndAdvance</a> (void)</td></tr>
+<tr class="memdesc:afc9c1e4b1eac112be6d31bf16d80838a"><td class="mdescLeft"> </td><td class="mdescRight">Increments the current timestamp and returns it.  <br/></td></tr>
+<tr class="separator:afc9c1e4b1eac112be6d31bf16d80838a"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Implements a distributed event clock as defined by Leslie Lamport in some seminal papers I can't find my copies of, for use by people who want to sequence events without relying on synchronization of wallclocks. </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="afc9c1e4b1eac112be6d31bf16d80838a" name="afc9c1e4b1eac112be6d31bf16d80838a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9c1e4b1eac112be6d31bf16d80838a">◆ </a></span>getTimestampAndAdvance()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> * getTimestampAndAdvance </td>
+<td>(</td>
+<td class="paramtype">void</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Increments the current timestamp and returns it. </p>
+</div>
+</div>
+<a id="a9326c93c966db75686752020d50da80e" name="a9326c93c966db75686752020d50da80e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9326c93c966db75686752020d50da80e">◆ </a></span>receive()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void receive </td>
+<td>(</td>
+<td class="paramtype">const <a class="el" href="classvrpn__LamportTimestamp.html">vrpn_LamportTimestamp</a> &amp;</td> <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Updates this clock to reflect a timestamp received from another clock/host. </p>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>simulink/vrpn/<a class="el" href="vrpn__LamportClock_8h_source.html">vrpn_LamportClock.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

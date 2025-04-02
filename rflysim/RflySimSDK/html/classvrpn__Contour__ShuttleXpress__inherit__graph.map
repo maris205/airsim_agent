@@ -1,0 +1,22 @@
+<map id="vrpn_Contour_ShuttleXpress" name="vrpn_Contour_ShuttleXpress">
+<area shape="rect" id="Node000001" title=" " alt="" coords="100,304,288,331"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Contour.html" title=" " alt="" coords="18,155,117,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,197,62,226,65,241,71,255,84,270,101,283,139,301,136,306,98,288,81,274,67,257,60,243,57,227,58,196"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="166,80,284,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,116,96,156,94,152,183,111"/>
+<area shape="rect" id="Node000006" href="$classvrpn__Analog.html" title=" " alt="" coords="81,229,174,256"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="210,121,138,230,134,227,206,118"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Button.html" title=" " alt="" coords="210,155,301,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="239,120,253,153,248,155,234,122"/>
+<area shape="rect" id="Node000009" href="$classvrpn__Dial.html" title=" " alt="" coords="349,229,426,256"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="261,113,315,153,353,193,381,228,377,231,349,196,311,157,258,117"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="146,5,304,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,48,228,80,222,80,222,48"/>
+<area shape="rect" id="Node000005" href="$classvrpn__HidInterface.html" title=" " alt="" coords="5,80,130,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="70,122,70,154,65,154,65,122"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="151,266,185,302,181,305,147,269"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Button__Filter.html" title=" " alt="" coords="198,229,326,256"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="242,269,208,305,204,302,238,266"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="261,197,264,229,258,229,255,197"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="341,264,229,306,227,301,339,259"/>
+</map>

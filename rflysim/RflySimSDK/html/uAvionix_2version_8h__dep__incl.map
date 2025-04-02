@@ -1,0 +1,5 @@
+<map id="simulink/mavlink/uAvionix/version.h" name="simulink/mavlink/uAvionix/version.h">
+<area shape="rect" id="Node000001" title="MAVLink comm protocol built from uAvionix.xml" alt="" coords="5,5,178,48"/>
+<area shape="rect" id="Node000002" href="$uAvionix_2mavlink_8h.html" title="MAVLink comm protocol built from uAvionix.xml" alt="" coords="5,96,178,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,64,94,96,89,96,89,64"/>
+</map>

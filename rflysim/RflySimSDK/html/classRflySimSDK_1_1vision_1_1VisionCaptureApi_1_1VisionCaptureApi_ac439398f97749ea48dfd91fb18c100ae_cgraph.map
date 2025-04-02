@@ -1,0 +1,13 @@
+<map id="jsonLoad" name="jsonLoad">
+<area shape="rect" id="Node000001" title="用来从配置文件 Config.json 中加载相机配置信息，并根据配置信息创建相机列表 @ChangeMode（默认为&#45;1） 转化模式" alt="" coords="5,31,79,57"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a9fff0efeb83a1c0b4606ddffac7fcf1f" title="停止时间戳监听功能" alt="" coords="130,5,264,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,35,114,29,115,35,79,41"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#aa60b23bcc108b72b93d4fe6495e5e792" title="通过UDP套接字监听特定端口（20005端口），以获取CopterID的时间戳信息" alt="" coords="127,56,267,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,47,112,53,111,58,79,53"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#a3d6b42d0ece15f674e35d507b49db37b" title="用于监听来自特定UDP端口的时间戳消息，并根据接收到的消息更新时间戳信息" alt="" coords="315,56,420,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="268,67,300,67,300,72,268,72"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1ctrl_1_1ReqCopterSim_1_1ReqCopterSim.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="468,19,659,61"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="420,59,452,54,453,59,421,64"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1vision_1_1VisionCaptureApi_1_1VisionCaptureApi.html#acd00c8d0488929bc3e87dc9204a56042" title="判断IP地址是否为本地IP" alt="" coords="527,85,600,112"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="421,75,512,88,512,94,420,80"/>
+</map>

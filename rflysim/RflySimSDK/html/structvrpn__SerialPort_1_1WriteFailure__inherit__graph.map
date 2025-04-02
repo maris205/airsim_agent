@@ -1,0 +1,5 @@
+<map id="vrpn_SerialPort::WriteFailure" name="vrpn_SerialPort::WriteFailure">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,193,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="50,5,148,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,48,102,80,96,80,96,48"/>
+</map>

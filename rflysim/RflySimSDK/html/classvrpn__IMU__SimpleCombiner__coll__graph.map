@@ -1,0 +1,37 @@
+<map id="vrpn_IMU_SimpleCombiner" name="vrpn_IMU_SimpleCombiner">
+<area shape="rect" id="Node000001" title="This class will turn set of two or three analog devices into a tracker by" alt="" coords="152,705,333,732"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker.html" title=" " alt="" coords="523,416,621,443"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="558,457,525,504,476,565,416,628,347,684,321,697,295,707,293,702,319,692,344,679,412,624,472,561,520,501,554,454"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="513,309,631,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="575,351,575,416,569,416,569,351"/>
+<area shape="rect" id="Node000013" href="$classvrpn__Analog.html" title=" " alt="" coords="393,416,487,443"/>
+<area shape="poly" id="edge15_Node000013_Node000003" title=" " alt="" coords="546,348,458,417,454,413,543,344"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="529,189,687,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="602,232,578,310,573,308,597,230"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="772,96,892,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="788,131,640,191,638,186,786,126"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="893,5,1054,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="946,44,901,74,859,98,856,93,899,70,943,39"/>
+<area shape="rect" id="Node000007" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="741,5,870,32"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="816,46,831,95,826,96,811,48"/>
+<area shape="rect" id="Node000008" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="477,96,643,123"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="557,137,560,162,571,176,585,187,582,191,567,179,556,164,551,138"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="381,5,435,32"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="365,23,265,27,147,40,92,51,48,66,18,85,11,96,8,108,8,597,11,620,21,640,36,657,55,671,101,692,152,705,151,710,100,697,52,676,32,661,17,643,6,622,3,598,3,108,6,94,15,81,46,61,91,46,146,35,265,22,365,18"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="451,20,533,28,626,43,669,55,704,69,728,86,735,96,737,108,737,324,734,344,726,361,713,376,697,389,660,408,622,421,620,416,658,403,694,385,710,373,721,358,729,342,732,324,732,108,730,99,724,90,701,73,667,60,625,48,532,33,450,25"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="444,38,540,93,537,98,441,42"/>
+<area shape="rect" id="Node000010" href="$classvrpn__IMU__Vector.html" title=" " alt="" coords="182,583,304,609"/>
+<area shape="poly" id="edge20_Node000010_Node000009" title=" " alt="" coords="366,27,326,35,287,50,270,61,257,74,248,90,245,108,245,507,245,582,240,582,240,507,240,108,243,88,253,71,267,57,284,46,325,30,365,22"/>
+<area shape="poly" id="edge16_Node000013_Node000009" title=" " alt="" coords="425,45,437,74,443,108,443,324,443,416,437,416,437,324,437,108,432,76,420,47"/>
+<area shape="rect" id="Node000015" href="$structvrpn__Callback__List_1_1vrpn__CBS.html" title=" " alt="" coords="309,96,390,123"/>
+<area shape="poly" id="edge19_Node000015_Node000009" title=" " alt="" coords="393,47,360,97,356,94,389,44"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="245,625,245,705,240,705,240,625"/>
+<area shape="rect" id="Node000011" href="$classvrpn__IMU__Axis__Params.html" title="Describes information describing an IMU axis. It describes the analog channel to use to drive the axi..." alt="" coords="42,492,206,519"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="147,528,179,557,217,580,215,584,175,561,144,532"/>
+<area shape="rect" id="Node000012" href="$classvrpn__Analog__Remote.html" title=" " alt="" coords="280,492,426,519"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="328,531,260,584,257,580,324,526"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="415,455,370,494,366,490,412,451"/>
+<area shape="rect" id="Node000014" href="$classvrpn__Callback__List.html" title=" " alt="" coords="262,243,420,285"/>
+<area shape="poly" id="edge17_Node000012_Node000014" title=" " alt="" coords="339,301,334,360,334,392,343,447,353,491,347,492,337,448,329,392,329,360,334,301"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="342,138,340,147,337,198,341,242,336,243,332,198,335,146,337,137"/>
+</map>

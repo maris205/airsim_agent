@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: simulink/vrpn/vrpn_Mutex.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><a class="el" href="dir_af78b135c709e3b378d50a710c3be9f9.html">simulink</a></li><li class="navelem"><a class="el" href="dir_c79ec1b38f77787fb85c984556289221.html">vrpn</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="headertitle"><div class="title">vrpn_Mutex.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef VRPN_MUTEX_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define VRPN_MUTEX_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stddef.h&gt;</span> <span class="comment">// for NULL</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include "vrpn_Configure.h"</span> <span class="comment">// for VRPN_CALLBACK, VRPN_API</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include "vrpn_Types.h"</span> <span class="comment">// for vrpn_int32, vrpn_uint32, etc</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Every time a Mutex_Remote connects to a Mutex_Server, the server assigns</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// a unique ID to the remote.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// HACK - because vrpn doesn't let us unicast within a multicast (multiple-</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// connection server) (in any clean way), or identify at a MC server which</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// connection a message came in over, this code is fragile - it depends</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// on the fact that vrpn_Connection only allows one connection to be made</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// before triggering the got_connection callback.  If connections were somehow</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// batched, or we multithreaded vrpn_Connection, this would break.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00020">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classvrpn__Mutex.html">   20</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Mutex.html">vrpn_Mutex</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> <a class="code hl_class" href="classvrpn__Mutex.html">vrpn_Mutex</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> * = NULL);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvrpn__Mutex.html">~vrpn_Mutex</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> <span class="keywordtype">void</span> mainloop(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *d_connection;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    vrpn_int32 d_myId;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    vrpn_int32 d_requestIndex_type;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    vrpn_int32 d_requestMutex_type;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    vrpn_int32 d_release_type;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    vrpn_int32 d_releaseNotification_type;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    vrpn_int32 d_grantRequest_type;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    vrpn_int32 d_denyRequest_type;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    vrpn_int32 d_initialize_type;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> <span class="keywordtype">void</span> sendRequest(vrpn_int32 index);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="keywordtype">void</span> sendRelease(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keywordtype">void</span> sendReleaseNotification(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> <span class="keywordtype">void</span> sendGrantRequest(vrpn_int32 index);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="keywordtype">void</span> sendDenyRequest(vrpn_int32 index);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00047">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Server.html">   47</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Mutex__Server.html">vrpn_Mutex_Server</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Mutex.html">vrpn_Mutex</a> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> <a class="code hl_class" href="classvrpn__Mutex__Server.html">vrpn_Mutex_Server</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> * = NULL);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvrpn__Mutex__Server.html">~vrpn_Mutex_Server</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> <span class="keyword">enum</span> state { HELD, FREE };</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    state d_state;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Server.html#ad5b071331c0908ddebcd5084e225f405">   58</a></span>    vrpn_int32 <a class="code hl_variable" href="classvrpn__Mutex__Server.html#ad5b071331c0908ddebcd5084e225f405">d_remoteIndex</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_requestIndex(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_requestMutex(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_release(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_gotConnection(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    handle_dropLastConnection(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00070">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html">   70</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__Mutex__Remote.html">vrpn_Mutex_Remote</a> : <span class="keyword">public</span> <a class="code hl_class" href="classvrpn__Mutex.html">vrpn_Mutex</a> {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> <a class="code hl_class" href="classvrpn__Mutex__Remote.html">vrpn_Mutex_Remote</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> * = NULL);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvrpn__Mutex__Remote.html">~vrpn_Mutex_Remote</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> <span class="comment">// ACCESSORS</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#a33028601a786df43494cd6d0027c4bd6">   78</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#a33028601a786df43494cd6d0027c4bd6">isAvailable</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#a4177019e06acbeff44743ba871e5c047">   83</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#a4177019e06acbeff44743ba871e5c047">isHeldLocally</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#aa5f323c2cab9195442deebde2c1a0c4a">   86</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#aa5f323c2cab9195442deebde2c1a0c4a">isHeldRemotely</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> <span class="comment">// MANIPULATORS</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#a824cfa2c769ec7396cc2b74ddf444047">   93</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Mutex__Remote.html#a824cfa2c769ec7396cc2b74ddf444047">request</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#a3299507dea21c693b66a23c77bfc3a7a">   97</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__Mutex__Remote.html#a3299507dea21c693b66a23c77bfc3a7a">release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#ad47a035df63d185918936d2614792667">  101</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#ad47a035df63d185918936d2614792667">addRequestGrantedCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#ab359833c0ec22800c9b3afbff9ac1087">  103</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#ab359833c0ec22800c9b3afbff9ac1087">addRequestDeniedCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#a92bcf6474debf7c012b0ce177ef25fcc">  105</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#a92bcf6474debf7c012b0ce177ef25fcc">addTakeCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classvrpn__Mutex__Remote.html#ab4c6a61905d22470089f5ed07b72eb2f">  107</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__Mutex__Remote.html#ab4c6a61905d22470089f5ed07b72eb2f">addReleaseCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> <span class="keywordtype">void</span> requestIndex(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> <span class="keyword">enum</span> state { OURS, REQUESTING, AVAILABLE, HELD_REMOTELY };</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    state d_state;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    vrpn_int32 d_myIndex;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    vrpn_bool d_requestBeforeInit;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_grantRequest(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_denyRequest(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    handle_releaseNotification(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_initialize(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_gotConnection(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> <span class="keywordtype">void</span> triggerGrantCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> <span class="keywordtype">void</span> triggerDenyCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> <span class="keywordtype">void</span> triggerTakeCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> <span class="keywordtype">void</span> triggerReleaseCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00134">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">  134</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        int (*f)(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> <span class="keywordtype">void</span> *userdata;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> <a class="code hl_struct" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> *next;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    };</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> <a class="code hl_struct" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> *d_reqGrantedCB;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> <a class="code hl_struct" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> *d_reqDeniedCB;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> <a class="code hl_struct" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> *d_takeCB;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> <a class="code hl_struct" href="structvrpn__Mutex__Remote_1_1mutexCallback.html">mutexCallback</a> *d_releaseCB;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>};</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// Known bugs -</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">//   The constructor that takes a Connection as an argument will incorrectly</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// identify its IP address as the machine's default rather than the address</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// used by the Connection.  This should not cause any errors in the protocol,</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// but will bias the tiebreaking algorithm.  The same constructor will use</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">// the wrong port number;  without this information the tiebreaking algorithm</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// fails.  Oops.  Use only one mutex per Connection for now.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">// Possible bugs -</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">//   If on startup somebody else is holding the mutex we'll think it's</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">// available.  However, if we request it they'll deny it to us and</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">// we won't break.</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">//   If sites don't execute the same set of addPeer() commands, they may</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// implicitly partition the network and not get true mutual exclusion.</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">// This could be fixed by sending an addPeer message.</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">//   If sites execute addPeer() while the lock is held, or being requested,</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">// we'll break.</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">//   - To fix:  send messages, but defer all executions of addPeer until the</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">// lock is released.  If we want to be really careful here, on getting an</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">// addPeer message when we think the lock is available we should request</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// the lock and then (if we get it) release it immediately, without</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">// triggering any user callbacks.  Sounds tough to code?</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">// Handling more than 2 sites in a mutex requires multiconnection servers.</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">// It's been tested with 1-3 sites, and works fine.</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">// This is an O(n^2) network traffic implementation;</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">// for details (and how to fix if it ever becomes a problem),</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">// see the implementation notes in vrpn_Mutex.C.</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00196">
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html">  196</a></span><span class="keyword">class </span>VRPN_API <a class="code hl_class" href="classvrpn__PeerMutex.html">vrpn_PeerMutex</a> {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#ae3934bb139b82144f4e4fe99d5a0d49c">  199</a></span> <a class="code hl_function" href="classvrpn__PeerMutex.html#ae3934bb139b82144f4e4fe99d5a0d49c">vrpn_PeerMutex</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> port, <span class="keyword">const</span> <span class="keywordtype">char</span> *NICaddress = NULL);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a3402b88d69e57fc6608c8ff2eedaddcc">  202</a></span> <a class="code hl_function" href="classvrpn__PeerMutex.html#a3402b88d69e57fc6608c8ff2eedaddcc">~vrpn_PeerMutex</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> <span class="comment">// ACCESSORS</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a33028601a786df43494cd6d0027c4bd6">  207</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#a33028601a786df43494cd6d0027c4bd6">isAvailable</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a4177019e06acbeff44743ba871e5c047">  212</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#a4177019e06acbeff44743ba871e5c047">isHeldLocally</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#aa5f323c2cab9195442deebde2c1a0c4a">  215</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#aa5f323c2cab9195442deebde2c1a0c4a">isHeldRemotely</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> <span class="keywordtype">int</span> numPeers(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> <span class="comment">// MANIPULATORS</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> <span class="keywordtype">void</span> mainloop(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a824cfa2c769ec7396cc2b74ddf444047">  226</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__PeerMutex.html#a824cfa2c769ec7396cc2b74ddf444047">request</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a3299507dea21c693b66a23c77bfc3a7a">  230</a></span> <span class="keywordtype">void</span> <a class="code hl_function" href="classvrpn__PeerMutex.html#a3299507dea21c693b66a23c77bfc3a7a">release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a7cafbb95bf87f5ced4e11658a24a565b">  234</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#a7cafbb95bf87f5ced4e11658a24a565b">addPeer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *stationName);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#ad47a035df63d185918936d2614792667">  237</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#ad47a035df63d185918936d2614792667">addRequestGrantedCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#ab359833c0ec22800c9b3afbff9ac1087">  239</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#ab359833c0ec22800c9b3afbff9ac1087">addRequestDeniedCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a92bcf6474debf7c012b0ce177ef25fcc">  241</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#a92bcf6474debf7c012b0ce177ef25fcc">addTakeCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#ab4c6a61905d22470089f5ed07b72eb2f">  246</a></span>    vrpn_bool <a class="code hl_function" href="classvrpn__PeerMutex.html#ab4c6a61905d22470089f5ed07b72eb2f">addReleaseCallback</a>(<span class="keywordtype">void</span> *userdata, <span class="keywordtype">int</span> (*)(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> <span class="keyword">enum</span> state { OURS, REQUESTING, AVAILABLE, HELD_REMOTELY };</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> <span class="keywordtype">char</span> *d_mutexName;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    state d_state;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a6bc378be2ea283bfd76594d4f220722c">  257</a></span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classvrpn__PeerMutex.html#a6bc378be2ea283bfd76594d4f220722c">d_numPeersGrantingLock</a>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a64c2afc3a0fa9c00e1ab80938ce818df">  261</a></span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *<a class="code hl_variable" href="classvrpn__PeerMutex.html#a64c2afc3a0fa9c00e1ab80938ce818df">d_server</a>;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#ad67a53e869227f5ffe4ea0c5e8ed2bb0">  263</a></span> <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> **<a class="code hl_variable" href="classvrpn__PeerMutex.html#ad67a53e869227f5ffe4ea0c5e8ed2bb0">d_peer</a>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> <span class="keywordtype">int</span> d_numPeers;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a39934a9862de6d209ee1752cf6addcc9">  267</a></span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classvrpn__PeerMutex.html#a39934a9862de6d209ee1752cf6addcc9">d_numConnectionsAllocated</a>;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    vrpn_uint32 d_myIP;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    vrpn_uint32 d_myPort;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    vrpn_uint32 d_holderIP;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    vrpn_int32 d_holderPort;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    vrpn_int32 d_myId;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    vrpn_int32 d_request_type;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    vrpn_int32 d_release_type;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    vrpn_int32 d_grantRequest_type;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    vrpn_int32 d_denyRequest_type;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> <span class="comment">// vrpn_int32 d_losePeer_type;</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_request(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_release(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_grantRequest(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_denyRequest(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> <span class="keyword">static</span> <span class="keywordtype">int</span> VRPN_CALLBACK handle_losePeer(<span class="keywordtype">void</span> *, <a class="code hl_struct" href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a>);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> <span class="keywordtype">void</span> sendRequest(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> <span class="keywordtype">void</span> sendRelease(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> <span class="keywordtype">void</span> sendGrantRequest(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *, vrpn_uint32 IPnumber,</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                          vrpn_uint32 PortNumber);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> <span class="keywordtype">void</span> sendDenyRequest(<a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *, vrpn_uint32 IPnumber,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                         vrpn_uint32 PortNumber);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> <span class="keywordtype">void</span> triggerGrantCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> <span class="keywordtype">void</span> triggerDenyCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> <span class="keywordtype">void</span> triggerTakeCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> <span class="keywordtype">void</span> triggerReleaseCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> <span class="keywordtype">void</span> checkGrantMutex(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> <span class="keywordtype">void</span> init(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00305">
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="structvrpn__PeerMutex_1_1mutexCallback.html">  305</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__PeerMutex_1_1mutexCallback.html">mutexCallback</a> {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        int (*f)(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> <span class="keywordtype">void</span> *userdata;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> <a class="code hl_struct" href="structvrpn__PeerMutex_1_1mutexCallback.html">mutexCallback</a> *next;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    };</div>
+</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> <a class="code hl_struct" href="structvrpn__PeerMutex_1_1mutexCallback.html">mutexCallback</a> *d_reqGrantedCB;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> <a class="code hl_struct" href="structvrpn__PeerMutex_1_1mutexCallback.html">mutexCallback</a> *d_reqDeniedCB;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> <a class="code hl_struct" href="structvrpn__PeerMutex_1_1mutexCallback.html">mutexCallback</a> *d_takeCB;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> <a class="code hl_struct" href="structvrpn__PeerMutex_1_1mutexCallback.html">mutexCallback</a> *d_releaseCB;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="foldopen" data-end="};" data-start="{" id="foldopen00316">
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="structvrpn__PeerMutex_1_1peerData.html">  316</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="structvrpn__PeerMutex_1_1peerData.html">peerData</a> {</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        vrpn_uint32 IPaddress;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        vrpn_uint32 port;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        vrpn_bool grantedLock;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    };</div>
+</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a7e491a9186d627ff813748628e87f6f2">  322</a></span> <a class="code hl_struct" href="structvrpn__PeerMutex_1_1peerData.html">peerData</a> *<a class="code hl_variable" href="classvrpn__PeerMutex.html#a7e491a9186d627ff813748628e87f6f2">d_peerData</a>;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="classvrpn__PeerMutex.html#a4c2afbc674eb759561c1da4b7f4931c5">  327</a></span> <a class="code hl_function" href="classvrpn__PeerMutex.html#a4c2afbc674eb759561c1da4b7f4931c5">vrpn_PeerMutex</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code hl_class" href="classvrpn__Connection.html">vrpn_Connection</a> *c);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>};</div>
+</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="preprocessor">#endif </span><span class="comment">// VRPN_MUTEX_H</span></div>
+<div class="ttc" id="aclassvrpn__Connection_html"><div class="ttname"><a href="classvrpn__Connection.html">vrpn_Connection</a></div><div class="ttdoc">Generic connection class not specific to the transport mechanism.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:562</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html"><div class="ttname"><a href="classvrpn__Mutex__Remote.html">vrpn_Mutex_Remote</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:70</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_a3299507dea21c693b66a23c77bfc3a7a"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#a3299507dea21c693b66a23c77bfc3a7a">vrpn_Mutex_Remote::release</a></div><div class="ttdeci">void release(void)</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_a33028601a786df43494cd6d0027c4bd6"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#a33028601a786df43494cd6d0027c4bd6">vrpn_Mutex_Remote::isAvailable</a></div><div class="ttdeci">vrpn_bool isAvailable(void) const</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_a4177019e06acbeff44743ba871e5c047"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#a4177019e06acbeff44743ba871e5c047">vrpn_Mutex_Remote::isHeldLocally</a></div><div class="ttdeci">vrpn_bool isHeldLocally(void) const</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_a824cfa2c769ec7396cc2b74ddf444047"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#a824cfa2c769ec7396cc2b74ddf444047">vrpn_Mutex_Remote::request</a></div><div class="ttdeci">void request(void)</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_a92bcf6474debf7c012b0ce177ef25fcc"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#a92bcf6474debf7c012b0ce177ef25fcc">vrpn_Mutex_Remote::addTakeCallback</a></div><div class="ttdeci">vrpn_bool addTakeCallback(void *userdata, int(*)(void *))</div><div class="ttdoc">These callbacks are triggered when ANY peer gets the mutex.</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_aa5f323c2cab9195442deebde2c1a0c4a"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#aa5f323c2cab9195442deebde2c1a0c4a">vrpn_Mutex_Remote::isHeldRemotely</a></div><div class="ttdeci">vrpn_bool isHeldRemotely(void) const</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_ab359833c0ec22800c9b3afbff9ac1087"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#ab359833c0ec22800c9b3afbff9ac1087">vrpn_Mutex_Remote::addRequestDeniedCallback</a></div><div class="ttdeci">vrpn_bool addRequestDeniedCallback(void *userdata, int(*)(void *))</div><div class="ttdoc">These callbacks are triggered when OUR request is denied.</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_ab4c6a61905d22470089f5ed07b72eb2f"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#ab4c6a61905d22470089f5ed07b72eb2f">vrpn_Mutex_Remote::addReleaseCallback</a></div><div class="ttdeci">vrpn_bool addReleaseCallback(void *userdata, int(*)(void *))</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Remote_html_ad47a035df63d185918936d2614792667"><div class="ttname"><a href="classvrpn__Mutex__Remote.html#ad47a035df63d185918936d2614792667">vrpn_Mutex_Remote::addRequestGrantedCallback</a></div><div class="ttdeci">vrpn_bool addRequestGrantedCallback(void *userdata, int(*)(void *))</div><div class="ttdoc">These callbacks are triggered when OUR request is granted.</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Server_html"><div class="ttname"><a href="classvrpn__Mutex__Server.html">vrpn_Mutex_Server</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:47</div></div>
+<div class="ttc" id="aclassvrpn__Mutex__Server_html_ad5b071331c0908ddebcd5084e225f405"><div class="ttname"><a href="classvrpn__Mutex__Server.html#ad5b071331c0908ddebcd5084e225f405">vrpn_Mutex_Server::d_remoteIndex</a></div><div class="ttdeci">vrpn_int32 d_remoteIndex</div><div class="ttdoc">Counts remotes who have had IDs issued to them.</div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:58</div></div>
+<div class="ttc" id="aclassvrpn__Mutex_html"><div class="ttname"><a href="classvrpn__Mutex.html">vrpn_Mutex</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:20</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html"><div class="ttname"><a href="classvrpn__PeerMutex.html">vrpn_PeerMutex</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:196</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a3299507dea21c693b66a23c77bfc3a7a"><div class="ttname"><a href="classvrpn__PeerMutex.html#a3299507dea21c693b66a23c77bfc3a7a">vrpn_PeerMutex::release</a></div><div class="ttdeci">void release(void)</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a33028601a786df43494cd6d0027c4bd6"><div class="ttname"><a href="classvrpn__PeerMutex.html#a33028601a786df43494cd6d0027c4bd6">vrpn_PeerMutex::isAvailable</a></div><div class="ttdeci">vrpn_bool isAvailable(void) const</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a3402b88d69e57fc6608c8ff2eedaddcc"><div class="ttname"><a href="classvrpn__PeerMutex.html#a3402b88d69e57fc6608c8ff2eedaddcc">vrpn_PeerMutex::~vrpn_PeerMutex</a></div><div class="ttdeci">~vrpn_PeerMutex(void)</div><div class="ttdoc">If isHeldLocally(), calls release().</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a39934a9862de6d209ee1752cf6addcc9"><div class="ttname"><a href="classvrpn__PeerMutex.html#a39934a9862de6d209ee1752cf6addcc9">vrpn_PeerMutex::d_numConnectionsAllocated</a></div><div class="ttdeci">int d_numConnectionsAllocated</div><div class="ttdoc">Dynamic array size for d_peer and d_peerGrantedLock.</div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:267</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a4177019e06acbeff44743ba871e5c047"><div class="ttname"><a href="classvrpn__PeerMutex.html#a4177019e06acbeff44743ba871e5c047">vrpn_PeerMutex::isHeldLocally</a></div><div class="ttdeci">vrpn_bool isHeldLocally(void) const</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a4c2afbc674eb759561c1da4b7f4931c5"><div class="ttname"><a href="classvrpn__PeerMutex.html#a4c2afbc674eb759561c1da4b7f4931c5">vrpn_PeerMutex::vrpn_PeerMutex</a></div><div class="ttdeci">vrpn_PeerMutex(const char *name, vrpn_Connection *c)</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a64c2afc3a0fa9c00e1ab80938ce818df"><div class="ttname"><a href="classvrpn__PeerMutex.html#a64c2afc3a0fa9c00e1ab80938ce818df">vrpn_PeerMutex::d_server</a></div><div class="ttdeci">vrpn_Connection * d_server</div><div class="ttdoc">Receive on this connection.</div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:261</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a6bc378be2ea283bfd76594d4f220722c"><div class="ttname"><a href="classvrpn__PeerMutex.html#a6bc378be2ea283bfd76594d4f220722c">vrpn_PeerMutex::d_numPeersGrantingLock</a></div><div class="ttdeci">int d_numPeersGrantingLock</div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:257</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a7cafbb95bf87f5ced4e11658a24a565b"><div class="ttname"><a href="classvrpn__PeerMutex.html#a7cafbb95bf87f5ced4e11658a24a565b">vrpn_PeerMutex::addPeer</a></div><div class="ttdeci">vrpn_bool addPeer(const char *stationName)</div><div class="ttdoc">Takes a VRPN station name of the form "&lt;host&gt;:&lt;port&gt;".</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a7e491a9186d627ff813748628e87f6f2"><div class="ttname"><a href="classvrpn__PeerMutex.html#a7e491a9186d627ff813748628e87f6f2">vrpn_PeerMutex::d_peerData</a></div><div class="ttdeci">peerData * d_peerData</div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:322</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a824cfa2c769ec7396cc2b74ddf444047"><div class="ttname"><a href="classvrpn__PeerMutex.html#a824cfa2c769ec7396cc2b74ddf444047">vrpn_PeerMutex::request</a></div><div class="ttdeci">void request(void)</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_a92bcf6474debf7c012b0ce177ef25fcc"><div class="ttname"><a href="classvrpn__PeerMutex.html#a92bcf6474debf7c012b0ce177ef25fcc">vrpn_PeerMutex::addTakeCallback</a></div><div class="ttdeci">vrpn_bool addTakeCallback(void *userdata, int(*)(void *))</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_aa5f323c2cab9195442deebde2c1a0c4a"><div class="ttname"><a href="classvrpn__PeerMutex.html#aa5f323c2cab9195442deebde2c1a0c4a">vrpn_PeerMutex::isHeldRemotely</a></div><div class="ttdeci">vrpn_bool isHeldRemotely(void) const</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_ab359833c0ec22800c9b3afbff9ac1087"><div class="ttname"><a href="classvrpn__PeerMutex.html#ab359833c0ec22800c9b3afbff9ac1087">vrpn_PeerMutex::addRequestDeniedCallback</a></div><div class="ttdeci">vrpn_bool addRequestDeniedCallback(void *userdata, int(*)(void *))</div><div class="ttdoc">These callbacks are triggered when OUR request is denied.</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_ab4c6a61905d22470089f5ed07b72eb2f"><div class="ttname"><a href="classvrpn__PeerMutex.html#ab4c6a61905d22470089f5ed07b72eb2f">vrpn_PeerMutex::addReleaseCallback</a></div><div class="ttdeci">vrpn_bool addReleaseCallback(void *userdata, int(*)(void *))</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_ad47a035df63d185918936d2614792667"><div class="ttname"><a href="classvrpn__PeerMutex.html#ad47a035df63d185918936d2614792667">vrpn_PeerMutex::addRequestGrantedCallback</a></div><div class="ttdeci">vrpn_bool addRequestGrantedCallback(void *userdata, int(*)(void *))</div><div class="ttdoc">These callbacks are triggered when OUR request is granted.</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_ad67a53e869227f5ffe4ea0c5e8ed2bb0"><div class="ttname"><a href="classvrpn__PeerMutex.html#ad67a53e869227f5ffe4ea0c5e8ed2bb0">vrpn_PeerMutex::d_peer</a></div><div class="ttdeci">vrpn_Connection ** d_peer</div><div class="ttdoc">Send on these connections to other Mutex's well-known-ports.</div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:263</div></div>
+<div class="ttc" id="aclassvrpn__PeerMutex_html_ae3934bb139b82144f4e4fe99d5a0d49c"><div class="ttname"><a href="classvrpn__PeerMutex.html#ae3934bb139b82144f4e4fe99d5a0d49c">vrpn_PeerMutex::vrpn_PeerMutex</a></div><div class="ttdeci">vrpn_PeerMutex(const char *name, int port, const char *NICaddress=NULL)</div><div class="ttdoc">This constructor opens a new connection/port for the mutex.</div></div>
+<div class="ttc" id="astructvrpn__HANDLERPARAM_html"><div class="ttname"><a href="structvrpn__HANDLERPARAM.html">vrpn_HANDLERPARAM</a></div><div class="ttdoc">This structure is what is passed to a vrpn_Connection message callback.</div><div class="ttdef"><b>定义</b> vrpn_Connection.h:41</div></div>
+<div class="ttc" id="astructvrpn__Mutex__Remote_1_1mutexCallback_html"><div class="ttname"><a href="structvrpn__Mutex__Remote_1_1mutexCallback.html">vrpn_Mutex_Remote::mutexCallback</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:134</div></div>
+<div class="ttc" id="astructvrpn__PeerMutex_1_1mutexCallback_html"><div class="ttname"><a href="structvrpn__PeerMutex_1_1mutexCallback.html">vrpn_PeerMutex::mutexCallback</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:305</div></div>
+<div class="ttc" id="astructvrpn__PeerMutex_1_1peerData_html"><div class="ttname"><a href="structvrpn__PeerMutex_1_1peerData.html">vrpn_PeerMutex::peerData</a></div><div class="ttdef"><b>定义</b> vrpn_Mutex.h:316</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

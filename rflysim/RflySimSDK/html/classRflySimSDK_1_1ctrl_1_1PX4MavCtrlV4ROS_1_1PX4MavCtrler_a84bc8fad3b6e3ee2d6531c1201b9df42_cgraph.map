@@ -1,0 +1,23 @@
+<map id="SendHILCtrlMsg" name="SendHILCtrlMsg">
+<area shape="rect" id="Node000001" title="发送硬件在环仿真的hil_actuator_controls消息（消息定义可见：https://mavlink.io/en/messages/common.html#HIL_ACTUATOR_CONTR..." alt="" coords="5,213,124,240"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#aecd51687631b45b14740da57f3c3d777" title="将 pymavlink 库中的一个MAVLink消息对象转换为ROS消息格式。" alt="" coords="206,88,338,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,211,114,168,140,144,170,124,190,115,192,120,173,129,144,149,117,172,79,215"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#aecd51687631b45b14740da57f3c3d777" title="将pymavlink消息转换为ROS的Mavlink消息" alt="" coords="172,5,372,64"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="70,212,106,147,135,108,170,74,175,70,178,75,173,78,139,112,111,150,74,214"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title="根据需要的长度调整数据列表，以确保其长度符合要求。" alt="" coords="181,139,363,181"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="108,210,188,184,189,189,110,215"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1ModelLoad.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="181,205,363,248"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="124,224,165,224,165,229,124,229"/>
+<area shape="rect" id="Node000008" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4_1_1PX4MavCtrler.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或裁剪一个列表" alt="" coords="175,272,368,315"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="110,238,189,264,188,269,108,243"/>
+<area shape="rect" id="Node000009" href="$classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html#a9560077bcadbe108b3e31354534f164b" title=" " alt="" coords="176,339,368,381"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="79,239,118,281,144,304,173,324,182,329,179,334,170,329,141,308,114,285,75,242"/>
+<area shape="rect" id="Node000010" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a8a2b734fe58ba395639b61d4cf7e0800" title="填充或截断列表，使其长度达到指定值" alt="" coords="176,405,368,448"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="73,240,87,271,108,312,137,354,173,391,179,395,175,399,170,395,133,358,103,314,82,273,68,242"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#ac191e5f90f81a3609656cdd0213c50c5" title="将传入的字节序列（payload_bytes）转换成MAVLink协议中的payload64格式。" alt="" coords="446,21,594,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,85,371,73,419,57,447,50,448,55,421,63,373,79,331,90"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#ac191e5f90f81a3609656cdd0213c50c5" title="将payload字节转换为Mavlink的payload64格式" alt="" coords="420,72,620,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="338,99,405,99,405,104,338,104"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="372,32,431,32,431,37,372,37"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="373,59,406,68,404,73,372,64"/>
+</map>

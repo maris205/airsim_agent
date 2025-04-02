@@ -1,0 +1,12 @@
+<map id="vrpn_Sound_Server" name="vrpn_Sound_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="48,229,184,256"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Sound.html" title=" " alt="" coords="5,155,96,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,191,107,227,103,231,70,195"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="57,80,174,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,120,64,156,60,152,92,116"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Text__Sender.html" title="Allows a user to send text messages from a device (usually," alt="" coords="119,155,246,181"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="140,116,173,152,169,156,136,120"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="37,5,195,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,48,118,80,113,80,113,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="163,195,129,231,125,227,159,191"/>
+</map>

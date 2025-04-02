@@ -1,0 +1,21 @@
+<map id="vrpn_File_Connection" name="vrpn_File_Connection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="360,427,507,453"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="204,317,324,344"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,352,355,400,402,424,399,428,352,405,288,357"/>
+<area shape="rect" id="Node000003" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="5,189,166,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,230,96,253,109,273,129,290,154,303,205,319,203,325,152,308,126,295,104,276,91,255,85,232"/>
+<area shape="rect" id="Node000004" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="207,189,335,216"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="272,232,267,317,262,317,267,231"/>
+<area shape="rect" id="Node000005" href="$classvrpn__File__Connection_1_1vrpn__FileBookmark.html" title=" " alt="" coords="507,317,640,344"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="547,356,452,428,448,424,543,352"/>
+<area shape="rect" id="Node000006" href="$structvrpn__LOGLIST.html" title="Placed here so vrpn_FileConnection can use it too." alt="" coords="435,189,544,216"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="456,227,417,258,400,278,387,300,381,316,380,330,387,362,404,397,425,425,420,428,400,400,382,364,375,330,376,315,382,298,396,274,414,254,452,223"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="508,227,567,315,563,318,504,230"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="561,194,570,203,562,211,545,214,544,209,560,206,565,203,558,198"/>
+<area shape="rect" id="Node000007" href="$structvrpn__HANDLERPARAM.html" title="This structure is what is passed to a vrpn_Connection message callback." alt="" coords="407,96,572,123"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="492,138,492,189,487,189,487,138"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="462,5,517,32"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="492,48,492,95,487,95,487,48"/>
+<area shape="rect" id="Node000009" href="$classvrpn__File__Connection_1_1FileTime__Accumulator.html" title=" " alt="" coords="664,317,816,344"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="703,354,646,380,581,405,496,429,494,423,579,400,644,375,701,349"/>
+</map>

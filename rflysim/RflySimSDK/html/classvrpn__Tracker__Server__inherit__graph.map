@@ -1,0 +1,17 @@
+<map id="vrpn_Tracker_Server" name="vrpn_Tracker_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="125,229,267,256"/>
+<area shape="rect" id="Node000005" href="$classvrpn__Tracker__DeadReckoning__Rotation.html" title="Use angular velocity reports, if available, to predict the future orientation" alt="" coords="5,304,203,347"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="172,268,129,306,126,301,169,264"/>
+<area shape="rect" id="Node000006" href="$classvrpn__YEI__3Space.html" title="Base class with routines for YEI 3Space units." alt="" coords="226,312,352,339"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="224,264,277,310,273,314,220,268"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Tracker.html" title=" " alt="" coords="147,155,245,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,197,199,229,193,229,193,197"/>
+<area shape="rect" id="Node000003" href="$classvrpn__BaseClass.html" title=" " alt="" coords="137,80,255,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,122,199,154,193,154,193,122"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="117,5,275,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,48,199,80,193,80,193,48"/>
+<area shape="rect" id="Node000007" href="$classvrpn__YEI__3Space__Sensor.html" title="Class to support reading data from a wired YEI 3Space unit." alt="" coords="102,403,276,429"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="265,351,205,404,202,400,262,347"/>
+<area shape="rect" id="Node000008" href="$classvrpn__YEI__3Space__Sensor__Wireless.html" title="Class to support reading data from a wireless YEI 3Space unit." alt="" coords="301,395,475,437"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="317,347,367,392,363,396,313,351"/>
+</map>

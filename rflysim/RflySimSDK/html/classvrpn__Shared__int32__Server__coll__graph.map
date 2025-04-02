@@ -1,0 +1,27 @@
+<map id="vrpn_Shared_int32_Server" name="vrpn_Shared_int32_Server">
+<area shape="rect" id="Node000001" title=" " alt="" coords="468,353,642,380"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Shared__int32.html" title=" " alt="" coords="490,277,620,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="558,319,558,353,552,353,552,319"/>
+<area shape="poly" id="edge14_Node000002_Node000002" title=" " alt="" coords="636,283,646,291,638,298,620,300,619,295,636,293,641,291,633,288"/>
+<area shape="rect" id="Node000003" href="$classvrpn__SharedObject.html" title=" " alt="" coords="349,187,481,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,220,536,274,533,279,446,224"/>
+<area shape="rect" id="Node000004" href="$classvrpn__Connection.html" title="Generic connection class not specific to the transport mechanism." alt="" coords="118,96,237,123"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="212,128,279,160,356,183,354,189,277,165,210,133"/>
+<area shape="rect" id="Node000005" href="$classvrpn_1_1BoundEndpointAllocator.html" title="Combines the function pointer for an Endpoint Allocator with its two arguments into a single callable..." alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="83,47,84,60,89,71,102,84,119,93,116,98,99,88,84,73,79,61,78,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn_1_1EndpointContainer.html" title="Container for endpoints, held by pointer." alt="" coords="207,5,335,32"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="262,48,243,74,209,98,206,93,240,70,257,45"/>
+<area shape="rect" id="Node000007" href="$classvrpn__LamportClock.html" title=" " alt="" coords="261,96,395,123"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="353,132,404,184,401,188,349,136"/>
+<area shape="rect" id="Node000008" href="$classvrpn__LamportTimestamp.html" title=" " alt="" coords="419,96,584,123"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="481,136,429,188,425,184,477,132"/>
+<area shape="rect" id="Node000009" href="$structvrpn__SharedObject_1_1deferredUpdateCallbackEntry.html" title=" " alt="" coords="608,96,800,123"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="671,133,600,165,482,190,481,185,598,160,669,128"/>
+<area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="817,102,827,109,819,117,801,120,800,114,817,112,822,109,814,106"/>
+<area shape="rect" id="Node000010" href="$structvrpn__Shared__int32_1_1callbackEntry.html" title=" " alt="" coords="505,187,605,213"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="558,229,558,277,552,277,552,229"/>
+<area shape="poly" id="edge11_Node000010_Node000010" title=" " alt="" coords="622,191,632,200,623,208,606,211,605,206,621,204,626,200,619,196"/>
+<area shape="rect" id="Node000011" href="$structvrpn__Shared__int32_1_1timedCallbackEntry.html" title=" " alt="" coords="682,187,817,213"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="709,223,584,279,582,274,707,218"/>
+<area shape="poly" id="edge13_Node000011_Node000011" title=" " alt="" coords="834,192,844,200,836,208,818,211,817,206,833,203,839,200,831,196"/>
+</map>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/xhtml;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=11" http-equiv="X-UA-Compatible"/>
+<meta content="Doxygen 1.11.0" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RflySimSDK: PID类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="dynsections.js" type="text/javascript"></script>
+<script src="clipboard.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script src="resize.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script src="search/searchdata.js" type="text/javascript"></script>
+<script src="search/search.js" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js" type="text/javascript"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="cus.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="projectrow">
+<td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+<td id="projectalign">
+<div id="projectname">RflySimSDK<span id="projectnumber"> v3.06</span>
+</div>
+<div id="projectbrief">RflySimSDK说明文档</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script src="menudata.js" type="text/javascript"></script>
+<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onkeydown="return searchBox.OnSearchSelectKey(event)" onmouseout="return searchBox.OnSearchSelectHide()" onmouseover="return searchBox.OnSearchSelectShow()">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navpath" id="nav-path">
+<ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>api</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1api_1_1PID.html">PID</a></li> </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+<div class="summary">
+<a href="#pub-methods">Public 成员函数</a> |
+<a href="#pub-attribs">Public 属性</a> |
+<a href="classRflySimSDK_1_1ctrl_1_1api_1_1PID-members.html">所有成员列表</a> </div>
+<div class="headertitle"><div class="title">PID类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae56af359a4efac3fb91eacead3d65b9b" id="r_ae56af359a4efac3fb91eacead3d65b9b"><td align="right" class="memItemLeft" valign="top"><a id="ae56af359a4efac3fb91eacead3d65b9b" name="ae56af359a4efac3fb91eacead3d65b9b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, p=0.0, i=0.0, d=0.0)</td></tr>
+<tr class="separator:ae56af359a4efac3fb91eacead3d65b9b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d672e22700170cd82cbe5b00ce137a8" id="r_a1d672e22700170cd82cbe5b00ce137a8"><td align="right" class="memItemLeft" valign="top"><a id="a1d672e22700170cd82cbe5b00ce137a8" name="a1d672e22700170cd82cbe5b00ce137a8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>pid</b> (self, err)</td></tr>
+<tr class="separator:a1d672e22700170cd82cbe5b00ce137a8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aecbc052233262275fc20a8ee8dfb8a47" id="r_aecbc052233262275fc20a8ee8dfb8a47"><td align="right" class="memItemLeft" valign="top"><a id="aecbc052233262275fc20a8ee8dfb8a47" name="aecbc052233262275fc20a8ee8dfb8a47"></a>
+ </td><td class="memItemRight" valign="bottom"><b>reset</b> (self)</td></tr>
+<tr class="separator:aecbc052233262275fc20a8ee8dfb8a47"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac483f6ce851c9ecd9fb835ff7551737c" id="r_ac483f6ce851c9ecd9fb835ff7551737c"><td align="right" class="memItemLeft" valign="top"><a id="ac483f6ce851c9ecd9fb835ff7551737c" name="ac483f6ce851c9ecd9fb835ff7551737c"></a>
+ </td><td class="memItemRight" valign="bottom"><b>p</b></td></tr>
+<tr class="separator:ac483f6ce851c9ecd9fb835ff7551737c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7e98b8a17c0aad30ba64d47b74e2a6c1" id="r_a7e98b8a17c0aad30ba64d47b74e2a6c1"><td align="right" class="memItemLeft" valign="top"><a id="a7e98b8a17c0aad30ba64d47b74e2a6c1" name="a7e98b8a17c0aad30ba64d47b74e2a6c1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>i</b></td></tr>
+<tr class="separator:a7e98b8a17c0aad30ba64d47b74e2a6c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1aabac6d068eef6a7bad3fdf50a05cc8" id="r_a1aabac6d068eef6a7bad3fdf50a05cc8"><td align="right" class="memItemLeft" valign="top"><a id="a1aabac6d068eef6a7bad3fdf50a05cc8" name="a1aabac6d068eef6a7bad3fdf50a05cc8"></a>
+ </td><td class="memItemRight" valign="bottom"><b>d</b></td></tr>
+<tr class="separator:a1aabac6d068eef6a7bad3fdf50a05cc8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a44ee42af2b547a397e688441c9ee3449" id="r_a44ee42af2b547a397e688441c9ee3449"><td align="right" class="memItemLeft" valign="top"><a id="a44ee42af2b547a397e688441c9ee3449" name="a44ee42af2b547a397e688441c9ee3449"></a>
+ </td><td class="memItemRight" valign="bottom"><b>sum_err</b></td></tr>
+<tr class="separator:a44ee42af2b547a397e688441c9ee3449"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abde9db1e01b5ac4e09b9aa5ed29a94c1" id="r_abde9db1e01b5ac4e09b9aa5ed29a94c1"><td align="right" class="memItemLeft" valign="top"><a id="abde9db1e01b5ac4e09b9aa5ed29a94c1" name="abde9db1e01b5ac4e09b9aa5ed29a94c1"></a>
+ </td><td class="memItemRight" valign="bottom"><b>sum_limit</b></td></tr>
+<tr class="separator:abde9db1e01b5ac4e09b9aa5ed29a94c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a701701c58c18f996bed6eea38d5ba537" id="r_a701701c58c18f996bed6eea38d5ba537"><td align="right" class="memItemLeft" valign="top"><a id="a701701c58c18f996bed6eea38d5ba537" name="a701701c58c18f996bed6eea38d5ba537"></a>
+ </td><td class="memItemRight" valign="bottom"><b>last_err</b></td></tr>
+<tr class="separator:a701701c58c18f996bed6eea38d5ba537"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<a id="details" name="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><pre class="fragment">本控制器适用于调用时间间隔在一个常值附近的情形
+在控制器中不计算时间间隔，通过PID参数进行调整
+</pre> </div><hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="api_8py.html">api.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 <a href="https://www.doxygen.org/index.html"><img alt="doxygen" class="footer" height="31" src="doxygen.svg" width="104"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

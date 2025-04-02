@@ -1,0 +1,21 @@
+<map id="SendMavArm" name="SendMavArm">
+<area shape="rect" id="Node000001" title="通过MAVLink发送解锁指令给PX4" alt="" coords="5,93,106,120"/>
+<area shape="rect" id="Node000002" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a1d246a3bb2d9f51155d83676a98c65a8" title="检查PX4的解锁状态" alt="" coords="230,123,274,149"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,112,215,128,214,133,106,117"/>
+<area shape="rect" id="Node000005" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a1d246a3bb2d9f51155d83676a98c65a8" title="解锁无人机" alt="" coords="159,173,345,216"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="80,118,155,159,168,165,166,170,153,164,77,123"/>
+<area shape="rect" id="Node000006" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a3f26ddcad2cd58eccffb4f05afb87094" title="检查PX4的上锁状态" alt="" coords="222,5,282,32"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="73,91,109,66,153,42,206,25,207,30,155,46,111,70,76,95"/>
+<area shape="rect" id="Node000007" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a3f26ddcad2cd58eccffb4f05afb87094" title="锁定无人机" alt="" coords="154,56,350,99"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="106,97,138,92,139,97,107,102"/>
+<area shape="rect" id="Node000003" href="$classRflySimSDK_1_1ctrl_1_1PX4MavCtrlV4ROS_1_1PX4MavCtrler.html#a97b2df387a387f14d9ecb9ec9c327f68" title="给PX4发送解锁指令。" alt="" coords="466,64,537,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,129,450,87,451,92,274,134"/>
+<area shape="rect" id="Node000004" href="$classRflySimSDK_1_1vision_1_1RflyRosCtrlApi_1_1RflyRosCtrlApi.html#a97b2df387a387f14d9ecb9ec9c327f68" title="解锁或锁定PX4无人机" alt="" coords="398,115,605,157"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="274,133,382,133,382,139,274,139"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="329,170,348,159,363,145,371,130,380,115,397,100,423,88,450,80,451,86,424,93,399,105,384,118,376,133,367,148,352,163,332,175"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="345,170,392,159,393,164,346,175"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="283,23,451,63,450,68,282,28"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="283,19,317,26,351,42,368,56,377,72,385,86,400,101,407,105,404,110,396,105,381,90,372,74,363,60,349,46,315,32,282,24"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="350,75,450,75,450,80,350,80"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="346,97,393,108,392,113,345,102"/>
+</map>

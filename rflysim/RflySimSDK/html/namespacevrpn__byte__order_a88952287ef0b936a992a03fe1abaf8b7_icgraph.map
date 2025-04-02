@@ -1,0 +1,5 @@
+<map id="ntoh" name="ntoh">
+<area shape="rect" id="Node000001" title="network to host byte order for 8&#45;bit uints is a no&#45;op" alt="" coords="100,5,146,32"/>
+<area shape="rect" id="Node000002" href="$namespacevrpn__byte__order.html#ab7c05c24b8fa95d31e62a6bb4ae70fb2" title=" " alt="" coords="5,5,52,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,21,52,21,52,16,84,16"/>
+</map>

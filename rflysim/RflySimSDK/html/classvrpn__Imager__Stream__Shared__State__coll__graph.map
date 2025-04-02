@@ -1,0 +1,9 @@
+<map id="vrpn_Imager_Stream_Shared_State" name="vrpn_Imager_Stream_Shared_State">
+<area shape="rect" id="Node000001" title=" " alt="" coords="50,219,192,261"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Semaphore.html" title=" " alt="" coords="5,112,125,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,151,113,217,108,219,76,154"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Message__List.html" title=" " alt="" coords="148,112,283,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,152,140,220,136,217,194,149"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="188,5,243,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,47,218,112,213,112,213,47"/>
+</map>

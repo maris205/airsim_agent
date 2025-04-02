@@ -1,0 +1,9 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,88,87,115"/>
+<area shape="rect" id="Node000001" href="$structvrpn__MainloopObject_1_1CannotWrapNullPointerIntoMainloopObject.html" title="Exception thrown when trying to wrap a NULL pointer." alt="" coords="138,5,325,64"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="99,80,147,62,149,67,101,85"/>
+<area shape="rect" id="Node000002" href="$structvrpn__SerialPort_1_1AlreadyOpen.html" title=" " alt="" coords="135,88,328,115"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="102,99,134,99,134,104,102,104"/>
+<area shape="rect" id="Node000003" href="$structvrpn__SerialPort_1_1NotOpen.html" title=" " alt="" coords="146,139,316,165"/>
+<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="102,115,135,124,177,135,176,141,134,129,101,120"/>
+</map>

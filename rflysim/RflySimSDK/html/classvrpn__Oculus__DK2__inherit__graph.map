@@ -1,0 +1,17 @@
+<map id="vrpn_Oculus_DK2" name="vrpn_Oculus_DK2">
+<area shape="rect" id="Node000001" title="Oculus Rift DK2 head&#45;mounted display base class for both intertial&#45; only and LED&#45;enabled version." alt="" coords="121,304,249,331"/>
+<area shape="rect" id="Node000007" href="$classvrpn__Oculus__DK2__LEDs.html" title="Oculus Rift DK2 head&#45;mounted display (LEDs enabled)" alt="" coords="5,379,173,405"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="158,342,107,380,104,376,155,338"/>
+<area shape="rect" id="Node000008" href="$classvrpn__Oculus__DK2__inertial.html" title="Oculus Rift DK2 head&#45;mounted display (inertial measurement unit only)" alt="" coords="196,379,368,405"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="216,338,267,376,264,380,212,342"/>
+<area shape="rect" id="Node000002" href="$classvrpn__Oculus.html" title="Oculus Rift head&#45;mounted display base class" alt="" coords="138,229,232,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,272,188,304,182,304,182,272"/>
+<area shape="rect" id="Node000003" href="$classvrpn__Analog.html" title=" " alt="" coords="72,155,165,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,191,175,227,172,231,138,195"/>
+<area shape="rect" id="Node000004" href="$classvrpn__BaseClass.html" title=" " alt="" coords="60,80,177,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="121,122,121,154,116,154,116,122"/>
+<area shape="rect" id="Node000005" href="$classvrpn__BaseClassUnique.html" title=" " alt="" coords="39,5,198,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="121,48,121,80,116,80,116,48"/>
+<area shape="rect" id="Node000006" href="$classvrpn__HidInterface.html" title=" " alt="" coords="190,155,314,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="232,195,198,231,195,227,228,191"/>
+</map>
