@@ -1,0 +1,36 @@
+{
+    "VisionSensors":[
+        {
+            "SeqID":0, 
+            "TypeID":1, 
+            "TargetCopter":1, 
+            "TargetMountType":0, 
+            "DataWidth":640,
+            "DataHeight":480,
+            "DataCheckFreq":30,
+            "SendProtocol":[0,0,0,0,0,0,0,0],
+            "CameraFOV":90, 
+            "EularOrQuat":0,
+            "SensorPosXYZ":[0.3,-0.15,0],
+            "SensorAngQuat":[0,0,0,0], 
+            "SensorAngEular":[0,0,0],
+            "otherParams":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
+        },
+        {
+            "SeqID":0,
+            "TypeID":1,
+            "TargetCopter":1,
+            "TargetMountType":0,
+            "DataWidth":640,
+            "DataHeight":480,
+            "DataCheckFreq":30,
+            "EularOrQuat":0,
+            "SendProtocol":[0,0,0,0,0,0,0,0], 
+            "CameraFOV":90,
+            "SensorPosXYZ":[0.3,0.15,0], 
+            "SensorAngQuat":[0,0,0,0],
+            "SensorAngEular":[0,1.57,0],
+            "otherParams":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        }
+    ]
+}

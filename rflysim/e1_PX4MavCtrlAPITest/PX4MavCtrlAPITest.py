@@ -1,12 +1,9 @@
 import time
 import math
 import sys
-
-sys.path.append("../RflySimSDK/ctrl/")
-sys.path.append("../RflySimSDK/ue/")
-
 import PX4MavCtrlV4 as PX4MavCtrl
 import UE4CtrlAPI
+
 ue = UE4CtrlAPI.UE4CtrlAPI()
 
 #Create a new MAVLink communication instance, UDP sending port (CopterSim’s receving port) is 20100

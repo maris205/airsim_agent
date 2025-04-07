@@ -1,0 +1,37 @@
+{
+    "VisionSensors":[
+        {
+            "SeqID":0, //视觉传感器序号0 1 2 3 ...排序。如果填0，则自动递增排序。
+            "TypeID":1, //视觉传感器类型，1:RGB，2:深度，3:灰度，4:分割，5:测距，7:深度转点云，20-23:激光雷达，40-41:热力红外（收费版）
+            "TargetCopter":1, //传感器绑定的CopterID号，注:免费版只支持绑定1号飞机
+            "TargetMountType":0, //绑定方式，0:固定飞机几何中心， 1:固定飞机底部中心，2:固定地面上，3:弱固定飞机上姿态不随动，4:绑定其他视觉传感器上
+            "DataWidth":640, //图像像素长度
+            "DataHeight":480,//图像像素宽度
+            "DataCheckFreq":30,//图像检查更新频率，如果发现UE渲染更新了（取决于UE刷新帧率），会立刻发出数据。UE刷新率+DataCheckFreq检查频率，共同决定图像延迟。
+            "SendProtocol":[0,0,0,0,0,0,0,0],// SendProtocol[0]，表示传输协议，0：共享内存（仅限Windows下获取图像），1：UDP网络传输模式（图片使用jpeg压缩，点云直传），2：UDP直传图片不压缩，3：UDP直传图片png压缩。注：0-1适用所有传感器，2-3选项仅限图像类传感器。
+            //SendProtocol[1-4]位对应，IP地址位，表示请求返回的IP地址。默认都填0（或127.0.0.1），会自动请求UE返回图像到本电脑；SendProtocol[5]端口位，指定传感器图像回传端口，需要为每个传感器设置不同端口。默认填0，会自动使用9999+SeqID的递增端口号。
+            "CameraFOV":90, //视觉传感器的FOV视场角，和焦距呈现一定数值关系，能间接修改焦距。
+            "EularOrQuat":0, //使用欧拉角SensorAngEular还是四元数SensorAngQuat来设置视觉传感器姿态，默认使用0欧拉角。
+            "SensorPosXYZ":[0.3,-0.15,0], //视觉传感器的安装位置，和TargetMountType对应偏移中心，单位米
+            "SensorAngQuat":[0,0,0,0], // 视觉传感器的安装姿态，用四元数方式表示
+            "SensorAngEular":[0,0,0],// 视觉传感器的安装姿态，用欧拉角方式表示，单位弧度
+            "otherParams":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] //其他参数
+        },
+        {
+            "SeqID":0, //自动确认序号，这里会自动识别为1
+            "TypeID":1,
+            "TargetCopter":1,
+            "TargetMountType":0,
+            "DataWidth":640,
+            "DataHeight":480,
+            "DataCheckFreq":30,
+            "EularOrQuat":0,
+            "SendProtocol":[0,0,0,0,0,0,0,0], //使用共享内存机制，并自动确定IP和端口号
+            "CameraFOV":90,
+            "SensorPosXYZ":[0.3,0.15,0], //这里安装位置有区别，一左一右
+            "SensorAngQuat":[0,0,0,0],
+            "SensorAngEular":[0,0,0],
+            "otherParams":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        }
+    ]
+}
