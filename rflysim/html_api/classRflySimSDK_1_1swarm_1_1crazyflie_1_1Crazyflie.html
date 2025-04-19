@@ -1,0 +1,1096 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RflySimSDK: Crazyflie类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">RflySimSDK<span id="projectnumber">&#160;v3.03</span>
+   </div>
+   <div id="projectbrief">RflySimSDK说明文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>crazyflie</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie.html">Crazyflie</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1Crazyflie-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Crazyflie类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad2c5a2e8395769b5b40e0994673d684c" id="r_ad2c5a2e8395769b5b40e0994673d684c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2c5a2e8395769b5b40e0994673d684c">__init__</a> (self, id, initialPosition, tf, mode)</td></tr>
+<tr class="separator:ad2c5a2e8395769b5b40e0994673d684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85425a6a48afcdb82e3857451125d05" id="r_ad85425a6a48afcdb82e3857451125d05"><td class="memItemLeft" align="right" valign="top"><a id="ad85425a6a48afcdb82e3857451125d05" name="ad85425a6a48afcdb82e3857451125d05"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> (self)</td></tr>
+<tr class="separator:ad85425a6a48afcdb82e3857451125d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c6134822656abf5c674237505e2311" id="r_ae5c6134822656abf5c674237505e2311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5c6134822656abf5c674237505e2311">setGroupMask</a> (self, groupMask)</td></tr>
+<tr class="separator:ae5c6134822656abf5c674237505e2311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d7b4142ac3d5a7ebeecdb092b4e9d7" id="r_ad6d7b4142ac3d5a7ebeecdb092b4e9d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6d7b4142ac3d5a7ebeecdb092b4e9d7">enableCollisionAvoidance</a> (self, others, ellipsoidRadii)</td></tr>
+<tr class="separator:ad6d7b4142ac3d5a7ebeecdb092b4e9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0690f37908998baefac707c57ec8f3" id="r_a1d0690f37908998baefac707c57ec8f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d0690f37908998baefac707c57ec8f3">disableCollisionAvoidance</a> (self)</td></tr>
+<tr class="separator:a1d0690f37908998baefac707c57ec8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319d864f62c435011eb90f708b44b9b5" id="r_a319d864f62c435011eb90f708b44b9b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a319d864f62c435011eb90f708b44b9b5">takeoff</a> (self, targetHeight, duration, groupMask=0)</td></tr>
+<tr class="separator:a319d864f62c435011eb90f708b44b9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fbb5cd8c4d2063559e7fa468433dcd" id="r_ab2fbb5cd8c4d2063559e7fa468433dcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2fbb5cd8c4d2063559e7fa468433dcd">land</a> (self, targetHeight, duration, groupMask=0)</td></tr>
+<tr class="separator:ab2fbb5cd8c4d2063559e7fa468433dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08d1e6d1f541c17475b5b47f9269d0b" id="r_af08d1e6d1f541c17475b5b47f9269d0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af08d1e6d1f541c17475b5b47f9269d0b">stop</a> (self, groupMask=0)</td></tr>
+<tr class="separator:af08d1e6d1f541c17475b5b47f9269d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d44eb3b2de025f752b741d0f4efef6" id="r_a09d44eb3b2de025f752b741d0f4efef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09d44eb3b2de025f752b741d0f4efef6">goTo</a> (self, goal, yaw, duration, relative=False, groupMask=0)</td></tr>
+<tr class="separator:a09d44eb3b2de025f752b741d0f4efef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f16a390472d3ebf0a80231ae9cac7f8" id="r_a0f16a390472d3ebf0a80231ae9cac7f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f16a390472d3ebf0a80231ae9cac7f8">uploadTrajectory</a> (self, trajectoryId, pieceOffset, trajectory)</td></tr>
+<tr class="separator:a0f16a390472d3ebf0a80231ae9cac7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c94a58e1ba285d5a8cc01024605342" id="r_a98c94a58e1ba285d5a8cc01024605342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98c94a58e1ba285d5a8cc01024605342">startTrajectory</a> (self, trajectoryId, timescale=1.0, reverse=False, relative=True, groupMask=0)</td></tr>
+<tr class="separator:a98c94a58e1ba285d5a8cc01024605342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d850ec107e3df7c9a1e5b7e9735bdfe" id="r_a2d850ec107e3df7c9a1e5b7e9735bdfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d850ec107e3df7c9a1e5b7e9735bdfe">notifySetpointsStop</a> (self, remainValidMillisecs=100, groupMask=0)</td></tr>
+<tr class="separator:a2d850ec107e3df7c9a1e5b7e9735bdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d7a44c0f9fd4d0b9119a6d73149377" id="r_a78d7a44c0f9fd4d0b9119a6d73149377"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d7a44c0f9fd4d0b9119a6d73149377">position</a> (self)</td></tr>
+<tr class="separator:a78d7a44c0f9fd4d0b9119a6d73149377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58df4c84b1d5a731cfb6263ac8c0d72f" id="r_a58df4c84b1d5a731cfb6263ac8c0d72f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58df4c84b1d5a731cfb6263ac8c0d72f">getParam</a> (self, name)</td></tr>
+<tr class="separator:a58df4c84b1d5a731cfb6263ac8c0d72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a4357a7e62b0aa8c482c0177553f37" id="r_a26a4357a7e62b0aa8c482c0177553f37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a4357a7e62b0aa8c482c0177553f37">setParam</a> (self, name, value)</td></tr>
+<tr class="separator:a26a4357a7e62b0aa8c482c0177553f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65aa8f0d84be5ee0e9d538936d6f55f" id="r_aa65aa8f0d84be5ee0e9d538936d6f55f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa65aa8f0d84be5ee0e9d538936d6f55f">setParams</a> (self, params)</td></tr>
+<tr class="separator:aa65aa8f0d84be5ee0e9d538936d6f55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a515cfe72ce88790910f4af9c7932e" id="r_a08a515cfe72ce88790910f4af9c7932e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08a515cfe72ce88790910f4af9c7932e">cmdFullState</a> (self, pos, vel, acc, yaw, omega)</td></tr>
+<tr class="separator:a08a515cfe72ce88790910f4af9c7932e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78abb92302ed4341277a8f3a0a29f845" id="r_a78abb92302ed4341277a8f3a0a29f845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78abb92302ed4341277a8f3a0a29f845">cmdVelocityWorld</a> (self, vel, yawRate)</td></tr>
+<tr class="separator:a78abb92302ed4341277a8f3a0a29f845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807413dfbf053023e50ec1b6e77ec457" id="r_a807413dfbf053023e50ec1b6e77ec457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a807413dfbf053023e50ec1b6e77ec457">cmdStop</a> (self)</td></tr>
+<tr class="separator:a807413dfbf053023e50ec1b6e77ec457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98b1b3d7a58bed2982d9038786e9f17" id="r_af98b1b3d7a58bed2982d9038786e9f17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af98b1b3d7a58bed2982d9038786e9f17">cmdVel</a> (self, roll, pitch, yawrate, thrust)</td></tr>
+<tr class="separator:af98b1b3d7a58bed2982d9038786e9f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceaa165ab4dc2672b446c7ecc304f2cc" id="r_aceaa165ab4dc2672b446c7ecc304f2cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceaa165ab4dc2672b446c7ecc304f2cc">cmdPosition</a> (self, pos, yaw=0)</td></tr>
+<tr class="separator:aceaa165ab4dc2672b446c7ecc304f2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4df63dab2b5ba4d9b371f1609ef9061" id="r_ae4df63dab2b5ba4d9b371f1609ef9061"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4df63dab2b5ba4d9b371f1609ef9061">setLEDColor</a> (self, r, g, b)</td></tr>
+<tr class="separator:ae4df63dab2b5ba4d9b371f1609ef9061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ac8310574993d704ebd0c89f94f2e8" id="r_a84ac8310574993d704ebd0c89f94f2e8"><td class="memItemLeft" align="right" valign="top"><a id="a84ac8310574993d704ebd0c89f94f2e8" name="a84ac8310574993d704ebd0c89f94f2e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>readmsg</b> (self)</td></tr>
+<tr class="separator:a84ac8310574993d704ebd0c89f94f2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5966fc0224defb2c90dd1e17cda1c366" id="r_a5966fc0224defb2c90dd1e17cda1c366"><td class="memItemLeft" align="right" valign="top"><a id="a5966fc0224defb2c90dd1e17cda1c366" name="a5966fc0224defb2c90dd1e17cda1c366"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getMotionPos</b> (self)</td></tr>
+<tr class="separator:a5966fc0224defb2c90dd1e17cda1c366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6f12b054cb4861ef17b819d5b58517" id="r_abf6f12b054cb4861ef17b819d5b58517"><td class="memItemLeft" align="right" valign="top"><a id="abf6f12b054cb4861ef17b819d5b58517" name="abf6f12b054cb4861ef17b819d5b58517"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getMotionVel</b> (self)</td></tr>
+<tr class="separator:abf6f12b054cb4861ef17b819d5b58517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f35e69079b2ab7372b346463c022a4e" id="r_a7f35e69079b2ab7372b346463c022a4e"><td class="memItemLeft" align="right" valign="top"><a id="a7f35e69079b2ab7372b346463c022a4e" name="a7f35e69079b2ab7372b346463c022a4e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getMotionAcc</b> (self)</td></tr>
+<tr class="separator:a7f35e69079b2ab7372b346463c022a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:acf2488b95c97e0378c9bf49de3b50f28" id="r_acf2488b95c97e0378c9bf49de3b50f28"><td class="memItemLeft" align="right" valign="top"><a id="acf2488b95c97e0378c9bf49de3b50f28" name="acf2488b95c97e0378c9bf49de3b50f28"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="separator:acf2488b95c97e0378c9bf49de3b50f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6b6fb557d8d37d59700faf4e4c9167" id="r_a1a6b6fb557d8d37d59700faf4e4c9167"><td class="memItemLeft" align="right" valign="top"><a id="a1a6b6fb557d8d37d59700faf4e4c9167" name="a1a6b6fb557d8d37d59700faf4e4c9167"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="separator:a1a6b6fb557d8d37d59700faf4e4c9167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace96d70a929a737bb705aa0f539decaa" id="r_ace96d70a929a737bb705aa0f539decaa"><td class="memItemLeft" align="right" valign="top"><a id="ace96d70a929a737bb705aa0f539decaa" name="ace96d70a929a737bb705aa0f539decaa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>prefix</b></td></tr>
+<tr class="separator:ace96d70a929a737bb705aa0f539decaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79699f4cebda28663ed8be8f9d98fcb" id="r_ae79699f4cebda28663ed8be8f9d98fcb"><td class="memItemLeft" align="right" valign="top"><a id="ae79699f4cebda28663ed8be8f9d98fcb" name="ae79699f4cebda28663ed8be8f9d98fcb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>initialPosition</b></td></tr>
+<tr class="separator:ae79699f4cebda28663ed8be8f9d98fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac181cb84026bf35e987ab931f6ed0d2e" id="r_ac181cb84026bf35e987ab931f6ed0d2e"><td class="memItemLeft" align="right" valign="top"><a id="ac181cb84026bf35e987ab931f6ed0d2e" name="ac181cb84026bf35e987ab931f6ed0d2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>tf</b></td></tr>
+<tr class="separator:ac181cb84026bf35e987ab931f6ed0d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccd086d97741fd5669700e420bed231" id="r_a2ccd086d97741fd5669700e420bed231"><td class="memItemLeft" align="right" valign="top"><a id="a2ccd086d97741fd5669700e420bed231" name="a2ccd086d97741fd5669700e420bed231"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ctrl</b></td></tr>
+<tr class="separator:a2ccd086d97741fd5669700e420bed231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfbea44e52474808da11dcfe47c05eb" id="r_adcfbea44e52474808da11dcfe47c05eb"><td class="memItemLeft" align="right" valign="top"><a id="adcfbea44e52474808da11dcfe47c05eb" name="adcfbea44e52474808da11dcfe47c05eb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mapini</b></td></tr>
+<tr class="separator:adcfbea44e52474808da11dcfe47c05eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0543c2c2e88bbc3f71da08a149c73f" id="r_a2d0543c2c2e88bbc3f71da08a149c73f"><td class="memItemLeft" align="right" valign="top"><a id="a2d0543c2c2e88bbc3f71da08a149c73f" name="a2d0543c2c2e88bbc3f71da08a149c73f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ini_success</b></td></tr>
+<tr class="separator:a2d0543c2c2e88bbc3f71da08a149c73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><pre class="fragment">Object representing a single robot.
+
+The bulk of the module's functionality is contained in this class.
+</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad2c5a2e8395769b5b40e0994673d684c" name="ad2c5a2e8395769b5b40e0994673d684c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c5a2e8395769b5b40e0994673d684c">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>initialPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Constructor.
+
+Args:
+    id (int): Integer ID in range [0, 255]. The last byte of the robot's
+        radio address.
+    initialPosition (iterable of float): Initial position of the robot:
+        [x, y, z]. Typically on the floor of the experiment space with
+        z == 0.0.
+    tf (tf.TransformListener): ROS TransformListener used to query the
+        robot's current state.
+</pre> 
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a08a515cfe72ce88790910f4af9c7932e" name="a08a515cfe72ce88790910f4af9c7932e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a515cfe72ce88790910f4af9c7932e">&#9670;&#160;</a></span>cmdFullState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmdFullState </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>acc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>omega</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sends a streaming full-state controller setpoint command.
+
+The full-state setpoint is most useful for aggressive maneuvers where
+feedforward inputs for acceleration and angular velocity are critical
+to obtaining good tracking performance. Full-state setpoints can be
+obtained from any trajectory parameterization that is at least three
+times differentiable, e.g. piecewise polynomials.
+
+Sending a streaming setpoint of any type will force a change from
+high-level to low-level command mode. Currently, there is no mechanism
+to change back, but it is a high-priority feature to implement.
+This means it is not possible to use e.g. :meth:`land()` or
+:meth:`goTo()` after a streaming setpoint has been sent.
+
+Args:
+    pos (array-like of float[3]): Position. Meters.
+    vel (array-like of float[3]): Velocity. Meters / second.
+    acc (array-like of float[3]): Acceleration. Meters / second^2.
+    yaw (float): Yaw angle. Radians.
+    omega (array-like of float[3]): Angular velocity in body frame.
+        Radians / sec.
+</pre> 
+</div>
+</div>
+<a id="aceaa165ab4dc2672b446c7ecc304f2cc" name="aceaa165ab4dc2672b446c7ecc304f2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceaa165ab4dc2672b446c7ecc304f2cc">&#9670;&#160;</a></span>cmdPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmdPosition </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sends a streaming command of absolute position and yaw setpoint.
+
+Useful for slow maneuvers where a high-level planner determines the
+desired position, and the rest is left to the onboard controller.
+
+For more information on streaming setpoint commands, see the
+:meth:`cmdFullState()` documentation.
+
+.. warning::
+    As a streaming setpoint, ``cmdPosition`` must be sent many times
+    per second (10Hz is a conservative minimum). For applications that
+    generate goal positions slowly, :meth:`goTo()` may be more
+    appropriate, especially if the goal positions are far apart.
+
+Args:
+    pos (array-like of float[3]): Position. Meters.
+    yaw (float): Yaw angle. Radians.
+</pre> 
+</div>
+</div>
+<a id="a807413dfbf053023e50ec1b6e77ec457" name="a807413dfbf053023e50ec1b6e77ec457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807413dfbf053023e50ec1b6e77ec457">&#9670;&#160;</a></span>cmdStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmdStop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Interrupts any high-level command to stop and cut motor power.
+
+Intended for non-emergency scenarios, e.g. landing with the possibility
+of taking off again later. Future low- or high-level commands will
+restart the motors. Equivalent of :meth:`stop()` when in high-level mode.
+</pre> 
+</div>
+</div>
+<a id="af98b1b3d7a58bed2982d9038786e9f17" name="af98b1b3d7a58bed2982d9038786e9f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98b1b3d7a58bed2982d9038786e9f17">&#9670;&#160;</a></span>cmdVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmdVel </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>roll</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yawrate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>thrust</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sends a streaming command of the "easy mode" manual control inputs.
+
+The (absolute roll &amp; pitch, yaw rate, thrust) inputs are typically
+used for manual flying by beginners or causal pilots, as opposed to the
+"acrobatic mode" inputs where roll and pitch rates are controlled
+instead of absolute angles. This mode limits the possible maneuvers,
+e.g. it is not possible to do a flip because the controller joystick
+would need to rotate 360 degrees.
+
+For more information on streaming setpoint commands, see the
+:meth:`cmdFullState()` documentation.
+
+!NOTE!: The angles and angular velocities in this command are in
+degrees, whereas they are in radians for cmdFullState.
+
+TODO: should we change the name from cmdVel to something else?
+IMO (japreiss), cmdVel implies controlling linear velocity.
+
+Args:
+    roll (float): Roll angle. Degrees. Positive values == roll right.
+    pitch (float): Pitch angle. Degrees. Positive values == pitch
+        forward/down.
+    yawrate (float): Yaw angular velocity. Degrees / second. Positive
+        values == turn counterclockwise.
+    thrust (float): Thrust magnitude. Non-meaningful units in [0, 2^16),
+        where the maximum value corresponds to maximum thrust.
+</pre> 
+</div>
+</div>
+<a id="a78abb92302ed4341277a8f3a0a29f845" name="a78abb92302ed4341277a8f3a0a29f845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78abb92302ed4341277a8f3a0a29f845">&#9670;&#160;</a></span>cmdVelocityWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmdVelocityWorld </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yawRate</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sends a streaming velocity-world controller setpoint command.
+
+In this mode, the PC specifies desired velocity vector and yaw rate.
+The onboard controller will try to achive this velocity.
+
+NOTE: the Mellinger controller is Crazyswarm's default controller, but
+it has not been tuned (or even tested) for velocity control mode.
+Switch to the PID controller by changing
+`firmwareParams.stabilizer.controller` to `1` in your launch file.
+
+Sending a streaming setpoint of any type will force a change from
+high-level to low-level command mode. Currently, there is no mechanism
+to change back, but it is a high-priority feature to implement.
+This means it is not possible to use e.g. :meth:`land()` or
+:meth:`goTo()` after a streaming setpoint has been sent.
+
+Args:
+    vel (array-like of float[3]): Velocity. Meters / second.
+    yawRate (float): Yaw angular velocity. Degrees / second.
+</pre> 
+</div>
+</div>
+<a id="a1d0690f37908998baefac707c57ec8f3" name="a1d0690f37908998baefac707c57ec8f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0690f37908998baefac707c57ec8f3">&#9670;&#160;</a></span>disableCollisionAvoidance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">disableCollisionAvoidance </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Disables onboard collision avoidance.</pre> 
+</div>
+</div>
+<a id="ad6d7b4142ac3d5a7ebeecdb092b4e9d7" name="ad6d7b4142ac3d5a7ebeecdb092b4e9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d7b4142ac3d5a7ebeecdb092b4e9d7">&#9670;&#160;</a></span>enableCollisionAvoidance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enableCollisionAvoidance </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>others</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ellipsoidRadii</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Enables onboard collision avoidance.
+
+When enabled, avoids colliding with other Crazyflies by using the
+Buffered Voronoi Cells method [1]. Computation is performed onboard.
+
+Args:
+    others (List[Crazyflie]): List of other :obj:`Crazyflie` objects.
+        In simulation, collision avoidance is checked only with members
+        of this list.  With real hardware, this list is **ignored**, and
+        collision avoidance is checked with all other Crazyflies on the
+        same radio channel.
+    ellipsoidRadii (array-like of float[3]): Radii of collision volume ellipsoid in meters.
+        The Crazyflie's boundary for collision checking is a tall
+        ellipsoid. This accounts for the downwash effect: Due to the
+        fast-moving stream of air produced by the rotors, the safe
+        distance to pass underneath another rotorcraft is much further
+        than the safe distance to pass to the side.
+
+[1] D. Zhou, Wang, Z., Bandyopadhyay, S., and Schwager, M.
+    Fast, On-line Collision Avoidance for Dynamic Vehicles using
+    Buffered Voronoi Cells.  IEEE Robotics and Automation Letters
+    (RA-L), vol. 2, no. 2, pp. 1047 - 1054, 2017.
+    https://msl.stanford.edu/fast-line-collision-avoidance-dynamic-vehicles-using-buffered-voronoi-cells
+</pre> 
+</div>
+</div>
+<a id="a58df4c84b1d5a731cfb6263ac8c0d72f" name="a58df4c84b1d5a731cfb6263ac8c0d72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58df4c84b1d5a731cfb6263ac8c0d72f">&#9670;&#160;</a></span>getParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getParam </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Returns the current value of the onboard named parameter.
+
+Parameters are named values of various primitive C types that control
+the firmware's behavior. For more information, see
+https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/userguides/logparam/.
+
+Parameters are read at system startup over the radio and cached.
+The ROS launch file can also be used to set parameter values at startup.
+Subsequent calls to :meth:`setParam()` will update the cached value.
+However, if the parameter changes for any other reason, the cached value
+might become stale. This situation is not common.
+
+Args:
+    name (str): The parameter's name.
+
+Returns:
+    value (Any): The parameter's value.
+</pre> 
+</div>
+</div>
+<a id="a09d44eb3b2de025f752b741d0f4efef6" name="a09d44eb3b2de025f752b741d0f4efef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d44eb3b2de025f752b741d0f4efef6">&#9670;&#160;</a></span>goTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">goTo </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>goal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>relative</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Move smoothly to the goal, then hover indefinitely.
+
+Asynchronous command; returns immediately.
+
+Plans a smooth trajectory from the current state to the goal position.
+Will stop smoothly at the goal with minimal overshoot. If the current
+state is at hover, the planned trajectory will be a straight line;
+however, if the current velocity is nonzero, the planned trajectory
+will be a smooth curve.
+
+Plans the trajectory by solving for the unique degree-7 polynomial that
+satisfies the initial conditions of the current position, velocity,
+and acceleration, and ends at the goal position with zero velocity and
+acceleration. The jerk (derivative of acceleration) is fixed at zero at
+both boundary conditions.
+
+.. warning::
+    Calling ``goTo`` rapidly and/or with short durations (&lt;&lt; 1 sec) can
+    cause instability. Consider using :meth:`cmdPosition()` instead.
+
+Args:
+    goal (iterable of 3 floats): The goal position. Meters.
+    yaw (float): The goal yaw angle (heading). Radians.
+    duration (float): How long until the goal is reached. Seconds.
+    relative (bool): If true, the goal position is interpreted as a
+        relative offset from the current position. Otherwise, the goal
+        position is interpreted as absolute coordintates in the global
+        reference frame.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="ab2fbb5cd8c4d2063559e7fa468433dcd" name="ab2fbb5cd8c4d2063559e7fa468433dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fbb5cd8c4d2063559e7fa468433dcd">&#9670;&#160;</a></span>land()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">land </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>targetHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Execute a landing - fly straight down. User must cut power after.
+
+Asynchronous command; returns immediately.
+
+Args:
+    targetHeight (float): The z-coordinate at which to land. Meters.
+        Usually should be a few centimeters above the initial position
+        to ensure that the controller does not try to penetrate the
+        floor if the mocap coordinate origin is not perfect.
+    duration (float): How long until the height is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="a2d850ec107e3df7c9a1e5b7e9735bdfe" name="a2d850ec107e3df7c9a1e5b7e9735bdfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d850ec107e3df7c9a1e5b7e9735bdfe">&#9670;&#160;</a></span>notifySetpointsStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">notifySetpointsStop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>remainValidMillisecs</em></span><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Informs that streaming low-level setpoint packets are about to stop.
+
+Streaming setpoints are :meth:`cmdVelocityWorld`, :meth:`cmdFullState`,
+and so on. For safety purposes, they normally preempt onboard high-level
+commands such as :meth:`goTo`.
+
+Once preempted, the Crazyflie will not switch back to high-level
+commands (or other behaviors determined by onboard planning/logic) until
+a significant amount of time has elapsed where no low-level setpoint
+was received.
+
+This command short-circuits that waiting period to a user-chosen time.
+It should be called after sending the last low-level setpoint, and
+before sending any high-level command.
+
+A common use case is to execute the :meth:`land` command after using
+streaming setpoint modes.
+
+Args:
+    remainValidMillisecs (int): Number of milliseconds that the last
+        streaming setpoint should be followed before reverting to the
+        onboard-determined behavior. May be longer e.g. if one radio
+        is controlling many robots.
+</pre> 
+</div>
+</div>
+<a id="a78d7a44c0f9fd4d0b9119a6d73149377" name="a78d7a44c0f9fd4d0b9119a6d73149377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d7a44c0f9fd4d0b9119a6d73149377">&#9670;&#160;</a></span>position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">position </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Returns the last true position measurement from motion capture.
+
+If at least one position measurement for this robot has been received
+from the motion capture system since startup, this function returns
+immediately with the most recent measurement. However, if **no**
+position measurements have been received, it blocks until the first
+one arrives.
+
+Returns:
+    position (np.array[3]): Current position. Meters.
+</pre> 
+</div>
+</div>
+<a id="ae5c6134822656abf5c674237505e2311" name="ae5c6134822656abf5c674237505e2311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c6134822656abf5c674237505e2311">&#9670;&#160;</a></span>setGroupMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setGroupMask </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the group mask bits for this robot.
+
+The purpose of groups is to make it possible to trigger an action
+(for example, executing a previously-uploaded trajectory) on a subset
+of all robots without needing to send more than one radio packet.
+This is important to achieve tight, synchronized "choreography".
+
+Up to 8 groups may exist, corresponding to bits in the groupMask byte.
+When a broadcast command is triggered on the :obj:`CrazyflieServer` object
+with a groupMask argument, the command only affects those robots whose
+groupMask has a nonzero bitwise-AND with the command's groupMask.
+A command with a groupMask of zero applies to all robots regardless of
+group membership.
+
+Some individual robot (not broadcast) commands also support groupMask,
+but it is not especially useful in that case.
+
+Args:
+    groupMask (int): An 8-bit integer representing this robot's
+        membership status in each of the &lt;= 8 possible groups.
+</pre> 
+</div>
+</div>
+<a id="ae4df63dab2b5ba4d9b371f1609ef9061" name="ae4df63dab2b5ba4d9b371f1609ef9061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4df63dab2b5ba4d9b371f1609ef9061">&#9670;&#160;</a></span>setLEDColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setLEDColor </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the color of the LED ring deck.
+
+While most params (such as PID gains) only need to be set once, it is
+common to change the LED ring color many times during a flight, e.g.
+as some kind of status indicator. This method makes it convenient.
+
+PRECONDITION: The param "ring/effect" must be set to 7 (solid color)
+for this command to have any effect. The default mode uses the ring
+color to indicate radio connection quality.
+
+This is a blocking command, so it may cause stability problems for
+large swarms and/or high-frequency changes.
+
+Args:
+    r (float): Red component of color, in range [0, 1].
+    g (float): Green component of color, in range [0, 1].
+    b (float): Blue component of color, in range [0, 1].
+</pre> 
+</div>
+</div>
+<a id="a26a4357a7e62b0aa8c482c0177553f37" name="a26a4357a7e62b0aa8c482c0177553f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a4357a7e62b0aa8c482c0177553f37">&#9670;&#160;</a></span>setParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setParam </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Changes the value of the given parameter.
+
+See :meth:`getParam()` docs for overview of the parameter system.
+
+Args:
+    name (str): The parameter's name.
+    value (Any): The parameter's value.
+</pre> 
+</div>
+</div>
+<a id="aa65aa8f0d84be5ee0e9d538936d6f55f" name="aa65aa8f0d84be5ee0e9d538936d6f55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65aa8f0d84be5ee0e9d538936d6f55f">&#9670;&#160;</a></span>setParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setParams </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Changes the value of several parameters at once.
+
+See :meth:`getParam()` docs for overview of the parameter system.
+
+Args:
+    params (Dict[str, Any]): Dict of parameter names/values.
+</pre> 
+</div>
+</div>
+<a id="a98c94a58e1ba285d5a8cc01024605342" name="a98c94a58e1ba285d5a8cc01024605342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c94a58e1ba285d5a8cc01024605342">&#9670;&#160;</a></span>startTrajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">startTrajectory </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>trajectoryId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>timescale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>relative</em></span><span class="paramdefsep"> = </span><span class="paramdefval">True</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Begins executing a previously uploaded trajectory.
+
+Asynchronous command; returns immediately.
+
+Args:
+    trajectoryId (int): ID number as given to :meth:`uploadTrajectory()`.
+    timescale (float): Scales the trajectory duration by this factor.
+        For example if timescale == 2.0, the trajectory will take twice
+        as long to execute as the nominal duration.
+    reverse (bool): If true, executes the trajectory backwards in time.
+    relative (bool): If true (default), the position of the trajectory
+        is shifted such that it begins at the current position setpoint.
+        This is usually the desired behavior.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="af08d1e6d1f541c17475b5b47f9269d0b" name="af08d1e6d1f541c17475b5b47f9269d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08d1e6d1f541c17475b5b47f9269d0b">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Cuts power to the motors when operating in low-level command mode.
+
+Intended for non-emergency scenarios, e.g. landing with the possibility
+of taking off again later. Future low- or high-level commands will
+restart the motors.
+
+Args:
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="a319d864f62c435011eb90f708b44b9b5" name="a319d864f62c435011eb90f708b44b9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319d864f62c435011eb90f708b44b9b5">&#9670;&#160;</a></span>takeoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">takeoff </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>targetHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Execute a takeoff - fly straight up, then hover indefinitely.
+
+Asynchronous command; returns immediately.
+
+Args:
+    targetHeight (float): The z-coordinate at which to hover.
+    duration (float): How long until the height is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="a0f16a390472d3ebf0a80231ae9cac7f8" name="a0f16a390472d3ebf0a80231ae9cac7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f16a390472d3ebf0a80231ae9cac7f8">&#9670;&#160;</a></span>uploadTrajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uploadTrajectory </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>trajectoryId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pieceOffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>trajectory</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Uploads a piecewise polynomial trajectory for later execution.
+
+See uav_trajectory.py for more information about piecewise polynomial
+trajectories.
+
+Args:
+    trajectoryId (int): ID number of this trajectory. Multiple
+        trajectories can be uploaded. TODO: what is the maximum ID?
+    pieceOffset (int): TODO(whoenig): explain this.
+    trajectory (:obj:`pycrazyswarm.uav_trajectory.Trajectory`): Trajectory object.
+</pre> 
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<b>crazyflie.py</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

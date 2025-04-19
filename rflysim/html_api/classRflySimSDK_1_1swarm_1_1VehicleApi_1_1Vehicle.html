@@ -1,0 +1,1261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RflySimSDK: Vehicle类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">RflySimSDK<span id="projectnumber">&#160;v3.03</span>
+   </div>
+   <div id="projectbrief">RflySimSDK说明文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>VehicleApi</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle.html">Vehicle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classRflySimSDK_1_1swarm_1_1VehicleApi_1_1Vehicle-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Vehicle类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad84459ccd1f8f92397d1f4625c69f1dc" id="r_ad84459ccd1f8f92397d1f4625c69f1dc"><td class="memItemLeft" align="right" valign="top"><a id="ad84459ccd1f8f92397d1f4625c69f1dc" name="ad84459ccd1f8f92397d1f4625c69f1dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, CopterID=1, Vehicletype=3, mapName='Grasslands', updatefreq=100, isBroadCast=False)</td></tr>
+<tr class="separator:ad84459ccd1f8f92397d1f4625c69f1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8269c75db7e139aaa12454d041afc5" id="r_adf8269c75db7e139aaa12454d041afc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf8269c75db7e139aaa12454d041afc5">yawSat</a> (self, yaw)</td></tr>
+<tr class="separator:adf8269c75db7e139aaa12454d041afc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae033f0d06143d84dc69c7d7122afb880" id="r_ae033f0d06143d84dc69c7d7122afb880"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae033f0d06143d84dc69c7d7122afb880">yawSat1</a> (self, yaw)</td></tr>
+<tr class="separator:ae033f0d06143d84dc69c7d7122afb880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff54303d110e9b8b16d931ea719c1a6c" id="r_aff54303d110e9b8b16d931ea719c1a6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff54303d110e9b8b16d931ea719c1a6c">RollSat</a> (self, Roll)</td></tr>
+<tr class="separator:aff54303d110e9b8b16d931ea719c1a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3099c4347f7c3eed28d21fa99d2bf6" id="r_a1f3099c4347f7c3eed28d21fa99d2bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f3099c4347f7c3eed28d21fa99d2bf6">sat</a> (self, inPwm=0, thres=1)</td></tr>
+<tr class="separator:a1f3099c4347f7c3eed28d21fa99d2bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb9aa9ab061a5450fd0f4cf01defbab" id="r_a9eb9aa9ab061a5450fd0f4cf01defbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb9aa9ab061a5450fd0f4cf01defbab">initSimpleModel</a> (self, intState=[0, 0, 0], targetIP='127.0.0.1', GPSOrigin=[40.1540302, 116.2593683, 50])</td></tr>
+<tr class="separator:a9eb9aa9ab061a5450fd0f4cf01defbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3592187e834f5e4fd42b1f2138f5ae7" id="r_ad3592187e834f5e4fd42b1f2138f5ae7"><td class="memItemLeft" align="right" valign="top"><a id="ad3592187e834f5e4fd42b1f2138f5ae7" name="ad3592187e834f5e4fd42b1f2138f5ae7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RecMavLoop</b> (self)</td></tr>
+<tr class="separator:ad3592187e834f5e4fd42b1f2138f5ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ef33a58c876d1c0b27f343f8d2098e" id="r_af7ef33a58c876d1c0b27f343f8d2098e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7ef33a58c876d1c0b27f343f8d2098e">EndSimpleModel</a> (self)</td></tr>
+<tr class="separator:af7ef33a58c876d1c0b27f343f8d2098e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf531f952f5bd26e149d7fa66b16cbe" id="r_addf531f952f5bd26e149d7fa66b16cbe"><td class="memItemLeft" align="right" valign="top"><a id="addf531f952f5bd26e149d7fa66b16cbe" name="addf531f952f5bd26e149d7fa66b16cbe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>enFixedWRWTO</b> (self)</td></tr>
+<tr class="separator:addf531f952f5bd26e149d7fa66b16cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7909afcca64461bbd9b8c24cdeef47ea" id="r_a7909afcca64461bbd9b8c24cdeef47ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7909afcca64461bbd9b8c24cdeef47ea">TypeMask</a> (self, EnList)</td></tr>
+<tr class="separator:a7909afcca64461bbd9b8c24cdeef47ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c3ee1bad28329314a5f489f1a6adff" id="r_af7c3ee1bad28329314a5f489f1a6adff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7c3ee1bad28329314a5f489f1a6adff">SimpleModelLoop</a> (self)</td></tr>
+<tr class="separator:af7c3ee1bad28329314a5f489f1a6adff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627393ae77146a2274349d34232b3981" id="r_a627393ae77146a2274349d34232b3981"><td class="memItemLeft" align="right" valign="top"><a id="a627393ae77146a2274349d34232b3981" name="a627393ae77146a2274349d34232b3981"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ModelStep</b> (self, CurTime=-1)</td></tr>
+<tr class="separator:a627393ae77146a2274349d34232b3981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6308cfbb63f3146f7f3021479c89ecbe" id="r_a6308cfbb63f3146f7f3021479c89ecbe"><td class="memItemLeft" align="right" valign="top"><a id="a6308cfbb63f3146f7f3021479c89ecbe" name="a6308cfbb63f3146f7f3021479c89ecbe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SendUavState</b> (self, CurTime)</td></tr>
+<tr class="separator:a6308cfbb63f3146f7f3021479c89ecbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bb5d240dd23a40c0cd49b4692ef942" id="r_ab2bb5d240dd23a40c0cd49b4692ef942"><td class="memItemLeft" align="right" valign="top"><a id="ab2bb5d240dd23a40c0cd49b4692ef942" name="ab2bb5d240dd23a40c0cd49b4692ef942"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ProssInput</b> (self, dt)</td></tr>
+<tr class="separator:ab2bb5d240dd23a40c0cd49b4692ef942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c556a4261dfd5f2755454199a89247" id="r_a12c556a4261dfd5f2755454199a89247"><td class="memItemLeft" align="right" valign="top"><a id="a12c556a4261dfd5f2755454199a89247" name="a12c556a4261dfd5f2755454199a89247"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fixedPitchFromVel</b> (self, vel)</td></tr>
+<tr class="separator:a12c556a4261dfd5f2755454199a89247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64a1088c753d9121c095feb3841aa55" id="r_ac64a1088c753d9121c095feb3841aa55"><td class="memItemLeft" align="right" valign="top"><a id="ac64a1088c753d9121c095feb3841aa55" name="ac64a1088c753d9121c095feb3841aa55"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Step</b> (self, dt)</td></tr>
+<tr class="separator:ac64a1088c753d9121c095feb3841aa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76590069409fc52a725b9a1d24cbf74" id="r_ac76590069409fc52a725b9a1d24cbf74"><td class="memItemLeft" align="right" valign="top"><a id="ac76590069409fc52a725b9a1d24cbf74" name="ac76590069409fc52a725b9a1d24cbf74"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SendOutput</b> (self, CurTime)</td></tr>
+<tr class="separator:ac76590069409fc52a725b9a1d24cbf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2649cd24ce0ba2ab68984a1288fdc006" id="r_a2649cd24ce0ba2ab68984a1288fdc006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2649cd24ce0ba2ab68984a1288fdc006">SendPosNED</a> (self, x=0, y=0, z=0, yaw=0)</td></tr>
+<tr class="separator:a2649cd24ce0ba2ab68984a1288fdc006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706312b987d4311f976f3765d976b27b" id="r_a706312b987d4311f976f3765d976b27b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a706312b987d4311f976f3765d976b27b">SendPosNEDNoYaw</a> (self, x=0, y=0, z=0)</td></tr>
+<tr class="separator:a706312b987d4311f976f3765d976b27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee30364a57b7e83956fdbcf6ecf2b16" id="r_aeee30364a57b7e83956fdbcf6ecf2b16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee30364a57b7e83956fdbcf6ecf2b16">SendPosFRD</a> (self, x=0, y=0, z=0, yaw=0)</td></tr>
+<tr class="separator:aeee30364a57b7e83956fdbcf6ecf2b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1976846b7d06c0a001861ad81ce824a" id="r_aa1976846b7d06c0a001861ad81ce824a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1976846b7d06c0a001861ad81ce824a">SendPosFRDNoYaw</a> (self, x=0, y=0, z=0)</td></tr>
+<tr class="separator:aa1976846b7d06c0a001861ad81ce824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c1a545d22ec6c31d5707e75502e248" id="r_a48c1a545d22ec6c31d5707e75502e248"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48c1a545d22ec6c31d5707e75502e248">SendVelNED</a> (self, vx=0, vy=0, vz=0, yawrate=0)</td></tr>
+<tr class="separator:a48c1a545d22ec6c31d5707e75502e248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f65fc4c753bed9123b87c43a257e3b0" id="r_a9f65fc4c753bed9123b87c43a257e3b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f65fc4c753bed9123b87c43a257e3b0">SendVelNEDNoYaw</a> (self, vx, vy, vz)</td></tr>
+<tr class="separator:a9f65fc4c753bed9123b87c43a257e3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479d435c18dc1a908ec74abb86f90d0c" id="r_a479d435c18dc1a908ec74abb86f90d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a479d435c18dc1a908ec74abb86f90d0c">SendVelFRD</a> (self, vx=0, vy=0, vz=0, yawrate=0)</td></tr>
+<tr class="separator:a479d435c18dc1a908ec74abb86f90d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f18d20a0e1ddedb16db01b8774b0803" id="r_a1f18d20a0e1ddedb16db01b8774b0803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f18d20a0e1ddedb16db01b8774b0803">SendVelNoYaw</a> (self, vx, vy, vz)</td></tr>
+<tr class="separator:a1f18d20a0e1ddedb16db01b8774b0803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe80de8986dc01c293e3fb4a47b375c" id="r_a2fe80de8986dc01c293e3fb4a47b375c"><td class="memItemLeft" align="right" valign="top"><a id="a2fe80de8986dc01c293e3fb4a47b375c" name="a2fe80de8986dc01c293e3fb4a47b375c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>sendBuf</b> (self, buf, windowID=-1)</td></tr>
+<tr class="separator:a2fe80de8986dc01c293e3fb4a47b375c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6702a7019fc28e675ea5d042f7074c1b" id="r_a6702a7019fc28e675ea5d042f7074c1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6702a7019fc28e675ea5d042f7074c1b">sendUE4PosNew</a> (self, copterID=1, vehicleType=3, PosE=[0, 0, 0], AngEuler=[0, 0, 0], VelE=[0, 0, 0], PWMs=[0] *8, runnedTime=-1, windowID=-1)</td></tr>
+<tr class="separator:a6702a7019fc28e675ea5d042f7074c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0dd29fef4e80b08f7d96819e7a4a7e" id="r_a7e0dd29fef4e80b08f7d96819e7a4a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e0dd29fef4e80b08f7d96819e7a4a7e">SendCruiseSpeed</a> (self, Speed=10)</td></tr>
+<tr class="separator:a7e0dd29fef4e80b08f7d96819e7a4a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac837c25f750abe14ef3a0a3a8c26ce58" id="r_ac837c25f750abe14ef3a0a3a8c26ce58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac837c25f750abe14ef3a0a3a8c26ce58">SendCopterSpeed</a> (self, Speed=5)</td></tr>
+<tr class="separator:ac837c25f750abe14ef3a0a3a8c26ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f6bfe22fa9d4f70e6de59bbf5bb701" id="r_a62f6bfe22fa9d4f70e6de59bbf5bb701"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62f6bfe22fa9d4f70e6de59bbf5bb701">SendGroundSpeed</a> (self, Speed=15)</td></tr>
+<tr class="separator:a62f6bfe22fa9d4f70e6de59bbf5bb701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a66c0b6fd458d868a58f0dcd17ebd85" id="r_a6a66c0b6fd458d868a58f0dcd17ebd85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a66c0b6fd458d868a58f0dcd17ebd85">SendCruiseRadius</a> (self, rad=20)</td></tr>
+<tr class="separator:a6a66c0b6fd458d868a58f0dcd17ebd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a193a6e3a68a7e2d01772aec0faa3ee" id="r_a0a193a6e3a68a7e2d01772aec0faa3ee"><td class="memItemLeft" align="right" valign="top"><a id="a0a193a6e3a68a7e2d01772aec0faa3ee" name="a0a193a6e3a68a7e2d01772aec0faa3ee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SendMavArm</b> (self, isArm=0)</td></tr>
+<tr class="separator:a0a193a6e3a68a7e2d01772aec0faa3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd34f79e324afda9bbed53621df2aff" id="r_a7dd34f79e324afda9bbed53621df2aff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd34f79e324afda9bbed53621df2aff">sendUE4Cmd</a> (self, cmd, windowID=-1)</td></tr>
+<tr class="separator:a7dd34f79e324afda9bbed53621df2aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e03a0d3b8eebd412122530e7b3527b5" id="r_a9e03a0d3b8eebd412122530e7b3527b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e03a0d3b8eebd412122530e7b3527b5">SendVelYawAlt</a> (self, vel=10, alt=-100, yaw=6.28)</td></tr>
+<tr class="separator:a9e03a0d3b8eebd412122530e7b3527b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac10739e4380697f837dfe17afccd82" id="r_a0ac10739e4380697f837dfe17afccd82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ac10739e4380697f837dfe17afccd82">sendMavTakeOff</a> (self, xM=0, yM=0, zM=0, YawRad=0, PitchRad=20/180.0 *math.pi)</td></tr>
+<tr class="separator:a0ac10739e4380697f837dfe17afccd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6b7d5dc106d745cf823364704a4904" id="r_a7e6b7d5dc106d745cf823364704a4904"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e6b7d5dc106d745cf823364704a4904">sendMavTakeOffGPS</a> (self, lat, lon, alt, yawDeg=0, pitchDeg=15)</td></tr>
+<tr class="separator:a7e6b7d5dc106d745cf823364704a4904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ae39156fb07ed42ab04b44381baa97ac7" id="r_ae39156fb07ed42ab04b44381baa97ac7"><td class="memItemLeft" align="right" valign="top"><a id="ae39156fb07ed42ab04b44381baa97ac7" name="ae39156fb07ed42ab04b44381baa97ac7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>udp_socket</b></td></tr>
+<tr class="separator:ae39156fb07ed42ab04b44381baa97ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memItemLeft" align="right" valign="top"><a id="a4bc1de2c250838e7456f6b1991f9d9d9" name="a4bc1de2c250838e7456f6b1991f9d9d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CopterID</b></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ec4657295bb267b842095bc55a9790" id="r_a00ec4657295bb267b842095bc55a9790"><td class="memItemLeft" align="right" valign="top"><a id="a00ec4657295bb267b842095bc55a9790" name="a00ec4657295bb267b842095bc55a9790"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Vehicletype</b></td></tr>
+<tr class="separator:a00ec4657295bb267b842095bc55a9790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdc76ccb55b5210a39943f4f29d107a" id="r_a0bdc76ccb55b5210a39943f4f29d107a"><td class="memItemLeft" align="right" valign="top"><a id="a0bdc76ccb55b5210a39943f4f29d107a" name="a0bdc76ccb55b5210a39943f4f29d107a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>updatefreq</b></td></tr>
+<tr class="separator:a0bdc76ccb55b5210a39943f4f29d107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ef6e552cab3f9b25a3e1dfd96b111d" id="r_a21ef6e552cab3f9b25a3e1dfd96b111d"><td class="memItemLeft" align="right" valign="top"><a id="a21ef6e552cab3f9b25a3e1dfd96b111d" name="a21ef6e552cab3f9b25a3e1dfd96b111d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>isBroadCast</b></td></tr>
+<tr class="separator:a21ef6e552cab3f9b25a3e1dfd96b111d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec9dda576db2a36c42c1c3af155d07c" id="r_a9ec9dda576db2a36c42c1c3af155d07c"><td class="memItemLeft" align="right" valign="top"><a id="a9ec9dda576db2a36c42c1c3af155d07c" name="a9ec9dda576db2a36c42c1c3af155d07c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
+<tr class="separator:a9ec9dda576db2a36c42c1c3af155d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30368a7bef26afd142f8ce930d460e4" id="r_ae30368a7bef26afd142f8ce930d460e4"><td class="memItemLeft" align="right" valign="top"><a id="ae30368a7bef26afd142f8ce930d460e4" name="ae30368a7bef26afd142f8ce930d460e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>intStateX</b></td></tr>
+<tr class="separator:ae30368a7bef26afd142f8ce930d460e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a33b680674bbf641c7f3fd8b558ecfa" id="r_a3a33b680674bbf641c7f3fd8b558ecfa"><td class="memItemLeft" align="right" valign="top"><a id="a3a33b680674bbf641c7f3fd8b558ecfa" name="a3a33b680674bbf641c7f3fd8b558ecfa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>intStateY</b></td></tr>
+<tr class="separator:a3a33b680674bbf641c7f3fd8b558ecfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7da274d5120713ece9e9a84089e9c06" id="r_af7da274d5120713ece9e9a84089e9c06"><td class="memItemLeft" align="right" valign="top"><a id="af7da274d5120713ece9e9a84089e9c06" name="af7da274d5120713ece9e9a84089e9c06"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>intAlt</b></td></tr>
+<tr class="separator:af7da274d5120713ece9e9a84089e9c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011401005ffef19894e6f3a31b259e1a" id="r_a011401005ffef19894e6f3a31b259e1a"><td class="memItemLeft" align="right" valign="top"><a id="a011401005ffef19894e6f3a31b259e1a" name="a011401005ffef19894e6f3a31b259e1a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>intStateYaw</b></td></tr>
+<tr class="separator:a011401005ffef19894e6f3a31b259e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f8f3ed8fed4d71b1731059c4721a25" id="r_ab6f8f3ed8fed4d71b1731059c4721a25"><td class="memItemLeft" align="right" valign="top"><a id="ab6f8f3ed8fed4d71b1731059c4721a25" name="ab6f8f3ed8fed4d71b1731059c4721a25"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>isInPointMode</b></td></tr>
+<tr class="separator:ab6f8f3ed8fed4d71b1731059c4721a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b72134a11b47cc026de2c90c44d0f15" id="r_a8b72134a11b47cc026de2c90c44d0f15"><td class="memItemLeft" align="right" valign="top"><a id="a8b72134a11b47cc026de2c90c44d0f15" name="a8b72134a11b47cc026de2c90c44d0f15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavAngEular</b></td></tr>
+<tr class="separator:a8b72134a11b47cc026de2c90c44d0f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164b8a4e61860047720620e5d05f9401" id="r_a164b8a4e61860047720620e5d05f9401"><td class="memItemLeft" align="right" valign="top"><a id="a164b8a4e61860047720620e5d05f9401" name="a164b8a4e61860047720620e5d05f9401"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>trueAngEular</b></td></tr>
+<tr class="separator:a164b8a4e61860047720620e5d05f9401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161e363079707437fef42cbad8c9c5d8" id="r_a161e363079707437fef42cbad8c9c5d8"><td class="memItemLeft" align="right" valign="top"><a id="a161e363079707437fef42cbad8c9c5d8" name="a161e363079707437fef42cbad8c9c5d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavAngRate</b></td></tr>
+<tr class="separator:a161e363079707437fef42cbad8c9c5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288727969b0105a7697c9e4e3560c6cd" id="r_a288727969b0105a7697c9e4e3560c6cd"><td class="memItemLeft" align="right" valign="top"><a id="a288727969b0105a7697c9e4e3560c6cd" name="a288727969b0105a7697c9e4e3560c6cd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>trueAngRate</b></td></tr>
+<tr class="separator:a288727969b0105a7697c9e4e3560c6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6710280b239d465b717aaf810fc3a6a2" id="r_a6710280b239d465b717aaf810fc3a6a2"><td class="memItemLeft" align="right" valign="top"><a id="a6710280b239d465b717aaf810fc3a6a2" name="a6710280b239d465b717aaf810fc3a6a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavPosNED</b></td></tr>
+<tr class="separator:a6710280b239d465b717aaf810fc3a6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa416bb407ea19e49f8be7cfa1ada0e6" id="r_aaa416bb407ea19e49f8be7cfa1ada0e6"><td class="memItemLeft" align="right" valign="top"><a id="aaa416bb407ea19e49f8be7cfa1ada0e6" name="aaa416bb407ea19e49f8be7cfa1ada0e6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>truePosNED</b></td></tr>
+<tr class="separator:aaa416bb407ea19e49f8be7cfa1ada0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236bd5ab2dfc4c11e6a26011d7184427" id="r_a236bd5ab2dfc4c11e6a26011d7184427"><td class="memItemLeft" align="right" valign="top"><a id="a236bd5ab2dfc4c11e6a26011d7184427" name="a236bd5ab2dfc4c11e6a26011d7184427"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavVelNED</b></td></tr>
+<tr class="separator:a236bd5ab2dfc4c11e6a26011d7184427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea477f534d3b451962f36cec8e87277" id="r_a5ea477f534d3b451962f36cec8e87277"><td class="memItemLeft" align="right" valign="top"><a id="a5ea477f534d3b451962f36cec8e87277" name="a5ea477f534d3b451962f36cec8e87277"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>trueVelNED</b></td></tr>
+<tr class="separator:a5ea477f534d3b451962f36cec8e87277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d2d0365aa4d65d1af4448d5af26495" id="r_a82d2d0365aa4d65d1af4448d5af26495"><td class="memItemLeft" align="right" valign="top"><a id="a82d2d0365aa4d65d1af4448d5af26495" name="a82d2d0365aa4d65d1af4448d5af26495"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavPosGPS</b></td></tr>
+<tr class="separator:a82d2d0365aa4d65d1af4448d5af26495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100ca2254d70ab7d74939b25a1dd1476" id="r_a100ca2254d70ab7d74939b25a1dd1476"><td class="memItemLeft" align="right" valign="top"><a id="a100ca2254d70ab7d74939b25a1dd1476" name="a100ca2254d70ab7d74939b25a1dd1476"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavGlobalPos</b></td></tr>
+<tr class="separator:a100ca2254d70ab7d74939b25a1dd1476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7f5c6594ef01e2132ca36d14206b93" id="r_a9c7f5c6594ef01e2132ca36d14206b93"><td class="memItemLeft" align="right" valign="top"><a id="a9c7f5c6594ef01e2132ca36d14206b93" name="a9c7f5c6594ef01e2132ca36d14206b93"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>offMode</b></td></tr>
+<tr class="separator:a9c7f5c6594ef01e2132ca36d14206b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1d4ceffd9b0e84690f51b697f4f335" id="r_afc1d4ceffd9b0e84690f51b697f4f335"><td class="memItemLeft" align="right" valign="top"><a id="afc1d4ceffd9b0e84690f51b697f4f335" name="afc1d4ceffd9b0e84690f51b697f4f335"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EnList</b></td></tr>
+<tr class="separator:afc1d4ceffd9b0e84690f51b697f4f335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ea8f02ae373eb029e27d92792d5816" id="r_ab5ea8f02ae373eb029e27d92792d5816"><td class="memItemLeft" align="right" valign="top"><a id="ab5ea8f02ae373eb029e27d92792d5816" name="ab5ea8f02ae373eb029e27d92792d5816"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>type_mask</b></td></tr>
+<tr class="separator:ab5ea8f02ae373eb029e27d92792d5816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c3c2431d03a4e108e1ce3bfb4d4fa8" id="r_a23c3c2431d03a4e108e1ce3bfb4d4fa8"><td class="memItemLeft" align="right" valign="top"><a id="a23c3c2431d03a4e108e1ce3bfb4d4fa8" name="a23c3c2431d03a4e108e1ce3bfb4d4fa8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>coordinate_frame</b></td></tr>
+<tr class="separator:a23c3c2431d03a4e108e1ce3bfb4d4fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf54215d760dbf0f9fe5627a39015333" id="r_adf54215d760dbf0f9fe5627a39015333"><td class="memItemLeft" align="right" valign="top"><a id="adf54215d760dbf0f9fe5627a39015333" name="adf54215d760dbf0f9fe5627a39015333"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b></td></tr>
+<tr class="separator:adf54215d760dbf0f9fe5627a39015333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69ee4d0ac87385b7d07d0b97d900ff4" id="r_aa69ee4d0ac87385b7d07d0b97d900ff4"><td class="memItemLeft" align="right" valign="top"><a id="aa69ee4d0ac87385b7d07d0b97d900ff4" name="aa69ee4d0ac87385b7d07d0b97d900ff4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>vel</b></td></tr>
+<tr class="separator:aa69ee4d0ac87385b7d07d0b97d900ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecce0cbecc7f36338ed1a74dd5bee49" id="r_a4ecce0cbecc7f36338ed1a74dd5bee49"><td class="memItemLeft" align="right" valign="top"><a id="a4ecce0cbecc7f36338ed1a74dd5bee49" name="a4ecce0cbecc7f36338ed1a74dd5bee49"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>acc</b></td></tr>
+<tr class="separator:a4ecce0cbecc7f36338ed1a74dd5bee49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeddb3af347c13f3d0915fb2e613acce" id="r_aaeddb3af347c13f3d0915fb2e613acce"><td class="memItemLeft" align="right" valign="top"><a id="aaeddb3af347c13f3d0915fb2e613acce" name="aaeddb3af347c13f3d0915fb2e613acce"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yaw</b></td></tr>
+<tr class="separator:aaeddb3af347c13f3d0915fb2e613acce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d4058dfdfc0d2445667e57d62e8dd1" id="r_a28d4058dfdfc0d2445667e57d62e8dd1"><td class="memItemLeft" align="right" valign="top"><a id="a28d4058dfdfc0d2445667e57d62e8dd1" name="a28d4058dfdfc0d2445667e57d62e8dd1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yawrate</b></td></tr>
+<tr class="separator:a28d4058dfdfc0d2445667e57d62e8dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3d9048db16a7eee539e93e3618cbe7" id="r_a9d3d9048db16a7eee539e93e3618cbe7"><td class="memItemLeft" align="right" valign="top"><a id="a9d3d9048db16a7eee539e93e3618cbe7" name="a9d3d9048db16a7eee539e93e3618cbe7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>B</b></td></tr>
+<tr class="separator:a9d3d9048db16a7eee539e93e3618cbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23c0c060164ab07828b71cb69e2f25e" id="r_ae23c0c060164ab07828b71cb69e2f25e"><td class="memItemLeft" align="right" valign="top"><a id="ae23c0c060164ab07828b71cb69e2f25e" name="ae23c0c060164ab07828b71cb69e2f25e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>velOff</b></td></tr>
+<tr class="separator:ae23c0c060164ab07828b71cb69e2f25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bdf4d7a8a3cc52e6a574487540fe9d" id="r_ae7bdf4d7a8a3cc52e6a574487540fe9d"><td class="memItemLeft" align="right" valign="top"><a id="ae7bdf4d7a8a3cc52e6a574487540fe9d" name="ae7bdf4d7a8a3cc52e6a574487540fe9d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yawOff</b></td></tr>
+<tr class="separator:ae7bdf4d7a8a3cc52e6a574487540fe9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5281bd11c5663e461af5309537214f32" id="r_a5281bd11c5663e461af5309537214f32"><td class="memItemLeft" align="right" valign="top"><a id="a5281bd11c5663e461af5309537214f32" name="a5281bd11c5663e461af5309537214f32"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yawRateOff</b></td></tr>
+<tr class="separator:a5281bd11c5663e461af5309537214f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41973d0e41ca803edfae640bc03c264c" id="r_a41973d0e41ca803edfae640bc03c264c"><td class="memItemLeft" align="right" valign="top"><a id="a41973d0e41ca803edfae640bc03c264c" name="a41973d0e41ca803edfae640bc03c264c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MotorRPMS</b></td></tr>
+<tr class="separator:a41973d0e41ca803edfae640bc03c264c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3149ce661e8361f3b193fb497c63d1a2" id="r_a3149ce661e8361f3b193fb497c63d1a2"><td class="memItemLeft" align="right" valign="top"><a id="a3149ce661e8361f3b193fb497c63d1a2" name="a3149ce661e8361f3b193fb497c63d1a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>velair</b></td></tr>
+<tr class="separator:a3149ce661e8361f3b193fb497c63d1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391ad6525cf3a6e6989f00dd7d5f5225" id="r_a391ad6525cf3a6e6989f00dd7d5f5225"><td class="memItemLeft" align="right" valign="top"><a id="a391ad6525cf3a6e6989f00dd7d5f5225" name="a391ad6525cf3a6e6989f00dd7d5f5225"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaxSpeed</b></td></tr>
+<tr class="separator:a391ad6525cf3a6e6989f00dd7d5f5225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b66db606e5e42bcaaef30fbca4234be" id="r_a8b66db606e5e42bcaaef30fbca4234be"><td class="memItemLeft" align="right" valign="top"><a id="a8b66db606e5e42bcaaef30fbca4234be" name="a8b66db606e5e42bcaaef30fbca4234be"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FwSpeedTrim</b></td></tr>
+<tr class="separator:a8b66db606e5e42bcaaef30fbca4234be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1665519323f42e436773cc5bf97e154" id="r_af1665519323f42e436773cc5bf97e154"><td class="memItemLeft" align="right" valign="top"><a id="af1665519323f42e436773cc5bf97e154" name="af1665519323f42e436773cc5bf97e154"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FwLoiterRad</b></td></tr>
+<tr class="separator:af1665519323f42e436773cc5bf97e154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f6d946f2c1a31b9435b32f07d83a19" id="r_a33f6d946f2c1a31b9435b32f07d83a19"><td class="memItemLeft" align="right" valign="top"><a id="a33f6d946f2c1a31b9435b32f07d83a19" name="a33f6d946f2c1a31b9435b32f07d83a19"></a>
+# 如果解锁了，才更新控制输入&#160;</td><td class="memItemRight" valign="bottom"><b>isArmed</b></td></tr>
+<tr class="separator:a33f6d946f2c1a31b9435b32f07d83a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6792554ebbd925e53788f7e0bd371604" id="r_a6792554ebbd925e53788f7e0bd371604"><td class="memItemLeft" align="right" valign="top"><a id="a6792554ebbd925e53788f7e0bd371604" name="a6792554ebbd925e53788f7e0bd371604"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CurFlag</b></td></tr>
+<tr class="separator:a6792554ebbd925e53788f7e0bd371604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef8bc9a19274ae3e227848593964a0f" id="r_afef8bc9a19274ae3e227848593964a0f"><td class="memItemLeft" align="right" valign="top"><a id="afef8bc9a19274ae3e227848593964a0f" name="afef8bc9a19274ae3e227848593964a0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lastFlag</b></td></tr>
+<tr class="separator:afef8bc9a19274ae3e227848593964a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9080f9952c1c265fca776e169910157d" id="r_a9080f9952c1c265fca776e169910157d"><td class="memItemLeft" align="right" valign="top"><a id="a9080f9952c1c265fca776e169910157d" name="a9080f9952c1c265fca776e169910157d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TkOffYaw</b></td></tr>
+<tr class="separator:a9080f9952c1c265fca776e169910157d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c402b37c05fd02340ac88f39b37243" id="r_a86c402b37c05fd02340ac88f39b37243"><td class="memItemLeft" align="right" valign="top"><a id="a86c402b37c05fd02340ac88f39b37243" name="a86c402b37c05fd02340ac88f39b37243"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TkOffAccSpeed</b></td></tr>
+<tr class="separator:a86c402b37c05fd02340ac88f39b37243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e71120e2b1ce2560c7fe7e27ae559b" id="r_af5e71120e2b1ce2560c7fe7e27ae559b"><td class="memItemLeft" align="right" valign="top"><a id="af5e71120e2b1ce2560c7fe7e27ae559b" name="af5e71120e2b1ce2560c7fe7e27ae559b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TkOffMaxSpeed</b></td></tr>
+<tr class="separator:af5e71120e2b1ce2560c7fe7e27ae559b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a56d36d34bbc6e8e771968dbef745b" id="r_a32a56d36d34bbc6e8e771968dbef745b"><td class="memItemLeft" align="right" valign="top"><a id="a32a56d36d34bbc6e8e771968dbef745b" name="a32a56d36d34bbc6e8e771968dbef745b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TkOffNextFlag</b></td></tr>
+<tr class="separator:a32a56d36d34bbc6e8e771968dbef745b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4db2703ffa43c238c7f29c601fa2d9" id="r_ade4db2703ffa43c238c7f29c601fa2d9"><td class="memItemLeft" align="right" valign="top"><a id="ade4db2703ffa43c238c7f29c601fa2d9" name="ade4db2703ffa43c238c7f29c601fa2d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ClimbSlope</b></td></tr>
+<tr class="separator:ade4db2703ffa43c238c7f29c601fa2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af723f7c971deaa24e17c1cad8a39e28d" id="r_af723f7c971deaa24e17c1cad8a39e28d"><td class="memItemLeft" align="right" valign="top"><a id="af723f7c971deaa24e17c1cad8a39e28d" name="af723f7c971deaa24e17c1cad8a39e28d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ClimbStartSpeed</b></td></tr>
+<tr class="separator:af723f7c971deaa24e17c1cad8a39e28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a759efbbcd1bc8627a6ed559809636" id="r_a51a759efbbcd1bc8627a6ed559809636"><td class="memItemLeft" align="right" valign="top"><a id="a51a759efbbcd1bc8627a6ed559809636" name="a51a759efbbcd1bc8627a6ed559809636"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ClimbAccSpeed</b></td></tr>
+<tr class="separator:a51a759efbbcd1bc8627a6ed559809636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e33cf163f709ba583b6874c270ed42" id="r_ac7e33cf163f709ba583b6874c270ed42"><td class="memItemLeft" align="right" valign="top"><a id="ac7e33cf163f709ba583b6874c270ed42" name="ac7e33cf163f709ba583b6874c270ed42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ClimbMaxSpeed</b></td></tr>
+<tr class="separator:ac7e33cf163f709ba583b6874c270ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16c9247043cf97c3430affae80bfd2e" id="r_aa16c9247043cf97c3430affae80bfd2e"><td class="memItemLeft" align="right" valign="top"><a id="aa16c9247043cf97c3430affae80bfd2e" name="aa16c9247043cf97c3430affae80bfd2e"></a>
+# 达到起飞高度&#160;</td><td class="memItemRight" valign="bottom"><b>ClimbMaxAlt</b></td></tr>
+<tr class="separator:aa16c9247043cf97c3430affae80bfd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc8deffe51b3953755cb17123f3e72c" id="r_a3bc8deffe51b3953755cb17123f3e72c"><td class="memItemLeft" align="right" valign="top"><a id="a3bc8deffe51b3953755cb17123f3e72c" name="a3bc8deffe51b3953755cb17123f3e72c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ClimbNextFlag</b></td></tr>
+<tr class="separator:a3bc8deffe51b3953755cb17123f3e72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf45c78b9090399d04994a88a7b2f052" id="r_adf45c78b9090399d04994a88a7b2f052"><td class="memItemLeft" align="right" valign="top"><a id="adf45c78b9090399d04994a88a7b2f052" name="adf45c78b9090399d04994a88a7b2f052"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardSpeed</b></td></tr>
+<tr class="separator:adf45c78b9090399d04994a88a7b2f052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45601e6df8df01d8b8dbee56e069085d" id="r_a45601e6df8df01d8b8dbee56e069085d"><td class="memItemLeft" align="right" valign="top"><a id="a45601e6df8df01d8b8dbee56e069085d" name="a45601e6df8df01d8b8dbee56e069085d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardPosXYZ</b></td></tr>
+<tr class="separator:a45601e6df8df01d8b8dbee56e069085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aaa29ea468e15bd5401b0546f5d0f90" id="r_a1aaa29ea468e15bd5401b0546f5d0f90"><td class="memItemLeft" align="right" valign="top"><a id="a1aaa29ea468e15bd5401b0546f5d0f90" name="a1aaa29ea468e15bd5401b0546f5d0f90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardNextFlag</b></td></tr>
+<tr class="separator:a1aaa29ea468e15bd5401b0546f5d0f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3227e0df3e626a1e7a10b52f9c6cc0" id="r_add3227e0df3e626a1e7a10b52f9c6cc0"><td class="memItemLeft" align="right" valign="top"><a id="add3227e0df3e626a1e7a10b52f9c6cc0" name="add3227e0df3e626a1e7a10b52f9c6cc0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CircleSpeed</b></td></tr>
+<tr class="separator:add3227e0df3e626a1e7a10b52f9c6cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec48ebfbe560c5b72dc561063d5b97f7" id="r_aec48ebfbe560c5b72dc561063d5b97f7"><td class="memItemLeft" align="right" valign="top"><a id="aec48ebfbe560c5b72dc561063d5b97f7" name="aec48ebfbe560c5b72dc561063d5b97f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CircleRadius</b></td></tr>
+<tr class="separator:aec48ebfbe560c5b72dc561063d5b97f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec5570422722fd417ae7f046d0fc74e" id="r_a3ec5570422722fd417ae7f046d0fc74e"><td class="memItemLeft" align="right" valign="top"><a id="a3ec5570422722fd417ae7f046d0fc74e" name="a3ec5570422722fd417ae7f046d0fc74e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CirclePosXYZ</b></td></tr>
+<tr class="separator:a3ec5570422722fd417ae7f046d0fc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d3b0b39aff27b707d5dd343eee5f44" id="r_a64d3b0b39aff27b707d5dd343eee5f44"><td class="memItemLeft" align="right" valign="top"><a id="a64d3b0b39aff27b707d5dd343eee5f44" name="a64d3b0b39aff27b707d5dd343eee5f44"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CircleDir</b></td></tr>
+<tr class="separator:a64d3b0b39aff27b707d5dd343eee5f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9aaa62aa00edec7b1649647e8733a91" id="r_ab9aaa62aa00edec7b1649647e8733a91"><td class="memItemLeft" align="right" valign="top"><a id="ab9aaa62aa00edec7b1649647e8733a91" name="ab9aaa62aa00edec7b1649647e8733a91"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VehiclePitch</b></td></tr>
+<tr class="separator:ab9aaa62aa00edec7b1649647e8733a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f895a3f62423c5db07da2a8d810759" id="r_aa9f895a3f62423c5db07da2a8d810759"><td class="memItemLeft" align="right" valign="top"><a id="aa9f895a3f62423c5db07da2a8d810759" name="aa9f895a3f62423c5db07da2a8d810759"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VehicleYaw</b></td></tr>
+<tr class="separator:aa9f895a3f62423c5db07da2a8d810759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a99e43aa990af1ec94b663556cc628e" id="r_a4a99e43aa990af1ec94b663556cc628e"><td class="memItemLeft" align="right" valign="top"><a id="a4a99e43aa990af1ec94b663556cc628e" name="a4a99e43aa990af1ec94b663556cc628e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GPSOrigin</b></td></tr>
+<tr class="separator:a4a99e43aa990af1ec94b663556cc628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0870ed1147c3a0ba959602774869d6" id="r_aac0870ed1147c3a0ba959602774869d6"><td class="memItemLeft" align="right" valign="top"><a id="aac0870ed1147c3a0ba959602774869d6" name="aac0870ed1147c3a0ba959602774869d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>geo</b></td></tr>
+<tr class="separator:aac0870ed1147c3a0ba959602774869d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c4d7fbdde3fc156c906d286f21c45d" id="r_a23c4d7fbdde3fc156c906d286f21c45d"><td class="memItemLeft" align="right" valign="top"><a id="a23c4d7fbdde3fc156c906d286f21c45d" name="a23c4d7fbdde3fc156c906d286f21c45d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lastTimeStep</b></td></tr>
+<tr class="separator:a23c4d7fbdde3fc156c906d286f21c45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa208cfb81ba2fb273b4f5e3b8b2e4921" id="r_aa208cfb81ba2fb273b4f5e3b8b2e4921"><td class="memItemLeft" align="right" valign="top"><a id="aa208cfb81ba2fb273b4f5e3b8b2e4921" name="aa208cfb81ba2fb273b4f5e3b8b2e4921"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lastCtrl</b></td></tr>
+<tr class="separator:aa208cfb81ba2fb273b4f5e3b8b2e4921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63ffee70a630b49aa4e5677ad59c3a9" id="r_ad63ffee70a630b49aa4e5677ad59c3a9"><td class="memItemLeft" align="right" valign="top"><a id="ad63ffee70a630b49aa4e5677ad59c3a9" name="ad63ffee70a630b49aa4e5677ad59c3a9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>t3</b></td></tr>
+<tr class="separator:ad63ffee70a630b49aa4e5677ad59c3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b0ef5c6320ed7db32ff604d99d6c83" id="r_a91b0ef5c6320ed7db32ff604d99d6c83"><td class="memItemLeft" align="right" valign="top"><a id="a91b0ef5c6320ed7db32ff604d99d6c83" name="a91b0ef5c6320ed7db32ff604d99d6c83"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>udpCtrlRec</b></td></tr>
+<tr class="separator:a91b0ef5c6320ed7db32ff604d99d6c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42229cbd63f6cdb50021a6ef8e042b1f" id="r_a42229cbd63f6cdb50021a6ef8e042b1f"><td class="memItemLeft" align="right" valign="top"><a id="a42229cbd63f6cdb50021a6ef8e042b1f" name="a42229cbd63f6cdb50021a6ef8e042b1f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RecIPPort</b></td></tr>
+<tr class="separator:a42229cbd63f6cdb50021a6ef8e042b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3127c5155a4c39d6702bba2900754526" id="r_a3127c5155a4c39d6702bba2900754526"><td class="memItemLeft" align="right" valign="top"><a id="a3127c5155a4c39d6702bba2900754526" name="a3127c5155a4c39d6702bba2900754526"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SendIpPort</b></td></tr>
+<tr class="separator:a3127c5155a4c39d6702bba2900754526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560080fd597c4935797f53e6111c3c36" id="r_a560080fd597c4935797f53e6111c3c36"><td class="memItemLeft" align="right" valign="top"><a id="a560080fd597c4935797f53e6111c3c36" name="a560080fd597c4935797f53e6111c3c36"></a>
+# 如果t4Flag显示停止，则退出循环&#160;</td><td class="memItemRight" valign="bottom"><b>t4Flag</b></td></tr>
+<tr class="separator:a560080fd597c4935797f53e6111c3c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95ab11d59379638967673bd74654b2a" id="r_ae95ab11d59379638967673bd74654b2a"><td class="memItemLeft" align="right" valign="top"><a id="ae95ab11d59379638967673bd74654b2a" name="ae95ab11d59379638967673bd74654b2a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b></td></tr>
+<tr class="separator:ae95ab11d59379638967673bd74654b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64384bdc6b9761e8bede36fb73bce6fe" id="r_a64384bdc6b9761e8bede36fb73bce6fe"><td class="memItemLeft" align="right" valign="top"><a id="a64384bdc6b9761e8bede36fb73bce6fe" name="a64384bdc6b9761e8bede36fb73bce6fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>startTime3</b></td></tr>
+<tr class="separator:a64384bdc6b9761e8bede36fb73bce6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9927793f1f69327ecd9ebf938e0deb92" id="r_a9927793f1f69327ecd9ebf938e0deb92"><td class="memItemLeft" align="right" valign="top"><a id="a9927793f1f69327ecd9ebf938e0deb92" name="a9927793f1f69327ecd9ebf938e0deb92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr>
+<tr class="separator:a9927793f1f69327ecd9ebf938e0deb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ad63a55b658b1cf5be182ec000d239" id="r_ab4ad63a55b658b1cf5be182ec000d239"><td class="memItemLeft" align="right" valign="top"><a id="ab4ad63a55b658b1cf5be182ec000d239" name="ab4ad63a55b658b1cf5be182ec000d239"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lastTime3</b></td></tr>
+<tr class="separator:ab4ad63a55b658b1cf5be182ec000d239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59309ec3943a91093af47c630bd9febd" id="r_a59309ec3943a91093af47c630bd9febd"><td class="memItemLeft" align="right" valign="top"><a id="a59309ec3943a91093af47c630bd9febd" name="a59309ec3943a91093af47c630bd9febd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CircleStep</b></td></tr>
+<tr class="separator:a59309ec3943a91093af47c630bd9febd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ed550bb84a516b889f8d8784d09e2b" id="r_ab8ed550bb84a516b889f8d8784d09e2b"><td class="memItemLeft" align="right" valign="top"><a id="ab8ed550bb84a516b889f8d8784d09e2b" name="ab8ed550bb84a516b889f8d8784d09e2b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavVelAir</b></td></tr>
+<tr class="separator:ab8ed550bb84a516b889f8d8784d09e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a33a6d47173849daac9938b87ba9056" id="r_a7a33a6d47173849daac9938b87ba9056"><td class="memItemLeft" align="right" valign="top"><a id="a7a33a6d47173849daac9938b87ba9056" name="a7a33a6d47173849daac9938b87ba9056"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yawf</b></td></tr>
+<tr class="separator:a7a33a6d47173849daac9938b87ba9056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e124276b1e5dd06d54547ea427ba5b" id="r_ab0e124276b1e5dd06d54547ea427ba5b"><td class="memItemLeft" align="right" valign="top"><a id="ab0e124276b1e5dd06d54547ea427ba5b" name="ab0e124276b1e5dd06d54547ea427ba5b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>yawRatef</b></td></tr>
+<tr class="separator:ab0e124276b1e5dd06d54547ea427ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f13c6b72f364ccaa8489657167b7362" id="r_a0f13c6b72f364ccaa8489657167b7362"><td class="memItemLeft" align="right" valign="top"><a id="a0f13c6b72f364ccaa8489657167b7362" name="a0f13c6b72f364ccaa8489657167b7362"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>velEf</b></td></tr>
+<tr class="separator:a0f13c6b72f364ccaa8489657167b7362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0af094c02bfe37481643389cb24409" id="r_abc0af094c02bfe37481643389cb24409"><td class="memItemLeft" align="right" valign="top"><a id="abc0af094c02bfe37481643389cb24409" name="abc0af094c02bfe37481643389cb24409"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>targetPosEf</b></td></tr>
+<tr class="separator:abc0af094c02bfe37481643389cb24409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89a4b7e0be754f8707bb4ae37cf3ea0" id="r_ad89a4b7e0be754f8707bb4ae37cf3ea0"><td class="memItemLeft" align="right" valign="top"><a id="ad89a4b7e0be754f8707bb4ae37cf3ea0" name="ad89a4b7e0be754f8707bb4ae37cf3ea0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VelAirf</b></td></tr>
+<tr class="separator:ad89a4b7e0be754f8707bb4ae37cf3ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5ed9e8df61e9f9a085379027380ef9" id="r_a6c5ed9e8df61e9f9a085379027380ef9"><td class="memItemLeft" align="right" valign="top"><a id="a6c5ed9e8df61e9f9a085379027380ef9" name="a6c5ed9e8df61e9f9a085379027380ef9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>trueAngRat</b></td></tr>
+<tr class="separator:a6c5ed9e8df61e9f9a085379027380ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd86453903c3b4faada9b748fe40dedc" id="r_afd86453903c3b4faada9b748fe40dedc"><td class="memItemLeft" align="right" valign="top"><a id="afd86453903c3b4faada9b748fe40dedc" name="afd86453903c3b4faada9b748fe40dedc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>uavTimeStmp</b></td></tr>
+<tr class="separator:afd86453903c3b4faada9b748fe40dedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50955b6541ca28f03c4d67a6a80f42b0" id="r_a50955b6541ca28f03c4d67a6a80f42b0"><td class="memItemLeft" align="right" valign="top"><a id="a50955b6541ca28f03c4d67a6a80f42b0" name="a50955b6541ca28f03c4d67a6a80f42b0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>trueTimeStmp</b></td></tr>
+<tr class="separator:a50955b6541ca28f03c4d67a6a80f42b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32904318c3bf66c489f4d097479e1c83" id="r_a32904318c3bf66c489f4d097479e1c83"><td class="memItemLeft" align="right" valign="top"><a id="a32904318c3bf66c489f4d097479e1c83" name="a32904318c3bf66c489f4d097479e1c83"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GNDSpeed</b></td></tr>
+<tr class="separator:a32904318c3bf66c489f4d097479e1c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af7ef33a58c876d1c0b27f343f8d2098e" name="af7ef33a58c876d1c0b27f343f8d2098e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ef33a58c876d1c0b27f343f8d2098e">&#9670;&#160;</a></span>EndSimpleModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EndSimpleModel </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> End the point mass model
+</pre> 
+</div>
+</div>
+<a id="a9eb9aa9ab061a5450fd0f4cf01defbab" name="a9eb9aa9ab061a5450fd0f4cf01defbab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb9aa9ab061a5450fd0f4cf01defbab">&#9670;&#160;</a></span>initSimpleModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">initSimpleModel </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>intState</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>targetIP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>GPSOrigin</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[40.1540302,116.2593683,50]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Init and start the point mass model for UAV control
+intAlt (unit m) is the init height of the vehicle on the UE4 map, which can be obtained from the CopterSim or UE4
+intState contains the PosX (m), PosY (m) and Yaw (degree) of the vehicle, which denotes the initial state of the vehicle
+it is the same as the value on CopterSim UI.
+targetIP: is the target IP address (Simulink rec PC) to send vehicle info
+</pre> 
+</div>
+</div>
+<a id="aff54303d110e9b8b16d931ea719c1a6c" name="aff54303d110e9b8b16d931ea719c1a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff54303d110e9b8b16d931ea719c1a6c">&#9670;&#160;</a></span>RollSat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RollSat </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Roll</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> satuate the yaw angle from -pi to pi
+</pre> 
+</div>
+</div>
+<a id="a1f3099c4347f7c3eed28d21fa99d2bf6" name="a1f3099c4347f7c3eed28d21fa99d2bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3099c4347f7c3eed28d21fa99d2bf6">&#9670;&#160;</a></span>sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sat </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inPwm</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>thres</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Saturation function for value inPwm with range thres
+if inPwm&gt;thres, then inPwm=thres
+if inPwm&lt;-thres,then inPwm=-thres
+</pre> 
+</div>
+</div>
+<a id="ac837c25f750abe14ef3a0a3a8c26ce58" name="ac837c25f750abe14ef3a0a3a8c26ce58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac837c25f750abe14ef3a0a3a8c26ce58">&#9670;&#160;</a></span>SendCopterSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendCopterSpeed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Speed</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> send command to set the maximum speed of the multicopter
+</pre> 
+</div>
+</div>
+<a id="a6a66c0b6fd458d868a58f0dcd17ebd85" name="a6a66c0b6fd458d868a58f0dcd17ebd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a66c0b6fd458d868a58f0dcd17ebd85">&#9670;&#160;</a></span>SendCruiseRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendCruiseRadius </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>rad</em></span><span class="paramdefsep"> = </span><span class="paramdefval">20</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send command to change the Cruise Radius (m) of the aircraft
+</pre> 
+</div>
+</div>
+<a id="a7e0dd29fef4e80b08f7d96819e7a4a7e" name="a7e0dd29fef4e80b08f7d96819e7a4a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0dd29fef4e80b08f7d96819e7a4a7e">&#9670;&#160;</a></span>SendCruiseSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendCruiseSpeed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Speed</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send command to change the Cruise speed (m/s) of the aircraft
+</pre> 
+</div>
+</div>
+<a id="a62f6bfe22fa9d4f70e6de59bbf5bb701" name="a62f6bfe22fa9d4f70e6de59bbf5bb701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f6bfe22fa9d4f70e6de59bbf5bb701">&#9670;&#160;</a></span>SendGroundSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendGroundSpeed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Speed</em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send command to change the ground speed (m/s) of the aircraft
+</pre> 
+</div>
+</div>
+<a id="a0ac10739e4380697f837dfe17afccd82" name="a0ac10739e4380697f837dfe17afccd82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac10739e4380697f837dfe17afccd82">&#9670;&#160;</a></span>sendMavTakeOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendMavTakeOff </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xM</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yM</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>zM</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>YawRad</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PitchRad</em></span><span class="paramdefsep"> = </span><span class="paramdefval">20/180.0*math.pi</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send command to make aircraft takeoff to the desired local position (m)
+</pre> 
+</div>
+</div>
+<a id="a7e6b7d5dc106d745cf823364704a4904" name="a7e6b7d5dc106d745cf823364704a4904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6b7d5dc106d745cf823364704a4904">&#9670;&#160;</a></span>sendMavTakeOffGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendMavTakeOffGPS </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>lat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>lon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>alt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yawDeg</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pitchDeg</em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send command to make aircraft takeoff to the desired global position (degree)
+</pre> 
+</div>
+</div>
+<a id="aeee30364a57b7e83956fdbcf6ecf2b16" name="aeee30364a57b7e83956fdbcf6ecf2b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee30364a57b7e83956fdbcf6ecf2b16">&#9670;&#160;</a></span>SendPosFRD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendPosFRD </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe position (m) to PX4 in the body forward-rightward-downward (FRD) frame with yaw control (rad)
+when the vehicle fly above the ground, then z &lt; 0
+</pre> 
+</div>
+</div>
+<a id="aa1976846b7d06c0a001861ad81ce824a" name="aa1976846b7d06c0a001861ad81ce824a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1976846b7d06c0a001861ad81ce824a">&#9670;&#160;</a></span>SendPosFRDNoYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendPosFRDNoYaw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe position (m) to PX4 in the body forward-rightward-downward (FRD) frame without yaw control (rad)
+when the vehicle fly above the ground, then z &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a2649cd24ce0ba2ab68984a1288fdc006" name="a2649cd24ce0ba2ab68984a1288fdc006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2649cd24ce0ba2ab68984a1288fdc006">&#9670;&#160;</a></span>SendPosNED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendPosNED </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe position (m) to PX4 in the earth north-east-down (NED) frame with yaw control (rad)
+when the vehicle fly above the ground, then z &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a706312b987d4311f976f3765d976b27b" name="a706312b987d4311f976f3765d976b27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706312b987d4311f976f3765d976b27b">&#9670;&#160;</a></span>SendPosNEDNoYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendPosNEDNoYaw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe position (m) to PX4 in the earth north-east-down (NED) frame without yaw control (rad)
+when the vehicle fly above the ground, then z &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a7dd34f79e324afda9bbed53621df2aff" name="a7dd34f79e324afda9bbed53621df2aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd34f79e324afda9bbed53621df2aff">&#9670;&#160;</a></span>sendUE4Cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4Cmd </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">send command to control the display style of RflySim3D
+    The available command are list as follows, the command string is as b'RflyShowTextTime txt time'
+    RflyShowTextTime(String txt, float time)\\ let UE4 show txt with time second
+    RflyShowText(String txt)\\  let UE4 show txt 5 second
+    RflyChangeMapbyID(int id)\\ Change the map to ID (int number)
+    RflyChangeMapbyName(String txt)\\ Change to map with name txt
+    RflyChangeViewKeyCmd(String key, int num) \\ the same as press key + num on UE4
+    RflyCameraPosAngAdd(float x, float y, float z,float roll,float pitch,float yaw) \\ move the camera with x-y-z(m) and roll-pitch-yaw(degree) related to current pos
+    RflyCameraPosAng(float x, float y, float z, float roll, float pitch, float yaw) \\ set the camera with x-y-z(m) and roll-pitch-yaw(degree) related to UE origin
+    RflyCameraFovDegrees(float degrees) \\ change the cameras fov (degree)
+    RflyChange3DModel(int CopterID, int veTypes=0) \\ change the vehicle 3D model to ID
+    RflyChangeVehicleSize(int CopterID, float size=0) \\change vhielce's size
+    RflyMoveVehiclePosAng(int CopterID, int isFitGround, float x, float y, float z, float roll, float pitch, float yaw) \\ move the vehicle's  x-y-z(m) and roll-pitch-yaw(degree) related to current pos
+    RflySetVehiclePosAng(int CopterID, int isFitGround, float x, float y, float z, float roll, float pitch, float yaw) \\ set the vehilce's x-y-z(m) and roll-pitch-yaw(degree) related to UE origin
+    RflyScanTerrainH(float xLeftBottom(m), float yLeftBottom(m), float xRightTop(m), float yRightTop(m), float scanHeight(m), float scanInterval(m)) \\ send command to let UE4 scan the map to generate png and txt files
+    RflyCesiumOriPos(double lat, double lon, double Alt) \\ change the lat, lon, Alt (degrees) of the Cesium map origin
+    RflyClearCapture \\ clear the image capture unit
+    struct Ue4CMD0{
+        int checksum;
+        char data[52];
+    } i52s
+    struct Ue4CMD{
+        int checksum;
+        char data[252];
+    } i252s            </pre> 
+</div>
+</div>
+<a id="a6702a7019fc28e675ea5d042f7074c1b" name="a6702a7019fc28e675ea5d042f7074c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6702a7019fc28e675ea5d042f7074c1b">&#9670;&#160;</a></span>sendUE4PosNew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosNew </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>VelE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PWMs</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*8</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>runnedTime</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states
+    # //输出到模拟器的数据
+    # struct SOut2SimulatorSimpleTime {
+    #     int checkSum; //1234567890
+    #     int copterID;  //Vehicle ID
+    #     int vehicleType;  //Vehicle type
+    #     float PWMs[8];
+    #     float VelE[3];
+    #     float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+    #     double PosE[3];   //NED vehicle position in earth frame (m)
+    #     double runnedTime; //Current Time stamp (s)
+    # };
+    #struct.pack 3i14f4d
+</pre> 
+</div>
+</div>
+<a id="a479d435c18dc1a908ec74abb86f90d0c" name="a479d435c18dc1a908ec74abb86f90d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479d435c18dc1a908ec74abb86f90d0c">&#9670;&#160;</a></span>SendVelFRD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendVelFRD </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yawrate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe speed (m/s) to PX4 in the body forward-rightward-downward (FRD) frame with yawrate control (rad/s)
+when the vehicle fly upward, the vz &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a48c1a545d22ec6c31d5707e75502e248" name="a48c1a545d22ec6c31d5707e75502e248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c1a545d22ec6c31d5707e75502e248">&#9670;&#160;</a></span>SendVelNED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendVelNED </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yawrate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send targe vehicle speed (m/s) to PX4 in the earth north-east-down (NED) frame with yawrate (rad/s)
+when the vehicle fly upward, the vz &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a9f65fc4c753bed9123b87c43a257e3b0" name="a9f65fc4c753bed9123b87c43a257e3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f65fc4c753bed9123b87c43a257e3b0">&#9670;&#160;</a></span>SendVelNEDNoYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendVelNEDNoYaw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vz</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send targe vehicle speed (m/s) to PX4 in the earth north-east-down (NED) frame without yaw control
+when the vehicle fly upward, the vz &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a1f18d20a0e1ddedb16db01b8774b0803" name="a1f18d20a0e1ddedb16db01b8774b0803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f18d20a0e1ddedb16db01b8774b0803">&#9670;&#160;</a></span>SendVelNoYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendVelNoYaw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vz</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe speed (m/s) to PX4 in the body forward-rightward-downward (FRD) frame without yawrate control (rad)
+when the vehicle fly upward, the vz &lt; 0
+</pre> 
+</div>
+</div>
+<a id="a9e03a0d3b8eebd412122530e7b3527b5" name="a9e03a0d3b8eebd412122530e7b3527b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e03a0d3b8eebd412122530e7b3527b5">&#9670;&#160;</a></span>SendVelYawAlt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SendVelYawAlt </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vel</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>alt</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-100</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span><span class="paramdefsep"> = </span><span class="paramdefval">6.28</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Send vehicle targe position (m) to PX4 in the earth north-east-down (NED) frame with yaw control (rad)
+when the vehicle fly above the ground, then z &lt; 0
+</pre> 
+</div>
+</div>
+<a id="af7c3ee1bad28329314a5f489f1a6adff" name="af7c3ee1bad28329314a5f489f1a6adff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c3ee1bad28329314a5f489f1a6adff">&#9670;&#160;</a></span>SimpleModelLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SimpleModelLoop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> This is the dead loop for point mass model
+</pre> 
+</div>
+</div>
+<a id="a7909afcca64461bbd9b8c24cdeef47ea" name="a7909afcca64461bbd9b8c24cdeef47ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7909afcca64461bbd9b8c24cdeef47ea">&#9670;&#160;</a></span>TypeMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TypeMask </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>EnList</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Obtain the bitmap for offboard message
+https://mavlink.io/en/messages/common.html#POSITION_TARGET_TYPEMASK
+</pre> 
+</div>
+</div>
+<a id="adf8269c75db7e139aaa12454d041afc5" name="adf8269c75db7e139aaa12454d041afc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8269c75db7e139aaa12454d041afc5">&#9670;&#160;</a></span>yawSat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">yawSat </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> satuate the yaw angle from -pi to pi
+</pre> 
+</div>
+</div>
+<a id="ae033f0d06143d84dc69c7d7122afb880" name="ae033f0d06143d84dc69c7d7122afb880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae033f0d06143d84dc69c7d7122afb880">&#9670;&#160;</a></span>yawSat1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">yawSat1 </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> satuate the yaw angle from -pi to pi
+</pre> 
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<b>VehicleApi.py</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

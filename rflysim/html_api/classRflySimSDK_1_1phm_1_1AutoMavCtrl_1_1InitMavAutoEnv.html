@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RflySimSDK: InitMavAutoEnv类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">RflySimSDK<span id="projectnumber">&#160;v3.03</span>
+   </div>
+   <div id="projectbrief">RflySimSDK说明文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>phm</b></li><li class="navelem"><b>AutoMavCtrl</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv.html">InitMavAutoEnv</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classRflySimSDK_1_1phm_1_1AutoMavCtrl_1_1InitMavAutoEnv-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">InitMavAutoEnv类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a18a733ad7fce767df17e7e104de306cb" id="r_a18a733ad7fce767df17e7e104de306cb"><td class="memItemLeft" align="right" valign="top"><a id="a18a733ad7fce767df17e7e104de306cb" name="a18a733ad7fce767df17e7e104de306cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, mav, conf, map)</td></tr>
+<tr class="separator:a18a733ad7fce767df17e7e104de306cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24fa68ee502db8e0d23e1776c72981bb" id="r_a24fa68ee502db8e0d23e1776c72981bb"><td class="memItemLeft" align="right" valign="top"><a id="a24fa68ee502db8e0d23e1776c72981bb" name="a24fa68ee502db8e0d23e1776c72981bb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>InitMAVEnv</b> (self)</td></tr>
+<tr class="separator:a24fa68ee502db8e0d23e1776c72981bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9872209c31399a9eb53d461244823d" id="r_add9872209c31399a9eb53d461244823d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add9872209c31399a9eb53d461244823d">BInfo</a> (self)</td></tr>
+<tr class="separator:add9872209c31399a9eb53d461244823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a15cecf464b21a4b0856fcd372a80a" id="r_a61a15cecf464b21a4b0856fcd372a80a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a15cecf464b21a4b0856fcd372a80a">BReset</a> (self)</td></tr>
+<tr class="separator:a61a15cecf464b21a4b0856fcd372a80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac222accaa3a1e4e358704ce359e9b26e" id="r_ac222accaa3a1e4e358704ce359e9b26e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac222accaa3a1e4e358704ce359e9b26e">BatEnvConf</a> (self)</td></tr>
+<tr class="separator:ac222accaa3a1e4e358704ce359e9b26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e2c4da9d12bfe2ef0002eccc08a00f" id="r_ad2e2c4da9d12bfe2ef0002eccc08a00f"><td class="memItemLeft" align="right" valign="top"><a id="ad2e2c4da9d12bfe2ef0002eccc08a00f" name="ad2e2c4da9d12bfe2ef0002eccc08a00f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BSingle</b> (self, Path)</td></tr>
+<tr class="separator:ad2e2c4da9d12bfe2ef0002eccc08a00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56b15c3f8372b0c42dce1110c686660" id="r_ac56b15c3f8372b0c42dce1110c686660"><td class="memItemLeft" align="right" valign="top"><a id="ac56b15c3f8372b0c42dce1110c686660" name="ac56b15c3f8372b0c42dce1110c686660"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GetPath</b> (self, Frame)</td></tr>
+<tr class="separator:ac56b15c3f8372b0c42dce1110c686660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bec7d7183ca3f4b41be73b98c5b319" id="r_ac5bec7d7183ca3f4b41be73b98c5b319"><td class="memItemLeft" align="right" valign="top"><a id="ac5bec7d7183ca3f4b41be73b98c5b319" name="ac5bec7d7183ca3f4b41be73b98c5b319"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BVNum</b> (self, path, num)</td></tr>
+<tr class="separator:ac5bec7d7183ca3f4b41be73b98c5b319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83426dda1d526182c0309c88eb10ed5" id="r_ab83426dda1d526182c0309c88eb10ed5"><td class="memItemLeft" align="right" valign="top"><a id="ab83426dda1d526182c0309c88eb10ed5" name="ab83426dda1d526182c0309c88eb10ed5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BEnv</b> (self, Path, Index, Num)</td></tr>
+<tr class="separator:ab83426dda1d526182c0309c88eb10ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a17a0c6b8ceadc505a088fdeeddd7e5" id="r_a0a17a0c6b8ceadc505a088fdeeddd7e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a17a0c6b8ceadc505a088fdeeddd7e5">BEMap</a> (self, path)</td></tr>
+<tr class="separator:a0a17a0c6b8ceadc505a088fdeeddd7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f010a37ae59541d82af34f4f31b0dd" id="r_a33f010a37ae59541d82af34f4f31b0dd"><td class="memItemLeft" align="right" valign="top"><a id="a33f010a37ae59541d82af34f4f31b0dd" name="a33f010a37ae59541d82af34f4f31b0dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BMap</b> (self)</td></tr>
+<tr class="separator:a33f010a37ae59541d82af34f4f31b0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aed334d1ece87bb95d7d39c89d83e7563" id="r_aed334d1ece87bb95d7d39c89d83e7563"><td class="memItemLeft" align="right" valign="top"><a id="aed334d1ece87bb95d7d39c89d83e7563" name="aed334d1ece87bb95d7d39c89d83e7563"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mav</b></td></tr>
+<tr class="separator:aed334d1ece87bb95d7d39c89d83e7563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd07cca8e4cbcf87da47e6e0d903ffa8" id="r_abd07cca8e4cbcf87da47e6e0d903ffa8"><td class="memItemLeft" align="right" valign="top"><a id="abd07cca8e4cbcf87da47e6e0d903ffa8" name="abd07cca8e4cbcf87da47e6e0d903ffa8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>conf</b></td></tr>
+<tr class="separator:abd07cca8e4cbcf87da47e6e0d903ffa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec9dda576db2a36c42c1c3af155d07c" id="r_a9ec9dda576db2a36c42c1c3af155d07c"><td class="memItemLeft" align="right" valign="top"><a id="a9ec9dda576db2a36c42c1c3af155d07c" name="a9ec9dda576db2a36c42c1c3af155d07c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
+<tr class="separator:a9ec9dda576db2a36c42c1c3af155d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac222accaa3a1e4e358704ce359e9b26e" name="ac222accaa3a1e4e358704ce359e9b26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac222accaa3a1e4e358704ce359e9b26e">&#9670;&#160;</a></span>BatEnvConf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BatEnvConf </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">In the case of multiple aircraft, it is necessary to modify the start of the Bat environment, the index and the number of aircraft
+Keep the start of only one Bat software environment + START_INDEX + VehicleNum
+</pre> 
+</div>
+</div>
+<a id="a0a17a0c6b8ceadc505a088fdeeddd7e5" name="a0a17a0c6b8ceadc505a088fdeeddd7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a17a0c6b8ceadc505a088fdeeddd7e5">&#9670;&#160;</a></span>BEMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BEMap </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Grasslands
+OldFactory
+RealForestBLake
+NeighborhoodPark
+</pre> 
+</div>
+</div>
+<a id="add9872209c31399a9eb53d461244823d" name="add9872209c31399a9eb53d461244823d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9872209c31399a9eb53d461244823d">&#9670;&#160;</a></span>BInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BInfo </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">UAV information configuration:
+    MAV_NUM
+    MAV_FRAME
+    MAV_FRAME_NUM
+    MAV_FRAME_DICT
+    TEST_MODE
+</pre> 
+</div>
+</div>
+<a id="a61a15cecf464b21a4b0856fcd372a80a" name="a61a15cecf464b21a4b0856fcd372a80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a15cecf464b21a4b0856fcd372a80a">&#9670;&#160;</a></span>BReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BReset </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Bat resets to its original state
+</pre> 
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>phm/<b>AutoMavCtrl.py</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,2087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RflySimSDK: UE4CtrlAPI类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">RflySimSDK<span id="projectnumber">&#160;v3.03</span>
+   </div>
+   <div id="projectbrief">RflySimSDK说明文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ue</b></li><li class="navelem"><b>UE4CtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI.html">UE4CtrlAPI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">UE4CtrlAPI类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html">Radiation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">此类用于定义和处理给定场景中各种对象的辐射属性。  <a href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac72acb567fdaca60837cc76643e6eeed" id="r_ac72acb567fdaca60837cc76643e6eeed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac72acb567fdaca60837cc76643e6eeed">__init__</a> (self, ip=&quot;127.0.0.1&quot;, multicast_ip=&quot;224.0.0.10&quot;, multicast_port=20010)</td></tr>
+<tr class="memdesc:ac72acb567fdaca60837cc76643e6eeed"><td class="mdescLeft">&#160;</td><td class="mdescRight">UE4CtrlAPI的构造函数  <br /></td></tr>
+<tr class="separator:ac72acb567fdaca60837cc76643e6eeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd34f79e324afda9bbed53621df2aff" id="r_a7dd34f79e324afda9bbed53621df2aff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd34f79e324afda9bbed53621df2aff">sendUE4Cmd</a> (self, cmd, windowID=-1)</td></tr>
+<tr class="memdesc:a7dd34f79e324afda9bbed53621df2aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送RflySim3D控制台命令的方法  <br /></td></tr>
+<tr class="separator:a7dd34f79e324afda9bbed53621df2aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9560077bcadbe108b3e31354534f164b" id="r_a9560077bcadbe108b3e31354534f164b"><td class="memItemLeft" align="right" valign="top"><a id="a9560077bcadbe108b3e31354534f164b" name="a9560077bcadbe108b3e31354534f164b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>fillList</b> (self, data, inLen)</td></tr>
+<tr class="separator:a9560077bcadbe108b3e31354534f164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee678b732e8dd5e7b1a8cc15bd40d777" id="r_aee678b732e8dd5e7b1a8cc15bd40d777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee678b732e8dd5e7b1a8cc15bd40d777">sendUE4CmdNet</a> (self, cmd)</td></tr>
+<tr class="memdesc:aee678b732e8dd5e7b1a8cc15bd40d777"><td class="mdescLeft">&#160;</td><td class="mdescRight">向同一局域网内所有RflySim3D发送RflySim3D控制台命令的方法  <br /></td></tr>
+<tr class="separator:aee678b732e8dd5e7b1a8cc15bd40d777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3acdd330037af106ba3cc9982b7773" id="r_a7c3acdd330037af106ba3cc9982b7773"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3acdd330037af106ba3cc9982b7773">sendUE4LabelID</a> (self, CopterID=0, Txt=&quot;&quot;, fontSize=30, RGB=[255, 0, 0], windowID=-1)</td></tr>
+<tr class="memdesc:a7c3acdd330037af106ba3cc9982b7773"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一个自行创建物体的头顶ID位置的显示内容  <br /></td></tr>
+<tr class="separator:a7c3acdd330037af106ba3cc9982b7773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb18bd1206f9d0d841ce76e011ce2859" id="r_aeb18bd1206f9d0d841ce76e011ce2859"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb18bd1206f9d0d841ce76e011ce2859">sendUE4LabelMsg</a> (self, CopterID=0, Txt=&quot;&quot;, fontSize=30, RGB=[255, 0, 0], dispTime=0, dispFlag=-1, windowID=-1)</td></tr>
+<tr class="memdesc:aeb18bd1206f9d0d841ce76e011ce2859"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一个自行创建物体的头顶各行Message标签显示内容  <br /></td></tr>
+<tr class="separator:aeb18bd1206f9d0d841ce76e011ce2859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8289f1d913ae9b0b55d7f82d0ec5d9d" id="r_ab8289f1d913ae9b0b55d7f82d0ec5d9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8289f1d913ae9b0b55d7f82d0ec5d9d">sendUE4Attatch</a> (self, CopterIDs, AttatchIDs, AttatchTypes, windowID=-1)</td></tr>
+<tr class="memdesc:ab8289f1d913ae9b0b55d7f82d0ec5d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在UE4中将一个或多个自建物体附加到其他物体上  <br /></td></tr>
+<tr class="separator:ab8289f1d913ae9b0b55d7f82d0ec5d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1affe06e535cdcf936f46380374bf152" id="r_a1affe06e535cdcf936f46380374bf152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1affe06e535cdcf936f46380374bf152">sendUE4Pos</a> (self, copterID=1, vehicleType=3, MotorRPMSMean=0, PosE=[0, 0, 0], AngEuler=[0, 0, 0], windowID=-1)</td></tr>
+<tr class="memdesc:a1affe06e535cdcf936f46380374bf152"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置创建/更新模型  <br /></td></tr>
+<tr class="separator:a1affe06e535cdcf936f46380374bf152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09083c3965f904e13d23e863a21d5e07" id="r_a09083c3965f904e13d23e863a21d5e07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09083c3965f904e13d23e863a21d5e07">sendUE4Pos2Ground</a> (self, copterID=1, vehicleType=3, MotorRPMSMean=0, PosE=[0, 0, 0], AngEuler=[0, 0, 0], windowID=-1)</td></tr>
+<tr class="memdesc:a09083c3965f904e13d23e863a21d5e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置创建/更新模型  <br /></td></tr>
+<tr class="separator:a09083c3965f904e13d23e863a21d5e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f5095f7c98328c230bbb41f9242e75" id="r_a16f5095f7c98328c230bbb41f9242e75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16f5095f7c98328c230bbb41f9242e75">sendUE4PosScale</a> (self, copterID=1, vehicleType=3, MotorRPMSMean=0, PosE=[0, 0, 0], AngEuler=[0, 0, 0], Scale=[1, 1, 1], windowID=-1)</td></tr>
+<tr class="memdesc:a16f5095f7c98328c230bbb41f9242e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置创建/更新模型  <br /></td></tr>
+<tr class="separator:a16f5095f7c98328c230bbb41f9242e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cf535ebe9b01bcbd580807908db827" id="r_ac9cf535ebe9b01bcbd580807908db827"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9cf535ebe9b01bcbd580807908db827">sendUE4PosScale2Ground</a> (self, copterID=1, vehicleType=3, MotorRPMSMean=0, PosE=[0, 0, 0], AngEuler=[0, 0, 0], Scale=[1, 1, 1], windowID=-1)</td></tr>
+<tr class="memdesc:ac9cf535ebe9b01bcbd580807908db827"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置创建/更新模型  <br /></td></tr>
+<tr class="separator:ac9cf535ebe9b01bcbd580807908db827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262bffe998194fcc1aad85fa722b9af9" id="r_a262bffe998194fcc1aad85fa722b9af9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a262bffe998194fcc1aad85fa722b9af9">sendUE4PosFull</a> (self, copterID, vehicleType, MotorRPMS=[0] *8, VelE=[0, 0, 0], PosE=[0, 0, 0], RateB=[0, 0, 0], AngEuler=[0, 0, 0], windowID=-1)</td></tr>
+<tr class="memdesc:a262bffe998194fcc1aad85fa722b9af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置创建/更新模型  <br /></td></tr>
+<tr class="separator:a262bffe998194fcc1aad85fa722b9af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9121432eec7ad042570335e3d90cbb6" id="r_ae9121432eec7ad042570335e3d90cbb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9121432eec7ad042570335e3d90cbb6">sendUE4ExtAct</a> (self, copterID=1, ActExt=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], windowID=-1)</td></tr>
+<tr class="memdesc:ae9121432eec7ad042570335e3d90cbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发扩展蓝图接口  <br /></td></tr>
+<tr class="separator:ae9121432eec7ad042570335e3d90cbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1d5c9feebd044f1d9f653e2e891a5e" id="r_a3b1d5c9feebd044f1d9f653e2e891a5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b1d5c9feebd044f1d9f653e2e891a5e">sendUE4PosSimple</a> (self, copterID, vehicleType, PWMs, VelE, PosE, AngEuler, runnedTime=-1, windowID=-1)</td></tr>
+<tr class="memdesc:a3b1d5c9feebd044f1d9f653e2e891a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建/更新模型  <br /></td></tr>
+<tr class="separator:a3b1d5c9feebd044f1d9f653e2e891a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6702a7019fc28e675ea5d042f7074c1b" id="r_a6702a7019fc28e675ea5d042f7074c1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6702a7019fc28e675ea5d042f7074c1b">sendUE4PosNew</a> (self, copterID=1, vehicleType=3, PosE=[0, 0, 0], AngEuler=[0, 0, 0], VelE=[0, 0, 0], PWMs=[0] *8, runnedTime=-1, windowID=-1)</td></tr>
+<tr class="memdesc:a6702a7019fc28e675ea5d042f7074c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建/更新模型  <br /></td></tr>
+<tr class="separator:a6702a7019fc28e675ea5d042f7074c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df98889699a64ccf719b7abf87e0db6" id="r_a4df98889699a64ccf719b7abf87e0db6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4df98889699a64ccf719b7abf87e0db6">sendUE4PosScale100</a> (self, copterID, vehicleType, PosE, AngEuler, MotorRPMSMean, Scale, isFitGround=False, windowID=-1)</td></tr>
+<tr class="memdesc:a4df98889699a64ccf719b7abf87e0db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建100个Copter  <br /></td></tr>
+<tr class="separator:a4df98889699a64ccf719b7abf87e0db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5581a84f3546567fde75961a28107f1d" id="r_a5581a84f3546567fde75961a28107f1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5581a84f3546567fde75961a28107f1d">sendUE4PosScalePwm20</a> (self, copterID, vehicleType, PosE, AngEuler, Scale, PWMs, isFitGround=False, windowID=-1)</td></tr>
+<tr class="memdesc:a5581a84f3546567fde75961a28107f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建20个Copter  <br /></td></tr>
+<tr class="separator:a5581a84f3546567fde75961a28107f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36eba886255aacdf2bab5295f5f35b1" id="r_ae36eba886255aacdf2bab5295f5f35b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae36eba886255aacdf2bab5295f5f35b1">getUE4Pos</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:ae36eba886255aacdf2bab5295f5f35b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取Copter位置  <br /></td></tr>
+<tr class="separator:ae36eba886255aacdf2bab5295f5f35b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152147b6cc6b2fda8923e17afb6fea3c" id="r_a152147b6cc6b2fda8923e17afb6fea3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a152147b6cc6b2fda8923e17afb6fea3c">getUE4Data</a> (self, CopterID=1)</td></tr>
+<tr class="memdesc:a152147b6cc6b2fda8923e17afb6fea3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取Copter数据  <br /></td></tr>
+<tr class="separator:a152147b6cc6b2fda8923e17afb6fea3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf774510257551418e1e8c8779241f7" id="r_adcf774510257551418e1e8c8779241f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcf774510257551418e1e8c8779241f7">initUE4MsgRec</a> (self)</td></tr>
+<tr class="memdesc:adcf774510257551418e1e8c8779241f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用监听  <br /></td></tr>
+<tr class="separator:adcf774510257551418e1e8c8779241f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ad63c699d26294e0680d784084f391" id="r_a36ad63c699d26294e0680d784084f391"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36ad63c699d26294e0680d784084f391">endUE4MsgRec</a> (self)</td></tr>
+<tr class="memdesc:a36ad63c699d26294e0680d784084f391"><td class="mdescLeft">&#160;</td><td class="mdescRight">终止监听  <br /></td></tr>
+<tr class="separator:a36ad63c699d26294e0680d784084f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316c3d33e1a7eee4991a31e0d3322040" id="r_a316c3d33e1a7eee4991a31e0d3322040"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a316c3d33e1a7eee4991a31e0d3322040">UE4MsgRecLoop</a> (self)</td></tr>
+<tr class="memdesc:a316c3d33e1a7eee4991a31e0d3322040"><td class="mdescLeft">&#160;</td><td class="mdescRight">监听循环  <br /></td></tr>
+<tr class="separator:a316c3d33e1a7eee4991a31e0d3322040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a4fda89bb420101f60c8fe426c4efe" id="r_a24a4fda89bb420101f60c8fe426c4efe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24a4fda89bb420101f60c8fe426c4efe">getCamCoptObj</a> (self, type_id=1, objName=1)</td></tr>
+<tr class="memdesc:a24a4fda89bb420101f60c8fe426c4efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取场景内指定物体数据  <br /></td></tr>
+<tr class="separator:a24a4fda89bb420101f60c8fe426c4efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bbc02f2e508a22db16214c353bd491" id="r_a08bbc02f2e508a22db16214c353bd491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08bbc02f2e508a22db16214c353bd491">reqCamCoptObj</a> (self, type_id=1, objName=1, windowID=0)</td></tr>
+<tr class="memdesc:a08bbc02f2e508a22db16214c353bd491"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求场景内指定物体数据回传  <br /></td></tr>
+<tr class="separator:a08bbc02f2e508a22db16214c353bd491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8100a9848217d349c54e431c52fbc430" id="r_a8100a9848217d349c54e431c52fbc430"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8100a9848217d349c54e431c52fbc430">reqCam</a> (self, SeqIDList=[0], windowID=0)</td></tr>
+<tr class="separator:a8100a9848217d349c54e431c52fbc430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed913dbcf51afc1c50dbb1df83f0fa6" id="r_a4ed913dbcf51afc1c50dbb1df83f0fa6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ed913dbcf51afc1c50dbb1df83f0fa6">reqCopt</a> (self, CopterIDList=[0], windowID=0)</td></tr>
+<tr class="separator:a4ed913dbcf51afc1c50dbb1df83f0fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480bdd34fbe6d77df9898259b6e64de7" id="r_a480bdd34fbe6d77df9898259b6e64de7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a480bdd34fbe6d77df9898259b6e64de7">reqObj</a> (self, ObjNameList=[''], windowID=0)</td></tr>
+<tr class="separator:a480bdd34fbe6d77df9898259b6e64de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22924f50544e801e9d02c0434d3176fb" id="r_a22924f50544e801e9d02c0434d3176fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22924f50544e801e9d02c0434d3176fb">SetUE4RadianceValue</a> (self, UEObjectName, windows=-1)</td></tr>
+<tr class="memdesc:a22924f50544e801e9d02c0434d3176fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html">Radiation</a> 类计算得到目标的辐射值设置给UE（只要名字中某段能匹配就会设置）  <br /></td></tr>
+<tr class="separator:a22924f50544e801e9d02c0434d3176fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a2c3b5719d1b44b7107dabe4ed9bdf" id="r_a30a2c3b5719d1b44b7107dabe4ed9bdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30a2c3b5719d1b44b7107dabe4ed9bdf">SetUE4RadianceValue__All</a> (self, windows=-1)</td></tr>
+<tr class="memdesc:a30a2c3b5719d1b44b7107dabe4ed9bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 <a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#tempEmissivity">tempEmissivity</a> 数组中所有物体的辐射值给UE4  <br /></td></tr>
+<tr class="separator:a30a2c3b5719d1b44b7107dabe4ed9bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709be0ce4fad73b4eb6e320989d6cdef" id="r_a709be0ce4fad73b4eb6e320989d6cdef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a709be0ce4fad73b4eb6e320989d6cdef">sendUE4SetStencilValueByActorName</a> (self, Actorname, StencilValue, is_name_regex=False, windowID=-1)</td></tr>
+<tr class="memdesc:a709be0ce4fad73b4eb6e320989d6cdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">将物体的模板值发送给UE（由Actor）  <br /></td></tr>
+<tr class="separator:a709be0ce4fad73b4eb6e320989d6cdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f1c4c22c562315f98a985aa1b7d9a7" id="r_a40f1c4c22c562315f98a985aa1b7d9a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f1c4c22c562315f98a985aa1b7d9a7">sendUE4SetStencilValueByMeshComponentName</a> (self, Meshname, StencilValue, is_name_regex=False, windowID=-1)</td></tr>
+<tr class="memdesc:a40f1c4c22c562315f98a985aa1b7d9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">将物体的模板值发送给UE（由mesh）  <br /></td></tr>
+<tr class="separator:a40f1c4c22c562315f98a985aa1b7d9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c09b7cd28d2245aa4ee2bfb29a2e7e" id="r_ac1c09b7cd28d2245aa4ee2bfb29a2e7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1c09b7cd28d2245aa4ee2bfb29a2e7e">sendUE4SetStencilValueByCopterID</a> (self, CopterID, StencilValue, windowID=-1)</td></tr>
+<tr class="memdesc:ac1c09b7cd28d2245aa4ee2bfb29a2e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将物体的模板值发送给UE（由CopterID）  <br /></td></tr>
+<tr class="separator:ac1c09b7cd28d2245aa4ee2bfb29a2e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td class="memItemLeft" align="right" valign="top"><a id="afd65cf072a93c93ad52b9f25b341e10b" name="afd65cf072a93c93ad52b9f25b341e10b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ip</b></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa254d5af4f174fa3e7e3b70ee9e10116" id="r_aa254d5af4f174fa3e7e3b70ee9e10116"><td class="memItemLeft" align="right" valign="top"><a id="aa254d5af4f174fa3e7e3b70ee9e10116" name="aa254d5af4f174fa3e7e3b70ee9e10116"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>multicast_ip</b></td></tr>
+<tr class="separator:aa254d5af4f174fa3e7e3b70ee9e10116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe950923e29bd0aa32434b03f191a776" id="r_abe950923e29bd0aa32434b03f191a776"><td class="memItemLeft" align="right" valign="top"><a id="abe950923e29bd0aa32434b03f191a776" name="abe950923e29bd0aa32434b03f191a776"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>multicast_port</b></td></tr>
+<tr class="separator:abe950923e29bd0aa32434b03f191a776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9927793f1f69327ecd9ebf938e0deb92" id="r_a9927793f1f69327ecd9ebf938e0deb92"><td class="memItemLeft" align="right" valign="top"><a id="a9927793f1f69327ecd9ebf938e0deb92" name="a9927793f1f69327ecd9ebf938e0deb92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr>
+<tr class="separator:a9927793f1f69327ecd9ebf938e0deb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39156fb07ed42ab04b44381baa97ac7" id="r_ae39156fb07ed42ab04b44381baa97ac7"><td class="memItemLeft" align="right" valign="top"><a id="ae39156fb07ed42ab04b44381baa97ac7" name="ae39156fb07ed42ab04b44381baa97ac7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>udp_socket</b></td></tr>
+<tr class="separator:ae39156fb07ed42ab04b44381baa97ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea6c60116e535f45103635cf2e9c1dc" id="r_a5ea6c60116e535f45103635cf2e9c1dc"><td class="memItemLeft" align="right" valign="top"><a id="a5ea6c60116e535f45103635cf2e9c1dc" name="a5ea6c60116e535f45103635cf2e9c1dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>udp_socketUE4</b></td></tr>
+<tr class="separator:a5ea6c60116e535f45103635cf2e9c1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eed279ac2f327078505d32b382e7acc" id="r_a3eed279ac2f327078505d32b382e7acc"><td class="memItemLeft" align="right" valign="top"><a id="a3eed279ac2f327078505d32b382e7acc" name="a3eed279ac2f327078505d32b382e7acc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inSilVect</b></td></tr>
+<tr class="separator:a3eed279ac2f327078505d32b382e7acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cf9c4889143ed0f5b8cde32d2e221b" id="r_a92cf9c4889143ed0f5b8cde32d2e221b"><td class="memItemLeft" align="right" valign="top"><a id="a92cf9c4889143ed0f5b8cde32d2e221b" name="a92cf9c4889143ed0f5b8cde32d2e221b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inReqVect</b></td></tr>
+<tr class="separator:a92cf9c4889143ed0f5b8cde32d2e221b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae90412dc7744e7bdb576dc24c4884f2" id="r_aae90412dc7744e7bdb576dc24c4884f2"><td class="memItemLeft" align="right" valign="top"><a id="aae90412dc7744e7bdb576dc24c4884f2" name="aae90412dc7744e7bdb576dc24c4884f2"></a>
+# 如果没有启用监听程序&#160;</td><td class="memItemRight" valign="bottom"><b>stopFlagUE4</b></td></tr>
+<tr class="separator:aae90412dc7744e7bdb576dc24c4884f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdd4a7d1c53226f57dc7161cce6d982" id="r_abbdd4a7d1c53226f57dc7161cce6d982"><td class="memItemLeft" align="right" valign="top"><a id="abbdd4a7d1c53226f57dc7161cce6d982" name="abbdd4a7d1c53226f57dc7161cce6d982"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CoptDataVect</b></td></tr>
+<tr class="separator:abbdd4a7d1c53226f57dc7161cce6d982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199b56fb630b1079601fc1a16b0a7ce4" id="r_a199b56fb630b1079601fc1a16b0a7ce4"><td class="memItemLeft" align="right" valign="top"><a id="a199b56fb630b1079601fc1a16b0a7ce4" name="a199b56fb630b1079601fc1a16b0a7ce4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ObjDataVect</b></td></tr>
+<tr class="separator:a199b56fb630b1079601fc1a16b0a7ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c4e87f5cc50e9fbdadc668210be3e1" id="r_a58c4e87f5cc50e9fbdadc668210be3e1"><td class="memItemLeft" align="right" valign="top"><a id="a58c4e87f5cc50e9fbdadc668210be3e1" name="a58c4e87f5cc50e9fbdadc668210be3e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CamDataVect</b></td></tr>
+<tr class="separator:a58c4e87f5cc50e9fbdadc668210be3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02600e452ff56b4741e08e9151cdc0f" id="r_af02600e452ff56b4741e08e9151cdc0f"><td class="memItemLeft" align="right" valign="top"><a id="af02600e452ff56b4741e08e9151cdc0f" name="af02600e452ff56b4741e08e9151cdc0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hasMsgEvent</b></td></tr>
+<tr class="separator:af02600e452ff56b4741e08e9151cdc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332006f318850ee16f190ad6de0195fd" id="r_a332006f318850ee16f190ad6de0195fd"><td class="memItemLeft" align="right" valign="top"><a id="a332006f318850ee16f190ad6de0195fd" name="a332006f318850ee16f190ad6de0195fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>trueMsgEvent</b></td></tr>
+<tr class="separator:a332006f318850ee16f190ad6de0195fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51288f26999ec9689d1e6809ce2f6729" id="r_a51288f26999ec9689d1e6809ce2f6729"><td class="memItemLeft" align="right" valign="top"><a id="a51288f26999ec9689d1e6809ce2f6729" name="a51288f26999ec9689d1e6809ce2f6729"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inReqUpdateVect</b></td></tr>
+<tr class="separator:a51288f26999ec9689d1e6809ce2f6729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95ab11d59379638967673bd74654b2a" id="r_ae95ab11d59379638967673bd74654b2a"><td class="memItemLeft" align="right" valign="top"><a id="ae95ab11d59379638967673bd74654b2a" name="ae95ab11d59379638967673bd74654b2a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b></td></tr>
+<tr class="separator:ae95ab11d59379638967673bd74654b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add790af874c7800486c8594c69268fef" id="r_add790af874c7800486c8594c69268fef"><td class="memItemLeft" align="right" valign="top"><a id="add790af874c7800486c8594c69268fef" name="add790af874c7800486c8594c69268fef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>isVehicleCrash</b></td></tr>
+<tr class="separator:add790af874c7800486c8594c69268fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff50bbc45a6a6adff526b8c666bc7ed" id="r_a6ff50bbc45a6a6adff526b8c666bc7ed"><td class="memItemLeft" align="right" valign="top"><a id="a6ff50bbc45a6a6adff526b8c666bc7ed" name="a6ff50bbc45a6a6adff526b8c666bc7ed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>isVehicleCrashID</b></td></tr>
+<tr class="separator:a6ff50bbc45a6a6adff526b8c666bc7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12223c66ccfc5e4eccaef8b62603e622" id="r_a12223c66ccfc5e4eccaef8b62603e622"><td class="memItemLeft" align="right" valign="top"><a id="a12223c66ccfc5e4eccaef8b62603e622" name="a12223c66ccfc5e4eccaef8b62603e622"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>radiation</b></td></tr>
+<tr class="separator:a12223c66ccfc5e4eccaef8b62603e622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><pre class="fragment"> </pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac72acb567fdaca60837cc76643e6eeed" name="ac72acb567fdaca60837cc76643e6eeed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72acb567fdaca60837cc76643e6eeed">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;127.0.0.1&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>multicast_ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;224.0.0.10&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>multicast_port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">20010</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UE4CtrlAPI的构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>要连接的PC的IP地址，默认为"127.0.0.1" </td></tr>
+    <tr><td class="paramname">multicast_ip</td><td>组播的IP地址，默认为"224.0.0.10" </td></tr>
+    <tr><td class="paramname">multicast_port</td><td>组播的端口，默认为20010 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>UE4CtrlAPI对象</dd></dl>
+<pre class="fragment">参数初始化：
+
+ip：要连接的PC的IP地址，默认为"127.0.0.1"。
+multicast_ip：组播的IP地址，默认为"224.0.0.10"。
+multicast_port：组播的端口，默认为20010。
+self.startTime：使用当前时间初始化 startTime 属性，用于记录对象创建时间。
+创建UDP套接字：
+
+self.udp_socket：创建一个UDP套接字用于通信。
+self.udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)：设置套接字选项以允许广播。
+self.udp_socketUE4：创建另一个UDP套接字用于与UE4通信。
+self.udp_socketUE4.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)：设置套接字选项以允许地址重用。
+初始化向量：
+
+self.inSilVect：用于存储传入的Sil数据的向量（列表）。
+self.inReqVect：用于存储传入请求数据的向量（列表）。
+初始化控制UE4的标志和向量：
+
+self.stopFlagUE4：用于控制UE4停止状态的标志，初始值为 True。
+self.CoptDataVect：用于存储飞行器数据的向量。
+self.ObjDataVect：用于存储对象数据的向量。
+self.CamDataVect：用于存储相机数据的向量。
+初始化线程事件：
+
+self.hasMsgEvent：用于处理消息存在的事件。
+self.trueMsgEvent：用于处理真实消息状态的事件。
+通过这些步骤，UE4CtrlAPI 类的构造函数创建并初始化了一个可以与RflySim3D进行通信和控制的实例。
+</pre> 
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a36ad63c699d26294e0680d784084f391" name="a36ad63c699d26294e0680d784084f391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ad63c699d26294e0680d784084f391">&#9670;&#160;</a></span>endUE4MsgRec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">endUE4MsgRec </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>终止监听 </p>
+<ul>
+<li><a class="anchor" id="endUE4MsgRec"></a></li>
+</ul>
+<pre class="fragment">End UE4 message listening</pre> 
+</div>
+</div>
+<a id="a24a4fda89bb420101f60c8fe426c4efe" name="a24a4fda89bb420101f60c8fe426c4efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a4fda89bb420101f60c8fe426c4efe">&#9670;&#160;</a></span>getCamCoptObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getCamCoptObj </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>type_id</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>objName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取场景内指定物体数据 </p>
+<ul>
+<li><a class="anchor" id="getCamCoptObj"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type_id</td><td></td></tr>
+    <tr><td class="paramname">objName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0表示未找到，返回0</li>
+<li>1表示找到，返回对应的对象</li>
+</ul>
+</dd></dl>
+<pre class="fragment">type=0表示相机，1表示手动创建带copter_id的目标，2表示场景中自带的物体
+相机时，objName对应相机seqID；指定copterid目标时，objName对应CopterID，请求场景中自带的物体时，objName对应物体名字(字符串)
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a152147b6cc6b2fda8923e17afb6fea3c" name="a152147b6cc6b2fda8923e17afb6fea3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152147b6cc6b2fda8923e17afb6fea3c">&#9670;&#160;</a></span>getUE4Data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getUE4Data </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取Copter数据 </p>
+<ul>
+<li><a class="anchor" id="getUE4Data"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ae36eba886255aacdf2bab5295f5f35b1" name="ae36eba886255aacdf2bab5295f5f35b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36eba886255aacdf2bab5295f5f35b1">&#9670;&#160;</a></span>getUE4Pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getUE4Pos </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取Copter位置 </p>
+<ul>
+<li><a class="anchor" id="getUE4Pos"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="adcf774510257551418e1e8c8779241f7" name="adcf774510257551418e1e8c8779241f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf774510257551418e1e8c8779241f7">&#9670;&#160;</a></span>initUE4MsgRec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">initUE4MsgRec </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用监听 </p>
+<ul>
+<li><a class="anchor" id="initUE4MsgRec"></a></li>
+</ul>
+<pre class="fragment">Initialize the UDP data linsening from UE4,
+currently, the crash data is listened
+</pre> 
+</div>
+</div>
+<a id="a8100a9848217d349c54e431c52fbc430" name="a8100a9848217d349c54e431c52fbc430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8100a9848217d349c54e431c52fbc430">&#9670;&#160;</a></span>reqCam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">reqCam </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>SeqIDList</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">请求相机数据。
+
+参数:
+    SeqIDList (list): 相机的序列ID列表。默认值为[0]。
+    windowID (int): 发送消息的RflySim3D窗口ID，默认是0号窗口。
+</pre> 
+</div>
+</div>
+<a id="a08bbc02f2e508a22db16214c353bd491" name="a08bbc02f2e508a22db16214c353bd491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bbc02f2e508a22db16214c353bd491">&#9670;&#160;</a></span>reqCamCoptObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">reqCamCoptObj </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>type_id</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>objName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求场景内指定物体数据回传 </p>
+<ul>
+<li><a class="anchor" id="reqCamCoptObj"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type_id</td><td></td></tr>
+    <tr><td class="paramname">objName</td><td></td></tr>
+    <tr><td class="paramname">windowID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0表示未找到，返回0</li>
+<li>1表示找到，返回对应的对象</li>
+</ul>
+</dd></dl>
+<pre class="fragment">type=0表示相机，1表示手动创建带copter_id的目标，2表示场景中自带的物体
+相机时，objName对应相机seqID；指定copterid目标时，objName对应CopterID，请求场景中自带的物体时，objName对应物体名字(字符串)
+windowID 表示想往哪个RflySim3D发送消息，默认是0号窗口
+
+RflyReqObjData(int opFlag, FString objName, FString colorflag)函数命令
+opFlag 0创建相机，1创建copter_id对应的目标，2创建物体
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a4ed913dbcf51afc1c50dbb1df83f0fa6" name="a4ed913dbcf51afc1c50dbb1df83f0fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed913dbcf51afc1c50dbb1df83f0fa6">&#9670;&#160;</a></span>reqCopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">reqCopt </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterIDList</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">请求带copter_id的目标数据。
+
+参数:
+    CopterIDList (list): copter_id的ID列表。默认值为[0]。
+    windowID (int): 发送消息的RflySim3D窗口ID，默认是0号窗口。
+</pre> 
+</div>
+</div>
+<a id="a480bdd34fbe6d77df9898259b6e64de7" name="a480bdd34fbe6d77df9898259b6e64de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480bdd34fbe6d77df9898259b6e64de7">&#9670;&#160;</a></span>reqObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">reqObj </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ObjNameList</em></span><span class="paramdefsep"> = </span><span class="paramdefval">['']</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">请求场景中自带的物体数据。
+
+参数:
+    ObjNameList (list): 物体名称的列表。默认值为['']。
+    windowID (int): 发送消息的RflySim3D窗口ID，默认是0号窗口。
+</pre> 
+</div>
+</div>
+<a id="ab8289f1d913ae9b0b55d7f82d0ec5d9d" name="ab8289f1d913ae9b0b55d7f82d0ec5d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8289f1d913ae9b0b55d7f82d0ec5d9d">&#9670;&#160;</a></span>sendUE4Attatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4Attatch </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterIDs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AttatchIDs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AttatchTypes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置在UE4中将一个或多个自建物体附加到其他物体上 </p>
+<ul>
+<li><a class="anchor" id="sendUE4Attatch"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterIDs</td><td>要附加的飞机的ID列表，最大长度为25 </td></tr>
+    <tr><td class="paramname">AttatchIDs</td><td>被附加的物体的ID列表，最大长度为25 </td></tr>
+    <tr><td class="paramname">AttatchTypes</td><td>附加类型的列表，最大长度为25。附加类型包括：<ul>
+<li>0：正常模式</li>
+<li>1：相对位置但不相对姿态</li>
+<li>2：相对位置+偏航（不相对俯仰和滚转）</li>
+<li>3：相对位置+全姿态（俯仰、滚转、偏航） </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">windowID</td><td>要显示的RflySim3D窗口ID。默认为-1，表示所有窗口。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 <br  />
+</dd></dl>
+<pre class="fragment">发送消息到UE4，将一个或多个飞机附加到其他物体上（最多25个飞机）；
+CopterIDs、AttatchIDs、AttatchTypes可以是长度为25的列表Send msg to UE4 to attach a vehicle to another (25 vehicles);
+CopterIDs,AttatchIDs,AttatchTypes can be a list with max len 25
+
+struct VehicleAttatch25 {
+    int checksum;//1234567892
+    int CopterIDs[25];
+    int AttatchIDs[25];
+    int AttatchTypes[25];//0：正常模式，1：相对位置不相对姿态，2：相对位置+偏航（不相对俯仰和滚转），3：相对位置+全姿态（俯仰滚转偏航）
+}i25i25i25i</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a7dd34f79e324afda9bbed53621df2aff" name="a7dd34f79e324afda9bbed53621df2aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd34f79e324afda9bbed53621df2aff">&#9670;&#160;</a></span>sendUE4Cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4Cmd </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送RflySim3D控制台命令的方法 </p>
+<ul>
+<li><a class="anchor" id="sendUE4Cmd"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>要发送给RflySim3D的控制台命令 </td></tr>
+    <tr><td class="paramname">windowID</td><td>要发送给指定UE4窗口的ID，默认为-1，表示发送给所有窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无</dd></dl>
+<pre class="fragment">发送命令以控制 RflySim3D 的显示样式
+可用的命令如下，命令字符串形如'RflyShowTextTime txt time'
+RflyShowTextTime(String txt, float time)\\ let UE4 show txt with time second
+RflyShowText(String txt)\\  let UE4 show txt 5 second
+RflyChangeMapbyID(int id)\\ Change the map to ID (int number)
+RflyChangeMapbyName(String txt)\\ Change to map with name txt
+RflyChangeViewKeyCmd(String key, int num) \\ the same as press key + num on UE4
+RflyCameraPosAngAdd(float x, float y, float z,float roll,float pitch,float yaw) \\ move the camera with x-y-z(m) and roll-pitch-yaw(degree) related to current pos
+RflyCameraPosAng(float x, float y, float z, float roll, float pitch, float yaw) \\ set the camera with x-y-z(m) and roll-pitch-yaw(degree) related to UE origin
+RflyCameraFovDegrees(float degrees) \\ change the cameras fov (degree)
+RflyChange3DModel(int CopterID, int veTypes=0) \\ change the vehicle 3D model to ID
+RflyChangeVehicleSize(int CopterID, float size=0) \\change vhielce's size
+RflyMoveVehiclePosAng(int CopterID, int isFitGround, float x, float y, float z, float roll, float pitch, float yaw) \\ move the vehicle's  x-y-z(m) and roll-pitch-yaw(degree) related to current pos
+RflySetVehiclePosAng(int CopterID, int isFitGround, float x, float y, float z, float roll, float pitch, float yaw) \\ set the vehilce's x-y-z(m) and roll-pitch-yaw(degree) related to UE origin
+RflyScanTerrainH(float xLeftBottom(m), float yLeftBottom(m), float xRightTop(m), float yRightTop(m), float scanHeight(m), float scanInterval(m)) \\ send command to let UE4 scan the map to generate png and txt files
+RflyCesiumOriPos(double lat, double lon, double Alt) \\ change the lat, lon, Alt (degrees) of the Cesium map origin
+RflyClearCapture \\ clear the image capture unit
+struct Ue4CMD0{
+    int checksum;
+    char data[52];
+} i52s
+struct Ue4CMD{
+    int checksum;
+    char data[252];
+} i252s</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="aee678b732e8dd5e7b1a8cc15bd40d777" name="aee678b732e8dd5e7b1a8cc15bd40d777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee678b732e8dd5e7b1a8cc15bd40d777">&#9670;&#160;</a></span>sendUE4CmdNet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4CmdNet </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cmd</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向同一局域网内所有RflySim3D发送RflySim3D控制台命令的方法 </p>
+<ul>
+<li><a class="anchor" id="sendUE4CmdNet"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>要发送给RflySim3D的控制台命令 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无</dd></dl>
+<pre class="fragment">send command to control all RflySim3D in LAN
+struct Ue4CMDNet { //总长度为96
+    int checksum; //校验位，这里应该是1234567897
+    char data[92];
+} i92s
+
+命令类型检查与转换:
+
+首先检查 cmd 是否为字符串类型。如果是，使用 encode() 方法将其转换为字节串，因为网络通信要求数据以字节串形式发送。
+命令长度和打包:
+
+检查命令长度是否超过91字节。因为结构 Ue4CMDNet 的 data 字段设计为92字节，其中最后一个字节通常留给空终止符（如果使用C风格字符串）。
+使用 struct.pack("i92s", 1234567897, cmd) 对命令进行打包。这里 i92s 表示传输数据格式，其中 i 是一个整型的校验位，值为 1234567897；后面的 92s 是92字节的字符串。这样打包确保数据按照指定的格式发送，前四个字节为整型校验位，紧随其后的是命令数据。
+发送命令:
+
+使用 self.udp_socket.sendto(buf, ("224.0.0.10", 20009)) 将打包后的数据发送到多播地址 224.0.0.10 和端口 20009。所选的多播地址和端口应该与接收端一致，以便所有的 RflySim3D 实例都能接收到这条消息。
+额外操作-命令效果等待:
+
+如果发送的命令是 "RflyChangeMap"，该命令可能涉及到仿真环境的重大变更（例如，场景切换）。为了确保场景切换能顺利完成，在命令发送后，函数暂停0.5秒，以便给RflySim3D足够的响应时间。</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="ae9121432eec7ad042570335e3d90cbb6" name="ae9121432eec7ad042570335e3d90cbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9121432eec7ad042570335e3d90cbb6">&#9670;&#160;</a></span>sendUE4ExtAct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4ExtAct </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ActExt</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发扩展蓝图接口 </p>
+<ul>
+<li><a class="anchor" id="sendUE4ExtAct"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID（默认值为</td><td>1）：飞行器的ID，用于指定要执行外部动作的飞行器。 </td></tr>
+    <tr><td class="paramname">ActExt（默认值为</td><td>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]）：外部动作信息，用于指定飞行器执行的外部动作。这是一个包含 16 个元素的列表，每个元素表示一个外部动作的值。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，外部动作信息将仅应用于指定的窗口。如果 windowID 为负数，则外部动作信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">struct Ue4ExtMsg {
+    int checksum;//1234567894
+    int CopterID;
+    double runnedTime; //Current  stamp (s)
+    double ExtToUE4[16];
+}
+struct.pack 2i1d16f
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a7c3acdd330037af106ba3cc9982b7773" name="a7c3acdd330037af106ba3cc9982b7773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3acdd330037af106ba3cc9982b7773">&#9670;&#160;</a></span>sendUE4LabelID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4LabelID </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Txt</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fontSize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">30</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>RGB</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[255,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置一个自行创建物体的头顶ID位置的显示内容 </p>
+<ul>
+<li><a class="anchor" id="sendUE4LabelID"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterID</td><td>要设置 ID 位置内容的 自行创建物体ID </td></tr>
+    <tr><td class="paramname">Txt</td><td>要在 ID 位置显示的文本内容 </td></tr>
+    <tr><td class="paramname">fontSize</td><td>文本的字体大小 </td></tr>
+    <tr><td class="paramname">RGB</td><td>文本的 RGB 颜色。可以用表示颜色值的字符串进行指定，例如 "FF0000" 表示红色，"00FF00" 表示绿色。 </td></tr>
+    <tr><td class="paramname">windowID</td><td>要显示标签的RflySim3D窗口 ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aeb18bd1206f9d0d841ce76e011ce2859" name="aeb18bd1206f9d0d841ce76e011ce2859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb18bd1206f9d0d841ce76e011ce2859">&#9670;&#160;</a></span>sendUE4LabelMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4LabelMsg </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Txt</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fontSize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">30</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>RGB</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[255,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dispTime</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dispFlag</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置一个自行创建物体的头顶各行Message标签显示内容 </p>
+<ul>
+<li><a class="anchor" id="sendUE4LabelMsg"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterID</td><td>要设置 Message 显示内容的自行创建物体ID </td></tr>
+    <tr><td class="paramname">Txt</td><td>要在 Message 位置显示的文本内容 </td></tr>
+    <tr><td class="paramname">fontSize</td><td>文本的字体大小 </td></tr>
+    <tr><td class="paramname">RGB</td><td>文本的 RGB 颜色。可以用表示颜色值的字符串进行指定，例如 "FF0000" 表示红色，"00FF00" 表示绿色。 </td></tr>
+    <tr><td class="paramname">dispTime</td><td>显示持续时间，单位为秒。如果设置为0，则表示永久显示；如果设置为大于0的数，则表示显示指定秒数后消失；如果设置为小于0的数，则立刻消失。 </td></tr>
+    <tr><td class="paramname">dispFlag</td><td>显示标志。根据不同的值，有不同的显示效果：<ul>
+<li>如果 dispFlag &lt; 0，则消息依次累加，显示最多5条。</li>
+<li>如果 dispFlag = 0，则清除所有消息。</li>
+<li>如果 dispFlag &gt; 0，则更新特定消息行（索引从1开始）。如果更新的行号大于当前消息总数，则切换到累加模式。 <br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">windowID</td><td>要显示标签的RflySim3D窗口 ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无</dd></dl>
+<pre class="fragment">struct CopterMsg {
+    int checksum; //校验位，这里必须设定为1234567899
+    int CopterID; //飞机的ID号，具体显示哪一个飞机。注意，如果CopterID&lt;=0，则所有飞机都显示消息；如果CopterID大于0，则对应飞机显示消息
+    int dispFlag;//显示需要，如果flag&lt;0，则消息会逐层累加，最多显示5条消息；如果flag=0，会清理所有消息；如果flag&gt;0，则会更新对应的消息；如果flag大于当前消息总数，则消息顺延在末尾。
+    int RGB[3];//RGB的颜色，0~255，分别表示红、绿、蓝
+    float dispTime;//消失时间（单位秒）。如果&lt;0，则立刻消失；如果=0，则永远显示；如果&gt;0,则设定秒数后消失
+    float fontSize;//字体大小；默认是20；
+    char data[120];//显示的文字。
+};6i2f120s
+dispFlag &lt;0 且 dispTime&gt;=0 表示依次累加的方式添加消息
+dispFlag &lt;0 且 dispTime&lt;0 表示清空所有消息
+dispFlag =0 且 dispTime&gt;=0 表示更新ID行（第0行数据）
+dispFlag &gt;=1 and &lt;5 表示更新1到5行的消息，注意此时dispTime&lt;0会删除本消息，若&gt;=0会更新消息
+dispFlag&gt;当前消息数，则切换到累加模式
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a1affe06e535cdcf936f46380374bf152" name="a1affe06e535cdcf936f46380374bf152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1affe06e535cdcf936f46380374bf152">&#9670;&#160;</a></span>sendUE4Pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4Pos </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MotorRPMSMean</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定位置创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4Pos"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID（默认值为</td><td>1）：飞行器的ID，指定要创建或更新状态的飞行器。 </td></tr>
+    <tr><td class="paramname">vehicleType（默认值为</td><td>3）：飞行器的类型。根据实际情况，可以指定不同的类型来创建或更新不同类型的飞行器模型。 </td></tr>
+    <tr><td class="paramname">MotorRPMSMean（默认值为</td><td>0）：电机转速的均值。这个参数用于控制电机的转速，可以影响模型的运动状态。 </td></tr>
+    <tr><td class="paramname">PosE（默认值为</td><td>[0, 0, 0]）：位置信息，表示飞行器当前的位置。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 坐标轴上的位置。 </td></tr>
+    <tr><td class="paramname">AngEuler（默认值为</td><td>[0, 0, 0]）：欧拉角信息，表示飞行器当前的姿态。这是一个包含三个元素的列表，分别表示飞行器的俯仰、滚转和偏航角度。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，位置和角度信息将仅应用于指定的窗口。如果 windowID 为负数，则位置和角度信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a09083c3965f904e13d23e863a21d5e07" name="a09083c3965f904e13d23e863a21d5e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09083c3965f904e13d23e863a21d5e07">&#9670;&#160;</a></span>sendUE4Pos2Ground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4Pos2Ground </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MotorRPMSMean</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定位置创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4Pos2Ground"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID（默认值为</td><td>1）：飞行器的ID，指定要创建或更新状态的飞行器。 </td></tr>
+    <tr><td class="paramname">vehicleType（默认值为</td><td>3）：飞行器的类型。根据实际情况，可以指定不同的类型来创建或更新不同类型的飞行器模型。 </td></tr>
+    <tr><td class="paramname">MotorRPMSMean（默认值为</td><td>0）：电机转速的均值。这个参数用于控制电机的转速，可以影响模型在地面上的状态。 </td></tr>
+    <tr><td class="paramname">PosE（默认值为</td><td>[0, 0, 0]）：位置信息，表示飞行器当前在地面上的位置。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 坐标轴上的位置。 </td></tr>
+    <tr><td class="paramname">AngEuler（默认值为</td><td>[0, 0, 0]）：欧拉角信息，表示飞行器当前的姿态。这是一个包含三个元素的列表，分别表示飞行器的俯仰、滚转和偏航角度。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，位置和角度信息将仅应用于指定的窗口。如果 windowID 为负数，则位置和角度信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states on the ground
+checksum =1234567891 is adopted here to tell UE4 to genearete a object always fit the ground
+struct SOut2SimulatorSimple {
+    int checkSum; //1234567890 for normal object, 1234567891 for fit ground object
+    int copterID;  //Vehicle ID
+    int vehicleType;  //Vehicle type
+    float MotorRPMSMean; // mean motor speed
+    float PosE[3];   //NED vehicle position in earth frame (m)
+    float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+}  3i7f
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a262bffe998194fcc1aad85fa722b9af9" name="a262bffe998194fcc1aad85fa722b9af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262bffe998194fcc1aad85fa722b9af9">&#9670;&#160;</a></span>sendUE4PosFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosFull </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MotorRPMS</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*8</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>VelE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>RateB</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,0,0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定位置创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosFull"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID：飞行器的ID，用于指定要创建或更新状态的飞行器。</td><td></td></tr>
+    <tr><td class="paramname">vehicleType：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。</td><td></td></tr>
+    <tr><td class="paramname">MotorRPMS（默认值为</td><td>[0，0，0，0，0，0，0，0] ）：电机转速信息，用于控制飞行器的电机转速。 </td></tr>
+    <tr><td class="paramname">VelE：速度信息，表示飞行器当前水平面坐标系（NED）的速度。</td><td></td></tr>
+    <tr><td class="paramname">PosE：位置信息，表示飞行器当前水平面坐标系（NED）的位置。</td><td></td></tr>
+    <tr><td class="paramname">RateB：角速度信息，表示飞行器当前机体坐标系的角速度。</td><td></td></tr>
+    <tr><td class="paramname">AngEuler：欧拉角信息，表示飞行器当前的姿态。</td><td></td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，上述信息将仅应用于指定的窗口。如果 windowID 为负数，则这些信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states
+# //输出到模拟器的数据
+# struct SOut2Simulator {
+#     int checksum; // 123456789
+#     int copterID;  //Vehicle ID
+#     int vehicleType;  //Vehicle type
+#     int reserv; //备用标志位
+#     float VelE[3];   //NED vehicle velocity in earth frame (m/s)
+#     float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+#     float AngQuatern[4]; //Vehicle attitude in Quaternion
+#     float MotorRPMS[8];  //Motor rotation speed (RPM)
+#     float AccB[3];       //Vehicle acceleration in body frame x y z (m/s/s)
+#     float RateB[3];      //Vehicle angular speed in body frame x y z (rad/s)
+#     double runnedTime; //Current  stamp (s)
+#     double PosE[3];   //NED vehicle position in earth frame (m)
+#     double PosGPS[3];    //vehicle longitude, latitude and altitude (degree,degree,m)
+# } 4i24f7d
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a6702a7019fc28e675ea5d042f7074c1b" name="a6702a7019fc28e675ea5d042f7074c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6702a7019fc28e675ea5d042f7074c1b">&#9670;&#160;</a></span>sendUE4PosNew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosNew </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>VelE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PWMs</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]&#160;*&#160;8</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>runnedTime</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosNew"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID（默认值为</td><td>1）：飞行器的ID，用于指定要创建或更新状态的飞行器。 </td></tr>
+    <tr><td class="paramname">vehicleType（默认值为</td><td>3）：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。 </td></tr>
+    <tr><td class="paramname">PosE（默认值为</td><td>[0, 0, 0]）：位置信息，表示飞行器当前的位置。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 坐标轴上的位置。 </td></tr>
+    <tr><td class="paramname">AngEuler（默认值为</td><td>[0, 0, 0]）：欧拉角信息，表示飞行器当前的姿态。这是一个包含三个元素的列表，分别表示飞行器的俯仰、滚转和偏航角度。 </td></tr>
+    <tr><td class="paramname">VelE（默认值为</td><td>[0, 0, 0]）：速度信息，表示飞行器当前的速度。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 轴上的速度。 </td></tr>
+    <tr><td class="paramname">PWMs（默认值为</td><td>[0，0，0，0，0，0，0，0] ）：PWM（脉宽调制）信息，表示飞行器的电机控制信号。这是一个包含八个元素的列表，用于控制飞行器电机的转速或推力。 </td></tr>
+    <tr><td class="paramname">runnedTime（默认值为</td><td>-1）：运行时间，以毫秒为单位，表示飞行器的运行时间。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，位置、姿态、速度等信息将仅应用于指定的窗口。如果 windowID 为负数，则这些信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states
+# //输出到模拟器的数据
+# struct SOut2SimulatorSimpleTime {
+#     int checkSum; //1234567891
+#     int copterID;  //Vehicle ID
+#     int vehicleType;  //Vehicle type
+#     int PosGpsInt[3];   //lat*10^7,lon*10^7,alt*10^3，int型发放节省空间
+#     float MotorRPMS[8];
+#     float VelE[3];
+#     float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+#     double PosE[3];   //NED vehicle position in earth frame (m)
+#     double runnedTime; //Current Time stamp (s)
+# }6i14f4d
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a16f5095f7c98328c230bbb41f9242e75" name="a16f5095f7c98328c230bbb41f9242e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f5095f7c98328c230bbb41f9242e75">&#9670;&#160;</a></span>sendUE4PosScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosScale </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MotorRPMSMean</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Scale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[1,&#160;1,&#160;1]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定位置创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosScale"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self：表示类的实例对象，用于访问类的成员变量和其他方法。</td><td></td></tr>
+    <tr><td class="paramname">copterID（默认值为</td><td>1）：飞行器的ID，用于指定要创建或更新状态的飞行器。 </td></tr>
+    <tr><td class="paramname">vehicleType（默认值为</td><td>3）：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。 </td></tr>
+    <tr><td class="paramname">MotorRPMSMean（默认值为</td><td>0）：电机转速的均值，用于控制电机的转速，影响模型的运动状态。 </td></tr>
+    <tr><td class="paramname">PosE（默认值为</td><td>[0, 0, 0]）：位置信息，表示飞行器当前的位置。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 坐标轴上的位置。 </td></tr>
+    <tr><td class="paramname">AngEuler（默认值为</td><td>[0, 0, 0]）：欧拉角信息，表示飞行器当前的姿态。这是一个包含三个元素的列表，分别表示飞行器的俯仰、滚转和偏航角度。 </td></tr>
+    <tr><td class="paramname">Scale（默认值为</td><td>[1, 1, 1]）：比例信息，用于更改模型的比例。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 轴上的比例。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，位置、姿态和比例信息将仅应用于指定的窗口。如果 windowID 为负数，则位置、姿态和比例信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states with changing the scale
+struct SOut2SimulatorSimple1 {
+    int checkSum; //1234567890 for normal object, 1234567891 for fit ground object
+    int copterID;  //Vehicle ID
+    int vehicleType;  //Vehicle type
+    float MotorRPMSMean; // mean motor speed
+    float PosE[3];   //NED vehicle position in earth frame (m)
+    float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+    float Scale[3];
+}  3i10f
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a4df98889699a64ccf719b7abf87e0db6" name="a4df98889699a64ccf719b7abf87e0db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df98889699a64ccf719b7abf87e0db6">&#9670;&#160;</a></span>sendUE4PosScale100()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosScale100 </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MotorRPMSMean</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>isFitGround</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建100个Copter </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosScale100"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID：飞行器的ID，用于指定要创建或更新状态的飞行器。这是一个任意类型的参数，表示飞行器的标识。</td><td></td></tr>
+    <tr><td class="paramname">vehicleType：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。</td><td></td></tr>
+    <tr><td class="paramname">PosE：位置信息，表示飞行器当前的位置。</td><td></td></tr>
+    <tr><td class="paramname">AngEuler：欧拉角信息，表示飞行器当前的姿态。</td><td></td></tr>
+    <tr><td class="paramname">MotorRPMSMean（默认值为0）：电机转速的均值，用于控制电机的转速，影响模型的运动状态。</td><td></td></tr>
+    <tr><td class="paramname">Scale：比例信息，用于更改模型的比例。</td><td></td></tr>
+    <tr><td class="paramname">isFitGround（默认值为</td><td>False）：是否适应地面。如果设置为 True，则模型会根据地面结构进行调整；如果设置为 False，则不会进行调整。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，上述信息将仅应用于指定的窗口。如果 windowID 为负数，则这些信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create 100 vehicles once
+#struct Multi3DData100New {
+#    int checksum;
+#    uint16 copterID[100];
+#    uint16 vehicleType[100];
+#    float PosE[300];
+#    float AngEuler[300];
+#    uint16 Scale[300];
+#    float MotorRPMSMean[100];
+#}
+#checksum是数据校验位，1234567890表示正常数据，1234567891表示飞机始终贴合地面
+#copterID是100维整型数组，飞机ID，这个从1给到100即可,如果ID给0则不显示次飞机
+#vehicleType是100维整型数组，飞机类型，四旋翼给3即可
+#MotorRPMSMean是100维数组，飞机螺旋桨转速，单位RPM，四旋翼默认给1000即可
+#PosE是300维数组，飞机位置，可以随机生成，单位是m
+#AngEuler是300维数组，飞机姿态角，单位弧度，默认都给0，表示正常放置
+#Scale是300维的数组，数据是xyz显示的尺寸*100，默认都给100表示实际大小即1倍
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="ac9cf535ebe9b01bcbd580807908db827" name="ac9cf535ebe9b01bcbd580807908db827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cf535ebe9b01bcbd580807908db827">&#9670;&#160;</a></span>sendUE4PosScale2Ground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosScale2Ground </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MotorRPMSMean</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Scale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[1,&#160;1,&#160;1]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定位置创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosScale2Ground"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID（默认值为</td><td>1）：飞行器的ID，用于指定要创建或更新状态的飞行器。 </td></tr>
+    <tr><td class="paramname">vehicleType（默认值为</td><td>3）：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。 </td></tr>
+    <tr><td class="paramname">MotorRPMSMean（默认值为</td><td>0）：电机转速的均值，用于控制电机的转速，影响模型的运动状态。 </td></tr>
+    <tr><td class="paramname">PosE（默认值为</td><td>[0, 0, 0]）：位置信息，表示飞行器当前的位置。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 坐标轴上的位置。 </td></tr>
+    <tr><td class="paramname">AngEuler（默认值为</td><td>[0, 0, 0]）：欧拉角信息，表示飞行器当前的姿态。这是一个包含三个元素的列表，分别表示飞行器的俯仰、滚转和偏航角度。 </td></tr>
+    <tr><td class="paramname">Scale（默认值为</td><td>[1, 1, 1]）：比例信息，用于更改模型的比例。这是一个包含三个元素的列表，分别表示飞行器在 x、y、z 轴上的比例。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，位置、姿态和比例信息将仅应用于指定的窗口。如果 windowID 为负数，则位置、姿态和比例信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states with changing the scale
+checksum =1234567891 is adopted here to tell UE4 to genearete a object always fit the ground
+struct SOut2SimulatorSimple1 {
+    int checkSum; //1234567890 for normal object, 1234567891 for fit ground object
+    int copterID;  //Vehicle ID
+    int vehicleType;  //Vehicle type
+    float MotorRPMSMean; // mean motor speed
+    float PosE[3];   //NED vehicle position in earth frame (m)
+    float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+    float Scale[3];
+}  3i10f
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a5581a84f3546567fde75961a28107f1d" name="a5581a84f3546567fde75961a28107f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5581a84f3546567fde75961a28107f1d">&#9670;&#160;</a></span>sendUE4PosScalePwm20()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosScalePwm20 </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PWMs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>isFitGround</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建20个Copter </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosScalePwm20"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID：飞行器的ID，用于指定要创建或更新状态的飞行器。这是一个任意类型的参数，表示飞行器的标识。</td><td></td></tr>
+    <tr><td class="paramname">vehicleType：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。</td><td></td></tr>
+    <tr><td class="paramname">PosE：位置信息，表示飞行器当前的位置。</td><td></td></tr>
+    <tr><td class="paramname">AngEuler：欧拉角信息，表示飞行器当前的姿态。</td><td></td></tr>
+    <tr><td class="paramname">Scale：比例信息，用于更改模型的比例。</td><td></td></tr>
+    <tr><td class="paramname">PWMs（默认值为0）：PWM（脉宽调制）信息，表示飞行器的电机控制信号。</td><td></td></tr>
+    <tr><td class="paramname">isFitGround（默认值为</td><td>False）：是否适应地面。如果设置为 True，则模型会根据地面结构进行调整；如果设置为 False，则不会进行调整。 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，上述信息将仅应用于指定的窗口。如果 windowID 为负数，则这些信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create 20 vehicles once
+# struct Multi3DData2New {
+#   int checksum;
+#   uint16 copterID[20];
+#   uint16 vehicleType[20];
+#   float PosE[60];
+#   float AngEuler[60];
+#   uint16 Scale[60];
+#   float PWMs[160];
+# }
+#checksum是数据校验位，1234567890表示正常数据，1234567891表示飞机始终贴合地面
+#copterID是20维整型数组，飞机ID，这个从1给到20即可,如果ID给0则不显示次飞机
+#vehicleType是20维整型数组，飞机类型，四旋翼给3即可
+#PosE是60维数组，飞机位置，可以随机生成，单位是m
+#AngEuler是60维数组，飞机姿态角，单位弧度，默认都给0，表示正常放置
+#Scale是300维的数组，数据是xyz显示的尺寸*100，默认都给100表示实际大小即1倍
+#PWMs是160维数组，对应20个飞机各8个旋翼转速，单位RPM，四旋翼默认给1000即可
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a3b1d5c9feebd044f1d9f653e2e891a5e" name="a3b1d5c9feebd044f1d9f653e2e891a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1d5c9feebd044f1d9f653e2e891a5e">&#9670;&#160;</a></span>sendUE4PosSimple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4PosSimple </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>vehicleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PWMs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>VelE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>PosE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>AngEuler</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>runnedTime</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建/更新模型 </p>
+<ul>
+<li><a class="anchor" id="sendUE4PosSimple"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copterID：飞行器的ID，用于指定要创建或更新状态的飞行器。这是一个任意类型的参数，表示飞行器的标识。</td><td></td></tr>
+    <tr><td class="paramname">vehicleType：飞行器的类型，根据实际情况可以指定不同的类型来创建或更新不同类型的飞行器模型。</td><td></td></tr>
+    <tr><td class="paramname">PWMs（默认值[0，0，0，0，0，0，0，0]）：PWM（脉宽调制）信息，表示飞行器的电机控制信号。</td><td></td></tr>
+    <tr><td class="paramname">VelE：速度信息，表示飞行器当前的速度。</td><td></td></tr>
+    <tr><td class="paramname">PosE：位置信息，表示飞行器当前的位置。</td><td></td></tr>
+    <tr><td class="paramname">AngEuler：欧拉角信息，表示飞行器当前的姿态。</td><td></td></tr>
+    <tr><td class="paramname">runnedTime（默认值为</td><td>-1）：时间戳，以毫秒为单位 </td></tr>
+    <tr><td class="paramname">windowID（默认值为</td><td>-1）：窗口的ID。如果指定了窗口ID，上述信息将仅应用于指定的窗口。如果 windowID 为负数，则这些信息将应用于所有窗口。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">send the position &amp; angle information to RflySim3D to create a new 3D model or update the old model's states
+//输出到模拟器的数据
+struct SOut2SimulatorSimpleTime {
+    int checkSum;
+    int copterID;  //Vehicle ID
+    int vehicleType;  //Vehicle type
+    float PWMs[8];
+    float PosE[3];   //NED vehicle position in earth frame (m)
+    float VelE[3];
+    float AngEuler[3];  //Vehicle Euler angle roll pitch yaw (rad) in x y z
+    double runnedTime; //Current Time stamp (s)
+};
+struct.pack 3i17f1d
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a709be0ce4fad73b4eb6e320989d6cdef" name="a709be0ce4fad73b4eb6e320989d6cdef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709be0ce4fad73b4eb6e320989d6cdef">&#9670;&#160;</a></span>sendUE4SetStencilValueByActorName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4SetStencilValueByActorName </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Actorname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>StencilValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>is_name_regex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将物体的模板值发送给UE（由Actor） </p>
+<ul>
+<li><a class="anchor" id="sendUE4SetStencilValueByActorName"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Actorname</td><td>Actor名字 </td></tr>
+    <tr><td class="paramname">StencilValue</td><td>物体的模板值 </td></tr>
+    <tr><td class="paramname">is_name_regex</td><td>物体是否是Actor </td></tr>
+    <tr><td class="paramname">windowID</td><td>RflySim3D窗口ID <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ac1c09b7cd28d2245aa4ee2bfb29a2e7e" name="ac1c09b7cd28d2245aa4ee2bfb29a2e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c09b7cd28d2245aa4ee2bfb29a2e7e">&#9670;&#160;</a></span>sendUE4SetStencilValueByCopterID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4SetStencilValueByCopterID </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>StencilValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将物体的模板值发送给UE（由CopterID） </p>
+<ul>
+<li><a class="anchor" id="sendUE4SetStencilValueByCopterID"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterID</td><td></td></tr>
+    <tr><td class="paramname">StencilValue</td><td></td></tr>
+    <tr><td class="paramname">windowID</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a40f1c4c22c562315f98a985aa1b7d9a7" name="a40f1c4c22c562315f98a985aa1b7d9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f1c4c22c562315f98a985aa1b7d9a7">&#9670;&#160;</a></span>sendUE4SetStencilValueByMeshComponentName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE4SetStencilValueByMeshComponentName </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Meshname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>StencilValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>is_name_regex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windowID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将物体的模板值发送给UE（由mesh） </p>
+<ul>
+<li><a class="anchor" id="sendUE4SetStencilValueByMeshComponentName"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Meshname</td><td>MeshComponent名字 </td></tr>
+    <tr><td class="paramname">StencilValue</td><td>物体的模板值 </td></tr>
+    <tr><td class="paramname">is_name_regex</td><td>物体是否是Actor </td></tr>
+    <tr><td class="paramname">windowID</td><td>RflySim3D窗口ID </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a22924f50544e801e9d02c0434d3176fb" name="a22924f50544e801e9d02c0434d3176fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22924f50544e801e9d02c0434d3176fb">&#9670;&#160;</a></span>SetUE4RadianceValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SetUE4RadianceValue </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>UEObjectName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windows</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将 <a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html">Radiation</a> 类计算得到目标的辐射值设置给UE（只要名字中某段能匹配就会设置） </p>
+<ul>
+<li><a class="anchor" id="SetUE4RadianceValue"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UEObjectName</td><td>目标物体的名称（指向mesh或actor） </td></tr>
+    <tr><td class="paramname">windows</td><td>通过 <a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#get_new_temp_emiss_from_radiance">get_new_temp_emiss_from_radiance</a> 获取物体的ID（0~255），然后这个ID传给UE，作为物体的自定义模板值，然后UE根据ID和颜色的映射表， 给出该物体的颜色（如果是分割图），或者直接由ID给出一个灰度图（如果是红外图）。</td></tr>
+  </table>
+  </dd>
+</dl>
+红外图是根据物体的温度和发射率计算出的辐射功率密度的灰度图，它反映了物体在红外波段的辐射特性。分割图是根据物体的ID和颜色的映射表生成的彩色图，它可以区分不同的物体，并提供物体的位置信息。</li>
+</ul>
+<p>每个颜色占用4个像素，所以一共是256种颜色，对应0~255的ID，ID与颜色的映射关系就是简单的从左到右的顺序对应：Color= palette[0, (ID+1)*4-1]。 </p><div class="image">
+<img src="COLORMAP.png" alt=""/>
+<div class="caption">
+ID与颜色映射表，一共是1×1024个像素</div></div>
+<p> <br  />
+ </p>
+
+</div>
+</div>
+<a id="a30a2c3b5719d1b44b7107dabe4ed9bdf" name="a30a2c3b5719d1b44b7107dabe4ed9bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a2c3b5719d1b44b7107dabe4ed9bdf">&#9670;&#160;</a></span>SetUE4RadianceValue__All()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SetUE4RadianceValue__All </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>windows</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 <a class="el" href="classRflySimSDK_1_1ue_1_1UE4CtrlAPI_1_1UE4CtrlAPI_1_1Radiation.html#tempEmissivity">tempEmissivity</a> 数组中所有物体的辐射值给UE4 </p>
+<ul>
+<li><a class="anchor" id="SetUE4RadianceValue__All"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windows</td><td>与 <a class="el" href="#SetUE4RadianceValue">SetUE4RadianceValue</a> 一样，但它设置 Radiation.tempEmissivity 中所有物体的辐射值 </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a316c3d33e1a7eee4991a31e0d3322040" name="a316c3d33e1a7eee4991a31e0d3322040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316c3d33e1a7eee4991a31e0d3322040">&#9670;&#160;</a></span>UE4MsgRecLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UE4MsgRecLoop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>监听循环 </p>
+<ul>
+<li><a class="anchor" id="UE4MsgRecLoop"></a></li>
+</ul>
+<pre class="fragment">UE4 message listening dead loop
+它是监听224.0.0.10：20006，以及自身的20006端口的处理函数，用于处理RflySim3D或CopterSim返回的消息，一共有6种消息：
+1)  长度为12字节的CopterSimCrash：
+struct CopterSimCrash {
+    int checksum;
+    int CopterID;
+    int TargetID;
+}
+由RflySim3D返回的碰撞数据，RflySim3D中按P键时RflySim3D会开启碰撞检测模式，如果发生了碰撞，会传回这个数据，P+数字可以选择发送模式（0本地发送，1局域网发送，2局域网只碰撞时发送），默认为本地发送。
+2)  长度为120字节的PX4SILIntFloat：
+struct PX4SILIntFloat{
+    int checksum;//1234567897
+    int CopterID;
+    int inSILInts[8];
+    float inSILFLoats[20];
+};
+3)  长度为160字节的reqVeCrashData：
+struct reqVeCrashData {
+    int checksum; //数据包校验码1234567897
+    int copterID; //当前飞机的ID号
+    int vehicleType; //当前飞机的样式
+    int CrashType;//碰撞物体类型，-2表示地面，-1表示场景静态物体，0表示无碰撞，1以上表示被碰飞机的ID号
+    double runnedTime; //当前飞机的时间戳
+    float VelE[3]; // 当前飞机的速度
+    float PosE[3]; //当前飞机的位置
+    float CrashPos[3];//碰撞点的坐标
+    float targetPos[3];//被碰物体的中心坐标
+    float AngEuler[3]; //当前飞机的欧拉角
+    float MotorRPMS[8]; //当前飞机的电机转速
+    float ray[6]; //飞机的前后左右上下扫描线
+    char CrashedName[20] = {0};//被碰物体的名字
+}
+前面介绍过这个类了，在开启数据回传的情况下，RflySim3D会为所有Copter发送reqVeCrashData（数据变化时发送，每秒一次）。
+4)  长度为56字节的CameraData：
+struct CameraData { //56
+    int checksum = 0;//1234567891
+    int SeqID; //相机序号
+    int TypeID;//相机类型
+    int DataHeight;//像素高
+    int DataWidth;//像素宽
+    float CameraFOV;//相机视场角
+    float PosUE[3]; //相机中心位置
+    float angEuler[3];//相机欧拉角
+    double timestmp;//时间戳
+};
+RflySim3D根据reqCamCoptObj函数发送的命令，定时返回的该结构体，该程序接收到后会存放在self.CamDataVect中。
+5)  长度为64字节的CoptReqData：
+struct CoptReqData { //64
+    int checksum = 0; //1234567891作为校验
+    int CopterID;//飞机ID
+    float PosUE[3]; //物体中心位置（人为三维建模时指定，姿态坐标轴，不一定在几何中心）
+    float angEuler[3];//物体欧拉角
+    float boxOrigin[3];//物体几何中心坐标
+    float BoxExtent[3];//物体外框长宽高的一半
+    double timestmp;//时间戳
+};
+RflySim3D根据reqCamCoptObj函数发送的命令，定时返回的该结构体，该程序接收到后会存放在self.CoptDataVect中。
+6)  长度为96字节的ObjReqData：
+struct ObjReqData { //96
+    int checksum = 0; //1234567891作为校验
+    int seqID = 0;
+    float PosUE[3]; //物体中心位置（人为三维建模时指定，姿态坐标轴，不一定在几何中心）
+    float angEuler[3];//物体欧拉角
+    float boxOrigin[3];//物体几何中心坐标
+    float BoxExtent[3];//物体外框长宽高的一半
+    double timestmp;//时间戳
+    char ObjName[32] = { 0 };//碰物体的名字
+};
+RflySim3D根据reqCamCoptObj函数发送的命令，定时返回的该结构体，该程序接收到后会存放在self.ObjDataVect中。
+收到的数据可以使用getCamCoptObj函数进行获取。</pre> 
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ue/<a class="el" href="UE4CtrlAPI_8py.html">UE4CtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

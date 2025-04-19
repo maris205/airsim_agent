@@ -1,0 +1,1034 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RflySimSDK: DllSimCtrlAPI类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">RflySimSDK<span id="projectnumber">&#160;v3.03</span>
+   </div>
+   <div id="projectbrief">RflySimSDK说明文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>ctrl</b></li><li class="navelem"><b>DllSimCtrlAPI</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI.html">DllSimCtrlAPI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classRflySimSDK_1_1ctrl_1_1DllSimCtrlAPI_1_1DllSimCtrlAPI-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">DllSimCtrlAPI类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a90343b77a3eb45ea23054d99d9e466b3" id="r_a90343b77a3eb45ea23054d99d9e466b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90343b77a3eb45ea23054d99d9e466b3">__init__</a> (self, CopterID=1, ip='127.0.0.1')</td></tr>
+<tr class="memdesc:a90343b77a3eb45ea23054d99d9e466b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数初始化无人机控制接口。 -<a class="anchor" id="__init__"></a> <br /></td></tr>
+<tr class="separator:a90343b77a3eb45ea23054d99d9e466b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9560077bcadbe108b3e31354534f164b" id="r_a9560077bcadbe108b3e31354534f164b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9560077bcadbe108b3e31354534f164b">fillList</a> (self, data, inLen)</td></tr>
+<tr class="memdesc:a9560077bcadbe108b3e31354534f164b"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据需要的长度调整数据列表，以确保其长度符合要求。  <br /></td></tr>
+<tr class="separator:a9560077bcadbe108b3e31354534f164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f43c24aab3356613a80355443fca81" id="r_a07f43c24aab3356613a80355443fca81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07f43c24aab3356613a80355443fca81">sendCustomData</a> (self, CopterID=0, data=[0] *16, checksum=123456, port=50000, IP='127.0.0.1')</td></tr>
+<tr class="memdesc:a07f43c24aab3356613a80355443fca81"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送一个包含16维double型数据的自定义数据结构到指定的IP和端口。  <br /></td></tr>
+<tr class="separator:a07f43c24aab3356613a80355443fca81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2b72c0b9fe760782a85a5a41dc82ac" id="r_aff2b72c0b9fe760782a85a5a41dc82ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff2b72c0b9fe760782a85a5a41dc82ac">sendSILIntFloat</a> (self, inSILInts=[0] *8, inSILFLoats=[0] *20, copterID=-1)</td></tr>
+<tr class="memdesc:aff2b72c0b9fe760782a85a5a41dc82ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">向 DLL 模型发送包含整数和浮点数组的数据。  <br /></td></tr>
+<tr class="separator:aff2b72c0b9fe760782a85a5a41dc82ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b38767f3354bfb1df3149e16758cec6" id="r_a8b38767f3354bfb1df3149e16758cec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b38767f3354bfb1df3149e16758cec6">sendSILIntDouble</a> (self, inSILInts=[0] *8, inSILDoubs=[0] *20, copterID=-1)</td></tr>
+<tr class="memdesc:a8b38767f3354bfb1df3149e16758cec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">向 DLL 模型发送包含整数和双精度浮点数组的数据。  <br /></td></tr>
+<tr class="separator:a8b38767f3354bfb1df3149e16758cec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4094bc20a3d2459ec2b20e014a3ba5" id="r_acd4094bc20a3d2459ec2b20e014a3ba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4094bc20a3d2459ec2b20e014a3ba5">sendInDoubCtrls</a> (self, inDoubsCtrls=[0] *28, copterID=-1)</td></tr>
+<tr class="memdesc:acd4094bc20a3d2459ec2b20e014a3ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送一个包含双精度浮点数数组的数据包到模型，通过UDP。  <br /></td></tr>
+<tr class="separator:acd4094bc20a3d2459ec2b20e014a3ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b943113947c6ee442a6707b1d3c788f" id="r_a7b943113947c6ee442a6707b1d3c788f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b943113947c6ee442a6707b1d3c788f">sendInCtrlExt</a> (self, inSILInts=[0] *8, inSILFLoats=[0] *20, iDxNum=1, copterID=-1)</td></tr>
+<tr class="memdesc:a7b943113947c6ee442a6707b1d3c788f"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过UDP发送控制信号到指定无人机的模拟器。  <br /></td></tr>
+<tr class="separator:a7b943113947c6ee442a6707b1d3c788f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34cbac603eee1efa316388f881539cb" id="r_ab34cbac603eee1efa316388f881539cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab34cbac603eee1efa316388f881539cb">sendInCtrlExtDoub</a> (self, inDoubsCtrls=[0] *28, iDxNum=1, copterID=-1, update=True)</td></tr>
+<tr class="memdesc:ab34cbac603eee1efa316388f881539cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过UDP发送double型控制信号到指定无人机的模拟器端口。  <br /></td></tr>
+<tr class="separator:ab34cbac603eee1efa316388f881539cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f12709c49eca444c7d8938e2403e109" id="r_a3f12709c49eca444c7d8938e2403e109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f12709c49eca444c7d8938e2403e109">sendInCtrlExtAll</a> (self, inDoubsCtrls=[0] *140, copterID=-1)</td></tr>
+<tr class="memdesc:a3f12709c49eca444c7d8938e2403e109"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个较长的浮点数向量分段并通过UDP发送到多个控制端口。  <br /></td></tr>
+<tr class="separator:a3f12709c49eca444c7d8938e2403e109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb88d53e70b5b146ad18cf3145c0bd7d" id="r_acb88d53e70b5b146ad18cf3145c0bd7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb88d53e70b5b146ad18cf3145c0bd7d">sendModelInParams</a> (self, Bitmask, InParams, copterID=-1)</td></tr>
+<tr class="memdesc:acb88d53e70b5b146ad18cf3145c0bd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过UDP向CopterSim模型发送仿真参数。  <br /></td></tr>
+<tr class="separator:acb88d53e70b5b146ad18cf3145c0bd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d28fd0b6c59d06c49ad9f0e265d5b09" id="r_a2d28fd0b6c59d06c49ad9f0e265d5b09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d28fd0b6c59d06c49ad9f0e265d5b09">sendInitInParams</a> (self, Bitmask=0, InParams=[0] *32, copterID=-1)</td></tr>
+<tr class="memdesc:a2d28fd0b6c59d06c49ad9f0e265d5b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送初始化参数至CopterSim  <br /></td></tr>
+<tr class="separator:a2d28fd0b6c59d06c49ad9f0e265d5b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadfb5a370fd1ac2537baec161d96f15" id="r_aeadfb5a370fd1ac2537baec161d96f15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeadfb5a370fd1ac2537baec161d96f15">sendDynModiParams</a> (self, Bitmask=0, InParams=[0] *64, copterID=-1)</td></tr>
+<tr class="memdesc:aeadfb5a370fd1ac2537baec161d96f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送动态参数修改至指定CopterSim模拟器  <br /></td></tr>
+<tr class="separator:aeadfb5a370fd1ac2537baec161d96f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0244815a8330d2bcd7039578af8029" id="r_a8c0244815a8330d2bcd7039578af8029"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c0244815a8330d2bcd7039578af8029">sendUE2Coptersim</a> (self, inFromUE=None, copterID=-1)</td></tr>
+<tr class="memdesc:a8c0244815a8330d2bcd7039578af8029"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于处理UE（三维环境）和CopterSim DLL模型之间的通信。  <br /></td></tr>
+<tr class="separator:a8c0244815a8330d2bcd7039578af8029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec9849f736b98967bc49c14d8e59dc5" id="r_aaec9849f736b98967bc49c14d8e59dc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaec9849f736b98967bc49c14d8e59dc5">sendFloatsColl</a> (self, size=0, velE=[0, 0, 0], ray=[0, 0, 0, 0, 0, 0], posE=[0, 0, 0], copterID=-1)</td></tr>
+<tr class="memdesc:aaec9849f736b98967bc49c14d8e59dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送与无人机碰撞相关的浮点数据到CopterSim DLL模型的inFloatsCollision接口。  <br /></td></tr>
+<tr class="separator:aaec9849f736b98967bc49c14d8e59dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6877f9ca243ac73c4b1c69cec32b8ba6" id="r_a6877f9ca243ac73c4b1c69cec32b8ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6877f9ca243ac73c4b1c69cec32b8ba6">sendColl20d</a> (self, Coll20d=[0] *20, copterID=-1)</td></tr>
+<tr class="memdesc:a6877f9ca243ac73c4b1c69cec32b8ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">向CopterSim DLL模型的inCollision20d接口发送20维碰撞数据。  <br /></td></tr>
+<tr class="separator:a6877f9ca243ac73c4b1c69cec32b8ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b863cdd0b3e4de63d39229a75948e0" id="r_a37b863cdd0b3e4de63d39229a75948e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37b863cdd0b3e4de63d39229a75948e0">sendTerrIn15d</a> (self, TerrIn15d=[0] *15, copterID=-1)</td></tr>
+<tr class="memdesc:a37b863cdd0b3e4de63d39229a75948e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">向CopterSim DLL模型的TerrainIn15d接口发送15维地形数据。  <br /></td></tr>
+<tr class="separator:a37b863cdd0b3e4de63d39229a75948e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afd65cf072a93c93ad52b9f25b341e10b" id="r_afd65cf072a93c93ad52b9f25b341e10b"><td class="memItemLeft" align="right" valign="top"><a id="afd65cf072a93c93ad52b9f25b341e10b" name="afd65cf072a93c93ad52b9f25b341e10b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ip</b></td></tr>
+<tr class="separator:afd65cf072a93c93ad52b9f25b341e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39156fb07ed42ab04b44381baa97ac7" id="r_ae39156fb07ed42ab04b44381baa97ac7"><td class="memItemLeft" align="right" valign="top"><a id="ae39156fb07ed42ab04b44381baa97ac7" name="ae39156fb07ed42ab04b44381baa97ac7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>udp_socket</b></td></tr>
+<tr class="separator:ae39156fb07ed42ab04b44381baa97ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc1de2c250838e7456f6b1991f9d9d9" id="r_a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memItemLeft" align="right" valign="top"><a id="a4bc1de2c250838e7456f6b1991f9d9d9" name="a4bc1de2c250838e7456f6b1991f9d9d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CopterID</b></td></tr>
+<tr class="separator:a4bc1de2c250838e7456f6b1991f9d9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a90343b77a3eb45ea23054d99d9e466b3" name="a90343b77a3eb45ea23054d99d9e466b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90343b77a3eb45ea23054d99d9e466b3">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数初始化无人机控制接口。 -<a class="anchor" id="__init__"></a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterID</td><td>初始化时设置的无人机ID，默认值为1。 </td></tr>
+    <tr><td class="paramname">ip</td><td>控制器连接的目标IP地址，默认值为'127.0.0.1'。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">解析
+    self.ip = ip：
+    这行代码将ip参数赋值给self.ip。self指的是对象本身，ip是传入的参数。这表示该对象有一个属性ip，用于存储IP地址。
+
+    self.udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)：
+    这行代码创建了一个套接字对象，并将其赋值给self.udp_socket。socket.socket(socket.AF_INET, socket.SOCK_DGRAM)用于创建一个基于IPv4和UDP协议的套接字。
+
+    self.udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)：
+    这行代码设置了套接字对象的一个选项。它允许套接字发送广播消息。
+
+    self.CopterID = CopterID：
+    这行代码将CopterID参数赋值给self.CopterID。这表示该对象有一个属性CopterID，用于存储无人机的ID。</pre> 
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9560077bcadbe108b3e31354534f164b" name="a9560077bcadbe108b3e31354534f164b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9560077bcadbe108b3e31354534f164b">&#9670;&#160;</a></span>fillList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fillList </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inLen</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据需要的长度调整数据列表，以确保其长度符合要求。 </p>
+<ul>
+<li><a class="anchor" id="fillList"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>输入的原始数据，可以是numpy数组或列表。 </td></tr>
+    <tr><td class="paramname">inLen</td><td>期望的数据列表长度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>调整后符合长度要求的数据列表。</dd></dl>
+<pre class="fragment">    此方法接收数组或列表，根据提供的长度参数进行调整。如果数据长度不足，则填充0；如果数据长度过长，则截断。
+
+    
+解析    
+    if isinstance(data, np.ndarray):
+    首先检查输入的数据data是否为NumPy数组。如果是，将其转换为Python列表。
+
+    if isinstance(data, list) and len(data)==inLen
+    接下来检查数据的类型和长度。如果数据是列表且长度与预期的inLen相等，则直接返回数据。
+
+    if isinstance(data, list):
+    如果数据是列表，则进一步检查数据的长度。如果列表的长度小于inLen，则在列表末尾添加足够的零，使其长度等于inLen。如果列表的长度大于inLen，则仅保留列表的前inLen个元素。
+
+    else:
+    如果数据不是列表，说明数据可能是其他类型（例如整数、浮点数等）。此时将该数据包装成一个列表，并在列表中添加足够的零，使其长度等于inLen。
+
+    return data
+    最后返回处理后的数据。    
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a6877f9ca243ac73c4b1c69cec32b8ba6" name="a6877f9ca243ac73c4b1c69cec32b8ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6877f9ca243ac73c4b1c69cec32b8ba6">&#9670;&#160;</a></span>sendColl20d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendColl20d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Coll20d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*20</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向CopterSim DLL模型的inCollision20d接口发送20维碰撞数据。 </p>
+<ul>
+<li><a class="anchor" id="sendColl20d"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Coll20d</td><td>(list or numpy array, optional): 1到20维的碰撞数据，默认为20个0。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int, optional): 指定发送数据的无人机ID。若为非正数，则使用初始化时的无人机ID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">此方法封装了无人机的20维碰撞数据，并通过UDP发送到指定的模拟器端口。
+struct Ue4Coll20d {
+    int checksum; //校验码1234567880
+    int CopterID;
+    float inCollision20d[20];
+}
+struct.pack ii20f        
+
+
+功能:
+根据提供的碰撞数据和无人机ID，封装数据并通过UDP发送。数据格式化为'ii20f'，即两个整数和二十个浮点数。
+
+示例
+dll = DllSimCtrlAPI.DllSimCtrlAPI()
+dll.sendColl20d([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],1)
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a07f43c24aab3356613a80355443fca81" name="a07f43c24aab3356613a80355443fca81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f43c24aab3356613a80355443fca81">&#9670;&#160;</a></span>sendCustomData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendCustomData </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CopterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>data</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*16</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>checksum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">123456</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>port</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50000</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>IP</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'127.0.0.1'</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送一个包含16维double型数据的自定义数据结构到指定的IP和端口。 </p>
+<ul>
+<li><a class="anchor" id="sendCustomData"></a> <a class="el" href="#sendCustomData">sendCustomData</a> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CopterID</td><td>(int): 飞行器的标识ID，默认为0。 </td></tr>
+    <tr><td class="paramname">data</td><td>(list or numpy.array): 要发送的数据，可以是1到16维的向量，默认为16个0。 <br  />
+ </td></tr>
+    <tr><td class="paramname">checksum</td><td>(int): 用于校验的检验和，默认为123456。 <br  />
+ </td></tr>
+    <tr><td class="paramname">port</td><td>(int): 目标端口号，默认为50000。 <br  />
+ </td></tr>
+    <tr><td class="paramname">IP</td><td>(str): 目标IP地址，默认为'127.0.0.1'。 <br  />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">Description:
+    本方法封装了一个结构体 CustomData，该结构体包含一个整型校验和，一个整型飞行器ID和一个包含16个double类型数据的数组。
+    方法首先确保提供的数据向量长度为16，不足时自动补零。
+    使用 struct.pack 方法按照 "ii16d" 的格式打包数据，其中 'ii' 表示两个整型数据，'16d' 表示16个双精度浮点数。
+    然后通过 UDP socket 发送打包后的数据到指定的 IP 地址和端口。
+
+Note:
+    调用此方法前需确保已创建并配置好 udp_socket 对象。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="aeadfb5a370fd1ac2537baec161d96f15" name="aeadfb5a370fd1ac2537baec161d96f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeadfb5a370fd1ac2537baec161d96f15">&#9670;&#160;</a></span>sendDynModiParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendDynModiParams </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Bitmask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>InParams</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*64</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送动态参数修改至指定CopterSim模拟器 </p>
+<ul>
+<li><a class="anchor" id="sendDynModiParams"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Bitmask</td><td>(int): 一个32位整数，决定<code>InParams</code>中的哪些参数将被修改。每个位代表一个不同的参数，如果一个位被设置为1，那么对应的参数将被修改。 </td></tr>
+    <tr><td class="paramname">InParams</td><td>(list): 一个包含64个双值的列表，代表要修改的参数。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 至哪个CopterSim发送参数。如果<code>copterID</code>小于或等于0，参数将被发送到与<code>DLLSimCtrlAPI</code>实例关联的Copter。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment"></pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="aaec9849f736b98967bc49c14d8e59dc5" name="aaec9849f736b98967bc49c14d8e59dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec9849f736b98967bc49c14d8e59dc5">&#9670;&#160;</a></span>sendFloatsColl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendFloatsColl </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>size</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>velE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ray</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0,&#160;0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>posE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0,&#160;0,&#160;0]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送与无人机碰撞相关的浮点数据到CopterSim DLL模型的inFloatsCollision接口。 </p>
+<ul>
+<li><a class="anchor" id="fillList"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>(float): 无人机的尺寸。 </td></tr>
+    <tr><td class="paramname">velE</td><td>(list of float): 无人机在东北天坐标系中的速度，格式为[x, y, z]。 </td></tr>
+    <tr><td class="paramname">ray</td><td>(list of float): 无人机各方向的射线数据，格式为[前, 后, 左, 右, 上, 下]。 </td></tr>
+    <tr><td class="paramname">posE</td><td>(list of float): 无人机在东北天坐标系中的位置，格式为[x, y, z]。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 指定发送数据的无人机ID。若为非正数，则使用初始化时的无人机ID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">此方法封装了与无人机的碰撞相关数据，并通过UDP发送到指定的模拟器端口。
+struct Ue4RayTraceDrone {
+    int checksum;//校验码1234567890
+    int CopterID;
+    float size;
+    float velE[3];
+    float ray[6];//前后左右上下
+    float posE[3];
+}struct.pack ii13f        
+
+
+
+
+功能:
+根据提供的参数，封装数据并通过UDP发送。使用struct.pack格式化数据为'ii13f'，即两个整数和十三个浮点数。
+
+示例：
+dll = DllSimCtrlAPI.DllSimCtrlAPI()
+dll.sendFloatsColl(1,[0,0,0],[0,0,0,0,0,0],[0,0,0])
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a7b943113947c6ee442a6707b1d3c788f" name="a7b943113947c6ee442a6707b1d3c788f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b943113947c6ee442a6707b1d3c788f">&#9670;&#160;</a></span>sendInCtrlExt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendInCtrlExt </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inSILInts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*8</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inSILFLoats</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*20</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>iDxNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过UDP发送控制信号到指定无人机的模拟器。 </p>
+<ul>
+<li><a class="anchor" id="sendInCtrlExt"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inSILInts</td><td>(list 或 numpy.array): 包含整数的向量，支持1到8维。 </td></tr>
+    <tr><td class="paramname">inSILFLoats</td><td>(list 或 numpy.array): 包含浮点数的向量，支持1到20维。 </td></tr>
+    <tr><td class="paramname">iDxNum</td><td>(int): 指定使用哪一个InCtrlExt端口（1到5之间）。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 目标无人机ID。如果为-1，则发送到自身ID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">描述:
+    方法首先根据iDxNum计算校验和，然后确定目标无人机ID和端口号。
+    使用自定义方法fillList来确保整数和浮点数向量的维度正确。
+    结构化打包数据为'10i20f'格式，然后通过UDP套接字发送到指定的IP和端口。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a3f12709c49eca444c7d8938e2403e109" name="a3f12709c49eca444c7d8938e2403e109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f12709c49eca444c7d8938e2403e109">&#9670;&#160;</a></span>sendInCtrlExtAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendInCtrlExtAll </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inDoubsCtrls</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*140</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将一个较长的浮点数向量分段并通过UDP发送到多个控制端口。 </p>
+<ul>
+<li><a class="anchor" id="sendInCtrlExtAll"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inDoubsCtrls</td><td>(list 或 numpy.array): 包含double的向量，长度可以从1到140。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 目标无人机ID。如果为-1，则发送到self里的ID。 <br  />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">描述:
+    计算需要多少个控制端口来发送数据。
+    确保inDoubsCtrls的长度为140。
+    根据计算的端口数量分段发送数据，每段最多28个元素。
+    最后一个端口发送时，设置update为True以立即更新，其他端口设置为False。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="ab34cbac603eee1efa316388f881539cb" name="ab34cbac603eee1efa316388f881539cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34cbac603eee1efa316388f881539cb">&#9670;&#160;</a></span>sendInCtrlExtDoub()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendInCtrlExtDoub </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inDoubsCtrls</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*28</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>iDxNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>update</em></span><span class="paramdefsep"> = </span><span class="paramdefval">True</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过UDP发送double型控制信号到指定无人机的模拟器端口。 </p>
+<ul>
+<li><a class="anchor" id="sendInCtrlExtDoub"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inDoubsCtrls</td><td>(list 或 numpy.array): 包含double的向量，支持1到28维。 </td></tr>
+    <tr><td class="paramname">iDxNum</td><td>(int): 指定使用哪一个InCtrlExt端口（1到5之间）。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 目标无人机ID。如果为-1，则发送到自身ID。 </td></tr>
+    <tr><td class="paramname">update</td><td>(bool): 是否立即更新</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">描述:
+    方法首先根据iDxNum计算校验和，如果update为False，则校验和增加100。
+    确定目标无人机ID和端口号。
+    使用自定义方法fillList来确保向量的维度为28。
+    结构化打包数据为'2i28d'格式，然后通过UDP套接字发送到指定的IP和端口。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="acd4094bc20a3d2459ec2b20e014a3ba5" name="acd4094bc20a3d2459ec2b20e014a3ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4094bc20a3d2459ec2b20e014a3ba5">&#9670;&#160;</a></span>sendInDoubCtrls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendInDoubCtrls </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inDoubsCtrls</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*28</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送一个包含双精度浮点数数组的数据包到模型，通过UDP。 </p>
+<ul>
+<li><a class="anchor" id="sendInDoubCtrls"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inDoubsCtrls</td><td>(list 或 numpy.array): 包含双精度浮点数的数组，长度为1至28。默认为28个零。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 要发送数据的无人机ID。如果为-1，则默认使用当前实例的无人机ID。 <br  />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">描述:
+    此方法封装了一个包含固定校验和、无人机ID和双精度浮点数数组的数据结构。
+    使用1234567897作为校验和，并基于无人机ID计算端口号。
+    如果提供的copterID小于等于0，它将使用当前实例的无人机ID。
+    方法还确保双精度数组长度必须为28，必要时进行填充。
+    使用struct.pack将校验和、无人机ID和双精度数组打包成二进制格式，格式为'2i28d'。
+    然后通过预配置的UDP套接字将这些二进制数据发送到指定的IP和端口。
+
+注意:
+    确保在调用此方法前已创建并适当配置了udp_socket对象，并且设置了self.ip属性。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a2d28fd0b6c59d06c49ad9f0e265d5b09" name="a2d28fd0b6c59d06c49ad9f0e265d5b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d28fd0b6c59d06c49ad9f0e265d5b09">&#9670;&#160;</a></span>sendInitInParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendInitInParams </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Bitmask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>InParams</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*32</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送初始化参数至CopterSim </p>
+<ul>
+<li><a class="anchor" id="fillList"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Bitmask</td><td>(int, 可选): 一个32位整数，表示要修改的参数。默认值为0。 </td></tr>
+    <tr><td class="paramname">InParams</td><td>(list, 可选): 一个包含32个双值的列表，代表初始化参数。默认值为[0]*32。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int, 可选): 要发送参数的CopterSim的ID。默认值为-1，这意味着参数将发送至存储在实例变量<code>CopterID</code>中的CopterSimID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">此方法将指定的初始化参数发送至CopterSim模拟器。            
+    
+注意:
+    - 在此实现中，`checkSum` 参数被设置为1234567892。
+    - `PortNum` 基于`copterID`计算。
+    - 使用`struct.pack`方法创建`buf`参数。
+    - 使用`udp_socket.sendto`方法发送数据。</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="acb88d53e70b5b146ad18cf3145c0bd7d" name="acb88d53e70b5b146ad18cf3145c0bd7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb88d53e70b5b146ad18cf3145c0bd7d">&#9670;&#160;</a></span>sendModelInParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendModelInParams </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Bitmask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>InParams</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过UDP向CopterSim模型发送仿真参数。 </p>
+<ul>
+<li><a class="anchor" id="sendModelInParams"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Bitmask</td><td>(uint32): 一个32位无符号的位掩码，指定各种标志或设置。 </td></tr>
+    <tr><td class="paramname">InParams</td><td>(list或numpy.array): 一个包含32个双精度浮点数的列表或数组。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 可选；指定目标无人机ID。如果为-1或未提供，则默认为self.CopterID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">描述:
+    将校验和、Bitmask和InParams打包成二进制格式，并根据copterID发送到相应的端口。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a8b38767f3354bfb1df3149e16758cec6" name="a8b38767f3354bfb1df3149e16758cec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b38767f3354bfb1df3149e16758cec6">&#9670;&#160;</a></span>sendSILIntDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendSILIntDouble </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inSILInts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*8</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inSILDoubs</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*20</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向 DLL 模型发送包含整数和双精度浮点数组的数据。 </p>
+<ul>
+<li><a class="anchor" id="sendSILIntDouble"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inSILInts</td><td>(list or numpy.array): 整数数组，长度1到8，默认为8个0。 </td></tr>
+    <tr><td class="paramname">inSILDoubs</td><td>(list or numpy.array): 双精度浮点数数组，长度1到28，默认为20个0。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 指定要发送数据的飞行器ID，默认为-1。 <br  />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">Description:
+    该方法封装了一个结构体 DllInDoubCtrls，该结构体包含一个整型校验和，一个整型飞行器ID，
+    和一个双精度浮点数数组（28个双精度浮点数）。
+    方法首先确定飞行器ID。如果提供的ID小于等于0，则使用当前实例的 CopterID。
+    为每个飞行器计算特定的端口号，基础端口号30100加上（ID-1）* 2的结果。
+    确保双精度浮点数数组长度为28，不足时自动填充。
+    使用 struct.pack 方法按照 "2i28d" 的格式打包数据，其中 '2i' 表示2个整型数据（校验和和ID），
+    '28d' 表示28个双精度浮点数。
+    通过 UDP socket 发送打包后的数据到指定的 IP 地址和计算得到的端口号。
+
+Note:
+    调用此方法前需确保已创建并配置好 udp_socket 对象及 self.ip 属性已被设定。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="aff2b72c0b9fe760782a85a5a41dc82ac" name="aff2b72c0b9fe760782a85a5a41dc82ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2b72c0b9fe760782a85a5a41dc82ac">&#9670;&#160;</a></span>sendSILIntFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendSILIntFloat </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inSILInts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*8</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inSILFLoats</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*20</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向 DLL 模型发送包含整数和浮点数组的数据。 </p>
+<ul>
+<li><a class="anchor" id="sendSILIntFloat"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inSILInts</td><td>(list or numpy.array): 整数数组，长度1到8，默认为8个0。 </td></tr>
+    <tr><td class="paramname">inSILFLoats</td><td>(list or numpy.array): 浮点数数组，长度1到20，默认为20个0。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int): 指定要发送数据的飞行器ID，默认为-1。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">Description:
+    该方法封装了一个结构体 PX4SILIntFloat，该结构体包含一个整型校验和，一个整型飞行器ID，
+    一个整型数组（8个整数），和一个浮点数数组（20个浮点数）。
+    方法首先确定飞行器ID。如果提供的ID小于等于0，则使用当前实例的 CopterID。
+    为每个飞行器计算特定的端口号，基础端口号30100加上（ID-1）* 2的结果。
+    确保整数和浮点数数组长度分别为8和20，不足时自动填充。
+    使用 struct.pack 方法按照 "10i20f" 的格式打包数据，其中 '10i' 表示10个整型数据（包括校验和和ID），
+    '20f' 表示20个单精度浮点数。
+    通过 UDP socket 发送打包后的数据到指定的 IP 地址和计算得到的端口号。
+
+Note:
+    调用此方法前需确保已创建并配置好 udp_socket 对象及 self.ip 属性已被设定。
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a37b863cdd0b3e4de63d39229a75948e0" name="a37b863cdd0b3e4de63d39229a75948e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b863cdd0b3e4de63d39229a75948e0">&#9670;&#160;</a></span>sendTerrIn15d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendTerrIn15d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TerrIn15d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[0]*15</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向CopterSim DLL模型的TerrainIn15d接口发送15维地形数据。 </p>
+<ul>
+<li><a class="anchor" id="sendTerrIn15d"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TerrIn15d</td><td>(list or numpy array, optional): 1到15维的地形数据，默认为15个0。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int, optional): 指定发送数据的无人机ID。若为非正数，则使用初始化时的无人机ID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">此方法封装了无人机的15维地形数据，并通过UDP发送到指定的模拟器端口。        
+
+
+功能:
+根据提供的地形数据和无人机ID，封装数据并通过UDP发送。数据格式化为'ii15f'，即两个整数和十五个浮点数。
+
+示例
+dll = DllSimCtrlAPI.DllSimCtrlAPI()
+dll.sendTerrIn15d([0,0,0,0,0,0,0,0,0,0,0,0,0],1)
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<a id="a8c0244815a8330d2bcd7039578af8029" name="a8c0244815a8330d2bcd7039578af8029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0244815a8330d2bcd7039578af8029">&#9670;&#160;</a></span>sendUE2Coptersim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sendUE2Coptersim </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inFromUE</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>copterID</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用于处理UE（三维环境）和CopterSim DLL模型之间的通信。 </p>
+<ul>
+<li><a class="anchor" id="sendUE2Coptersim"></a><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inFromUE</td><td>(list of float, optional): 要发送到CopterSim的32个双精度浮点数列表。默认为全零列表。 </td></tr>
+    <tr><td class="paramname">copterID</td><td>(int, optional): 将数据发送到的无人机的ID。如果小于或等于零，则发送到初始化时设置的无人机ID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">根据无人机ID通过UDP将结构化数据打包并发送到dll模型。
+struct UEToCopterDataD{
+    int checksum; //1234567899为校验ID
+    int CopterID; //发出本消息的飞机ID
+    double inFromUE[32]; //通过蓝图发出的数据
+}
+struct.pack ii32d            
+    
+
+示例:
+    dll = DllSimCtrlAPI.DllSimCtrlAPI()
+    dll.sendUE2Coptersim([0.1]*32,1)
+</pre> </li>
+</ul>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>ctrl/<a class="el" href="DllSimCtrlAPI_8py.html">DllSimCtrlAPI.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

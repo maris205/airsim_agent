@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RflySimSDK: CrazyflieServer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="feisi_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">RflySimSDK<span id="projectnumber">&#160;v3.03</span>
+   </div>
+   <div id="projectbrief">RflySimSDK说明文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>RflySimSDK</b></li><li class="navelem"><b>swarm</b></li><li class="navelem"><b>crazyflie</b></li><li class="navelem"><a class="el" href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1CrazyflieServer.html">CrazyflieServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classRflySimSDK_1_1swarm_1_1crazyflie_1_1CrazyflieServer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">CrazyflieServer类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a77e733ce06196b7c64a413d3cc92be74" id="r_a77e733ce06196b7c64a413d3cc92be74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77e733ce06196b7c64a413d3cc92be74">__init__</a> (self, crazyflies_yaml=&quot;../launch/crazyflies.yaml&quot;, num=1, ids=None, mode=7)</td></tr>
+<tr class="separator:a77e733ce06196b7c64a413d3cc92be74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f611498d14ff5123e8b532905b5f6a" id="r_a05f611498d14ff5123e8b532905b5f6a"><td class="memItemLeft" align="right" valign="top"><a id="a05f611498d14ff5123e8b532905b5f6a" name="a05f611498d14ff5123e8b532905b5f6a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>init_poses</b> (self)</td></tr>
+<tr class="separator:a05f611498d14ff5123e8b532905b5f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb957786a1d37ef97ccf24aa6bd4a0c" id="r_a8fb957786a1d37ef97ccf24aa6bd4a0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fb957786a1d37ef97ccf24aa6bd4a0c">emergency</a> (self)</td></tr>
+<tr class="separator:a8fb957786a1d37ef97ccf24aa6bd4a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319d864f62c435011eb90f708b44b9b5" id="r_a319d864f62c435011eb90f708b44b9b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a319d864f62c435011eb90f708b44b9b5">takeoff</a> (self, targetHeight, duration, groupMask=0)</td></tr>
+<tr class="separator:a319d864f62c435011eb90f708b44b9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fbb5cd8c4d2063559e7fa468433dcd" id="r_ab2fbb5cd8c4d2063559e7fa468433dcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2fbb5cd8c4d2063559e7fa468433dcd">land</a> (self, targetHeight, duration, groupMask=0)</td></tr>
+<tr class="separator:ab2fbb5cd8c4d2063559e7fa468433dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cd32dd8c1d6d87d72a18d1029d9fcf" id="r_ac8cd32dd8c1d6d87d72a18d1029d9fcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8cd32dd8c1d6d87d72a18d1029d9fcf">goTo</a> (self, goal, yaw, duration, groupMask=0)</td></tr>
+<tr class="separator:ac8cd32dd8c1d6d87d72a18d1029d9fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c94a58e1ba285d5a8cc01024605342" id="r_a98c94a58e1ba285d5a8cc01024605342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98c94a58e1ba285d5a8cc01024605342">startTrajectory</a> (self, trajectoryId, timescale=1.0, reverse=False, relative=True, groupMask=0)</td></tr>
+<tr class="separator:a98c94a58e1ba285d5a8cc01024605342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a4357a7e62b0aa8c482c0177553f37" id="r_a26a4357a7e62b0aa8c482c0177553f37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a4357a7e62b0aa8c482c0177553f37">setParam</a> (self, name, value)</td></tr>
+<tr class="separator:a26a4357a7e62b0aa8c482c0177553f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ac8310574993d704ebd0c89f94f2e8" id="r_a84ac8310574993d704ebd0c89f94f2e8"><td class="memItemLeft" align="right" valign="top"><a id="a84ac8310574993d704ebd0c89f94f2e8" name="a84ac8310574993d704ebd0c89f94f2e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>readmsg</b> (self)</td></tr>
+<tr class="separator:a84ac8310574993d704ebd0c89f94f2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2626ddd9261e43c8f235b2ffafdf7630" id="r_a2626ddd9261e43c8f235b2ffafdf7630"><td class="memItemLeft" align="right" valign="top"><a id="a2626ddd9261e43c8f235b2ffafdf7630" name="a2626ddd9261e43c8f235b2ffafdf7630"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>singleGetpos</b> (self, id)</td></tr>
+<tr class="separator:a2626ddd9261e43c8f235b2ffafdf7630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d3aa0bec8ba769b3b2cfc95a7640da" id="r_a29d3aa0bec8ba769b3b2cfc95a7640da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29d3aa0bec8ba769b3b2cfc95a7640da">Getpos</a> (self, id)</td></tr>
+<tr class="separator:a29d3aa0bec8ba769b3b2cfc95a7640da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17065c1f1e1fffb7e478c58c920f2693" id="r_a17065c1f1e1fffb7e478c58c920f2693"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17065c1f1e1fffb7e478c58c920f2693">Getvel</a> (self, id)</td></tr>
+<tr class="separator:a17065c1f1e1fffb7e478c58c920f2693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbf73ea0674bb637740d494e488e075" id="r_a9cbf73ea0674bb637740d494e488e075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cbf73ea0674bb637740d494e488e075">Getacc</a> (self, id)</td></tr>
+<tr class="separator:a9cbf73ea0674bb637740d494e488e075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa0b148070b332e95ae9feabf933cd0c5" id="r_aa0b148070b332e95ae9feabf933cd0c5"><td class="memItemLeft" align="right" valign="top"><a id="aa0b148070b332e95ae9feabf933cd0c5" name="aa0b148070b332e95ae9feabf933cd0c5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>vehicle_num</b></td></tr>
+<tr class="separator:aa0b148070b332e95ae9feabf933cd0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e51f4f5d05a4e906ca2651477fe12b0" id="r_a1e51f4f5d05a4e906ca2651477fe12b0"><td class="memItemLeft" align="right" valign="top"><a id="a1e51f4f5d05a4e906ca2651477fe12b0" name="a1e51f4f5d05a4e906ca2651477fe12b0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ini_poses</b></td></tr>
+<tr class="separator:a1e51f4f5d05a4e906ca2651477fe12b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943af1103d1f1365d6c7f31b331119bf" id="r_a943af1103d1f1365d6c7f31b331119bf"><td class="memItemLeft" align="right" valign="top"><a id="a943af1103d1f1365d6c7f31b331119bf" name="a943af1103d1f1365d6c7f31b331119bf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>interval</b></td></tr>
+<tr class="separator:a943af1103d1f1365d6c7f31b331119bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d0ac903f91d512775b13b1d063a320" id="r_ab5d0ac903f91d512775b13b1d063a320"><td class="memItemLeft" align="right" valign="top"><a id="ab5d0ac903f91d512775b13b1d063a320" name="ab5d0ac903f91d512775b13b1d063a320"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>init_height</b></td></tr>
+<tr class="separator:ab5d0ac903f91d512775b13b1d063a320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace80daf4638a52ac0c466b50d5c90495" id="r_ace80daf4638a52ac0c466b50d5c90495"><td class="memItemLeft" align="right" valign="top"><a id="ace80daf4638a52ac0c466b50d5c90495" name="ace80daf4638a52ac0c466b50d5c90495"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>crazyflies</b></td></tr>
+<tr class="separator:ace80daf4638a52ac0c466b50d5c90495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819d447f65551593e91967356913e36b" id="r_a819d447f65551593e91967356913e36b"><td class="memItemLeft" align="right" valign="top"><a id="a819d447f65551593e91967356913e36b" name="a819d447f65551593e91967356913e36b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>crazyfliesById</b></td></tr>
+<tr class="separator:a819d447f65551593e91967356913e36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac181cb84026bf35e987ab931f6ed0d2e" id="r_ac181cb84026bf35e987ab931f6ed0d2e"><td class="memItemLeft" align="right" valign="top"><a id="ac181cb84026bf35e987ab931f6ed0d2e" name="ac181cb84026bf35e987ab931f6ed0d2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>tf</b></td></tr>
+<tr class="separator:ac181cb84026bf35e987ab931f6ed0d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7508f50a15834e730438d907a48fd0f" id="r_af7508f50a15834e730438d907a48fd0f"><td class="memItemLeft" align="right" valign="top"><a id="af7508f50a15834e730438d907a48fd0f" name="af7508f50a15834e730438d907a48fd0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>msgg</b></td></tr>
+<tr class="separator:af7508f50a15834e730438d907a48fd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><pre class="fragment">Object for broadcasting commands to all robots at once.
+
+Also is the container for the individual :obj:`Crazyflie` objects.
+
+Attributes:
+    crazyfliesById (Dict[int, Crazyflie]): Index to the same Crazyflie
+        objects by their ID number (last byte of radio address).
+</pre> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a77e733ce06196b7c64a413d3cc92be74" name="a77e733ce06196b7c64a413d3cc92be74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e733ce06196b7c64a413d3cc92be74">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>crazyflies_yaml</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;../launch/crazyflies.yaml&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>num</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ids</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">7</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Initialize the server. Waits for all ROS services before returning.
+
+Args:
+    crazyflies_yaml (str): If ends in ".yaml", interpret as a path and load
+        from file. Otherwise, interpret as YAML string and parse
+        directly from string.
+</pre> 
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8fb957786a1d37ef97ccf24aa6bd4a0c" name="a8fb957786a1d37ef97ccf24aa6bd4a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb957786a1d37ef97ccf24aa6bd4a0c">&#9670;&#160;</a></span>emergency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">emergency </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Emergency stop. Cuts power; causes future commands to be ignored.
+
+This command is useful if the operator determines that the control
+script is flawed, and that continuing to follow it will cause wrong/
+self-destructive behavior from the robots. In addition to cutting
+power to the motors, it ensures that any future commands, both high-
+level and streaming, will have no effect.
+
+The only ways to reset the firmware after an emergency stop has occurred
+are a physical hard reset or an nRF51 Reboot command.
+</pre> 
+</div>
+</div>
+<a id="a9cbf73ea0674bb637740d494e488e075" name="a9cbf73ea0674bb637740d494e488e075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cbf73ea0674bb637740d494e488e075">&#9670;&#160;</a></span>Getacc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Getacc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">实现在这里不合适</pre> 
+</div>
+</div>
+<a id="a29d3aa0bec8ba769b3b2cfc95a7640da" name="a29d3aa0bec8ba769b3b2cfc95a7640da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d3aa0bec8ba769b3b2cfc95a7640da">&#9670;&#160;</a></span>Getpos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Getpos </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">实现在这里不合适</pre> 
+</div>
+</div>
+<a id="a17065c1f1e1fffb7e478c58c920f2693" name="a17065c1f1e1fffb7e478c58c920f2693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17065c1f1e1fffb7e478c58c920f2693">&#9670;&#160;</a></span>Getvel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Getvel </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">实现在这里不合适</pre> 
+</div>
+</div>
+<a id="ac8cd32dd8c1d6d87d72a18d1029d9fcf" name="ac8cd32dd8c1d6d87d72a18d1029d9fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cd32dd8c1d6d87d72a18d1029d9fcf">&#9670;&#160;</a></span>goTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">goTo </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>goal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Broadcasted goTo - Move smoothly to goal, then hover indefinitely.
+
+Broadcast version of :meth:`Crazyflie.goTo()`. All robots that match the
+groupMask start moving at exactly the same time. Use for synchronized
+movement. Asynchronous command; returns immediately.
+
+While the individual goTo() supports both relative and absolute
+coordinates, the broadcasted goTo only makes sense with relative
+coordinates (since absolute broadcasted goTo() would cause a collision).
+Therefore, there is no `relative` kwarg.
+
+See docstring of :meth:`Crazyflie.goTo()` for additional details.
+
+Args:
+    goal (iterable of 3 floats): The goal offset. Meters.
+    yaw (float): The goal yaw angle (heading). Radians.
+    duration (float): How long until the goal is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`Crazyflie.setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="ab2fbb5cd8c4d2063559e7fa468433dcd" name="ab2fbb5cd8c4d2063559e7fa468433dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fbb5cd8c4d2063559e7fa468433dcd">&#9670;&#160;</a></span>land()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">land </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>targetHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Broadcasted landing - fly straight down. User must cut power after.
+
+Broadcast version of :meth:`Crazyflie.land()`. All robots that match the
+groupMask land at exactly the same time. Use for synchronized
+movement. Asynchronous command; returns immediately.
+
+Args:
+    targetHeight (float): The z-coordinate at which to land. Meters.
+        Usually should be a few centimeters above the initial position
+        to ensure that the controller does not try to penetrate the
+        floor if the mocap coordinate origin is not perfect.
+    duration (float): How long until the height is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`Crazyflie.setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="a26a4357a7e62b0aa8c482c0177553f37" name="a26a4357a7e62b0aa8c482c0177553f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a4357a7e62b0aa8c482c0177553f37">&#9670;&#160;</a></span>setParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setParam </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Broadcasted setParam. See Crazyflie.setParam() for details.</pre> 
+</div>
+</div>
+<a id="a98c94a58e1ba285d5a8cc01024605342" name="a98c94a58e1ba285d5a8cc01024605342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c94a58e1ba285d5a8cc01024605342">&#9670;&#160;</a></span>startTrajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">startTrajectory </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>trajectoryId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>timescale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>relative</em></span><span class="paramdefsep"> = </span><span class="paramdefval">True</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Broadcasted - begins executing a previously uploaded trajectory.
+
+Broadcast version of :meth:`Crazyflie.startTrajectory()`.
+Asynchronous command; returns immediately.
+
+Args:
+    trajectoryId (int): ID number as given to :meth:`Crazyflie.uploadTrajectory()`.
+    timescale (float): Scales the trajectory duration by this factor.
+        For example if timescale == 2.0, the trajectory will take twice
+        as long to execute as the nominal duration.
+    reverse (bool): If true, executes the trajectory backwards in time.
+    relative (bool): If true (default), the position of the trajectory
+        is shifted such that it begins at the current position setpoint.
+    groupMask (int): Group mask bits. See :meth:`Crazyflie.setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<a id="a319d864f62c435011eb90f708b44b9b5" name="a319d864f62c435011eb90f708b44b9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319d864f62c435011eb90f708b44b9b5">&#9670;&#160;</a></span>takeoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">takeoff </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>targetHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Broadcasted takeoff - fly straight up, then hover indefinitely.
+
+Broadcast version of :meth:`Crazyflie.takeoff()`. All robots that match the
+groupMask take off at exactly the same time. Use for synchronized
+movement. Asynchronous command; returns immediately.
+
+Args:
+    targetHeight (float): The z-coordinate at which to hover.
+    duration (float): How long until the height is reached. Seconds.
+    groupMask (int): Group mask bits. See :meth:`setGroupMask()` doc.
+</pre> 
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>swarm/<b>crazyflie.py</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
