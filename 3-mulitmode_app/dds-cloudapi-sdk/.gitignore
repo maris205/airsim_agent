@@ -1,0 +1,17 @@
+# For local dev
+*.pyc
+/data
+.idea
+/dev.*
+/*.png
+.vscode
+.DS_Store
+.python-version
+
+# For package building
+dist
+dds_cloudapi_sdk.egg-info
+
+# For doc generation
+docs/build
+build

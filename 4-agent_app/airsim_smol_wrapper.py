@@ -7,16 +7,20 @@ import cv2
 import base64
 import os
 from openai import OpenAI
-from gdino import GroundingDINOAPIWrapper, visualize
+    # from gdino import GroundingDINOAPIWrapper, visualize
 from PIL import Image
 import uuid
 from smolagents import tool
 from typing import List,Tuple
+from dds_cloudapi_sdk.tasks.v2_task import create_task_with_local_image_auto_resize
+from dds_cloudapi_sdk import Config
+from dds_cloudapi_sdk import Client
+from dds_cloudapi_sdk.visualization_util import visualize_result
 
 
 
 api_key="ffd77d7c-f420-4b69-8557-80e7fa85c8b9" #使用自己的key，火山方舟
-gdino_token = "885af84f607caa6a12ba509b6c3c03a7" #使用自己的token，dino
+gdino_token = "xxxxxxxxxxxxxxxxxxxxxx" #使用自己的token，dino
 
 objects_dict = {
     "可乐": "airsim_coca",
@@ -301,43 +305,52 @@ def look()->str:
     return content
 
 @tool
-def detect(object_name: str)->Tuple[List[str], List[List[float]]]:
-    """
-    在图像上运行目标检测模型，返回检测结果及标记框图像
-    
-    Args:
-        object_name: 需要查找的目标名称，注意这个函数输入的目标名称object_name只能是英文，如果需要搜索的名称是中文，则需要翻译一下
-        
-    Returns:
-        Tuple[List[str], List[List[float]]]:
-            - 检测到的对象名称列表
-            - 每个对象的边界框坐标列表（格式：[xmin, ymin, xmax, ymax]）
-            - 带标记框的PIL图像对象
-    """
-    #step 1，读取摄像头图片，已经是RGB的了
-    rgb_image = get_image()
+def detect(self, object_names):
+        """
+        对本地图像进行目标检测，返回检测到的类别、框和可视化图片
+        :param object_names: 检测目标（英文逗号分隔字符串，如 'duck, cola'）
+        :return: obj_id_list, obj_locs, vis_img
+        """
+        config = Config(gdino_token)
+        client = Client(config)
+                #step 1，读取摄像头图片，已经是RGB的了
+        rgb_image = self.get_image()
 
-    #直接使用cv图片win下有bug
-    # 生成随机文件名（含扩展名）
-    file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
-    cv2.imwrite(file_name, rgb_image)
-    
-    #step2, 目标检测
-    gdino = GroundingDINOAPIWrapper(gdino_token) #使用自己的token
-    prompts = dict(image=file_name, prompt=object_name)
-    result = gdino.inference(prompts)
-    
-    #step3, 转换成需要的格式
-    #[obj1, obj2,...]
-    obj_id_list = result["categorys"]
-    
-    #[xmin, ymin, xmax, ymax]
-    obj_locs = result["boxes"]
-    
-    #画框
-    # image_pil = Image.open(prompts['image'])
-    # img_with_box = visualize(image_pil, result)
-    return obj_id_list, obj_locs
+        #直接使用cv图片win下有bug
+        # 生成随机文件名（含扩展名）
+        file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
+        cv2.imwrite(file_name, rgb_image)
+        # 创建检测任务
+        task = create_task_with_local_image_auto_resize(
+            api_path="/v2/task/dinox/detection",
+            api_body_without_image={
+                "model": "DINO-X-1.0",
+                "prompt": {
+                    "type": "text",
+                    "text": object_names
+                },
+                "targets": ["bbox"],
+                "bbox_threshold": 0.25,
+                "iou_threshold": 0.8
+            },
+            image_path=file_name
+        )
+        client.run_task(task)
+        result = task.result
+
+        # 解析检测结果
+        obj_id_list = [obj['category'] for obj in result['objects']]
+        obj_locs = [obj['bbox'] for obj in result['objects']]
+
+        # 可视化
+        # try:
+        #     visualize_result(image_path=file_name, result=result, output_dir="./")
+        #     vis_img = Image.open(file_name)  # 或可用 output_dir 下的可视化图片
+        # except Exception as e:
+        #     vis_img = None
+        #     #os.remove(file_name)
+
+        return obj_id_list, obj_locs
 
 def detect_with_img(object_name):
     """
@@ -352,30 +365,52 @@ def detect_with_img(object_name):
             - 每个对象的边界框坐标列表（格式：[xmin, ymin, xmax, ymax]）
             - 带标记框的PIL图像对象
     """
-    #step 1，读取摄像头图片，已经是RGB的了
-    rgb_image = get_image()
+def detect(self, object_names):
+        """
+        对本地图像进行目标检测，返回检测到的类别、框和可视化图片
+        :param object_names: 检测目标（英文逗号分隔字符串，如 'duck, cola'）
+        :return: obj_id_list, obj_locs, vis_img
+        """
+        config = Config(gdino_token)
+        client = Client(config)
+                #step 1，读取摄像头图片，已经是RGB的了
+        rgb_image = self.get_image()
 
-    #直接使用cv图片win下有bug
-    # 生成随机文件名（含扩展名）
-    file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
-    cv2.imwrite(file_name, rgb_image)
-    
-    #step2, 目标检测
-    gdino = GroundingDINOAPIWrapper(gdino_token) #使用自己的token
-    prompts = dict(image=file_name, prompt=object_name)
-    result = gdino.inference(prompts)
-    
-    #step3, 转换成需要的格式
-    #[obj1, obj2,...]
-    obj_id_list = result["categorys"]
-    
-    #[xmin, ymin, xmax, ymax]
-    obj_locs = result["boxes"]
-    
-    #画框
-    image_pil = Image.open(prompts['image'])
-    img_with_box = visualize(image_pil, result)
-    return obj_id_list, obj_locs,img_with_box
+        #直接使用cv图片win下有bug
+        # 生成随机文件名（含扩展名）
+        file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
+        cv2.imwrite(file_name, rgb_image)
+        # 创建检测任务
+        task = create_task_with_local_image_auto_resize(
+            api_path="/v2/task/dinox/detection",
+            api_body_without_image={
+                "model": "DINO-X-1.0",
+                "prompt": {
+                    "type": "text",
+                    "text": object_names
+                },
+                "targets": ["bbox"],
+                "bbox_threshold": 0.25,
+                "iou_threshold": 0.8
+            },
+            image_path=file_name
+        )
+        client.run_task(task)
+        result = task.result
+
+        # 解析检测结果
+        obj_id_list = [obj['category'] for obj in result['objects']]
+        obj_locs = [obj['bbox'] for obj in result['objects']]
+
+        # 可视化
+        try:
+            visualize_result(image_path=file_name, result=result, output_dir="./")
+            vis_img = Image.open(file_name)  # 或可用 output_dir 下的可视化图片
+        except Exception as e:
+            vis_img = None
+            #os.remove(file_name)
+
+        return obj_id_list, obj_locs, vis_img
 
 
 @tool

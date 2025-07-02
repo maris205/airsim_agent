@@ -11,7 +11,7 @@ import re
 import airsim_wrapper
 
 BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
-ARK_API_KEY = "ffd77d7c-f420-4b69-8557-80e7fa85c8b9" # your api key，visit https://volcengine.com/L/GDhZ-EE4RrY/ 点击api接入
+ARK_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxx" # your api key，visit https://volcengine.com/L/GDhZ-EE4RrY/ 点击api接入
 MODEL = "doubao-1-5-pro-32k-250115"
 
 #初始化无人机

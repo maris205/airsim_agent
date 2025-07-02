@@ -7,12 +7,15 @@ import cv2
 import base64
 import os
 from openai import OpenAI
-from gdino import GroundingDINOAPIWrapper, visualize
 from PIL import Image
 import uuid
+from dds_cloudapi_sdk.tasks.v2_task import create_task_with_local_image_auto_resize
+from dds_cloudapi_sdk import Config
+from dds_cloudapi_sdk import Client
+from dds_cloudapi_sdk.visualization_util import visualize_result
 
 api_key="ffd77d7c-f420-4b69-8557-80e7fa85c8b9" #使用自己的key，火山方舟
-gdino_token = "885af84f607caa6a12ba509b6c3c03a7" #使用自己的token，dino
+gdino_token = "xxxxxxxxxxxxxxxxxxxxxxxx" #使用自己的token，dino
 
 objects_dict = {
     "可乐": "airsim_coca",
@@ -232,34 +235,52 @@ class AirSimWrapper:
         content = response.choices[0].message.content
         return content
 
-    def detect(self, object_name):
+    def detect(self, object_names):
         """
-        在图像 img 上运行对象检测模型，并返回两个变量 - obj_list，它是场景中检测到的对象名称的列表。obj_locs，每个对象在图像中的边界框坐标列表。
-        :param object_name:
-        :return:obj_id_list,obj_locs,img_with_box #带box的图片
+        对本地图像进行目标检测，返回检测到的类别、框和可视化图片
+        :param object_names: 检测目标（英文逗号分隔字符串，如 'duck, cola'）
+        :return: obj_id_list, obj_locs, vis_img
         """
-        #step 1，读取摄像头图片，已经是RGB的了
+        config = Config(gdino_token)
+        client = Client(config)
+                #step 1，读取摄像头图片，已经是RGB的了
         rgb_image = self.get_image()
 
         #直接使用cv图片win下有bug
         # 生成随机文件名（含扩展名）
         file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
         cv2.imwrite(file_name, rgb_image)
-        
-        #step2, 目标检测
-        gdino = GroundingDINOAPIWrapper(gdino_token) #使用自己的token
-        prompts = dict(image=file_name, prompt=object_name)
-        result = gdino.inference(prompts)
-        
-        #step3, 转换成需要的格式
-        obj_id_list = result["categorys"]
-        #[xmin, ymin, xmax, ymax]
-        obj_locs = result["boxes"]
-        
-        #画框
-        image_pil = Image.open(prompts['image'])
-        img_with_box = visualize(image_pil, result)
-        return obj_id_list, obj_locs,img_with_box
+        # 创建检测任务
+        task = create_task_with_local_image_auto_resize(
+            api_path="/v2/task/dinox/detection",
+            api_body_without_image={
+                "model": "DINO-X-1.0",
+                "prompt": {
+                    "type": "text",
+                    "text": object_names
+                },
+                "targets": ["bbox"],
+                "bbox_threshold": 0.25,
+                "iou_threshold": 0.8
+            },
+            image_path=file_name
+        )
+        client.run_task(task)
+        result = task.result
+
+        # 解析检测结果
+        obj_id_list = [obj['category'] for obj in result['objects']]
+        obj_locs = [obj['bbox'] for obj in result['objects']]
+
+        # 可视化
+        try:
+            visualize_result(image_path=file_name, result=result, output_dir="./")
+            vis_img = Image.open(file_name)  # 或可用 output_dir 下的可视化图片
+        except Exception as e:
+            vis_img = None
+            #os.remove(file_name)
+
+        return obj_id_list, obj_locs, vis_img
     
 
     def get_distance(self):

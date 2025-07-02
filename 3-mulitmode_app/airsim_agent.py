@@ -6,12 +6,13 @@
 # @Describe:
 # -*- encoding:utf-8 -*-
 import os
+import openai
 from openai import OpenAI
 import re
 import airsim_wrapper
 
 BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
-ARK_API_KEY = "*************" # 使用自己的，your api key，visit https://volcengine.com/L/GDhZ-EE4RrY/ 点击api接入
+ARK_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxx" # 使用自己的，your api key，visit https://volcengine.com/L/GDhZ-EE4RrY/ 点击api接入
 MODEL = "doubao-1-5-pro-32k-250115"
 
 #初始化无人机
@@ -106,3 +107,4 @@ if __name__=="__main__":
     command = "起飞"
     ret = airsim_agent.process(command)
     print(":", ret)
+    

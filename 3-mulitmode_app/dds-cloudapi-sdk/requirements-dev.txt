@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest==8.1.1
+pytest-cov==4.1.0
+Sphinx==7.1.2
+sphinx-nested-apidoc==1.2.6
+Pallets-Sphinx-Themes==2.1.1
