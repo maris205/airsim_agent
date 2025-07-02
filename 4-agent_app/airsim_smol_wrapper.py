@@ -9,7 +9,7 @@ import os
 from openai import OpenAI
     # from gdino import GroundingDINOAPIWrapper, visualize
 from PIL import Image
-import uuid
+import uuid 
 from smolagents import tool
 from typing import List,Tuple
 from dds_cloudapi_sdk.tasks.v2_task import create_task_with_local_image_auto_resize

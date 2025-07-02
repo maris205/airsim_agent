@@ -17,7 +17,7 @@ import uuid
 import tempfile
 
 api_key="xxxxxxxxxxxxxxxx" #使用自己的key，火山方舟
-gdino_token = "xxxxxxxxxxxxx" #使用自己的token，dino
+gdino_token = "xxxxxxxxxxxxx" #使用自己的token，dino 
 
 objects_dict = {
     "可乐": "airsim_coca",

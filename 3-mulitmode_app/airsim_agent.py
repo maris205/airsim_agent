@@ -10,7 +10,7 @@ import openai
 from openai import OpenAI
 import re
 import airsim_wrapper
-
+ 
 BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
 ARK_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxx" # 使用自己的，your api key，visit https://volcengine.com/L/GDhZ-EE4RrY/ 点击api接入
 MODEL = "doubao-1-5-pro-32k-250115"
