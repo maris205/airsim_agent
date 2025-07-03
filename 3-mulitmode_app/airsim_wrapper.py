@@ -16,8 +16,8 @@ from PIL import Image
 import uuid
 import tempfile
 
-api_key="xxxxxxxxxxxxxxxx" #使用自己的key，火山方舟
-gdino_token = "xxxxxxxxxxxxx" #使用自己的token，dino 
+api_key="058a54a8-25d4-4157-81c7-1c54d50fe0d8" #使用自己的key，火山方舟
+gdino_token = "b825e4f8ce584f702b6c3793d839c09b" #使用自己的token，dino 
 
 objects_dict = {
     "可乐": "airsim_coca",

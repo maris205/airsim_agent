@@ -11,7 +11,7 @@ from openai import OpenAI
 from PIL import Image
 import uuid 
 from smolagents import tool
-from typing import List,Tuple
+from typing import List,Tuple,Any
 from dds_cloudapi_sdk.tasks.v2_task import create_task_with_local_image_auto_resize
 from dds_cloudapi_sdk import Config
 from dds_cloudapi_sdk import Client
@@ -19,8 +19,8 @@ from dds_cloudapi_sdk.visualization_util import visualize_result
 
 
 
-api_key="ffd77d7c-f420-4b69-8557-80e7fa85c8b9" #使用自己的key，火山方舟
-gdino_token = "xxxxxxxxxxxxxxxxxxxxxx" #使用自己的token，dino
+api_key="2ecf387f-42b6-48e1-a3a1-911bf014eb1c" #使用自己的key，火山方舟
+gdino_token = "b825e4f8ce584f702b6c3793d839c09b" #使用自己的token，dino
 
 objects_dict = {
     "可乐": "airsim_coca",
@@ -305,30 +305,29 @@ def look()->str:
     return content
 
 @tool
-def detect(self, object_names):
-        """
-        对本地图像进行目标检测，返回检测到的类别、框和可视化图片
-        :param object_names: 检测目标（英文逗号分隔字符串，如 'duck, cola'）
-        :return: obj_id_list, obj_locs, vis_img
-        """
-        config = Config(gdino_token)
-        client = Client(config)
-                #step 1，读取摄像头图片，已经是RGB的了
-        rgb_image = self.get_image()
-
-        #直接使用cv图片win下有bug
-        # 生成随机文件名（含扩展名）
-        file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
-        cv2.imwrite(file_name, rgb_image)
-        # 创建检测任务
+def detect(object_names: str) -> Tuple[List[str], List[Any]]:
+    """
+    对本地图像进行目标检测，返回检测到的类别和框
+    
+    Args:
+        object_names (str): 需要检测的目标类别名称（英文逗号分隔，如 'duck, cola'）
+    
+    Returns:
+        Tuple[List[str], List[Any]]: 
+            - obj_id_list: 检测到的对象ID列表
+            - obj_locs: 对象位置信息（如边界框坐标）
+    """
+    config = Config(gdino_token)
+    client = Client(config)
+    rgb_image = get_image()
+    file_name = f"random_{uuid.uuid4().hex}.png"
+    cv2.imwrite(file_name, rgb_image)
+    try:
         task = create_task_with_local_image_auto_resize(
             api_path="/v2/task/dinox/detection",
             api_body_without_image={
                 "model": "DINO-X-1.0",
-                "prompt": {
-                    "type": "text",
-                    "text": object_names
-                },
+                "prompt": {"type": "text", "text": object_names},
                 "targets": ["bbox"],
                 "bbox_threshold": 0.25,
                 "iou_threshold": 0.8
@@ -337,22 +336,14 @@ def detect(self, object_names):
         )
         client.run_task(task)
         result = task.result
-
-        # 解析检测结果
         obj_id_list = [obj['category'] for obj in result['objects']]
         obj_locs = [obj['bbox'] for obj in result['objects']]
-
-        # 可视化
-        # try:
-        #     visualize_result(image_path=file_name, result=result, output_dir="./")
-        #     vis_img = Image.open(file_name)  # 或可用 output_dir 下的可视化图片
-        # except Exception as e:
-        #     vis_img = None
-        #     #os.remove(file_name)
-
         return obj_id_list, obj_locs
+    finally:
+        if os.path.exists(file_name):
+            os.remove(file_name)
 
-def detect_with_img(object_name):
+def detect_with_img(object_names: str)-> Tuple[List[str], List[str], Image.Image]:
     """
     在图像上运行目标检测模型，返回检测结果及标记框图像
     
@@ -365,52 +356,46 @@ def detect_with_img(object_name):
             - 每个对象的边界框坐标列表（格式：[xmin, ymin, xmax, ymax]）
             - 带标记框的PIL图像对象
     """
-def detect(self, object_names):
-        """
-        对本地图像进行目标检测，返回检测到的类别、框和可视化图片
-        :param object_names: 检测目标（英文逗号分隔字符串，如 'duck, cola'）
-        :return: obj_id_list, obj_locs, vis_img
-        """
-        config = Config(gdino_token)
-        client = Client(config)
-                #step 1，读取摄像头图片，已经是RGB的了
-        rgb_image = self.get_image()
+    config = Config(gdino_token)
+    client = Client(config)
+            #step 1，读取摄像头图片，已经是RGB的了
+    rgb_image = get_image()
 
-        #直接使用cv图片win下有bug
-        # 生成随机文件名（含扩展名）
-        file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
-        cv2.imwrite(file_name, rgb_image)
-        # 创建检测任务
-        task = create_task_with_local_image_auto_resize(
-            api_path="/v2/task/dinox/detection",
-            api_body_without_image={
-                "model": "DINO-X-1.0",
-                "prompt": {
-                    "type": "text",
-                    "text": object_names
-                },
-                "targets": ["bbox"],
-                "bbox_threshold": 0.25,
-                "iou_threshold": 0.8
+    #直接使用cv图片win下有bug
+    # 生成随机文件名（含扩展名）
+    file_name = f"random_{uuid.uuid4().hex}.png"  # 示例输出：random_1a2b3c4d5e.png
+    cv2.imwrite(file_name, rgb_image)
+    # 创建检测任务
+    task = create_task_with_local_image_auto_resize(
+        api_path="/v2/task/dinox/detection",
+        api_body_without_image={
+            "model": "DINO-X-1.0",
+            "prompt": {
+                "type": "text",
+                "text": object_names
             },
-            image_path=file_name
-        )
-        client.run_task(task)
-        result = task.result
+            "targets": ["bbox"],
+            "bbox_threshold": 0.25,
+            "iou_threshold": 0.8
+        },
+        image_path=file_name
+    )
+    client.run_task(task)
+    result = task.result
 
-        # 解析检测结果
-        obj_id_list = [obj['category'] for obj in result['objects']]
-        obj_locs = [obj['bbox'] for obj in result['objects']]
+    # 解析检测结果
+    obj_id_list = [obj['category'] for obj in result['objects']]
+    obj_locs = [obj['bbox'] for obj in result['objects']]
 
-        # 可视化
-        try:
-            visualize_result(image_path=file_name, result=result, output_dir="./")
-            vis_img = Image.open(file_name)  # 或可用 output_dir 下的可视化图片
-        except Exception as e:
-            vis_img = None
-            #os.remove(file_name)
+    # 可视化
+    try:
+        visualize_result(image_path=file_name, result=result, output_dir="./")
+        vis_img = Image.open(file_name)  # 或可用 output_dir 下的可视化图片
+    except Exception as e:
+        vis_img = None
+        #os.remove(file_name)
 
-        return obj_id_list, obj_locs, vis_img
+    return obj_id_list, obj_locs, vis_img
 
 
 @tool

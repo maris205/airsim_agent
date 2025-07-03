@@ -14,8 +14,8 @@ from dds_cloudapi_sdk import Config
 from dds_cloudapi_sdk import Client
 from dds_cloudapi_sdk.visualization_util import visualize_result
 
-api_key="xxxxxxxxxxxxxxxxxxxxxxxx" #使用自己的key，火山方舟 
-gdino_token = "xxxxxxxxxxxxxxxxxxxxxxxx" #使用自己的token，dino
+api_key="2ecf387f-42b6-48e1-a3a1-911bf014eb1c" #使用自己的key，火山方舟 
+gdino_token = "b825e4f8ce584f702b6c3793d839c09b" #使用自己的token，dino
 
 objects_dict = {
     "可乐": "airsim_coca",
