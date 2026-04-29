@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(apt-get install:*)",
+      "Bash(pdftotext /root/autodl-tmp/airsim_agent/6-multi_agent/第7章-多无人机Agent协同.pdf -)",
+      "Bash(ls /root/autodl-tmp/airsim_agent/6-multi_agent/*.ipynb /root/autodl-tmp/airsim_agent/6-multi_agent/*.py)",
+      "WebSearch",
+      "WebFetch(domain:docs.crewai.com)",
+      "Bash(ls:*)",
+      "Bash(pandoc --version)",
+      "Bash(pip list:*)",
+      "Bash(pip install:*)",
+      "Bash(cmd.exe:*)",
+      "Bash(python:*)",
+      "Bash(pip show:*)",
+      "Bash(conda --version)",
+      "Bash(conda install:*)",
+      "Bash(conda info:*)",
+      "Bash(conda create:*)",
+      "Bash(conda run:*)",
+      "Bash(/c/ProgramData/Miniconda3/envs/drone/python.exe test_nb5.py)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/ProgramData/Miniconda3/envs/drone/python.exe test_nb5.py)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/ProgramData/Miniconda3/envs/drone/python.exe test_nb5_tool.py)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/ProgramData/Miniconda3/envs/drone/python.exe test_nb6.py)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/ProgramData/Miniconda3/envs/drone/python.exe:*)",
+      "Bash(grep -r \"simList\\\\|simGet\\\\|scene\\\\|object\" /c/Users/wangl/Documents/course/6-multi_agent/*.py)",
+      "Bash(pandoc \"样张模板2024_05_26.docx\" -o template_preview.md)",
+      "Bash(conda list *)",
+      "Bash(npm list *)",
+      "Bash(node -e \"require\\('docx'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node generate_docx.js)",
+      "Bash(/c/ProgramData/Miniconda3/envs/drone/python.exe -m pip install python-docx -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --timeout 30)",
+      "Bash(/c/ProgramData/Miniconda3/envs/drone/python.exe fix_quotes.py)",
+      "Bash(/c/ProgramData/Miniconda3/envs/drone/python.exe -c ' *)",
+      "Skill(mermaid-diagram)",
+      "Bash(pandoc \"第七章-多无人机Agent协同.md\" -o \"第七章-多无人机Agent协同_raw.docx\" --reference-doc=\"样张模板2024_05_26.docx\")"
+    ]
+  }
+}

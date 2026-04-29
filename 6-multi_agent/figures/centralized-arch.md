@@ -1,0 +1,34 @@
+# 中心化协同架构
+
+一个LLM指挥官统一分解任务，逐一指挥每架无人机执行。
+
+```mermaid
+flowchart TD
+    operator["👤 人类操作员"]
+    commander["🧠 指挥官LLM"]
+    decompose["📋 任务分解<br/>输出JSON任务列表"]
+
+    subgraph drone1_flow ["Drone1 执行流程"]
+        t1["起飞"] --> f1["飞往目标坐标"] --> r1["汇报位置"]
+    end
+
+    subgraph drone2_flow ["Drone2 执行流程"]
+        t2["起飞"] --> f2["飞往目标坐标"] --> r2["汇报位置"]
+    end
+
+    summary["📊 LLM生成总结报告"]
+
+    operator -->|"输入任务目标"| commander
+    commander -->|"LLM推理"| decompose
+    decompose -->|"任务1"| t1
+    decompose -->|"任务2"| t2
+    r1 --> summary
+    r2 --> summary
+
+    style operator fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20
+    style commander fill:#E3F2FD,stroke:#1565C0,color:#0D47A1
+    style decompose fill:#FFF3E0,stroke:#E65100,color:#BF360C
+    style summary fill:#F3E5F5,stroke:#6A1B9A,color:#4A148C
+    style drone1_flow fill:#FAFAFA,stroke:#90A4AE
+    style drone2_flow fill:#FAFAFA,stroke:#90A4AE
+```

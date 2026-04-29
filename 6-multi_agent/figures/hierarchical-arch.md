@@ -1,0 +1,33 @@
+# 层级协同架构 — 三无人机工业巡检
+
+监控无人机在高空统筹指挥，两架巡检无人机分头执行任务后汇报。
+
+```mermaid
+flowchart TD
+    subgraph monitor ["Drone3 — 监控指挥（高空40米）"]
+        m_takeoff["起飞至高空"] --> m_scan["API获取巡检目标<br/>simListSceneObjects"] --> m_plan["🧠 LLM制定巡检计划"] --> m_assign["分配任务"]
+    end
+
+    subgraph inspector_a ["Drone1 — 巡检员A"]
+        a_takeoff["起飞"] --> a_fly["飞往风力发电机"] --> a_photo["📷 近距离拍照"] --> a_report["汇报位置与状态"]
+    end
+
+    subgraph inspector_b ["Drone2 — 巡检员B"]
+        b_takeoff["起飞"] --> b_fly["飞往变电站"] --> b_photo["📷 近距离拍照"] --> b_report["汇报位置与状态"]
+    end
+
+    m_summary["🧠 LLM汇总巡检报告"]
+
+    m_assign -->|"任务1: 风力发电机"| a_takeoff
+    m_assign -->|"任务2: 变电站"| b_takeoff
+    a_report -->|"汇报"| m_summary
+    b_report -->|"汇报"| m_summary
+
+    style monitor fill:#E3F2FD,stroke:#1565C0
+    style inspector_a fill:#FFF3E0,stroke:#E65100
+    style inspector_b fill:#E8F5E9,stroke:#2E7D32
+    style m_plan fill:#BBDEFB,stroke:#1565C0
+    style m_summary fill:#F3E5F5,stroke:#6A1B9A,color:#4A148C
+    style a_photo fill:#FFE0B2,stroke:#E65100
+    style b_photo fill:#C8E6C9,stroke:#2E7D32
+```

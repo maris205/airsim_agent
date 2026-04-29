@@ -1,0 +1,21 @@
+flowchart LR
+    subgraph drone1_brain ["Drone1 独立大脑"]
+        d1_read["读取消息板"] --> d1_llm["🧠 LLM决策"] --> d1_exec["执行飞行"] --> d1_pub["发布结果"]
+    end
+
+    board[("📋 共享消息板<br/>模拟无线通信")]
+
+    subgraph drone2_brain ["Drone2 独立大脑"]
+        d2_read["读取消息板"] --> d2_llm["🧠 LLM决策"] --> d2_exec["执行飞行"] --> d2_pub["发布结果"]
+    end
+
+    d1_read -.->|"读取"| board
+    d1_pub -->|"写入"| board
+    board -.->|"读取"| d2_read
+    d2_pub -->|"写入"| board
+
+    style board fill:#FFF9C4,stroke:#F9A825,color:#E65100
+    style drone1_brain fill:#E3F2FD,stroke:#1565C0
+    style drone2_brain fill:#E8F5E9,stroke:#2E7D32
+    style d1_llm fill:#BBDEFB,stroke:#1565C0
+    style d2_llm fill:#C8E6C9,stroke:#2E7D32
