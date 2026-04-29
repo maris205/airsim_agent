@@ -129,7 +129,7 @@ def get_state(client, drone_id):
 
 # 豆包模型配置
 LLM_BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
-LLM_API_KEY = "80e68c38-22cb-4f71-9377-0768c4d7fe15"
+LLM_API_KEY = ""
 LLM_MODEL = "doubao-seed-2-0-pro-260215"  # 替换为你的模型 ID
 
 
