@@ -1,1 +1,39 @@
+# ===== 课程项目 .gitignore =====
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python 缓存与编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE / 编辑器配置
+.idea/
+.vscode/
+*.swp
+*~
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时与日志
+*.log
+*.tmp
+
+# 其他项目目录
 /other_project/
+
+# 模型权重与大文件缓存（按需放开）
+*.pth
+*.ckpt
+*.safetensors

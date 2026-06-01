@@ -108,21 +108,88 @@ AirSim作为微软开源的无人机仿真平台，是大模型训练的最佳�
 
 
 
-第六章 无尽的任务（持续更新，内容待定）
+第六章 多Agent协同
 
-6.1 无人机穿环任务
+6.1 多Agent系统简介
 
-6.2 多无人机协同行动
+6.2 多Agent仿真环境搭建
 
-6.3 球球大作战
+6.3 集中式协同 (Centralized)
 
-6.4 基于大模型的无人机故障诊断
+6.4 分布式协同 (Distributed)
 
-6.5 城市低空交通运输
+6.5 CrewAI框架简介与AirSim集成
+
+6.6 分层协同 (Hierarchical)
+
+
+
+第七章 视觉语言导航 (VLN)
+
+7.1 无人机VLN概要
+
+7.2 openVLA简介
+
+7.3 AirSim VLN 数据采集与探索
+
+7.4 模型架构、微调与推理
+
+7.5 评估
+
+
+
+第八章 世界模型 (World Model)
+
+8.1 世界模型简介
+
+8.2 DreamerV3 深入解析
+
+8.3 悬停 / 避障实验
+
+8.4 从零训练 (Hover / Avoidance)
 
 
 
 上面就是课程的全部内容，会动态更新，根据大家反馈不断改进，力争打造一个“无人+大模型"的入门级精品课程。
+
+
+## 4 项目结构
+
+```
+airsim_agent/
+├── 0-intro.ipynb          课程导引
+├── 1-airsim_basic/        第一章 AirSim 基础环境与控制
+├── 2-prompt_app/          第二章 基于提示词的飞行控制
+├── 3-mulitmode_app/       第三章 多模态视觉应用
+├── 4-agent_app/           第四章 Agent 框架应用
+├── 5-user_app/            第五章 语音 / 人机交互协同
+├── 6-multi_agent/         第六章 多 Agent 协同 (含 CrewAI)
+├── 7-done-VLN/            第七章 视觉语言导航 (VLN)
+├── 8-world_model/         第八章 世界模型 (DreamerV3)
+├── ernie_airsim/          文心一言 + AirSim 示例
+├── rflysim/               RflySim 仿真平台适配
+├── external-libraries/    内置 airsim SDK 及依赖 (tornado4/msgpackrpc)
+├── img/ prompts/ system_prompts/   公共资源
+└── requirements.txt       Python 依赖
+```
+
+每个章节目录内均自带 `airsim_wrapper.py` / `airsim_agent.py` 封装与 `settings.json` 仿真配置，可独立运行。
+
+## 5 快速开始
+
+1. 安装依赖：
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   AirSim Python SDK 已内置于 `external-libraries/`，无需单独安装。
+
+2. 配置 AirSim：将对应章节的 `settings.json` 复制到 `~/Documents/AirSim/`，启动 AirSim 仿真后再运行 notebook。
+
+3. 配置大模型 API Key：使用 OpenAI / 通义千问(DashScope) 等接口时，将密钥设置为环境变量或填入对应 notebook（请勿提交真实密钥到仓库）。
+
+4. 按章节顺序运行 notebook 即可。建议从 `0-intro.ipynb` 开始。
 
 
 ## 课程获奖

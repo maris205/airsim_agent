@@ -1,0 +1,33 @@
+# ===== AirSim + 大模型 课程依赖 =====
+# 安装: pip install -r requirements.txt
+# 注意: external-libraries/ 内已内置 airsim 及其依赖 (tornado4/msgpackrpc)，
+#       如使用内置版本可跳过 airsim 相关行。
+
+# --- 大模型 / API ---
+openai>=1.0
+dashscope            # 阿里云通义千问 API
+transformers>=4.35
+
+# --- Agent 框架 ---
+smolagents
+crewai
+
+# --- 多模态 / 视觉 ---
+opencv-python
+Pillow
+numpy
+matplotlib
+
+# --- 语音 / 人机交互 (第五章) ---
+gradio
+soundfile
+pydub
+
+# --- 强化学习 / 世界模型 (第八章) ---
+torch
+gymnasium
+
+# --- AirSim 仿真 (如不使用 external-libraries 内置版本) ---
+# airsim
+msgpack-rpc-python
+tornado==4.5.3
